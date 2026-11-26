@@ -399,7 +399,7 @@ UQ `(security_id, quote_ts, price_type, vendor_source_id)`。迟到报价（`rec
 | supersedes_prediction_id | text? | 修订链 |
 | valid_until | timestamptz | 预测有效期（D-41）：= `target_end_at`；条件预测 = `trigger_deadline_at`；事件轨道 = `deadline_at` |
 | display_state | enum | 派生（视图计算，不存储）：`current`, `superseded`（有更新版本，旧版灰显并链接新版）, `expired`（now > valid_until 且未结算，标"已过期，待结算"）, `settled` |
-| locked | jsonb | `{target_definition_version, quote_rule_version, benchmark_version_id, calendar_version, model_version_id, calibration_version, schema_version, sigma_model_version, sigma_hat_pp, threshold_k, threshold_pp, feature_set_version}` |
+| locked | jsonb | `{target_definition_version, quote_rule_version, benchmark_version_id, calendar_version, model_version_id, calibration_version, schema_version, sigma_model_version, sigma_hat_pp, threshold_k, threshold_pp, feature_set_version}`。0.7.1 约定（OQ-03，已确认）：无模型的情景型事件预测 `model_version_id = "scenario_only"`；不适用的字段（`calibration_version`、`sigma_*`、`threshold_*`）为 `null`，但键必须存在 |
 | t0_quote_id / t0_benchmark_quote_ids | text? / text[] | 起算 |
 | target_end_at | timestamptz? | t0 + 60m 或收盘 |
 | published_at | timestamptz | |

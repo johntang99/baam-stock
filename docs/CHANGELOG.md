@@ -3,6 +3,7 @@
 ## 2026-11-26 — decisions confirmed
 - contract-0.7.1 approved (OQ-01).
 - D-05…D-12 confirmed with their default values; status `confirmed` added to the decision-table vocabulary (MP §9, `config/decisions.yaml`). No parameter values changed.
+- OQ-03, OQ-10 defaults confirmed. OQ-08 resolved: no backdated basket versions; historical training labels apply `semis_peer_v1` retroactively and record it in `training_dataset_versions.source_versions` (Phase 1 dataset builder must do this).
 
 ## Phase 0 — 2026-11-26
 
