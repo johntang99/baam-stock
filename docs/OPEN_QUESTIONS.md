@@ -5,7 +5,7 @@ Each item states the default we took so work could continue. **Needs a decision*
 
 | ID | Area | Issue | What we did (default) | Needs a decision |
 |---|---|---|---|---|
-| OQ-01 | Contract enums | D-31 seeds QQQ/SPY/SMH/^VIX (and D-08 needs SOXX), but DC only allowed `security_type ∈ {common, adr}` and `primary_exchange ∈ {XNAS, XNYS}`. SPY lists on NYSE Arca; ^VIX is a Cboe index with no NBBO. | Bumped to **contract-0.7.1**: added `etf`, `index`, `ARCX`, `XCBO`. DC header and §3.1 updated. | **Yes**: accept 0.7.1, or choose another way to model reference instruments |
+| OQ-01 | Contract enums | D-31 seeds QQQ/SPY/SMH/^VIX (and D-08 needs SOXX), but DC only allowed `security_type ∈ {common, adr}` and `primary_exchange ∈ {XNAS, XNYS}`. SPY lists on NYSE Arca; ^VIX is a Cboe index with no NBBO. | Bumped to **contract-0.7.1**: added `etf`, `index`, `ARCX`, `XCBO`. DC header and §3.1 updated. ✅ **Approved** by user 2026-11-26 |
 | OQ-02 | Tables vs schema-only | `reference_quotes.vendor_source_id` and `collection_items.source_id` are FKs to `data_sources`, which was not in the Phase 0 table list. | `data_sources` became a table (seeded with 5 sources, all `proposed`). Event, document, model and expectation entities are **schema only**; their FKs (e.g. `prediction_runs.model_version_id`, `collection_items.doc_version_id`) are plain text until those tables arrive in Phase 1. | No |
 | OQ-03 | `predictions.scenarios` | DC §8.2's event-outcome example uses a `scenarios` field that the predictions table did not define. Event predictions also have no model, but `locked.model_version_id` is required. | Added nullable `scenarios` (0.7.1). The example uses `locked.model_version_id = "scenario_only"` with sigma fields null. | **Yes**: confirm the `locked` convention for scenario-only predictions |
 | OQ-04 | D-23 vs DC §8.1 | The §8.1 example has `sampling_rule = scheduled_5m` with `is_primary = true`, which contradicts D-23 rev 0.5 (5-minute forecasts never count as primary). | Example set to `is_primary = false`. The DB enforces `NOT (is_primary AND sampling_rule IN (scheduled_5m, on_demand, user_supplement))`. | No (spec is clear) |
@@ -31,4 +31,4 @@ Each item states the default we took so work could continue. **Needs a decision*
 ## Still unresolved from the design (not caused by Phase 0)
 - D-13 market-data vendor, D-15 newswire licence, D-16 point-in-time consensus: see `docs/data_procurement.md` (all 拟选/未验证).
 - D-21 launch gate: confirm before Phase 3.
-- All `proposed` rows of the decision table (D-05…D-12 in particular): confirm before Phase 1.
+- D-05…D-12: ✅ confirmed by user 2026-11-26 (defaults kept). Other `proposed` rows: confirm by their lock phase.

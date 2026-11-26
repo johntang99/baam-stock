@@ -219,7 +219,9 @@ def test_decisions_mirror_complete() -> None:
     ids = [x["id"] for x in d["decisions"]]
     assert ids == [f"D-{i:02d}" for i in range(1, 49)]
     for x in d["decisions"]:
-        assert set(x["status"]) <= {"proposed", "from_spec", "to_verify"}, x["id"]
+        assert set(x["status"]) <= {"proposed", "from_spec", "to_verify", "confirmed"}, x["id"]
+    for i in range(5, 13):
+        assert d["decisions"][i - 1]["status"] == ["confirmed"], f"D-{i:02d} confirmed 2026-11-26"
     by = {x["id"]: x for x in d["decisions"]}
     assert by["D-09"]["params"].get("k") == 0.25 or "0.25" in json.dumps(by["D-09"]["params"])
 

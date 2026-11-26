@@ -335,7 +335,7 @@ stock-research/
 
 ## 9. 决策表（未确定事项的统一假设）
 
-状态：`proposed`（本次提出，可调）/ `from_spec`（规格已定）/ `to_verify`（需外部验证）。机器可读镜像：`config/decisions.yaml`。
+状态：`proposed`（本次提出，可调）/ `from_spec`（规格已定）/ `to_verify`（需外部验证）/ `confirmed`（已由人确认，2026-11-26：D-05～D-12）。机器可读镜像：`config/decisions.yaml`。
 
 | ID | 主题 | 决定 / 假设 | 来源 | 状态 | 锁定时点 |
 |---|---|---|---|---|---|
@@ -343,14 +343,14 @@ stock-research/
 | D-02 | 预测窗口 | `regular_60m`、`regular_to_close`、`next_regular_session`；`overnight_gap` 可选；S1 的 1–5 日窗口后续 | S3§3.1，C1 | from_spec + proposed | Phase 0 |
 | D-03 | 首批与第二批 | 首批 NVDA/AMD/AVGO/MU；第二批 TSM/MRVL；银行/生技仅配置样例 | S3§1.1，C2 | from_spec | — |
 | D-04 | 交易日历 | Python `exchange_calendars`（XNYS）为基础 + `trading_calendar_overrides` 覆盖表，对照 Nasdaq 官方日历 | S3§3.1 | proposed | Phase 0 |
-| D-05 | 价格类型 | 起算/结算用合并 NBBO 中间价（mid）；无有效 NBBO 时不回退到最后成交 | G1 | proposed | Phase 0 |
-| D-06 | 同步容差 | 个股与篮子每个成分的报价时间差 ≤ 2s；篮子成分缺失 > 1 只则基准不可计算 | G1 | proposed | Phase 0 |
-| D-07 | 结算容差 | 目标时点后 30s 内首组同步合格报价；无则 `unsettleable` | G1 | proposed | Phase 0 |
-| D-08 | 同行篮子 | `semis_peer_v1`：NVDA, AMD, AVGO, MU, QCOM, TXN, INTC, ADI, MRVL, AMAT, LRCX, KLAC；剔除目标后等权；按季度生效；SOXX 仅参考 | S3§1.2，G2 | proposed | Phase 0 |
-| D-09 | 三分类阈值（波动缩放） | `threshold_pp = k × sigma_hat_pp`；`sigma_hat_pp` = 发布时对同窗口相对收益标准差的预测（`sigma-0.1`：近 20 个交易日、同一时段桶的 EWMA，半衰期 10 日）；初始 k = 0.25（所有目标）；σ̂ 不可得 → 弃预测 `insufficient_data`。`sigma_hat_pp` 与 k 写入 `predictions.locked`。参考：σ̂ = 0.60pp 时 60m 阈值 = 0.15pp | S3§3.1(3)、MEMO A-1 | proposed | Phase 0 |
-| D-10 | 下一时段起算 | 不早于 09:31:00 ET 的首组同步合格报价；10 分钟内无则 `unsettleable` | G4 | proposed | Phase 0 |
-| D-11 | 收盘价格 | 上市交易所官方收盘价（Nasdaq Official Closing Price 等）；篮子成分同样口径 | G5 | proposed | Phase 0 |
-| D-12 | 合格报价 | bid>0、ask>bid、价差 ≤ 20bp 且 ≤ 近 20 分钟中位价差 ×5、报价年龄 ≤ 5s、非停牌/非 LULD 暂停 | G6 | proposed | Phase 0 |
+| D-05 | 价格类型 | 起算/结算用合并 NBBO 中间价（mid）；无有效 NBBO 时不回退到最后成交 | G1 | confirmed（用户 2026-11-26） | Phase 0 |
+| D-06 | 同步容差 | 个股与篮子每个成分的报价时间差 ≤ 2s；篮子成分缺失 > 1 只则基准不可计算 | G1 | confirmed（用户 2026-11-26） | Phase 0 |
+| D-07 | 结算容差 | 目标时点后 30s 内首组同步合格报价；无则 `unsettleable` | G1 | confirmed（用户 2026-11-26） | Phase 0 |
+| D-08 | 同行篮子 | `semis_peer_v1`：NVDA, AMD, AVGO, MU, QCOM, TXN, INTC, ADI, MRVL, AMAT, LRCX, KLAC；剔除目标后等权；按季度生效；SOXX 仅参考 | S3§1.2，G2 | confirmed（用户 2026-11-26） | Phase 0 |
+| D-09 | 三分类阈值（波动缩放） | `threshold_pp = k × sigma_hat_pp`；`sigma_hat_pp` = 发布时对同窗口相对收益标准差的预测（`sigma-0.1`：近 20 个交易日、同一时段桶的 EWMA，半衰期 10 日）；初始 k = 0.25（所有目标）；σ̂ 不可得 → 弃预测 `insufficient_data`。`sigma_hat_pp` 与 k 写入 `predictions.locked`。参考：σ̂ = 0.60pp 时 60m 阈值 = 0.15pp | S3§3.1(3)、MEMO A-1 | confirmed（用户 2026-11-26） | Phase 0 |
+| D-10 | 下一时段起算 | 不早于 09:31:00 ET 的首组同步合格报价；10 分钟内无则 `unsettleable` | G4 | confirmed（用户 2026-11-26） | Phase 0 |
+| D-11 | 收盘价格 | 上市交易所官方收盘价（Nasdaq Official Closing Price 等）；篮子成分同样口径 | G5 | confirmed（用户 2026-11-26） | Phase 0 |
+| D-12 | 合格报价 | bid>0、ask>bid、价差 ≤ 20bp 且 ≤ 近 20 分钟中位价差 ×5、报价年龄 ≤ 5s、非停牌/非 LULD 暂停 | G6 | confirmed（用户 2026-11-26） | Phase 0 |
 | D-13 | 实时与历史行情供应商 | 候选：Massive（S1 例举）、Databento、交易所直连；需验证秒级 NBBO 历史回溯年限、官方收盘价、授权展示 | S1[10]，G7 | to_verify | Phase 0 |
 | D-14 | 实时延迟指标 | 交易所时间→参考报价入缓冲 p95 < 1s；快报 p95 < 3 分钟（S2§6 只要求观测） | S2§6 | proposed | Phase 2 |
 | D-15 | 新闻、政策与其他来源 | SEC EDGAR（免费，API，含 8-K 与 **Form 4**）、公司 IR RSS、Federal Register/BIS/白宫；**法院案卷**：CourtListener/RECAP（免费，覆盖不全）为主，关键案件按需 PACER；**宏观**：BLS/BEA/Fed 官方发布 + FRED/ALFRED 历史 vintage（首发值）；**期权**：Phase 4 前不采购，仅留接口；授权新闻快讯候选待选 | S1 来源、PPT 审查 | to_verify | Phase 0（法院/宏观/Form 4 在 Phase 2 前样本验证） |

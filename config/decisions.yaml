@@ -4,7 +4,7 @@
 schema: decisions-0.1
 source: docs/BUILDING_MASTER_PLAN.md §9 (plan-0.7)
 generated: '2026-11-26'
-status_values: [proposed, from_spec, to_verify]
+status_values: [proposed, from_spec, to_verify, confirmed]
 decisions:
 - id: D-01
   topic: 时间存储与显示
@@ -47,32 +47,32 @@ decisions:
   topic: 价格类型
   decision: 起算/结算用合并 NBBO 中间价（mid）；无有效 NBBO 时不回退到最后成交
   source: G1
-  status: [proposed]
-  status_note: null
+  status: [confirmed]
+  status_note: 用户 2026-11-26 确认采用默认值
   lock_at: Phase 0
   params: {price_type: nbbo_mid, fallback_to_last_trade: false}
 - id: D-06
   topic: 同步容差
   decision: 个股与篮子每个成分的报价时间差 ≤ 2s；篮子成分缺失 > 1 只则基准不可计算
   source: G1
-  status: [proposed]
-  status_note: null
+  status: [confirmed]
+  status_note: 用户 2026-11-26 确认采用默认值
   lock_at: Phase 0
   params: {sync_tolerance_ms: 2000, max_missing_constituents: 1}
 - id: D-07
   topic: 结算容差
   decision: 目标时点后 30s 内首组同步合格报价；无则 unsettleable
   source: G1
-  status: [proposed]
-  status_note: null
+  status: [confirmed]
+  status_note: 用户 2026-11-26 确认采用默认值
   lock_at: Phase 0
   params: {settle_tolerance_s: 30, on_no_quote: unsettleable}
 - id: D-08
   topic: 同行篮子
   decision: semis_peer_v1：NVDA, AMD, AVGO, MU, QCOM, TXN, INTC, ADI, MRVL, AMAT, LRCX, KLAC；剔除目标后等权；按季度生效；SOXX 仅参考
   source: S3§1.2，G2
-  status: [proposed]
-  status_note: null
+  status: [confirmed]
+  status_note: 用户 2026-11-26 确认采用默认值
   lock_at: Phase 0
   params:
     basket_id: semis_peer_v1
@@ -85,8 +85,8 @@ decisions:
   topic: 三分类阈值（波动缩放）
   decision: threshold_pp = k × sigma_hat_pp；sigma_hat_pp = 发布时对同窗口相对收益标准差的预测（sigma-0.1：近 20 个交易日、同一时段桶的 EWMA，半衰期 10 日）；初始 k = 0.25（所有目标）；σ̂ 不可得 → 弃预测 insufficient_data。sigma_hat_pp 与 k 写入 predictions.locked。参考：σ̂ = 0.60pp 时 60m 阈值 = 0.15pp
   source: S3§3.1(3)、MEMO A-1
-  status: [proposed]
-  status_note: null
+  status: [confirmed]
+  status_note: 用户 2026-11-26 确认采用默认值
   lock_at: Phase 0
   params:
     k: 0.25
@@ -102,24 +102,24 @@ decisions:
   topic: 下一时段起算
   decision: 不早于 09:31:00 ET 的首组同步合格报价；10 分钟内无则 unsettleable
   source: G4
-  status: [proposed]
-  status_note: null
+  status: [confirmed]
+  status_note: 用户 2026-11-26 确认采用默认值
   lock_at: Phase 0
   params: {not_before_et: '09:31:00', max_wait_min: 10, on_timeout: unsettleable}
 - id: D-11
   topic: 收盘价格
   decision: 上市交易所官方收盘价（Nasdaq Official Closing Price 等）；篮子成分同样口径
   source: G5
-  status: [proposed]
-  status_note: null
+  status: [confirmed]
+  status_note: 用户 2026-11-26 确认采用默认值
   lock_at: Phase 0
   params: {close_price: listing_exchange_official_close, applies_to_basket: true}
 - id: D-12
   topic: 合格报价
   decision: bid>0、ask>bid、价差 ≤ 20bp 且 ≤ 近 20 分钟中位价差 ×5、报价年龄 ≤ 5s、非停牌/非 LULD 暂停
   source: G6
-  status: [proposed]
-  status_note: null
+  status: [confirmed]
+  status_note: 用户 2026-11-26 确认采用默认值
   lock_at: Phase 0
   params: {min_bid_exclusive: 0, require_ask_gt_bid: true, max_spread_bp: 20, max_spread_vs_median_20m: 5, median_window_min: 20, max_quote_age_s: 5, exclude_halted: true, exclude_luld_pause: true}
 - id: D-13

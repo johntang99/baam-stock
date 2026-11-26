@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2026-11-26 — decisions confirmed
+- contract-0.7.1 approved (OQ-01).
+- D-05…D-12 confirmed with their default values; status `confirmed` added to the decision-table vocabulary (MP §9, `config/decisions.yaml`). No parameter values changed.
+
 ## Phase 0 — 2026-11-26
 
 ### Contract
