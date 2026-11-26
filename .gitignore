@@ -2,8 +2,8 @@
 _design_package/
 *.zip
 # data (local parquet etc.)
-data/
-!data/.gitkeep
+/data/*
+!/data/.gitkeep
 # python
 .venv/
 __pycache__/

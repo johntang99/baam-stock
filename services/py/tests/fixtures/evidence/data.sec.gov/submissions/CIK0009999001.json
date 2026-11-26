@@ -1,0 +1,12 @@
+{
+  "cik": "9999001",
+  "name": "SYNTHETIC SEMICONDUCTOR CO (FICTIONAL)",
+  "filings": {
+    "recent": {
+      "accessionNumber": ["0009999001-26-000101", "0009999001-26-000102", "0009999001-26-000103", "0009999001-26-000104"],
+      "form": ["8-K", "10-Q", "4", "8-K"],
+      "acceptanceDateTime": ["2026-11-19T16:20:31.000Z", "2026-11-19T16:25:02.000Z", "2026-11-20T18:01:00.000Z", "2026-10-01T09:00:00.000Z"],
+      "primaryDocument": ["form8k.htm", "form10q.htm", "form4.xml", "old8k.htm"]
+    }
+  }
+}

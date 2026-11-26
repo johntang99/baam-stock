@@ -75,3 +75,74 @@ def basket_ex_nvda() -> list[str]:
 @pytest.fixture
 def load_script():  # type: ignore[no-untyped-def]
     return _load_script
+
+
+# ---------------------------------------------------------------- Postgres-backed tests
+# TEST_DATABASE_URL = admin URL of a throwaway Postgres (CI service / local). A template database with all
+# migrations + seeds is built once per session; each test gets a fresh copy (CREATE DATABASE … TEMPLATE).
+import os  # noqa: E402
+import uuid  # noqa: E402
+from collections.abc import Iterator  # noqa: E402
+
+EVIDENCE_ARCHIVE = Path(__file__).parent / "fixtures" / "evidence"
+
+
+def _admin_url() -> str | None:
+    return os.environ.get("TEST_DATABASE_URL")
+
+
+def _swap_db(url: str, name: str) -> str:
+    base, _, _ = url.rpartition("/")
+    return f"{base}/{name}"
+
+
+@pytest.fixture(scope="session")
+def pg_template() -> Iterator[str]:
+    admin = _admin_url()
+    if not admin:
+        pytest.skip("TEST_DATABASE_URL not set (Postgres-backed tests)")
+    import psycopg
+
+    name = f"sr_tmpl_{uuid.uuid4().hex[:8]}"
+    with psycopg.connect(admin, autocommit=True) as c:
+        c.execute(f"create database {name}")
+    url = _swap_db(admin, name)
+    root = repo_root()
+    with psycopg.connect(url, autocommit=True) as c:
+        for f in sorted((root / "supabase/migrations").glob("*.sql")) + sorted(
+            (root / "supabase/seed").glob("*.sql")
+        ):
+            c.execute(f.read_text())
+    yield name
+    with psycopg.connect(admin, autocommit=True) as c:
+        c.execute(f"drop database if exists {name} with (force)")
+
+
+@pytest.fixture
+def db_url(pg_template: str) -> Iterator[str]:
+    import psycopg
+
+    admin = _admin_url()
+    assert admin
+    name = f"sr_t_{uuid.uuid4().hex[:8]}"
+    with psycopg.connect(admin, autocommit=True) as c:
+        c.execute(f"create database {name} template {pg_template}")
+    yield _swap_db(admin, name)
+    with psycopg.connect(admin, autocommit=True) as c:
+        c.execute(f"drop database if exists {name} with (force)")
+
+
+@pytest.fixture
+def conn(db_url: str):  # type: ignore[no-untyped-def]
+    from sr.db import connect
+
+    c = connect(db_url, autocommit=True)
+    yield c
+    c.close()
+
+
+@pytest.fixture
+def doc_storage(tmp_path: Path):  # type: ignore[no-untyped-def]
+    from sr.evidence.storage import LocalDocStorage
+
+    return LocalDocStorage(tmp_path / "evidence")

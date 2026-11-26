@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel><title>Synthetic Co IR (FICTIONAL)</title>
+<item><guid>ir-2026-11-19-results</guid><link>https://ir.synthetic.test/news/results</link>
+<title>Synthetic Co Reports Third Quarter Results</title>
+<description>Revenue was $35.1 billion for the quarter.</description>
+<pubDate>Thu, 19 Nov 2026 16:20:00 -0500</pubDate></item>
+<item><guid>ir-undated-note</guid><link>https://ir.synthetic.test/news/note</link>
+<title>Investor Day Announcement</title><description>Investor day date to be announced.</description></item>
+<item><guid>ir-leak</guid><link>https://ir.synthetic.test/news/x</link>
+<title>Draft guidance</title><description>NOT FOR PUBLIC RELEASE - draft outlook for next quarter.</description>
+<pubDate>Fri, 20 Nov 2026 09:00:00 -0500</pubDate></item>
+</channel></rss>

@@ -1,0 +1,40 @@
+# Evidence ingestion (DP 1.03-1.04; D-15). Public free sources only in Phase 1; nothing licensed.
+version: evidence-0.1
+storage:
+  root: data/evidence          # local object store (gitignored); Supabase Storage later
+hash:
+  normalize_whitespace: true    # whitespace-only re-deliveries hash identically (AC-07)
+sec_edgar:
+  source_id: src_sec_edgar
+  submissions_url: "https://data.sec.gov/submissions/CIK{cik}.json"
+  archive_url: "https://www.sec.gov/Archives/edgar/data/{cik_int}/{accession_nodash}/{primary_document}"
+  user_agent_env: SEC_EDGAR_USER_AGENT      # required for live polling (SEC fair-access policy)
+  max_requests_per_s: 10                    # SEC fair-access limit
+  forms: ["8-K", "10-Q", "10-K", "6-K", "8-K/A", "10-Q/A", "10-K/A"]
+  # EDGAR submissions JSON stamps acceptanceDateTime with a 'Z' suffix, but the wall clock is understood to be
+  # US Eastern. Treated as America/New_York until verified on a real sample (OPEN_QUESTIONS OQ-25).
+  acceptance_datetime_tz: America/New_York
+  published_precision: s
+company_ir:
+  source_id: src_company_ir
+  default_precision: minute
+  missing_pubdate_reason: feed_item_without_pubdate
+simulated_arrival:
+  delay_s: 60                   # simulated replay: available = source_published_at + delay (arrival_mode=simulated)
+screening:
+  # Suspected non-public / restricted material -> visibility=restricted_review (S1 合规, S2§3.2, AC-25).
+  # Case-insensitive phrase match on the normalised text. False positives go to human review, never to features.
+  mnpi_markers:
+    - "material non-public"
+    - "material nonpublic"
+    - "not for public release"
+    - "not for distribution"
+    - "internal use only"
+    - "strictly confidential"
+    - "embargoed until"
+    - "do not distribute"
+    - "leaked"
+  restricted_license_scopes: [restricted]
+analysis_job:
+  job_type: analyze_event
+  idempotency_prefix: "analyze:"
