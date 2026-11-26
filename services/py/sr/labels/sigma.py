@@ -26,7 +26,7 @@ class SigmaEstimate:
     sigma_hat_pp: float | None
     n_obs: int
     sigma_model_version: str
-    reason: str | None = None   # 'insufficient_data' when None
+    reason: str | None = None  # 'insufficient_data' when None
 
 
 def time_bucket(ts: pd.Timestamp, bucket_minutes: int) -> int:

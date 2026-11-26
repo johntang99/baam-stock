@@ -57,12 +57,24 @@ def block_bootstrap(
     for i in range(n):
         samples[i] = stat(v[resample_indices(day_keys, rng)])
     a = (1 - level) / 2
-    return BootstrapResult(stat(v), float(np.quantile(samples, a)), float(np.quantile(samples, 1 - a)), n,
-                           len(_blocks(day_keys)), seed, samples)
+    return BootstrapResult(
+        stat(v),
+        float(np.quantile(samples, a)),
+        float(np.quantile(samples, 1 - a)),
+        n,
+        len(_blocks(day_keys)),
+        seed,
+        samples,
+    )
 
 
-def paired_block_bootstrap(candidate: Sequence[float], comparator: Sequence[float], day_keys: Sequence[Hashable],
-                           seed: int, n_resamples: int | None = None) -> BootstrapResult:
+def paired_block_bootstrap(
+    candidate: Sequence[float],
+    comparator: Sequence[float],
+    day_keys: Sequence[Hashable],
+    seed: int,
+    n_resamples: int | None = None,
+) -> BootstrapResult:
     """CI of mean(candidate − comparator) on the common sample (e.g. per-prediction Brier)."""
     d = np.asarray(candidate, dtype=float) - np.asarray(comparator, dtype=float)
     return block_bootstrap(d, day_keys, seed, n_resamples=n_resamples)

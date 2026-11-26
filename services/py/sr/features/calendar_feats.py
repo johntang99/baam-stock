@@ -14,13 +14,17 @@ def is_triple_witching(d: date) -> bool:
     return d.month in (3, 6, 9, 12) and d.weekday() == 4 and 15 <= d.day <= 21
 
 
-def calendar_features(as_of: datetime, cal: TradingCalendar | None = None) -> dict[str, float | int | bool | None]:
+def calendar_features(
+    as_of: datetime, cal: TradingCalendar | None = None
+) -> dict[str, float | int | bool | None]:
     cal = cal or get_calendar()
     t = ensure_utc(as_of, "as_of").to_pydatetime()
     d = t.astimezone(ET).date()
     s = cal.session(d)
     rebal = {date.fromisoformat(str(x)) for x in load("features/fs-0.2").get("index_rebalance_dates") or []}
-    in_session = s.is_open and s.open_at is not None and s.close_at is not None and s.open_at <= t <= s.close_at
+    in_session = (
+        s.is_open and s.open_at is not None and s.close_at is not None and s.open_at <= t <= s.close_at
+    )
     return {
         "minutes_since_open": (t - s.open_at) / timedelta(minutes=1) if in_session and s.open_at else None,
         "minutes_to_close": (s.close_at - t) / timedelta(minutes=1) if in_session and s.close_at else None,

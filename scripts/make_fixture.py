@@ -17,6 +17,7 @@ import argparse
 import json
 from datetime import date, datetime, time
 from pathlib import Path
+from typing import Any
 
 import numpy as np
 import pandas as pd
@@ -28,9 +29,25 @@ from sr.config import load, repo_root
 
 SESSION = date(2026, 12, 1)
 REFERENCE = ["QQQ", "SPY", "SMH", "SOXX", "^VIX"]
-BASE = {"NVDA": 182.4, "AMD": 214.1, "AVGO": 352.8, "MU": 118.6, "QCOM": 171.2, "TXN": 168.9, "INTC": 37.4,
-        "ADI": 241.7, "MRVL": 92.3, "AMAT": 205.5, "LRCX": 101.8, "KLAC": 812.0, "QQQ": 512.3, "SPY": 603.1,
-        "SMH": 268.4, "SOXX": 243.9, "^VIX": 16.2}   # fictional levels
+BASE = {
+    "NVDA": 182.4,
+    "AMD": 214.1,
+    "AVGO": 352.8,
+    "MU": 118.6,
+    "QCOM": 171.2,
+    "TXN": 168.9,
+    "INTC": 37.4,
+    "ADI": 241.7,
+    "MRVL": 92.3,
+    "AMAT": 205.5,
+    "LRCX": 101.8,
+    "KLAC": 812.0,
+    "QQQ": 512.3,
+    "SPY": 603.1,
+    "SMH": 268.4,
+    "SOXX": 243.9,
+    "^VIX": 16.2,
+}  # fictional levels
 BETA = {"^VIX": -4.0, "QQQ": 0.6, "SPY": 0.45, "SMH": 1.0, "SOXX": 1.0}
 
 
@@ -39,7 +56,7 @@ def et(t: str) -> pd.Timestamp:
     return pd.Timestamp(datetime.combine(SESSION, time(h, m, s), tzinfo=ET)).tz_convert("UTC")
 
 
-ANOMALIES = [
+ANOMALIES: list[dict[str, Any]] = [
     {"kind": "wide_spread", "symbol": "NVDA", "start_et": "11:00:00", "end_et": "11:01:59", "spread_bp": 35},
     {"kind": "halt", "symbol": "NVDA", "start_et": "13:15:00", "end_et": "13:17:59"},
     {"kind": "stale", "symbol": "INTC", "start_et": "10:20:10", "end_et": "10:20:39"},
@@ -52,7 +69,7 @@ def sid(sym: str) -> str:
     return "sec_" + sym.lower().lstrip("^")
 
 
-def build(seed: int) -> tuple[pd.DataFrame, dict[str, object]]:
+def build(seed: int) -> tuple[pd.DataFrame, dict[str, Any]]:
     s = get_calendar().session(SESSION)
     assert s.open_at and s.close_at
     grid = pd.date_range(s.open_at, s.close_at, freq="1s", tz="UTC")
@@ -95,15 +112,34 @@ def build(seed: int) -> tuple[pd.DataFrame, dict[str, object]]:
         bid, ask = bid[idx], ask[idx]
         recv = qts + pd.to_timedelta(rng.integers(20, 250, n), unit="ms")
         last = np.round((bid + ask) / 2 + rng.normal(0, 0.003, n), 2)
-        frames.append(pd.DataFrame({
-            "ts": grid, "symbol": sym, "security_id": sid(sym),
-            "quote_ts": qts, "received_at": recv,
-            "bid": bid, "ask": ask, "last": last, "halted": halted, "luld_pause": luld,
-        }))
+        frames.append(
+            pd.DataFrame(
+                {
+                    "ts": grid,
+                    "symbol": sym,
+                    "security_id": sid(sym),
+                    "quote_ts": qts,
+                    "received_at": recv,
+                    "bid": bid,
+                    "ask": ask,
+                    "last": last,
+                    "halted": halted,
+                    "luld_pause": luld,
+                }
+            )
+        )
     df = pd.concat(frames, ignore_index=True)
-    meta = {"synthetic": "true", "label": "SYNTHETIC / 虚构 — not market data", "generator": "scripts/make_fixture.py",
-            "seed": seed, "session_date": SESSION.isoformat(), "symbols": symbols, "anomalies": ANOMALIES,
-            "quote_rule_version_hint": "qr-0.1", "vendor_source_id": "src_fixture_synthetic"}
+    meta = {
+        "synthetic": "true",
+        "label": "SYNTHETIC / 虚构 — not market data",
+        "generator": "scripts/make_fixture.py",
+        "seed": seed,
+        "session_date": SESSION.isoformat(),
+        "symbols": symbols,
+        "anomalies": ANOMALIES,
+        "quote_rule_version_hint": "qr-0.1",
+        "vendor_source_id": "src_fixture_synthetic",
+    }
     return df, meta
 
 
@@ -116,11 +152,15 @@ def main() -> int:
     out = Path(a.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     table = pa.Table.from_pandas(df, preserve_index=False)
-    table = table.replace_schema_metadata({**(table.schema.metadata or {}),
-                                           **{k: (v if isinstance(v, str) else json.dumps(v)) for k, v in meta.items()}})
+    table = table.replace_schema_metadata(
+        {
+            **(table.schema.metadata or {}),
+            **{k: (v if isinstance(v, str) else json.dumps(v)) for k, v in meta.items()},
+        }
+    )
     pq.write_table(table, out, compression="zstd")
     out.with_suffix(".manifest.json").write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n")
-    print(f"wrote {out} ({len(df):,} rows, {len(meta['symbols'])} symbols) — SYNTHETIC")  # type: ignore[arg-type]
+    print(f"wrote {out} ({len(df):,} rows, {len(meta['symbols'])} symbols) — SYNTHETIC")
     return 0
 
 

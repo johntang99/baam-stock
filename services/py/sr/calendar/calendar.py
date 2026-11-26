@@ -26,8 +26,8 @@ class Session:
     exchange: str
     session_date: date
     status: SessionStatus
-    open_at: datetime | None     # UTC
-    close_at: datetime | None    # UTC
+    open_at: datetime | None  # UTC
+    close_at: datetime | None  # UTC
     source: str
     calendar_version: str
 
@@ -70,10 +70,20 @@ class TradingCalendar:
             src = f"override:{ov.get('ticket', 'n/a')}"
             if status == "closed":
                 return Session(self.exchange, d, "closed", None, None, src, self.calendar_version)
-            close_t = _hhmm(ov["close_et"]) if ov.get("close_et") else (
-                self._early_close if status == "early_close" else self._regular_close)
-            return Session(self.exchange, d, status, et_to_utc(d, self._regular_open), et_to_utc(d, close_t), src,
-                           self.calendar_version)
+            close_t = (
+                _hhmm(ov["close_et"])
+                if ov.get("close_et")
+                else (self._early_close if status == "early_close" else self._regular_close)
+            )
+            return Session(
+                self.exchange,
+                d,
+                status,
+                et_to_utc(d, self._regular_open),
+                et_to_utc(d, close_t),
+                src,
+                self.calendar_version,
+            )
         ts = pd.Timestamp(d)
         if not self._base.is_session(ts):
             return Session(self.exchange, d, "closed", None, None, self._src, self.calendar_version)

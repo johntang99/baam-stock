@@ -9,7 +9,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
-from typing import Literal
+from typing import Any, Literal
 
 import pandas as pd
 
@@ -21,14 +21,14 @@ from sr.timeguard import LookaheadError, ensure_utc
 class SyncResult:
     status: Literal["ok", "no_sync"]
     sample_ts: pd.Timestamp | None = None
-    quote: dict[str, object] | None = None                       # target row
-    constituent_quotes: dict[str, dict[str, object]] = field(default_factory=dict)
+    quote: dict[str, Any] | None = None  # target row
+    constituent_quotes: dict[str, dict[str, Any]] = field(default_factory=dict)
     missing_constituents: tuple[str, ...] = ()
-    invalid_reason: str | None = None                            # DC invalid_reason when no_sync
+    invalid_reason: str | None = None  # DC invalid_reason when no_sync
     detail: str = ""
 
 
-def _cfg() -> dict[str, object]:
+def _cfg() -> dict[str, Any]:
     return dict(load("quote_rules")["sync"])
 
 
@@ -71,18 +71,27 @@ def find_first_sync_qualifying(
 
     for _, row in tgt.sort_values("ts").iterrows():
         ts, qts = row["ts"], row["quote_ts"]
-        got: dict[str, dict[str, object]] = {}
+        got: dict[str, dict[str, Any]] = {}
         missing = []
         for c in basket:
             g = by_c.get(c)
             if g is not None and ts in g.index:
                 cr = g.loc[ts]
                 if abs(cr["quote_ts"] - qts) <= tol:
-                    got[c] = cr.to_dict() | {"ts": ts, "security_id": c}
+                    got[c] = {str(k): v for k, v in cr.to_dict().items()} | {"ts": ts, "security_id": c}
                     continue
             missing.append(c)
         if len(missing) <= mm:
-            return SyncResult("ok", ts, row.to_dict(), got, tuple(missing),
-                              detail=f"{len(got)}/{len(basket)} constituents within {tolerance_ms}ms")
-    return SyncResult("no_sync", invalid_reason=invalid_reason_if_none,
-                      detail=f"no sync point in window ending {end.isoformat()} (max_missing={mm})")
+            return SyncResult(
+                "ok",
+                ts,
+                {str(k): v for k, v in row.to_dict().items()},
+                got,
+                tuple(missing),
+                detail=f"{len(got)}/{len(basket)} constituents within {tolerance_ms}ms",
+            )
+    return SyncResult(
+        "no_sync",
+        invalid_reason=invalid_reason_if_none,
+        detail=f"no sync point in window ending {end.isoformat()} (max_missing={mm})",
+    )

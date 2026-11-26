@@ -54,7 +54,10 @@ class FixtureProvider:
         s, e = ensure_utc(start_utc, "start_utc"), ensure_utc(end_utc, "end_utc")
         sids = [self._sid(x) for x in symbols]
         d = self._df
-        return d[d["security_id"].isin(sids) & (d["ts"] >= s) & (d["ts"] <= e)].reset_index(drop=True)
+        out: pd.DataFrame = d[d["security_id"].isin(sids) & (d["ts"] >= s) & (d["ts"] <= e)].reset_index(
+            drop=True
+        )
+        return out
 
     # --- MarketDataProvider ----------------------------------------------------------------------------
     async def stream_quotes(self, symbols: list[str]) -> AsyncIterator[QuoteTick]:  # replay, not live
@@ -62,11 +65,21 @@ class FixtureProvider:
         if self.as_of is not None:
             df = df[df["ts"] <= self.as_of]
         for r in df.itertuples(index=False):
-            yield QuoteTick(r.symbol, r.security_id, r.quote_ts.to_pydatetime(), r.received_at.to_pydatetime(),
-                            float(r.bid), float(r.ask), float(r.last), bool(r.halted), bool(r.luld_pause))
+            yield QuoteTick(
+                r.symbol,
+                r.security_id,
+                r.quote_ts.to_pydatetime(),
+                r.received_at.to_pydatetime(),
+                float(r.bid),
+                float(r.ask),
+                float(r.last),
+                bool(r.halted),
+                bool(r.luld_pause),
+            )
 
-    def get_bars(self, symbol: str, start_utc: datetime, end_utc: datetime,
-                 interval: Literal["1s", "1m"]) -> pa.Table:
+    def get_bars(
+        self, symbol: str, start_utc: datetime, end_utc: datetime, interval: Literal["1s", "1m"]
+    ) -> pa.Table:
         q = self.quotes_1s([symbol], start_utc, end_utc)
         q = q.assign(mid=(q["bid"] + q["ask"]) / 2)
         if interval == "1s":
@@ -88,5 +101,6 @@ class FixtureProvider:
         if d.empty:
             return None
         r = d.iloc[-1]
-        return OfficialClose(sid, session_date, float((r["bid"] + r["ask"]) / 2), r["ts"].to_pydatetime(),
-                             "synthetic_fixture")
+        return OfficialClose(
+            sid, session_date, float((r["bid"] + r["ask"]) / 2), r["ts"].to_pydatetime(), "synthetic_fixture"
+        )

@@ -37,10 +37,13 @@ class QuoteRules:
         if c.get("fallback_to_last_trade"):
             raise ValueError("qr-0.1 forbids falling back to last trade (D-05)")
         return cls(
-            version=c["quote_rule_version"], max_spread_bp=float(q["max_spread_bp"]),
+            version=c["quote_rule_version"],
+            max_spread_bp=float(q["max_spread_bp"]),
             max_spread_vs_median_mult=float(q["max_spread_vs_median_mult"]),
-            median_window_min=int(q["median_spread_window_min"]), max_quote_age_s=float(q["max_quote_age_s"]),
-            delayed_threshold_s=float(c["delayed_threshold_s"]), exclude_halted=bool(q["exclude_halted"]),
+            median_window_min=int(q["median_spread_window_min"]),
+            max_quote_age_s=float(q["max_quote_age_s"]),
+            delayed_threshold_s=float(c["delayed_threshold_s"]),
+            exclude_halted=bool(q["exclude_halted"]),
             exclude_luld_pause=bool(q["exclude_luld_pause"]),
         )
 
@@ -59,8 +62,10 @@ def evaluate_quotes(df: pd.DataFrame, rules: QuoteRules | None = None) -> pd.Dat
     out["age_s"] = (out["ts"] - out["quote_ts"]).dt.total_seconds()
 
     med = (
-        out.set_index("ts").groupby("security_id")["spread_bp"]
-        .rolling(f"{rules.median_window_min}min", min_periods=1).median()
+        out.set_index("ts")
+        .groupby("security_id")["spread_bp"]
+        .rolling(f"{rules.median_window_min}min", min_periods=1)
+        .median()
     )
     out["median_spread_bp_20m"] = med.reset_index(drop=True).to_numpy()
 
@@ -76,8 +81,15 @@ def evaluate_quotes(df: pd.DataFrame, rules: QuoteRules | None = None) -> pd.Dat
 
     flags = []
     for row in zip(stale, wide, halted, luld, crossed, delayed, strict=True):
-        flags.append([n for n, on in zip(("stale", "wide_spread", "halted", "luld_pause", "crossed", "delayed"), row,
-                                         strict=True) if on])
+        flags.append(
+            [
+                n
+                for n, on in zip(
+                    ("stale", "wide_spread", "halted", "luld_pause", "crossed", "delayed"), row, strict=True
+                )
+                if on
+            ]
+        )
     out["quality_flags"] = flags
     qualifying = valid_book & ~wide & ~stale
     if rules.exclude_halted:

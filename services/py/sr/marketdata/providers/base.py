@@ -15,8 +15,8 @@ import pyarrow as pa
 class QuoteTick:
     symbol: str
     security_id: str
-    quote_ts: datetime        # UTC exchange/SIP time
-    received_at: datetime     # UTC
+    quote_ts: datetime  # UTC exchange/SIP time
+    received_at: datetime  # UTC
     bid: float
     ask: float
     last: float | None
@@ -29,15 +29,16 @@ class OfficialClose:
     security_id: str
     session_date: date
     price: float
-    price_ts: datetime        # UTC
-    source: str               # e.g. "nasdaq_official_close" or "synthetic_fixture"
+    price_ts: datetime  # UTC
+    source: str  # e.g. "nasdaq_official_close" or "synthetic_fixture"
 
 
 @runtime_checkable
 class MarketDataProvider(Protocol):
     def stream_quotes(self, symbols: list[str]) -> AsyncIterator[QuoteTick]: ...
 
-    def get_bars(self, symbol: str, start_utc: datetime, end_utc: datetime,
-                 interval: Literal["1s", "1m"]) -> pa.Table: ...
+    def get_bars(
+        self, symbol: str, start_utc: datetime, end_utc: datetime, interval: Literal["1s", "1m"]
+    ) -> pa.Table: ...
 
     def get_official_close(self, symbol: str, session_date: date) -> OfficialClose | None: ...

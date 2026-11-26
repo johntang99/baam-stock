@@ -23,15 +23,22 @@ def ensure_utc(ts: datetime | pd.Timestamp, name: str = "timestamp") -> pd.Times
     return t.tz_convert(UTC)
 
 
-def assert_not_after(stamps: Iterable[datetime | pd.Timestamp] | pd.Index | pd.Series, as_of: datetime | pd.Timestamp,
-                     what: str = "data") -> None:
+def assert_not_after(
+    stamps: Iterable[datetime | pd.Timestamp] | pd.Index | pd.Series,
+    as_of: datetime | pd.Timestamp,
+    what: str = "data",
+) -> None:
     """Raise LookaheadError if any stamp is later than as_of."""
     cutoff = ensure_utc(as_of, "as_of")
-    s = pd.Series(pd.to_datetime(pd.Index(stamps) if not isinstance(stamps, pd.Series) else stamps, utc=False))
+    s = pd.Series(
+        pd.to_datetime(pd.Index(stamps) if not isinstance(stamps, pd.Series) else stamps, utc=False)
+    )
     if s.empty:
         return
     if s.dt.tz is None:
         raise NaiveDatetimeError(f"{what} timestamps must be timezone-aware")
     latest = s.max()
     if latest > cutoff:
-        raise LookaheadError(f"{what} contains timestamps after as_of: latest={latest.isoformat()} as_of={cutoff.isoformat()}")
+        raise LookaheadError(
+            f"{what} contains timestamps after as_of: latest={latest.isoformat()} as_of={cutoff.isoformat()}"
+        )

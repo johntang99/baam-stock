@@ -28,13 +28,17 @@ class LockedThreshold:
 
     def as_locked(self) -> dict[str, object]:
         """Fields written into predictions.locked (DC §3.7)."""
-        return {"sigma_model_version": self.sigma_model_version, "sigma_hat_pp": self.sigma_hat_pp,
-                "threshold_k": self.threshold_k, "threshold_pp": self.threshold_pp}
+        return {
+            "sigma_model_version": self.sigma_model_version,
+            "sigma_hat_pp": self.sigma_hat_pp,
+            "threshold_k": self.threshold_k,
+            "threshold_pp": self.threshold_pp,
+        }
 
 
 @dataclass(frozen=True)
 class Abstain:
-    abstain_reason: str   # DC abstain_reason enum
+    abstain_reason: str  # DC abstain_reason enum
 
 
 def threshold_pp(sigma_hat_pp: float, k: float) -> float:
@@ -43,8 +47,9 @@ def threshold_pp(sigma_hat_pp: float, k: float) -> float:
     return round(k * sigma_hat_pp, _EPS_DECIMALS)
 
 
-def lock_threshold(sigma_hat_pp: float | None, k: float | None = None,
-                   sigma_model_version: str | None = None) -> LockedThreshold | Abstain:
+def lock_threshold(
+    sigma_hat_pp: float | None, k: float | None = None, sigma_model_version: str | None = None
+) -> LockedThreshold | Abstain:
     """Freeze the threshold at publish time; missing sigma -> abstain insufficient_data (D-09)."""
     cfg = load("sigma")
     k = float(cfg["threshold_k"]) if k is None else k

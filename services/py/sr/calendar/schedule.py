@@ -16,8 +16,8 @@ SlotStatus = Literal["scheduled", "not_scheduled"]
 class Slot:
     slot_id: str
     kind: str
-    scheduled_for: datetime          # UTC
-    time_et: str                     # effective ET wall clock (may differ from config on half days)
+    scheduled_for: datetime  # UTC
+    time_et: str  # effective ET wall clock (may differ from config on half days)
     target_ids: tuple[str, ...]
     status: SlotStatus
     schedule_version: str
@@ -25,7 +25,9 @@ class Slot:
     start_rule: str = field(default="", compare=False)
 
 
-def schedule_slots(d: date, cal: TradingCalendar | None = None, schedule: dict[str, Any] | None = None) -> list[Slot]:
+def schedule_slots(
+    d: date, cal: TradingCalendar | None = None, schedule: dict[str, Any] | None = None
+) -> list[Slot]:
     """Expand the schedule for session date d. Closed day -> []. Half day -> intraday slots whose 60m window
     would exceed the close are `not_scheduled`; to-close moves to the last scheduled 60m slot; the post-close
     outlook moves to close + offset (13:30 on a 13:00 close)."""
@@ -35,7 +37,9 @@ def schedule_slots(d: date, cal: TradingCalendar | None = None, schedule: dict[s
     if not s.is_open or s.close_at is None:
         return []
     tgt_cfg = load("targets")
-    dur = next(t for t in tgt_cfg["targets"] if t["target_id"] == "regular_60m")["window_rule"]["duration_min"]
+    dur = next(t for t in tgt_cfg["targets"] if t["target_id"] == "regular_60m")["window_rule"][
+        "duration_min"
+    ]
     tol = tgt_cfg["availability"]["regular_60m_settle_tolerance_s"]
     hdr = sch["half_day_rule"]
     version = sch["schedule_version"]
@@ -66,12 +70,19 @@ def schedule_slots(d: date, cal: TradingCalendar | None = None, schedule: dict[s
             if r["status"] == "not_scheduled":
                 r["targets"] = [t for t in r["targets"] if t != "regular_to_close"]
 
-
     out = []
     for r in raw:
-        out.append(Slot(
-            slot_id=r["c"]["slot_id"], kind=r["c"]["kind"], scheduled_for=r["at"],
-            time_et=r["at"].astimezone(ET).strftime("%H:%M"), target_ids=tuple(r["targets"]), status=r["status"],
-            schedule_version=version, note=r["note"], start_rule=r["c"]["start_rule"],
-        ))
+        out.append(
+            Slot(
+                slot_id=r["c"]["slot_id"],
+                kind=r["c"]["kind"],
+                scheduled_for=r["at"],
+                time_et=r["at"].astimezone(ET).strftime("%H:%M"),
+                target_ids=tuple(r["targets"]),
+                status=r["status"],
+                schedule_version=version,
+                note=r["note"],
+                start_rule=r["c"]["start_rule"],
+            )
+        )
     return out

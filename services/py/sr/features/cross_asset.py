@@ -23,7 +23,7 @@ def cross_asset_features(series_by_symbol: dict[str, pd.Series], as_of: datetime
         elif f["name"].startswith("vix_change"):
             ss, t = checked(s, as_of, f["symbol"])
             now, before = value_at(ss, t), value_at(ss, t - pd.Timedelta(minutes=f["minutes"]))
-            out[f["name"]] = None if now is None or before is None else now - before   # VIX points
+            out[f["name"]] = None if now is None or before is None else now - before  # VIX points
         else:
             out[f["name"]] = return_pct(s, as_of, int(f["minutes"]), f["symbol"])
     return out

@@ -34,7 +34,11 @@ def basket_return(
     (default from config, D-06 = 1) are missing the benchmark is unavailable; otherwise the remaining
     weights are renormalised to sum to 1 (equal weight stays equal weight).
     """
-    mm = int(load("benchmarks")["semis_peer_v1"]["max_missing_constituents"]) if max_missing is None else max_missing
+    mm = (
+        int(load("benchmarks")["semis_peer_v1"]["max_missing_constituents"])
+        if max_missing is None
+        else max_missing
+    )
     missing = tuple(c for c in weights if not (_ok(start_prices.get(c)) and _ok(end_prices.get(c))))
     if len(missing) > mm:
         return BasketReturn("benchmark_unavailable", None, missing, {})
@@ -43,7 +47,11 @@ def basket_return(
     if total <= 0:
         return BasketReturn("benchmark_unavailable", None, missing, {})
     used = {c: w / total for c, w in avail.items()}
-    ret = sum(w * (float(end_prices[c]) / float(start_prices[c]) - 1.0) for c, w in used.items())  # type: ignore[arg-type]
+    ret = 0.0
+    for c, w in used.items():
+        p0, p1 = start_prices[c], end_prices[c]
+        assert p0 is not None and p1 is not None
+        ret += w * (float(p1) / float(p0) - 1.0)
     return BasketReturn("ok", ret * 100.0, missing, used)
 
 

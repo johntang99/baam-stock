@@ -5,8 +5,15 @@ from sr.calendar.schedule import Slot, schedule_slots
 from sr.calendar.windows import Availability, is_target_available, next_regular_session
 
 __all__ = [
-    "Availability", "Session", "Slot", "TradingCalendar", "get_calendar", "is_target_available",
-    "next_regular_session", "schedule_slots", "session",
+    "Availability",
+    "Session",
+    "Slot",
+    "TradingCalendar",
+    "get_calendar",
+    "is_target_available",
+    "next_regular_session",
+    "schedule_slots",
+    "session",
 ]
 
 

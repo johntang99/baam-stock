@@ -16,8 +16,8 @@ INTRADAY_60M = {"regular_60m", "regular_60m_move"}
 class Availability:
     target_id: str
     available: bool
-    abstain_reason: str | None     # DC abstain_reason enum when not available
-    session: Session | None        # session the window falls in
+    abstain_reason: str | None  # DC abstain_reason enum when not available
+    session: Session | None  # session the window falls in
     window_end_at: datetime | None  # latest possible window end (UTC), when known
     detail: str
 
@@ -29,7 +29,9 @@ def _params() -> tuple[int, int, int]:
     return int(dur), int(av["regular_60m_settle_tolerance_s"]), int(av["to_close_min_remaining_min"])
 
 
-def is_target_available(target_id: str, published_at: datetime, cal: TradingCalendar | None = None) -> Availability:
+def is_target_available(
+    target_id: str, published_at: datetime, cal: TradingCalendar | None = None
+) -> Availability:
     """Can a forecast for `target_id` be published at `published_at`?
 
     - regular_60m / regular_60m_move: regular session in progress and published_at + 60m + 30s <= close (D-18).
@@ -51,8 +53,14 @@ def is_target_available(target_id: str, published_at: datetime, cal: TradingCale
 
     s = cal.session_for_instant(t)
     if not s.is_open or s.open_at is None or s.close_at is None or not (s.open_at <= t < s.close_at):
-        return Availability(target_id, False, "market_closed", s if s.is_open else None, None,
-                            "published outside the regular session")
+        return Availability(
+            target_id,
+            False,
+            "market_closed",
+            s if s.is_open else None,
+            None,
+            "published outside the regular session",
+        )
     if target_id in INTRADAY_60M:
         end = t + timedelta(minutes=dur_min)
         if end + timedelta(seconds=tol_s) <= s.close_at:
@@ -61,7 +69,9 @@ def is_target_available(target_id: str, published_at: datetime, cal: TradingCale
     remaining = s.close_at - t
     if remaining >= timedelta(minutes=min_remaining):
         return Availability(target_id, True, None, s, s.close_at, f"{remaining} to close >= {min_remaining}m")
-    return Availability(target_id, False, "window_insufficient", s, None, f"{remaining} to close < {min_remaining}m")
+    return Availability(
+        target_id, False, "window_insufficient", s, None, f"{remaining} to close < {min_remaining}m"
+    )
 
 
 def next_regular_session(published_at: datetime, cal: TradingCalendar | None = None) -> Session:

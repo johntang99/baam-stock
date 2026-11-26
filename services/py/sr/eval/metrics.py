@@ -54,7 +54,9 @@ def brier_skill_score(brier_model: float, brier_reference: float) -> float:
 
 
 # --- reference forecasts (D-30) -------------------------------------------------------------------------
-def class_frequency_forecast(train_outcomes: Sequence[str], classes: Sequence[str] = CLASSES) -> dict[str, float]:
+def class_frequency_forecast(
+    train_outcomes: Sequence[str], classes: Sequence[str] = CLASSES
+) -> dict[str, float]:
     """Constant forecast = class frequencies of the (earlier) training labels."""
     if not train_outcomes:
         raise ValueError("class_frequency needs training labels")

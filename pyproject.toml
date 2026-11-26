@@ -28,7 +28,7 @@ sr = { workspace = true }
 [tool.ruff]
 line-length = 110
 target-version = "py312"
-extend-exclude = ["services/py/sr/contracts/_gen"]
+extend-exclude = ["services/py/sr/contracts/_gen", "docs", "prototype", "*.md"]
 
 [tool.ruff.lint]
 select = ["E", "F", "W", "I", "B", "UP", "DTZ"]
@@ -37,9 +37,13 @@ ignore = ["E501"]
 [tool.pytest.ini_options]
 testpaths = ["services/py/tests"]
 addopts = "-ra"
+filterwarnings = ["ignore:Series.values returning an ndarray:DeprecationWarning", "ignore::pandas.errors.Pandas4Warning"]
 
 [tool.mypy]
 python_version = "3.12"
 strict = true
 ignore_missing_imports = true
 exclude = ["services/py/sr/contracts/_gen/"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["sr", "tests"]

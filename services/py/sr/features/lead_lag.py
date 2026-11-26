@@ -10,8 +10,9 @@ from sr.config import load
 from sr.features._series import return_pct
 
 
-def lead_lag_features(series_by_symbol: dict[str, pd.Series], constituents: list[str],
-                      as_of: datetime) -> dict[str, float | None]:
+def lead_lag_features(
+    series_by_symbol: dict[str, pd.Series], constituents: list[str], as_of: datetime
+) -> dict[str, float | None]:
     g = load("features/fs-0.2")["groups"]["lead_lag"]
     out: dict[str, float | None] = {}
     for sym in [*constituents, *g["extra_symbols"]]:
