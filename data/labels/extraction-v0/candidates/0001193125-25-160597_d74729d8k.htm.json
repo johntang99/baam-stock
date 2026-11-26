@@ -1,8 +1,102 @@
 {
   "doc_key": "0001193125-25-160597:d74729d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37NXF3NKYMMCGWGACYH9",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA9YNV86VAG2SQ7KE4VE3T",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 770000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "(a) annual base salary increased to $770,000",
+      "span": {
+        "char_start": 3994,
+        "char_end": 4038
+      },
+      "direction": "increase",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "annual base salary (each of Koopmans and Bharathi)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 120,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "(b) target cash bonus percentage for the Annual Incentive Plan (AIP) increased to 120% of base salary",
+      "span": {
+        "char_start": 4040,
+        "char_end": 4141
+      },
+      "direction": "increase",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "target cash bonus percentage for the Annual Incentive Plan (AIP)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 8,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "(c) each received a grant in the amount of $8 million of restricted stock units that vest over 4 years",
+      "span": {
+        "char_start": 4143,
+        "char_end": 4245
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "restricted stock unit grant (each)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 12,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "(d) each received a grant of performance-based restricted stock units with a target amount of $12 million",
+      "span": {
+        "char_start": 4251,
+        "char_end": 4356
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "performance-based restricted stock unit grant target amount (each)",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "(a) annual base salary increased to $770,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "(b) target cash bonus percentage for the Annual Incentive Plan (AIP) increased to 120% of base salary",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "(c) each received a grant in the amount of $8 million of restricted stock units that vest over 4 years",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "(d) each received a grant of performance-based restricted stock units with a target amount of $12 million",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

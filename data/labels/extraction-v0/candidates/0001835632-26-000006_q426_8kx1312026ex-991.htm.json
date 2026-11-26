@@ -1,24 +1,96 @@
 {
   "doc_key": "0001835632-26-000006:q426_8kx1312026ex-991.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37RT3ARX2BK7SSG8SZ5K",
+  "llm_call_id": "llm_01M8CB41NP0HH5N5NBHQQ4XFTD",
   "candidates": [
     {
       "metric": "revenue",
       "value": 2.219,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue for the fourth quarter of fiscal 2026 was $2.219 billion",
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "• Q4 Net Revenue: $2.219 billion, a new record, grew by 22% year-on-year",
       "span": {
-        "char_start": 655,
-        "char_end": 719
+        "char_start": 158,
+        "char_end": 230
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Q4 Net Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 22,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "• Q4 Net Revenue: $2.219 billion, a new record, grew by 22% year-on-year",
+      "span": {
+        "char_start": 158,
+        "char_end": 230
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Q4 Net Revenue growth year-on-year",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 7,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Total Net Revenue $ 2,218.7 $ 2,074.5 $ 1,817.4 22 % 7 %",
+      "span": {
+        "char_start": 28930,
+        "char_end": 28986
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total Net Revenue QoQ % change",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 51.7,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "• Q4 Gross Margin: 51.7% GAAP gross margin; 59.0% non-GAAP gross margin",
+      "span": {
+        "char_start": 231,
+        "char_end": 302
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP gross margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 59.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "• Q4 Gross Margin: 51.7% GAAP gross margin; 59.0% non-GAAP gross margin",
+      "span": {
+        "char_start": 231,
+        "char_end": 302
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "non-GAAP gross margin",
       "segment": null
     },
     {
@@ -26,17 +98,35 @@
       "value": 396.1,
       "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income for the fourth quarter of fiscal 2026 was $396.1 million",
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP net income for the fourth quarter of fiscal 2026 was $396.1 million, or $0.46 per diluted share.",
       "span": {
-        "char_start": 817,
-        "char_end": 884
+        "char_start": 812,
+        "char_end": 913
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP net income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 0.46,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP net income for the fourth quarter of fiscal 2026 was $396.1 million, or $0.46 per diluted share.",
+      "span": {
+        "char_start": 812,
+        "char_end": 913
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP diluted income per share",
       "segment": null
     },
     {
@@ -44,35 +134,305 @@
       "value": 685.1,
       "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income for the fourth quarter of fiscal 2026 was $685.1 million",
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP net income for the fourth quarter of fiscal 2026 was $685.1 million, or $0.80 per diluted share.",
       "span": {
-        "char_start": 923,
-        "char_end": 990
+        "char_start": 914,
+        "char_end": 1019
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP net income",
       "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 0.8,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP net income for the fourth quarter of fiscal 2026 was $685.1 million, or $0.80 per diluted share.",
+      "span": {
+        "char_start": 914,
+        "char_end": 1019
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "non-GAAP diluted income per share",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 373.7,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Cash flow from operations for the fourth quarter was $373.7 million.",
+      "span": {
+        "char_start": 1020,
+        "char_end": 1088
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash flow from operations",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 1147.9,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Gross profit 1,147.9 1,069.8 917.4 4,180.7 2,382.2",
+      "span": {
+        "char_start": 16409,
+        "char_end": 16459
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross profit",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 743.5,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Total operating expenses 743.5 712.0 682.2 2,857.8 3,102.5",
+      "span": {
+        "char_start": 16674,
+        "char_end": 16732
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 404.4,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Operating income (loss) 404.4 357.8 235.2 1,322.9 (720.3)",
+      "span": {
+        "char_start": 16733,
+        "char_end": 16790
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income (loss)",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 18.2,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP operating margin 18.2 % 17.2 % 12.9 % 16.1 % (12.5) %",
+      "span": {
+        "char_start": 22632,
+        "char_end": 22690
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP operating margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 35.7,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP operating margin 35.7 % 36.3 % 33.7 % 35.3 % 28.9 %",
+      "span": {
+        "char_start": 22987,
+        "char_end": 23047
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP operating margin",
+      "segment": null
+    },
+    {
+      "metric": "data_center_revenue",
+      "value": 1651.3,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Data center $ 1,651.3 $ 1,517.9 $ 1,365.8 21 % 9 %",
+      "span": {
+        "char_start": 28827,
+        "char_end": 28877
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data center revenue",
+      "segment": "Data center"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 21,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Data center $ 1,651.3 $ 1,517.9 $ 1,365.8 21 % 9 %",
+      "span": {
+        "char_start": 28827,
+        "char_end": 28877
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data center revenue YoY % change",
+      "segment": "Data center"
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 9,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Data center $ 1,651.3 $ 1,517.9 $ 1,365.8 21 % 9 %",
+      "span": {
+        "char_start": 28827,
+        "char_end": 28877
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data center revenue QoQ % change",
+      "segment": "Data center"
+    },
+    {
+      "metric": "revenue",
+      "value": 567.4,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Communications and other 567.4 556.6 451.6 26 % 2 %",
+      "span": {
+        "char_start": 28878,
+        "char_end": 28929
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Communications and other revenue",
+      "segment": "Communications and other"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 26,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Communications and other 567.4 556.6 451.6 26 % 2 %",
+      "span": {
+        "char_start": 28878,
+        "char_end": 28929
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Communications and other revenue YoY % change",
+      "segment": "Communications and other"
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 2,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Communications and other 567.4 556.6 451.6 26 % 2 %",
+      "span": {
+        "char_start": 28878,
+        "char_end": 28929
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Communications and other revenue QoQ % change",
+      "segment": "Communications and other"
+    },
+    {
+      "metric": "other",
+      "value": 74,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2026",
+      "basis": null,
+      "quote": "Data center 74 % 73 % 75 %",
+      "span": {
+        "char_start": 29090,
+        "char_end": 29116
+      },
+      "direction": "none",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data center revenue % of total",
+      "segment": "Data center"
     },
     {
       "metric": "revenue",
       "value": 8.195,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue for fiscal 2026 was $8.195 billion",
+      "period": "fiscal 2026",
+      "basis": "gaap",
+      "quote": "Net revenue for fiscal 2026 was $8.195 billion, a new record.",
       "span": {
-        "char_start": 1093,
-        "char_end": 1135
+        "char_start": 1089,
+        "char_end": 1150
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net revenue for fiscal 2026",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 42,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal 2026",
+      "basis": "gaap",
+      "quote": "Marvell delivered record fiscal 2026 revenue of $8.195 billion, growing 42% year-over-year, driven by robust AI demand.",
+      "span": {
+        "char_start": 1316,
+        "char_end": 1435
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "fiscal 2026 revenue growth year-over-year",
       "segment": null
     },
     {
@@ -80,17 +440,35 @@
       "value": 2.67,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income for fiscal 2026 was $2.670 billion",
+      "period": "fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP net income for fiscal 2026 was $2.670 billion, or $3.07 per diluted share.",
       "span": {
-        "char_start": 1156,
-        "char_end": 1201
+        "char_start": 1151,
+        "char_end": 1230
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP net income for fiscal 2026",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 3.07,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP net income for fiscal 2026 was $2.670 billion, or $3.07 per diluted share.",
+      "span": {
+        "char_start": 1151,
+        "char_end": 1230
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP diluted EPS for fiscal 2026",
       "segment": null
     },
     {
@@ -98,48 +476,258 @@
       "value": 2.466,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income for fiscal 2026 was $2.466 billion",
+      "period": "fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP net income for fiscal 2026 was $2.466 billion, or $2.84 per diluted share.",
       "span": {
-        "char_start": 1240,
-        "char_end": 1285
+        "char_start": 1231,
+        "char_end": 1314
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP net income for fiscal 2026",
       "segment": null
     },
     {
-      "metric": "revenue",
-      "value": 8.195,
+      "metric": "eps",
+      "value": 2.84,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP net income for fiscal 2026 was $2.466 billion, or $2.84 per diluted share.",
+      "span": {
+        "char_start": 1231,
+        "char_end": 1314
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP diluted EPS for fiscal 2026",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 81,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "non-GAAP EPS of $2.84, up 81% year-over-year",
+      "span": {
+        "char_start": 1476,
+        "char_end": 1520
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "non-GAAP EPS growth year-over-year",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 59.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP gross margin 59.0 % 59.7 % 60.1 % 59.5 % 61.0 %",
+      "span": {
+        "char_start": 22073,
+        "char_end": 22129
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP gross margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 1750.5,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal 2026",
+      "basis": "gaap",
+      "quote": "Net cash provided by operating activities 373.7 514.0 1,750.5 1,681.2",
+      "span": {
+        "char_start": 19766,
+        "char_end": 19835
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net cash provided by operating activities",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 2.4,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue of $8.195 billion",
+      "period": "first quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Net revenue is expected to be $2.400 billion +/- 5%.",
       "span": {
-        "char_start": 1353,
-        "char_end": 1378
+        "char_start": 2230,
+        "char_end": 2282
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Net revenue outlook",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": null,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP gross margin is expected to be 51.4% to 52.4%.",
+      "span": {
+        "char_start": 2285,
+        "char_end": 2336
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP gross margin outlook",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": null,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP gross margin is expected to be 58.25% to 59.25%.",
+      "span": {
+        "char_start": 2339,
+        "char_end": 2396
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP gross margin outlook",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 872,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP operating expenses are expected to be approximately $872 million.",
+      "span": {
+        "char_start": 2399,
+        "char_end": 2469
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP operating expenses outlook",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 575,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP operating expenses are expected to be approximately $575 million.",
+      "span": {
+        "char_start": 2472,
+        "char_end": 2546
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP operating expenses outlook",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 0.31,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP diluted net income per share is expected to be $0.31 +/- $0.05 per share.",
+      "span": {
+        "char_start": 2703,
+        "char_end": 2781
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP diluted net income per share outlook",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 0.79,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP diluted net income per share is expected to be $0.79 +/- $0.05 per share.",
+      "span": {
+        "char_start": 2784,
+        "char_end": 2866
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP diluted net income per share outlook",
       "segment": null
     }
   ],
   "dropped": [
     {
-      "metric": "revenue",
-      "quote": "revenue for the fourth quarter of fiscal 2026 was $2.219 billion",
-      "reason": "conflicting_values"
+      "metric": "gross_profit",
+      "quote": "Gross profit 1,147.9 1,069.8 917.4 4,180.7 2,382.2",
+      "reason": "value_not_in_quote"
     },
     {
-      "metric": "net_income",
-      "quote": "net income for the fourth quarter of fiscal 2026 was $396.1 million",
-      "reason": "conflicting_values"
+      "metric": "operating_expenses",
+      "quote": "Total operating expenses 743.5 712.0 682.2 2,857.8 3,102.5",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income (loss) 404.4 357.8 235.2 1,322.9 (720.3)",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "data_center_revenue",
+      "quote": "Data center $ 1,651.3 $ 1,517.9 $ 1,365.8 21 % 9 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Communications and other 567.4 556.6 451.6 26 % 2 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Data center 74 % 73 % 75 %",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "non-GAAP EPS of $2.84, up 81% year-over-year",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "quote": "Net cash provided by operating activities 373.7 514.0 1,750.5 1,681.2",
+      "reason": "value_not_in_quote"
     }
   ],
   "validation_notes": []

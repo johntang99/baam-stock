@@ -1,8 +1,56 @@
 {
   "doc_key": "0001193125-25-163086:d50314d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37NX4MRB9M9718QZBQ4S",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAA6BEDM9DG6H5P11N2AHF",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 100000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "including an annual director retainer of $100,000 and an annual equity grant of restricted stock units valued at $250,000",
+      "span": {
+        "char_start": 4880,
+        "char_end": 5001
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "annual director retainer",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 250000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "including an annual director retainer of $100,000 and an annual equity grant of restricted stock units valued at $250,000",
+      "span": {
+        "char_start": 4880,
+        "char_end": 5001
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "annual equity grant of restricted stock units",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "including an annual director retainer of $100,000 and an annual equity grant of restricted stock units valued at $250,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "including an annual director retainer of $100,000 and an annual equity grant of restricted stock units valued at $250,000",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

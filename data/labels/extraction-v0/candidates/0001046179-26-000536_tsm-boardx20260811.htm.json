@@ -1,8 +1,151 @@
 {
   "doc_key": "0001046179-26-000536:tsm-boardx20260811.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37KWJVJ2DVJ0WE788EBA",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9SY1WB202G75FBA01XME7",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 1270.38,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": null,
+      "quote": "Second quarter consolidated revenue was NT$1,270.38 billion",
+      "span": {
+        "char_start": 1735,
+        "char_end": 1794
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Second quarter consolidated revenue",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 706.56,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": null,
+      "quote": "net income was NT$706.56 billion",
+      "span": {
+        "char_start": 1799,
+        "char_end": 1831
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "net income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 27.25,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "with diluted earnings per share of NT$27.25",
+      "span": {
+        "char_start": 1833,
+        "char_end": 1876
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "diluted earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 7.0,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": null,
+      "quote": "Approved the distribution of a NT$7.0 per share cash dividend for the second quarter of 2026",
+      "span": {
+        "char_start": 1881,
+        "char_end": 1973
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "cash dividend per share",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 29442.5,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "the Board approved capital appropriations of approximately US$29,442.50 million",
+      "span": {
+        "char_start": 3079,
+        "char_end": 3158
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "capital appropriations",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 282,
+      "unit": "USD_billion",
+      "currency": "JPY",
+      "period": null,
+      "basis": null,
+      "quote": "the subscription for shares in the joint venture of not more than 282 billion Japanese yen",
+      "span": {
+        "char_start": 3572,
+        "char_end": 3662
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "subscription for shares in the joint venture with Sony Semiconductor Solutions (maximum)",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 49.33,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "six months ended June 30, 2026",
+      "basis": "gaap",
+      "quote": "Basic EPS (NT$) 49.33",
+      "span": {
+        "char_start": 5376,
+        "char_end": 5397
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Basic EPS (NT$)",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Approved the distribution of a NT$7.0 per share cash dividend for the second quarter of 2026",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the Board approved capital appropriations of approximately US$29,442.50 million",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the subscription for shares in the joint venture of not more than 282 billion Japanese yen",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

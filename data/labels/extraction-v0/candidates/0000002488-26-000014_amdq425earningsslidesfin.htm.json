@@ -1,72 +1,1283 @@
 {
   "doc_key": "0000002488-26-000014:amdq425earningsslidesfin.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37FMBG7D1H73T2Z9G1JY",
+  "llm_call_id": "llm_01M8C7K27D77HDTJJR9695Y28Z",
   "candidates": [
-    {
-      "metric": "revenue",
-      "value": 1995.0,
-      "unit": "number",
-      "currency": null,
-      "period": null,
-      "basis": null,
-      "quote": "revenue, expected revenue from AMD Instinct MI308 sales to China, non-GAAP gross margin, non-GAAP operating expenses, non-GAAP Interest Expense/Other Income (Expense), net, non-GAAP tax rate and diluted share count; AMD’s large and compelling TAM; AMD’s ability to expand Data Center and AI leadership; AMD's financial and operating performance; and AMD’s ability to drive long-term shareholder returns, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
-      "span": {
-        "char_start": 608,
-        "char_end": 1121
-      },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
-    },
     {
       "metric": "revenue",
       "value": 10.3,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "Revenue Record revenue of $10.3 billion",
+      "period": "Q4 2025",
+      "basis": "gaap",
+      "quote": "Record revenue of $10.3 billion increased 34% y/y",
       "span": {
-        "char_start": 9258,
-        "char_end": 9297
+        "char_start": 9266,
+        "char_end": 9315
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Record revenue",
       "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 34,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q4 2025",
+      "basis": "gaap",
+      "quote": "Record revenue of $10.3 billion increased 34% y/y",
+      "span": {
+        "char_start": 9266,
+        "char_end": 9315
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue y/y growth",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 11,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q4 2025",
+      "basis": "gaap",
+      "quote": "Revenue $10,270 $7,658 Up 34% $9,246 Up 11%",
+      "span": {
+        "char_start": 10777,
+        "char_end": 10820
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue Q/Q",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 5577,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": "gaap",
+      "quote": "Gross Profit $5,577 $3,882 Up 44% $4,780 Up 17%",
+      "span": {
+        "char_start": 10821,
+        "char_end": 10868
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross Profit",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 54,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q4 2025",
+      "basis": "gaap",
+      "quote": "Gross Margin 54% 51% Up 3 ppts 52% Up 2 ppts",
+      "span": {
+        "char_start": 10869,
+        "char_end": 10913
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross Margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 3825,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": "gaap",
+      "quote": "Operating Expenses $3,825 $3,011 Up 27% $3,510 Up 9%",
+      "span": {
+        "char_start": 10914,
+        "char_end": 10966
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 1752,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": "gaap",
+      "quote": "Operating Income $1,752 $871 Up 101% $1,270 Up 38%",
+      "span": {
+        "char_start": 11023,
+        "char_end": 11073
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Income",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 17,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q4 2025",
+      "basis": "gaap",
+      "quote": "Operating Margin 17% 11% Up 6 ppts 14% Up 3 ppts",
+      "span": {
+        "char_start": 11074,
+        "char_end": 11122
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Margin",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 1511,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": "gaap",
+      "quote": "Net Income $1,511 $482 Up 213% $1,243 Up 22%",
+      "span": {
+        "char_start": 11123,
+        "char_end": 11167
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 0.92,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": "gaap",
+      "quote": "Diluted Earnings Per Share $0.92 $0.29 Up 217% $0.75 Up 23%",
+      "span": {
+        "char_start": 11168,
+        "char_end": 11227
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Diluted Earnings Per Share",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 5855,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": "non_gaap",
+      "quote": "Gross Profit $5,855 $4,140 Up 41% $4,992 Up 17%",
+      "span": {
+        "char_start": 11621,
+        "char_end": 11668
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Gross Profit",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 57,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q4 2025",
+      "basis": "non_gaap",
+      "quote": "Gross Margin 57% 54% Up 3 ppts 54% Up 3 ppts",
+      "span": {
+        "char_start": 11669,
+        "char_end": 11713
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Gross Margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 3001,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": "non_gaap",
+      "quote": "Operating Expenses $3,001 $2,114 Up 42% $2,754 Up 9%",
+      "span": {
+        "char_start": 11714,
+        "char_end": 11766
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Operating Expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 2854,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": "non_gaap",
+      "quote": "Operating Income $2,854 $2,026 Up 41% $2,238 Up 28%",
+      "span": {
+        "char_start": 11821,
+        "char_end": 11872
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Operating Income",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 28,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q4 2025",
+      "basis": "non_gaap",
+      "quote": "Operating Margin 28% 26% Up 2 ppts 24% Up 4 ppts",
+      "span": {
+        "char_start": 11873,
+        "char_end": 11921
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Operating Margin",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 2519,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": "non_gaap",
+      "quote": "Net Income $2,519 $1,777 Up 42% $1,965 Up 28%",
+      "span": {
+        "char_start": 11922,
+        "char_end": 11967
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Net Income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 1.53,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": "non_gaap",
+      "quote": "Diluted Earnings Per Share $1.53 $1.09 Up 40% $1.20 Up 28%",
+      "span": {
+        "char_start": 11968,
+        "char_end": 12026
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Diluted Earnings Per Share",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 55,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q4 2025",
+      "basis": "non_gaap",
+      "quote": "Adjusted Non-GAAP gross margin 55%",
+      "span": {
+        "char_start": 24465,
+        "char_end": 24499
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Adjusted Non-GAAP gross margin",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 390,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": null,
+      "quote": "Fourth quarter of 2025 results included AMD Instinct MI308 GPU product revenue to China of ~$390 million",
+      "span": {
+        "char_start": 9440,
+        "char_end": 9544
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "AMD Instinct MI308 GPU product revenue to China",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "other",
+      "value": 360,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": null,
+      "quote": "Fourth quarter 2025 results included the release of inventory and related charges of ~$360 million.",
+      "span": {
+        "char_start": 9674,
+        "char_end": 9773
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Release of inventory and related charges",
+      "segment": null
+    },
+    {
+      "metric": "data_center_revenue",
+      "value": 5380,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": "gaap",
+      "quote": "Data Center Net Revenue 5,380 3,859 Up 39% 4,341 Up 24%",
+      "span": {
+        "char_start": 12393,
+        "char_end": 12448
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center Net Revenue",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "operating_income",
+      "value": 1752,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": "gaap",
+      "quote": "Operating Income 1,752 1,157 Up 51% 1,074 Up 63%",
+      "span": {
+        "char_start": 12449,
+        "char_end": 12497
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center Operating Income",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 33,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q4 2025",
+      "basis": "gaap",
+      "quote": "30% 33% Q4 2024 Q4 2025",
+      "span": {
+        "char_start": 17010,
+        "char_end": 17033
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center Operating Margin",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue",
+      "value": 3940,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": "gaap",
+      "quote": "Client & Gaming Net Revenue 3,940 2,876 Up 37% 4,048 Down 3%",
+      "span": {
+        "char_start": 12498,
+        "char_end": 12558
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Client & Gaming Net Revenue",
+      "segment": "Client and Gaming"
+    },
+    {
+      "metric": "operating_income",
+      "value": 725,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": "gaap",
+      "quote": "Operating Income 725 496 Up 46% 867 Down 16%",
+      "span": {
+        "char_start": 12559,
+        "char_end": 12603
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Client & Gaming Operating Income",
+      "segment": "Client and Gaming"
+    },
+    {
+      "metric": "revenue",
+      "value": 3.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": "gaap",
+      "quote": "Client $3.1B",
+      "span": {
+        "char_start": 18172,
+        "char_end": 18184
+      },
+      "direction": "increase",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "Client revenue",
+      "segment": "Client"
+    },
+    {
+      "metric": "revenue",
+      "value": 0.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": "gaap",
+      "quote": "Gaming $0.8B",
+      "span": {
+        "char_start": 18198,
+        "char_end": 18210
+      },
+      "direction": "increase",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "Gaming revenue",
+      "segment": "Gaming"
+    },
+    {
+      "metric": "revenue",
+      "value": 950,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": "gaap",
+      "quote": "Embedded Net Revenue 950 923 Up 3% 857 Up 11%",
+      "span": {
+        "char_start": 12604,
+        "char_end": 12649
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Embedded Net Revenue",
+      "segment": "Embedded"
+    },
+    {
+      "metric": "operating_income",
+      "value": 357,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": "gaap",
+      "quote": "Operating Income 357 362 Down 1% 283 Up 26%",
+      "span": {
+        "char_start": 12650,
+        "char_end": 12693
+      },
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Embedded Operating Income",
+      "segment": "Embedded"
     },
     {
       "metric": "revenue",
       "value": 34.6,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "Revenue Record full year revenue of $34.6 billion",
+      "period": "fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Record full year revenue of $34.6 billion increased 34% y/y",
       "span": {
-        "char_start": 12754,
-        "char_end": 12803
+        "char_start": 12762,
+        "char_end": 12821
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Record full year revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 34,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Record full year revenue of $34.6 billion increased 34% y/y",
+      "span": {
+        "char_start": 12762,
+        "char_end": 12821
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Full year revenue y/y growth",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 17152,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Gross Profit $17,152 $12,725 Up 35%",
+      "span": {
+        "char_start": 13942,
+        "char_end": 13977
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross Profit",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 50,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Gross Margin 50% 49% Up 1 ppt",
+      "span": {
+        "char_start": 13978,
+        "char_end": 14007
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross Margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 13458,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Operating Expenses $13,458 $10,825 Up 24%",
+      "span": {
+        "char_start": 14008,
+        "char_end": 14049
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 3694,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Operating Income $3,694 $1,900 Up 94%",
+      "span": {
+        "char_start": 14094,
+        "char_end": 14131
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Income",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 11,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Operating Margin 11% 7% Up 4 ppts",
+      "span": {
+        "char_start": 14132,
+        "char_end": 14165
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Margin",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 4335,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Net Income $4,335 $1,641 Up 164%",
+      "span": {
+        "char_start": 14166,
+        "char_end": 14198
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 2.65,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Diluted Earnings Per Share $2.65 $1.00 Up 165%",
+      "span": {
+        "char_start": 14199,
+        "char_end": 14245
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Diluted Earnings Per Share",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 18165,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year 2025",
+      "basis": "non_gaap",
+      "quote": "Gross Profit $18,165 $13,759 Up 32%",
+      "span": {
+        "char_start": 14609,
+        "char_end": 14644
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Gross Profit",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 52,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal year 2025",
+      "basis": "non_gaap",
+      "quote": "Gross Margin 52% 53% Down 1 ppt",
+      "span": {
+        "char_start": 14645,
+        "char_end": 14676
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Gross Margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 10397,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year 2025",
+      "basis": "non_gaap",
+      "quote": "Operating Expenses $10,397 $7,621 Up 36%",
+      "span": {
+        "char_start": 14677,
+        "char_end": 14717
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Operating Expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 7768,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year 2025",
+      "basis": "non_gaap",
+      "quote": "Operating Income $7,768 $6,138 Up 27%",
+      "span": {
+        "char_start": 14759,
+        "char_end": 14796
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Operating Income",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 22,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal year 2025",
+      "basis": "non_gaap",
+      "quote": "Operating Margin 22% 24% Down 2 ppts",
+      "span": {
+        "char_start": 14797,
+        "char_end": 14833
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Operating Margin",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 6831,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year 2025",
+      "basis": "non_gaap",
+      "quote": "Net Income $6,831 $5,420 Up 26%",
+      "span": {
+        "char_start": 14834,
+        "char_end": 14865
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Net Income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 4.17,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "fiscal year 2025",
+      "basis": "non_gaap",
+      "quote": "Diluted Earnings Per Share $4.17 $3.31 Up 26%",
+      "span": {
+        "char_start": 14866,
+        "char_end": 14911
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Diluted Earnings Per Share",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 440,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year 2025",
+      "basis": null,
+      "quote": "Fiscal year 2025 results included ~$440 million in net inventory and related charges",
+      "span": {
+        "char_start": 14249,
+        "char_end": 14333
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net inventory and related charges (MI308 export control)",
+      "segment": null
+    },
+    {
+      "metric": "data_center_revenue",
+      "value": 16635,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Data Center Net Revenue $16,635 $12,579 Up 32%",
+      "span": {
+        "char_start": 15260,
+        "char_end": 15306
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center Net Revenue",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "operating_income",
+      "value": 3603,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Operating Income $3,603 $3,482 Up 3%",
+      "span": {
+        "char_start": 15307,
+        "char_end": 15343
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center Operating Income",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue",
+      "value": 14550,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Client & Gaming Net Revenue $14,550 $9,649 Up 51%",
+      "span": {
+        "char_start": 15344,
+        "char_end": 15393
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Client & Gaming Net Revenue",
+      "segment": "Client and Gaming"
+    },
+    {
+      "metric": "operating_income",
+      "value": 2855,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Operating Income $2,855 $1,187 Up 141%",
+      "span": {
+        "char_start": 15394,
+        "char_end": 15432
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Client & Gaming Operating Income",
+      "segment": "Client and Gaming"
+    },
+    {
+      "metric": "revenue",
+      "value": 3454,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Embedded Net Revenue $3,454 $3,557 Down 3%",
+      "span": {
+        "char_start": 15433,
+        "char_end": 15475
+      },
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Embedded Net Revenue",
+      "segment": "Embedded"
+    },
+    {
+      "metric": "operating_income",
+      "value": 1243,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Operating Income $1,243 $1,421 Down 13%",
+      "span": {
+        "char_start": 15476,
+        "char_end": 15515
+      },
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Embedded Operating Income",
+      "segment": "Embedded"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 2304,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": "gaap",
+      "quote": "GAAP net cash provided by operating activities of continuing operations $ 2,304",
+      "span": {
+        "char_start": 28177,
+        "char_end": 28256
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP net cash provided by operating activities of continuing operations",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 2082,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 2,082",
+      "span": {
+        "char_start": 28359,
+        "char_end": 28381
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 10552,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2025",
+      "basis": "gaap",
+      "quote": "Cash, Cash Equivalents and Short-term Investments $10,552 $7,243 Up 46%",
+      "span": {
+        "char_start": 15652,
+        "char_end": 15723
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash, Cash Equivalents and Short-term Investments",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 9.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "Q1 2026",
+      "basis": "gaap",
+      "quote": "Revenue ~$9.8 Billion, +/- $300 Million",
+      "span": {
+        "char_start": 20519,
+        "char_end": 20558
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Revenue",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 100,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q1 2026",
+      "basis": null,
+      "quote": "Including ~$100 Million of AMD Instinct MI308 sales to China",
+      "span": {
+        "char_start": 20559,
+        "char_end": 20619
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "guidance",
+      "metric_label": "AMD Instinct MI308 sales to China included in outlook",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 55,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q1 2026",
+      "basis": "non_gaap",
+      "quote": "Gross Margin ~55%",
+      "span": {
+        "char_start": 20620,
+        "char_end": 20637
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Gross Margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 3.05,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "Q1 2026",
+      "basis": "non_gaap",
+      "quote": "Operating Expenses ~$3.05 Billion",
+      "span": {
+        "char_start": 20638,
+        "char_end": 20671
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Operating Expenses",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 13,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q1 2026",
+      "basis": "non_gaap",
+      "quote": "Effective Tax Rate ~13% of pre-tax income",
+      "span": {
+        "char_start": 20730,
+        "char_end": 20771
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Effective Tax Rate",
       "segment": null
     }
   ],
   "dropped": [
     {
-      "metric": "revenue",
-      "quote": "revenue, expected revenue from AMD Instinct MI308 sales to China, non-GAAP gross margin, non-GAAP operating expenses, non-GAAP Interest Expense/Other Income (Expense), net, non-GAAP tax rate and diluted share count; AMD’s large and compelling TAM; AMD’s ability to expand Data Center and AI leadership; AMD's financial and operating performance; and AMD’s ability to drive long-term shareholder returns, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
-      "reason": "unit_not_allowed:number"
+      "metric": "gross_profit",
+      "quote": "Gross Profit $5,577 $3,882 Up 44% $4,780 Up 17%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating Expenses $3,825 $3,011 Up 27% $3,510 Up 9%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income $1,752 $871 Up 101% $1,270 Up 38%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net Income $1,511 $482 Up 213% $1,243 Up 22%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross Profit $5,855 $4,140 Up 41% $4,992 Up 17%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating Expenses $3,001 $2,114 Up 42% $2,754 Up 9%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income $2,854 $2,026 Up 41% $2,238 Up 28%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net Income $2,519 $1,777 Up 42% $1,965 Up 28%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Fourth quarter of 2025 results included AMD Instinct MI308 GPU product revenue to China of ~$390 million",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Fourth quarter 2025 results included the release of inventory and related charges of ~$360 million.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "data_center_revenue",
+      "quote": "Data Center Net Revenue 5,380 3,859 Up 39% 4,341 Up 24%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income 1,752 1,157 Up 51% 1,074 Up 63%",
+      "reason": "value_not_in_quote"
     },
     {
       "metric": "revenue",
-      "quote": "Revenue Record revenue of $10.3 billion",
+      "quote": "Client & Gaming Net Revenue 3,940 2,876 Up 37% 4,048 Down 3%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income 725 496 Up 46% 867 Down 16%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Client $3.1B",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Gaming $0.8B",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Embedded Net Revenue 950 923 Up 3% 857 Up 11%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income 357 362 Down 1% 283 Up 26%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross Profit $17,152 $12,725 Up 35%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating Expenses $13,458 $10,825 Up 24%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income $3,694 $1,900 Up 94%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net Income $4,335 $1,641 Up 164%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross Profit $18,165 $13,759 Up 32%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating Expenses $10,397 $7,621 Up 36%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income $7,768 $6,138 Up 27%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net Income $6,831 $5,420 Up 26%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Fiscal year 2025 results included ~$440 million in net inventory and related charges",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "data_center_revenue",
+      "quote": "Data Center Net Revenue $16,635 $12,579 Up 32%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income $3,603 $3,482 Up 3%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Client & Gaming Net Revenue $14,550 $9,649 Up 51%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income $2,855 $1,187 Up 141%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Embedded Net Revenue $3,454 $3,557 Down 3%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income $1,243 $1,421 Down 13%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "quote": "GAAP net cash provided by operating activities of continuing operations $ 2,304",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "free_cash_flow",
+      "quote": "Free cash flow $ 2,082",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Cash, Cash Equivalents and Short-term Investments $10,552 $7,243 Up 46%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Including ~$100 Million of AMD Instinct MI308 sales to China",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Effective Tax Rate ~13% of pre-tax income",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "quote": "Gross Margin 57% 54% Up 3 ppts 54% Up 3 ppts",
       "reason": "conflicting_values"
     }
   ],

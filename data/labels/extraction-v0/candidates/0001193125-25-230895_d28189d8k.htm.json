@@ -1,8 +1,56 @@
 {
   "doc_key": "0001193125-25-230895:d28189d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37P80EJMY8WDVQMK7VKS",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CACWFAGHSES6M1SG480M5Y",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 0.01,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "a warrant (the “ Warrant ”) to purchase up to an aggregate of 160 million shares of common stock of the Company (the “ Warrant Shares ”) at an exercise price of $0.01 per share",
+      "span": {
+        "char_start": 2233,
+        "char_end": 2409
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Warrant exercise price",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 600,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Vesting of Warrant Shares are further subject to achievement of specified Company stock price targets that escalate to $600 per share for the final tranche and stock performance thresholds.",
+      "span": {
+        "char_start": 2925,
+        "char_end": 3114
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Stock price target for final tranche vesting",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "a warrant (the “ Warrant ”) to purchase up to an aggregate of 160 million shares of common stock of the Company (the “ Warrant Shares ”) at an exercise price of $0.01 per share",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Vesting of Warrant Shares are further subject to achievement of specified Company stock price targets that escalate to $600 per share for the final tranche and stock performance thresholds.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

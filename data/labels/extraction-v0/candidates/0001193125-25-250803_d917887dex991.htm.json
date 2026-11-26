@@ -1,8 +1,33 @@
 {
   "doc_key": "0001193125-25-250803:d917887dex991.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37PA2377Z0RRCBE7PHJE",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CADDBRE0JTXNVWYZ17K4EP",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "AMD (NASDAQ: AMD) today announced the completion of the agreement to divest the ZT Systems U.S.-headquartered data center infrastructure manufacturing business to Sanmina (NASDAQ: SANM).",
+      "span": {
+        "char_start": 585,
+        "char_end": 771
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Completion of divestiture of ZT Systems data center infrastructure manufacturing business to Sanmina",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "AMD (NASDAQ: AMD) today announced the completion of the agreement to divest the ZT Systems U.S.-headquartered data center infrastructure manufacturing business to Sanmina (NASDAQ: SANM).",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

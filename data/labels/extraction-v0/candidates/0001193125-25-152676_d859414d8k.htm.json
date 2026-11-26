@@ -1,8 +1,263 @@
 {
   "doc_key": "0001193125-25-152676:d859414d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37NVJ6D7EW3NMPPVV1GD",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA9AK2SBBEJ9903M8XE2MR",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 500000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "completed a public offering of $500,000,000 aggregate principal amount of its 4.750% Senior Notes due 2030",
+      "span": {
+        "char_start": 2038,
+        "char_end": 2144
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of 4.750% Senior Notes due 2030",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 500000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "$500,000,000 aggregate principal amount of its 5.450% Senior Notes due 2035",
+      "span": {
+        "char_start": 2168,
+        "char_end": 2243
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of 5.450% Senior Notes due 2035",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 4.75,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "The 2030 Notes will accrue interest at a rate of 4.750% per year",
+      "span": {
+        "char_start": 3864,
+        "char_end": 3928
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "interest rate on 2030 Notes",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 5.45,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "the 2035 Notes will accrue interest at a rate of 5.450% per year",
+      "span": {
+        "char_start": 3934,
+        "char_end": 3998
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "interest rate on 2035 Notes",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 992.3,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The net proceeds from the sale of the Notes were approximately $992.3 million after deducting the underwriters’ discount but before other expenses",
+      "span": {
+        "char_start": 2608,
+        "char_end": 2754
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "net proceeds from the sale of the Notes",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The Revolving Credit Agreement provides for borrowings of up to $1.5 billion in the form of revolving loans",
+      "span": {
+        "char_start": 6589,
+        "char_end": 6696
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "revolving credit facility borrowing capacity",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "which provided for a $1.0 billon revolving credit facility maturing April 2028",
+      "span": {
+        "char_start": 7147,
+        "char_end": 7225
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "prior revolving credit facility size",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 99.304,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "The Company sold the 2030 Notes to the Underwriters at a price of 99.304% of the principal amount thereof",
+      "span": {
+        "char_start": 10489,
+        "char_end": 10594
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "price of 2030 Notes sold to Underwriters (% of principal)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 99.904,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "the Underwriters offered the 2030 Notes to the public at a price of 99.904% of the principal amount thereof",
+      "span": {
+        "char_start": 10600,
+        "char_end": 10707
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "public offering price of 2030 Notes (% of principal)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 99.163,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "The Company sold the 2035 Notes to the Underwriters at a price of 99.163% of the principal amount thereof",
+      "span": {
+        "char_start": 10709,
+        "char_end": 10814
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "price of 2035 Notes sold to Underwriters (% of principal)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 99.813,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "the Underwriters offered the 2035 Notes to the public at a price of 99.813% of the principal amount thereof",
+      "span": {
+        "char_start": 10820,
+        "char_end": 10927
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "public offering price of 2035 Notes (% of principal)",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "completed a public offering of $500,000,000 aggregate principal amount of its 4.750% Senior Notes due 2030",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$500,000,000 aggregate principal amount of its 5.450% Senior Notes due 2035",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The 2030 Notes will accrue interest at a rate of 4.750% per year",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the 2035 Notes will accrue interest at a rate of 5.450% per year",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The net proceeds from the sale of the Notes were approximately $992.3 million after deducting the underwriters’ discount but before other expenses",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Revolving Credit Agreement provides for borrowings of up to $1.5 billion in the form of revolving loans",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "which provided for a $1.0 billon revolving credit facility maturing April 2028",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Company sold the 2030 Notes to the Underwriters at a price of 99.304% of the principal amount thereof",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the Underwriters offered the 2030 Notes to the public at a price of 99.904% of the principal amount thereof",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Company sold the 2035 Notes to the Underwriters at a price of 99.163% of the principal amount thereof",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the Underwriters offered the 2035 Notes to the public at a price of 99.813% of the principal amount thereof",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

@@ -1,8 +1,125 @@
 {
   "doc_key": "0000002488-24-000172:amd-20241113.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37EKMBKNSH3068PWHADZ",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C767T63GSBYPG4P26D82DP",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 400000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Mr. Carter’s base salary will be $400,000",
+      "span": {
+        "char_start": 3509,
+        "char_end": 3550
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "base salary",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 70,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "he will be eligible for an annual performance bonus target amount of 70% of his base salary under AMD’s Annual Incentive Plan",
+      "span": {
+        "char_start": 3556,
+        "char_end": 3681
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "annual performance bonus target amount",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 250000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Mr. Carter will also receive a cash sign-on bonus of $250,000",
+      "span": {
+        "char_start": 3683,
+        "char_end": 3744
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "cash sign-on bonus",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 375000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "an award of performance-based restricted stock units with a target value of $375,000",
+      "span": {
+        "char_start": 3757,
+        "char_end": 3841
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "performance-based restricted stock units target value",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1125000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "a restricted stock unit award with a target value of $1,125,000 to be granted under AMD’s 2023 Equity Incentive Plan",
+      "span": {
+        "char_start": 3846,
+        "char_end": 3962
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "restricted stock unit award target value",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Mr. Carter’s base salary will be $400,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "he will be eligible for an annual performance bonus target amount of 70% of his base salary under AMD’s Annual Incentive Plan",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Mr. Carter will also receive a cash sign-on bonus of $250,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "an award of performance-based restricted stock units with a target value of $375,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "a restricted stock unit award with a target value of $1,125,000 to be granted under AMD’s 2023 Equity Incentive Plan",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

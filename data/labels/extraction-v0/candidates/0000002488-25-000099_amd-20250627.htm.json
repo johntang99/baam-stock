@@ -1,8 +1,240 @@
 {
   "doc_key": "0000002488-25-000099:amd-20250627.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37F3BZR4ZX9E1X6W33GN",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C7D0FZM20N2VMNXW7EQ9HS",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 1323000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "annual base salary effective July 1, 2025",
+      "basis": null,
+      "quote": "Lisa T. Su, Chair, President and Chief Executive Officer $1,260,000 $1,323,000",
+      "span": {
+        "char_start": 2766,
+        "char_end": 2844
+      },
+      "direction": "increase",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Annual Base Salary Effective July 1, 2025 - Lisa T. Su",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 800000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "annual base salary effective July 1, 2025",
+      "basis": null,
+      "quote": "Jean Hu, Executive Vice President, Chief Financial Officer and Treasurer $760,000 $800,000",
+      "span": {
+        "char_start": 2845,
+        "char_end": 2935
+      },
+      "direction": "increase",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Annual Base Salary Effective July 1, 2025 - Jean Hu",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 870000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "annual base salary effective July 1, 2025",
+      "basis": null,
+      "quote": "Mark Papermaster, Executive Vice President and Chief Technology Officer $840,000 $870,000",
+      "span": {
+        "char_start": 2936,
+        "char_end": 3025
+      },
+      "direction": "increase",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Annual Base Salary Effective July 1, 2025 - Mark Papermaster",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 780000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "annual base salary effective July 1, 2025",
+      "basis": null,
+      "quote": "Forrest Norrod, Executive Vice President and General Manager, Data Center Solutions $750,000 $780,000",
+      "span": {
+        "char_start": 3026,
+        "char_end": 3127
+      },
+      "direction": "increase",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Annual Base Salary Effective July 1, 2025 - Forrest Norrod",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 620000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "annual base salary effective July 1, 2025",
+      "basis": null,
+      "quote": "Ava Hahn, Senior Vice President, General Counsel and Corporate Secretary $600,000 $620,000",
+      "span": {
+        "char_start": 3128,
+        "char_end": 3218
+      },
+      "direction": "increase",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Annual Base Salary Effective July 1, 2025 - Ava Hahn",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 33000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "grant date August 15, 2025",
+      "basis": null,
+      "quote": "Lisa T. Su, Chair, President and Chief Executive Officer $33,000,000",
+      "span": {
+        "char_start": 3528,
+        "char_end": 3596
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Long-Term Incentive Award Target Value - Lisa T. Su",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 8500000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "grant date August 15, 2025",
+      "basis": null,
+      "quote": "Jean Hu, Executive Vice President, Chief Financial Officer and Treasurer $8,500,000",
+      "span": {
+        "char_start": 3597,
+        "char_end": 3680
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Long-Term Incentive Award Target Value - Jean Hu",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 10000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "grant date August 15, 2025",
+      "basis": null,
+      "quote": "Mark Papermaster, Executive Vice President and Chief Technology Officer $10,000,000",
+      "span": {
+        "char_start": 3681,
+        "char_end": 3764
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Long-Term Incentive Award Target Value - Mark Papermaster",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 8000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "grant date August 15, 2025",
+      "basis": null,
+      "quote": "Forrest Norrod, Executive Vice President and General Manager, Data Center Solutions $8,000,000",
+      "span": {
+        "char_start": 3765,
+        "char_end": 3859
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Long-Term Incentive Award Target Value - Forrest Norrod",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 3500000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "grant date August 15, 2025",
+      "basis": null,
+      "quote": "Ava Hahn, Senior Vice President, General Counsel and Corporate Secretary $3,500,000",
+      "span": {
+        "char_start": 3860,
+        "char_end": 3943
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Long-Term Incentive Award Target Value - Ava Hahn",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Lisa T. Su, Chair, President and Chief Executive Officer $1,260,000 $1,323,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Jean Hu, Executive Vice President, Chief Financial Officer and Treasurer $760,000 $800,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Mark Papermaster, Executive Vice President and Chief Technology Officer $840,000 $870,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Forrest Norrod, Executive Vice President and General Manager, Data Center Solutions $750,000 $780,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Ava Hahn, Senior Vice President, General Counsel and Corporate Secretary $600,000 $620,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Lisa T. Su, Chair, President and Chief Executive Officer $33,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Jean Hu, Executive Vice President, Chief Financial Officer and Treasurer $8,500,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Mark Papermaster, Executive Vice President and Chief Technology Officer $10,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Forrest Norrod, Executive Vice President and General Manager, Data Center Solutions $8,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Ava Hahn, Senior Vice President, General Counsel and Corporate Secretary $3,500,000",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

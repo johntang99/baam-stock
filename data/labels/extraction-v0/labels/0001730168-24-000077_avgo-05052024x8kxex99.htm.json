@@ -4,6 +4,151 @@
   "doc_kind": "earnings_release",
   "fiscal_period": null,
   "label_status": "draft",
-  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.3",
-  "facts": []
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": 12487000000.0,
+      "unit": "USD",
+      "period": "FY2024Q2",
+      "basis": "gaap",
+      "quote": "Revenue of $12,487 million for the second quarter, up 43 percent from the prior year period",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 43.0,
+      "unit": "pct",
+      "period": "FY2024Q2",
+      "basis": "gaap",
+      "quote": "Revenue of $12,487 million for the second quarter, up 43 percent from the prior year period",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 12.0,
+      "unit": "pct",
+      "period": "FY2024Q2",
+      "basis": "company_defined",
+      "quote": "was up 12% year-over-year, excluding VMware",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 2121000000.0,
+      "unit": "USD",
+      "period": "FY2024Q2",
+      "basis": "gaap",
+      "quote": "GAAP net income of $2,121 million for the second quarter",
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 5394000000.0,
+      "unit": "USD",
+      "period": "FY2024Q2",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP net income of $5,394 million for the second quarter",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "eps_gaap",
+      "value": 4.42,
+      "unit": "USD_per_share",
+      "period": "FY2024Q2",
+      "basis": "gaap",
+      "quote": "GAAP diluted EPS of $4.42 for the second quarter",
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "eps_non_gaap",
+      "value": 10.96,
+      "unit": "USD_per_share",
+      "period": "FY2024Q2",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP diluted EPS of $10.96 for the second quarter",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 4580000000.0,
+      "unit": "USD",
+      "period": "FY2024Q2",
+      "basis": "gaap",
+      "quote": "Cash from operations of $4,580 million for the second quarter",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 51000000000.0,
+      "unit": "USD",
+      "period": "FY2024",
+      "basis": null,
+      "quote": "Fiscal 2024 annual revenue guidance of approximately $51.0 billion including contribution from VMware, an increase of 42 percent from the prior year period",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 3100000000.0,
+      "unit": "USD",
+      "period": "FY2024Q2",
+      "basis": null,
+      "quote": "Revenue from our AI products was a record $3.1 billion during the quarter.",
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "segment": "AI products"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 6.0,
+      "unit": "pct",
+      "period": "FY2024Q2",
+      "basis": "gaap",
+      "quote": "Semiconductor solutions $ 7,202 58 % $ 6,808 78 % +6 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Semiconductor solutions"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 175.0,
+      "unit": "pct",
+      "period": "FY2024Q2",
+      "basis": "gaap",
+      "quote": "Infrastructure software 5,285 42 1,925 22 +175 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Infrastructure software"
+    }
+  ]
 }

@@ -1,8 +1,332 @@
 {
   "doc_key": "0001193125-26-354029:d142696d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37PZTVYPYW0X61KF1S6Y",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAJ7N91PCFEQC4ZERS9W21",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 4.75,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "August 17, 2026",
+      "basis": null,
+      "quote": "$4.75 billion aggregate principal amount of senior notes",
+      "span": {
+        "char_start": 2243,
+        "char_end": 2299
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of senior notes",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1.25,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "August 17, 2026",
+      "basis": null,
+      "quote": "$1.25 billion aggregate principal amount of its 4.600% Senior Notes due 2029",
+      "span": {
+        "char_start": 2315,
+        "char_end": 2391
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of 4.600% Senior Notes due 2029",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 4.6,
+      "unit": "pct",
+      "currency": null,
+      "period": "August 17, 2026",
+      "basis": null,
+      "quote": "The 2029 Notes mature on August 17, 2029 and bear interest at a rate of 4.600% per annum",
+      "span": {
+        "char_start": 4799,
+        "char_end": 4887
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "interest rate on 2029 Notes",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "August 17, 2026",
+      "basis": null,
+      "quote": "$1.50 billion aggregate principal amount of its 5.000% Senior Notes due 2031",
+      "span": {
+        "char_start": 2412,
+        "char_end": 2488
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of 5.000% Senior Notes due 2031",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 5.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "August 17, 2026",
+      "basis": null,
+      "quote": "the 2031 Notes mature on August 17, 2031 and bear interest at a rate of 5.000% per annum",
+      "span": {
+        "char_start": 4889,
+        "char_end": 4977
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "interest rate on 2031 Notes",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "August 17, 2026",
+      "basis": null,
+      "quote": "$1.00 billion aggregate principal amount of its 5.250% Senior Notes due 2033",
+      "span": {
+        "char_start": 2509,
+        "char_end": 2585
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of 5.250% Senior Notes due 2033",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 5.25,
+      "unit": "pct",
+      "currency": null,
+      "period": "August 17, 2026",
+      "basis": null,
+      "quote": "the 2033 Notes mature on August 17, 2033 and bear interest at a rate of 5.250% per annum",
+      "span": {
+        "char_start": 4979,
+        "char_end": 5067
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "interest rate on 2033 Notes",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "August 17, 2026",
+      "basis": null,
+      "quote": "$1.00 billion aggregate principal amount of its 5.500% Senior Notes due 2036",
+      "span": {
+        "char_start": 2609,
+        "char_end": 2685
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of 5.500% Senior Notes due 2036",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 5.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "August 17, 2026",
+      "basis": null,
+      "quote": "the 2036 Notes mature on August 17, 2036 and bear interest at a rate of 5.500% per annum",
+      "span": {
+        "char_start": 5073,
+        "char_end": 5161
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "interest rate on 2036 Notes",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 99.889,
+      "unit": "pct",
+      "currency": null,
+      "period": "August 13, 2026",
+      "basis": null,
+      "quote": "99.889% of the aggregate principal amount of the 2029 Notes",
+      "span": {
+        "char_start": 4016,
+        "char_end": 4075
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "public offering price of 2029 Notes (% of principal)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 99.921,
+      "unit": "pct",
+      "currency": null,
+      "period": "August 13, 2026",
+      "basis": null,
+      "quote": "99.921% of the aggregate principal amount of the 2031 Notes",
+      "span": {
+        "char_start": 4077,
+        "char_end": 4136
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "public offering price of 2031 Notes (% of principal)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 99.919,
+      "unit": "pct",
+      "currency": null,
+      "period": "August 13, 2026",
+      "basis": null,
+      "quote": "99.919% of the aggregate principal amount of the 2033 Notes",
+      "span": {
+        "char_start": 4138,
+        "char_end": 4197
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "public offering price of 2033 Notes (% of principal)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 99.757,
+      "unit": "pct",
+      "currency": null,
+      "period": "August 13, 2026",
+      "basis": null,
+      "quote": "99.757% of the aggregate principal amount of the 2036 Notes",
+      "span": {
+        "char_start": 4202,
+        "char_end": 4261
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "public offering price of 2036 Notes (% of principal)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD_billion",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "The Company intends to use the net proceeds from the Offering for general corporate purposes, which may include the repayment of debt.",
+      "span": {
+        "char_start": 3341,
+        "char_end": 3475
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "use of net proceeds",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "$4.75 billion aggregate principal amount of senior notes",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$1.25 billion aggregate principal amount of its 4.600% Senior Notes due 2029",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The 2029 Notes mature on August 17, 2029 and bear interest at a rate of 4.600% per annum",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$1.50 billion aggregate principal amount of its 5.000% Senior Notes due 2031",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the 2031 Notes mature on August 17, 2031 and bear interest at a rate of 5.000% per annum",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$1.00 billion aggregate principal amount of its 5.250% Senior Notes due 2033",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the 2033 Notes mature on August 17, 2033 and bear interest at a rate of 5.250% per annum",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$1.00 billion aggregate principal amount of its 5.500% Senior Notes due 2036",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the 2036 Notes mature on August 17, 2036 and bear interest at a rate of 5.500% per annum",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "99.889% of the aggregate principal amount of the 2029 Notes",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "99.921% of the aggregate principal amount of the 2031 Notes",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "99.919% of the aggregate principal amount of the 2033 Notes",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "99.757% of the aggregate principal amount of the 2036 Notes",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Company intends to use the net proceeds from the Offering for general corporate purposes, which may include the repayment of debt.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

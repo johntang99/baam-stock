@@ -1,24 +1,150 @@
 {
   "doc_key": "0001835632-26-000022:q227_8kx812026ex-991.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37S1SG8NXS4KAQ4FQR5S",
+  "llm_call_id": "llm_01M8CB6XQ7NKVRMSSM6VM68EDT",
   "candidates": [
     {
       "metric": "revenue",
       "value": 2.739,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue for the second quarter of fiscal 2027 was $2.739 billion",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Net revenue for the second quarter of fiscal 2027 was $2.739 billion",
       "span": {
-        "char_start": 628,
+        "char_start": 624,
         "char_end": 692
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 37,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Q2 Net Revenue: $2.739 billion, a new record, grew by 37% year-on-year",
+      "span": {
+        "char_start": 158,
+        "char_end": 228
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Q2 Net Revenue year-on-year growth",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 13,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Total Net Revenue $ 2,739.3 $ 2,417.8 $ 2,006.1 37 % 13 %",
+      "span": {
+        "char_start": 30009,
+        "char_end": 30066
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total Net Revenue QoQ % change",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 39.0,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "$39.0 million above the mid-point of the Company",
+      "span": {
+        "char_start": 694,
+        "char_end": 742
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net revenue above mid-point of guidance",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 53.1,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Q2 Gross Margin: 53.1% GAAP gross margin; 58.9% non-GAAP gross margin",
+      "span": {
+        "char_start": 231,
+        "char_end": 300
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP gross margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 58.9,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Q2 Gross Margin: 53.1% GAAP gross margin; 58.9% non-GAAP gross margin",
+      "span": {
+        "char_start": 231,
+        "char_end": 300
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP gross margin",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 0.33,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Q2 Diluted income per share: $0.33 GAAP diluted income per share; $0.94 non-GAAP diluted income per share",
+      "span": {
+        "char_start": 303,
+        "char_end": 408
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP diluted income per share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 0.94,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Q2 Diluted income per share: $0.33 GAAP diluted income per share; $0.94 non-GAAP diluted income per share",
+      "span": {
+        "char_start": 303,
+        "char_end": 408
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP diluted income per share",
       "segment": null
     },
     {
@@ -26,17 +152,17 @@
       "value": 308.0,
       "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income for the second quarter of fiscal 2027 was $308.0 million",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP net income for the second quarter of fiscal 2027 was $308.0 million, or $0.33 per diluted share.",
       "span": {
-        "char_start": 785,
-        "char_end": 852
+        "char_start": 780,
+        "char_end": 881
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP net income",
       "segment": null
     },
     {
@@ -44,42 +170,547 @@
       "value": 865.9,
       "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income for the second quarter of fiscal 2027 was $865.9 million",
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP net income for the second quarter of fiscal 2027 was $865.9 million, or $0.94 per diluted share.",
       "span": {
-        "char_start": 891,
-        "char_end": 958
+        "char_start": 882,
+        "char_end": 987
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP net income",
       "segment": null
     },
     {
+      "metric": "operating_cash_flow",
+      "value": 605.5,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Cash flow from operations for the second quarter was $605.5 million.",
+      "span": {
+        "char_start": 988,
+        "char_end": 1056
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash flow from operations",
+      "segment": null
+    },
+    {
+      "metric": "data_center_revenue",
+      "value": 2171.5,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Data center $ 2,171.5 $ 1,832.7 $ 1,490.5 46 % 18 %",
+      "span": {
+        "char_start": 29903,
+        "char_end": 29954
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data center revenue",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 46,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "where revenue growth accelerated to 46% year over year",
+      "span": {
+        "char_start": 1228,
+        "char_end": 1282
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center revenue growth year over year",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 18,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Data center $ 2,171.5 $ 1,832.7 $ 1,490.5 46 % 18 %",
+      "span": {
+        "char_start": 29903,
+        "char_end": 29954
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data center revenue QoQ % change",
+      "segment": "Data Center"
+    },
+    {
       "metric": "revenue",
-      "value": 2.739,
+      "value": 567.8,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Communications and other 567.8 585.1 515.6 10 % (3) %",
+      "span": {
+        "char_start": 29955,
+        "char_end": 30008
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Communications and other revenue",
+      "segment": "Communications and other"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 10,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Communications and other 567.8 585.1 515.6 10 % (3) %",
+      "span": {
+        "char_start": 29955,
+        "char_end": 30008
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Communications and other revenue YoY % change",
+      "segment": "Communications and other"
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": -3,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Communications and other 567.8 585.1 515.6 10 % (3) %",
+      "span": {
+        "char_start": 29955,
+        "char_end": 30008
+      },
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Communications and other revenue QoQ % change",
+      "segment": "Communications and other"
+    },
+    {
+      "metric": "gross_profit",
+      "value": 1455.6,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Gross profit 1,455.6 1,260.8 1,010.6 2,716.4 1,963.0",
+      "span": {
+        "char_start": 17382,
+        "char_end": 17434
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross profit",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 1614.0,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP gross profit $ 1,614.0 $ 1,423.8 $ 1,191.4 $ 3,037.8 $ 2,324.9",
+      "span": {
+        "char_start": 22688,
+        "char_end": 22759
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP gross profit",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 995.9,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Total operating expenses 995.9 921.4 720.5 1,917.3 1,402.3",
+      "span": {
+        "char_start": 17648,
+        "char_end": 17706
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 610.8,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP operating expenses $ 610.8 $ 576.9 $ 492.6 $ 1,187.7 $ 978.8",
+      "span": {
+        "char_start": 23751,
+        "char_end": 23820
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 459.7,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Operating income 459.7 339.4 290.1 799.1 560.7",
+      "span": {
+        "char_start": 17707,
+        "char_end": 17753
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 1003.2,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP operating income $ 1,003.2 $ 846.9 $ 698.8 $ 1,850.1 $ 1,346.1",
+      "span": {
+        "char_start": 24233,
+        "char_end": 24304
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP operating income",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 16.8,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP operating margin 16.8 % 14.0 % 14.5 % 15.5 % 14.4 %",
+      "span": {
+        "char_start": 24305,
+        "char_end": 24361
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP operating margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 36.6,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP operating margin 36.6 % 35.0 % 34.8 % 35.9 % 34.5 %",
+      "span": {
+        "char_start": 24655,
+        "char_end": 24715
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP operating margin",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 11.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "For the second quarter of fiscal 2027, a non-GAAP tax rate of 11.0% has been applied to the non-GAAP financial results.",
+      "span": {
+        "char_start": 6138,
+        "char_end": 6257
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP tax rate",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 3.15,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue of $2.739 billion",
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Net revenue is expected to be $3.150 billion +/- 5%.",
       "span": {
-        "char_start": 1110,
-        "char_end": 1135
+        "char_start": 2078,
+        "char_end": 2130
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Net revenue outlook",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 52.9,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP gross margin is expected to be 52.9% to 53.9%.",
+      "span": {
+        "char_start": 2133,
+        "char_end": 2184
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP gross margin outlook (low end)",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 53.9,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP gross margin is expected to be 52.9% to 53.9%.",
+      "span": {
+        "char_start": 2133,
+        "char_end": 2184
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP gross margin outlook (high end)",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 57.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP gross margin is expected to be 57.5% to 58.5%.",
+      "span": {
+        "char_start": 2187,
+        "char_end": 2242
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP gross margin outlook (low end)",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 58.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP gross margin is expected to be 57.5% to 58.5%.",
+      "span": {
+        "char_start": 2187,
+        "char_end": 2242
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP gross margin outlook (high end)",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 1.015,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP operating expenses are expected to be approximately $1.015 billion.",
+      "span": {
+        "char_start": 2245,
+        "char_end": 2317
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP operating expenses outlook",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 655,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP operating expenses are expected to be approximately $655 million.",
+      "span": {
+        "char_start": 2320,
+        "char_end": 2394
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP operating expenses outlook",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 0.53,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP diluted net income per share is expected to be $0.53 +/- $0.05 per share.",
+      "span": {
+        "char_start": 2551,
+        "char_end": 2629
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP diluted net income per share outlook",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 1.1,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP diluted net income per share is expected to be $1.10 +/- $0.05 per share.",
+      "span": {
+        "char_start": 2632,
+        "char_end": 2714
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP diluted net income per share outlook",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": null,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal 2027 and fiscal 2028",
+      "basis": null,
+      "quote": "we are again raising our revenue outlook for both fiscal 2027 and fiscal 2028 compared with the guidance we provided last quarter",
+      "span": {
+        "char_start": 1495,
+        "char_end": 1624
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Revenue outlook for fiscal 2027 and fiscal 2028 raised",
       "segment": null
     }
   ],
   "dropped": [
     {
-      "metric": "net_income",
-      "quote": "net income for the second quarter of fiscal 2027 was $308.0 million",
+      "metric": "other",
+      "quote": "$39.0 million above the mid-point of the Company",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "data_center_revenue",
+      "quote": "Data center $ 2,171.5 $ 1,832.7 $ 1,490.5 46 % 18 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Communications and other 567.8 585.1 515.6 10 % (3) %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross profit 1,455.6 1,260.8 1,010.6 2,716.4 1,963.0",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Non-GAAP gross profit $ 1,614.0 $ 1,423.8 $ 1,191.4 $ 3,037.8 $ 2,324.9",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Total operating expenses 995.9 921.4 720.5 1,917.3 1,402.3",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Non-GAAP operating expenses $ 610.8 $ 576.9 $ 492.6 $ 1,187.7 $ 978.8",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income 459.7 339.4 290.1 799.1 560.7",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Non-GAAP operating income $ 1,003.2 $ 846.9 $ 698.8 $ 1,850.1 $ 1,346.1",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "For the second quarter of fiscal 2027, a non-GAAP tax rate of 11.0% has been applied to the non-GAAP financial results.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "quote": "GAAP gross margin is expected to be 52.9% to 53.9%.",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "quote": "Non-GAAP gross margin is expected to be 57.5% to 58.5%.",
       "reason": "conflicting_values"
     }
   ],

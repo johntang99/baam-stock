@@ -1,8 +1,102 @@
 {
   "doc_key": "0001104659-25-058741:tm2517778d1_8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37MZTX94QXEQ9MDM6E5Z",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA1FRMWF6F5950QXHD4FTD",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 6.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The aggregate CHIPS Act grants awarded under the Funding Agreements to Micron Idaho and Micron New York for the construction of fab facilities, as amended by the Amendments, is $6.1 billion, unchanged from the amount previously announced in December 2024.",
+      "span": {
+        "char_start": 3725,
+        "char_end": 3980
+      },
+      "direction": "unchanged",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate CHIPS Act grants awarded to Micron Idaho and Micron New York",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 275,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "the Department has awarded Micron Virginia a grant with a maximum funding amount of $275 million for the expansion and modernization of the Company’s existing memory fab facility in Manassas, Virginia",
+      "span": {
+        "char_start": 5363,
+        "char_end": 5563
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "CHIPS Act grant maximum funding amount to Micron Virginia",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 6.44,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The grants under the Funding Agreements represent total CHIPS Act grants of up to $6.44 billion in connection with the Company’s U.S. manufacturing expansion and modernization projects",
+      "span": {
+        "char_start": 5757,
+        "char_end": 5941
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "total CHIPS Act grants",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 65,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "inclusive of the grant under the Funding Agreements of $65 million for workforce development activities related to the fab projects",
+      "span": {
+        "char_start": 5943,
+        "char_end": 6074
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "grant for workforce development activities",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "The aggregate CHIPS Act grants awarded under the Funding Agreements to Micron Idaho and Micron New York for the construction of fab facilities, as amended by the Amendments, is $6.1 billion, unchanged from the amount previously announced in December 2024.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the Department has awarded Micron Virginia a grant with a maximum funding amount of $275 million for the expansion and modernization of the Company’s existing memory fab facility in Manassas, Virginia",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The grants under the Funding Agreements represent total CHIPS Act grants of up to $6.44 billion in connection with the Company’s U.S. manufacturing expansion and modernization projects",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "inclusive of the grant under the Funding Agreements of $65 million for workforce development activities related to the fab projects",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

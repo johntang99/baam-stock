@@ -1,124 +1,657 @@
 {
   "doc_key": "0001730168-24-000077:avgo-05052024x8kxex99.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37QF9MQNBWW3847ZZ85D",
+  "llm_call_id": "llm_01M8CAMNNCXP3QWDJSCS4JSMMD",
   "candidates": [
     {
       "metric": "revenue",
-      "value": 12.0,
-      "unit": "number",
+      "value": 12487,
+      "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "Revenue of $12",
+      "period": "second quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Revenue of $12,487 million for the second quarter, up 43 percent from the prior year period",
       "span": {
         "char_start": 165,
-        "char_end": 179
+        "char_end": 256
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 43,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Revenue of $12,487 million for the second quarter, up 43 percent from the prior year period",
+      "span": {
+        "char_start": 165,
+        "char_end": 256
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue growth from prior year period",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 12,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2024",
+      "basis": "company_defined",
+      "quote": "was up 12% year-over-year, excluding VMware",
+      "span": {
+        "char_start": 2103,
+        "char_end": 2146
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Consolidated revenue growth excluding VMware",
       "segment": null
     },
     {
       "metric": "net_income",
-      "value": 2.0,
-      "unit": "number",
+      "value": 2121,
+      "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income of $2",
+      "period": "second quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "GAAP net income of $2,121 million for the second quarter",
       "span": {
-        "char_start": 264,
-        "char_end": 280
+        "char_start": 259,
+        "char_end": 315
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP net income",
       "segment": null
     },
     {
       "metric": "net_income",
-      "value": 5.0,
-      "unit": "number",
+      "value": 5394,
+      "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income of $5",
+      "period": "second quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP net income of $5,394 million for the second quarter",
       "span": {
-        "char_start": 326,
-        "char_end": 342
+        "char_start": 317,
+        "char_end": 377
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP net income",
       "segment": null
     },
     {
-      "metric": "revenue",
+      "metric": "other",
+      "value": 7429,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Adjusted EBITDA of $7,429 million for the second quarter, or 59 percent of revenue",
+      "span": {
+        "char_start": 380,
+        "char_end": 462
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Adjusted EBITDA",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 59,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Adjusted EBITDA of $7,429 million for the second quarter, or 59 percent of revenue",
+      "span": {
+        "char_start": 380,
+        "char_end": 462
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Adjusted EBITDA as percent of revenue",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 31,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Adjusted EBITDA increased 31% year-over-year to $7.4 billion",
+      "span": {
+        "char_start": 2148,
+        "char_end": 2208
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Adjusted EBITDA year-over-year growth",
+      "segment": null
+    },
+    {
+      "metric": "eps",
       "value": 4.42,
-      "unit": "number",
+      "unit": "USD_per_share",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue • GAAP diluted EPS of $4.42",
+      "period": "second quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "GAAP diluted EPS of $4.42 for the second quarter",
       "span": {
-        "char_start": 455,
-        "char_end": 490
+        "char_start": 465,
+        "char_end": 513
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP diluted EPS",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 10.96,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP diluted EPS of $10.96 for the second quarter",
+      "span": {
+        "char_start": 515,
+        "char_end": 568
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP diluted EPS",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 4580,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Cash from operations of $4,580 million for the second quarter",
+      "span": {
+        "char_start": 571,
+        "char_end": 632
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash from operations",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 132,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "less capital expenditures of $132 million",
+      "span": {
+        "char_start": 634,
+        "char_end": 675
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Capital expenditures",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 4448,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "resulted in $4,448 million of free cash flow, or 36 percent of revenue",
+      "span": {
+        "char_start": 677,
+        "char_end": 747
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 36,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "resulted in $4,448 million of free cash flow, or 36 percent of revenue",
+      "span": {
+        "char_start": 677,
+        "char_end": 747
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow as percent of revenue",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 5.3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Free cash flow, excluding restructuring and integration in the quarter, was $5.3 billion, up 18% year-over-year",
+      "span": {
+        "char_start": 2254,
+        "char_end": 2365
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow, excluding restructuring and integration",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 5.25,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2024",
+      "basis": null,
+      "quote": "Quarterly common stock dividend of $5.25 per share",
+      "span": {
+        "char_start": 750,
+        "char_end": 800
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Quarterly common stock dividend",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 51.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fiscal year 2024",
+      "basis": null,
+      "quote": "Fiscal 2024 annual revenue guidance of approximately $51.0 billion including contribution from VMware, an increase of 42 percent from the prior year period",
+      "span": {
+        "char_start": 803,
+        "char_end": 958
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Fiscal 2024 annual revenue guidance",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 42,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal year 2024",
+      "basis": null,
+      "quote": "Fiscal 2024 annual revenue guidance of approximately $51.0 billion including contribution from VMware, an increase of 42 percent from the prior year period",
+      "span": {
+        "char_start": 803,
+        "char_end": 958
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Fiscal 2024 revenue growth guidance",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 61,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal year 2024",
+      "basis": "non_gaap",
+      "quote": "Fiscal 2024 annual Adjusted EBITDA guidance of approximately 61 percent of projected revenue",
+      "span": {
+        "char_start": 961,
+        "char_end": 1053
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Fiscal 2024 Adjusted EBITDA guidance as percent of projected revenue",
       "segment": null
     },
     {
       "metric": "revenue",
-      "value": 5.25,
-      "unit": "number",
+      "value": 3.1,
+      "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
+      "period": "second quarter of fiscal 2024",
       "basis": null,
-      "quote": "revenue • Quarterly common stock dividend of $5.25",
+      "quote": "Revenue from our AI products was a record $3.1 billion during the quarter.",
       "span": {
-        "char_start": 740,
-        "char_end": 790
+        "char_start": 1610,
+        "char_end": 1684
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "Revenue from AI products",
+      "segment": "AI products"
+    },
+    {
+      "metric": "revenue",
+      "value": 7202,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Semiconductor solutions $ 7,202 58 % $ 6,808 78 % +6 %",
+      "span": {
+        "char_start": 3839,
+        "char_end": 3893
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Semiconductor solutions net revenue",
+      "segment": "Semiconductor solutions"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 6,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Semiconductor solutions $ 7,202 58 % $ 6,808 78 % +6 %",
+      "span": {
+        "char_start": 3839,
+        "char_end": 3893
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Semiconductor solutions revenue change",
+      "segment": "Semiconductor solutions"
+    },
+    {
+      "metric": "revenue",
+      "value": 5285,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Infrastructure software 5,285 42 1,925 22 +175 %",
+      "span": {
+        "char_start": 3894,
+        "char_end": 3942
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Infrastructure software net revenue",
+      "segment": "Infrastructure software"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 175,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Infrastructure software 5,285 42 1,925 22 +175 %",
+      "span": {
+        "char_start": 3894,
+        "char_end": 3942
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Infrastructure software revenue change",
+      "segment": "Infrastructure software"
+    },
+    {
+      "metric": "other",
+      "value": 9809,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "end of second quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "The Company’s cash and cash equivalents at the end of the fiscal quarter were $9,809 million, compared to $11,864 million at the end of the prior quarter.",
+      "span": {
+        "char_start": 3990,
+        "char_end": 4144
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash and cash equivalents",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 7776,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Gross margin on GAAP basis $ 7,776 $ 7,375 $ 6,115 $ 15,151 $ 12,119",
+      "span": {
+        "char_start": 17541,
+        "char_end": 17609
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin on GAAP basis",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 9518,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Gross margin on non-GAAP basis $ 9,518 $ 9,014 $ 6,606 $ 18,532 $ 13,184",
+      "span": {
+        "char_start": 17813,
+        "char_end": 17885
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin on non-GAAP basis",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 2965,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Operating income on GAAP basis $ 2,965 $ 2,083 $ 4,008 $ 5,048 $ 8,111",
+      "span": {
+        "char_start": 18815,
+        "char_end": 18885
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income on GAAP basis",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 7146,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Operating income on non-GAAP basis $ 7,146 $ 6,831 $ 5,412 $ 13,977 $ 10,842",
+      "span": {
+        "char_start": 19122,
+        "char_end": 19198
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income on non-GAAP basis",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 4811,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Total operating expenses on GAAP basis $ 4,811 $ 5,292 $ 2,107 $ 10,103 $ 4,008",
+      "span": {
+        "char_start": 18424,
+        "char_end": 18503
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total operating expenses on GAAP basis",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 2372,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Total operating expenses on non-GAAP basis $ 2,372 $ 2,183 $ 1,194 $ 4,555 $ 2,342",
+      "span": {
+        "char_start": 18732,
+        "char_end": 18814
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total operating expenses on non-GAAP basis",
       "segment": null
     }
   ],
   "dropped": [
     {
+      "metric": "other",
+      "quote": "Adjusted EBITDA of $7,429 million for the second quarter, or 59 percent of revenue",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Adjusted EBITDA of $7,429 million for the second quarter, or 59 percent of revenue",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Adjusted EBITDA increased 31% year-over-year to $7.4 billion",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "less capital expenditures of $132 million",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "resulted in $4,448 million of free cash flow, or 36 percent of revenue",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Quarterly common stock dividend of $5.25 per share",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Fiscal 2024 annual revenue guidance of approximately $51.0 billion including contribution from VMware, an increase of 42 percent from the prior year period",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Fiscal 2024 annual Adjusted EBITDA guidance of approximately 61 percent of projected revenue",
+      "reason": "unknown_metric"
+    },
+    {
       "metric": "revenue",
-      "quote": "Revenue of $12",
-      "reason": "unit_not_allowed:number"
-    },
-    {
-      "metric": "net_income",
-      "quote": "net income of $2",
-      "reason": "unit_not_allowed:number"
-    },
-    {
-      "metric": "net_income",
-      "quote": "net income of $5",
-      "reason": "unit_not_allowed:number"
+      "quote": "Semiconductor solutions $ 7,202 58 % $ 6,808 78 % +6 %",
+      "reason": "value_not_in_quote"
     },
     {
       "metric": "revenue",
-      "quote": "revenue • GAAP diluted EPS of $4.42",
-      "reason": "unit_not_allowed:number"
+      "quote": "Infrastructure software 5,285 42 1,925 22 +175 %",
+      "reason": "value_not_in_quote"
     },
     {
-      "metric": "revenue",
-      "quote": "revenue • Quarterly common stock dividend of $5.25",
-      "reason": "unit_not_allowed:number"
+      "metric": "other",
+      "quote": "The Company’s cash and cash equivalents at the end of the fiscal quarter were $9,809 million, compared to $11,864 million at the end of the prior quarter.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross margin on GAAP basis $ 7,776 $ 7,375 $ 6,115 $ 15,151 $ 12,119",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross margin on non-GAAP basis $ 9,518 $ 9,014 $ 6,606 $ 18,532 $ 13,184",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income on GAAP basis $ 2,965 $ 2,083 $ 4,008 $ 5,048 $ 8,111",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income on non-GAAP basis $ 7,146 $ 6,831 $ 5,412 $ 13,977 $ 10,842",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Total operating expenses on GAAP basis $ 4,811 $ 5,292 $ 2,107 $ 10,103 $ 4,008",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Total operating expenses on non-GAAP basis $ 2,372 $ 2,183 $ 1,194 $ 4,555 $ 2,342",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "free_cash_flow",
+      "quote": "resulted in $4,448 million of free cash flow, or 36 percent of revenue",
+      "reason": "conflicting_values"
     }
   ],
   "validation_notes": []

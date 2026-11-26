@@ -1,8 +1,33 @@
 {
   "doc_key": "0001046179-26-000805:tsm-monthend6kx20261125.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37MNH91XXXC1YV2K9016",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9Z3HE4T70ZC042NW335SY",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 38.8,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "October 2026",
+      "basis": null,
+      "quote": "Buildings and facilities: NT$38.8 billion of acquisition.",
+      "span": {
+        "char_start": 2856,
+        "char_end": 2913
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Buildings and facilities: acquisition",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Buildings and facilities: NT$38.8 billion of acquisition.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

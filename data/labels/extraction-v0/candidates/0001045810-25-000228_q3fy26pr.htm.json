@@ -1,24 +1,60 @@
 {
   "doc_key": "0001045810-25-000228:q3fy26pr.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37J64XVNCY3M3WYR8NA1",
+  "llm_call_id": "llm_01M8C9325GNDKA67EQJTP63P7W",
   "candidates": [
     {
       "metric": "revenue",
       "value": 57.0,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue of $57.0 billion",
+      "period": "third quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "today reported record revenue for the third quarter ended October 26, 2025, of $57.0 billion, up 22% from the previous quarter and up 62% from a year ago",
       "span": {
-        "char_start": 114,
-        "char_end": 138
+        "char_start": 328,
+        "char_end": 481
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Record revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 22,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "today reported record revenue for the third quarter ended October 26, 2025, of $57.0 billion, up 22% from the previous quarter and up 62% from a year ago",
+      "span": {
+        "char_start": 328,
+        "char_end": 481
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue growth from previous quarter",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 62,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "today reported record revenue for the third quarter ended October 26, 2025, of $57.0 billion, up 22% from the previous quarter and up 62% from a year ago",
+      "span": {
+        "char_start": 328,
+        "char_end": 481
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue growth from a year ago",
       "segment": null
     },
     {
@@ -26,53 +62,521 @@
       "value": 51.2,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
+      "period": "third quarter of fiscal 2026",
       "basis": null,
-      "quote": "Data Center revenue of $51.2 billion",
+      "quote": "Third-quarter revenue was a record $51.2 billion, up 25% from the previous quarter and up 66% from a year ago.",
       "span": {
-        "char_start": 191,
-        "char_end": 227
+        "char_start": 2975,
+        "char_end": 3085
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Record Data Center revenue",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 25,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2026",
+      "basis": null,
+      "quote": "Third-quarter revenue was a record $51.2 billion, up 25% from the previous quarter and up 66% from a year ago.",
+      "span": {
+        "char_start": 2975,
+        "char_end": 3085
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center revenue growth from previous quarter",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 66,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2026",
+      "basis": null,
+      "quote": "Third-quarter revenue was a record $51.2 billion, up 25% from the previous quarter and up 66% from a year ago.",
+      "span": {
+        "char_start": 2975,
+        "char_end": 3085
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center revenue growth from a year ago",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 73.4,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "For the quarter, GAAP and non-GAAP gross margins were 73.4% and 73.6%, respectively.",
+      "span": {
+        "char_start": 483,
+        "char_end": 567
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP gross margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 73.6,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "For the quarter, GAAP and non-GAAP gross margins were 73.4% and 73.6%, respectively.",
+      "span": {
+        "char_start": 483,
+        "char_end": 567
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP gross margin",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 1.3,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Diluted earnings per share $1.30 $1.08 $0.78 20 % 67 %",
+      "span": {
+        "char_start": 1852,
+        "char_end": 1906
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP earnings per diluted share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 1.3,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Diluted earnings per share $1.30 $1.05 $0.81 24 % 60 %",
+      "span": {
+        "char_start": 2231,
+        "char_end": 2285
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP earnings per diluted share",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 5839,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Operating expenses $5,839 $5,413 $4,287 8 % 36 %",
+      "span": {
+        "char_start": 1707,
+        "char_end": 1755
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 4215,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Operating expenses $4,215 $3,795 $3,046 11 % 38 %",
+      "span": {
+        "char_start": 2085,
+        "char_end": 2134
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 36010,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Operating income $36,010 $28,440 $21,869 27 % 65 %",
+      "span": {
+        "char_start": 1756,
+        "char_end": 1806
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP operating income",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 37752,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Operating income $37,752 $30,165 $23,276 25 % 62 %",
+      "span": {
+        "char_start": 2135,
+        "char_end": 2185
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP operating income",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 31910,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Net income $31,910 $26,422 $19,309 21 % 65 %",
+      "span": {
+        "char_start": 1807,
+        "char_end": 1851
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP net income",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 31767,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Net income $31,767 $25,783 $20,010 23 % 59 %",
+      "span": {
+        "char_start": 2186,
+        "char_end": 2230
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP net income",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 41849,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Gross profit 41,849 26,156 102,370 69,135",
+      "span": {
+        "char_start": 15236,
+        "char_end": 15277
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross profit",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 41967,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP gross profit $ 41,967 $ 33,960 $ 26,322 $ 102,785 $ 69,611",
+      "span": {
+        "char_start": 20201,
+        "char_end": 20268
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP gross profit",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 23750,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Net cash provided by operating activities 23,750 17,629 66,530 47,460",
+      "span": {
+        "char_start": 18081,
+        "char_end": 18150
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net cash provided by operating activities",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 22089,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 22,089 $ 13,450 $ 16,787 $ 61,675 $ 45,204",
+      "span": {
+        "char_start": 22003,
+        "char_end": 22062
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow",
       "segment": null
     },
     {
       "metric": "revenue",
-      "value": 57.0,
-      "unit": "USD_billion",
+      "value": 147811,
+      "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue for the third quarter ended October 26, 2025, of $57.0 billion",
+      "period": "first nine months of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Revenue $ 57,006 $ 35,082 $ 147,811 $ 91,166",
       "span": {
-        "char_start": 350,
-        "char_end": 420
+        "char_start": 15148,
+        "char_end": 15192
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue (nine months)",
       "segment": null
     },
     {
-      "metric": "gross_margin",
-      "value": 73.4,
+      "metric": "net_income",
+      "value": 77107,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first nine months of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Net income $ 31,910 $ 19,309 $ 77,107 $ 50,789",
+      "span": {
+        "char_start": 15754,
+        "char_end": 15800
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income (nine months)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 37.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first nine months of fiscal 2026",
+      "basis": null,
+      "quote": "During the first nine months of fiscal 2026, NVIDIA returned $37.0 billion to shareholders in the form of shares repurchased and cash dividends.",
+      "span": {
+        "char_start": 1106,
+        "char_end": 1250
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Returned to shareholders in share repurchases and cash dividends",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 62.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "end of third quarter of fiscal 2026",
+      "basis": null,
+      "quote": "As of the end of the third quarter, the company had $62.2 billion remaining under its share repurchase authorization.",
+      "span": {
+        "char_start": 1251,
+        "char_end": 1368
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Remaining share repurchase authorization",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 0.01,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "payable December 26, 2025",
+      "basis": null,
+      "quote": "NVIDIA will pay its next quarterly cash dividend of $0.01 per share on December 26, 2025",
+      "span": {
+        "char_start": 1369,
+        "char_end": 1457
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Quarterly cash dividend",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 65.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2026",
+      "basis": null,
+      "quote": "Revenue is expected to be $65.0 billion, plus or minus 2%.",
+      "span": {
+        "char_start": 2366,
+        "char_end": 2424
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Revenue outlook",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 74.8,
       "unit": "pct",
       "currency": null,
-      "period": null,
-      "basis": null,
-      "quote": "gross margins were 73.4%",
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP and non-GAAP gross margins are expected to be 74.8% and 75.0%, respectively, plus or minus 50 basis points.",
       "span": {
-        "char_start": 518,
-        "char_end": 542
+        "char_start": 2427,
+        "char_end": 2539
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP gross margin outlook",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 75.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "GAAP and non-GAAP gross margins are expected to be 74.8% and 75.0%, respectively, plus or minus 50 basis points.",
+      "span": {
+        "char_start": 2427,
+        "char_end": 2539
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP gross margin outlook",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 6.7,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP and non-GAAP operating expenses are expected to be approximately $6.7 billion and $5.0 billion, respectively.",
+      "span": {
+        "char_start": 2542,
+        "char_end": 2656
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP operating expenses outlook",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 5.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "GAAP and non-GAAP operating expenses are expected to be approximately $6.7 billion and $5.0 billion, respectively.",
+      "span": {
+        "char_start": 2542,
+        "char_end": 2656
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP operating expenses outlook",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 500,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2026",
+      "basis": null,
+      "quote": "GAAP and non-GAAP other income and expense are expected to be an income of approximately $500 million, excluding gains and losses from non-marketable and publicly-held equity securities.",
+      "span": {
+        "char_start": 2659,
+        "char_end": 2845
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Other income and expense outlook",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 17.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2026",
+      "basis": null,
+      "quote": "GAAP and non-GAAP tax rates are expected to be 17.0%, plus or minus 1%, excluding any discrete items.",
+      "span": {
+        "char_start": 2848,
+        "char_end": 2949
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Tax rate outlook",
       "segment": null
     },
     {
@@ -80,61 +584,182 @@
       "value": 4.3,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
+      "period": "third quarter of fiscal 2026",
       "basis": null,
-      "quote": "revenue was $4.3 billion",
+      "quote": "Third-quarter Gaming revenue was $4.3 billion, down 1% from the previous quarter and up 30% from a year ago.",
       "span": {
-        "char_start": 6639,
-        "char_end": 6663
+        "char_start": 6618,
+        "char_end": 6726
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
+      "direction": "none",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Gaming revenue",
+      "segment": "Gaming"
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": -1,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2026",
+      "basis": null,
+      "quote": "Third-quarter Gaming revenue was $4.3 billion, down 1% from the previous quarter and up 30% from a year ago.",
+      "span": {
+        "char_start": 6618,
+        "char_end": 6726
+      },
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Gaming revenue change from previous quarter",
+      "segment": "Gaming"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 30,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2026",
+      "basis": null,
+      "quote": "Third-quarter Gaming revenue was $4.3 billion, down 1% from the previous quarter and up 30% from a year ago.",
+      "span": {
+        "char_start": 6618,
+        "char_end": 6726
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Gaming revenue growth from a year ago",
+      "segment": "Gaming"
     },
     {
       "metric": "revenue",
-      "value": 760.0,
+      "value": 760,
       "unit": "USD_million",
       "currency": "USD",
-      "period": null,
+      "period": "third quarter of fiscal 2026",
       "basis": null,
-      "quote": "revenue was $760 million",
+      "quote": "Third-quarter revenue was $760 million, up 26% from the previous quarter and up 56% from a year ago.",
       "span": {
-        "char_start": 7344,
-        "char_end": 7368
+        "char_start": 7330,
+        "char_end": 7430
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Professional Visualization revenue",
+      "segment": "Professional Visualization"
     },
     {
       "metric": "revenue",
-      "value": 592.0,
+      "value": 592,
       "unit": "USD_million",
       "currency": "USD",
-      "period": null,
+      "period": "third quarter of fiscal 2026",
       "basis": null,
-      "quote": "revenue was $592 million",
+      "quote": "Third-quarter Automotive revenue was $592 million, up 1% from the previous quarter and up 32% from a year ago.",
       "span": {
-        "char_start": 7612,
-        "char_end": 7636
+        "char_start": 7587,
+        "char_end": 7697
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Automotive revenue",
+      "segment": "Automotive"
     }
   ],
   "dropped": [
     {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses $5,839 $5,413 $4,287 8 % 36 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses $4,215 $3,795 $3,046 11 % 38 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income $36,010 $28,440 $21,869 27 % 65 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income $37,752 $30,165 $23,276 25 % 62 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income $31,910 $26,422 $19,309 21 % 65 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income $31,767 $25,783 $20,010 23 % 59 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross profit 41,849 26,156 102,370 69,135",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Non-GAAP gross profit $ 41,967 $ 33,960 $ 26,322 $ 102,785 $ 69,611",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "quote": "Net cash provided by operating activities 23,750 17,629 66,530 47,460",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "free_cash_flow",
+      "quote": "Free cash flow $ 22,089 $ 13,450 $ 16,787 $ 61,675 $ 45,204",
+      "reason": "value_not_in_quote"
+    },
+    {
       "metric": "revenue",
-      "quote": "revenue of $57.0 billion",
-      "reason": "conflicting_values"
+      "quote": "Revenue $ 57,006 $ 35,082 $ 147,811 $ 91,166",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income $ 31,910 $ 19,309 $ 77,107 $ 50,789",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "During the first nine months of fiscal 2026, NVIDIA returned $37.0 billion to shareholders in the form of shares repurchased and cash dividends.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "As of the end of the third quarter, the company had $62.2 billion remaining under its share repurchase authorization.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "NVIDIA will pay its next quarterly cash dividend of $0.01 per share on December 26, 2025",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "GAAP and non-GAAP other income and expense are expected to be an income of approximately $500 million, excluding gains and losses from non-marketable and publicly-held equity securities.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "GAAP and non-GAAP tax rates are expected to be 17.0%, plus or minus 1%, excluding any discrete items.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "quote": "Third-quarter Gaming revenue was $4.3 billion, down 1% from the previous quarter and up 30% from a year ago.",
+      "reason": "value_not_in_quote"
     }
   ],
   "validation_notes": []

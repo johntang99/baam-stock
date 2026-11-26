@@ -1,8 +1,148 @@
 {
   "doc_key": "0001193125-25-158202:d89787d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37NW8RHBW2YWWKQGZ107",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA9PBMPXV7XSNG9MJAMP55",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 30.4,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The Existing Credit Agreement originally provided for a $30.4 billion term loan credit facility.",
+      "span": {
+        "char_start": 2382,
+        "char_end": 2478
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "term loan credit facility (original size)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 6.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "July 11, 2025",
+      "basis": null,
+      "quote": "The Company had an aggregate principal amount of $6.0 billion of term loans outstanding under the Existing Credit Agreement immediately prior to its termination.",
+      "span": {
+        "char_start": 2479,
+        "char_end": 2640
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "term loans outstanding immediately prior to termination",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 6000000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "July 2025",
+      "basis": null,
+      "quote": "the Company agreed to issue and sell to the Underwriters $6,000,000,000 aggregate principal amount of its senior notes",
+      "span": {
+        "char_start": 3913,
+        "char_end": 4031
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of senior notes issued",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1750000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "July 2025",
+      "basis": null,
+      "quote": "$1,750,000,000 aggregate principal amount of its 4.600% senior notes due 2030",
+      "span": {
+        "char_start": 4047,
+        "char_end": 4124
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "4.600% senior notes due 2030 principal amount",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1750000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "July 2025",
+      "basis": null,
+      "quote": "$1,750,000,000 aggregate principal amount of its 4.900% senior notes due 2032",
+      "span": {
+        "char_start": 4145,
+        "char_end": 4222
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "4.900% senior notes due 2032 principal amount",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2500000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "July 2025",
+      "basis": null,
+      "quote": "$2,500,000,000 aggregate principal amount of its 5.200% senior notes due 2035",
+      "span": {
+        "char_start": 4246,
+        "char_end": 4323
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "5.200% senior notes due 2035 principal amount",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "The Existing Credit Agreement originally provided for a $30.4 billion term loan credit facility.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Company had an aggregate principal amount of $6.0 billion of term loans outstanding under the Existing Credit Agreement immediately prior to its termination.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the Company agreed to issue and sell to the Underwriters $6,000,000,000 aggregate principal amount of its senior notes",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$1,750,000,000 aggregate principal amount of its 4.600% senior notes due 2030",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$1,750,000,000 aggregate principal amount of its 4.900% senior notes due 2032",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$2,500,000,000 aggregate principal amount of its 5.200% senior notes due 2035",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

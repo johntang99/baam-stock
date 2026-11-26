@@ -1,8 +1,125 @@
 {
   "doc_key": "0001045810-26-000060:nvda-20260628.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37JKK69W2C9G94H35D7Z",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9CXTZTRWT2NGWXZTA40MJ",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 1000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Mr. Parker’s annual base salary will be $1,000,000",
+      "span": {
+        "char_start": 3546,
+        "char_end": 3596
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "annual base salary",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 5000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "he will receive a sign-on bonus of $5,000,000",
+      "span": {
+        "char_start": 3601,
+        "char_end": 3646
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "sign-on bonus",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1500000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "fiscal year 2027",
+      "basis": null,
+      "quote": "He will be eligible to receive target annualized cash variable compensation of $1,500,000 pursuant to the Company’s Fiscal 2027 Variable Compensation Plan",
+      "span": {
+        "char_start": 3648,
+        "char_end": 3802
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "target annualized cash variable compensation",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 35000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "restricted stock units, or RSUs, with a target value of $35,000,000",
+      "span": {
+        "char_start": 3933,
+        "char_end": 4000
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "new hire restricted stock units target value",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 5000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "multi-year performance-based RSUs, or MY PSUs, with a target value of $5,000,000",
+      "span": {
+        "char_start": 4119,
+        "char_end": 4199
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "multi-year performance-based RSUs target value",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Mr. Parker’s annual base salary will be $1,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "he will receive a sign-on bonus of $5,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "He will be eligible to receive target annualized cash variable compensation of $1,500,000 pursuant to the Company’s Fiscal 2027 Variable Compensation Plan",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "restricted stock units, or RSUs, with a target value of $35,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "multi-year performance-based RSUs, or MY PSUs, with a target value of $5,000,000",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

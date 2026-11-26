@@ -1,8 +1,312 @@
 {
   "doc_key": "0001046179-26-000274:tsm-boardx20260512.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37K2R273EG7P92X1S2P7",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9KT57XCWYXANF1DHYYCVN",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 1134.1,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "First quarter consolidated revenue was NT$1,134.10 billion",
+      "span": {
+        "char_start": 1727,
+        "char_end": 1785
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "First quarter consolidated revenue",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 572.48,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "net income was NT$572.48 billion",
+      "span": {
+        "char_start": 1790,
+        "char_end": 1822
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "net income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 22.08,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "with diluted earnings per share of NT$22.08",
+      "span": {
+        "char_start": 1824,
+        "char_end": 1867
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "diluted earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 22.08,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "three months ended March 31, 2026",
+      "basis": "gaap",
+      "quote": "Basic EPS (NT$) 22.08",
+      "span": {
+        "char_start": 5220,
+        "char_end": 5241
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Basic EPS (NT$)",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 751.295421,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "three months ended March 31, 2026",
+      "basis": "gaap",
+      "quote": "Gross profit 751,295,421",
+      "span": {
+        "char_start": 5041,
+        "char_end": 5065
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross profit",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 658.966142,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "three months ended March 31, 2026",
+      "basis": "gaap",
+      "quote": "Income from operations 658,966,142",
+      "span": {
+        "char_start": 5066,
+        "char_end": 5100
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Income from operations",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 687.799687,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "three months ended March 31, 2026",
+      "basis": "gaap",
+      "quote": "Income before tax 687,799,687",
+      "span": {
+        "char_start": 5101,
+        "char_end": 5130
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Income before tax",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 572.801304,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "three months ended March 31, 2026",
+      "basis": "gaap",
+      "quote": "Net income 572,801,304",
+      "span": {
+        "char_start": 5131,
+        "char_end": 5153
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income (including non-controlling interests)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 7.0,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "first quarter of 2026",
+      "basis": null,
+      "quote": "Approved the distribution of a NT$7.0 per share cash dividend for the first quarter of 2026",
+      "span": {
+        "char_start": 1872,
+        "char_end": 1963
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash dividend per share",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 31284.3,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "the Board approved capital appropriations of approximately US$31,284.30 million",
+      "span": {
+        "char_start": 2733,
+        "char_end": 2812
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Capital appropriations",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 20,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Approved the capital injection of not more than US$20 billion to TSMC Arizona",
+      "span": {
+        "char_start": 2959,
+        "char_end": 3036
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Capital injection to TSMC Arizona (maximum)",
+      "segment": "TSMC Arizona"
+    },
+    {
+      "metric": "other",
+      "value": 8660.949685,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "as of March 31, 2026",
+      "basis": "gaap",
+      "quote": "Total assets 8,660,949,685",
+      "span": {
+        "char_start": 5286,
+        "char_end": 5312
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total assets",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2728.560764,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "as of March 31, 2026",
+      "basis": "gaap",
+      "quote": "Total liabilities 2,728,560,764",
+      "span": {
+        "char_start": 5313,
+        "char_end": 5344
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total liabilities",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 5890.960252,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "as of March 31, 2026",
+      "basis": "gaap",
+      "quote": "Equity attributable to shareholders of the parent 5,890,960,252",
+      "span": {
+        "char_start": 5345,
+        "char_end": 5408
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Equity attributable to shareholders of the parent",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "gross_profit",
+      "quote": "Gross profit 751,295,421",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Income from operations 658,966,142",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Income before tax 687,799,687",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Net income 572,801,304",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Approved the distribution of a NT$7.0 per share cash dividend for the first quarter of 2026",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the Board approved capital appropriations of approximately US$31,284.30 million",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Approved the capital injection of not more than US$20 billion to TSMC Arizona",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Total assets 8,660,949,685",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Total liabilities 2,728,560,764",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Equity attributable to shareholders of the parent 5,890,960,252",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

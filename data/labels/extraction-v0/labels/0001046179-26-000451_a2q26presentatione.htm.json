@@ -4,6 +4,67 @@
   "doc_kind": "earnings_release",
   "fiscal_period": null,
   "label_status": "draft",
-  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.3",
-  "facts": []
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": [
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 12.0,
+      "unit": "pct",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Net Revenue (US$ billions) 40.20 39.0-40.2 35.90 30.07 +12.0% +33.7%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 67.7,
+      "unit": "pct",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Gross Margin 67.7% 65.5%-67.5% 66.2% 58.6% +1.5 ppts +9.1 ppts",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 60.3,
+      "unit": "pct",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Operating Margin 60.3% 56.5%-58.5% 58.1% 49.6% +2.2 ppts +10.7 ppts",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "eps_gaap",
+      "value": 27.25,
+      "unit": "USD_per_share",
+      "period": null,
+      "basis": "gaap",
+      "quote": "EPS (NT Dollar) 27.25 22.08 15.36 +23.4% +77.4%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 40.0,
+      "unit": "pct",
+      "period": "FY2026",
+      "basis": null,
+      "quote": "2026 revenue to increase by slightly above 40% in US dollar terms",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "segment": null
+    }
+  ]
 }

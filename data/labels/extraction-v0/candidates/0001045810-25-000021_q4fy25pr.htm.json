@@ -1,24 +1,60 @@
 {
   "doc_key": "0001045810-25-000021:q4fy25pr.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37HN9X5NP5W22AN8ZA0A",
+  "llm_call_id": "llm_01M8C8Q4NMJ4A4S4R1ZDC5BFD8",
   "candidates": [
     {
       "metric": "revenue",
       "value": 39.3,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue of $39.3 billion",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Record quarterly revenue of $39.3 billion, up 12% from Q3 and up 78% from a year ago",
       "span": {
-        "char_start": 165,
-        "char_end": 189
+        "char_start": 148,
+        "char_end": 232
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 78,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Record quarterly revenue of $39.3 billion, up 12% from Q3 and up 78% from a year ago",
+      "span": {
+        "char_start": 148,
+        "char_end": 232
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue growth from a year ago",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 12,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Record quarterly revenue of $39.3 billion, up 12% from Q3 and up 78% from a year ago",
+      "span": {
+        "char_start": 148,
+        "char_end": 232
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue growth from Q3",
       "segment": null
     },
     {
@@ -26,133 +62,953 @@
       "value": 35.6,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "Data Center revenue of $35.6 billion",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Record quarterly Data Center revenue of $35.6 billion, up 16% from Q3 and up 93% from a year ago",
       "span": {
-        "char_start": 252,
-        "char_end": 288
+        "char_start": 235,
+        "char_end": 331
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center revenue",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 93,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Record quarterly Data Center revenue of $35.6 billion, up 16% from Q3 and up 93% from a year ago",
+      "span": {
+        "char_start": 235,
+        "char_end": 331
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center revenue growth from a year ago",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 16,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Record quarterly Data Center revenue of $35.6 billion, up 16% from Q3 and up 93% from a year ago",
+      "span": {
+        "char_start": 235,
+        "char_end": 331
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center revenue growth from Q3",
+      "segment": "Data Center"
     },
     {
       "metric": "revenue",
       "value": 130.5,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue of $130.5 billion",
+      "period": "fiscal 2025",
+      "basis": "gaap",
+      "quote": "Record full-year revenue of $130.5 billion, up 114%",
       "span": {
-        "char_start": 351,
-        "char_end": 376
+        "char_start": 334,
+        "char_end": 385
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Full-year revenue",
       "segment": null
     },
     {
-      "metric": "revenue",
-      "value": 39.3,
-      "unit": "USD_billion",
-      "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue for the fourth quarter ended January 26, 2025, of $39.3 billion",
+      "metric": "revenue_growth_yoy_pct",
+      "value": 114,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal 2025",
+      "basis": "gaap",
+      "quote": "For fiscal 2025, revenue was $130.5 billion, up 114% from a year ago.",
       "span": {
-        "char_start": 458,
-        "char_end": 529
+        "char_start": 821,
+        "char_end": 890
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Full-year revenue growth",
       "segment": null
     },
     {
-      "metric": "revenue",
-      "value": 130.5,
-      "unit": "USD_billion",
+      "metric": "eps",
+      "value": 0.89,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "For the quarter, GAAP earnings per diluted share was $0.89, up 14% from the previous quarter and up 82% from a year ago.",
+      "span": {
+        "char_start": 592,
+        "char_end": 712
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP earnings per diluted share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 0.89,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP earnings per diluted share was $0.89, up 10% from the previous quarter and up 71% from a year ago.",
+      "span": {
+        "char_start": 713,
+        "char_end": 820
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP earnings per diluted share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 2.94,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "fiscal 2025",
+      "basis": "gaap",
+      "quote": "GAAP earnings per diluted share was $2.94, up 147% from a year ago.",
+      "span": {
+        "char_start": 891,
+        "char_end": 958
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP earnings per diluted share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 2.99,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP earnings per diluted share was $2.99, up 130% from a year ago.",
+      "span": {
+        "char_start": 959,
+        "char_end": 1030
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP earnings per diluted share",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 0.01,
+      "unit": "USD_per_share",
       "currency": "USD",
       "period": null,
       "basis": null,
-      "quote": "revenue was $130.5 billion",
+      "quote": "NVIDIA will pay its next quarterly cash dividend of $0.01 per share on April 2, 2025, to all shareholders of record on March 12, 2025.",
       "span": {
-        "char_start": 838,
-        "char_end": 864
+        "char_start": 1567,
+        "char_end": 1701
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Quarterly cash dividend",
       "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 73.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Gross margin 73.0 % 74.6 % 76.0 % Down 1.6 pts Down 3.0 pts",
+      "span": {
+        "char_start": 1851,
+        "char_end": 1910
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 73.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Gross margin 73.5 % 75.0 % 76.7 % Down 1.5 pts Down 3.2 pts",
+      "span": {
+        "char_start": 2258,
+        "char_end": 2317
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 4689,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Operating expenses $4,689 $4,287 $3,176 Up 9% Up 48%",
+      "span": {
+        "char_start": 1911,
+        "char_end": 1963
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 3378,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Operating expenses $3,378 $3,046 $2,210 Up 11% Up 53%",
+      "span": {
+        "char_start": 2318,
+        "char_end": 2371
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 24034,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Operating income $24,034 $21,869 $13,615 Up 10% Up 77%",
+      "span": {
+        "char_start": 1964,
+        "char_end": 2018
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 25516,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Operating income $25,516 $23,276 $14,749 Up 10% Up 73%",
+      "span": {
+        "char_start": 2372,
+        "char_end": 2426
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 22091,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Net income $22,091 $19,309 $12,285 Up 14% Up 80%",
+      "span": {
+        "char_start": 2019,
+        "char_end": 2067
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 22066,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Net income $22,066 $20,010 $12,839 Up 10% Up 72%",
+      "span": {
+        "char_start": 2427,
+        "char_end": 2475
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 75.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal 2025",
+      "basis": "gaap",
+      "quote": "Gross margin 75.0 % 72.7 % Up 2.3 pts",
+      "span": {
+        "char_start": 2651,
+        "char_end": 2688
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 75.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Gross margin 75.5 % 73.8 % Up 1.7 pts",
+      "span": {
+        "char_start": 2954,
+        "char_end": 2991
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 16405,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal 2025",
+      "basis": "gaap",
+      "quote": "Operating expenses $16,405 $11,329 Up 45%",
+      "span": {
+        "char_start": 2689,
+        "char_end": 2730
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 11716,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Operating expenses $11,716 $7,825 Up 50%",
+      "span": {
+        "char_start": 2992,
+        "char_end": 3032
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 81453,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal 2025",
+      "basis": "gaap",
+      "quote": "Operating income $81,453 $32,972 Up 147%",
+      "span": {
+        "char_start": 2731,
+        "char_end": 2771
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 86789,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Operating income $86,789 $37,134 Up 134%",
+      "span": {
+        "char_start": 3033,
+        "char_end": 3073
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 72880,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal 2025",
+      "basis": "gaap",
+      "quote": "Net income $72,880 $29,760 Up 145%",
+      "span": {
+        "char_start": 2772,
+        "char_end": 2806
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 74265,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Net income $74,265 $32,312 Up 130%",
+      "span": {
+        "char_start": 3074,
+        "char_end": 3108
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 43.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": null,
+      "quote": "Revenue is expected to be $43.0 billion, plus or minus 2%.",
+      "span": {
+        "char_start": 3383,
+        "char_end": 3441
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Revenue outlook",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 70.6,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP and non-GAAP gross margins are expected to be 70.6% and 71.0%, respectively, plus or minus 50 basis points.",
+      "span": {
+        "char_start": 3444,
+        "char_end": 3556
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP gross margin outlook",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 71.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "GAAP and non-GAAP gross margins are expected to be 70.6% and 71.0%, respectively, plus or minus 50 basis points.",
+      "span": {
+        "char_start": 3444,
+        "char_end": 3556
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP gross margin outlook",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 5.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP and non-GAAP operating expenses are expected to be approximately $5.2 billion and $3.6 billion, respectively.",
+      "span": {
+        "char_start": 3559,
+        "char_end": 3673
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP operating expenses outlook",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 3.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "GAAP and non-GAAP operating expenses are expected to be approximately $5.2 billion and $3.6 billion, respectively.",
+      "span": {
+        "char_start": 3559,
+        "char_end": 3673
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP operating expenses outlook",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 400,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": null,
+      "quote": "GAAP and non-GAAP other income and expense are expected to be an income of approximately $400 million, excluding gains and losses from non-marketable and publicly-held equity securities.",
+      "span": {
+        "char_start": 3676,
+        "char_end": 3862
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Other income and expense outlook",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 17.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2026",
+      "basis": null,
+      "quote": "GAAP and non-GAAP tax rates are expected to be 17.0%, plus or minus 1%, excluding any discrete items.",
+      "span": {
+        "char_start": 3865,
+        "char_end": 3966
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Tax rate outlook",
+      "segment": null
+    },
+    {
+      "metric": "data_center_revenue",
+      "value": 115.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fiscal 2025",
+      "basis": "gaap",
+      "quote": "Full-year revenue rose 142% to a record $115.2 billion.",
+      "span": {
+        "char_start": 4186,
+        "char_end": 4241
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center full-year revenue",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 142,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal 2025",
+      "basis": "gaap",
+      "quote": "Full-year revenue rose 142% to a record $115.2 billion.",
+      "span": {
+        "char_start": 4186,
+        "char_end": 4241
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center full-year revenue growth",
+      "segment": "Data Center"
     },
     {
       "metric": "revenue",
       "value": 2.5,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue was $2.5 billion",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Fourth-quarter Gaming revenue was $2.5 billion, down 22% from the previous quarter and down 11% from a year ago.",
       "span": {
-        "char_start": 5727,
-        "char_end": 5751
+        "char_start": 5705,
+        "char_end": 5817
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Fourth-quarter Gaming revenue",
+      "segment": "Gaming"
     },
     {
       "metric": "revenue",
-      "value": 511.0,
-      "unit": "USD_million",
+      "value": 11.4,
+      "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue was $511 million",
+      "period": "fiscal 2025",
+      "basis": "gaap",
+      "quote": "Full-year revenue rose 9% to $11.4 billion.",
       "span": {
-        "char_start": 6632,
-        "char_end": 6656
+        "char_start": 5818,
+        "char_end": 5861
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Gaming full-year revenue",
+      "segment": "Gaming"
     },
     {
       "metric": "revenue",
-      "value": 570.0,
+      "value": 511,
       "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue was $570 million",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Fourth-quarter revenue was $511 million, up 5% from the previous quarter and up 10% from a year ago.",
       "span": {
-        "char_start": 7349,
-        "char_end": 7373
+        "char_start": 6617,
+        "char_end": 6717
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Professional Visualization fourth-quarter revenue",
+      "segment": "Professional Visualization"
+    },
+    {
+      "metric": "revenue",
+      "value": 1.9,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fiscal 2025",
+      "basis": "gaap",
+      "quote": "Full-year revenue rose 21% to $1.9 billion.",
+      "span": {
+        "char_start": 6718,
+        "char_end": 6761
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Professional Visualization full-year revenue",
+      "segment": "Professional Visualization"
+    },
+    {
+      "metric": "revenue",
+      "value": 570,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Fourth-quarter Automotive revenue was $570 million, up 27% from the previous quarter and up 103% from a year ago.",
+      "span": {
+        "char_start": 7323,
+        "char_end": 7436
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Fourth-quarter Automotive revenue",
+      "segment": "Automotive"
+    },
+    {
+      "metric": "revenue",
+      "value": 1.7,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fiscal 2025",
+      "basis": "gaap",
+      "quote": "Full-year revenue rose 55% to $1.7 billion.",
+      "span": {
+        "char_start": 7437,
+        "char_end": 7480
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Automotive full-year revenue",
+      "segment": "Automotive"
+    },
+    {
+      "metric": "gross_profit",
+      "value": 28723,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "GAAP gross profit $ 28,723 $ 26,156 $ 16,791 $ 97,858 $ 44,301",
+      "span": {
+        "char_start": 19182,
+        "char_end": 19244
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP gross profit",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 97858,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal 2025",
+      "basis": "gaap",
+      "quote": "GAAP gross profit $ 28,723 $ 26,156 $ 16,791 $ 97,858 $ 44,301",
+      "span": {
+        "char_start": 19182,
+        "char_end": 19244
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP gross profit",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 16628,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Net cash provided by operating activities 16,628 11,499 64,089 28,090",
+      "span": {
+        "char_start": 17253,
+        "char_end": 17322
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net cash provided by operating activities",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 64089,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal 2025",
+      "basis": "gaap",
+      "quote": "Net cash provided by operating activities 16,628 11,499 64,089 28,090",
+      "span": {
+        "char_start": 17253,
+        "char_end": 17322
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net cash provided by operating activities",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 15519,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 15,519 $ 16,787 $ 11,217 $ 60,724 $ 26,947",
+      "span": {
+        "char_start": 21387,
+        "char_end": 21446
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 60724,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 15,519 $ 16,787 $ 11,217 $ 60,724 $ 26,947",
+      "span": {
+        "char_start": 21387,
+        "char_end": 21446
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow",
       "segment": null
     }
   ],
   "dropped": [
     {
-      "metric": "revenue",
-      "quote": "revenue of $39.3 billion",
-      "reason": "conflicting_values"
+      "metric": "other",
+      "quote": "NVIDIA will pay its next quarterly cash dividend of $0.01 per share on April 2, 2025, to all shareholders of record on March 12, 2025.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses $4,689 $4,287 $3,176 Up 9% Up 48%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses $3,378 $3,046 $2,210 Up 11% Up 53%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income $24,034 $21,869 $13,615 Up 10% Up 77%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income $25,516 $23,276 $14,749 Up 10% Up 73%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income $22,091 $19,309 $12,285 Up 14% Up 80%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income $22,066 $20,010 $12,839 Up 10% Up 72%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses $16,405 $11,329 Up 45%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses $11,716 $7,825 Up 50%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income $81,453 $32,972 Up 147%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income $86,789 $37,134 Up 134%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income $72,880 $29,760 Up 145%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income $74,265 $32,312 Up 130%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "GAAP and non-GAAP other income and expense are expected to be an income of approximately $400 million, excluding gains and losses from non-marketable and publicly-held equity securities.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "GAAP and non-GAAP tax rates are expected to be 17.0%, plus or minus 1%, excluding any discrete items.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "GAAP gross profit $ 28,723 $ 26,156 $ 16,791 $ 97,858 $ 44,301",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "GAAP gross profit $ 28,723 $ 26,156 $ 16,791 $ 97,858 $ 44,301",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "quote": "Net cash provided by operating activities 16,628 11,499 64,089 28,090",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "quote": "Net cash provided by operating activities 16,628 11,499 64,089 28,090",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "free_cash_flow",
+      "quote": "Free cash flow $ 15,519 $ 16,787 $ 11,217 $ 60,724 $ 26,947",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "free_cash_flow",
+      "quote": "Free cash flow $ 15,519 $ 16,787 $ 11,217 $ 60,724 $ 26,947",
+      "reason": "value_not_in_quote"
     }
   ],
   "validation_notes": []

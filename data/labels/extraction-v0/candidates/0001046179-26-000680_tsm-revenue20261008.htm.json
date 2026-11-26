@@ -1,8 +1,184 @@
 {
   "doc_key": "0001046179-26-000680:tsm-revenue20261008.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37MF4QZWX6PQSZ6YVSGD",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9WGBE74B9C00TMGAFZ2NS",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 511.86,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "September 2026",
+      "basis": null,
+      "quote": "On a consolidated basis, revenue for September 2026 was approximately NT$511.86 billion",
+      "span": {
+        "char_start": 1618,
+        "char_end": 1705
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "consolidated revenue",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 0.6,
+      "unit": "pct",
+      "currency": null,
+      "period": "September 2026",
+      "basis": null,
+      "quote": "a decrease of 0.6 percent from August 2026",
+      "span": {
+        "char_start": 1707,
+        "char_end": 1749
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "revenue change from August 2026 (month-over-month)",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 54.6,
+      "unit": "pct",
+      "currency": null,
+      "period": "September 2026",
+      "basis": null,
+      "quote": "an increase of 54.6 percent from September 2025",
+      "span": {
+        "char_start": 1754,
+        "char_end": 1801
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "revenue increase from September 2025",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 3898.73,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "January through September 2026",
+      "basis": null,
+      "quote": "Revenue for January through September 2026 totaled T$3,898.73 billion",
+      "span": {
+        "char_start": 1803,
+        "char_end": 1872
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue for January through September 2026",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 41.1,
+      "unit": "pct",
+      "currency": null,
+      "period": "January through September 2026",
+      "basis": null,
+      "quote": "an increase of 41.1 percent compared to the same period in 2025",
+      "span": {
+        "char_start": 1874,
+        "char_end": 1937
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "revenue increase compared to the same period in 2025",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 514806,
+      "unit": "USD_million",
+      "currency": "TWD",
+      "period": "August 2026",
+      "basis": null,
+      "quote": "Net Revenue 511,857 514,806 (0.6) 330,980 54.6 3,898,727 2,762,964 41.1",
+      "span": {
+        "char_start": 2189,
+        "char_end": 2260
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 330980,
+      "unit": "USD_million",
+      "currency": "TWD",
+      "period": "September 2025",
+      "basis": null,
+      "quote": "Net Revenue 511,857 514,806 (0.6) 330,980 54.6 3,898,727 2,762,964 41.1",
+      "span": {
+        "char_start": 2189,
+        "char_end": 2260
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 2762964,
+      "unit": "USD_million",
+      "currency": "TWD",
+      "period": "January to September 2025",
+      "basis": null,
+      "quote": "Net Revenue 511,857 514,806 (0.6) 330,980 54.6 3,898,727 2,762,964 41.1",
+      "span": {
+        "char_start": 2189,
+        "char_end": 2260
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Revenue",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "a decrease of 0.6 percent from August 2026",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Net Revenue 511,857 514,806 (0.6) 330,980 54.6 3,898,727 2,762,964 41.1",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Net Revenue 511,857 514,806 (0.6) 330,980 54.6 3,898,727 2,762,964 41.1",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Net Revenue 511,857 514,806 (0.6) 330,980 54.6 3,898,727 2,762,964 41.1",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "On a consolidated basis, revenue for September 2026 was approximately NT$511.86 billion",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "quote": "an increase of 54.6 percent from September 2025",
+      "reason": "conflicting_values"
+    }
+  ],
   "validation_notes": []
 }

@@ -1,8 +1,56 @@
 {
   "doc_key": "0001104659-26-071845:tm2617112d1_8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37NAMZZVAVJG0NTCSE9A",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA577PGFFZ9CNF4W1S5CR9",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 125000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "pro rata portion of a cash retainer of $125,000 for her service as a member of the Board",
+      "span": {
+        "char_start": 2893,
+        "char_end": 2981
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "cash retainer for Board service (2025 Director Compensation Plan)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 250000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "a grant on the date of her appointment equal to the pro rata portion of the annual grant of restricted stock, valued at $250,000",
+      "span": {
+        "char_start": 2991,
+        "char_end": 3119
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "annual grant of restricted stock for non-employee directors",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "pro rata portion of a cash retainer of $125,000 for her service as a member of the Board",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "a grant on the date of her appointment equal to the pro rata portion of the annual grant of restricted stock, valued at $250,000",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

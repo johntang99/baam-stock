@@ -1,8 +1,56 @@
 {
   "doc_key": "0000002488-25-000039:amd-20250415.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37EVWA7KRJW23ZC76K5Y",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C7A9F20TJBDM3TPZFMQF3F",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 800,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The Company expects that the Export Control may result in charges of up to approximately $800 million in inventory, purchase commitments and related reserves.",
+      "span": {
+        "char_start": 2598,
+        "char_end": 2756
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "guidance",
+      "metric_label": "charges in inventory, purchase commitments and related reserves",
+      "segment": "MI308"
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "The Export Control applies to the Company’s MI308 products.",
+      "span": {
+        "char_start": 2439,
+        "char_end": 2498
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "Export Control applicability",
+      "segment": "MI308"
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "The Company expects that the Export Control may result in charges of up to approximately $800 million in inventory, purchase commitments and related reserves.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Export Control applies to the Company’s MI308 products.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

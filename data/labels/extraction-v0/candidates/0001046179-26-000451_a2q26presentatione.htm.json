@@ -1,8 +1,586 @@
 {
   "doc_key": "0001046179-26-000451:a2q26presentatione.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37KR8WS2B0HN6XC65CB1",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9RABY3MWABP6TBW7YWB6T",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 40.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2Q26",
+      "basis": "gaap",
+      "quote": "Net Revenue (US$ billions) 40.20 39.0-40.2 35.90 30.07 +12.0% +33.7%",
+      "span": {
+        "char_start": 1410,
+        "char_end": 1478
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Revenue (US$ billions)",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 12.0,
+      "unit": "pct",
+      "currency": "USD",
+      "period": "2Q26",
+      "basis": "gaap",
+      "quote": "Net Revenue (US$ billions) 40.20 39.0-40.2 35.90 30.07 +12.0% +33.7%",
+      "span": {
+        "char_start": 1410,
+        "char_end": 1478
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Revenue (US$) 2Q26 Over 1Q26",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 33.7,
+      "unit": "pct",
+      "currency": "USD",
+      "period": "2Q26",
+      "basis": "gaap",
+      "quote": "Net Revenue (US$ billions) 40.20 39.0-40.2 35.90 30.07 +12.0% +33.7%",
+      "span": {
+        "char_start": 1410,
+        "char_end": 1478
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Revenue (US$) 2Q26 Over 2Q25",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 1270.38,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "2Q26",
+      "basis": "gaap",
+      "quote": "Net Revenue 1,270.38 1,134.10 933.79 +12.0% +36.0%",
+      "span": {
+        "char_start": 1479,
+        "char_end": 1529
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Revenue (NT$ billions)",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 36.0,
+      "unit": "pct",
+      "currency": "TWD",
+      "period": "2Q26",
+      "basis": "gaap",
+      "quote": "Net Revenue 1,270.38 1,134.10 933.79 +12.0% +36.0%",
+      "span": {
+        "char_start": 1479,
+        "char_end": 1529
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Revenue (NT$) 2Q26 Over 2Q25",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 67.7,
+      "unit": "pct",
+      "currency": null,
+      "period": "2Q26",
+      "basis": "gaap",
+      "quote": "Gross Margin 67.7% 65.5%-67.5% 66.2% 58.6% +1.5 ppts +9.1 ppts",
+      "span": {
+        "char_start": 1530,
+        "char_end": 1592
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross Margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 98.98,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "2Q26",
+      "basis": "gaap",
+      "quote": "Operating Expenses (98.98) (94.01) (84.51) +5.3% +17.1%",
+      "span": {
+        "char_start": 1593,
+        "char_end": 1648
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 60.3,
+      "unit": "pct",
+      "currency": null,
+      "period": "2Q26",
+      "basis": "gaap",
+      "quote": "Operating Margin 60.3% 56.5%-58.5% 58.1% 49.6% +2.2 ppts +10.7 ppts",
+      "span": {
+        "char_start": 1649,
+        "char_end": 1716
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Margin",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 706.56,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "2Q26",
+      "basis": "gaap",
+      "quote": "Net Income Attributable to Shareholders of the Parent Company 706.56 572.48 398.27 +23.4% +77.4%",
+      "span": {
+        "char_start": 1771,
+        "char_end": 1867
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Income Attributable to Shareholders of the Parent Company",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 55.6,
+      "unit": "pct",
+      "currency": null,
+      "period": "2Q26",
+      "basis": "gaap",
+      "quote": "Net Profit Margin 55.6% 50.5% 42.7% +5.1 ppts +12.9 ppts",
+      "span": {
+        "char_start": 1868,
+        "char_end": 1924
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Profit Margin",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 27.25,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "2Q26",
+      "basis": "gaap",
+      "quote": "EPS (NT Dollar) 27.25 22.08 15.36 +23.4% +77.4%",
+      "span": {
+        "char_start": 1925,
+        "char_end": 1972
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "EPS (NT Dollar)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 45.9,
+      "unit": "pct",
+      "currency": null,
+      "period": "2Q26",
+      "basis": "gaap",
+      "quote": "ROE 45.9% 40.5% 34.8% +5.4 ppts +11.1 ppts",
+      "span": {
+        "char_start": 1973,
+        "char_end": 2015
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "ROE",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 3518.01,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "2Q26",
+      "basis": "gaap",
+      "quote": "Cash & Marketable Securities 3,518.01 37.5 %",
+      "span": {
+        "char_start": 2751,
+        "char_end": 2795
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash & Marketable Securities",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 783.36,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "2Q26",
+      "basis": "gaap",
+      "quote": "Cash from operating activities 783.36 698.97 497.07",
+      "span": {
+        "char_start": 3877,
+        "char_end": 3928
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash from operating activities",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 496.0,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "2Q26",
+      "basis": "gaap",
+      "quote": "Capital expenditures (496.00) (350.76) (297.22)",
+      "span": {
+        "char_start": 3929,
+        "char_end": 3976
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Capital expenditures",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 287.36,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "2Q26",
+      "basis": "company_defined",
+      "quote": "Free Cash Flow * 287.36 348.21 199.85",
+      "span": {
+        "char_start": 4139,
+        "char_end": 4176
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free Cash Flow",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 30,
+      "unit": "pct",
+      "currency": null,
+      "period": "2Q26",
+      "basis": null,
+      "quote": "3nm 30%",
+      "span": {
+        "char_start": 2439,
+        "char_end": 2446
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "Revenue by Technology - 3nm share",
+      "segment": "3nm"
+    },
+    {
+      "metric": "other",
+      "value": 33,
+      "unit": "pct",
+      "currency": null,
+      "period": "2Q26",
+      "basis": null,
+      "quote": "5nm 33%",
+      "span": {
+        "char_start": 2431,
+        "char_end": 2438
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "Revenue by Technology - 5nm share",
+      "segment": "5nm"
+    },
+    {
+      "metric": "other",
+      "value": 11,
+      "unit": "pct",
+      "currency": null,
+      "period": "2Q26",
+      "basis": null,
+      "quote": "7nm 11%",
+      "span": {
+        "char_start": 2423,
+        "char_end": 2430
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "Revenue by Technology - 7nm share",
+      "segment": "7nm"
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 44.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "3Q26",
+      "basis": null,
+      "quote": "Revenue to be between US$44.6 billion and US$45.8 billion",
+      "span": {
+        "char_start": 4303,
+        "char_end": 4360
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Revenue guidance (low end)",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 45.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "3Q26",
+      "basis": null,
+      "quote": "Revenue to be between US$44.6 billion and US$45.8 billion",
+      "span": {
+        "char_start": 4303,
+        "char_end": 4360
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Revenue guidance (high end)",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 65,
+      "unit": "pct",
+      "currency": null,
+      "period": "3Q26",
+      "basis": null,
+      "quote": "Gross profit margin to be between 65% and 67%",
+      "span": {
+        "char_start": 4459,
+        "char_end": 4504
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Gross profit margin guidance (low end)",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 67,
+      "unit": "pct",
+      "currency": null,
+      "period": "3Q26",
+      "basis": null,
+      "quote": "Gross profit margin to be between 65% and 67%",
+      "span": {
+        "char_start": 4459,
+        "char_end": 4504
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Gross profit margin guidance (high end)",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 56,
+      "unit": "pct",
+      "currency": null,
+      "period": "3Q26",
+      "basis": null,
+      "quote": "Operating profit margin to be between 56% and 58%",
+      "span": {
+        "char_start": 4507,
+        "char_end": 4556
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Operating profit margin guidance (low end)",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 58,
+      "unit": "pct",
+      "currency": null,
+      "period": "3Q26",
+      "basis": null,
+      "quote": "Operating profit margin to be between 56% and 58%",
+      "span": {
+        "char_start": 4507,
+        "char_end": 4556
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Operating profit margin guidance (high end)",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 40,
+      "unit": "pct",
+      "currency": "USD",
+      "period": "fiscal 2026",
+      "basis": null,
+      "quote": "2026 revenue to increase by slightly above 40% in US dollar terms",
+      "span": {
+        "char_start": 4685,
+        "char_end": 4750
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "2026 revenue growth in US dollar terms (slightly above)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 7.0,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "first quarter of 2026",
+      "basis": null,
+      "quote": "TSMC Board of Directors Approved NT$7.00 Cash Dividend for the First Quarter of 2026",
+      "span": {
+        "char_start": 5026,
+        "char_end": 5110
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash Dividend for the First Quarter of 2026",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "Net Revenue (US$ billions) 40.20 39.0-40.2 35.90 30.07 +12.0% +33.7%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Net Revenue 1,270.38 1,134.10 933.79 +12.0% +36.0%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating Expenses (98.98) (94.01) (84.51) +5.3% +17.1%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net Income Attributable to Shareholders of the Parent Company 706.56 572.48 398.27 +23.4% +77.4%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Net Profit Margin 55.6% 50.5% 42.7% +5.1 ppts +12.9 ppts",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "ROE 45.9% 40.5% 34.8% +5.4 ppts +11.1 ppts",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Cash & Marketable Securities 3,518.01 37.5 %",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "quote": "Cash from operating activities 783.36 698.97 497.07",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Capital expenditures (496.00) (350.76) (297.22)",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "free_cash_flow",
+      "quote": "Free Cash Flow * 287.36 348.21 199.85",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "3nm 30%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5nm 33%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "7nm 11%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "TSMC Board of Directors Approved NT$7.00 Cash Dividend for the First Quarter of 2026",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "quote": "Net Revenue (US$ billions) 40.20 39.0-40.2 35.90 30.07 +12.0% +33.7%",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "revenue_outlook",
+      "quote": "Revenue to be between US$44.6 billion and US$45.8 billion",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "quote": "Gross profit margin to be between 65% and 67%",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "operating_margin_pct",
+      "quote": "Operating profit margin to be between 56% and 58%",
+      "reason": "conflicting_values"
+    }
+  ],
   "validation_notes": []
 }

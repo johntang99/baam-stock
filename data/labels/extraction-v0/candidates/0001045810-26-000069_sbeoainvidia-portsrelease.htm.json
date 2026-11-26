@@ -1,8 +1,125 @@
 {
   "doc_key": "0001045810-26-000069:sbeoainvidia-portsrelease.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37JNRVWNFR4KE2HT9PKX",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9D9NWPJV3GE35CWEEDFB6",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 1.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "NVIDIA will invest $1.5 billion in SB Energy, joining existing investors SoftBank Group and OpenAI.",
+      "span": {
+        "char_start": 5150,
+        "char_end": 5249
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "NVIDIA investment in SB Energy",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 4.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "invest at least $4.2 billion in new regional grid infrastructure through an innovative partnership with AEP Ohio designed to protect ratepayers",
+      "span": {
+        "char_start": 4699,
+        "char_end": 4842
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "expectation",
+      "metric_label": "Investment in new regional grid infrastructure (SB Energy and SoftBank)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 80,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "invest hundreds of millions in the community anchored by an initial $80 million community benefits fund",
+      "span": {
+        "char_start": 542,
+        "char_end": 645
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "expectation",
+      "metric_label": "Initial community benefits fund",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 40,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "OpenAI has agreed to build on SB Energy’s originally announced $40 million community benefits fund with an incremental $40 million",
+      "span": {
+        "char_start": 4844,
+        "char_end": 4974
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "expectation",
+      "metric_label": "SB Energy's originally announced community benefits fund",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 40,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "OpenAI has agreed to build on SB Energy’s originally announced $40 million community benefits fund with an incremental $40 million",
+      "span": {
+        "char_start": 4844,
+        "char_end": 4974
+      },
+      "direction": "increase",
+      "scope": "other",
+      "certainty": "expectation",
+      "metric_label": "OpenAI incremental community benefits fund contribution",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "NVIDIA will invest $1.5 billion in SB Energy, joining existing investors SoftBank Group and OpenAI.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "invest at least $4.2 billion in new regional grid infrastructure through an innovative partnership with AEP Ohio designed to protect ratepayers",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "invest hundreds of millions in the community anchored by an initial $80 million community benefits fund",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "OpenAI has agreed to build on SB Energy’s originally announced $40 million community benefits fund with an incremental $40 million",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "OpenAI has agreed to build on SB Energy’s originally announced $40 million community benefits fund with an incremental $40 million",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

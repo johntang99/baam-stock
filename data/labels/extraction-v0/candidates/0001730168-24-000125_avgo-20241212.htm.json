@@ -1,8 +1,33 @@
 {
   "doc_key": "0001730168-24-000125:avgo-20241212.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37QQGJWM9VP9BCKG9TP8",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CARMS50NG7B4BXZJK6NHCG",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 0.59,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "quarterly dividend payable December 31, 2024",
+      "basis": null,
+      "quote": "the Board of Directors has declared a quarterly cash dividend on the Company’s common stock of $0.59 per share",
+      "span": {
+        "char_start": 2592,
+        "char_end": 2702
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "quarterly cash dividend",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "the Board of Directors has declared a quarterly cash dividend on the Company’s common stock of $0.59 per share",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

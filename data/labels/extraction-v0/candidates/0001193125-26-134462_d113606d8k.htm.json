@@ -1,8 +1,79 @@
 {
   "doc_key": "0001193125-26-134462:d113606d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37PJPD127H9AK6XF28Y5",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAEZYJ3MMTFS78CDDYZDFM",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 2000000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "March 31, 2026",
+      "basis": null,
+      "quote": "The shares of Series A Preferred Stock were sold for an aggregate purchase price of $2,000,000,000.00 in cash",
+      "span": {
+        "char_start": 2409,
+        "char_end": 2518
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate purchase price of Series A Preferred Stock",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1000,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "March 31, 2026",
+      "basis": null,
+      "quote": "Each share of Series A Preferred Stock has an initial stated value of $1,000",
+      "span": {
+        "char_start": 3416,
+        "char_end": 3492
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "initial stated value per share of Series A Preferred Stock",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 91.8355,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "March 31, 2026",
+      "basis": null,
+      "quote": "will convert into shares of Common Stock at an initial conversion price of approximately $91.8355 per share of Common Stock",
+      "span": {
+        "char_start": 3497,
+        "char_end": 3620
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "initial conversion price per share of Common Stock",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "The shares of Series A Preferred Stock were sold for an aggregate purchase price of $2,000,000,000.00 in cash",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Each share of Series A Preferred Stock has an initial stated value of $1,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "will convert into shares of Common Stock at an initial conversion price of approximately $91.8355 per share of Common Stock",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

@@ -1,8 +1,263 @@
 {
   "doc_key": "0000002488-26-000029:amd-20260210.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37FSKT3B2BF4781BV640",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C7QDP7ZJRYR43CAKVB3SNY",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 1179750,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "fiscal 2025",
+      "basis": null,
+      "quote": "Jean Hu, Executive Vice President, Chief Financial Officer and Treasurer $1,179,750",
+      "span": {
+        "char_start": 2625,
+        "char_end": 2708
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Fiscal 2025 Annual Cash Performance Bonus - Jean Hu (EVP, CFO and Treasurer)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1293187,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "fiscal 2025",
+      "basis": null,
+      "quote": "Mark Papermaster, Executive Vice President and Chief Technology Officer $1,293,187",
+      "span": {
+        "char_start": 2709,
+        "char_end": 2791
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Fiscal 2025 Annual Cash Performance Bonus - Mark Papermaster (EVP and CTO)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1157062,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "fiscal 2025",
+      "basis": null,
+      "quote": "Forrest Norrod, Executive Vice President and General Manager, Data Center Solutions $1,157,062",
+      "span": {
+        "char_start": 2792,
+        "char_end": 2886
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Fiscal 2025 Annual Cash Performance Bonus - Forrest Norrod (EVP and GM, Data Center Solutions)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 738100,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "fiscal 2025",
+      "basis": null,
+      "quote": "Ava Hahn, Senior Vice President, General Counsel and Corporate Secretary $738,100",
+      "span": {
+        "char_start": 2887,
+        "char_end": 2968
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Fiscal 2025 Annual Cash Performance Bonus - Ava Hahn (SVP, General Counsel and Corporate Secretary)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 3125430,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "fiscal 2025",
+      "basis": null,
+      "quote": "Lisa T. Su, Chair, President and Chief Executive Officer $3,125,430",
+      "span": {
+        "char_start": 3132,
+        "char_end": 3199
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Fiscal 2025 Annual Cash Performance Bonus - Lisa T. Su (Chair, President and CEO)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 75,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "with a target value of $75 million for Dr. Su",
+      "span": {
+        "char_start": 3429,
+        "char_end": 3474
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "CEO Value Creation Equity Award target value",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 600,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "Performance Period ending March 15, 2031",
+      "basis": null,
+      "quote": "Tranche 4 200% $600",
+      "span": {
+        "char_start": 5574,
+        "char_end": 5593
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Tranche 4 stock price hurdle",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 10,
+      "unit": "pct",
+      "currency": null,
+      "period": "Performance Period ending March 15, 2031",
+      "basis": null,
+      "quote": "Tranche 1 50% 10%",
+      "span": {
+        "char_start": 5516,
+        "char_end": 5533
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Tranche 1 stock price hurdle (5-Year CAGR %)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 15,
+      "unit": "pct",
+      "currency": null,
+      "period": "Performance Period ending March 15, 2031",
+      "basis": null,
+      "quote": "Tranche 2 100% 15%",
+      "span": {
+        "char_start": 5534,
+        "char_end": 5552
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Tranche 2 stock price hurdle (5-Year CAGR %)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 17.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "Performance Period ending March 15, 2031",
+      "basis": null,
+      "quote": "Tranche 3 150% 17.5%",
+      "span": {
+        "char_start": 5553,
+        "char_end": 5573
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Tranche 3 stock price hurdle (5-Year CAGR %)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 267.08,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "the Company’s all-time stock price high as of the Grant Date of $267.08",
+      "span": {
+        "char_start": 6085,
+        "char_end": 6156
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Company all-time stock price high as of the Grant Date",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Jean Hu, Executive Vice President, Chief Financial Officer and Treasurer $1,179,750",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Mark Papermaster, Executive Vice President and Chief Technology Officer $1,293,187",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Forrest Norrod, Executive Vice President and General Manager, Data Center Solutions $1,157,062",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Ava Hahn, Senior Vice President, General Counsel and Corporate Secretary $738,100",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Lisa T. Su, Chair, President and Chief Executive Officer $3,125,430",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "with a target value of $75 million for Dr. Su",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Tranche 4 200% $600",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Tranche 1 50% 10%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Tranche 2 100% 15%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Tranche 3 150% 17.5%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the Company’s all-time stock price high as of the Grant Date of $267.08",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

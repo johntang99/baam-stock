@@ -1,8 +1,171 @@
 {
   "doc_key": "0001193125-25-223202:d60592d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37P7ZYW6YQKH8M6563ZW",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CACJVK8KWPQA12BY4SHSN2",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 5000000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "the Company agreed to issue and sell to the Underwriters $5,000,000,000 aggregate principal amount of its senior notes",
+      "span": {
+        "char_start": 2335,
+        "char_end": 2453
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of senior notes issued",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1000000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "$1,000,000,000 aggregate principal amount of its 4.200% senior notes due 2030",
+      "span": {
+        "char_start": 2469,
+        "char_end": 2546
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "4.200% senior notes due 2030 principal amount",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2250000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "$2,250,000,000 aggregate principal amount of its 4.800% senior notes due 2036",
+      "span": {
+        "char_start": 2567,
+        "char_end": 2644
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "4.800% senior notes due 2036 principal amount",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1750000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "$1,750,000,000 aggregate principal amount of its 4.900% senior notes due 2038",
+      "span": {
+        "char_start": 2668,
+        "char_end": 2745
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "4.900% senior notes due 2038 principal amount",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2922282000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "an aggregate principal amount of $2,922,282,000 of 3.875% Notes outstanding",
+      "span": {
+        "char_start": 6044,
+        "char_end": 6119
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "3.875% Senior Notes due 2027 to be redeemed",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 215416000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "an aggregate principal amount of $215,416,000 of 4.700% Notes outstanding",
+      "span": {
+        "char_start": 6121,
+        "char_end": 6194
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "4.700% Senior Notes due 2027 to be redeemed",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 500000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "an aggregate principal amount of $500,000,000 of 4.650% Notes outstanding",
+      "span": {
+        "char_start": 6199,
+        "char_end": 6272
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "4.650% Senior Notes due 2027 to be redeemed",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "the Company agreed to issue and sell to the Underwriters $5,000,000,000 aggregate principal amount of its senior notes",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$1,000,000,000 aggregate principal amount of its 4.200% senior notes due 2030",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$2,250,000,000 aggregate principal amount of its 4.800% senior notes due 2036",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$1,750,000,000 aggregate principal amount of its 4.900% senior notes due 2038",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "an aggregate principal amount of $2,922,282,000 of 3.875% Notes outstanding",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "an aggregate principal amount of $215,416,000 of 4.700% Notes outstanding",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "an aggregate principal amount of $500,000,000 of 4.650% Notes outstanding",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

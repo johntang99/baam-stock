@@ -1,8 +1,184 @@
 {
   "doc_key": "0001046179-26-000658:tsm-revenue20260910.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37MEZZ778PHKAH0819AX",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9VZ0HMRXQYPJ32XZMC5Z5",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 514.81,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "August 2026",
+      "basis": null,
+      "quote": "revenue for August 2026 was approximately NT$514.81 billion, an increase of 10.1 percent from July 2026 and an increase of 53.3 percent from August 2025",
+      "span": {
+        "char_start": 1645,
+        "char_end": 1797
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "net revenue",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 10.1,
+      "unit": "pct",
+      "currency": null,
+      "period": "August 2026",
+      "basis": null,
+      "quote": "revenue for August 2026 was approximately NT$514.81 billion, an increase of 10.1 percent from July 2026",
+      "span": {
+        "char_start": 1645,
+        "char_end": 1748
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "M-o-M Increase (Decrease) %",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 53.3,
+      "unit": "pct",
+      "currency": null,
+      "period": "August 2026",
+      "basis": null,
+      "quote": "an increase of 53.3 percent from August 2025",
+      "span": {
+        "char_start": 1753,
+        "char_end": 1797
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Y-o-Y Increase (Decrease) %",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 3386.87,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "January through August 2026",
+      "basis": null,
+      "quote": "Revenue for January through August 2026 totaled NT$3,386.87 billion, an increase of 39.3 percent compared to the same period in 2025.",
+      "span": {
+        "char_start": 1799,
+        "char_end": 1932
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue for January through August 2026",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 39.3,
+      "unit": "pct",
+      "currency": null,
+      "period": "January through August 2026",
+      "basis": null,
+      "quote": "Revenue for January through August 2026 totaled NT$3,386.87 billion, an increase of 39.3 percent compared to the same period in 2025.",
+      "span": {
+        "char_start": 1799,
+        "char_end": 1932
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Y-o-Y Increase (Decrease) %",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 467580,
+      "unit": "USD_million",
+      "currency": "TWD",
+      "period": "July 2026",
+      "basis": null,
+      "quote": "Net Revenue 514,806 467,580 10.1 335,772 53.3 3,386,870 2,431,983 39.3",
+      "span": {
+        "char_start": 2166,
+        "char_end": 2236
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 335772,
+      "unit": "USD_million",
+      "currency": "TWD",
+      "period": "August 2025",
+      "basis": null,
+      "quote": "Net Revenue 514,806 467,580 10.1 335,772 53.3 3,386,870 2,431,983 39.3",
+      "span": {
+        "char_start": 2166,
+        "char_end": 2236
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 2431983,
+      "unit": "USD_million",
+      "currency": "TWD",
+      "period": "January to August 2025",
+      "basis": null,
+      "quote": "Net Revenue 514,806 467,580 10.1 335,772 53.3 3,386,870 2,431,983 39.3",
+      "span": {
+        "char_start": 2166,
+        "char_end": 2236
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Revenue",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "revenue for August 2026 was approximately NT$514.81 billion, an increase of 10.1 percent from July 2026",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Net Revenue 514,806 467,580 10.1 335,772 53.3 3,386,870 2,431,983 39.3",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Net Revenue 514,806 467,580 10.1 335,772 53.3 3,386,870 2,431,983 39.3",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Net Revenue 514,806 467,580 10.1 335,772 53.3 3,386,870 2,431,983 39.3",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "revenue for August 2026 was approximately NT$514.81 billion, an increase of 10.1 percent from July 2026 and an increase of 53.3 percent from August 2025",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "quote": "an increase of 53.3 percent from August 2025",
+      "reason": "conflicting_values"
+    }
+  ],
   "validation_notes": []
 }

@@ -1,8 +1,33 @@
 {
   "doc_key": "0001045810-24-000300:nvda-20241107.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37HB74TXG7YV42ZA538Y",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C8GSATFSG1FJ1A7ZF06JR9",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 53800,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "she was granted a pro-rated annual cash retainer of $53,800, payable starting on November 7, 2024",
+      "span": {
+        "char_start": 2975,
+        "char_end": 3072
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "pro-rated annual cash retainer",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "she was granted a pro-rated annual cash retainer of $53,800, payable starting on November 7, 2024",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

@@ -1,8 +1,217 @@
 {
   "doc_key": "0001046179-26-000377:tsm-monthend6kx20260625.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37KN5WWVDV5EN81D159G",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9P9D8HFBK01TB7EAXJQPV",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 21013,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "May 2026",
+      "basis": null,
+      "quote": "(1) Machinery equipment for advanced technology capacity and others: US$21,013 million.",
+      "span": {
+        "char_start": 3014,
+        "char_end": 3101
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Capital appropriations: Machinery equipment for advanced technology capacity and others",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 10271,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "May 2026",
+      "basis": null,
+      "quote": "(2) Real estate and capitalized leased assets: US$10,271 million.",
+      "span": {
+        "char_start": 3102,
+        "char_end": 3167
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Capital appropriations: Real estate and capitalized leased assets",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 24.6,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "May 2026",
+      "basis": null,
+      "quote": "(1) Fixed-income investment: NT$24.6 billion of acquisition.",
+      "span": {
+        "char_start": 2831,
+        "char_end": 2891
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Fixed-income investment acquisition",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 24.7,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "May 2026",
+      "basis": null,
+      "quote": "(2) Equity investment: NT$24.7 billion of disposition.",
+      "span": {
+        "char_start": 2892,
+        "char_end": 2946
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Equity investment disposition",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 13.7,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "May 2026",
+      "basis": null,
+      "quote": "115-2 A May 2026 ~ May 2031 NT$13.7 1.80%",
+      "span": {
+        "char_start": 3331,
+        "char_end": 3372
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Unsecured bond 115-2 Tranche A total amount",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1.8,
+      "unit": "pct",
+      "currency": null,
+      "period": "May 2026",
+      "basis": null,
+      "quote": "115-2 A May 2026 ~ May 2031 NT$13.7 1.80%",
+      "span": {
+        "char_start": 3331,
+        "char_end": 3372
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Unsecured bond 115-2 Tranche A coupon rate",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 4.7,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "May 2026",
+      "basis": null,
+      "quote": "B May 2026 ~ May 2036 NT$4.7 1.85%",
+      "span": {
+        "char_start": 3417,
+        "char_end": 3451
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Unsecured bond 115-2 Tranche B total amount",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1.85,
+      "unit": "pct",
+      "currency": null,
+      "period": "May 2026",
+      "basis": null,
+      "quote": "B May 2026 ~ May 2036 NT$4.7 1.85%",
+      "span": {
+        "char_start": 3417,
+        "char_end": 3451
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Unsecured bond 115-2 Tranche B coupon rate",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1544540,
+      "unit": "USD",
+      "currency": "TWD",
+      "period": "May 2026",
+      "basis": null,
+      "quote": "the associated paid-in capital reduction of NT$1,544,540",
+      "span": {
+        "char_start": 3629,
+        "char_end": 3685
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Paid-in capital reduction from cancellation of reclaimed employee restricted stock awards",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "(1) Machinery equipment for advanced technology capacity and others: US$21,013 million.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "(2) Real estate and capitalized leased assets: US$10,271 million.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "(1) Fixed-income investment: NT$24.6 billion of acquisition.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "(2) Equity investment: NT$24.7 billion of disposition.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "115-2 A May 2026 ~ May 2031 NT$13.7 1.80%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "115-2 A May 2026 ~ May 2031 NT$13.7 1.80%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "B May 2026 ~ May 2036 NT$4.7 1.85%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "B May 2026 ~ May 2036 NT$4.7 1.85%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the associated paid-in capital reduction of NT$1,544,540",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

@@ -1,8 +1,161 @@
 {
   "doc_key": "0001046179-26-000471:tsm-revenue20260810.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37KVF5TKJYWNR8MPHZB7",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9SH4QVTKN7HX39PNFYK95",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 467.58,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "July 2026",
+      "basis": null,
+      "quote": "On a consolidated basis, revenue for July 2026 was approximately NT$467.58 billion",
+      "span": {
+        "char_start": 1607,
+        "char_end": 1689
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "net revenue",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 5.6,
+      "unit": "pct",
+      "currency": null,
+      "period": "July 2026",
+      "basis": null,
+      "quote": "revenue for July 2026 was approximately NT$467.58 billion, an increase of 5.6 percent from June 2026",
+      "span": {
+        "char_start": 1632,
+        "char_end": 1732
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "revenue increase from June 2026 (month-over-month)",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 44.7,
+      "unit": "pct",
+      "currency": null,
+      "period": "July 2026",
+      "basis": null,
+      "quote": "an increase of 44.7 percent from July 2025",
+      "span": {
+        "char_start": 1737,
+        "char_end": 1779
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "revenue increase from July 2025",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 2872.06,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "January through July 2026",
+      "basis": null,
+      "quote": "Revenue for January through July 2026 totaled NT$2,872.06 billion",
+      "span": {
+        "char_start": 1781,
+        "char_end": 1846
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue for January through July 2026",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 37.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "January through July 2026",
+      "basis": null,
+      "quote": "Revenue for January through July 2026 totaled NT$2,872.06 billion, an increase of 37.0 percent compared to the same period in 2025.",
+      "span": {
+        "char_start": 1781,
+        "char_end": 1912
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "revenue increase compared to the same period in 2025",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 442680,
+      "unit": "USD_million",
+      "currency": "TWD",
+      "period": "June 2026",
+      "basis": null,
+      "quote": "Net Revenue 467,580 442,680 5.6 323,166 44.7 2,872,064 2,096,211 37.0",
+      "span": {
+        "char_start": 2136,
+        "char_end": 2205
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 323166,
+      "unit": "USD_million",
+      "currency": "TWD",
+      "period": "July 2025",
+      "basis": null,
+      "quote": "Net Revenue 467,580 442,680 5.6 323,166 44.7 2,872,064 2,096,211 37.0",
+      "span": {
+        "char_start": 2136,
+        "char_end": 2205
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Revenue",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "revenue for July 2026 was approximately NT$467.58 billion, an increase of 5.6 percent from June 2026",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Net Revenue 467,580 442,680 5.6 323,166 44.7 2,872,064 2,096,211 37.0",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Net Revenue 467,580 442,680 5.6 323,166 44.7 2,872,064 2,096,211 37.0",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "On a consolidated basis, revenue for July 2026 was approximately NT$467.58 billion",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "quote": "an increase of 44.7 percent from July 2025",
+      "reason": "conflicting_values"
+    }
+  ],
   "validation_notes": []
 }

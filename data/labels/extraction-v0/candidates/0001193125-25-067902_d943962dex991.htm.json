@@ -1,8 +1,79 @@
 {
   "doc_key": "0001193125-25-067902:d943962dex991.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37NR2BHS3JSAY38RQBNJ",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA8MR0B7N37ZAPJ7HW74Q0",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 500,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2028",
+      "basis": null,
+      "quote": "to address the $500 billion data center AI accelerator opportunity in 2028",
+      "span": {
+        "char_start": 407,
+        "char_end": 481
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "expectation",
+      "metric_label": "data center AI accelerator opportunity",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "end of 2025",
+      "basis": "non_gaap",
+      "quote": "AMD expects the transaction to be accretive on a non-GAAP basis by the end of 2025.",
+      "span": {
+        "char_start": 1037,
+        "char_end": 1120
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "transaction accretive on a non-GAAP basis",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": "March 31, 2025",
+      "basis": null,
+      "quote": "AMD (NASDAQ: AMD) today announced the completion of its acquisition of ZT Systems",
+      "span": {
+        "char_start": 522,
+        "char_end": 603
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "completion of acquisition of ZT Systems",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "to address the $500 billion data center AI accelerator opportunity in 2028",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "AMD expects the transaction to be accretive on a non-GAAP basis by the end of 2025.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "AMD (NASDAQ: AMD) today announced the completion of its acquisition of ZT Systems",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

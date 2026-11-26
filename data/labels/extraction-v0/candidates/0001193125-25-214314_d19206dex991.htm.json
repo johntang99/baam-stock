@@ -1,8 +1,102 @@
 {
   "doc_key": "0001193125-25-214314:d19206dex991.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37P6BFEQY2HC70XYAGT2",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAC6AEPR84NJ8T8TJM219E",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "today announced that its Board of Directors has authorized a new $5 billion stock repurchase program",
+      "span": {
+        "char_start": 506,
+        "char_end": 606
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "new stock repurchase program authorization",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "as of August 2, 2025",
+      "basis": null,
+      "quote": "As of August 2, 2025, the Company had approximately $2.0 billion remaining under its prior repurchase authorization.",
+      "span": {
+        "char_start": 705,
+        "char_end": 821
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "remaining under prior repurchase authorization",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 300,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "current quarter",
+      "basis": null,
+      "quote": "Since then, Marvell has repurchased $300 million of common stock in the current quarter under its regular program.",
+      "span": {
+        "char_start": 822,
+        "char_end": 936
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "common stock repurchased in current quarter",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "the company has entered into an accelerated share repurchase (ASR) agreement with a leading financial institution to repurchase $1 billion of its common stock",
+      "span": {
+        "char_start": 950,
+        "char_end": 1108
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "accelerated share repurchase (ASR) agreement",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "today announced that its Board of Directors has authorized a new $5 billion stock repurchase program",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "As of August 2, 2025, the Company had approximately $2.0 billion remaining under its prior repurchase authorization.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Since then, Marvell has repurchased $300 million of common stock in the current quarter under its regular program.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the company has entered into an accelerated share repurchase (ASR) agreement with a leading financial institution to repurchase $1 billion of its common stock",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

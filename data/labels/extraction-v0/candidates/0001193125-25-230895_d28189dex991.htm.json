@@ -1,33 +1,45 @@
 {
   "doc_key": "0001193125-25-230895:d28189dex991.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37P9GBKT5PWXXEF6MNM3",
+  "llm_call_id": "llm_01M8CAD1VHNAWXNCGZZ9GEJVVJ",
   "candidates": [
     {
-      "metric": "revenue",
-      "value": 1995.0,
-      "unit": "number",
-      "currency": null,
+      "metric": "revenue_outlook",
+      "value": null,
+      "unit": "USD_billion",
+      "currency": "USD",
       "period": null,
       "basis": null,
-      "quote": "revenue for AMD, that the agreement creates strategic alignment and shareholder value for the parties, and is expected to be highly accretive to AMD’s non-GAAP earnings-per-share; the availability, timing and expected benefits of AMD products and roadmaps; and the expected demand for AMD products, all of which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "quote": "Our partnership with OpenAI is expected to deliver tens of billions of dollars in revenue for AMD while accelerating OpenAI’s AI infrastructure buildout",
       "span": {
-        "char_start": 5975,
-        "char_end": 6390
+        "char_start": 3168,
+        "char_end": 3320
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "revenue for AMD from OpenAI partnership",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": null,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": null,
+      "basis": "non_gaap",
+      "quote": "is expected to be highly accretive to AMD’s non-GAAP earnings-per-share",
+      "span": {
+        "char_start": 3472,
+        "char_end": 3543
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "non-GAAP earnings-per-share",
       "segment": null
     }
   ],
-  "dropped": [
-    {
-      "metric": "revenue",
-      "quote": "revenue for AMD, that the agreement creates strategic alignment and shareholder value for the parties, and is expected to be highly accretive to AMD’s non-GAAP earnings-per-share; the availability, timing and expected benefits of AMD products and roadmaps; and the expected demand for AMD products, all of which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
-      "reason": "unit_not_allowed:number"
-    }
-  ],
+  "dropped": [],
   "validation_notes": []
 }

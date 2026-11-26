@@ -1,8 +1,79 @@
 {
   "doc_key": "0001193125-26-267688:d151562d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37PS59H2JW9K6ZZ5Q8RJ",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAGRVRT9RE16PS1FDHAA2V",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 850000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Mr. Durn’s annual base salary will be $850,000.",
+      "span": {
+        "char_start": 5028,
+        "char_end": 5075
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "annual base salary",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 120,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "He will be eligible to participate in the Company’s Annual Incentive Plan with a target annual incentive bonus of 120% of his annual base salary.",
+      "span": {
+        "char_start": 5076,
+        "char_end": 5221
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "target annual incentive bonus",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Mr. Durn is eligible to receive a one-time cash sign-on bonus of $1,000,000",
+      "span": {
+        "char_start": 5222,
+        "char_end": 5297
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "one-time cash sign-on bonus",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Mr. Durn’s annual base salary will be $850,000.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "He will be eligible to participate in the Company’s Annual Incentive Plan with a target annual incentive bonus of 120% of his annual base salary.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Mr. Durn is eligible to receive a one-time cash sign-on bonus of $1,000,000",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

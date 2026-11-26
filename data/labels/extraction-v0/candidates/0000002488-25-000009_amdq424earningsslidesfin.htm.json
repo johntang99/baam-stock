@@ -1,150 +1,1238 @@
 {
   "doc_key": "0000002488-25-000009:amdq424earningsslidesfin.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37EP5C1EKWXK9R6YG6BP",
+  "llm_call_id": "llm_01M8C76FTV08J1JF060JX402YM",
   "candidates": [
-    {
-      "metric": "revenue",
-      "value": 1995.0,
-      "unit": "number",
-      "currency": null,
-      "period": null,
-      "basis": null,
-      "quote": "revenue, non-GAAP gross margin, non-GAAP operating expenses, non-GAAP Interest Expense/Other Income (Expense), net, non-GAAP tax rate and diluted share count; AMD’s large and compelling TAM; AMD’s ability to expand Data Center and AI leadership; and AMD’s ability to drive long- term shareholder returns, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
-      "span": {
-        "char_start": 559,
-        "char_end": 973
-      },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
-    },
     {
       "metric": "revenue",
       "value": 7.7,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "REVENUE Q4 2024 ▪ Record revenue of $7.7 billion",
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Record revenue of $7.7 billion increased 24% y/y",
       "span": {
-        "char_start": 9852,
-        "char_end": 9900
+        "char_start": 9870,
+        "char_end": 9918
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Record revenue",
       "segment": null
     },
     {
-      "metric": "net_income",
-      "value": 482.0,
+      "metric": "revenue",
+      "value": 7658,
       "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income of $482 million",
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Revenue $7,658 $6,168 Up 24% $6,819 Up 12%",
       "span": {
-        "char_start": 10910,
-        "char_end": 10936
+        "char_start": 11406,
+        "char_end": 11448
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 24,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Revenue $7,658 $6,168 Up 24% $6,819 Up 12%",
+      "span": {
+        "char_start": 11406,
+        "char_end": 11448
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue Y/Y",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 12,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Revenue $7,658 $6,168 Up 24% $6,819 Up 12%",
+      "span": {
+        "char_start": 11406,
+        "char_end": 11448
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue Q/Q",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 3882,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Gross Profit $3,882 $2,911 Up 33% $3,419 Up 14%",
+      "span": {
+        "char_start": 11449,
+        "char_end": 11496
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross Profit",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 51,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Gross Margin 51% 47% Up 4 ppts 50% Up 1 ppt",
+      "span": {
+        "char_start": 11497,
+        "char_end": 11540
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross Margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 3022,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Operating Expenses $3,022 $2,575 Up 17% $2,709 Up 12%",
+      "span": {
+        "char_start": 11541,
+        "char_end": 11594
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 871,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Operating Income $871 $342 Up 155% $724 Up 20%",
+      "span": {
+        "char_start": 11658,
+        "char_end": 11704
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Income",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 11,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Operating Margin 11% 6% Up 5 ppts 11% Flat",
+      "span": {
+        "char_start": 11705,
+        "char_end": 11747
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Margin",
       "segment": null
     },
     {
       "metric": "net_income",
-      "value": 1.8,
-      "unit": "USD_billion",
+      "value": 482,
+      "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income of $1.8 billion",
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Net Income $482 $667 Down 28% $771 Down 37%",
       "span": {
-        "char_start": 11136,
-        "char_end": 11162
+        "char_start": 11748,
+        "char_end": 11791
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Income",
       "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 0.29,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Earnings Per Share $0.29 $0.41 Down 29% $0.47 Down 38%",
+      "span": {
+        "char_start": 11792,
+        "char_end": 11846
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Earnings Per Share",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 4140,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2024",
+      "basis": "non_gaap",
+      "quote": "Gross Profit $4,140 $3,133 Up 32% $3,657 Up 13%",
+      "span": {
+        "char_start": 12034,
+        "char_end": 12081
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross Profit",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 54,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q4 2024",
+      "basis": "non_gaap",
+      "quote": "Gross Margin 54% 51% Up 3 ppts 54% Flat",
+      "span": {
+        "char_start": 12082,
+        "char_end": 12121
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross Margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 2125,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2024",
+      "basis": "non_gaap",
+      "quote": "Operating Expenses $2,125 $1,727 Up 23% $1,956 Up 9%",
+      "span": {
+        "char_start": 12122,
+        "char_end": 12174
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 2026,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2024",
+      "basis": "non_gaap",
+      "quote": "Operating Income $2,026 $1,412 Up 43% $1,715 Up 18%",
+      "span": {
+        "char_start": 12231,
+        "char_end": 12282
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Income",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 26,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q4 2024",
+      "basis": "non_gaap",
+      "quote": "Operating Margin 26% 23% Up 3 ppts 25% Up 1 ppt",
+      "span": {
+        "char_start": 12283,
+        "char_end": 12330
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Margin",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 1777,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2024",
+      "basis": "non_gaap",
+      "quote": "Net Income $1,777 $1,249 Up 42% $1,504 Up 18%",
+      "span": {
+        "char_start": 12331,
+        "char_end": 12376
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 1.09,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "Q4 2024",
+      "basis": "non_gaap",
+      "quote": "Earnings Per Share $1.09 $0.77 Up 42% $0.92 Up 18%",
+      "span": {
+        "char_start": 12377,
+        "char_end": 12427
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Earnings Per Share",
+      "segment": null
+    },
+    {
+      "metric": "data_center_revenue",
+      "value": 3859,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Data Center Net Revenue $3,859 $2,282 Up 69% $3,549 Up 9%",
+      "span": {
+        "char_start": 12629,
+        "char_end": 12686
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center Net Revenue",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "operating_income",
+      "value": 1157,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Operating Income $1,157 $666 Up 74% $1,041 Up 11%",
+      "span": {
+        "char_start": 12687,
+        "char_end": 12736
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center Operating Income",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue",
+      "value": 2313,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Client Net Revenue $2,313 $1,461 Up 58% $1,881 Up 23%",
+      "span": {
+        "char_start": 12737,
+        "char_end": 12790
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Client Net Revenue",
+      "segment": "Client"
+    },
+    {
+      "metric": "operating_income",
+      "value": 446,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Operating Income $446 $55 Up 711% $276 Up 62%",
+      "span": {
+        "char_start": 12791,
+        "char_end": 12836
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Client Operating Income",
+      "segment": "Client"
+    },
+    {
+      "metric": "revenue",
+      "value": 563,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Gaming Net Revenue $563 $1,368 Down 59% $462 Up 22%",
+      "span": {
+        "char_start": 12837,
+        "char_end": 12888
+      },
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Gaming Net Revenue",
+      "segment": "Gaming"
+    },
+    {
+      "metric": "operating_income",
+      "value": 50,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Operating Income $50 $224 Down 78% $12 Up 317%",
+      "span": {
+        "char_start": 12889,
+        "char_end": 12935
+      },
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Gaming Operating Income",
+      "segment": "Gaming"
+    },
+    {
+      "metric": "revenue",
+      "value": 923,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Embedded Net Revenue $923 $1,057 Down 13% $927 Flat",
+      "span": {
+        "char_start": 12936,
+        "char_end": 12987
+      },
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Embedded Net Revenue",
+      "segment": "Embedded"
+    },
+    {
+      "metric": "operating_income",
+      "value": 362,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Operating Income $362 Million vs. $461 Million a year ago",
+      "span": {
+        "char_start": 20542,
+        "char_end": 20599
+      },
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Embedded Operating Income",
+      "segment": "Embedded"
     },
     {
       "metric": "revenue",
       "value": 25.8,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "REVENUE FY 2024 ▪ Record revenue of $25.8 billion",
+      "period": "FY 2024",
+      "basis": "gaap",
+      "quote": "Record revenue of $25.8 billion increased 14% y/y",
       "span": {
-        "char_start": 13083,
-        "char_end": 13132
+        "char_start": 13101,
+        "char_end": 13150
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Record revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 25785,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "FY 2024",
+      "basis": "gaap",
+      "quote": "Revenue $25,785 $22,680 Up 14%",
+      "span": {
+        "char_start": 14968,
+        "char_end": 14998
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 14,
+      "unit": "pct",
+      "currency": null,
+      "period": "FY 2024",
+      "basis": "gaap",
+      "quote": "Revenue $25,785 $22,680 Up 14%",
+      "span": {
+        "char_start": 14968,
+        "char_end": 14998
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue Y/Y",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 12725,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "FY 2024",
+      "basis": "gaap",
+      "quote": "Gross Profit $12,725 $10,460 Up 22%",
+      "span": {
+        "char_start": 14999,
+        "char_end": 15034
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross Profit",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 49,
+      "unit": "pct",
+      "currency": null,
+      "period": "FY 2024",
+      "basis": "gaap",
+      "quote": "Gross Margin 49% 46% Up 3 ppts",
+      "span": {
+        "char_start": 15035,
+        "char_end": 15065
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross Margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 10873,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "FY 2024",
+      "basis": "gaap",
+      "quote": "Operating Expenses $10,873 $10,093 Up 8%",
+      "span": {
+        "char_start": 15066,
+        "char_end": 15106
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 1900,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "FY 2024",
+      "basis": "gaap",
+      "quote": "Operating Income $1,900 $401 Up 374%",
+      "span": {
+        "char_start": 15155,
+        "char_end": 15191
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Income",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 7,
+      "unit": "pct",
+      "currency": null,
+      "period": "FY 2024",
+      "basis": "gaap",
+      "quote": "Operating Margin 7% 2% Up 5 ppts",
+      "span": {
+        "char_start": 15192,
+        "char_end": 15224
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Margin",
       "segment": null
     },
     {
       "metric": "net_income",
-      "value": 1.6,
-      "unit": "USD_billion",
+      "value": 1641,
+      "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income of $1.6 billion",
+      "period": "FY 2024",
+      "basis": "gaap",
+      "quote": "Net Income $1,641 $854 Up 92%",
       "span": {
-        "char_start": 14388,
-        "char_end": 14414
+        "char_start": 15225,
+        "char_end": 15254
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 1.0,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "FY 2024",
+      "basis": "gaap",
+      "quote": "Earnings Per Share $1.00 $0.53 Up 89%",
+      "span": {
+        "char_start": 15255,
+        "char_end": 15292
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Earnings Per Share",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 13759,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "FY 2024",
+      "basis": "non_gaap",
+      "quote": "Gross Profit $13,759 $11,436 Up 20%",
+      "span": {
+        "char_start": 15452,
+        "char_end": 15487
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross Profit",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 53,
+      "unit": "pct",
+      "currency": null,
+      "period": "FY 2024",
+      "basis": "non_gaap",
+      "quote": "Gross Margin 53% 50% Up 3 ppts",
+      "span": {
+        "char_start": 15488,
+        "char_end": 15518
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross Margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 7669,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "FY 2024",
+      "basis": "non_gaap",
+      "quote": "Operating Expenses $7,669 $6,616 Up 16%",
+      "span": {
+        "char_start": 15519,
+        "char_end": 15558
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 6138,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "FY 2024",
+      "basis": "non_gaap",
+      "quote": "Operating Income $6,138 $4,854 Up 26%",
+      "span": {
+        "char_start": 15604,
+        "char_end": 15641
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Income",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 24,
+      "unit": "pct",
+      "currency": null,
+      "period": "FY 2024",
+      "basis": "non_gaap",
+      "quote": "Operating Margin 24% 21% Up 3 ppts",
+      "span": {
+        "char_start": 15642,
+        "char_end": 15676
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Margin",
       "segment": null
     },
     {
       "metric": "net_income",
-      "value": 5.4,
+      "value": 5420,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "FY 2024",
+      "basis": "non_gaap",
+      "quote": "Net Income $5,420 $4,302 Up 26%",
+      "span": {
+        "char_start": 15677,
+        "char_end": 15708
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 3.31,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "FY 2024",
+      "basis": "non_gaap",
+      "quote": "Earnings Per Share $3.31 $2.65 Up 25%",
+      "span": {
+        "char_start": 15709,
+        "char_end": 15746
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Earnings Per Share",
+      "segment": null
+    },
+    {
+      "metric": "data_center_revenue",
+      "value": 12579,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "FY 2024",
+      "basis": "gaap",
+      "quote": "Data Center Net Revenue $12,579 $6,496 Up 94%",
+      "span": {
+        "char_start": 15936,
+        "char_end": 15981
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center Net Revenue",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "operating_income",
+      "value": 3482,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "FY 2024",
+      "basis": "gaap",
+      "quote": "Operating Income $3,482 $1,267 Up 175%",
+      "span": {
+        "char_start": 15982,
+        "char_end": 16020
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center Operating Income",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue",
+      "value": 7054,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "FY 2024",
+      "basis": "gaap",
+      "quote": "Client Net Revenue $7,054 $4,651 Up 52%",
+      "span": {
+        "char_start": 16021,
+        "char_end": 16060
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Client Net Revenue",
+      "segment": "Client"
+    },
+    {
+      "metric": "operating_income",
+      "value": 897,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "FY 2024",
+      "basis": "gaap",
+      "quote": "Operating Income (Loss) $897 ($46) Up 2,050%",
+      "span": {
+        "char_start": 16061,
+        "char_end": 16105
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Client Operating Income (Loss)",
+      "segment": "Client"
+    },
+    {
+      "metric": "revenue",
+      "value": 2595,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "FY 2024",
+      "basis": "gaap",
+      "quote": "Gaming Net Revenue $2,595 $6,212 Down 58%",
+      "span": {
+        "char_start": 16106,
+        "char_end": 16147
+      },
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Gaming Net Revenue",
+      "segment": "Gaming"
+    },
+    {
+      "metric": "operating_income",
+      "value": 290,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "FY 2024",
+      "basis": "gaap",
+      "quote": "Operating Income $290 $971 Down 70%",
+      "span": {
+        "char_start": 16148,
+        "char_end": 16183
+      },
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Gaming Operating Income",
+      "segment": "Gaming"
+    },
+    {
+      "metric": "revenue",
+      "value": 3557,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "FY 2024",
+      "basis": "gaap",
+      "quote": "Embedded Net Revenue $3,557 $5,321 Down 33%",
+      "span": {
+        "char_start": 16184,
+        "char_end": 16227
+      },
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Embedded Net Revenue",
+      "segment": "Embedded"
+    },
+    {
+      "metric": "operating_income",
+      "value": 1421,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "FY 2024",
+      "basis": "gaap",
+      "quote": "Operating Income $1,421 $2,628 Down 46%",
+      "span": {
+        "char_start": 16228,
+        "char_end": 16267
+      },
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Embedded Operating Income",
+      "segment": "Embedded"
+    },
+    {
+      "metric": "other",
+      "value": 5132,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Cash, Cash Equivalents and Short-term Investments $5,132 $4,544 Up 13%",
+      "span": {
+        "char_start": 16384,
+        "char_end": 16454
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash, Cash Equivalents and Short-term Investments",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 5734,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Inventories $5,734 $5,374 Up 7%",
+      "span": {
+        "char_start": 16504,
+        "char_end": 16535
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Inventories",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1721,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q4 2024",
+      "basis": "gaap",
+      "quote": "Total Debt $1,721 $1,720 Flat",
+      "span": {
+        "char_start": 16536,
+        "char_end": 16565
+      },
+      "direction": "unchanged",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total Debt",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 7.1,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
+      "period": "Q1 2025",
       "basis": null,
-      "quote": "net income of $5.4 billion",
+      "quote": "Revenue ~$7.1 Billion, +/- $300 Million",
       "span": {
-        "char_start": 14692,
-        "char_end": 14718
+        "char_start": 20707,
+        "char_end": 20746
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Revenue",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 54,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q1 2025",
+      "basis": "non_gaap",
+      "quote": "Gross Margin ~54%",
+      "span": {
+        "char_start": 20747,
+        "char_end": 20764
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Gross Margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 2.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "Q1 2025",
+      "basis": "non_gaap",
+      "quote": "Operating Expenses ~$2.1 Billion",
+      "span": {
+        "char_start": 20765,
+        "char_end": 20797
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Operating Expenses",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 13,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q1 2025",
+      "basis": "non_gaap",
+      "quote": "Effective Tax Rate ~13% of pre-tax income",
+      "span": {
+        "char_start": 20856,
+        "char_end": 20897
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Effective Tax Rate",
       "segment": null
     }
   ],
   "dropped": [
     {
       "metric": "revenue",
-      "quote": "revenue, non-GAAP gross margin, non-GAAP operating expenses, non-GAAP Interest Expense/Other Income (Expense), net, non-GAAP tax rate and diluted share count; AMD’s large and compelling TAM; AMD’s ability to expand Data Center and AI leadership; and AMD’s ability to drive long- term shareholder returns, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
-      "reason": "unit_not_allowed:number"
+      "quote": "Revenue $7,658 $6,168 Up 24% $6,819 Up 12%",
+      "reason": "value_not_in_quote"
     },
     {
-      "metric": "revenue",
-      "quote": "REVENUE Q4 2024 ▪ Record revenue of $7.7 billion",
-      "reason": "conflicting_values"
+      "metric": "gross_profit",
+      "quote": "Gross Profit $3,882 $2,911 Up 33% $3,419 Up 14%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating Expenses $3,022 $2,575 Up 17% $2,709 Up 12%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income $871 $342 Up 155% $724 Up 20%",
+      "reason": "value_not_in_quote"
     },
     {
       "metric": "net_income",
-      "quote": "net income of $482 million",
-      "reason": "conflicting_values"
+      "quote": "Net Income $482 $667 Down 28% $771 Down 37%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross Profit $4,140 $3,133 Up 32% $3,657 Up 13%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating Expenses $2,125 $1,727 Up 23% $1,956 Up 9%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income $2,026 $1,412 Up 43% $1,715 Up 18%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net Income $1,777 $1,249 Up 42% $1,504 Up 18%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "data_center_revenue",
+      "quote": "Data Center Net Revenue $3,859 $2,282 Up 69% $3,549 Up 9%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income $1,157 $666 Up 74% $1,041 Up 11%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Client Net Revenue $2,313 $1,461 Up 58% $1,881 Up 23%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income $446 $55 Up 711% $276 Up 62%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Gaming Net Revenue $563 $1,368 Down 59% $462 Up 22%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income $50 $224 Down 78% $12 Up 317%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Embedded Net Revenue $923 $1,057 Down 13% $927 Flat",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Revenue $25,785 $22,680 Up 14%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross Profit $12,725 $10,460 Up 22%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating Expenses $10,873 $10,093 Up 8%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income $1,900 $401 Up 374%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net Income $1,641 $854 Up 92%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross Profit $13,759 $11,436 Up 20%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating Expenses $7,669 $6,616 Up 16%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income $6,138 $4,854 Up 26%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net Income $5,420 $4,302 Up 26%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "data_center_revenue",
+      "quote": "Data Center Net Revenue $12,579 $6,496 Up 94%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income $3,482 $1,267 Up 175%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Client Net Revenue $7,054 $4,651 Up 52%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income (Loss) $897 ($46) Up 2,050%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Gaming Net Revenue $2,595 $6,212 Down 58%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income $290 $971 Down 70%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Embedded Net Revenue $3,557 $5,321 Down 33%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income $1,421 $2,628 Down 46%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Cash, Cash Equivalents and Short-term Investments $5,132 $4,544 Up 13%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Inventories $5,734 $5,374 Up 7%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Total Debt $1,721 $1,720 Flat",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Effective Tax Rate ~13% of pre-tax income",
+      "reason": "unknown_metric"
     }
   ],
   "validation_notes": []

@@ -1,8 +1,102 @@
 {
   "doc_key": "0000002488-25-000182:amd-20251212.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37FG6DW5DBPWWFSYA4N6",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C7JPK387B3WW4VAAE138N0",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 425000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Mrs. Ellis’ base salary will be $425,000",
+      "span": {
+        "char_start": 3102,
+        "char_end": 3142
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "base salary",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 70,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "she will be eligible for an annual performance bonus target amount of 70% of her base salary under AMD’s Annual Incentive Plan",
+      "span": {
+        "char_start": 3148,
+        "char_end": 3274
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "annual performance bonus target amount",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 300000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Mrs. Ellis will also receive a cash sign-on bonus of $300,000",
+      "span": {
+        "char_start": 3276,
+        "char_end": 3337
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "cash sign-on bonus",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 3000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "a restricted stock unit award with a target value of $3,000,000 to be granted under AMD’s 2023 Equity Incentive Plan",
+      "span": {
+        "char_start": 3350,
+        "char_end": 3466
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "restricted stock unit award target value",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Mrs. Ellis’ base salary will be $425,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "she will be eligible for an annual performance bonus target amount of 70% of her base salary under AMD’s Annual Incentive Plan",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Mrs. Ellis will also receive a cash sign-on bonus of $300,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "a restricted stock unit award with a target value of $3,000,000 to be granted under AMD’s 2023 Equity Incentive Plan",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

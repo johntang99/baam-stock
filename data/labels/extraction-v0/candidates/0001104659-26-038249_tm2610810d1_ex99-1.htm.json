@@ -1,8 +1,286 @@
 {
   "doc_key": "0001104659-26-038249:tm2610810d1_ex99-1.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37N85TSTB671E4KPYTGM",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA42ZWCEY7VG942F7Z4TZQ",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 1000000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "5.300% Senior Notes due 2031 595112CD3 / US595112CD31 $ 1,000,000,000",
+      "span": {
+        "char_start": 915,
+        "char_end": 984
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Principal Amount Outstanding - 5.300% Senior Notes due 2031",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1048.11,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "3.944 % November 15, 2030 $ 1,048.11",
+      "span": {
+        "char_start": 1027,
+        "char_end": 1063
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Notes Consideration Per $1,000 Principal Amount - 5.300% Senior Notes due 2031",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 500000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "5.650% Senior Notes due 2032 595112CG6 / US595112CG61 $ 500,000,000",
+      "span": {
+        "char_start": 1064,
+        "char_end": 1131
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Principal Amount Outstanding - 5.650% Senior Notes due 2032",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1061.22,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "3.939 % September 1, 2032 $ 1,061.22",
+      "span": {
+        "char_start": 1174,
+        "char_end": 1210
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Notes Consideration Per $1,000 Principal Amount - 5.650% Senior Notes due 2032",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 750000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "5.875% Senior Notes due 2033 595112BZ5 / US595112BZ51 $ 750,000,000",
+      "span": {
+        "char_start": 1211,
+        "char_end": 1278
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Principal Amount Outstanding - 5.875% Senior Notes due 2033 (595112BZ5)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1070.75,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "4.319 % November 9, 2032 $ 1,070.75",
+      "span": {
+        "char_start": 1321,
+        "char_end": 1356
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Notes Consideration Per $1,000 Principal Amount - 5.875% Senior Notes due 2033 (595112BZ5)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 900000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "5.875% Senior Notes due 2033 595112CB7 / US595112CB74 $ 900,000,000",
+      "span": {
+        "char_start": 1357,
+        "char_end": 1424
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Principal Amount Outstanding - 5.875% Senior Notes due 2033 (595112CB7)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1069.91,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "4.319 % June 15, 2033 $ 1,069.91",
+      "span": {
+        "char_start": 1467,
+        "char_end": 1499
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Notes Consideration Per $1,000 Principal Amount - 5.875% Senior Notes due 2033 (595112CB7)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1000000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "5.800% Senior Notes due 2035 595112CE1 / US595112CE14 $ 1,000,000,000",
+      "span": {
+        "char_start": 1500,
+        "char_end": 1569
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Principal Amount Outstanding - 5.800% Senior Notes due 2035",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1064.35,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "4.319 % October 15, 2034 $ 1,064.35",
+      "span": {
+        "char_start": 1612,
+        "char_end": 1647
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Notes Consideration Per $1,000 Principal Amount - 5.800% Senior Notes due 2035",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1250000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "6.050% Senior Notes due 2035 595112CH4 / US595112CH45 $ 1,250,000,000",
+      "span": {
+        "char_start": 1648,
+        "char_end": 1717
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Principal Amount Outstanding - 6.050% Senior Notes due 2035",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1079.93,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "4.319 % August 1, 2035 $ 1,079.93",
+      "span": {
+        "char_start": 1760,
+        "char_end": 1793
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Notes Consideration Per $1,000 Principal Amount - 6.050% Senior Notes due 2035",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "5.300% Senior Notes due 2031 595112CD3 / US595112CD31 $ 1,000,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "3.944 % November 15, 2030 $ 1,048.11",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5.650% Senior Notes due 2032 595112CG6 / US595112CG61 $ 500,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "3.939 % September 1, 2032 $ 1,061.22",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5.875% Senior Notes due 2033 595112BZ5 / US595112BZ51 $ 750,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "4.319 % November 9, 2032 $ 1,070.75",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5.875% Senior Notes due 2033 595112CB7 / US595112CB74 $ 900,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "4.319 % June 15, 2033 $ 1,069.91",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5.800% Senior Notes due 2035 595112CE1 / US595112CE14 $ 1,000,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "4.319 % October 15, 2034 $ 1,064.35",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "6.050% Senior Notes due 2035 595112CH4 / US595112CH45 $ 1,250,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "4.319 % August 1, 2035 $ 1,079.93",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

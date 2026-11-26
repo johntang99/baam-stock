@@ -1,8 +1,125 @@
 {
   "doc_key": "0001193125-25-122121:d831221d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37NSXD7RBT0MR3GC9RPR",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA8W1JMRN3GQSQ61DCNW61",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 3.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The aggregate consideration (including contingent consideration) payable by Buyer to the Seller in connection with the Equity Sale is $3.0 billion.",
+      "span": {
+        "char_start": 2673,
+        "char_end": 2820
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "aggregate consideration (including contingent consideration) for Equity Sale of ZT Group Int'l, Inc.",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2.4,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "(a) $2.4 billion in the form of cash payable to the Seller, with customary adjustments for working capital and other items",
+      "span": {
+        "char_start": 2929,
+        "char_end": 3051
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Closing Consideration - cash payable to the Seller",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 150,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "(i) $150 million by (ii) a price per share of Buyer Stock",
+      "span": {
+        "char_start": 3209,
+        "char_end": 3266
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Closing Consideration - value of Buyer Stock issuable to the Seller",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 450,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "the Seller will be eligible to receive up to $450 million of additional cash consideration (the “Contingent Consideration”), to the extent certain conditions are met following the closing of the Equity Sale",
+      "span": {
+        "char_start": 3635,
+        "char_end": 3841
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "hypothetical",
+      "metric_label": "Contingent Consideration (additional cash consideration)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 153,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "the Company will be entitled to receive a termination fee of up to $153 million from Buyer if the Agreement is terminated in certain circumstances related to the failure to obtain certain regulatory approvals prior to the Outside Date",
+      "span": {
+        "char_start": 5407,
+        "char_end": 5641
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "hypothetical",
+      "metric_label": "termination fee payable by Buyer",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "The aggregate consideration (including contingent consideration) payable by Buyer to the Seller in connection with the Equity Sale is $3.0 billion.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "(a) $2.4 billion in the form of cash payable to the Seller, with customary adjustments for working capital and other items",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "(i) $150 million by (ii) a price per share of Buyer Stock",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the Seller will be eligible to receive up to $450 million of additional cash consideration (the “Contingent Consideration”), to the extent certain conditions are met following the closing of the Equity Sale",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the Company will be entitled to receive a termination fee of up to $153 million from Buyer if the Agreement is terminated in certain circumstances related to the failure to obtain certain regulatory approvals prior to the Outside Date",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

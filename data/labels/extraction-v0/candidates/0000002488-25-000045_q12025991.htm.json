@@ -1,78 +1,132 @@
 {
   "doc_key": "0000002488-25-000045:q12025991.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37F10W393WYEM6E8MAEW",
+  "llm_call_id": "llm_01M8C7BTDQ75Z1FJ0SQT5K8W7Y",
   "candidates": [
     {
       "metric": "revenue",
       "value": 7.4,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue was $7.4 billion",
+      "period": "first quarter of 2025",
+      "basis": "gaap",
+      "quote": "First quarter revenue was $7.4 billion",
       "span": {
-        "char_start": 398,
+        "char_start": 384,
         "char_end": 422
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "First quarter revenue",
       "segment": null
     },
     {
-      "metric": "gross_margin",
-      "value": 50.0,
+      "metric": "gross_margin_pct",
+      "value": 50,
       "unit": "pct",
       "currency": null,
-      "period": null,
-      "basis": null,
+      "period": "first quarter of 2025",
+      "basis": "gaap",
       "quote": "gross margin was 50%",
       "span": {
         "char_start": 424,
         "char_end": 444
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "gross margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 806,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of 2025",
+      "basis": "gaap",
+      "quote": "operating income was $806 million",
+      "span": {
+        "char_start": 446,
+        "char_end": 479
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "operating income",
       "segment": null
     },
     {
       "metric": "net_income",
-      "value": 709.0,
+      "value": 709,
       "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
+      "period": "first quarter of 2025",
+      "basis": "gaap",
       "quote": "net income was $709 million",
       "span": {
         "char_start": 481,
         "char_end": 508
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "net income",
       "segment": null
     },
     {
-      "metric": "gross_margin",
-      "value": 54.0,
+      "metric": "eps",
+      "value": 0.44,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "first quarter of 2025",
+      "basis": "gaap",
+      "quote": "diluted earnings per share was $0.44",
+      "span": {
+        "char_start": 513,
+        "char_end": 549
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "diluted earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 54,
       "unit": "pct",
       "currency": null,
-      "period": null,
-      "basis": null,
-      "quote": "gross margin was 54%",
+      "period": "first quarter of 2025",
+      "basis": "non_gaap",
+      "quote": "On a non-GAAP(*) basis, gross margin was 54%",
       "span": {
-        "char_start": 575,
+        "char_start": 551,
         "char_end": 595
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "non-GAAP gross margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 1.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of 2025",
+      "basis": "non_gaap",
+      "quote": "operating income was $1.8 billion",
+      "span": {
+        "char_start": 597,
+        "char_end": 630
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "non-GAAP operating income",
       "segment": null
     },
     {
@@ -80,147 +134,706 @@
       "value": 1.6,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
+      "period": "first quarter of 2025",
+      "basis": "non_gaap",
       "quote": "net income was $1.6 billion",
       "span": {
         "char_start": 632,
         "char_end": 659
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "non-GAAP net income",
       "segment": null
     },
     {
-      "metric": "revenue",
+      "metric": "eps",
+      "value": 0.96,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "first quarter of 2025",
+      "basis": "non_gaap",
+      "quote": "diluted earnings per share was $0.96",
+      "span": {
+        "char_start": 664,
+        "char_end": 700
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "non-GAAP diluted earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 36,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of 2025",
+      "basis": null,
+      "quote": "We grew first quarter revenue 36% year-over-year",
+      "span": {
+        "char_start": 1185,
+        "char_end": 1233
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "revenue growth year-over-year",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 3,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q1 2025",
+      "basis": "gaap",
+      "quote": "Revenue ($M) $7,438 $5,473 Up 36% $7,658 Down 3%",
+      "span": {
+        "char_start": 1563,
+        "char_end": 1611
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue Q/Q",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 3736,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q1 2025",
+      "basis": "gaap",
+      "quote": "Gross profit ($M) $3,736 $2,560 Up 46% $3,882 Down 4%",
+      "span": {
+        "char_start": 1612,
+        "char_end": 1665
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross profit",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 2930,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q1 2025",
+      "basis": "gaap",
+      "quote": "Operating expenses ($M) $2,930 $2,524 Up 16% $3,011 Down 3%",
+      "span": {
+        "char_start": 1712,
+        "char_end": 1771
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 11,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q1 2025",
+      "basis": "gaap",
+      "quote": "Operating margin 11% 1% Up 10 ppts 11% Flat",
+      "span": {
+        "char_start": 1826,
+        "char_end": 1869
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 3992,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q1 2025",
+      "basis": "non_gaap",
+      "quote": "Gross profit ($M) $3,992 $2,861 Up 40% $4,140 Down 4%",
+      "span": {
+        "char_start": 2097,
+        "char_end": 2150
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Gross profit",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 2213,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q1 2025",
+      "basis": "non_gaap",
+      "quote": "Operating expenses ($M) $2,213 $1,728 Up 28% $2,114 Up 5%",
+      "span": {
+        "char_start": 2191,
+        "char_end": 2248
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 1779,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q1 2025",
+      "basis": "non_gaap",
+      "quote": "Operating income ($M) $1,779 $1,133 Up 57% $2,026 Down 12%",
+      "span": {
+        "char_start": 2249,
+        "char_end": 2307
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Operating income",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 24,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q1 2025",
+      "basis": "non_gaap",
+      "quote": "Operating margin 24% 21% Up 3 ppts 26% Down 2 ppts",
+      "span": {
+        "char_start": 2308,
+        "char_end": 2358
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Operating margin",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 1566,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q1 2025",
+      "basis": "non_gaap",
+      "quote": "Net income ($M) $1,566 $1,013 Up 55% $1,777 Down 12%",
+      "span": {
+        "char_start": 2359,
+        "char_end": 2411
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Net income",
+      "segment": null
+    },
+    {
+      "metric": "data_center_revenue",
       "value": 3.7,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
+      "period": "first quarter of 2025",
       "basis": null,
-      "quote": "revenue in the quarter was $3.7 billion",
+      "quote": "Data Center segment revenue in the quarter was $3.7 billion, up 57% year-over-year",
       "span": {
-        "char_start": 2511,
-        "char_end": 2550
+        "char_start": 2491,
+        "char_end": 2573
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center segment revenue",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 57,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of 2025",
+      "basis": null,
+      "quote": "Data Center segment revenue in the quarter was $3.7 billion, up 57% year-over-year",
+      "span": {
+        "char_start": 2491,
+        "char_end": 2573
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center segment revenue growth year-over-year",
+      "segment": "Data Center"
     },
     {
       "metric": "revenue",
       "value": 2.9,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
+      "period": "first quarter of 2025",
       "basis": null,
-      "quote": "revenue in the quarter was $2.9 billion",
+      "quote": "Client and Gaming segment revenue in the quarter was $2.9 billion, up 28% year-over-year.",
       "span": {
-        "char_start": 2675,
-        "char_end": 2714
+        "char_start": 2649,
+        "char_end": 2738
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Client and Gaming segment revenue",
+      "segment": "Client and Gaming"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 28,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of 2025",
+      "basis": null,
+      "quote": "Client and Gaming segment revenue in the quarter was $2.9 billion, up 28% year-over-year.",
+      "span": {
+        "char_start": 2649,
+        "char_end": 2738
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Client and Gaming segment revenue growth year-over-year",
+      "segment": "Client and Gaming"
     },
     {
       "metric": "revenue",
       "value": 2.3,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
+      "period": "first quarter of 2025",
       "basis": null,
-      "quote": "revenue was $2.3 billion",
+      "quote": "Client revenue was $2.3 billion, up 68% year-over-year",
       "span": {
-        "char_start": 2746,
-        "char_end": 2770
+        "char_start": 2739,
+        "char_end": 2793
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
+      "direction": "increase",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "Client revenue",
+      "segment": "Client"
     },
     {
-      "metric": "revenue",
-      "value": 647.0,
-      "unit": "USD_million",
-      "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue was $647 million",
-      "span": {
-        "char_start": 2898,
-        "char_end": 2922
-      },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
-    },
-    {
-      "metric": "revenue",
-      "value": 823.0,
-      "unit": "USD_million",
-      "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue in the quarter was $823 million",
-      "span": {
-        "char_start": 3019,
-        "char_end": 3058
-      },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
-    },
-    {
-      "metric": "revenue",
-      "value": 1995.0,
-      "unit": "number",
+      "metric": "revenue_growth_yoy_pct",
+      "value": 68,
+      "unit": "pct",
       "currency": null,
-      "period": null,
+      "period": "first quarter of 2025",
       "basis": null,
-      "quote": "revenue and non-GAAP gross margin; and the expected impact of the new export licensing requirement on AMD, including on its revenues, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "quote": "Client revenue was $2.3 billion, up 68% year-over-year",
       "span": {
-        "char_start": 11127,
-        "char_end": 11370
+        "char_start": 2739,
+        "char_end": 2793
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "Client revenue growth year-over-year",
+      "segment": "Client"
+    },
+    {
+      "metric": "revenue",
+      "value": 647,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of 2025",
+      "basis": null,
+      "quote": "Gaming revenue was $647 million, down 30% year-over-year",
+      "span": {
+        "char_start": 2891,
+        "char_end": 2947
+      },
+      "direction": "decrease",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "Gaming revenue",
+      "segment": "Gaming"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": -30,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of 2025",
+      "basis": null,
+      "quote": "Gaming revenue was $647 million, down 30% year-over-year",
+      "span": {
+        "char_start": 2891,
+        "char_end": 2947
+      },
+      "direction": "decrease",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "Gaming revenue change year-over-year",
+      "segment": "Gaming"
+    },
+    {
+      "metric": "revenue",
+      "value": 823,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of 2025",
+      "basis": null,
+      "quote": "Embedded segment revenue in the quarter was $823 million, down 3% year-over-year",
+      "span": {
+        "char_start": 3002,
+        "char_end": 3082
+      },
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Embedded segment revenue",
+      "segment": "Embedded"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": -3,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of 2025",
+      "basis": null,
+      "quote": "Embedded segment revenue in the quarter was $823 million, down 3% year-over-year",
+      "span": {
+        "char_start": 3002,
+        "char_end": 3082
+      },
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Embedded segment revenue change year-over-year",
+      "segment": "Embedded"
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 7.4,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of 2025",
+      "basis": null,
+      "quote": "For the second quarter of 2025, AMD expects revenue to be approximately $7.4 billion, plus or minus $300 million.",
+      "span": {
+        "char_start": 6617,
+        "char_end": 6730
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "revenue outlook",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 43,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of 2025",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP gross margin is estimated to be 43% inclusive of approximately $800 million in charges for inventory and related reserves due to the new export controls",
+      "span": {
+        "char_start": 6731,
+        "char_end": 6892
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP gross margin outlook",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 800,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of 2025",
+      "basis": null,
+      "quote": "inclusive of approximately $800 million in charges for inventory and related reserves due to the new export controls",
+      "span": {
+        "char_start": 6776,
+        "char_end": 6892
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "charges for inventory and related reserves due to new export controls",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 54,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of 2025",
+      "basis": "non_gaap",
+      "quote": "Excluding this charge, non-GAAP gross margin would be approximately 54%.",
+      "span": {
+        "char_start": 6978,
+        "char_end": 7050
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Non-GAAP gross margin excluding charge",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 932,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "three months ended March 29, 2025",
+      "basis": "gaap",
+      "quote": "Operating Income (Loss): Data Center Segment $ 932 $ 1,157 $ 541",
+      "span": {
+        "char_start": 23427,
+        "char_end": 23491
+      },
+      "direction": "none",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center Segment operating income",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "operating_income",
+      "value": 496,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "three months ended March 29, 2025",
+      "basis": "gaap",
+      "quote": "Client and Gaming Segment 496 496 237",
+      "span": {
+        "char_start": 23492,
+        "char_end": 23529
+      },
+      "direction": "none",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Client and Gaming Segment operating income",
+      "segment": "Client and Gaming"
+    },
+    {
+      "metric": "operating_income",
+      "value": 328,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "three months ended March 29, 2025",
+      "basis": "gaap",
+      "quote": "Embedded Segment 328 362 342",
+      "span": {
+        "char_start": 23530,
+        "char_end": 23558
+      },
+      "direction": "none",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Embedded Segment operating income",
+      "segment": "Embedded"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 939,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "three months ended March 29, 2025",
+      "basis": "gaap",
+      "quote": "GAAP net cash provided by operating activities $ 939 $ 1,299 $ 521",
+      "span": {
+        "char_start": 27387,
+        "char_end": 27453
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net cash provided by operating activities",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 727,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "three months ended March 29, 2025",
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 727 $ 1,091 $ 379",
+      "span": {
+        "char_start": 27552,
+        "char_end": 27586
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1954,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "three months ended March 29, 2025",
+      "basis": "non_gaap",
+      "quote": "Adjusted EBITDA $ 1,954 $ 2,212 $ 1,295",
+      "span": {
+        "char_start": 25693,
+        "char_end": 25732
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Adjusted EBITDA",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 212,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "three months ended March 29, 2025",
+      "basis": "gaap",
+      "quote": "Capital expenditures $ 212 $ 208 $ 142",
+      "span": {
+        "char_start": 23642,
+        "char_end": 23680
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Capital expenditures",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1728,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "three months ended March 29, 2025",
+      "basis": "gaap",
+      "quote": "Research and development 1,728 1,712 1,525",
+      "span": {
+        "char_start": 19283,
+        "char_end": 19325
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Research and development",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 10,
+      "unit": "pct",
+      "currency": null,
+      "period": "three months ended March 29, 2025",
+      "basis": "non_gaap",
+      "quote": "Free cash flow margin % 10 % 14 % 7 %",
+      "span": {
+        "char_start": 27587,
+        "char_end": 27624
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow margin %",
       "segment": null
     }
   ],
   "dropped": [
     {
-      "metric": "revenue",
-      "quote": "revenue and non-GAAP gross margin; and the expected impact of the new export licensing requirement on AMD, including on its revenues, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
-      "reason": "unit_not_allowed:number"
+      "metric": "revenue_growth_yoy_pct",
+      "quote": "Gaming revenue was $647 million, down 30% year-over-year",
+      "reason": "value_not_in_quote"
     },
     {
-      "metric": "revenue",
-      "quote": "revenue was $7.4 billion",
-      "reason": "conflicting_values"
+      "metric": "revenue_growth_yoy_pct",
+      "quote": "Embedded segment revenue in the quarter was $823 million, down 3% year-over-year",
+      "reason": "value_not_in_quote"
     },
     {
-      "metric": "gross_margin_pct",
-      "quote": "gross margin was 50%",
+      "metric": "other",
+      "quote": "inclusive of approximately $800 million in charges for inventory and related reserves due to the new export controls",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income (Loss): Data Center Segment $ 932 $ 1,157 $ 541",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Client and Gaming Segment 496 496 237",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Embedded Segment 328 362 342",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "quote": "GAAP net cash provided by operating activities $ 939 $ 1,299 $ 521",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "free_cash_flow",
+      "quote": "Free cash flow $ 727 $ 1,091 $ 379",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Adjusted EBITDA $ 1,954 $ 2,212 $ 1,295",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Capital expenditures $ 212 $ 208 $ 142",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Research and development 1,728 1,712 1,525",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Free cash flow margin % 10 % 14 % 7 %",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "operating income was $1.8 billion",
       "reason": "conflicting_values"
     },
     {
       "metric": "net_income",
-      "quote": "net income was $709 million",
+      "quote": "net income was $1.6 billion",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "quote": "Non-GAAP gross margin is estimated to be 43% inclusive of approximately $800 million in charges for inventory and related reserves due to the new export controls",
       "reason": "conflicting_values"
     }
   ],

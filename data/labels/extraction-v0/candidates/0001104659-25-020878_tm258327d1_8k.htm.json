@@ -1,8 +1,56 @@
 {
   "doc_key": "0001104659-25-020878:tm258327d1_8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37MWTVTQ47TRQ94MMCPW",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA0GN1W59J1WGYGX7YNW6F",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 125000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "pro rata portion of a cash retainer of $125,000 for their service as a member of the Board",
+      "span": {
+        "char_start": 3089,
+        "char_end": 3179
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "cash retainer for non-employee director Board service",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 250000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "the pro rata portion of the annual grant of restricted stock, valued at $250,000, provided to non-employee directors under the Company’s director compensation plan",
+      "span": {
+        "char_start": 3239,
+        "char_end": 3402
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "annual grant of restricted stock to non-employee directors",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "pro rata portion of a cash retainer of $125,000 for their service as a member of the Board",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the pro rata portion of the annual grant of restricted stock, valued at $250,000, provided to non-employee directors under the Company’s director compensation plan",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

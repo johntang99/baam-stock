@@ -1,8 +1,125 @@
 {
   "doc_key": "0001046179-26-000545:tsm-monthend6kx20260825.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37MD4HJXKF9F28K9QMFV",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9VH5XNV6NSK68EZM4NB4T",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 0.7,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "July 2026",
+      "basis": null,
+      "quote": "Equity investment: NT$0.7 billion of disposition.",
+      "span": {
+        "char_start": 2822,
+        "char_end": 2871
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Equity investment disposition",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 14.0,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "July 2026",
+      "basis": null,
+      "quote": "A July 2026 ~ July 2031 NT$14.0 2.03%",
+      "span": {
+        "char_start": 3114,
+        "char_end": 3151
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Unsecured bond issuance 115-3 Tranche A total amount",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2.03,
+      "unit": "pct",
+      "currency": null,
+      "period": "July 2026",
+      "basis": null,
+      "quote": "A July 2026 ~ July 2031 NT$14.0 2.03%",
+      "span": {
+        "char_start": 3114,
+        "char_end": 3151
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Unsecured bond issuance 115-3 Tranche A coupon rate",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 4.5,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "July 2026",
+      "basis": null,
+      "quote": "B July 2026 ~ July 2036 NT$4.5 2.10%",
+      "span": {
+        "char_start": 3196,
+        "char_end": 3232
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Unsecured bond issuance 115-3 Tranche B total amount",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2.1,
+      "unit": "pct",
+      "currency": null,
+      "period": "July 2026",
+      "basis": null,
+      "quote": "B July 2026 ~ July 2036 NT$4.5 2.10%",
+      "span": {
+        "char_start": 3196,
+        "char_end": 3232
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Unsecured bond issuance 115-3 Tranche B coupon rate",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Equity investment: NT$0.7 billion of disposition.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "A July 2026 ~ July 2031 NT$14.0 2.03%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "A July 2026 ~ July 2031 NT$14.0 2.03%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "B July 2026 ~ July 2036 NT$4.5 2.10%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "B July 2026 ~ July 2036 NT$4.5 2.10%",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

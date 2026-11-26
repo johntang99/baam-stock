@@ -1,8 +1,56 @@
 {
   "doc_key": "0001193125-26-356217:d412696d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37PZ3KEWKSXEG6KXGM5T",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAJPWAA9MB027Z3EG8TEF0",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 206.58,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "the Company issued to Google a warrant (the “Warrant”) to purchase up to an aggregate of 58,970,907 shares of common stock of the Company (the “Warrant Shares”) at an exercise price of $206.58 per share",
+      "span": {
+        "char_start": 2586,
+        "char_end": 2788
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Warrant exercise price",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 500,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027 through the end of fiscal year 2033",
+      "basis": null,
+      "quote": "in 240 equal tranches, with one tranche vesting for each $500 million in Custom Products revenue",
+      "span": {
+        "char_start": 3194,
+        "char_end": 3290
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "hypothetical",
+      "metric_label": "Custom Products revenue per vesting tranche",
+      "segment": "Custom Products"
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "the Company issued to Google a warrant (the “Warrant”) to purchase up to an aggregate of 58,970,907 shares of common stock of the Company (the “Warrant Shares”) at an exercise price of $206.58 per share",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "in 240 equal tranches, with one tranche vesting for each $500 million in Custom Products revenue",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

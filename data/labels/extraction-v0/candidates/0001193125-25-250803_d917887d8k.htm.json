@@ -1,8 +1,56 @@
 {
   "doc_key": "0001193125-25-250803:d917887d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37PA4VKSJY48B8H36GS6",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAD8335DKT88CPSGE8CY5Y",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 2.4,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "October 27, 2025",
+      "basis": null,
+      "quote": "paid, or will cause to be paid, to the Seller $2.4 billion in cash, subject to certain purchase price adjustments",
+      "span": {
+        "char_start": 2860,
+        "char_end": 2973
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash consideration for sale of ZT Group Int'l, Inc. (Closing Consideration)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 450,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "October 27, 2025",
+      "basis": null,
+      "quote": "the Seller is eligible to receive additional consideration of up to $450 million of cash to the extent certain conditions are met following the closing of the Equity Sale",
+      "span": {
+        "char_start": 3081,
+        "char_end": 3251
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Contingent Consideration for sale of ZT Group Int'l, Inc.",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "paid, or will cause to be paid, to the Seller $2.4 billion in cash, subject to certain purchase price adjustments",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the Seller is eligible to receive additional consideration of up to $450 million of cash to the extent certain conditions are met following the closing of the Equity Sale",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

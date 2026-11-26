@@ -1,8 +1,33 @@
 {
   "doc_key": "0001628280-26-045564:a20260625dividendpressrele.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37Q8QFT8Z8K929SE391R",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAM8J2CHCBTHZPZH4DXS28",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 0.06,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "today announced a quarterly dividend of $0.06 per share of common stock, including preferred stock on an as converted to common stock basis, payable on July 30, 2026 to stockholders of record as of July 10, 2026.",
+      "span": {
+        "char_start": 198,
+        "char_end": 410
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "quarterly dividend",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "today announced a quarterly dividend of $0.06 per share of common stock, including preferred stock on an as converted to common stock basis, payable on July 30, 2026 to stockholders of record as of July 10, 2026.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

@@ -1,8 +1,102 @@
 {
   "doc_key": "0001045810-24-000113:nvda-20240522.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37H0SP8B9WBHHX63TPAH",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C8A8RAXN1J0TV4J6W91GFB",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 0.1,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The Company also increased its quarterly cash dividend by 150 percent from $0.04 per share to $0.10 per share of common stock.",
+      "span": {
+        "char_start": 4059,
+        "char_end": 4185
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "quarterly cash dividend",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 150,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "The Company also increased its quarterly cash dividend by 150 percent from $0.04 per share to $0.10 per share of common stock.",
+      "span": {
+        "char_start": 4059,
+        "char_end": 4185
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "quarterly cash dividend increase",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 0.04,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The Company also increased its quarterly cash dividend by 150 percent from $0.04 per share to $0.10 per share of common stock.",
+      "span": {
+        "char_start": 4059,
+        "char_end": 4185
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "prior quarterly cash dividend",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 0.01,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The increased dividend is equivalent to $0.01 per share on a post-Stock Split basis and will be paid on Friday, June 28, 2024, to all shareholders of record on Tuesday, June 11, 2024.",
+      "span": {
+        "char_start": 4186,
+        "char_end": 4369
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "increased dividend on a post-Stock Split basis",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "The Company also increased its quarterly cash dividend by 150 percent from $0.04 per share to $0.10 per share of common stock.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Company also increased its quarterly cash dividend by 150 percent from $0.04 per share to $0.10 per share of common stock.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Company also increased its quarterly cash dividend by 150 percent from $0.04 per share to $0.10 per share of common stock.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The increased dividend is equivalent to $0.01 per share on a post-Stock Split basis and will be paid on Friday, June 28, 2024, to all shareholders of record on Tuesday, June 11, 2024.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

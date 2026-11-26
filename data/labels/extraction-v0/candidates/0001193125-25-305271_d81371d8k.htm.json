@@ -1,8 +1,33 @@
 {
   "doc_key": "0001193125-25-305271:d81371d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37PBHY2EVRD789VFK81N",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CADJ5JE3TYEGST9V60A9PK",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 87.0029,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "at a purchase price per share of Common Stock equal to $87.0029 (the “Exercise Price”)",
+      "span": {
+        "char_start": 2825,
+        "char_end": 2911
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Exercise Price",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "at a purchase price per share of Common Stock equal to $87.0029 (the “Exercise Price”)",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

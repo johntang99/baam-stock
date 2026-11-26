@@ -1,8 +1,33 @@
 {
   "doc_key": "0001104659-26-034174:tm269755d1_8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37N5M18V1B7GVNJY99K5",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA3ER2GHBJ2ZZE6SQ0X5WQ",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "On March 25, 2026, Micron Technology, Inc. issued a press release announcing that it has commenced cash tender offers to purchase any and all of its outstanding 5.300% Senior Notes due 2031, 5.650% Senior Notes due 2032, 5.875% Senior Notes due 2033, 5.875% Senior Notes due 2033, 5.800% Senior Notes due 2035, and 6.050% Senior Notes due 2035.",
+      "span": {
+        "char_start": 2024,
+        "char_end": 2368
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "cash tender offers to purchase outstanding Senior Notes",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "On March 25, 2026, Micron Technology, Inc. issued a press release announcing that it has commenced cash tender offers to purchase any and all of its outstanding 5.300% Senior Notes due 2031, 5.650% Senior Notes due 2032, 5.875% Senior Notes due 2033, 5.875% Senior Notes due 2033, 5.800% Senior Notes due 2035, and 6.050% Senior Notes due 2035.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

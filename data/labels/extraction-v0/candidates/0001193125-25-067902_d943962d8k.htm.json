@@ -1,8 +1,125 @@
 {
   "doc_key": "0001193125-25-067902:d943962d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37NQ9QCT8DW5HWV83WH3",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA8D8DXPMTZPB1JZ3XHHRY",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 3.375,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "March 31, 2025",
+      "basis": null,
+      "quote": "paid, or will cause to be paid, to the Sellers, the Company Warrant Holders and the holders of Company RSUs (as defined in the Purchase Agreement) $3.375 billion in cash, subject to certain purchase price adjustments",
+      "span": {
+        "char_start": 3210,
+        "char_end": 3426
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "cash consideration paid for ZT acquisition",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 300,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "(b) $300 million of cash, in each case, to the extent certain conditions are met following the closing of the Share Purchase",
+      "span": {
+        "char_start": 3685,
+        "char_end": 3809
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "contingent cash consideration",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 641666666.67,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The ZT Credit Agreement provides for an asset-based revolving credit facility in an amount up to $641,666,666.67 that matures December 31, 2026.",
+      "span": {
+        "char_start": 4784,
+        "char_end": 4928
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "ZT asset-based revolving credit facility amount",
+      "segment": "ZT Group"
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "As of March 31, 2025",
+      "basis": null,
+      "quote": "As of March 31, 2025, there are no borrowings outstanding under the ZT Credit Agreement.",
+      "span": {
+        "char_start": 4929,
+        "char_end": 5017
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "borrowings outstanding under ZT Credit Agreement",
+      "segment": "ZT Group"
+    },
+    {
+      "metric": "other",
+      "value": 850000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The Receivables Purchase Agreement provides for an uncommitted receivables purchase facility with a facility limit of $850,000,000.",
+      "span": {
+        "char_start": 6871,
+        "char_end": 7002
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "receivables purchase facility limit",
+      "segment": "ZT Group"
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "paid, or will cause to be paid, to the Sellers, the Company Warrant Holders and the holders of Company RSUs (as defined in the Purchase Agreement) $3.375 billion in cash, subject to certain purchase price adjustments",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "(b) $300 million of cash, in each case, to the extent certain conditions are met following the closing of the Share Purchase",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The ZT Credit Agreement provides for an asset-based revolving credit facility in an amount up to $641,666,666.67 that matures December 31, 2026.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "As of March 31, 2025, there are no borrowings outstanding under the ZT Credit Agreement.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Receivables Purchase Agreement provides for an uncommitted receivables purchase facility with a facility limit of $850,000,000.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

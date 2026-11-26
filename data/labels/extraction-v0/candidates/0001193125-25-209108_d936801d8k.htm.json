@@ -1,8 +1,33 @@
 {
   "doc_key": "0001193125-25-209108:d936801d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37P4FW8A1BPTMMF010B1",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CABSHZGAW7W411JTR8ZJX2",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 0.06,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "its Board of Directors had declared the payment of its quarterly dividend of $0.06 per share to be paid on October 30, 2025 to all stockholders of record as of October 10, 2025",
+      "span": {
+        "char_start": 2063,
+        "char_end": 2239
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "quarterly dividend",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "its Board of Directors had declared the payment of its quarterly dividend of $0.06 per share to be paid on October 30, 2025 to all stockholders of record as of October 10, 2025",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

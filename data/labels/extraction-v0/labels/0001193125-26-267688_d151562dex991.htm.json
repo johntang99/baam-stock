@@ -4,6 +4,19 @@
   "doc_kind": "earnings_release",
   "fiscal_period": null,
   "label_status": "draft",
-  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.3",
-  "facts": []
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": [
+    {
+      "metric": "revenue_outlook",
+      "value": null,
+      "unit": "USD",
+      "period": "FY2027Q2",
+      "basis": null,
+      "quote": "The Company today also announced that it is reaffirming its financial outlook for the second quarter of fiscal 2027, as provided on May 27, 2026.",
+      "direction": "unchanged",
+      "scope": "company",
+      "certainty": "guidance",
+      "segment": null
+    }
+  ]
 }

@@ -1,8 +1,102 @@
 {
   "doc_key": "0001193125-25-217311:d911451d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37P62PTTE7VGS2B1Q6GQ",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CACB8J9WBVPXQB0D19T799",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 77.09,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "September 25, 2025",
+      "basis": null,
+      "quote": "Matt Murphy Chairman and Chief Executive Officer 13,600 77.09",
+      "span": {
+        "char_start": 2231,
+        "char_end": 2292
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Weighted average purchase price ($) - Matt Murphy, Chairman and Chief Executive Officer, open market purchase of 13,600 shares",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 78.03,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "September 25, 2025",
+      "basis": null,
+      "quote": "Sandeep Bharathi President, Data Center Group 3,400 78.03",
+      "span": {
+        "char_start": 2293,
+        "char_end": 2350
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Weighted average purchase price ($) - Sandeep Bharathi, President, Data Center Group, open market purchase of 3,400 shares",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 78.03,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "September 25, 2025",
+      "basis": null,
+      "quote": "Chris Koopmans President and Chief Operating Officer 6,800 78.03",
+      "span": {
+        "char_start": 2351,
+        "char_end": 2415
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Weighted average purchase price ($) - Chris Koopmans, President and Chief Operating Officer, open market purchase of 6,800 shares",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 78.03,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "September 25, 2025",
+      "basis": null,
+      "quote": "Willem Meintjes Chief Financial Officer 3,400 78.03",
+      "span": {
+        "char_start": 2416,
+        "char_end": 2467
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Weighted average purchase price ($) - Willem Meintjes, Chief Financial Officer, open market purchase of 3,400 shares",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Matt Murphy Chairman and Chief Executive Officer 13,600 77.09",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Sandeep Bharathi President, Data Center Group 3,400 78.03",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Chris Koopmans President and Chief Operating Officer 6,800 78.03",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Willem Meintjes Chief Financial Officer 3,400 78.03",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

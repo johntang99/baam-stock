@@ -1,8 +1,102 @@
 {
   "doc_key": "0001193125-25-199281:d58273d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37P006SPDB4MSYTPQ1DR",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAARHSP9YHRQ5ANDN46J7X",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 120,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "any four consecutive fiscal quarters within fiscal 2028 through fiscal 2030",
+      "basis": "company_defined",
+      "quote": "Maximum 300% ≥$120 billion",
+      "span": {
+        "char_start": 7911,
+        "char_end": 7937
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "hypothetical",
+      "metric_label": "Applicable AI Revenue (Maximum Achievement Level, 300% payout)",
+      "segment": "AI products"
+    },
+    {
+      "metric": "other",
+      "value": 105,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "any four consecutive fiscal quarters within fiscal 2028 through fiscal 2030",
+      "basis": "company_defined",
+      "quote": "Stretch 200% $105 billion",
+      "span": {
+        "char_start": 7938,
+        "char_end": 7963
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "hypothetical",
+      "metric_label": "Applicable AI Revenue (Stretch Achievement Level, 200% payout)",
+      "segment": "AI products"
+    },
+    {
+      "metric": "other",
+      "value": 90,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "any four consecutive fiscal quarters within fiscal 2028 through fiscal 2030",
+      "basis": "company_defined",
+      "quote": "Target 100% $90 billion",
+      "span": {
+        "char_start": 7964,
+        "char_end": 7987
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "hypothetical",
+      "metric_label": "Applicable AI Revenue (Target Achievement Level, 100% payout)",
+      "segment": "AI products"
+    },
+    {
+      "metric": "other",
+      "value": 60,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "any four consecutive fiscal quarters within fiscal 2028 through fiscal 2030",
+      "basis": "company_defined",
+      "quote": "Threshold 0% ≤$60 billion",
+      "span": {
+        "char_start": 7988,
+        "char_end": 8013
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "hypothetical",
+      "metric_label": "Applicable AI Revenue (Threshold Achievement Level, 0% payout)",
+      "segment": "AI products"
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Maximum 300% ≥$120 billion",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Stretch 200% $105 billion",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Target 100% $90 billion",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Threshold 0% ≤$60 billion",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

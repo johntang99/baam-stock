@@ -1,8 +1,125 @@
 {
   "doc_key": "0001193125-26-226746:d118163d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37PP7W94P4ZP3YE15EPG",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAG02JG6JGEN78W8BXFKXR",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 5.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The Credit Agreement provides for a five-year, $5.0 billion unsecured revolving credit facility (the “Revolving Facility”)",
+      "span": {
+        "char_start": 2384,
+        "char_end": 2506
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "five-year unsecured revolving credit facility",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 250,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Up to $250 million of the Revolving Facility may be utilized for the issuance of letters of credit.",
+      "span": {
+        "char_start": 2840,
+        "char_end": 2939
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "letters of credit sublimit under Revolving Facility",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 0,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "May 14, 2026",
+      "basis": null,
+      "quote": "As of the Closing Date, there are no borrowings outstanding under the Revolving Facility.",
+      "span": {
+        "char_start": 3419,
+        "char_end": 3508
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "borrowings outstanding under the Revolving Facility",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 5.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "May 14, 2026",
+      "basis": null,
+      "quote": "On May 14, 2026, the Company increased to $5.5 billion from $3.0 billion the maximum aggregate amount outstanding at any time of unsecured commercial paper notes",
+      "span": {
+        "char_start": 6185,
+        "char_end": 6346
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "maximum aggregate commercial paper notes outstanding",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 3.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "On May 14, 2026, the Company increased to $5.5 billion from $3.0 billion the maximum aggregate amount outstanding at any time of unsecured commercial paper notes",
+      "span": {
+        "char_start": 6185,
+        "char_end": 6346
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "prior maximum aggregate commercial paper notes outstanding",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "The Credit Agreement provides for a five-year, $5.0 billion unsecured revolving credit facility (the “Revolving Facility”)",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Up to $250 million of the Revolving Facility may be utilized for the issuance of letters of credit.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "As of the Closing Date, there are no borrowings outstanding under the Revolving Facility.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "On May 14, 2026, the Company increased to $5.5 billion from $3.0 billion the maximum aggregate amount outstanding at any time of unsecured commercial paper notes",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "On May 14, 2026, the Company increased to $5.5 billion from $3.0 billion the maximum aggregate amount outstanding at any time of unsecured commercial paper notes",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

@@ -1,8 +1,33 @@
 {
   "doc_key": "0001628280-26-019851:a8-kdividendmarch192026v2.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37Q7E0FYBQ31F1WQD26T",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAM3P013NXB40MMCADW5WG",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 0.06,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "today announced a quarterly dividend of $0.06 per share of common stock payable on April 30, 2026 to stockholders of record as of April 10, 2026",
+      "span": {
+        "char_start": 198,
+        "char_end": 342
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "quarterly dividend",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "today announced a quarterly dividend of $0.06 per share of common stock payable on April 30, 2026 to stockholders of record as of April 10, 2026",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

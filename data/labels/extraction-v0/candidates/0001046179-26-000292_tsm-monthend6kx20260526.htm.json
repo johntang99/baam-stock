@@ -1,8 +1,56 @@
 {
   "doc_key": "0001046179-26-000292:tsm-monthend6kx20260526.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37KJFPN2TAMC8YEC7C8V",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9ND9W9H054KT5B4ZFCA42",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 21.7,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "April 2026",
+      "basis": null,
+      "quote": "(1) Fixed-income investment: NT$21.7 billion of acquisition.",
+      "span": {
+        "char_start": 2603,
+        "char_end": 2663
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Fixed-income investment acquisition",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 7.3,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "April 2026",
+      "basis": null,
+      "quote": "(2) Equity investment: NT$7.3 billion of disposition.",
+      "span": {
+        "char_start": 2664,
+        "char_end": 2717
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Equity investment disposition",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "(1) Fixed-income investment: NT$21.7 billion of acquisition.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "(2) Equity investment: NT$7.3 billion of disposition.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

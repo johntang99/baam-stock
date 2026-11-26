@@ -1,8 +1,125 @@
 {
   "doc_key": "0001104659-25-004879:tm253757d1_8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37MVYH5JES0ZGFNKYMJ5",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA0A81HDXZM33NQCQ5Y2RK",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 1.6835,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "January 17, 2025",
+      "basis": null,
+      "quote": "On the Closing Date, the Company borrowed $1.6835 billion in aggregate principal amount (the “Term Loan”).",
+      "span": {
+        "char_start": 2896,
+        "char_end": 3002
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Term Loan borrowed in aggregate principal amount",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 750.0,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "the Company may add one or more incremental commitments in an aggregate principal amount not to exceed $750.0 million",
+      "span": {
+        "char_start": 3534,
+        "char_end": 3651
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Maximum incremental commitments under Term Loan Agreement",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1.9335,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "January 17, 2025",
+      "basis": null,
+      "quote": "The $1.9335 billion outstanding principal amount of the term loans under the Existing Credit Agreement was repaid with proceeds of the Term Loan and cash of the Company.",
+      "span": {
+        "char_start": 9709,
+        "char_end": 9878
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Outstanding principal of term loans under Existing Credit Agreement repaid",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 5.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "in an aggregate amount equal to the greater of (x) $5.6 billion and (y) 15% of consolidated net tangible assets of the Company",
+      "span": {
+        "char_start": 6440,
+        "char_end": 6566
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Permitted indebtedness basket under negative covenants",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 100,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "the principal amount of which aggregates $100 million or more",
+      "span": {
+        "char_start": 7853,
+        "char_end": 7914
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cross-default indebtedness threshold",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "On the Closing Date, the Company borrowed $1.6835 billion in aggregate principal amount (the “Term Loan”).",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the Company may add one or more incremental commitments in an aggregate principal amount not to exceed $750.0 million",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The $1.9335 billion outstanding principal amount of the term loans under the Existing Credit Agreement was repaid with proceeds of the Term Loan and cash of the Company.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "in an aggregate amount equal to the greater of (x) $5.6 billion and (y) 15% of consolidated net tangible assets of the Company",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the principal amount of which aggregates $100 million or more",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

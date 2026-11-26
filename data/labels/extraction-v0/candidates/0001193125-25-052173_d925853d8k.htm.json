@@ -1,8 +1,125 @@
 {
   "doc_key": "0001193125-25-052173:d925853d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37NN82TP48WX6YP1A3T1",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA7WHZDZS41V55A82AYVJV",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 1.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "the public offering (the “Offering”) by the Company of $1.5 billion aggregate principal amount of senior notes",
+      "span": {
+        "char_start": 2495,
+        "char_end": 2605
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of senior notes offered",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 875,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "$875 million aggregate principal amount of its 4.212% Senior Notes due 2026",
+      "span": {
+        "char_start": 2621,
+        "char_end": 2696
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of 4.212% Senior Notes due 2026",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 625,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "$625 million aggregate principal amount of its 4.319% Senior Notes due 2028",
+      "span": {
+        "char_start": 2720,
+        "char_end": 2795
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of 4.319% Senior Notes due 2028",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 4.212,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "The 2026 Notes will mature on September 24, 2026 and will bear interest at a rate of 4.212% per annum",
+      "span": {
+        "char_start": 2863,
+        "char_end": 2964
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "interest rate on 2026 Notes",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 4.319,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "the 2028 Notes will mature on March 24, 2028 and will bear interest at a rate of 4.319% per annum",
+      "span": {
+        "char_start": 2970,
+        "char_end": 3067
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "interest rate on 2028 Notes",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "the public offering (the “Offering”) by the Company of $1.5 billion aggregate principal amount of senior notes",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$875 million aggregate principal amount of its 4.212% Senior Notes due 2026",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$625 million aggregate principal amount of its 4.319% Senior Notes due 2028",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The 2026 Notes will mature on September 24, 2026 and will bear interest at a rate of 4.212% per annum",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the 2028 Notes will mature on March 24, 2028 and will bear interest at a rate of 4.319% per annum",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

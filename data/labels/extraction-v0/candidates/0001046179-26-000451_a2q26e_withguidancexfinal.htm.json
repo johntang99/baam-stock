@@ -1,45 +1,842 @@
 {
   "doc_key": "0001046179-26-000451:a2q26e_withguidancexfinal.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37KQ253CS846KTC9QGN7",
+  "llm_call_id": "llm_01M8C9Q2BB7TWERHGN73ADH25B",
   "candidates": [
+    {
+      "metric": "revenue",
+      "value": 1270.38,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "today announced consolidated revenue of NT$1,270.38 billion",
+      "span": {
+        "char_start": 172,
+        "char_end": 231
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "consolidated revenue",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 706.56,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "net income of NT$706.56 billion",
+      "span": {
+        "char_start": 233,
+        "char_end": 264
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "net income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 27.25,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "diluted earnings per share of NT$27.25 (US$4.31 per ADR unit)",
+      "span": {
+        "char_start": 270,
+        "char_end": 331
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "diluted earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 4.31,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "diluted earnings per share of NT$27.25 (US$4.31 per ADR unit)",
+      "span": {
+        "char_start": 270,
+        "char_end": 331
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "diluted earnings per ADR unit",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 36.0,
+      "unit": "pct",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "Year-over-year, second quarter revenue increased 36.0%",
+      "span": {
+        "char_start": 376,
+        "char_end": 430
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "second quarter revenue increased",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 77.4,
+      "unit": "pct",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "while net income and diluted EPS both increased 77.4%",
+      "span": {
+        "char_start": 432,
+        "char_end": 485
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "net income year-over-year increase",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 77.4,
+      "unit": "pct",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "while net income and diluted EPS both increased 77.4%",
+      "span": {
+        "char_start": 432,
+        "char_end": 485
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "diluted EPS year-over-year increase",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 12.0,
+      "unit": "pct",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "second quarter results represented a 12.0% increase in revenue and a 23.4% increase in net income",
+      "span": {
+        "char_start": 519,
+        "char_end": 616
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "increase in revenue compared to first quarter 2026",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 23.4,
+      "unit": "pct",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "second quarter results represented a 12.0% increase in revenue and a 23.4% increase in net income",
+      "span": {
+        "char_start": 519,
+        "char_end": 616
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "net income increase compared to first quarter 2026",
+      "segment": null
+    },
     {
       "metric": "revenue",
       "value": 40.2,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue was $40.20 billion",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "In US dollars, second quarter revenue was $40.20 billion, which increased 33.7% year-over-year and increased 12.0% from the previous quarter.",
       "span": {
-        "char_start": 724,
-        "char_end": 750
+        "char_start": 694,
+        "char_end": 835
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "second quarter revenue in US dollars",
       "segment": null
     },
     {
-      "metric": "gross_margin",
+      "metric": "revenue_growth_yoy_pct",
+      "value": 33.7,
+      "unit": "pct",
+      "currency": "USD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "In US dollars, second quarter revenue was $40.20 billion, which increased 33.7% year-over-year and increased 12.0% from the previous quarter.",
+      "span": {
+        "char_start": 694,
+        "char_end": 835
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "US dollar revenue increased year-over-year",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 12.0,
+      "unit": "pct",
+      "currency": "USD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "In US dollars, second quarter revenue was $40.20 billion, which increased 33.7% year-over-year and increased 12.0% from the previous quarter.",
+      "span": {
+        "char_start": 694,
+        "char_end": 835
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "US dollar revenue increased from the previous quarter",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
       "value": 67.7,
       "unit": "pct",
       "currency": null,
-      "period": null,
-      "basis": null,
+      "period": "second quarter of 2026",
+      "basis": "gaap",
       "quote": "Gross margin for the quarter was 67.7%",
       "span": {
         "char_start": 836,
         "char_end": 874
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 60.3,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "operating margin was 60.3%",
+      "span": {
+        "char_start": 876,
+        "char_end": 902
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "operating margin",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 55.6,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "net profit margin was 55.6%",
+      "span": {
+        "char_start": 908,
+        "char_end": 935
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "net profit margin",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 3,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of 2026",
+      "basis": null,
+      "quote": "shipments of 2-nanometer accounted for 3% of total wafer revenue",
+      "span": {
+        "char_start": 960,
+        "char_end": 1024
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "2-nanometer share of total wafer revenue",
+      "segment": "2-nanometer"
+    },
+    {
+      "metric": "other",
+      "value": 30,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of 2026",
+      "basis": null,
+      "quote": "3-nanometer accounted for 30%",
+      "span": {
+        "char_start": 1026,
+        "char_end": 1055
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "3-nanometer share of total wafer revenue",
+      "segment": "3-nanometer"
+    },
+    {
+      "metric": "other",
+      "value": 33,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of 2026",
+      "basis": null,
+      "quote": "5-nanometer accounted for 33%",
+      "span": {
+        "char_start": 1057,
+        "char_end": 1086
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "5-nanometer share of total wafer revenue",
+      "segment": "5-nanometer"
+    },
+    {
+      "metric": "other",
+      "value": 11,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of 2026",
+      "basis": null,
+      "quote": "7-nanometer accounted for 11%",
+      "span": {
+        "char_start": 1092,
+        "char_end": 1121
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "7-nanometer share of total wafer revenue",
+      "segment": "7-nanometer"
+    },
+    {
+      "metric": "other",
+      "value": 77,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of 2026",
+      "basis": null,
+      "quote": "Advanced technologies, defined as 7-nanometer and more advanced technologies, accounted for 77% of total wafer revenue",
+      "span": {
+        "char_start": 1123,
+        "char_end": 1241
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "Advanced technologies share of total wafer revenue",
+      "segment": "Advanced technologies (7-nanometer and more advanced)"
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 44.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of 2026",
+      "basis": null,
+      "quote": "Revenue is expected to be between US$44.6 billion and US$45.8 billion",
+      "span": {
+        "char_start": 1758,
+        "char_end": 1827
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Revenue expected (low end)",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 45.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of 2026",
+      "basis": null,
+      "quote": "Revenue is expected to be between US$44.6 billion and US$45.8 billion",
+      "span": {
+        "char_start": 1758,
+        "char_end": 1827
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Revenue expected (high end)",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 65,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of 2026",
+      "basis": null,
+      "quote": "Gross profit margin is expected to be between 65% and 67%",
+      "span": {
+        "char_start": 1907,
+        "char_end": 1964
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Gross profit margin expected (low end)",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 67,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of 2026",
+      "basis": null,
+      "quote": "Gross profit margin is expected to be between 65% and 67%",
+      "span": {
+        "char_start": 1907,
+        "char_end": 1964
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Gross profit margin expected (high end)",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 56,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of 2026",
+      "basis": null,
+      "quote": "Operating profit margin is expected to be between 56% and 58%",
+      "span": {
+        "char_start": 1968,
+        "char_end": 2029
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Operating profit margin expected (low end)",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 58,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of 2026",
+      "basis": null,
+      "quote": "Operating profit margin is expected to be between 56% and 58%",
+      "span": {
+        "char_start": 1968,
+        "char_end": 2029
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Operating profit margin expected (high end)",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 1270381,
+      "unit": "USD_million",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "Net sales 1,270,381 933,792 36.0 1,134,103 12.0",
+      "span": {
+        "char_start": 2190,
+        "char_end": 2237
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net sales",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 933792,
+      "unit": "USD_million",
+      "currency": "TWD",
+      "period": "second quarter of 2025",
+      "basis": "gaap",
+      "quote": "Net sales 1,270,381 933,792 36.0 1,134,103 12.0",
+      "span": {
+        "char_start": 2190,
+        "char_end": 2237
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net sales",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 1134103,
+      "unit": "USD_million",
+      "currency": "TWD",
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "Net sales 1,270,381 933,792 36.0 1,134,103 12.0",
+      "span": {
+        "char_start": 2190,
+        "char_end": 2237
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net sales",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 860311,
+      "unit": "USD_million",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "Gross profit 860,311 547,369 57.2 751,295 14.5",
+      "span": {
+        "char_start": 2238,
+        "char_end": 2284
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross profit",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 57.2,
+      "unit": "pct",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "Gross profit 860,311 547,369 57.2 751,295 14.5",
+      "span": {
+        "char_start": 2238,
+        "char_end": 2284
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross profit YoY Inc. %",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 14.5,
+      "unit": "pct",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "Gross profit 860,311 547,369 57.2 751,295 14.5",
+      "span": {
+        "char_start": 2238,
+        "char_end": 2284
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross profit QoQ Inc. %",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 766603,
+      "unit": "USD_million",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "Income from operations 766,603 463,423 65.4 658,966 16.3",
+      "span": {
+        "char_start": 2285,
+        "char_end": 2341
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Income from operations",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 65.4,
+      "unit": "pct",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "Income from operations 766,603 463,423 65.4 658,966 16.3",
+      "span": {
+        "char_start": 2285,
+        "char_end": 2341
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Income from operations YoY Inc. %",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 16.3,
+      "unit": "pct",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "Income from operations 766,603 463,423 65.4 658,966 16.3",
+      "span": {
+        "char_start": 2285,
+        "char_end": 2341
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Income from operations QoQ Inc. %",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 862430,
+      "unit": "USD_million",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "Income before tax 862,430 493,036 74.9 687,800 25.4",
+      "span": {
+        "char_start": 2342,
+        "char_end": 2393
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Income before tax",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 706562,
+      "unit": "USD_million",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "Net income 706,562 398,273 77.4 572,480 23.4",
+      "span": {
+        "char_start": 2394,
+        "char_end": 2438
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 15.36,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "second quarter of 2025",
+      "basis": "gaap",
+      "quote": "EPS (NT$) 27.25 b 15.36 c 77.4 22.08 d 23.4",
+      "span": {
+        "char_start": 2439,
+        "char_end": 2482
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "EPS (NT$)",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 22.08,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "EPS (NT$) 27.25 b 15.36 c 77.4 22.08 d 23.4",
+      "span": {
+        "char_start": 2439,
+        "char_end": 2482
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "EPS (NT$)",
       "segment": null
     }
   ],
-  "dropped": [],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "while net income and diluted EPS both increased 77.4%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "while net income and diluted EPS both increased 77.4%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "second quarter results represented a 12.0% increase in revenue and a 23.4% increase in net income",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "net profit margin was 55.6%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "shipments of 2-nanometer accounted for 3% of total wafer revenue",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "3-nanometer accounted for 30%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5-nanometer accounted for 33%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "7-nanometer accounted for 11%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Advanced technologies, defined as 7-nanometer and more advanced technologies, accounted for 77% of total wafer revenue",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Net sales 1,270,381 933,792 36.0 1,134,103 12.0",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Net sales 1,270,381 933,792 36.0 1,134,103 12.0",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Net sales 1,270,381 933,792 36.0 1,134,103 12.0",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross profit 860,311 547,369 57.2 751,295 14.5",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Gross profit 860,311 547,369 57.2 751,295 14.5",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Gross profit 860,311 547,369 57.2 751,295 14.5",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Income from operations 766,603 463,423 65.4 658,966 16.3",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Income from operations 766,603 463,423 65.4 658,966 16.3",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Income from operations 766,603 463,423 65.4 658,966 16.3",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Income before tax 862,430 493,036 74.9 687,800 25.4",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income 706,562 398,273 77.4 572,480 23.4",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "today announced consolidated revenue of NT$1,270.38 billion",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "diluted earnings per share of NT$27.25 (US$4.31 per ADR unit)",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "quote": "Year-over-year, second quarter revenue increased 36.0%",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "revenue_outlook",
+      "quote": "Revenue is expected to be between US$44.6 billion and US$45.8 billion",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "quote": "Gross profit margin is expected to be between 65% and 67%",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "operating_margin_pct",
+      "quote": "Operating profit margin is expected to be between 56% and 58%",
+      "reason": "conflicting_values"
+    }
+  ],
   "validation_notes": []
 }

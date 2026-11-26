@@ -1,8 +1,79 @@
 {
   "doc_key": "0000002488-26-000045:amd-20260223.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37FSDK2BN0HQB9C1Y3RC",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C7QVWH9G99K6BCAEQ2XWX0",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 0.01,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "AMD issued to Meta a performance-based warrant (the “Warrant”) to purchase up to an aggregate of 160 million shares of common stock of AMD (the “Warrant Shares”) at an exercise price of $0.01 per share.",
+      "span": {
+        "char_start": 2311,
+        "char_end": 2513
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Warrant exercise price",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 600,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Vesting of Warrant Shares are further subject to achievement of specified AMD stock price thresholds that escalate to $600 per share for the final tranche.",
+      "span": {
+        "char_start": 3507,
+        "char_end": 3662
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "AMD stock price threshold for final tranche of Warrant Share vesting",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "Meta agreed to a binding commitment under the Agreement to purchase (directly or through its affiliates, or indirectly through authorized third parties (“Authorized Purchasers”)) the initial one (1) gigawatt equivalent of certain AMD Instinct GPU products.",
+      "span": {
+        "char_start": 2696,
+        "char_end": 2952
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "Meta binding commitment to purchase AMD Instinct GPU products",
+      "segment": "AMD Instinct GPU"
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "AMD issued to Meta a performance-based warrant (the “Warrant”) to purchase up to an aggregate of 160 million shares of common stock of AMD (the “Warrant Shares”) at an exercise price of $0.01 per share.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Vesting of Warrant Shares are further subject to achievement of specified AMD stock price thresholds that escalate to $600 per share for the final tranche.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Meta agreed to a binding commitment under the Agreement to purchase (directly or through its affiliates, or indirectly through authorized third parties (“Authorized Purchasers”)) the initial one (1) gigawatt equivalent of certain AMD Instinct GPU products.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

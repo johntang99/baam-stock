@@ -1,8 +1,33 @@
 {
   "doc_key": "0001628280-26-063592:a20260925dividendpressrele.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37Q9GKPNJEBG59198AV7",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAMEESHGD140BV20YGJCWW",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 0.06,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "today announced a quarterly dividend of $0.06 per share of common stock",
+      "span": {
+        "char_start": 203,
+        "char_end": 274
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "quarterly dividend",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "today announced a quarterly dividend of $0.06 per share of common stock",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

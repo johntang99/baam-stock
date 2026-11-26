@@ -1,8 +1,79 @@
 {
   "doc_key": "0001193125-25-122121:d831221dex991.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37NTS04WM16Q0W38204M",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA94F3XJCHM34CRQQW8BF4",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Sanmina will purchase the manufacturing business from AMD for $3 billion in cash and stock, inclusive of a contingent payment of up to $450 million and subject to customary adjustments for working capital and other items.",
+      "span": {
+        "char_start": 1326,
+        "char_end": 1547
+      },
+      "direction": "none",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Divestiture consideration for ZT Systems manufacturing business (cash and stock)",
+      "segment": "ZT Systems data center infrastructure manufacturing business"
+    },
+    {
+      "metric": "other",
+      "value": 450,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "$3 billion in cash and stock, inclusive of a contingent payment of up to $450 million",
+      "span": {
+        "char_start": 330,
+        "char_end": 415
+      },
+      "direction": "none",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Contingent payment (up to)",
+      "segment": "ZT Systems data center infrastructure manufacturing business"
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": "end of 2025",
+      "basis": null,
+      "quote": "The transaction is expected to close near the end of 2025, subject to regulatory approvals and customary closing conditions.",
+      "span": {
+        "char_start": 1548,
+        "char_end": 1672
+      },
+      "direction": "none",
+      "scope": "segment",
+      "certainty": "guidance",
+      "metric_label": "Expected transaction close timing",
+      "segment": "ZT Systems data center infrastructure manufacturing business"
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Sanmina will purchase the manufacturing business from AMD for $3 billion in cash and stock, inclusive of a contingent payment of up to $450 million and subject to customary adjustments for working capital and other items.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$3 billion in cash and stock, inclusive of a contingent payment of up to $450 million",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The transaction is expected to close near the end of 2025, subject to regulatory approvals and customary closing conditions.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

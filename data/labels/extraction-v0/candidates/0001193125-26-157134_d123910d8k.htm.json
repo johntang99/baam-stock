@@ -1,8 +1,125 @@
 {
   "doc_key": "0001193125-26-157134:d123910d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37PNEGJ4JN095572KBTJ",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAFSBJR5BG4GF29R97DMGZ",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 1000000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "April 15, 2026",
+      "basis": null,
+      "quote": "completed a public offering of $1,000,000,000 aggregate principal amount of its 5.300% Senior Notes due 2036",
+      "span": {
+        "char_start": 2039,
+        "char_end": 2147
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of 5.300% Senior Notes due 2036",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 993.5,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "April 15, 2026",
+      "basis": null,
+      "quote": "The net proceeds from the sale of the Notes were approximately $993.5 million after deducting the underwriters’ discount but before other expenses",
+      "span": {
+        "char_start": 2460,
+        "char_end": 2606
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "net proceeds from the sale of the Notes",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 5.3,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "The Notes will accrue interest at a rate of 5.300% per year.",
+      "span": {
+        "char_start": 3593,
+        "char_end": 3653
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "interest rate on the Notes",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 99.235,
+      "unit": "pct",
+      "currency": null,
+      "period": "April 2026",
+      "basis": null,
+      "quote": "The Company sold the Notes to the Underwriters at a price of 99.235% of the principal amount thereof",
+      "span": {
+        "char_start": 5784,
+        "char_end": 5884
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "price at which Company sold Notes to Underwriters (% of principal)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 99.885,
+      "unit": "pct",
+      "currency": null,
+      "period": "April 2026",
+      "basis": null,
+      "quote": "the Underwriters offered the Notes to the public at a price of 99.885% of the principal amount thereof",
+      "span": {
+        "char_start": 5890,
+        "char_end": 5992
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "public offering price of Notes (% of principal)",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "completed a public offering of $1,000,000,000 aggregate principal amount of its 5.300% Senior Notes due 2036",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The net proceeds from the sale of the Notes were approximately $993.5 million after deducting the underwriters’ discount but before other expenses",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Notes will accrue interest at a rate of 5.300% per year.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Company sold the Notes to the Underwriters at a price of 99.235% of the principal amount thereof",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the Underwriters offered the Notes to the public at a price of 99.885% of the principal amount thereof",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

@@ -1,101 +1,437 @@
 {
   "doc_key": "0001730168-24-000095:avgo-08042024x8kxex99.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37QKRMWJFJKZBP6GG73W",
+  "llm_call_id": "llm_01M8CANWQ09TPZQPQFSSBJAQEV",
   "candidates": [
     {
       "metric": "revenue",
-      "value": 13.0,
-      "unit": "number",
+      "value": 13072,
+      "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "Revenue of $13",
+      "period": "third quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Revenue of $13,072 million for the third quarter, up 47 percent from the prior year period",
       "span": {
         "char_start": 164,
-        "char_end": 178
+        "char_end": 254
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 47,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Revenue of $13,072 million for the third quarter, up 47 percent from the prior year period",
+      "span": {
+        "char_start": 164,
+        "char_end": 254
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue growth from prior year period",
       "segment": null
     },
     {
       "metric": "net_income",
-      "value": 6.0,
-      "unit": "number",
+      "value": -1875,
+      "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income of $6",
+      "period": "third quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "GAAP net loss of $1,875 million for the third quarter (1)",
       "span": {
-        "char_start": 326,
-        "char_end": 342
+        "char_start": 257,
+        "char_end": 314
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP net loss",
       "segment": null
     },
     {
-      "metric": "revenue",
-      "value": 0.4,
-      "unit": "number",
+      "metric": "net_income",
+      "value": 6120,
+      "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue • GAAP diluted loss per share of $0.40",
+      "period": "third quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP net income of $6,120 million for the third quarter",
       "span": {
-        "char_start": 453,
-        "char_end": 499
+        "char_start": 317,
+        "char_end": 376
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP net income",
       "segment": null
     },
     {
-      "metric": "revenue",
+      "metric": "other",
+      "value": 8223,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Adjusted EBITDA of $8,223 million for the third quarter, or 63 percent of revenue",
+      "span": {
+        "char_start": 379,
+        "char_end": 460
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Adjusted EBITDA",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": -0.4,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "GAAP diluted loss per share of $0.40 for the third quarter",
+      "span": {
+        "char_start": 463,
+        "char_end": 521
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP diluted loss per share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 1.24,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP diluted EPS of $1.24 for the third quarter",
+      "span": {
+        "char_start": 523,
+        "char_end": 574
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP diluted EPS",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 4963,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Cash from operations of $4,963 million for the third quarter, less capital expenditures of $172 million, resulted in $4,791 million of free cash flow, or 37 percent of revenue",
+      "span": {
+        "char_start": 577,
+        "char_end": 752
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash from operations",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 4791,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Cash from operations of $4,963 million for the third quarter, less capital expenditures of $172 million, resulted in $4,791 million of free cash flow, or 37 percent of revenue",
+      "span": {
+        "char_start": 577,
+        "char_end": 752
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow",
+      "segment": null
+    },
+    {
+      "metric": "other",
       "value": 0.53,
-      "unit": "number",
+      "unit": "USD_per_share",
       "currency": "USD",
       "period": null,
       "basis": null,
-      "quote": "revenue • Quarterly common stock dividend of $0.53",
+      "quote": "Quarterly common stock dividend of $0.53 per share",
       "span": {
-        "char_start": 745,
-        "char_end": 795
+        "char_start": 755,
+        "char_end": 805
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Quarterly common stock dividend",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 14.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2024",
+      "basis": null,
+      "quote": "Fourth quarter fiscal year 2024 revenue guidance of approximately $14.0 billion including contribution from VMware, an increase of 51 percent from the prior year period",
+      "span": {
+        "char_start": 808,
+        "char_end": 976
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Fourth quarter revenue guidance",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 64,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Fourth quarter Adjusted EBITDA guidance of approximately 64 percent of projected revenue.",
+      "span": {
+        "char_start": 4801,
+        "char_end": 4890
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Fourth quarter Adjusted EBITDA guidance (percent of projected revenue)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 12,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fiscal year 2024",
+      "basis": null,
+      "quote": "We expect revenue from AI to be $12 billion for fiscal year 2024",
+      "span": {
+        "char_start": 1579,
+        "char_end": 1643
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "guidance",
+      "metric_label": "Revenue from AI",
+      "segment": "AI"
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 5.3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2024",
+      "basis": "company_defined",
+      "quote": "Free cash flow, excluding restructuring and integration in the quarter, was $5.3 billion, up 14% year-over-year.",
+      "span": {
+        "char_start": 2199,
+        "char_end": 2311
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow, excluding restructuring and integration",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 4,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2024",
+      "basis": "company_defined",
+      "quote": "was up 4% year-over-year, excluding VMware",
+      "span": {
+        "char_start": 2049,
+        "char_end": 2091
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue growth excluding VMware",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 7274,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Semiconductor solutions $ 7,274 56 % $ 6,941 78 % +5 %",
+      "span": {
+        "char_start": 3382,
+        "char_end": 3436
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Semiconductor solutions net revenue",
+      "segment": "Semiconductor solutions"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 5,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Semiconductor solutions $ 7,274 56 % $ 6,941 78 % +5 %",
+      "span": {
+        "char_start": 3382,
+        "char_end": 3436
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Semiconductor solutions revenue change",
+      "segment": "Semiconductor solutions"
+    },
+    {
+      "metric": "revenue",
+      "value": 5798,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Infrastructure software 5,798 44 1,935 22 +200 %",
+      "span": {
+        "char_start": 3437,
+        "char_end": 3485
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Infrastructure software net revenue",
+      "segment": "Infrastructure software"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 200,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Infrastructure software 5,798 44 1,935 22 +200 %",
+      "span": {
+        "char_start": 3437,
+        "char_end": 3485
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Infrastructure software revenue change",
+      "segment": "Infrastructure software"
+    },
+    {
+      "metric": "other",
+      "value": 9952,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "The Company’s cash and cash equivalents at the end of the fiscal quarter were $9,952 million, compared to $9,809 million at the end of the prior quarter.",
+      "span": {
+        "char_start": 3533,
+        "char_end": 3686
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash and cash equivalents",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 4.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "included a one-time discrete non-cash tax provision of $4.5 billion from the impact of an intra-group transfer of certain IP rights to the United States as a result of supply chain realignment",
+      "span": {
+        "char_start": 2404,
+        "char_end": 2596
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-cash tax provision from intra-group IP transfer",
       "segment": null
     }
   ],
   "dropped": [
     {
-      "metric": "revenue",
-      "quote": "Revenue of $13",
-      "reason": "unit_not_allowed:number"
-    },
-    {
       "metric": "net_income",
-      "quote": "net income of $6",
-      "reason": "unit_not_allowed:number"
+      "quote": "GAAP net loss of $1,875 million for the third quarter (1)",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Adjusted EBITDA of $8,223 million for the third quarter, or 63 percent of revenue",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "GAAP diluted loss per share of $0.40 for the third quarter",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Quarterly common stock dividend of $0.53 per share",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Fourth quarter Adjusted EBITDA guidance of approximately 64 percent of projected revenue.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "We expect revenue from AI to be $12 billion for fiscal year 2024",
+      "reason": "unknown_metric"
     },
     {
       "metric": "revenue",
-      "quote": "revenue • GAAP diluted loss per share of $0.40",
-      "reason": "unit_not_allowed:number"
+      "quote": "Semiconductor solutions $ 7,274 56 % $ 6,941 78 % +5 %",
+      "reason": "value_not_in_quote"
     },
     {
       "metric": "revenue",
-      "quote": "revenue • Quarterly common stock dividend of $0.53",
-      "reason": "unit_not_allowed:number"
+      "quote": "Infrastructure software 5,798 44 1,935 22 +200 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "The Company’s cash and cash equivalents at the end of the fiscal quarter were $9,952 million, compared to $9,809 million at the end of the prior quarter.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "included a one-time discrete non-cash tax provision of $4.5 billion from the impact of an intra-group transfer of certain IP rights to the United States as a result of supply chain realignment",
+      "reason": "unknown_metric"
     }
   ],
   "validation_notes": []

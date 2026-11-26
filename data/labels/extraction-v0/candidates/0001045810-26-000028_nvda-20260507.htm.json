@@ -1,8 +1,79 @@
 {
   "doc_key": "0001045810-26-000028:nvda-20260507.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37JDFBAN1NTQVE26VKDC",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C99M7KMTF6X4TP99SXKZ08",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 255000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "an initial equity grant of restricted stock units with a target value of $255,000, vesting approximately semi-annually over three years",
+      "span": {
+        "char_start": 2786,
+        "char_end": 2921
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "initial equity grant of restricted stock units with a target value",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 255000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "a pro-rated annual equity grant of restricted stock units with an annualized target value of $255,000",
+      "span": {
+        "char_start": 2931,
+        "char_end": 3032
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "pro-rated annual equity grant of restricted stock units with an annualized target value",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 85000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "she will be granted a pro-rated annual cash retainer with an annualized value of $85,000, payable quarterly starting on July 13, 2026",
+      "span": {
+        "char_start": 3159,
+        "char_end": 3292
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "pro-rated annual cash retainer with an annualized value",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "an initial equity grant of restricted stock units with a target value of $255,000, vesting approximately semi-annually over three years",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "a pro-rated annual equity grant of restricted stock units with an annualized target value of $255,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "she will be granted a pro-rated annual cash retainer with an annualized value of $85,000, payable quarterly starting on July 13, 2026",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

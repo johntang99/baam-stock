@@ -1,8 +1,33 @@
 {
   "doc_key": "0001628280-26-063592:mrvl-20260925.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37QASTBQZ891B9E1S3M9",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAMGJSP79GGZPEQRW1SR4H",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 0.06,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "quarterly dividend payable October 29, 2026 (record date October 9, 2026)",
+      "basis": null,
+      "quote": "the Company announced that its Board of Directors had declared the payment of its quarterly dividend of $0.06 per share to be paid on October 29, 2026",
+      "span": {
+        "char_start": 2146,
+        "char_end": 2296
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "quarterly dividend",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "the Company announced that its Board of Directors had declared the payment of its quarterly dividend of $0.06 per share to be paid on October 29, 2026",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

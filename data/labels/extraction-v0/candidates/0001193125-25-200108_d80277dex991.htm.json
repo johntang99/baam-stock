@@ -1,8 +1,373 @@
 {
   "doc_key": "0001193125-25-200108:d80277dex991.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37P3XRVAMRKR1MCPTD90",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAB55RQK5HN01HZ1X67WRA",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 51574,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year ended November 3, 2024",
+      "basis": "gaap",
+      "quote": "Total net revenue 51,574 623 — (70 ) — 52,127",
+      "span": {
+        "char_start": 6660,
+        "char_end": 6705
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total net revenue (Historical Broadcom)",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 52127,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year ended November 3, 2024",
+      "basis": "company_defined",
+      "quote": "Total net revenue 51,574 623 — (70 ) — 52,127",
+      "span": {
+        "char_start": 6660,
+        "char_end": 6705
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Total net revenue (Pro Forma Combined)",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 32509,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year ended November 3, 2024",
+      "basis": "gaap",
+      "quote": "Gross margin 32,509 471 — (389 ) — 32,591",
+      "span": {
+        "char_start": 7182,
+        "char_end": 7223
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin (Historical Broadcom)",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 32591,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year ended November 3, 2024",
+      "basis": "company_defined",
+      "quote": "Gross margin 32,509 471 — (389 ) — 32,591",
+      "span": {
+        "char_start": 7182,
+        "char_end": 7223
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Gross margin (Pro Forma Combined)",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 19046,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year ended November 3, 2024",
+      "basis": "gaap",
+      "quote": "Total operating expenses 19,046 464 — 89 — 19,599",
+      "span": {
+        "char_start": 8225,
+        "char_end": 8274
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total operating expenses (Historical Broadcom)",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 19599,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year ended November 3, 2024",
+      "basis": "company_defined",
+      "quote": "Total operating expenses 19,046 464 — 89 — 19,599",
+      "span": {
+        "char_start": 8225,
+        "char_end": 8274
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Total operating expenses (Pro Forma Combined)",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 13463,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year ended November 3, 2024",
+      "basis": "gaap",
+      "quote": "Operating income 13,463 7 — (478 ) — 12,992",
+      "span": {
+        "char_start": 8275,
+        "char_end": 8318
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income (Historical Broadcom)",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 12992,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year ended November 3, 2024",
+      "basis": "company_defined",
+      "quote": "Operating income 13,463 7 — (478 ) — 12,992",
+      "span": {
+        "char_start": 8275,
+        "char_end": 8318
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Operating income (Pro Forma Combined)",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 6168,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year ended November 3, 2024",
+      "basis": "gaap",
+      "quote": "Net income from continuing operations attributable to common stock $ 6,168 $ 26 $ — $ (436 ) $ (84 ) $ 5,674",
+      "span": {
+        "char_start": 8635,
+        "char_end": 8743
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income from continuing operations attributable to common stock (Historical Broadcom)",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 5674,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal year ended November 3, 2024",
+      "basis": "company_defined",
+      "quote": "Net income from continuing operations attributable to common stock $ 6,168 $ 26 $ — $ (436 ) $ (84 ) $ 5,674",
+      "span": {
+        "char_start": 8635,
+        "char_end": 8743
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Net income from continuing operations attributable to common stock (Pro Forma Combined)",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 1.33,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "fiscal year ended November 3, 2024",
+      "basis": "gaap",
+      "quote": "Basic $ 1.33 $ 1.22 3(h)",
+      "span": {
+        "char_start": 8822,
+        "char_end": 8846
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income from continuing operations per share - Basic (Historical Broadcom)",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 1.29,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "fiscal year ended November 3, 2024",
+      "basis": "gaap",
+      "quote": "Diluted $ 1.29 $ 1.18 3(h)",
+      "span": {
+        "char_start": 8847,
+        "char_end": 8873
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income from continuing operations per share - Diluted (Historical Broadcom)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 30.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "the VMware stockholders received approximately $30.8 billion in cash and 544 million shares of Broadcom common stock with a fair value of $53.4 billion",
+      "span": {
+        "char_start": 3212,
+        "char_end": 3363
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash paid to VMware stockholders",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 53.4,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "the VMware stockholders received approximately $30.8 billion in cash and 544 million shares of Broadcom common stock with a fair value of $53.4 billion",
+      "span": {
+        "char_start": 3212,
+        "char_end": 3363
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Fair value of Broadcom common stock issued to VMware stockholders",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 30.4,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Broadcom entered into an aggregate of $30.4 billion of term facilities",
+      "span": {
+        "char_start": 4109,
+        "char_end": 4179
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Aggregate term facilities entered in connection with the Transaction",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 398,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Broadcom incurred discounts and financing fees of approximately $398 million",
+      "span": {
+        "char_start": 4589,
+        "char_end": 4665
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Discounts and financing fees incurred",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "Total net revenue 51,574 623 — (70 ) — 52,127",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Total net revenue 51,574 623 — (70 ) — 52,127",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross margin 32,509 471 — (389 ) — 32,591",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross margin 32,509 471 — (389 ) — 32,591",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Total operating expenses 19,046 464 — 89 — 19,599",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Total operating expenses 19,046 464 — 89 — 19,599",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income 13,463 7 — (478 ) — 12,992",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income 13,463 7 — (478 ) — 12,992",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income from continuing operations attributable to common stock $ 6,168 $ 26 $ — $ (436 ) $ (84 ) $ 5,674",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income from continuing operations attributable to common stock $ 6,168 $ 26 $ — $ (436 ) $ (84 ) $ 5,674",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "the VMware stockholders received approximately $30.8 billion in cash and 544 million shares of Broadcom common stock with a fair value of $53.4 billion",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the VMware stockholders received approximately $30.8 billion in cash and 544 million shares of Broadcom common stock with a fair value of $53.4 billion",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Broadcom entered into an aggregate of $30.4 billion of term facilities",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Broadcom incurred discounts and financing fees of approximately $398 million",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "Basic $ 1.33 $ 1.22 3(h)",
+      "reason": "conflicting_values"
+    }
+  ],
   "validation_notes": []
 }

@@ -1,8 +1,33 @@
 {
   "doc_key": "0001628280-25-056774:marvelltechnologyinc_divid.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37Q612HAJ2MBB5B17NG6",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAKX5FC6ZZDSFZ8DAFQX92",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 0.06,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "today announced a quarterly dividend of $0.06 per share of common stock payable on January 29, 2026 to shareholders of record as of January 9, 2026",
+      "span": {
+        "char_start": 202,
+        "char_end": 349
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "quarterly dividend",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "today announced a quarterly dividend of $0.06 per share of common stock payable on January 29, 2026 to shareholders of record as of January 9, 2026",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

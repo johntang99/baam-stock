@@ -1,42 +1,114 @@
 {
   "doc_key": "0000723125-24-000046:a2025q1ex991-pressrelease.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37GE0DNYQ8FTQ9SAG98B",
+  "llm_call_id": "llm_01M8C80DFNXQE8SYRDCJT1DHXA",
   "candidates": [
     {
       "metric": "revenue",
       "value": 8.71,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "Revenue of $8.71 billion",
+      "period": "first quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Revenue of $8.71 billion versus $7.75 billion for the prior quarter and $4.73 billion for the same period last year",
       "span": {
         "char_start": 663,
-        "char_end": 687
+        "char_end": 778
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue",
       "segment": null
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 40,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2025",
+      "basis": "company_defined",
+      "quote": "Data center revenue grew over 40% sequentially and over 400% year over year",
+      "span": {
+        "char_start": 395,
+        "char_end": 470
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data center revenue grew over 40% sequentially",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 400,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2025",
+      "basis": "company_defined",
+      "quote": "Data center revenue grew over 40% sequentially and over 400% year over year",
+      "span": {
+        "char_start": 395,
+        "char_end": 470
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data center revenue grew over 400% year over year",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "other",
+      "value": 50,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2025",
+      "basis": "company_defined",
+      "quote": "our data center revenue surpassed 50% of our total revenue for the first time",
+      "span": {
+        "char_start": 1079,
+        "char_end": 1156
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "data center revenue share of total revenue",
+      "segment": "Data Center"
     },
     {
       "metric": "net_income",
       "value": 1.87,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income of $1.87 billion",
+      "period": "first quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "GAAP net income of $1.87 billion, or $1.67 per diluted share",
       "span": {
-        "char_start": 786,
-        "char_end": 813
+        "char_start": 781,
+        "char_end": 841
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP net income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 1.67,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "GAAP net income of $1.87 billion, or $1.67 per diluted share",
+      "span": {
+        "char_start": 781,
+        "char_end": 841
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP diluted EPS",
       "segment": null
     },
     {
@@ -44,25 +116,484 @@
       "value": 2.04,
       "unit": "USD_billion",
       "currency": "USD",
+      "period": "first quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP net income of $2.04 billion, or $1.79 per diluted share",
+      "span": {
+        "char_start": 844,
+        "char_end": 908
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP net income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 1.79,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP net income of $2.04 billion, or $1.79 per diluted share",
+      "span": {
+        "char_start": 844,
+        "char_end": 908
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP diluted EPS",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 3.24,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Operating cash flow of $3.24 billion versus $3.41 billion for the prior quarter and $1.40 billion for the same period last year",
+      "span": {
+        "char_start": 911,
+        "char_end": 1038
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating cash flow",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 3348,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Gross margin 3,348 2,737 (35) 3,441 2,826 37",
+      "span": {
+        "char_start": 1757,
+        "char_end": 1801
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin (GAAP)",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 3441,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Gross margin 3,348 2,737 (35) 3,441 2,826 37",
+      "span": {
+        "char_start": 1757,
+        "char_end": 1801
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin (Non-GAAP)",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 38.4,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "percent of revenue 38.4 % 35.3 % (0.7 %) 39.5 % 36.5 % 0.8 %",
+      "span": {
+        "char_start": 1802,
+        "char_end": 1862
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin percent of revenue (GAAP)",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 39.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "percent of revenue 38.4 % 35.3 % (0.7 %) 39.5 % 36.5 % 0.8 %",
+      "span": {
+        "char_start": 1802,
+        "char_end": 1862
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin percent of revenue (Non-GAAP)",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 1174,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Operating expenses 1,174 1,215 1,093 1,047 1,081 992",
+      "span": {
+        "char_start": 1863,
+        "char_end": 1915
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating expenses (GAAP)",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 1047,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Operating expenses 1,174 1,215 1,093 1,047 1,081 992",
+      "span": {
+        "char_start": 1863,
+        "char_end": 1915
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating expenses (Non-GAAP)",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 2174,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Operating income (loss) 2,174 1,522 (1,128) 2,394 1,745 (955)",
+      "span": {
+        "char_start": 1916,
+        "char_end": 1977
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income (GAAP)",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 2394,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Operating income (loss) 2,174 1,522 (1,128) 2,394 1,745 (955)",
+      "span": {
+        "char_start": 1916,
+        "char_end": 1977
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income (Non-GAAP)",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 25.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "percent of revenue 25.0 % 19.6 % (23.9 %) 27.5 % 22.5 % (20.2 %)",
+      "span": {
+        "char_start": 1978,
+        "char_end": 2042
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income percent of revenue (GAAP)",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 27.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "percent of revenue 25.0 % 19.6 % (23.9 %) 27.5 % 22.5 % (20.2 %)",
+      "span": {
+        "char_start": 1978,
+        "char_end": 2042
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income percent of revenue (Non-GAAP)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 3.13,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Investments in capital expenditures, net (2) were $3.13 billion for the first quarter of 2025",
+      "span": {
+        "char_start": 2167,
+        "char_end": 2260
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Investments in capital expenditures, net",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 112,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "adjusted free cash flows (2) of $112 million for the first quarter of 2025",
+      "span": {
+        "char_start": 2282,
+        "char_end": 2356
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Adjusted free cash flow",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 8.75,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2025",
+      "basis": null,
+      "quote": "Micron ended the quarter with cash, marketable investments, and restricted cash of $8.75 billion.",
+      "span": {
+        "char_start": 2358,
+        "char_end": 2455
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "cash, marketable investments, and restricted cash",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 0.115,
+      "unit": "USD_per_share",
+      "currency": "USD",
       "period": null,
       "basis": null,
-      "quote": "net income of $2.04 billion",
+      "quote": "declared a quarterly dividend of $0.115 per share, payable in cash on January 15, 2025",
       "span": {
-        "char_start": 853,
-        "char_end": 880
+        "char_start": 2506,
+        "char_end": 2592
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "quarterly dividend",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 7.9,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Revenue $7.90 billion ± $200 million $7.90 billion ± $200 million",
+      "span": {
+        "char_start": 2813,
+        "char_end": 2878
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Revenue outlook",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 37.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Gross margin 37.5% ± 1.0% 38.5% ± 1.0%",
+      "span": {
+        "char_start": 2879,
+        "char_end": 2917
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Gross margin outlook (GAAP)",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 38.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Gross margin 37.5% ± 1.0% 38.5% ± 1.0%",
+      "span": {
+        "char_start": 2879,
+        "char_end": 2917
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Gross margin outlook (Non-GAAP)",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 1.24,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Operating expenses $1.24 billion ± $15 million $1.10 billion ± $15 million",
+      "span": {
+        "char_start": 2918,
+        "char_end": 2992
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Operating expenses outlook (GAAP)",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 1.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Operating expenses $1.24 billion ± $15 million $1.10 billion ± $15 million",
+      "span": {
+        "char_start": 2918,
+        "char_end": 2992
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Operating expenses outlook (Non-GAAP)",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 1.26,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Diluted earnings per share $1.26 ± $0.10 $1.43 ± $0.10",
+      "span": {
+        "char_start": 2993,
+        "char_end": 3047
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Diluted earnings per share outlook (GAAP)",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 1.43,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Diluted earnings per share $1.26 ± $0.10 $1.43 ± $0.10",
+      "span": {
+        "char_start": 2993,
+        "char_end": 3047
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Diluted earnings per share outlook (Non-GAAP)",
       "segment": null
     }
   ],
   "dropped": [
     {
-      "metric": "net_income",
-      "quote": "net income of $1.87 billion",
-      "reason": "conflicting_values"
+      "metric": "other",
+      "quote": "our data center revenue surpassed 50% of our total revenue for the first time",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross margin 3,348 2,737 (35) 3,441 2,826 37",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross margin 3,348 2,737 (35) 3,441 2,826 37",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses 1,174 1,215 1,093 1,047 1,081 992",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses 1,174 1,215 1,093 1,047 1,081 992",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income (loss) 2,174 1,522 (1,128) 2,394 1,745 (955)",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income (loss) 2,174 1,522 (1,128) 2,394 1,745 (955)",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Investments in capital expenditures, net (2) were $3.13 billion for the first quarter of 2025",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Micron ended the quarter with cash, marketable investments, and restricted cash of $8.75 billion.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "declared a quarterly dividend of $0.115 per share, payable in cash on January 15, 2025",
+      "reason": "unknown_metric"
     }
   ],
   "validation_notes": []

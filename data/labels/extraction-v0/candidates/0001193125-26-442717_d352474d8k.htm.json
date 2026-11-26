@@ -1,8 +1,79 @@
 {
   "doc_key": "0001193125-26-442717:d352474d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37Q5RHFGQPCKFKVFMRFG",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAKQ8KEEJC9A08Z8N5NZH2",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 5.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Marvell will be required to pay Lumentum a termination fee equal to $5.8 billion (the “ Marvell Termination Fee ”)",
+      "span": {
+        "char_start": 13843,
+        "char_end": 13957
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Marvell Termination Fee",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2.9,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Lumentum is subject to reciprocal obligations to pay a termination fee equal to $2.9 billion (the “ Lumentum Termination Fee ”",
+      "span": {
+        "char_start": 14316,
+        "char_end": 14442
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Lumentum Termination Fee",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 3.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Marvell will be required to pay a termination fee equal to $3.2 billion to Lumentum (the “ Regulatory Termination Fee ”)",
+      "span": {
+        "char_start": 14584,
+        "char_end": 14704
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Regulatory Termination Fee",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Marvell will be required to pay Lumentum a termination fee equal to $5.8 billion (the “ Marvell Termination Fee ”)",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Lumentum is subject to reciprocal obligations to pay a termination fee equal to $2.9 billion (the “ Lumentum Termination Fee ”",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Marvell will be required to pay a termination fee equal to $3.2 billion to Lumentum (the “ Regulatory Termination Fee ”)",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

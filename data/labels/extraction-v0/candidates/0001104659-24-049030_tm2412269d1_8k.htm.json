@@ -1,8 +1,33 @@
 {
   "doc_key": "0001104659-24-049030:tm2412269d1_8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37MN987KAX73W7CXJHTZ",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9Z7T9D2AZVMMV1BC92W3R",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "This application requests federal funding in the form of grants for modernization of production of long-lifecycle DRAM products at Micron’s existing semiconductor manufacturing facility in Manassas, Virginia",
+      "span": {
+        "char_start": 2407,
+        "char_end": 2614
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "application for federal CHIPS Act grant funding",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "This application requests federal funding in the form of grants for modernization of production of long-lifecycle DRAM products at Micron’s existing semiconductor manufacturing facility in Manassas, Virginia",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

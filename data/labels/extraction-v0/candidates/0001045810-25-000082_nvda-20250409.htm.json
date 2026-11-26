@@ -1,8 +1,33 @@
 {
   "doc_key": "0001045810-25-000082:nvda-20250409.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37HPCJG2B2XGVJGVY2DF",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C8S7P2R6VWR1A5PS2R1AF3",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 5.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal year 2026",
+      "basis": null,
+      "quote": "First quarter results are expected to include up to approximately $5.5 billion of charges associated with H20 products for inventory, purchase commitments, and related reserves.",
+      "span": {
+        "char_start": 2840,
+        "char_end": 3017
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "guidance",
+      "metric_label": "charges associated with H20 products for inventory, purchase commitments, and related reserves",
+      "segment": "H20"
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "First quarter results are expected to include up to approximately $5.5 billion of charges associated with H20 products for inventory, purchase commitments, and related reserves.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

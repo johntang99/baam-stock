@@ -1,8 +1,27 @@
 {
   "doc_key": "0001104659-24-112626:tm2425615d2_ex99-1.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37MRW9N4T5XKWGF4RMBK",
-  "candidates": [],
+  "llm_call_id": "llm_01M8C9ZJCBA2E128C1DK3GQJ3M",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": null,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "Throughout Bob Switz's board tenure",
+      "basis": null,
+      "quote": "Throughout his tenure, Micron introduced many industry-first products and increased revenues over five times.",
+      "span": {
+        "char_start": 794,
+        "char_end": 903
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "revenues",
+      "segment": null
+    }
+  ],
   "dropped": [],
   "validation_notes": []
 }

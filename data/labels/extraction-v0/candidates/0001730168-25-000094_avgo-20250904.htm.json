@@ -1,8 +1,33 @@
 {
   "doc_key": "0001730168-25-000094:avgo-20250904.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37R3FH5WEPCP4QA3ZJ3C",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAWSCJVYB4JQ2M1YEPDNX6",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 0.59,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "the Company announced that the Board of Directors has declared a quarterly cash dividend on the Company’s common stock of $0.59 per share",
+      "span": {
+        "char_start": 2546,
+        "char_end": 2683
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "quarterly cash dividend on the Company's common stock",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "the Company announced that the Board of Directors has declared a quarterly cash dividend on the Company’s common stock of $0.59 per share",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

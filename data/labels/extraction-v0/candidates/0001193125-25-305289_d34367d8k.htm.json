@@ -1,8 +1,102 @@
 {
   "doc_key": "0001193125-25-305289:d34367d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37PC02K5PXNZ8XQDY765",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CADNWYEC04BMT6PA7ZKRN0",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 1.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "approximately $1.0 billion payable in cash",
+      "span": {
+        "char_start": 2326,
+        "char_end": 2368
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash consideration for Celestial AI acquisition",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2.25,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "having a value of approximately $2.25 billion, to be paid at or issued at the closing of the Transaction",
+      "span": {
+        "char_start": 2487,
+        "char_end": 2591
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Value of Closing Shares (approximately 27.2 million shares) for Celestial AI acquisition",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2.25,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "up to an additional approximately 27.2 million shares of Common Stock, having a value of approximately $2.25 billion, upon achievement of certain revenue-based performance milestones",
+      "span": {
+        "char_start": 2620,
+        "char_end": 2802
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Value of Milestone Shares (up to approximately 27.2 million shares) contingent on revenue-based performance milestones",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": "first quarter of calendar 2026",
+      "basis": null,
+      "quote": "The Company expects the Transaction to close in the first quarter of calendar 2026, subject to customary closing conditions and regulatory approvals.",
+      "span": {
+        "char_start": 4223,
+        "char_end": 4372
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Expected closing of Celestial AI Transaction",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "approximately $1.0 billion payable in cash",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "having a value of approximately $2.25 billion, to be paid at or issued at the closing of the Transaction",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "up to an additional approximately 27.2 million shares of Common Stock, having a value of approximately $2.25 billion, upon achievement of certain revenue-based performance milestones",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Company expects the Transaction to close in the first quarter of calendar 2026, subject to customary closing conditions and regulatory approvals.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

@@ -1,8 +1,527 @@
 {
   "doc_key": "0001046179-26-000541:a2026q2consolidatedreport-.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37MCX5Y2JDESHS0C2E6T",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9TFCW9JQYRAFWMXGFC3MG",
+  "candidates": [
+    {
+      "metric": "gross_margin_pct",
+      "value": 68,
+      "unit": "pct",
+      "currency": null,
+      "period": "three months ended June 30, 2026",
+      "basis": "gaap",
+      "quote": "GROSS PROFIT 860,310,695 68 547,369,238 59 1,611,606,116 67 1,040,764,314 59",
+      "span": {
+        "char_start": 9812,
+        "char_end": 9888
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GROSS PROFIT (% of net revenue)",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 59,
+      "unit": "pct",
+      "currency": null,
+      "period": "three months ended June 30, 2025",
+      "basis": "gaap",
+      "quote": "GROSS PROFIT 860,310,695 68 547,369,238 59 1,611,606,116 67 1,040,764,314 59",
+      "span": {
+        "char_start": 9812,
+        "char_end": 9888
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GROSS PROFIT (% of net revenue)",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 67,
+      "unit": "pct",
+      "currency": null,
+      "period": "six months ended June 30, 2026",
+      "basis": "gaap",
+      "quote": "GROSS PROFIT 860,310,695 68 547,369,238 59 1,611,606,116 67 1,040,764,314 59",
+      "span": {
+        "char_start": 9812,
+        "char_end": 9888
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GROSS PROFIT (% of net revenue)",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 59,
+      "unit": "pct",
+      "currency": null,
+      "period": "six months ended June 30, 2025",
+      "basis": "gaap",
+      "quote": "GROSS PROFIT 860,310,695 68 547,369,238 59 1,611,606,116 67 1,040,764,314 59",
+      "span": {
+        "char_start": 9812,
+        "char_end": 9888
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GROSS PROFIT (% of net revenue)",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 60,
+      "unit": "pct",
+      "currency": null,
+      "period": "three months ended June 30, 2026",
+      "basis": "gaap",
+      "quote": "INCOME FROM OPERATIONS (Note 37) 766,602,651 60 463,423,638 50 1,425,568,793 59 870,504,446 49",
+      "span": {
+        "char_start": 10331,
+        "char_end": 10425
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "INCOME FROM OPERATIONS (% of net revenue)",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 50,
+      "unit": "pct",
+      "currency": null,
+      "period": "three months ended June 30, 2025",
+      "basis": "gaap",
+      "quote": "INCOME FROM OPERATIONS (Note 37) 766,602,651 60 463,423,638 50 1,425,568,793 59 870,504,446 49",
+      "span": {
+        "char_start": 10331,
+        "char_end": 10425
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "INCOME FROM OPERATIONS (% of net revenue)",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 59,
+      "unit": "pct",
+      "currency": null,
+      "period": "six months ended June 30, 2026",
+      "basis": "gaap",
+      "quote": "INCOME FROM OPERATIONS (Note 37) 766,602,651 60 463,423,638 50 1,425,568,793 59 870,504,446 49",
+      "span": {
+        "char_start": 10331,
+        "char_end": 10425
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "INCOME FROM OPERATIONS (% of net revenue)",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 49,
+      "unit": "pct",
+      "currency": null,
+      "period": "six months ended June 30, 2025",
+      "basis": "gaap",
+      "quote": "INCOME FROM OPERATIONS (Note 37) 766,602,651 60 463,423,638 50 1,425,568,793 59 870,504,446 49",
+      "span": {
+        "char_start": 10331,
+        "char_end": 10425
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "INCOME FROM OPERATIONS (% of net revenue)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 56,
+      "unit": "pct",
+      "currency": null,
+      "period": "three months ended June 30, 2026",
+      "basis": "gaap",
+      "quote": "NET INCOME 706,780,923 56 397,493,424 43 1,279,582,227 53 758,226,085 43",
+      "span": {
+        "char_start": 11221,
+        "char_end": 11293
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "NET INCOME (% of net revenue)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 53,
+      "unit": "pct",
+      "currency": null,
+      "period": "six months ended June 30, 2026",
+      "basis": "gaap",
+      "quote": "NET INCOME 706,780,923 56 397,493,424 43 1,279,582,227 53 758,226,085 43",
+      "span": {
+        "char_start": 11221,
+        "char_end": 11293
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "NET INCOME (% of net revenue)",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 27.25,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "three months ended June 30, 2026",
+      "basis": "gaap",
+      "quote": "Basic earnings per share $ 27.25 $ 15.36 $ 49.33 $ 29.31",
+      "span": {
+        "char_start": 13476,
+        "char_end": 13532
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Basic earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 15.36,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "three months ended June 30, 2025",
+      "basis": "gaap",
+      "quote": "Basic earnings per share $ 27.25 $ 15.36 $ 49.33 $ 29.31",
+      "span": {
+        "char_start": 13476,
+        "char_end": 13532
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Basic earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 49.33,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "six months ended June 30, 2026",
+      "basis": "gaap",
+      "quote": "Basic earnings per share $ 27.25 $ 15.36 $ 49.33 $ 29.31",
+      "span": {
+        "char_start": 13476,
+        "char_end": 13532
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Basic earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 29.31,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "six months ended June 30, 2025",
+      "basis": "gaap",
+      "quote": "Basic earnings per share $ 27.25 $ 15.36 $ 49.33 $ 29.31",
+      "span": {
+        "char_start": 13476,
+        "char_end": 13532
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Basic earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 27.25,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "three months ended June 30, 2026",
+      "basis": "gaap",
+      "quote": "Diluted earnings per share $ 27.25 $ 15.36 $ 49.32 $ 29.30",
+      "span": {
+        "char_start": 13533,
+        "char_end": 13591
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Diluted earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 15.36,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "three months ended June 30, 2025",
+      "basis": "gaap",
+      "quote": "Diluted earnings per share $ 27.25 $ 15.36 $ 49.32 $ 29.30",
+      "span": {
+        "char_start": 13533,
+        "char_end": 13591
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Diluted earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 49.32,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "six months ended June 30, 2026",
+      "basis": "gaap",
+      "quote": "Diluted earnings per share $ 27.25 $ 15.36 $ 49.32 $ 29.30",
+      "span": {
+        "char_start": 13533,
+        "char_end": 13591
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Diluted earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 29.3,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "six months ended June 30, 2025",
+      "basis": "gaap",
+      "quote": "Diluted earnings per share $ 27.25 $ 15.36 $ 49.32 $ 29.30",
+      "span": {
+        "char_start": 13533,
+        "char_end": 13591
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Diluted earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 7.0,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": null,
+      "quote": "Cash dividends per share (NT$) $ 7.00 $ 7.00",
+      "span": {
+        "char_start": 65871,
+        "char_end": 65915
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash dividends per share (NT$)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 7.0,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "first quarter of 2026",
+      "basis": null,
+      "quote": "Cash dividends per share (NT$) $ 7.00 $ 7.00",
+      "span": {
+        "char_start": 65871,
+        "char_end": 65915
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash dividends per share (NT$)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 5.3,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "first quarter of 2025",
+      "basis": null,
+      "quote": "In the first quarter of 2025, the Company recognized related earthquake losses to be approximately NT$5.3 billion, net of insurance claim.",
+      "span": {
+        "char_start": 119729,
+        "char_end": 119867
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Earthquake losses, net of insurance claim",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 4.3,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": null,
+      "quote": "The cumulative net impact of the earthquake, representing total losses net of insurance claims, resulted in a gain of approximately NT$4.3 billion.",
+      "span": {
+        "char_start": 120453,
+        "char_end": 120600
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cumulative net impact of earthquake (gain)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 84,
+      "unit": "pct",
+      "currency": null,
+      "period": "June 30, 2026",
+      "basis": null,
+      "quote": "As of June 30, 2026 , December 31, 2025 and June 30, 2025 , the Company’s ten largest customers accounted for 84% , 84% and 83% of accounts receivable, respectively.",
+      "span": {
+        "char_start": 96065,
+        "char_end": 96230
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Ten largest customers share of accounts receivable",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 35,
+      "unit": "pct",
+      "currency": null,
+      "period": "effective January 1, 2026",
+      "basis": null,
+      "quote": "Effective January 1, 2026, the credit percentage has been increased to 35% of the qualified investment amount following amendments to relevant regulations.",
+      "span": {
+        "char_start": 87768,
+        "char_end": 87923
+      },
+      "direction": "increase",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "TSMC Arizona investment credit percentage",
+      "segment": "TSMC Arizona"
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "gross_margin_pct",
+      "quote": "GROSS PROFIT 860,310,695 68 547,369,238 59 1,611,606,116 67 1,040,764,314 59",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "quote": "GROSS PROFIT 860,310,695 68 547,369,238 59 1,611,606,116 67 1,040,764,314 59",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "quote": "GROSS PROFIT 860,310,695 68 547,369,238 59 1,611,606,116 67 1,040,764,314 59",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "quote": "GROSS PROFIT 860,310,695 68 547,369,238 59 1,611,606,116 67 1,040,764,314 59",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_margin_pct",
+      "quote": "INCOME FROM OPERATIONS (Note 37) 766,602,651 60 463,423,638 50 1,425,568,793 59 870,504,446 49",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_margin_pct",
+      "quote": "INCOME FROM OPERATIONS (Note 37) 766,602,651 60 463,423,638 50 1,425,568,793 59 870,504,446 49",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_margin_pct",
+      "quote": "INCOME FROM OPERATIONS (Note 37) 766,602,651 60 463,423,638 50 1,425,568,793 59 870,504,446 49",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_margin_pct",
+      "quote": "INCOME FROM OPERATIONS (Note 37) 766,602,651 60 463,423,638 50 1,425,568,793 59 870,504,446 49",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "NET INCOME 706,780,923 56 397,493,424 43 1,279,582,227 53 758,226,085 43",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "NET INCOME 706,780,923 56 397,493,424 43 1,279,582,227 53 758,226,085 43",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Cash dividends per share (NT$) $ 7.00 $ 7.00",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Cash dividends per share (NT$) $ 7.00 $ 7.00",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "In the first quarter of 2025, the Company recognized related earthquake losses to be approximately NT$5.3 billion, net of insurance claim.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The cumulative net impact of the earthquake, representing total losses net of insurance claims, resulted in a gain of approximately NT$4.3 billion.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "As of June 30, 2026 , December 31, 2025 and June 30, 2025 , the Company’s ten largest customers accounted for 84% , 84% and 83% of accounts receivable, respectively.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Effective January 1, 2026, the credit percentage has been increased to 35% of the qualified investment amount following amendments to relevant regulations.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "Basic earnings per share $ 27.25 $ 15.36 $ 49.33 $ 29.31",
+      "reason": "conflicting_values"
+    }
+  ],
   "validation_notes": []
 }

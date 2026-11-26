@@ -1,8 +1,110 @@
 {
   "doc_key": "0001193125-25-180425:d96358dex991.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37NZDV2VBVRVXKJZBGH4",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAAF1XHTFZ3T1VHFJ2RBWG",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 2.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2026",
+      "basis": null,
+      "quote": "today announced it has completed the sale of its Automotive Ethernet business to Infineon Technologies AG (“Infineon”) for $2.5 billion in an all-cash transaction",
+      "span": {
+        "char_start": 309,
+        "char_end": 471
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "sale of Automotive Ethernet business to Infineon",
+      "segment": "Automotive Ethernet"
+    },
+    {
+      "metric": "revenue",
+      "value": null,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2026",
+      "basis": null,
+      "quote": "The transaction closed eleven days into Marvell’s third quarter of fiscal 2026, during which the Automotive Ethernet business contributed mid-single-digit millions of dollars in revenue.",
+      "span": {
+        "char_start": 473,
+        "char_end": 659
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "Automotive Ethernet business revenue contribution",
+      "segment": "Automotive Ethernet"
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 225,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal 2026",
+      "basis": null,
+      "quote": "the Automotive Ethernet business was expected to contribute between $225 million and $250 million in revenue during fiscal 2026",
+      "span": {
+        "char_start": 884,
+        "char_end": 1011
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "guidance",
+      "metric_label": "Automotive Ethernet expected revenue contribution (low end)",
+      "segment": "Automotive Ethernet"
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 250,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal 2026",
+      "basis": null,
+      "quote": "the Automotive Ethernet business was expected to contribute between $225 million and $250 million in revenue during fiscal 2026",
+      "span": {
+        "char_start": 884,
+        "char_end": 1011
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "guidance",
+      "metric_label": "Automotive Ethernet expected revenue contribution (high end)",
+      "segment": "Automotive Ethernet"
+    },
+    {
+      "metric": "eps",
+      "value": null,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": null,
+      "basis": "non_gaap",
+      "quote": "Marvell does not expect the transaction to have a material impact on its non-GAAP earnings per share.",
+      "span": {
+        "char_start": 1013,
+        "char_end": 1114
+      },
+      "direction": "unchanged",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "non-GAAP earnings per share impact of transaction",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "today announced it has completed the sale of its Automotive Ethernet business to Infineon Technologies AG (“Infineon”) for $2.5 billion in an all-cash transaction",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "revenue_outlook",
+      "quote": "the Automotive Ethernet business was expected to contribute between $225 million and $250 million in revenue during fiscal 2026",
+      "reason": "conflicting_values"
+    }
+  ],
   "validation_notes": []
 }

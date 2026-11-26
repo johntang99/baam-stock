@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## Phase 1 · 1.18 Claude drafts for the full corpus — 2026-11-26
+- Claude (extract-0.3) drafted the remaining 271 documents: 271 calls, all succeeded; 1,546,196 in /
+  580,874 out tokens, ~$17.80 at list price; every call logged to `llm_calls`. All 291 drafts are now Claude's
+  (status draft); 1,313 facts kept, 1,770 dropped by the checker (951 `other` metrics, 880 value-not-in-quote,
+  77 conflicts). Most value-not-in-quote drops are table rows whose scale sits only in the table header
+  (to be addressed by a checker change + `--recheck`, no new API calls).
+
 ## Phase 1 · 1.18 corpus + Claude draft trial — 2026-11-26
 - Corpus: 291 public SEC documents (NVDA, AMD, AVGO, MU, TSM, MRVL; 111 EX-99 exhibits, 180 filing texts).
   Exhibits found by declared document type from the filing index.

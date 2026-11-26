@@ -1,8 +1,197 @@
 {
   "doc_key": "0001046179-26-000797:tsm-boardx202611xx.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37MK5PH19WBW0E387N1A",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9YJ52FBQJP0N314WBDE9A",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 1494.24,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "third quarter of 2026",
+      "basis": null,
+      "quote": "Third quarter consolidated revenue was NT$1,494.24 billion",
+      "span": {
+        "char_start": 1738,
+        "char_end": 1796
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Third quarter consolidated revenue",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 763.06,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "third quarter of 2026",
+      "basis": null,
+      "quote": "net income was NT$763.06 billion",
+      "span": {
+        "char_start": 1801,
+        "char_end": 1833
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "net income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 29.43,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "third quarter of 2026",
+      "basis": "gaap",
+      "quote": "with diluted earnings per share of NT$29.43",
+      "span": {
+        "char_start": 1835,
+        "char_end": 1878
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "diluted earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 9.0,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "third quarter of 2026",
+      "basis": null,
+      "quote": "Approved the distribution of a NT$9.0 per share cash dividend for the third quarter of 2026",
+      "span": {
+        "char_start": 1883,
+        "char_end": 1974
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "cash dividend per share",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 40926.7,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "the Board approved capital appropriations of approximately US$40,926.70 million",
+      "span": {
+        "char_start": 2709,
+        "char_end": 2788
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "capital appropriations",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 500,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Approved the investment of no more than US$500 million in the establishment of an investment company",
+      "span": {
+        "char_start": 3144,
+        "char_end": 3244
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "investment in establishment of an investment company (maximum)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 500,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Anthropic, PBC at its per share initial public offering price in an amount not to exceed US$500 million to acquire Anthropic’s common shares",
+      "span": {
+        "char_start": 3381,
+        "char_end": 3521
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "investment in Anthropic, PBC (maximum)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 500,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "OpenAI Group PBC in an amount not to exceed US$500 million to acquire OpenAI’s preferred stock",
+      "span": {
+        "char_start": 3531,
+        "char_end": 3625
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "investment in OpenAI Group PBC (maximum)",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 78.75,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "nine months ended September 30, 2026",
+      "basis": "gaap",
+      "quote": "Basic EPS (NT$) 78.75",
+      "span": {
+        "char_start": 5351,
+        "char_end": 5372
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Basic EPS (NT$)",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Approved the distribution of a NT$9.0 per share cash dividend for the third quarter of 2026",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the Board approved capital appropriations of approximately US$40,926.70 million",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Approved the investment of no more than US$500 million in the establishment of an investment company",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Anthropic, PBC at its per share initial public offering price in an amount not to exceed US$500 million to acquire Anthropic’s common shares",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "OpenAI Group PBC in an amount not to exceed US$500 million to acquire OpenAI’s preferred stock",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

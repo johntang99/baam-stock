@@ -1,8 +1,33 @@
 {
   "doc_key": "0001045810-26-000069:nvda-20260817.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37JMNH0BZCDKWF9G2RVG",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9D5MN140ZJ8P0WEYJ52ZW",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 105,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "NVIDIA’s aggregate payment obligation is cumulatively capped at $105 billion for its initial commitment under the Agreements.",
+      "span": {
+        "char_start": 3179,
+        "char_end": 3304
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate payment obligation cap under residual value guaranties (initial commitment)",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "NVIDIA’s aggregate payment obligation is cumulatively capped at $105 billion for its initial commitment under the Agreements.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

@@ -1,8 +1,56 @@
 {
   "doc_key": "0001045810-26-000026:nvda-20260424.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37JDWW54D9AN75P3GGYZ",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C99G3YYQS3CHBHY9HQ8WZ0",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 800000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Mr. Gawel’s annual base salary will be $800,000",
+      "span": {
+        "char_start": 3730,
+        "char_end": 3777
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "annual base salary (Scott Gawel, VP and CAO)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 12875000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "he will receive two new hire equity grants of restricted stock units, or RSUs, with a combined target value of $12,875,000",
+      "span": {
+        "char_start": 3782,
+        "char_end": 3904
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "new hire RSU equity grants combined target value (Scott Gawel)",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Mr. Gawel’s annual base salary will be $800,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "he will receive two new hire equity grants of restricted stock units, or RSUs, with a combined target value of $12,875,000",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

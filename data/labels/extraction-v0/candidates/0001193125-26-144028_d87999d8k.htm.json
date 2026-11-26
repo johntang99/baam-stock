@@ -1,8 +1,56 @@
 {
   "doc_key": "0001193125-26-144028:d87999d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37PMJ21WCS0NXH0KPPX7",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAFFVQPN0X7KN2W61TDPHY",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": "through up to 2031",
+      "basis": null,
+      "quote": "Broadcom Inc. (“Broadcom”) and Google LLC (“Google”) have entered into a Long Term Agreement for Broadcom to develop and supply custom Tensor Processing Units (“TPUs”) for Google’s future generations of TPUs and a Supply Assurance Agreement for Broadcom to supply networking and other components to be used in Google’s next-generation AI racks through up to 2031.",
+      "span": {
+        "char_start": 1976,
+        "char_end": 2339
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Long Term Agreement to develop and supply custom TPUs and Supply Assurance Agreement with Google",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": "beginning in 2027",
+      "basis": null,
+      "quote": "Anthropic, beginning in 2027, will access through Broadcom approximately 3.5 gigawatts as part of the multiple gigawatts of next generation TPU-based AI compute capacity committed by Anthropic.",
+      "span": {
+        "char_start": 2465,
+        "char_end": 2658
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Anthropic access through Broadcom to approximately 3.5 gigawatts of next generation TPU-based AI compute capacity",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Broadcom Inc. (“Broadcom”) and Google LLC (“Google”) have entered into a Long Term Agreement for Broadcom to develop and supply custom Tensor Processing Units (“TPUs”) for Google’s future generations of TPUs and a Supply Assurance Agreement for Broadcom to supply networking and other components to be used in Google’s next-generation AI racks through up to 2031.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Anthropic, beginning in 2027, will access through Broadcom approximately 3.5 gigawatts as part of the multiple gigawatts of next generation TPU-based AI compute capacity committed by Anthropic.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

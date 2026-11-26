@@ -1,27 +1,945 @@
 {
   "doc_key": "0001045810-26-000051:q1fy27cfocommentary.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37JGVRC8TGMNZ0W9WY79",
+  "llm_call_id": "llm_01M8C99V4NDJ4CW04K7TM6TKRV",
   "candidates": [
+    {
+      "metric": "revenue",
+      "value": 81.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Revenue for the first quarter was a record $81.6 billion, up 85% from a year ago and up 20% sequentially.",
+      "span": {
+        "char_start": 2406,
+        "char_end": 2511
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 85,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Revenue for the first quarter was a record $81.6 billion, up 85% from a year ago and up 20% sequentially.",
+      "span": {
+        "char_start": 2406,
+        "char_end": 2511
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue growth from a year ago",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 20,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Revenue for the first quarter was a record $81.6 billion, up 85% from a year ago and up 20% sequentially.",
+      "span": {
+        "char_start": 2406,
+        "char_end": 2511
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue growth sequentially",
+      "segment": null
+    },
+    {
+      "metric": "data_center_revenue",
+      "value": 75.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Data Center revenue for the first quarter was a record $75.2 billion, up 92% from a year ago and up 21% sequentially",
+      "span": {
+        "char_start": 2512,
+        "char_end": 2628
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center revenue",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 92,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Data Center revenue for the first quarter was a record $75.2 billion, up 92% from a year ago and up 21% sequentially",
+      "span": {
+        "char_start": 2512,
+        "char_end": 2628
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center revenue growth from a year ago",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 21,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Data Center revenue for the first quarter was a record $75.2 billion, up 92% from a year ago and up 21% sequentially",
+      "span": {
+        "char_start": 2512,
+        "char_end": 2628
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center revenue growth sequentially",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue",
+      "value": 37869,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Hyperscale 37,869 33,814 17,599 12 % 115 %",
+      "span": {
+        "char_start": 1219,
+        "char_end": 1261
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Hyperscale revenue",
+      "segment": "Hyperscale"
+    },
+    {
+      "metric": "revenue",
+      "value": 37377,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": null,
+      "quote": "AI Clouds, Industrial, & Enterprise 37,377 28,500 21,513 31 % 74 %",
+      "span": {
+        "char_start": 1262,
+        "char_end": 1328
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "AI Clouds, Industrial, & Enterprise revenue",
+      "segment": "AI Clouds, Industrial, & Enterprise"
+    },
     {
       "metric": "revenue",
       "value": 6.4,
       "unit": "USD_billion",
       "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Edge Computing revenue for the first quarter was $6.4 billion, up 29% from a year ago and up 10% sequentially.",
+      "span": {
+        "char_start": 3396,
+        "char_end": 3506
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Edge Computing revenue",
+      "segment": "Edge Computing"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 29,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Edge Computing revenue for the first quarter was $6.4 billion, up 29% from a year ago and up 10% sequentially.",
+      "span": {
+        "char_start": 3396,
+        "char_end": 3506
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Edge Computing revenue growth from a year ago",
+      "segment": "Edge Computing"
+    },
+    {
+      "metric": "revenue",
+      "value": 74550,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Compute & Networking $74,550 $61,651 $39,589 21 % 88 %",
+      "span": {
+        "char_start": 967,
+        "char_end": 1021
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Compute & Networking revenue",
+      "segment": "Compute & Networking"
+    },
+    {
+      "metric": "revenue",
+      "value": 7065,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Graphics 7,065 6,476 4,473 9 % 58 %",
+      "span": {
+        "char_start": 1022,
+        "char_end": 1057
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Graphics revenue",
+      "segment": "Graphics"
+    },
+    {
+      "metric": "revenue",
+      "value": 60.4,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Under the previous sub-markets, Data Center compute revenue was a record $60.4 billion, up 77% from a year ago and up 18% sequentially.",
+      "span": {
+        "char_start": 3152,
+        "char_end": 3287
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center compute revenue",
+      "segment": "Data Center compute"
+    },
+    {
+      "metric": "revenue",
+      "value": 14.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Data Center networking revenue was a record $14.8 billion, up 199% from a year ago and up 35% sequentially.",
+      "span": {
+        "char_start": 3288,
+        "char_end": 3395
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center networking revenue",
+      "segment": "Data Center networking"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 74.9,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Gross margin 74.9 % 75.0 % 60.5 % (0.1) pts 14.4 pts",
+      "span": {
+        "char_start": 248,
+        "char_end": 300
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP gross margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 75.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Gross margin 75.0 % 75.1 % 60.8 % (0.1) pts 14.2 pts",
+      "span": {
+        "char_start": 631,
+        "char_end": 683
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP gross margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 61157,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP gross profit $ 61,157 $ 51,093 $ 26,668",
+      "span": {
+        "char_start": 12985,
+        "char_end": 13029
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP gross profit",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 61232,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP gross profit $ 61,232 $ 51,140 $ 26,794",
+      "span": {
+        "char_start": 13186,
+        "char_end": 13234
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP gross profit",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 7621,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Operating expenses $7,621 $6,794 $5,030 12 % 52 %",
+      "span": {
+        "char_start": 301,
+        "char_end": 350
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 7449,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Operating expenses $7,449 $6,666 $4,993 12 % 49 %",
+      "span": {
+        "char_start": 684,
+        "char_end": 733
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 53536,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Operating income $53,536 $44,299 $21,638 21 % 147 %",
+      "span": {
+        "char_start": 351,
+        "char_end": 402
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP operating income",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 53783,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Operating income $53,783 $44,474 $21,801 21 % 147 %",
+      "span": {
+        "char_start": 734,
+        "char_end": 785
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP operating income",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 58321,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Net income $58,321 $42,960 $18,775 36 % 211 %",
+      "span": {
+        "char_start": 403,
+        "char_end": 448
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP net income",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 45548,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Net income $45,548 $38,969 $19,094 17 % 139 %",
+      "span": {
+        "char_start": 786,
+        "char_end": 831
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP net income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 2.39,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Diluted earnings per share $2.39 $1.76 $0.76 36 % 214 %",
+      "span": {
+        "char_start": 449,
+        "char_end": 504
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP diluted earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 1.87,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Diluted earnings per share $1.87 $1.59 $0.78 18 % 140 %",
+      "span": {
+        "char_start": 832,
+        "char_end": 887
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP diluted earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 50.3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Cash flow from operating activities was $50.3 billion, up from $27.4 billion a year ago and up from $36.2 billion a quarter ago.",
+      "span": {
+        "char_start": 6147,
+        "char_end": 6275
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash flow from operating activities",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 48554,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 48,554 $ 34,902 $ 26,135",
+      "span": {
+        "char_start": 14448,
+        "char_end": 14489
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 540,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Interest income for the first quarter was $540 million, up slightly from a year ago and down slightly sequentially.",
+      "span": {
+        "char_start": 4687,
+        "char_end": 4802
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Interest income",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 15.9,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Net gains from equity securities for the first quarter was $15.9 billion",
+      "span": {
+        "char_start": 4803,
+        "char_end": 4875
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net gains from equity securities",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 16.6,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP effective tax rate for the first quarter was 16.6%, an increase from a year ago",
+      "span": {
+        "char_start": 4959,
+        "char_end": 5043
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP effective tax rate",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 16.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP effective tax rate for the first quarter was 16.0%.",
+      "span": {
+        "char_start": 5121,
+        "char_end": 5181
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP effective tax rate",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 50.3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Cash, cash equivalents, and marketable debt securities were $50.3 billion, down from $52.4 billion a year ago and up from $49.7 billion a quarter ago.",
+      "span": {
+        "char_start": 5210,
+        "char_end": 5360
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash, cash equivalents, and marketable debt securities",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 40.7,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Accounts receivable was $40.7 billion with 45 days sales outstanding (DSO), down from 51 days sequentially",
+      "span": {
+        "char_start": 5476,
+        "char_end": 5582
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Accounts receivable",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 25.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Inventory was $25.8 billion, up from $21.4 billion sequentially, and total supply-related commitments were $119.0 billion.",
+      "span": {
+        "char_start": 5759,
+        "char_end": 5881
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Inventory",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 119.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Inventory was $25.8 billion, up from $21.4 billion sequentially, and total supply-related commitments were $119.0 billion.",
+      "span": {
+        "char_start": 5759,
+        "char_end": 5881
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total supply-related commitments",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 30.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Multi-year cloud service commitments were $30.0 billion, up from $27.0 billion sequentially",
+      "span": {
+        "char_start": 5984,
+        "char_end": 6075
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Multi-year cloud service commitments",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 20.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2027",
+      "basis": null,
+      "quote": "We returned a record level of approximately $20.0 billion to shareholders in the first quarter through share repurchases and cash dividends.",
+      "span": {
+        "char_start": 6538,
+        "char_end": 6678
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Returned to shareholders through share repurchases and cash dividends",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 0.25,
+      "unit": "USD_per_share",
+      "currency": "USD",
       "period": null,
       "basis": null,
-      "quote": "revenue for the first quarter was $6.4 billion",
+      "quote": "our Board of Directors approved an increase to our quarterly dividend from $0.01 per share to $0.25 per share",
       "span": {
-        "char_start": 3411,
-        "char_end": 3457
+        "char_start": 6696,
+        "char_end": 6805
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Quarterly dividend",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 80.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "an additional $80.0 billion to our share repurchase authorization, without expiration",
+      "span": {
+        "char_start": 6810,
+        "char_end": 6895
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Additional share repurchase authorization",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 91.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Revenue is expected to be $91.0 billion, plus or minus 2%.",
+      "span": {
+        "char_start": 6968,
+        "char_end": 7026
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Revenue outlook",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 74.9,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP and non-GAAP gross margins are expected to be 74.9% and 75.0%, respectively, plus or minus 50 basis points.",
+      "span": {
+        "char_start": 7108,
+        "char_end": 7220
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP gross margin outlook",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 75.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "GAAP and non-GAAP gross margins are expected to be 74.9% and 75.0%, respectively, plus or minus 50 basis points.",
+      "span": {
+        "char_start": 7108,
+        "char_end": 7220
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP gross margin outlook",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 8.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP and non-GAAP operating expenses are expected to be approximately $8.5 billion and $8.3 billion, respectively.",
+      "span": {
+        "char_start": 7223,
+        "char_end": 7337
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP operating expenses outlook",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 8.3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "GAAP and non-GAAP operating expenses are expected to be approximately $8.5 billion and $8.3 billion, respectively.",
+      "span": {
+        "char_start": 7223,
+        "char_end": 7337
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP operating expenses outlook",
       "segment": null
     }
   ],
-  "dropped": [],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "Hyperscale 37,869 33,814 17,599 12 % 115 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "AI Clouds, Industrial, & Enterprise 37,377 28,500 21,513 31 % 74 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Compute & Networking $74,550 $61,651 $39,589 21 % 88 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Graphics 7,065 6,476 4,473 9 % 58 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "GAAP gross profit $ 61,157 $ 51,093 $ 26,668",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Non-GAAP gross profit $ 61,232 $ 51,140 $ 26,794",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses $7,621 $6,794 $5,030 12 % 52 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses $7,449 $6,666 $4,993 12 % 49 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income $53,536 $44,299 $21,638 21 % 147 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income $53,783 $44,474 $21,801 21 % 147 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income $58,321 $42,960 $18,775 36 % 211 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income $45,548 $38,969 $19,094 17 % 139 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "free_cash_flow",
+      "quote": "Free cash flow $ 48,554 $ 34,902 $ 26,135",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Interest income for the first quarter was $540 million, up slightly from a year ago and down slightly sequentially.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Net gains from equity securities for the first quarter was $15.9 billion",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "GAAP effective tax rate for the first quarter was 16.6%, an increase from a year ago",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Non-GAAP effective tax rate for the first quarter was 16.0%.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Cash, cash equivalents, and marketable debt securities were $50.3 billion, down from $52.4 billion a year ago and up from $49.7 billion a quarter ago.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Accounts receivable was $40.7 billion with 45 days sales outstanding (DSO), down from 51 days sequentially",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Inventory was $25.8 billion, up from $21.4 billion sequentially, and total supply-related commitments were $119.0 billion.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Inventory was $25.8 billion, up from $21.4 billion sequentially, and total supply-related commitments were $119.0 billion.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Multi-year cloud service commitments were $30.0 billion, up from $27.0 billion sequentially",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "We returned a record level of approximately $20.0 billion to shareholders in the first quarter through share repurchases and cash dividends.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "our Board of Directors approved an increase to our quarterly dividend from $0.01 per share to $0.25 per share",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "an additional $80.0 billion to our share repurchase authorization, without expiration",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

@@ -1,8 +1,148 @@
 {
   "doc_key": "0001104659-26-034174:tm269755d1_ex99-1.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37N6C9PS94895K19W6J1",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA3KYSJPRFM6T1H0H7DJGY",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 1000000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "as of March 25, 2026",
+      "basis": null,
+      "quote": "5.300% Senior Notes due 2031 595112CD3 / US595112CD31 $ 1,000,000,000",
+      "span": {
+        "char_start": 713,
+        "char_end": 782
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Principal Amount Outstanding - 5.300% Senior Notes due 2031",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 500000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "as of March 25, 2026",
+      "basis": null,
+      "quote": "5.650% Senior Notes due 2032 595112CG6 / US595112CG61 $ 500,000,000",
+      "span": {
+        "char_start": 843,
+        "char_end": 910
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Principal Amount Outstanding - 5.650% Senior Notes due 2032",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 750000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "as of March 25, 2026",
+      "basis": null,
+      "quote": "5.875% Senior Notes due 2033 595112BZ5 / US595112BZ51 $ 750,000,000",
+      "span": {
+        "char_start": 971,
+        "char_end": 1038
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Principal Amount Outstanding - 5.875% Senior Notes due 2033 (CUSIP 595112BZ5)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 900000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "as of March 25, 2026",
+      "basis": null,
+      "quote": "5.875% Senior Notes due 2033 595112CB7 / US595112CB74 $ 900,000,000",
+      "span": {
+        "char_start": 1098,
+        "char_end": 1165
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Principal Amount Outstanding - 5.875% Senior Notes due 2033 (CUSIP 595112CB7)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1000000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "as of March 25, 2026",
+      "basis": null,
+      "quote": "5.800% Senior Notes due 2035 595112CE1 / US595112CE14 $ 1,000,000,000",
+      "span": {
+        "char_start": 1222,
+        "char_end": 1291
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Principal Amount Outstanding - 5.800% Senior Notes due 2035",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1250000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "as of March 25, 2026",
+      "basis": null,
+      "quote": "6.050% Senior Notes due 2035 595112CH4 / US595112CH45 $ 1,250,000,000",
+      "span": {
+        "char_start": 1351,
+        "char_end": 1420
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Principal Amount Outstanding - 6.050% Senior Notes due 2035",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "5.300% Senior Notes due 2031 595112CD3 / US595112CD31 $ 1,000,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5.650% Senior Notes due 2032 595112CG6 / US595112CG61 $ 500,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5.875% Senior Notes due 2033 595112BZ5 / US595112BZ51 $ 750,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5.875% Senior Notes due 2033 595112CB7 / US595112CB74 $ 900,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5.800% Senior Notes due 2035 595112CE1 / US595112CE14 $ 1,000,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "6.050% Senior Notes due 2035 595112CH4 / US595112CH45 $ 1,250,000,000",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

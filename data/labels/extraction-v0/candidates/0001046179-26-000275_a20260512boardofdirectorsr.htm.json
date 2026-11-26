@@ -1,8 +1,33 @@
 {
   "doc_key": "0001046179-26-000275:a20260512boardofdirectorsr.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37K2VPDT15NKV1PZHHP2",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9MCEK1RT8EF23KX6NPH4P",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 20,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "A capital increase of not more than US$20 billion from Taiwan Semiconductor Manufacturing Co., Ltd., subject to approval of the competent authorities.",
+      "span": {
+        "char_start": 1694,
+        "char_end": 1844
+      },
+      "direction": "increase",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Capital Increase",
+      "segment": "TSMC Arizona Corporation"
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "A capital increase of not more than US$20 billion from Taiwan Semiconductor Manufacturing Co., Ltd., subject to approval of the competent authorities.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

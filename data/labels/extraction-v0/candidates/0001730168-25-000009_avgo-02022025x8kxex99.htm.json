@@ -1,142 +1,647 @@
 {
   "doc_key": "0001730168-25-000009:avgo-02022025x8kxex99.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37QTA3DTJM1RZF79YCGE",
+  "llm_call_id": "llm_01M8CARQVYNMV2627EQ85KD6E8",
   "candidates": [
     {
       "metric": "revenue",
-      "value": 14.0,
-      "unit": "number",
+      "value": 14916,
+      "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "Revenue of $14",
+      "period": "first quarter of fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Revenue of $14,916 million for the first quarter, up 25 percent from the prior year period",
       "span": {
         "char_start": 164,
-        "char_end": 178
+        "char_end": 254
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 25,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Revenue of $14,916 million for the first quarter, up 25 percent from the prior year period",
+      "span": {
+        "char_start": 164,
+        "char_end": 254
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue growth from the prior year period",
       "segment": null
     },
     {
       "metric": "net_income",
-      "value": 5.0,
-      "unit": "number",
+      "value": 5503,
+      "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income of $5",
+      "period": "first quarter of fiscal year 2025",
+      "basis": "gaap",
+      "quote": "GAAP net income of $5,503 million for the first quarter",
       "span": {
-        "char_start": 262,
-        "char_end": 278
+        "char_start": 257,
+        "char_end": 312
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP net income",
       "segment": null
     },
     {
       "metric": "net_income",
-      "value": 7.0,
-      "unit": "number",
+      "value": 7823,
+      "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income of $7",
+      "period": "first quarter of fiscal year 2025",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP net income of $7,823 million for the first quarter",
       "span": {
-        "char_start": 323,
-        "char_end": 339
+        "char_start": 314,
+        "char_end": 373
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP net income",
       "segment": null
     },
     {
-      "metric": "revenue",
+      "metric": "other",
+      "value": 10083,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal year 2025",
+      "basis": "non_gaap",
+      "quote": "Adjusted EBITDA of $10,083 million for the first quarter, or 68 percent of revenue",
+      "span": {
+        "char_start": 376,
+        "char_end": 458
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Adjusted EBITDA",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 68,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal year 2025",
+      "basis": "non_gaap",
+      "quote": "Adjusted EBITDA of $10,083 million for the first quarter, or 68 percent of revenue",
+      "span": {
+        "char_start": 376,
+        "char_end": 458
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Adjusted EBITDA as percent of revenue",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 41,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal year 2025",
+      "basis": "non_gaap",
+      "quote": "Adjusted EBITDA increased 41% year-over-year to a record $10.1 billion",
+      "span": {
+        "char_start": 1997,
+        "char_end": 2067
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Adjusted EBITDA growth year-over-year",
+      "segment": null
+    },
+    {
+      "metric": "eps",
       "value": 1.14,
-      "unit": "number",
+      "unit": "USD_per_share",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue • GAAP diluted EPS of $1.14",
+      "period": "first quarter of fiscal year 2025",
+      "basis": "gaap",
+      "quote": "GAAP diluted EPS of $1.14 for the first quarter",
       "span": {
-        "char_start": 451,
-        "char_end": 486
+        "char_start": 461,
+        "char_end": 508
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP diluted EPS",
       "segment": null
     },
     {
-      "metric": "revenue",
+      "metric": "eps",
+      "value": 1.6,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "first quarter of fiscal year 2025",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP diluted EPS of $1.60 for the first quarter",
+      "span": {
+        "char_start": 510,
+        "char_end": 561
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP diluted EPS",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 6113,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Cash from operations of $6,113 million for the first quarter, less capital expenditures of $100 million, resulted in $6,013 million of free cash flow, or 40 percent of revenue",
+      "span": {
+        "char_start": 564,
+        "char_end": 739
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash from operations",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 100,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Cash from operations of $6,113 million for the first quarter, less capital expenditures of $100 million, resulted in $6,013 million of free cash flow, or 40 percent of revenue",
+      "span": {
+        "char_start": 564,
+        "char_end": 739
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Capital expenditures",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 6013,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal year 2025",
+      "basis": "non_gaap",
+      "quote": "Cash from operations of $6,113 million for the first quarter, less capital expenditures of $100 million, resulted in $6,013 million of free cash flow, or 40 percent of revenue",
+      "span": {
+        "char_start": 564,
+        "char_end": 739
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 28,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal year 2025",
+      "basis": "non_gaap",
+      "quote": "Free cash flow was $6.0 billion, up 28% year-over-year.",
+      "span": {
+        "char_start": 2113,
+        "char_end": 2168
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow growth year-over-year",
+      "segment": null
+    },
+    {
+      "metric": "other",
       "value": 0.59,
-      "unit": "number",
+      "unit": "USD_per_share",
       "currency": "USD",
-      "period": null,
+      "period": "second quarter of fiscal year 2025",
       "basis": null,
-      "quote": "revenue • Quarterly common stock dividend of $0.59",
+      "quote": "The Company’s Board of Directors has approved a quarterly cash dividend of $0.59 per share.",
       "span": {
-        "char_start": 732,
-        "char_end": 782
+        "char_start": 4850,
+        "char_end": 4941
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Quarterly common stock dividend",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 14.9,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Second quarter fiscal year 2025 revenue guidance of approximately $14.9 billion, an increase of 19 percent from the prior year period",
+      "span": {
+        "char_start": 795,
+        "char_end": 928
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Second quarter revenue guidance",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 19,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Second quarter fiscal year 2025 revenue guidance of approximately $14.9 billion, an increase of 19 percent from the prior year period",
+      "span": {
+        "char_start": 795,
+        "char_end": 928
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Second quarter revenue guidance growth from prior year period",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 66,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal year 2025",
+      "basis": "non_gaap",
+      "quote": "Second quarter fiscal year 2025 Adjusted EBITDA guidance of approximately 66 percent of projected revenue",
+      "span": {
+        "char_start": 931,
+        "char_end": 1036
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Adjusted EBITDA guidance as percent of projected revenue",
       "segment": null
     },
     {
       "metric": "revenue",
+      "value": 4.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal year 2025",
+      "basis": "company_defined",
+      "quote": "Q1 AI revenue grew 77% year-over-year to $4.1 billion",
+      "span": {
+        "char_start": 1559,
+        "char_end": 1612
+      },
+      "direction": "increase",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "AI revenue",
+      "segment": "AI semiconductor solutions"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 77,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal year 2025",
+      "basis": "company_defined",
+      "quote": "Q1 AI revenue grew 77% year-over-year to $4.1 billion",
+      "span": {
+        "char_start": 1559,
+        "char_end": 1612
+      },
+      "direction": "increase",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "AI revenue growth year-over-year",
+      "segment": "AI semiconductor solutions"
+    },
+    {
+      "metric": "revenue_outlook",
       "value": 4.4,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue of $4.4 billion",
+      "period": "second quarter of fiscal year 2025",
+      "basis": "company_defined",
+      "quote": "We expect continued strength in AI semiconductor revenue of $4.4 billion in Q2",
       "span": {
-        "char_start": 1791,
-        "char_end": 1814
+        "char_start": 1742,
+        "char_end": 1820
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "product",
+      "certainty": "guidance",
+      "metric_label": "AI semiconductor revenue expected in Q2",
+      "segment": "AI semiconductor solutions"
+    },
+    {
+      "metric": "revenue",
+      "value": 8212,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Semiconductor solutions $ 8,212 55 % $ 7,390 62 % +11 %",
+      "span": {
+        "char_start": 2976,
+        "char_end": 3031
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Semiconductor solutions net revenue",
+      "segment": "Semiconductor solutions"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 11,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Semiconductor solutions $ 8,212 55 % $ 7,390 62 % +11 %",
+      "span": {
+        "char_start": 2976,
+        "char_end": 3031
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Semiconductor solutions revenue change",
+      "segment": "Semiconductor solutions"
+    },
+    {
+      "metric": "revenue",
+      "value": 6704,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Infrastructure software 6,704 45 4,571 38 +47 %",
+      "span": {
+        "char_start": 3032,
+        "char_end": 3079
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Infrastructure software net revenue",
+      "segment": "Infrastructure software"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 47,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal year 2025",
+      "basis": "gaap",
+      "quote": "Infrastructure software 6,704 45 4,571 38 +47 %",
+      "span": {
+        "char_start": 3032,
+        "char_end": 3079
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Infrastructure software revenue change",
+      "segment": "Infrastructure software"
+    },
+    {
+      "metric": "gross_profit",
+      "value": 10145,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal quarter ended February 2, 2025",
+      "basis": "gaap",
+      "quote": "Gross margin 10,145 9,002 7,375",
+      "span": {
+        "char_start": 14097,
+        "char_end": 14128
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 11796,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal quarter ended February 2, 2025",
+      "basis": "non_gaap",
+      "quote": "Gross margin on non-GAAP basis $ 11,796 $ 10,814 $ 9,014",
+      "span": {
+        "char_start": 15880,
+        "char_end": 15936
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin on non-GAAP basis",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 3885,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal quarter ended February 2, 2025",
+      "basis": "gaap",
+      "quote": "Total operating expenses 3,885 4,375 5,292",
+      "span": {
+        "char_start": 14334,
+        "char_end": 14376
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 1968,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal quarter ended February 2, 2025",
+      "basis": "non_gaap",
+      "quote": "Total operating expenses on non-GAAP basis $ 1,968 $ 2,003 $ 2,183",
+      "span": {
+        "char_start": 16647,
+        "char_end": 16713
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total operating expenses on non-GAAP basis",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 6260,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal quarter ended February 2, 2025",
+      "basis": "gaap",
+      "quote": "Operating income 6,260 4,627 2,083",
+      "span": {
+        "char_start": 14377,
+        "char_end": 14411
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 9828,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal quarter ended February 2, 2025",
+      "basis": "non_gaap",
+      "quote": "Operating income on non-GAAP basis $ 9,828 $ 8,811 $ 6,831",
+      "span": {
+        "char_start": 16973,
+        "char_end": 17031
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income on non-GAAP basis",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 9307,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "end of first quarter of fiscal year 2025",
+      "basis": "gaap",
+      "quote": "The Company’s cash and cash equivalents at the end of the fiscal quarter were $9,307 million, compared to $9,348 million at the end of the prior fiscal quarter.",
+      "span": {
+        "char_start": 3128,
+        "char_end": 3288
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash and cash equivalents",
       "segment": null
     }
   ],
   "dropped": [
     {
+      "metric": "other",
+      "quote": "Adjusted EBITDA of $10,083 million for the first quarter, or 68 percent of revenue",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Adjusted EBITDA of $10,083 million for the first quarter, or 68 percent of revenue",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Adjusted EBITDA increased 41% year-over-year to a record $10.1 billion",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Cash from operations of $6,113 million for the first quarter, less capital expenditures of $100 million, resulted in $6,013 million of free cash flow, or 40 percent of revenue",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Free cash flow was $6.0 billion, up 28% year-over-year.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Company’s Board of Directors has approved a quarterly cash dividend of $0.59 per share.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Second quarter fiscal year 2025 Adjusted EBITDA guidance of approximately 66 percent of projected revenue",
+      "reason": "unknown_metric"
+    },
+    {
       "metric": "revenue",
-      "quote": "Revenue of $14",
-      "reason": "unit_not_allowed:number"
-    },
-    {
-      "metric": "net_income",
-      "quote": "net income of $5",
-      "reason": "unit_not_allowed:number"
-    },
-    {
-      "metric": "net_income",
-      "quote": "net income of $7",
-      "reason": "unit_not_allowed:number"
+      "quote": "Semiconductor solutions $ 8,212 55 % $ 7,390 62 % +11 %",
+      "reason": "value_not_in_quote"
     },
     {
       "metric": "revenue",
-      "quote": "revenue • GAAP diluted EPS of $1.14",
-      "reason": "unit_not_allowed:number"
+      "quote": "Infrastructure software 6,704 45 4,571 38 +47 %",
+      "reason": "value_not_in_quote"
     },
     {
-      "metric": "revenue",
-      "quote": "revenue • Quarterly common stock dividend of $0.59",
-      "reason": "unit_not_allowed:number"
+      "metric": "gross_profit",
+      "quote": "Gross margin 10,145 9,002 7,375",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross margin on non-GAAP basis $ 11,796 $ 10,814 $ 9,014",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Total operating expenses 3,885 4,375 5,292",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Total operating expenses on non-GAAP basis $ 1,968 $ 2,003 $ 2,183",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income 6,260 4,627 2,083",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income on non-GAAP basis $ 9,828 $ 8,811 $ 6,831",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "The Company’s cash and cash equivalents at the end of the fiscal quarter were $9,307 million, compared to $9,348 million at the end of the prior fiscal quarter.",
+      "reason": "unknown_metric"
     }
   ],
   "validation_notes": []

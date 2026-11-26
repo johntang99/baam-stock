@@ -1,8 +1,33 @@
 {
   "doc_key": "0001193125-25-209108:d936801dex991.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37P4J5N36FRAXA9S83V8",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CABVVHCZP52X30793QZC62",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 0.06,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "today announced a quarterly dividend of $0.06 per share of common stock payable on October 30, 2025 to shareholders of record as of October 10, 2025",
+      "span": {
+        "char_start": 202,
+        "char_end": 350
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "quarterly dividend",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "today announced a quarterly dividend of $0.06 per share of common stock payable on October 30, 2025 to shareholders of record as of October 10, 2025",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

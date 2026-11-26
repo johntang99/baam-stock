@@ -1,45 +1,376 @@
 {
   "doc_key": "0001104659-25-075940:tm2522933d1_ex99-1.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37N2Q1V2RQFXCW5AV9F6",
+  "llm_call_id": "llm_01M8CA2FEH7BE78W0D7RDEKSDR",
   "candidates": [
     {
-      "metric": "revenue",
+      "metric": "revenue_outlook",
       "value": 10.7,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
+      "period": "fourth quarter of fiscal 2025",
       "basis": null,
-      "quote": "revenue of $10.7 billion",
+      "quote": "The Company previously provided guidance for revenue of $10.7 billion ± $300 million",
       "span": {
-        "char_start": 404,
-        "char_end": 428
+        "char_start": 359,
+        "char_end": 443
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "revenue (previous guidance)",
       "segment": null
     },
     {
-      "metric": "gross_margin",
+      "metric": "revenue_outlook",
+      "value": 11.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": null,
+      "quote": "The Company today updated its guidance for fourth quarter of fiscal 2025 revenue to $11.2 billion ± $100 million",
+      "span": {
+        "char_start": 558,
+        "char_end": 670
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "revenue (updated guidance)",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
       "value": 42.0,
       "unit": "pct",
       "currency": null,
-      "period": null,
-      "basis": null,
-      "quote": "gross margins of 42.0%",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "non-GAAP gross margins of 42.0% ± 1.0%",
       "span": {
-        "char_start": 454,
-        "char_end": 476
+        "char_start": 445,
+        "char_end": 483
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "non-GAAP gross margins (previous guidance)",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 44.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "non-GAAP gross margins to 44.5% ± 0.5%",
+      "span": {
+        "char_start": 672,
+        "char_end": 710
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "non-GAAP gross margins (updated guidance)",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 2.5,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "non-GAAP EPS of $2.50 ± $0.15",
+      "span": {
+        "char_start": 489,
+        "char_end": 518
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "non-GAAP EPS (previous guidance)",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 2.85,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "non-GAAP EPS to $2.85 ± $0.07",
+      "span": {
+        "char_start": 716,
+        "char_end": 745
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "non-GAAP EPS (updated guidance)",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 41.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Gross margin 41.0% ± 1.0% 1.0 % A 42.0% ± 1.0% 43.5% ± 0.5% 1.0 % A 44.5% ± 0.5%",
+      "span": {
+        "char_start": 1511,
+        "char_end": 1591
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Gross margin GAAP Outlook (previous guidance)",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 43.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Gross margin 41.0% ± 1.0% 1.0 % A 42.0% ± 1.0% 43.5% ± 0.5% 1.0 % A 44.5% ± 0.5%",
+      "span": {
+        "char_start": 1511,
+        "char_end": 1591
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Gross margin GAAP Outlook (updated guidance)",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 1.35,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Operating expenses $1.35B ± $20M $ 147 M B $1.20B ± $20M $1.37B ± $15M $ 147 M B $1.22B ± $15M",
+      "span": {
+        "char_start": 1592,
+        "char_end": 1686
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Operating expenses GAAP Outlook (previous guidance)",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 1.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Operating expenses $1.35B ± $20M $ 147 M B $1.20B ± $20M $1.37B ± $15M $ 147 M B $1.22B ± $15M",
+      "span": {
+        "char_start": 1592,
+        "char_end": 1686
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Operating expenses Non-GAAP Outlook (previous guidance)",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 1.37,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Operating expenses $1.35B ± $20M $ 147 M B $1.20B ± $20M $1.37B ± $15M $ 147 M B $1.22B ± $15M",
+      "span": {
+        "char_start": 1592,
+        "char_end": 1686
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Operating expenses GAAP Outlook (updated guidance)",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 1.22,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Operating expenses $1.35B ± $20M $ 147 M B $1.20B ± $20M $1.37B ± $15M $ 147 M B $1.22B ± $15M",
+      "span": {
+        "char_start": 1592,
+        "char_end": 1686
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Operating expenses Non-GAAP Outlook (updated guidance)",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 2.29,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Diluted earnings per share (1) $2.29 ± $0.15 $ 0.21 A, B, C $2.50 ± $0.15 $2.64 ± $0.07 $ 0.21 A, B, C $2.85 ± $0.07",
+      "span": {
+        "char_start": 1687,
+        "char_end": 1803
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Diluted earnings per share GAAP Outlook (previous guidance)",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 2.64,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Diluted earnings per share (1) $2.29 ± $0.15 $ 0.21 A, B, C $2.50 ± $0.15 $2.64 ± $0.07 $ 0.21 A, B, C $2.85 ± $0.07",
+      "span": {
+        "char_start": 1687,
+        "char_end": 1803
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Diluted earnings per share GAAP Outlook (updated guidance)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 119,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": null,
+      "quote": "Stock-based compensation – cost of goods sold $ 119",
+      "span": {
+        "char_start": 1841,
+        "char_end": 1892
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Stock-based compensation – cost of goods sold (non-GAAP adjustment)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 93,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": null,
+      "quote": "Stock-based compensation – research and development 93",
+      "span": {
+        "char_start": 1895,
+        "char_end": 1949
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Stock-based compensation – research and development (non-GAAP adjustment)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 54,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2025",
+      "basis": null,
+      "quote": "Stock-based compensation – sales, general, and administrative 54",
+      "span": {
+        "char_start": 1952,
+        "char_end": 2016
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Stock-based compensation – sales, general, and administrative (non-GAAP adjustment)",
       "segment": null
     }
   ],
-  "dropped": [],
+  "dropped": [
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses $1.35B ± $20M $ 147 M B $1.20B ± $20M $1.37B ± $15M $ 147 M B $1.22B ± $15M",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses $1.35B ± $20M $ 147 M B $1.20B ± $20M $1.37B ± $15M $ 147 M B $1.22B ± $15M",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses $1.35B ± $20M $ 147 M B $1.20B ± $20M $1.37B ± $15M $ 147 M B $1.22B ± $15M",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses $1.35B ± $20M $ 147 M B $1.20B ± $20M $1.37B ± $15M $ 147 M B $1.22B ± $15M",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Stock-based compensation – cost of goods sold $ 119",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Stock-based compensation – research and development 93",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Stock-based compensation – sales, general, and administrative 54",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "revenue_outlook",
+      "quote": "The Company previously provided guidance for revenue of $10.7 billion ± $300 million",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "quote": "non-GAAP gross margins of 42.0% ± 1.0%",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "eps_non_gaap",
+      "quote": "non-GAAP EPS of $2.50 ± $0.15",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "quote": "Gross margin 41.0% ± 1.0% 1.0 % A 42.0% ± 1.0% 43.5% ± 0.5% 1.0 % A 44.5% ± 0.5%",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "Diluted earnings per share (1) $2.29 ± $0.15 $ 0.21 A, B, C $2.50 ± $0.15 $2.64 ± $0.07 $ 0.21 A, B, C $2.85 ± $0.07",
+      "reason": "conflicting_values"
+    }
+  ],
   "validation_notes": []
 }

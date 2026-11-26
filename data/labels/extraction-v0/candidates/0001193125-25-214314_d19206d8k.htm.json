@@ -1,8 +1,125 @@
 {
   "doc_key": "0001193125-25-214314:d19206d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37P5SXAAYFPBJ1966938",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAC0VX666QNYDG15ZQR2HA",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "its Board of Directors authorized a $5 billion addition to the balance of its existing stock repurchase program",
+      "span": {
+        "char_start": 2064,
+        "char_end": 2175
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "addition to stock repurchase program",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Under the ASR Agreement, the Company will repurchase an aggregate of $1 billion of the Company’s common stock.",
+      "span": {
+        "char_start": 2471,
+        "char_end": 2581
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "accelerated share repurchase amount",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 300,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "current quarter since August 2, 2025",
+      "basis": null,
+      "quote": "Since August 2, the Company has repurchased an additional $300 million worth of common stock",
+      "span": {
+        "char_start": 4479,
+        "char_end": 4571
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "shares already repurchased in current quarter",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "as of August 2, 2025",
+      "basis": null,
+      "quote": "As of August 2, 2025, the date of the Company’s most recent fiscal quarter end, $2.0 billion remained available for future stock repurchases.",
+      "span": {
+        "char_start": 4337,
+        "char_end": 4478
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "remaining stock repurchase authorization",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 3.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "On March 7, 2024, the Company announced that its Board of Directors authorized a $3.0 billion addition to the balance of its existing stock repurchase program.",
+      "span": {
+        "char_start": 4177,
+        "char_end": 4336
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "prior addition to stock repurchase program (March 7, 2024)",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "its Board of Directors authorized a $5 billion addition to the balance of its existing stock repurchase program",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Under the ASR Agreement, the Company will repurchase an aggregate of $1 billion of the Company’s common stock.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Since August 2, the Company has repurchased an additional $300 million worth of common stock",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "As of August 2, 2025, the date of the Company’s most recent fiscal quarter end, $2.0 billion remained available for future stock repurchases.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "On March 7, 2024, the Company announced that its Board of Directors authorized a $3.0 billion addition to the balance of its existing stock repurchase program.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

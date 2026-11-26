@@ -1,90 +1,812 @@
 {
   "doc_key": "0000002488-25-000106:amdq225earningsslidesfin.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37F5V2WEY5KCKPZ3JPBJ",
+  "llm_call_id": "llm_01M8C7DJ8948QMN4X4J8QWCYB2",
   "candidates": [
-    {
-      "metric": "revenue",
-      "value": 1995.0,
-      "unit": "number",
-      "currency": null,
-      "period": null,
-      "basis": null,
-      "quote": "revenue, non-GAAP gross margin, non-GAAP operating expenses, non-GAAP Interest Expense/Other Income (Expense), net, non-GAAP tax rate and diluted share count; AMD’s large and compelling TAM; AMD’s ability to expand Data Center and AI leadership; AMD's financial and operating performance; the impact of export licensing requirements on AMD; and AMD’s ability to drive long-term shareholder returns, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
-      "span": {
-        "char_start": 731,
-        "char_end": 1239
-      },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
-    },
     {
       "metric": "revenue",
       "value": 7.7,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "Revenue Q2 2025 Record second quarter revenue of $7.7 billion",
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Record second quarter revenue of $7.7 billion increased 32% y/y",
       "span": {
-        "char_start": 10178,
-        "char_end": 10239
+        "char_start": 10194,
+        "char_end": 10257
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Record second quarter revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 7685,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Revenue $7,685 $5,835 Up 32% $7,438 Up 3%",
+      "span": {
+        "char_start": 11737,
+        "char_end": 11778
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 32,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Revenue $7,685 $5,835 Up 32% $7,438 Up 3%",
+      "span": {
+        "char_start": 11737,
+        "char_end": 11778
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue Y/Y",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 3,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Revenue $7,685 $5,835 Up 32% $7,438 Up 3%",
+      "span": {
+        "char_start": 11737,
+        "char_end": 11778
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue Q/Q",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 3059,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Gross Profit $3,059 $2,864 Up 7% $3,736 Down 18%",
+      "span": {
+        "char_start": 11779,
+        "char_end": 11827
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross Profit",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 3326,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": "non_gaap",
+      "quote": "Gross Profit $3,326 $3,101 Up 7% $3,992 Down 17%",
+      "span": {
+        "char_start": 12402,
+        "char_end": 12450
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross Profit",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 40,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Gross Margin 40% 49% Down 9 ppts 50% Down 10 ppts",
+      "span": {
+        "char_start": 11828,
+        "char_end": 11877
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross Margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 43,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q2 2025",
+      "basis": "non_gaap",
+      "quote": "Gross Margin 43% 53% Down 10 ppts 54% Down 11 ppts",
+      "span": {
+        "char_start": 12451,
+        "char_end": 12501
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross Margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 54,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q2 2025",
+      "basis": "non_gaap",
+      "quote": "Excluding this charge, non-GAAP gross margin1 would have been ~54%",
+      "span": {
+        "char_start": 10713,
+        "char_end": 10779
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP gross margin excluding export restriction charges",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 800,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Decrease due to the $800 million inventory and related charges associated with US export control restrictions on Instinct MI308 products",
+      "span": {
+        "char_start": 10575,
+        "char_end": 10711
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "Inventory and related charges associated with U.S. export restrictions",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 3193,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Operating Expenses $3,193 $2,595 Up 23% $2,930 Up 9%",
+      "span": {
+        "char_start": 11878,
+        "char_end": 11930
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 2429,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": "non_gaap",
+      "quote": "Operating Expenses $2,429 $1,837 Up 32% $2,213 Up 10%",
+      "span": {
+        "char_start": 12502,
+        "char_end": 12555
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": -134,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Operating Income (Loss) $(134) $269 Down 150% $806 Down 117%",
+      "span": {
+        "char_start": 11993,
+        "char_end": 12053
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Income (Loss)",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 897,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": "non_gaap",
+      "quote": "Operating Income $897 $1,264 Down 29% $1,779 Down 50%",
+      "span": {
+        "char_start": 12616,
+        "char_end": 12669
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Income",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": -2,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Operating Margin (2)% 5% Down 7 ppts 11% Down 13 ppts",
+      "span": {
+        "char_start": 12054,
+        "char_end": 12107
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 12,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q2 2025",
+      "basis": "non_gaap",
+      "quote": "Operating Margin 12% 22% Down 10 ppts 24% Down 12 ppts",
+      "span": {
+        "char_start": 12670,
+        "char_end": 12724
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Margin",
       "segment": null
     },
     {
       "metric": "net_income",
-      "value": 0.9,
-      "unit": "USD_billion",
+      "value": 872,
+      "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income of $0.9 billion",
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Net Income $872 $265 Up 229% $709 Up 23%",
       "span": {
-        "char_start": 11135,
-        "char_end": 11161
+        "char_start": 12108,
+        "char_end": 12148
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Income",
       "segment": null
     },
     {
       "metric": "net_income",
-      "value": 0.8,
+      "value": 781,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": "non_gaap",
+      "quote": "Net Income $781 $1,126 Down 31% $1,566 Down 50%",
+      "span": {
+        "char_start": 12725,
+        "char_end": 12772
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 0.54,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Diluted Earnings Per Share $0.54 $0.16 Up 238% $0.44 Up 23%",
+      "span": {
+        "char_start": 12149,
+        "char_end": 12208
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Diluted Earnings Per Share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 0.48,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": "non_gaap",
+      "quote": "Diluted Earnings Per Share $0.48 $0.69 Down 30% $0.96 Down 50%",
+      "span": {
+        "char_start": 12773,
+        "char_end": 12835
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Diluted Earnings Per Share",
+      "segment": null
+    },
+    {
+      "metric": "data_center_revenue",
+      "value": 3240,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Data Center Net Revenue $3,240 $2,834 Up 14% $3,674 Down 12%",
+      "span": {
+        "char_start": 13004,
+        "char_end": 13064
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center Net Revenue",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 14,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Data Center Net Revenue $3,240 $2,834 Up 14% $3,674 Down 12%",
+      "span": {
+        "char_start": 13004,
+        "char_end": 13064
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center Net Revenue Y/Y",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "operating_income",
+      "value": -155,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Operating Income (Loss) $(155) $743 Down 121% $932 Down 117%",
+      "span": {
+        "char_start": 13065,
+        "char_end": 13125
+      },
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center Operating Income (Loss)",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue",
+      "value": 3621,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Client & Gaming Net Revenue $3,621 $2,140 Up 69% $2,941 Up 23%",
+      "span": {
+        "char_start": 13126,
+        "char_end": 13188
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Client & Gaming Net Revenue",
+      "segment": "Client & Gaming"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 69,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Client & Gaming Net Revenue $3,621 $2,140 Up 69% $2,941 Up 23%",
+      "span": {
+        "char_start": 13126,
+        "char_end": 13188
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Client & Gaming Net Revenue Y/Y",
+      "segment": "Client & Gaming"
+    },
+    {
+      "metric": "operating_income",
+      "value": 767,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Operating Income $767 $166 Up 362% $496 Up 55%",
+      "span": {
+        "char_start": 13189,
+        "char_end": 13235
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Client & Gaming Operating Income",
+      "segment": "Client & Gaming"
+    },
+    {
+      "metric": "revenue",
+      "value": 824,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Embedded Net Revenue $824 $861 Down 4% $823 Flat",
+      "span": {
+        "char_start": 13236,
+        "char_end": 13284
+      },
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Embedded Net Revenue",
+      "segment": "Embedded"
+    },
+    {
+      "metric": "operating_income",
+      "value": 275,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Operating Income $275 $345 Down 20% $328 Down 16%",
+      "span": {
+        "char_start": 13285,
+        "char_end": 13334
+      },
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Embedded Operating Income",
+      "segment": "Embedded"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 1462,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "GAAP net cash provided by operating activities of continuing operations $ 1,462",
+      "span": {
+        "char_start": 23652,
+        "char_end": 23731
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP net cash provided by operating activities of continuing operations",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 1180,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 1,180",
+      "span": {
+        "char_start": 23834,
+        "char_end": 23856
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 5867,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Cash, Cash Equivalents and Short-term Investments1 $5,867 $7,310 Down 20%",
+      "span": {
+        "char_start": 13469,
+        "char_end": 13542
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash, Cash Equivalents and Short-term Investments",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 3218,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": "gaap",
+      "quote": "Total Debt $3,218 $4,164 Down 23%",
+      "span": {
+        "char_start": 13622,
+        "char_end": 13655
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total Debt",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 478,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q2 2025",
+      "basis": null,
+      "quote": "Repurchased $478 million of common stock",
+      "span": {
+        "char_start": 13798,
+        "char_end": 13838
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Repurchased common stock",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 8.7,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income of $0.8 billion",
+      "period": "Q3 2025",
+      "basis": "gaap",
+      "quote": "Q3’25 Revenue ~$8.7 Billion, +/- $300 Million",
       "span": {
-        "char_start": 11475,
-        "char_end": 11501
+        "char_start": 18517,
+        "char_end": 18562
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Q3'25 Revenue",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 54,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q3 2025",
+      "basis": "non_gaap",
+      "quote": "Gross Margin ~54%",
+      "span": {
+        "char_start": 18563,
+        "char_end": 18580
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Q3'25 Gross Margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 2.55,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "Q3 2025",
+      "basis": "non_gaap",
+      "quote": "Operating Expenses ~$2.55 Billion",
+      "span": {
+        "char_start": 18581,
+        "char_end": 18614
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Q3'25 Operating Expenses",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 10,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q3 2025",
+      "basis": "non_gaap",
+      "quote": "Interest Expense/Other Income (Expense), net ~$10 Million",
+      "span": {
+        "char_start": 18615,
+        "char_end": 18672
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Interest Expense/Other Income (Expense), net",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 13,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q3 2025",
+      "basis": "non_gaap",
+      "quote": "Effective Tax Rate ~13% of pre-tax income",
+      "span": {
+        "char_start": 18673,
+        "char_end": 18714
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Effective Tax Rate",
       "segment": null
     }
   ],
   "dropped": [
     {
       "metric": "revenue",
-      "quote": "revenue, non-GAAP gross margin, non-GAAP operating expenses, non-GAAP Interest Expense/Other Income (Expense), net, non-GAAP tax rate and diluted share count; AMD’s large and compelling TAM; AMD’s ability to expand Data Center and AI leadership; AMD's financial and operating performance; the impact of export licensing requirements on AMD; and AMD’s ability to drive long-term shareholder returns, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
-      "reason": "unit_not_allowed:number"
+      "quote": "Revenue $7,685 $5,835 Up 32% $7,438 Up 3%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross Profit $3,059 $2,864 Up 7% $3,736 Down 18%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross Profit $3,326 $3,101 Up 7% $3,992 Down 17%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Decrease due to the $800 million inventory and related charges associated with US export control restrictions on Instinct MI308 products",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating Expenses $3,193 $2,595 Up 23% $2,930 Up 9%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating Expenses $2,429 $1,837 Up 32% $2,213 Up 10%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income (Loss) $(134) $269 Down 150% $806 Down 117%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income $897 $1,264 Down 29% $1,779 Down 50%",
+      "reason": "value_not_in_quote"
     },
     {
       "metric": "net_income",
-      "quote": "net income of $0.9 billion",
+      "quote": "Net Income $872 $265 Up 229% $709 Up 23%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net Income $781 $1,126 Down 31% $1,566 Down 50%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "data_center_revenue",
+      "quote": "Data Center Net Revenue $3,240 $2,834 Up 14% $3,674 Down 12%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income (Loss) $(155) $743 Down 121% $932 Down 117%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Client & Gaming Net Revenue $3,621 $2,140 Up 69% $2,941 Up 23%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income $767 $166 Up 362% $496 Up 55%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Embedded Net Revenue $824 $861 Down 4% $823 Flat",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating Income $275 $345 Down 20% $328 Down 16%",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "quote": "GAAP net cash provided by operating activities of continuing operations $ 1,462",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "free_cash_flow",
+      "quote": "Free cash flow $ 1,180",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Cash, Cash Equivalents and Short-term Investments1 $5,867 $7,310 Down 20%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Total Debt $3,218 $4,164 Down 23%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Repurchased $478 million of common stock",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Interest Expense/Other Income (Expense), net ~$10 Million",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Effective Tax Rate ~13% of pre-tax income",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "quote": "Gross Margin 43% 53% Down 10 ppts 54% Down 11 ppts",
       "reason": "conflicting_values"
     }
   ],

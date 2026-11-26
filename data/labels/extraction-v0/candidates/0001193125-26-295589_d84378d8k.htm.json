@@ -1,8 +1,33 @@
 {
   "doc_key": "0001193125-26-295589:d84378d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37PXSBHX98D91BXEDMGF",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAJ1XAGHNQWRCS4VKYWFZW",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": "through 2031",
+      "basis": null,
+      "quote": "Broadcom Inc. (“Broadcom”) and Apple Inc. (“Apple”) have agreed to expand their long-standing technology collaboration through 2031 by entering into new multi-year long-term agreements for Broadcom to develop and supply a range of custom ASIC silicon products for use in multiple generations of Apple products.",
+      "span": {
+        "char_start": 1975,
+        "char_end": 2285
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "custom ASIC silicon supply agreements with Apple",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Broadcom Inc. (“Broadcom”) and Apple Inc. (“Apple”) have agreed to expand their long-standing technology collaboration through 2031 by entering into new multi-year long-term agreements for Broadcom to develop and supply a range of custom ASIC silicon products for use in multiple generations of Apple products.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

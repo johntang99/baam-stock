@@ -4,6 +4,31 @@
   "doc_kind": "earnings_release",
   "fiscal_period": null,
   "label_status": "draft",
-  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.3",
-  "facts": []
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": null,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": null,
+      "quote": "The transaction closed eleven days into Marvell’s third quarter of fiscal 2026, during which the Automotive Ethernet business contributed mid-single-digit millions of dollars in revenue.",
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "segment": "Automotive Ethernet"
+    },
+    {
+      "metric": "eps_non_gaap",
+      "value": null,
+      "unit": "USD_per_share",
+      "period": null,
+      "basis": "non_gaap",
+      "quote": "Marvell does not expect the transaction to have a material impact on its non-GAAP earnings per share.",
+      "direction": "unchanged",
+      "scope": "company",
+      "certainty": "guidance",
+      "segment": null
+    }
+  ]
 }

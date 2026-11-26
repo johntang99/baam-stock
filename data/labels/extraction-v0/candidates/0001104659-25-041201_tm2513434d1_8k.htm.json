@@ -1,8 +1,148 @@
 {
   "doc_key": "0001104659-25-041201:tm2513434d1_8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37MZM631FCVGKRTJAXN0",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA14RNYWAZY8D60B3MNSHX",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 500000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "April 29, 2025",
+      "basis": null,
+      "quote": "$500,000,000 aggregate principal amount of 5.65% senior notes due 2032",
+      "span": {
+        "char_start": 2160,
+        "char_end": 2230
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of 5.65% senior notes due 2032",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1250000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "April 29, 2025",
+      "basis": null,
+      "quote": "$1,250,000,000 aggregate principal amount of 6.05% senior notes due 2035",
+      "span": {
+        "char_start": 2260,
+        "char_end": 2332
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of 6.05% senior notes due 2035",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 5.65,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "The 2032 Notes bear interest at a rate of 5.65% per year and will mature on November 1, 2032.",
+      "span": {
+        "char_start": 3419,
+        "char_end": 3512
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "2032 Notes interest rate",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 6.05,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "The 2035 Notes bear interest at a rate of 6.05% per year and will mature on November 1, 2035.",
+      "span": {
+        "char_start": 3513,
+        "char_end": 3606
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "2035 Notes interest rate",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 4.185,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "redeem in full our outstanding 4.185% Senior Notes due 2027",
+      "span": {
+        "char_start": 7599,
+        "char_end": 7658
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "2027 Notes interest rate",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 900000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "We will redeem $900,000,000 in aggregate principal amount at a price equal to 100% of the principal amount thereof",
+      "span": {
+        "char_start": 7868,
+        "char_end": 7982
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "aggregate principal amount of 2027 Notes to be redeemed",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "$500,000,000 aggregate principal amount of 5.65% senior notes due 2032",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$1,250,000,000 aggregate principal amount of 6.05% senior notes due 2035",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The 2032 Notes bear interest at a rate of 5.65% per year and will mature on November 1, 2032.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The 2035 Notes bear interest at a rate of 6.05% per year and will mature on November 1, 2035.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "redeem in full our outstanding 4.185% Senior Notes due 2027",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "We will redeem $900,000,000 in aggregate principal amount at a price equal to 100% of the principal amount thereof",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

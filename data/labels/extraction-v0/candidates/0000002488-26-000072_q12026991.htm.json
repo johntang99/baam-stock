@@ -1,42 +1,60 @@
 {
   "doc_key": "0000002488-26-000072:q12026991.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37FZ3QVMM790JJRVNT6A",
+  "llm_call_id": "llm_01M8C7SHB3S49KCG12QJBH0M09",
   "candidates": [
     {
       "metric": "revenue",
       "value": 10.3,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue was $10.3 billion",
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "First quarter revenue was $10.3 billion",
       "span": {
-        "char_start": 396,
+        "char_start": 382,
         "char_end": 421
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "First quarter revenue",
       "segment": null
     },
     {
-      "metric": "gross_margin",
-      "value": 53.0,
+      "metric": "gross_margin_pct",
+      "value": 53,
       "unit": "pct",
       "currency": null,
-      "period": null,
-      "basis": null,
+      "period": "first quarter of 2026",
+      "basis": "gaap",
       "quote": "gross margin was 53%",
       "span": {
         "char_start": 423,
         "char_end": 443
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "gross margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 1.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "operating income was $1.5 billion",
+      "span": {
+        "char_start": 445,
+        "char_end": 478
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "operating income",
       "segment": null
     },
     {
@@ -44,35 +62,71 @@
       "value": 1.4,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
+      "period": "first quarter of 2026",
+      "basis": "gaap",
       "quote": "net income was $1.4 billion",
       "span": {
         "char_start": 480,
         "char_end": 507
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "net income",
       "segment": null
     },
     {
-      "metric": "gross_margin",
-      "value": 55.0,
+      "metric": "eps",
+      "value": 0.84,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "diluted earnings per share was $0.84",
+      "span": {
+        "char_start": 512,
+        "char_end": 548
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "diluted earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 55,
       "unit": "pct",
       "currency": null,
-      "period": null,
-      "basis": null,
-      "quote": "gross margin was 55%",
+      "period": "first quarter of 2026",
+      "basis": "non_gaap",
+      "quote": "On a non-GAAP(*) basis, gross margin was 55%",
       "span": {
-        "char_start": 574,
+        "char_start": 550,
         "char_end": 594
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "non-GAAP gross margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 2.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of 2026",
+      "basis": "non_gaap",
+      "quote": "operating income was $2.5 billion",
+      "span": {
+        "char_start": 596,
+        "char_end": 629
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "non-GAAP operating income",
       "segment": null
     },
     {
@@ -80,147 +134,622 @@
       "value": 2.3,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
+      "period": "first quarter of 2026",
+      "basis": "non_gaap",
       "quote": "net income was $2.3 billion",
       "span": {
         "char_start": 631,
         "char_end": 658
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "non-GAAP net income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 1.37,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "first quarter of 2026",
+      "basis": "non_gaap",
+      "quote": "diluted earnings per share was $1.37",
+      "span": {
+        "char_start": 663,
+        "char_end": 699
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "non-GAAP diluted earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 38,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "Revenue ($M) $10,253 $7,438 Up 38% $10,270 Flat",
+      "span": {
+        "char_start": 1893,
+        "char_end": 1940
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue Y/Y",
       "segment": null
     },
     {
       "metric": "revenue",
+      "value": 10253,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "Revenue ($M) $10,253 $7,438 Up 38% $10,270 Flat",
+      "span": {
+        "char_start": 1893,
+        "char_end": 1940
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue ($M)",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 5416,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "Gross profit ($M) $5,416 $3,736 Up 45% $5,577 Down 3%",
+      "span": {
+        "char_start": 1941,
+        "char_end": 1994
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross profit ($M)",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 3940,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "Operating expenses ($M) $3,940 $2,930 Up 34% $3,825 Up 3%",
+      "span": {
+        "char_start": 2041,
+        "char_end": 2098
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating expenses ($M)",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 1476,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "Operating income ($M) $1,476 $806 Up 83% $1,752 Down 16%",
+      "span": {
+        "char_start": 2099,
+        "char_end": 2155
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income ($M)",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 14,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "Operating margin 14% 11% Up 3 ppts 17% Down 3 ppts",
+      "span": {
+        "char_start": 2156,
+        "char_end": 2206
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating margin",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 1383,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "Net income ($M) $1,383 $709 Up 95% $1,511 Down 8%",
+      "span": {
+        "char_start": 2207,
+        "char_end": 2256
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income ($M)",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 5685,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of 2026",
+      "basis": "non_gaap",
+      "quote": "Gross profit ($M) $5,685 $3,992 Up 42% $5,855 Down 3%",
+      "span": {
+        "char_start": 2431,
+        "char_end": 2484
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Gross profit ($M)",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 3145,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of 2026",
+      "basis": "non_gaap",
+      "quote": "Operating expenses ($M) $3,145 $2,213 Up 42% $3,001 Up 5%",
+      "span": {
+        "char_start": 2531,
+        "char_end": 2588
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Operating expenses ($M)",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 2540,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of 2026",
+      "basis": "non_gaap",
+      "quote": "Operating income ($M) $2,540 $1,779 Up 43% $2,854 Down 11%",
+      "span": {
+        "char_start": 2589,
+        "char_end": 2647
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Operating income ($M)",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 25,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of 2026",
+      "basis": "non_gaap",
+      "quote": "Operating margin 25% 24% Up 1 ppt 28% Down 3 ppts",
+      "span": {
+        "char_start": 2648,
+        "char_end": 2697
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Operating margin",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 2265,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of 2026",
+      "basis": "non_gaap",
+      "quote": "Net income ($M) $2,265 $1,566 Up 45% $2,519 Down 10%",
+      "span": {
+        "char_start": 2698,
+        "char_end": 2750
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Net income ($M)",
+      "segment": null
+    },
+    {
+      "metric": "data_center_revenue",
       "value": 5.8,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue was $5.8 billion",
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "Data Center segment revenue was $5.8 billion, up 57% year-over-year",
       "span": {
-        "char_start": 2850,
-        "char_end": 2874
+        "char_start": 2830,
+        "char_end": 2897
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center segment revenue",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 57,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "Data Center segment revenue was $5.8 billion, up 57% year-over-year",
+      "span": {
+        "char_start": 2830,
+        "char_end": 2897
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center segment revenue growth year-over-year",
+      "segment": "Data Center"
     },
     {
       "metric": "revenue",
       "value": 3.6,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue was $3.6 billion",
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "Client and Gaming segment revenue was $3.6 billion, up 23% year-over-year",
       "span": {
-        "char_start": 3031,
-        "char_end": 3055
+        "char_start": 3005,
+        "char_end": 3078
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Client and Gaming segment revenue",
+      "segment": "Client and Gaming"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 23,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "Client and Gaming segment revenue was $3.6 billion, up 23% year-over-year",
+      "span": {
+        "char_start": 3005,
+        "char_end": 3078
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Client and Gaming segment revenue growth year-over-year",
+      "segment": "Client and Gaming"
     },
     {
       "metric": "revenue",
       "value": 2.9,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue was $2.9 billion",
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "Client business revenue was $2.9 billion, up 26% year-over-year",
       "span": {
-        "char_start": 3096,
-        "char_end": 3120
+        "char_start": 3080,
+        "char_end": 3143
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Client business revenue",
+      "segment": "Client"
     },
     {
-      "metric": "revenue",
-      "value": 720.0,
-      "unit": "USD_million",
-      "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue was $720 million",
-      "span": {
-        "char_start": 3266,
-        "char_end": 3290
-      },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
-    },
-    {
-      "metric": "revenue",
-      "value": 873.0,
-      "unit": "USD_million",
-      "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue was $873 million",
-      "span": {
-        "char_start": 3425,
-        "char_end": 3449
-      },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
-    },
-    {
-      "metric": "revenue",
-      "value": 1995.0,
-      "unit": "number",
+      "metric": "revenue_growth_yoy_pct",
+      "value": 26,
+      "unit": "pct",
       "currency": null,
-      "period": null,
-      "basis": null,
-      "quote": "revenue and non-GAAP gross margin, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "Client business revenue was $2.9 billion, up 26% year-over-year",
       "span": {
-        "char_start": 10401,
-        "char_end": 10545
+        "char_start": 3080,
+        "char_end": 3143
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Client business revenue growth year-over-year",
+      "segment": "Client"
+    },
+    {
+      "metric": "revenue",
+      "value": 720,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "Gaming business revenue was $720 million, up 11% year-over-year",
+      "span": {
+        "char_start": 3250,
+        "char_end": 3313
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Gaming business revenue",
+      "segment": "Gaming"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 11,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "Gaming business revenue was $720 million, up 11% year-over-year",
+      "span": {
+        "char_start": 3250,
+        "char_end": 3313
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Gaming business revenue growth year-over-year",
+      "segment": "Gaming"
+    },
+    {
+      "metric": "revenue",
+      "value": 873,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "Embedded segment revenue was $873 million, up 6% year-over-year",
+      "span": {
+        "char_start": 3408,
+        "char_end": 3471
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Embedded segment revenue",
+      "segment": "Embedded"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 6,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "Embedded segment revenue was $873 million, up 6% year-over-year",
+      "span": {
+        "char_start": 3408,
+        "char_end": 3471
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Embedded segment revenue growth year-over-year",
+      "segment": "Embedded"
+    },
+    {
+      "metric": "operating_income",
+      "value": 1599,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "Data Center Segment $ 1,599 $ 1,752 $ 932",
+      "span": {
+        "char_start": 23294,
+        "char_end": 23335
+      },
+      "direction": "none",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center Segment operating income",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 11.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "For the second quarter of 2026, AMD expects revenue to be approximately $11.2 billion, plus or minus $300 million.",
+      "span": {
+        "char_start": 6214,
+        "char_end": 6328
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "second quarter revenue outlook",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 46,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "The mid-point of the revenue range represents year-over-year growth of approximately 46% and a sequential increase of approximately 9%.",
+      "span": {
+        "char_start": 6329,
+        "char_end": 6464
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "mid-point year-over-year growth",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 9,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of 2026",
+      "basis": "gaap",
+      "quote": "The mid-point of the revenue range represents year-over-year growth of approximately 46% and a sequential increase of approximately 9%.",
+      "span": {
+        "char_start": 6329,
+        "char_end": 6464
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "mid-point sequential increase",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 56,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP gross margin is expected to be approximately 56%.",
+      "span": {
+        "char_start": 6465,
+        "char_end": 6523
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP gross margin outlook",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 2955,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of 2026",
+      "basis": "gaap",
+      "quote": "Net cash provided by operating activities of continuing operations 2,955 939",
+      "span": {
+        "char_start": 21518,
+        "char_end": 21594
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net cash provided by operating activities of continuing operations",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 2566,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of 2026",
+      "basis": "non_gaap",
+      "quote": "Free cash flow (3) $ 2,566 $ 2,082 $ 727",
+      "span": {
+        "char_start": 23650,
+        "char_end": 23690
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2746,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of 2026",
+      "basis": "non_gaap",
+      "quote": "Adjusted EBITDA (2) $ 2,746 $ 3,048 $ 1,954",
+      "span": {
+        "char_start": 23530,
+        "char_end": 23573
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Adjusted EBITDA",
       "segment": null
     }
   ],
   "dropped": [
     {
-      "metric": "revenue",
-      "quote": "revenue and non-GAAP gross margin, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
-      "reason": "unit_not_allowed:number"
+      "metric": "operating_income",
+      "quote": "Data Center Segment $ 1,599 $ 1,752 $ 932",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "quote": "Net cash provided by operating activities of continuing operations 2,955 939",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "free_cash_flow",
+      "quote": "Free cash flow (3) $ 2,566 $ 2,082 $ 727",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Adjusted EBITDA (2) $ 2,746 $ 3,048 $ 1,954",
+      "reason": "unknown_metric"
     },
     {
       "metric": "revenue",
-      "quote": "revenue was $10.3 billion",
+      "quote": "First quarter revenue was $10.3 billion",
       "reason": "conflicting_values"
     },
     {
-      "metric": "gross_margin_pct",
-      "quote": "gross margin was 53%",
+      "metric": "operating_income",
+      "quote": "operating income was $1.5 billion",
       "reason": "conflicting_values"
     },
     {
       "metric": "net_income",
       "quote": "net income was $1.4 billion",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "operating income was $2.5 billion",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "net_income",
+      "quote": "net income was $2.3 billion",
       "reason": "conflicting_values"
     }
   ],

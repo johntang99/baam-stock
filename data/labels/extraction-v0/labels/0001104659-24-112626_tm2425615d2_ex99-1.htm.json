@@ -4,6 +4,19 @@
   "doc_kind": "earnings_release",
   "fiscal_period": null,
   "label_status": "draft",
-  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.3",
-  "facts": []
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": null,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Throughout his tenure, Micron introduced many industry-first products and increased revenues over five times.",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    }
+  ]
 }

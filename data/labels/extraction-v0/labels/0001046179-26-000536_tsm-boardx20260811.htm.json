@@ -4,6 +4,55 @@
   "doc_kind": "8k_other",
   "fiscal_period": null,
   "label_status": "draft",
-  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.3",
-  "facts": []
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": 1270380000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": null,
+      "quote": "Second quarter consolidated revenue was NT$1,270.38 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 706560000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": null,
+      "quote": "net income was NT$706.56 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "eps_gaap",
+      "value": 27.25,
+      "unit": "USD_per_share",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "with diluted earnings per share of NT$27.25",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "eps_gaap",
+      "value": 49.33,
+      "unit": "USD_per_share",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Basic EPS (NT$) 49.33",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    }
+  ]
 }

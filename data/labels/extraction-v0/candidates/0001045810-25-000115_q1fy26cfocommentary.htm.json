@@ -1,42 +1,60 @@
 {
   "doc_key": "0001045810-25-000115:q1fy26cfocommentary.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37HRPYM6Q3YA6MDNXNQV",
+  "llm_call_id": "llm_01M8C8SC4P6FRNFHQC2RXQVKD8",
   "candidates": [
-    {
-      "metric": "gross_margin",
-      "value": 60.5,
-      "unit": "pct",
-      "currency": null,
-      "period": null,
-      "basis": null,
-      "quote": "gross margin was 60.5%",
-      "span": {
-        "char_start": 2815,
-        "char_end": 2837
-      },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
-    },
     {
       "metric": "revenue",
       "value": 44.1,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "Revenue Revenue for the first quarter was $44.1 billion",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Revenue for the first quarter was $44.1 billion, up 69% from a year ago and up 12% sequentially.",
       "span": {
-        "char_start": 3065,
-        "char_end": 3120
+        "char_start": 3073,
+        "char_end": 3169
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 69,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Revenue for the first quarter was $44.1 billion, up 69% from a year ago and up 12% sequentially.",
+      "span": {
+        "char_start": 3073,
+        "char_end": 3169
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue up from a year ago",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 12,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Revenue for the first quarter was $44.1 billion, up 69% from a year ago and up 12% sequentially.",
+      "span": {
+        "char_start": 3073,
+        "char_end": 3169
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue up sequentially",
       "segment": null
     },
     {
@@ -44,60 +62,1020 @@
       "value": 39.1,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "Data Center revenue for the first quarter was $39.1 billion",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Data Center revenue for the first quarter was $39.1 billion, up 73% from a year ago and up 10% sequentially.",
       "span": {
         "char_start": 3170,
-        "char_end": 3229
+        "char_end": 3278
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center revenue",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 73,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Data Center revenue for the first quarter was $39.1 billion, up 73% from a year ago and up 10% sequentially.",
+      "span": {
+        "char_start": 3170,
+        "char_end": 3278
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center revenue up from a year ago",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 10,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Data Center revenue for the first quarter was $39.1 billion, up 73% from a year ago and up 10% sequentially.",
+      "span": {
+        "char_start": 3170,
+        "char_end": 3278
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center revenue up sequentially",
+      "segment": "Data Center"
     },
     {
       "metric": "revenue",
       "value": 34.2,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue was $34.2 billion",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Data Center compute revenue was $34.2 billion, up 76% from a year ago and up 5% sequentially.",
       "span": {
-        "char_start": 3678,
-        "char_end": 3703
+        "char_start": 3658,
+        "char_end": 3751
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center compute revenue",
+      "segment": "Data Center Compute"
     },
     {
       "metric": "revenue",
       "value": 5.0,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue was $5.0 billion",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Networking revenue was $5.0 billion, up 56% from a year ago and up 64% sequentially",
       "span": {
-        "char_start": 3763,
-        "char_end": 3787
+        "char_start": 3752,
+        "char_end": 3835
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Networking revenue",
+      "segment": "Networking"
+    },
+    {
+      "metric": "revenue",
+      "value": 3763,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Gaming 3,763 2,544 2,647 48 % 42 %",
+      "span": {
+        "char_start": 1572,
+        "char_end": 1606
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Gaming revenue",
+      "segment": "Gaming"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 42,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Gaming revenue for the first quarter was a record, up 42% from a year ago and up 48% sequentially",
+      "span": {
+        "char_start": 4016,
+        "char_end": 4113
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Gaming revenue up from a year ago",
+      "segment": "Gaming"
+    },
+    {
+      "metric": "revenue",
+      "value": 509,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Professional Visualization 509 511 427 — 19 %",
+      "span": {
+        "char_start": 1607,
+        "char_end": 1652
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Professional Visualization revenue",
+      "segment": "Professional Visualization"
+    },
+    {
+      "metric": "revenue",
+      "value": 567,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Automotive 567 570 329 (1) % 72 %",
+      "span": {
+        "char_start": 1653,
+        "char_end": 1686
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Automotive revenue",
+      "segment": "Automotive"
+    },
+    {
+      "metric": "revenue",
+      "value": 39589,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Compute & Networking $39,589 $36,036 $22,675 10 % 75 %",
+      "span": {
+        "char_start": 1095,
+        "char_end": 1149
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Compute & Networking revenue",
+      "segment": "Compute & Networking"
+    },
+    {
+      "metric": "revenue",
+      "value": 4473,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Graphics 4,473 3,295 3,369 36 % 33 %",
+      "span": {
+        "char_start": 1150,
+        "char_end": 1186
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Graphics revenue",
+      "segment": "Graphics"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 60.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP gross margin was 60.5%, and GAAP diluted earnings per share was $0.76.",
+      "span": {
+        "char_start": 2810,
+        "char_end": 2885
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP gross margin",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 0.76,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP gross margin was 60.5%, and GAAP diluted earnings per share was $0.76.",
+      "span": {
+        "char_start": 2810,
+        "char_end": 2885
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP diluted earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 61.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP gross margin 61.0 % 73.5 % 78.9 %",
+      "span": {
+        "char_start": 15030,
+        "char_end": 15072
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP gross margin",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 0.81,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP $ 0.81 $ 0.89 $ 0.61",
+      "span": {
+        "char_start": 16097,
+        "char_end": 16126
+      },
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP diluted net income per share",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 71.3,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Excluding the $4.5 billion charge and related tax impact, first quarter non-GAAP gross margin would have been 71.3% and non-GAAP diluted earnings per share would have been $0.96.",
+      "span": {
+        "char_start": 2886,
+        "char_end": 3064
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Non-GAAP gross margin excluding H20 charge",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 0.96,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Excluding the $4.5 billion charge and related tax impact, first quarter non-GAAP gross margin would have been 71.3% and non-GAAP diluted earnings per share would have been $0.96.",
+      "span": {
+        "char_start": 2886,
+        "char_end": 3064
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Non-GAAP diluted EPS excluding H20 charge",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 26668,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP gross profit $ 26,668 $ 28,723 $ 20,406",
+      "span": {
+        "char_start": 14734,
+        "char_end": 14778
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP gross profit",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 26858,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP gross profit $ 26,858 $ 28,894 $ 20,560",
+      "span": {
+        "char_start": 14981,
+        "char_end": 15029
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP gross profit",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 5030,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP operating expenses $ 5,030 $ 4,689 $ 3,497",
+      "span": {
+        "char_start": 15073,
+        "char_end": 15120
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 3583,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP operating expenses $ 3,583 $ 3,378 $ 2,501",
+      "span": {
+        "char_start": 15235,
+        "char_end": 15286
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 21638,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP operating income $ 21,638 $ 24,034 $ 16,909",
+      "span": {
+        "char_start": 15287,
+        "char_end": 15335
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP operating income",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 23275,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP operating income $ 23,275 $ 25,516 $ 18,059",
+      "span": {
+        "char_start": 15411,
+        "char_end": 15463
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP operating income",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 18775,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP net income $ 18,775 $ 22,091 $ 14,881",
+      "span": {
+        "char_start": 15757,
+        "char_end": 15799
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP net income",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 19894,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP net income $ 19,894 $ 22,066 $ 15,238",
+      "span": {
+        "char_start": 15925,
+        "char_end": 15971
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP net income",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 27.4,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Cash flow from operating activities was $27.4 billion, up from $15.3 billion a year ago and up from $16.6 billion a quarter ago.",
+      "span": {
+        "char_start": 7523,
+        "char_end": 7651
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash flow from operating activities",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 26135,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 26,135 $ 15,519 $ 14,936",
+      "span": {
+        "char_start": 16469,
+        "char_end": 16510
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 4.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "we incurred a $4.5 billion charge in the first quarter of fiscal 2026 associated with H20 excess inventory and purchase obligations as the demand for H20 diminished",
+      "span": {
+        "char_start": 2315,
+        "char_end": 2479
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "H20 excess inventory and purchase obligations charge",
+      "segment": "H20"
+    },
+    {
+      "metric": "revenue",
+      "value": 4.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Sales of our H20 products were $4.6 billion for the first quarter of fiscal 2026 prior to the new export licensing requirements.",
+      "span": {
+        "char_start": 2594,
+        "char_end": 2722
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "Sales of H20 products",
+      "segment": "H20"
+    },
+    {
+      "metric": "other",
+      "value": 2.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": null,
+      "quote": "We were unable to ship an additional $2.5 billion of H20 revenue in the first quarter.",
+      "span": {
+        "char_start": 2723,
+        "char_end": 2809
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "H20 revenue unable to ship",
+      "segment": "H20"
+    },
+    {
+      "metric": "other",
+      "value": 515,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Interest income for the first quarter was $515 million, up from a year ago and sequentially",
+      "span": {
+        "char_start": 5788,
+        "char_end": 5879
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Interest income",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 14.3,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP effective tax rate for the first quarter was 14.3%, an increase from a year ago",
+      "span": {
+        "char_start": 6114,
+        "char_end": 6198
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP effective tax rate",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 16.1,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP effective tax rate for the first quarter was 16.1%.",
+      "span": {
+        "char_start": 6342,
+        "char_end": 6402
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP effective tax rate",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 53.7,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Cash, cash equivalents and marketable securities were $53.7 billion, up from $31.4 billion a year ago and $43.2 billion a quarter ago.",
+      "span": {
+        "char_start": 6431,
+        "char_end": 6565
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash, cash equivalents and marketable securities",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 22.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Accounts receivable was $22.1 billion with 46 days sales outstanding (DSO), down from 53 days sequentially",
+      "span": {
+        "char_start": 6652,
+        "char_end": 6758
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Accounts receivable",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 11.3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Inventory was $11.3 billion with 59 days sales of inventory (DSI). Inventory increased from $10.1 billion",
+      "span": {
+        "char_start": 6830,
+        "char_end": 6935
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Inventory",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 29.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": null,
+      "quote": "Purchase commitments and obligations for inventory and manufacturing capacity were $29.8 billion",
+      "span": {
+        "char_start": 6982,
+        "char_end": 7078
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Purchase commitments and obligations for inventory and manufacturing capacity",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 14.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": null,
+      "quote": "We utilized cash of $14.3 billion towards shareholder returns, including $14.1 billion in share repurchases and $244 million in cash dividends.",
+      "span": {
+        "char_start": 7965,
+        "char_end": 8108
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Share repurchases",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 244,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2026",
+      "basis": null,
+      "quote": "We utilized cash of $14.3 billion towards shareholder returns, including $14.1 billion in share repurchases and $244 million in cash dividends.",
+      "span": {
+        "char_start": 7965,
+        "char_end": 8108
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash dividends",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 45.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2026",
+      "basis": null,
+      "quote": "Revenue is expected to be $45.0 billion, plus or minus 2%.",
+      "span": {
+        "char_start": 8210,
+        "char_end": 8268
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Revenue outlook",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 8.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2026",
+      "basis": null,
+      "quote": "This outlook reflects a loss in H20 revenue of approximately $8.0 billion due to the recent export control limitations.",
+      "span": {
+        "char_start": 8269,
+        "char_end": 8388
+      },
+      "direction": "decrease",
+      "scope": "product",
+      "certainty": "guidance",
+      "metric_label": "Loss in H20 revenue reflected in outlook",
+      "segment": "H20"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 71.8,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP and non-GAAP gross margins are expected to be 71.8% and 72.0%, respectively, plus or minus 50 basis points.",
+      "span": {
+        "char_start": 8391,
+        "char_end": 8503
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP gross margin outlook",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 72.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "GAAP and non-GAAP gross margins are expected to be 71.8% and 72.0%, respectively, plus or minus 50 basis points.",
+      "span": {
+        "char_start": 8391,
+        "char_end": 8503
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP gross margin outlook",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 5.7,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP and non-GAAP operating expenses are expected to be approximately $5.7 billion and $4.0 billion, respectively.",
+      "span": {
+        "char_start": 8600,
+        "char_end": 8714
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP operating expenses outlook",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 4.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "GAAP and non-GAAP operating expenses are expected to be approximately $5.7 billion and $4.0 billion, respectively.",
+      "span": {
+        "char_start": 8600,
+        "char_end": 8714
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP operating expenses outlook",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal 2026",
+      "basis": null,
+      "quote": "We expect full year fiscal 2026 operating expense growth to be in the mid-30% range.",
+      "span": {
+        "char_start": 8715,
+        "char_end": 8799
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Full year operating expense growth",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 450,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2026",
+      "basis": null,
+      "quote": "GAAP and non-GAAP other income and expense are expected to be an income of approximately $450 million",
+      "span": {
+        "char_start": 8802,
+        "char_end": 8903
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Other income and expense outlook",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 16.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2026",
+      "basis": null,
+      "quote": "GAAP and non-GAAP tax rates are expected to be 16.5%, plus or minus 1%, excluding any discrete items.",
+      "span": {
+        "char_start": 8991,
+        "char_end": 9092
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Tax rate outlook",
       "segment": null
     }
   ],
   "dropped": [
     {
       "metric": "revenue",
-      "quote": "Revenue Revenue for the first quarter was $44.1 billion",
+      "quote": "Gaming 3,763 2,544 2,647 48 % 42 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Professional Visualization 509 511 427 — 19 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Automotive 567 570 329 (1) % 72 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Compute & Networking $39,589 $36,036 $22,675 10 % 75 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Graphics 4,473 3,295 3,369 36 % 33 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "GAAP gross profit $ 26,668 $ 28,723 $ 20,406",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Non-GAAP gross profit $ 26,858 $ 28,894 $ 20,560",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "GAAP operating expenses $ 5,030 $ 4,689 $ 3,497",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Non-GAAP operating expenses $ 3,583 $ 3,378 $ 2,501",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "GAAP operating income $ 21,638 $ 24,034 $ 16,909",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Non-GAAP operating income $ 23,275 $ 25,516 $ 18,059",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "GAAP net income $ 18,775 $ 22,091 $ 14,881",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Non-GAAP net income $ 19,894 $ 22,066 $ 15,238",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "free_cash_flow",
+      "quote": "Free cash flow $ 26,135 $ 15,519 $ 14,936",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "we incurred a $4.5 billion charge in the first quarter of fiscal 2026 associated with H20 excess inventory and purchase obligations as the demand for H20 diminished",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "We were unable to ship an additional $2.5 billion of H20 revenue in the first quarter.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Interest income for the first quarter was $515 million, up from a year ago and sequentially",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "GAAP effective tax rate for the first quarter was 14.3%, an increase from a year ago",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Non-GAAP effective tax rate for the first quarter was 16.1%.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Cash, cash equivalents and marketable securities were $53.7 billion, up from $31.4 billion a year ago and $43.2 billion a quarter ago.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Accounts receivable was $22.1 billion with 46 days sales outstanding (DSO), down from 53 days sequentially",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Inventory was $11.3 billion with 59 days sales of inventory (DSI). Inventory increased from $10.1 billion",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Purchase commitments and obligations for inventory and manufacturing capacity were $29.8 billion",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "We utilized cash of $14.3 billion towards shareholder returns, including $14.1 billion in share repurchases and $244 million in cash dividends.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "We utilized cash of $14.3 billion towards shareholder returns, including $14.1 billion in share repurchases and $244 million in cash dividends.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "This outlook reflects a loss in H20 revenue of approximately $8.0 billion due to the recent export control limitations.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "We expect full year fiscal 2026 operating expense growth to be in the mid-30% range.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "GAAP and non-GAAP other income and expense are expected to be an income of approximately $450 million",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "GAAP and non-GAAP tax rates are expected to be 16.5%, plus or minus 1%, excluding any discrete items.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "quote": "Non-GAAP gross margin 61.0 % 73.5 % 78.9 %",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "eps_non_gaap",
+      "quote": "Non-GAAP $ 0.81 $ 0.89 $ 0.61",
       "reason": "conflicting_values"
     }
   ],

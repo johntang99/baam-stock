@@ -1,42 +1,78 @@
 {
   "doc_key": "0000723125-24-000023:a2024q4ex991-pressrelease.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37GB7CCF6HC02XAE1CPZ",
+  "llm_call_id": "llm_01M8C7YXFMV99RZ7NSS5VMHBFC",
   "candidates": [
     {
       "metric": "revenue",
       "value": 7.75,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "Revenue of $7.75 billion",
+      "period": "fourth quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Revenue of $7.75 billion versus $6.81 billion for the prior quarter and $4.01 billion for the same period last year",
       "span": {
         "char_start": 624,
-        "char_end": 648
+        "char_end": 739
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 93,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2024",
+      "basis": null,
+      "quote": "Micron delivered 93% year-over-year revenue growth in fiscal Q4",
+      "span": {
+        "char_start": 1299,
+        "char_end": 1362
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "year-over-year revenue growth",
       "segment": null
     },
     {
       "metric": "net_income",
-      "value": 887.0,
+      "value": 887,
       "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income of $887 million",
+      "period": "fourth quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "GAAP net income of $887 million, or $0.79 per diluted share",
       "span": {
-        "char_start": 747,
-        "char_end": 773
+        "char_start": 742,
+        "char_end": 801
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP net income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 0.79,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "GAAP net income of $887 million, or $0.79 per diluted share",
+      "span": {
+        "char_start": 742,
+        "char_end": 801
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP diluted earnings per share",
       "segment": null
     },
     {
@@ -44,17 +80,53 @@
       "value": 1.34,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income of $1.34 billion",
+      "period": "fourth quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP net income of $1.34 billion, or $1.18 per diluted share",
       "span": {
-        "char_start": 813,
-        "char_end": 840
+        "char_start": 804,
+        "char_end": 868
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP net income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 1.18,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP net income of $1.34 billion, or $1.18 per diluted share",
+      "span": {
+        "char_start": 804,
+        "char_end": 868
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP diluted earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 3.41,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Operating cash flow of $3.41 billion versus $2.48 billion for the prior quarter and $249 million for the same period last year",
+      "span": {
+        "char_start": 871,
+        "char_end": 997
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating cash flow",
       "segment": null
     },
     {
@@ -62,35 +134,53 @@
       "value": 25.11,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "Revenue of $25.11 billion",
+      "period": "fiscal 2024",
+      "basis": "gaap",
+      "quote": "Revenue of $25.11 billion versus $15.54 billion for the prior year",
       "span": {
         "char_start": 1023,
-        "char_end": 1048
+        "char_end": 1089
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue",
       "segment": null
     },
     {
       "metric": "net_income",
-      "value": 778.0,
+      "value": 778,
       "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income of $778 million",
+      "period": "fiscal 2024",
+      "basis": "gaap",
+      "quote": "GAAP net income of $778 million, or $0.70 per diluted share",
       "span": {
-        "char_start": 1097,
-        "char_end": 1123
+        "char_start": 1092,
+        "char_end": 1151
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP net income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 0.7,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "fiscal 2024",
+      "basis": "gaap",
+      "quote": "GAAP net income of $778 million, or $0.70 per diluted share",
+      "span": {
+        "char_start": 1092,
+        "char_end": 1151
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP diluted earnings per share",
       "segment": null
     },
     {
@@ -98,30 +188,625 @@
       "value": 1.47,
       "unit": "USD_billion",
       "currency": "USD",
+      "period": "fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP net income of $1.47 billion, or $1.30 per diluted share",
+      "span": {
+        "char_start": 1154,
+        "char_end": 1218
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP net income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 1.3,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP net income of $1.47 billion, or $1.30 per diluted share",
+      "span": {
+        "char_start": 1154,
+        "char_end": 1218
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP diluted earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 8.51,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fiscal 2024",
+      "basis": "gaap",
+      "quote": "Operating cash flow of $8.51 billion versus $1.56 billion for the prior year",
+      "span": {
+        "char_start": 1221,
+        "char_end": 1297
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating cash flow",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2024",
+      "basis": null,
+      "quote": "data center SSD sales, which exceeded $1 billion in quarterly revenue for the first time",
+      "span": {
+        "char_start": 1520,
+        "char_end": 1608
+      },
+      "direction": "increase",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "data center SSD quarterly revenue",
+      "segment": "Data center SSD"
+    },
+    {
+      "metric": "gross_profit",
+      "value": 2737,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Gross margin 2,737 1,832 (435) 2,826 1,917 (366)",
+      "span": {
+        "char_start": 2077,
+        "char_end": 2125
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 2826,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Gross margin 2,737 1,832 (435) 2,826 1,917 (366)",
+      "span": {
+        "char_start": 2077,
+        "char_end": 2125
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 35.3,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "percent of revenue 35.3 % 26.9 % (10.8 %) 36.5 % 28.1 % (9.1 %)",
+      "span": {
+        "char_start": 2126,
+        "char_end": 2189
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin percent of revenue",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 36.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "percent of revenue 35.3 % 26.9 % (10.8 %) 36.5 % 28.1 % (9.1 %)",
+      "span": {
+        "char_start": 2126,
+        "char_end": 2189
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin percent of revenue",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 1215,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Operating expenses 1,215 1,113 1,037 1,081 976 842",
+      "span": {
+        "char_start": 2190,
+        "char_end": 2240
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 1081,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Operating expenses 1,215 1,113 1,037 1,081 976 842",
+      "span": {
+        "char_start": 2190,
+        "char_end": 2240
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 1522,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "Operating income (loss) 1,522 719 (1,472) 1,745 941 (1,208)",
+      "span": {
+        "char_start": 2241,
+        "char_end": 2300
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 1745,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Operating income (loss) 1,522 719 (1,472) 1,745 941 (1,208)",
+      "span": {
+        "char_start": 2241,
+        "char_end": 2300
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 19.6,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2024",
+      "basis": "gaap",
+      "quote": "percent of revenue 19.6 % 10.6 % (36.7 %) 22.5 % 13.8 % (30.1 %)",
+      "span": {
+        "char_start": 2301,
+        "char_end": 2365
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income percent of revenue",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 22.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "percent of revenue 19.6 % 10.6 % (36.7 %) 22.5 % 13.8 % (30.1 %)",
+      "span": {
+        "char_start": 2301,
+        "char_end": 2365
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income percent of revenue",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 22.4,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal 2024",
+      "basis": "gaap",
+      "quote": "percent of revenue 22.4 % (9.1 %) 23.7 % (7.7 %)",
+      "span": {
+        "char_start": 2684,
+        "char_end": 2732
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin percent of revenue",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 23.7,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "percent of revenue 22.4 % (9.1 %) 23.7 % (7.7 %)",
+      "span": {
+        "char_start": 2684,
+        "char_end": 2732
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin percent of revenue",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 1304,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal 2024",
+      "basis": "gaap",
+      "quote": "Operating income (loss) 1,304 (5,745) 1,935 (4,819)",
+      "span": {
+        "char_start": 2776,
+        "char_end": 2827
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 1935,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Operating income (loss) 1,304 (5,745) 1,935 (4,819)",
+      "span": {
+        "char_start": 2776,
+        "char_end": 2827
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 3.08,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Investments in capital expenditures, net (2) were $3.08 billion for the fourth quarter of 2024 and $8.12 billion for the full year of 2024",
+      "span": {
+        "char_start": 2979,
+        "char_end": 3117
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Investments in capital expenditures, net",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 8.12,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "Investments in capital expenditures, net (2) were $3.08 billion for the fourth quarter of 2024 and $8.12 billion for the full year of 2024",
+      "span": {
+        "char_start": 2979,
+        "char_end": 3117
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Investments in capital expenditures, net",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 323,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "adjusted free cash flows (2) of $323 million for the fourth quarter of 2024 and $386 million for the full year of 2024",
+      "span": {
+        "char_start": 3139,
+        "char_end": 3257
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "adjusted free cash flows",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 386,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fiscal 2024",
+      "basis": "non_gaap",
+      "quote": "adjusted free cash flows (2) of $323 million for the fourth quarter of 2024 and $386 million for the full year of 2024",
+      "span": {
+        "char_start": 3139,
+        "char_end": 3257
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "adjusted free cash flows",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 9.16,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "end of fiscal 2024",
+      "basis": null,
+      "quote": "Micron ended the year with cash, marketable investments, and restricted cash of $9.16 billion.",
+      "span": {
+        "char_start": 3259,
+        "char_end": 3353
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "cash, marketable investments, and restricted cash",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 0.115,
+      "unit": "USD_per_share",
+      "currency": "USD",
       "period": null,
       "basis": null,
-      "quote": "net income of $1.47 billion",
+      "quote": "Micron’s Board of Directors declared a quarterly dividend of $0.115 per share",
       "span": {
-        "char_start": 1163,
-        "char_end": 1190
+        "char_start": 3377,
+        "char_end": 3454
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "quarterly dividend",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 8.7,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Revenue $8.70 billion ± $200 million $8.70 billion ± $200 million",
+      "span": {
+        "char_start": 3707,
+        "char_end": 3772
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Revenue outlook",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 38.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Gross margin 38.5% ± 1.0% 39.5% ± 1.0%",
+      "span": {
+        "char_start": 3773,
+        "char_end": 3811
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Gross margin outlook",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 39.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "first quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Gross margin 38.5% ± 1.0% 39.5% ± 1.0%",
+      "span": {
+        "char_start": 3773,
+        "char_end": 3811
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Gross margin outlook",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 1.211,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Operating expenses $1.211 billion ± $15 million $1.085 billion ± $15 million",
+      "span": {
+        "char_start": 3812,
+        "char_end": 3888
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Operating expenses outlook",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 1.085,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Operating expenses $1.211 billion ± $15 million $1.085 billion ± $15 million",
+      "span": {
+        "char_start": 3812,
+        "char_end": 3888
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Operating expenses outlook",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 1.54,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2025",
+      "basis": "gaap",
+      "quote": "Diluted earnings per share $1.54 ± $0.08 $1.74 ± $0.08",
+      "span": {
+        "char_start": 3889,
+        "char_end": 3943
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Diluted earnings per share outlook",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 1.74,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "first quarter of fiscal 2025",
+      "basis": "non_gaap",
+      "quote": "Diluted earnings per share $1.54 ± $0.08 $1.74 ± $0.08",
+      "span": {
+        "char_start": 3889,
+        "char_end": 3943
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Diluted earnings per share outlook",
       "segment": null
     }
   ],
   "dropped": [
     {
-      "metric": "revenue",
-      "quote": "Revenue of $7.75 billion",
-      "reason": "conflicting_values"
+      "metric": "other",
+      "quote": "data center SSD sales, which exceeded $1 billion in quarterly revenue for the first time",
+      "reason": "unknown_metric"
     },
     {
-      "metric": "net_income",
-      "quote": "net income of $887 million",
-      "reason": "conflicting_values"
+      "metric": "gross_profit",
+      "quote": "Gross margin 2,737 1,832 (435) 2,826 1,917 (366)",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross margin 2,737 1,832 (435) 2,826 1,917 (366)",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses 1,215 1,113 1,037 1,081 976 842",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses 1,215 1,113 1,037 1,081 976 842",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income (loss) 1,522 719 (1,472) 1,745 941 (1,208)",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income (loss) 1,522 719 (1,472) 1,745 941 (1,208)",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income (loss) 1,304 (5,745) 1,935 (4,819)",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income (loss) 1,304 (5,745) 1,935 (4,819)",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Investments in capital expenditures, net (2) were $3.08 billion for the fourth quarter of 2024 and $8.12 billion for the full year of 2024",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Investments in capital expenditures, net (2) were $3.08 billion for the fourth quarter of 2024 and $8.12 billion for the full year of 2024",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Micron ended the year with cash, marketable investments, and restricted cash of $9.16 billion.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Micron’s Board of Directors declared a quarterly dividend of $0.115 per share",
+      "reason": "unknown_metric"
     }
   ],
   "validation_notes": []

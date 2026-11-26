@@ -1,8 +1,217 @@
 {
   "doc_key": "0001104659-25-058741:tm2517778d1_ex99-1.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37N03AYWJY061DM52FF0",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA1VW3EGX80AZ6J4R2JHX1",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 200,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Micron Plans to Invest Approximately $200 Billion in Semiconductor Manufacturing and R&D in Idaho, New York and Virginia",
+      "span": {
+        "char_start": 169,
+        "char_end": 289
+      },
+      "direction": "increase",
+      "scope": "geography",
+      "certainty": "guidance",
+      "metric_label": "U.S. semiconductor manufacturing and R&D investment",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 150,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "expand its U.S. investments to approximately $150 billion in domestic memory manufacturing and $50 billion in R&D",
+      "span": {
+        "char_start": 706,
+        "char_end": 819
+      },
+      "direction": "increase",
+      "scope": "geography",
+      "certainty": "guidance",
+      "metric_label": "U.S. investment in domestic memory manufacturing",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 50,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "expand its U.S. investments to approximately $150 billion in domestic memory manufacturing and $50 billion in R&D",
+      "span": {
+        "char_start": 706,
+        "char_end": 819
+      },
+      "direction": "increase",
+      "scope": "geography",
+      "certainty": "guidance",
+      "metric_label": "U.S. R&D investment",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 30,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Micron plans to invest an additional $30 billion beyond prior plans",
+      "span": {
+        "char_start": 909,
+        "char_end": 976
+      },
+      "direction": "increase",
+      "scope": "geography",
+      "certainty": "guidance",
+      "metric_label": "Additional investment beyond prior plans",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 275,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Micron has finalized a $275 million CHIPS Act direct funding award supporting its investment to expand and modernize its Manassas, Virginia facility",
+      "span": {
+        "char_start": 2932,
+        "char_end": 3080
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "CHIPS Act direct funding award for Manassas, Virginia facility",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 6.4,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "This includes up to $6.4 billion in CHIPS Act direct funding to support the construction of two Idaho fabs and two New York fabs",
+      "span": {
+        "char_start": 4655,
+        "char_end": 4783
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "CHIPS Act direct funding (up to)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 325,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Micron has committed over $325 million to develop the next-generation workforce",
+      "span": {
+        "char_start": 8620,
+        "char_end": 8699
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Workforce and community development commitment",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 40,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "support Micron’s goal of producing 40% of its DRAM in the U.S.",
+      "span": {
+        "char_start": 1995,
+        "char_end": 2057
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "guidance",
+      "metric_label": "Goal of DRAM produced in the U.S.",
+      "segment": "DRAM"
+    },
+    {
+      "metric": "other",
+      "value": 35,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "which would increase AMIC to 35% and extend it by four years",
+      "span": {
+        "char_start": 4960,
+        "char_end": 5020
+      },
+      "direction": "increase",
+      "scope": "other",
+      "certainty": "hypothetical",
+      "metric_label": "Proposed Advanced Manufacturing Investment Credit rate",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Micron Plans to Invest Approximately $200 Billion in Semiconductor Manufacturing and R&D in Idaho, New York and Virginia",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "expand its U.S. investments to approximately $150 billion in domestic memory manufacturing and $50 billion in R&D",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "expand its U.S. investments to approximately $150 billion in domestic memory manufacturing and $50 billion in R&D",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Micron plans to invest an additional $30 billion beyond prior plans",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Micron has finalized a $275 million CHIPS Act direct funding award supporting its investment to expand and modernize its Manassas, Virginia facility",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "This includes up to $6.4 billion in CHIPS Act direct funding to support the construction of two Idaho fabs and two New York fabs",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Micron has committed over $325 million to develop the next-generation workforce",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "support Micron’s goal of producing 40% of its DRAM in the U.S.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "which would increase AMIC to 35% and extend it by four years",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

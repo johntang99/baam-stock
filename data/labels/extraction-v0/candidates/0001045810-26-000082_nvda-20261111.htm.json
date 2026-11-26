@@ -1,8 +1,79 @@
 {
   "doc_key": "0001045810-26-000082:nvda-20261111.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37JVRBXXVWSJRS8X4GNT",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9GAHE510JJC2AZ1SDG6DD",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": "November 11, 2026",
+      "basis": null,
+      "quote": "On November 11, 2026, the Board of Directors, or the Board, of NVIDIA Corporation accepted the resignation of Jen-Hsun Huang, as NVIDIA’s President, Chief Executive Officer and member of the Board, effective immediately.",
+      "span": {
+        "char_start": 2223,
+        "char_end": 2443
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "resignation of President, Chief Executive Officer and Board member",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": "November 11, 2026",
+      "basis": null,
+      "quote": "the Board appointed NVIDIA’s Executive Vice President and Chief Financial Officer Colette M. Kress, age 59, to serve as interim Chief Executive Officer, while the Board conducts a search for a new Chief Executive Officer.",
+      "span": {
+        "char_start": 2479,
+        "char_end": 2700
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "appointment of interim Chief Executive Officer",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": "November 11, 2026",
+      "basis": null,
+      "quote": "On November 11, 2026, the Board appointed Harvey C. Jones, age 73, as Chair of the Board.",
+      "span": {
+        "char_start": 2886,
+        "char_end": 2975
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "appointment of Chair of the Board",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "On November 11, 2026, the Board of Directors, or the Board, of NVIDIA Corporation accepted the resignation of Jen-Hsun Huang, as NVIDIA’s President, Chief Executive Officer and member of the Board, effective immediately.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the Board appointed NVIDIA’s Executive Vice President and Chief Financial Officer Colette M. Kress, age 59, to serve as interim Chief Executive Officer, while the Board conducts a search for a new Chief Executive Officer.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "On November 11, 2026, the Board appointed Harvey C. Jones, age 73, as Chair of the Board.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

@@ -1,8 +1,33 @@
 {
   "doc_key": "0000002488-26-000182:amd-20260926.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37G79H2T6N30S406V2XH",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C7XY2ZBAB33Y7R8BDED81J",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 8.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "for a total purchase price of approximately $8.2 billion to be paid in shares of the Company’s common stock",
+      "span": {
+        "char_start": 2339,
+        "char_end": 2446
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "total purchase price",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "for a total purchase price of approximately $8.2 billion to be paid in shares of the Company’s common stock",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

@@ -1,24 +1,60 @@
 {
   "doc_key": "0001045810-26-000073:q2fy27pr.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37JTP1HY6BQKDYX7MBET",
+  "llm_call_id": "llm_01M8C9F28C0RJ47DBXKK9NVXQ4",
   "candidates": [
     {
       "metric": "revenue",
       "value": 96.2,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "Revenue of $96.2 billion",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "today reported revenue for the second quarter ended July 26, 2026, of $96.2 billion, up 18% from the previous quarter and up 106% from a year ago",
+      "span": {
+        "char_start": 279,
+        "char_end": 424
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 106,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Revenue of $96.2 billion, up 106% from a year ago",
       "span": {
         "char_start": 108,
-        "char_end": 132
+        "char_end": 157
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue growth from a year ago",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 18,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "of $96.2 billion, up 18% from the previous quarter",
+      "span": {
+        "char_start": 346,
+        "char_end": 396
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue growth from the previous quarter",
       "segment": null
     },
     {
@@ -26,79 +62,571 @@
       "value": 89.0,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
+      "period": "second quarter of fiscal 2027",
       "basis": null,
-      "quote": "Data Center revenue of $89.0 billion",
+      "quote": "Second-quarter revenue was $89.0 billion, up 18% from the previous quarter and up 117% from a year ago.",
+      "span": {
+        "char_start": 3030,
+        "char_end": 3133
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center revenue",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 117,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Data Center revenue of $89.0 billion, up 117% from a year ago",
       "span": {
         "char_start": 160,
-        "char_end": 196
+        "char_end": 221
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center revenue growth from a year ago",
+      "segment": "Data Center"
     },
     {
-      "metric": "revenue",
-      "value": 96.2,
-      "unit": "USD_billion",
-      "currency": "USD",
-      "period": null,
+      "metric": "revenue_growth_qoq_pct",
+      "value": 18,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
       "basis": null,
-      "quote": "revenue for the second quarter ended July 26, 2026, of $96.2 billion",
+      "quote": "Second-quarter revenue was $89.0 billion, up 18% from the previous quarter and up 117% from a year ago.",
       "span": {
-        "char_start": 294,
-        "char_end": 362
+        "char_start": 3030,
+        "char_end": 3133
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
-    },
-    {
-      "metric": "revenue",
-      "value": 89.0,
-      "unit": "USD_billion",
-      "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue was $89.0 billion",
-      "span": {
-        "char_start": 3045,
-        "char_end": 3070
-      },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center revenue growth from the previous quarter",
+      "segment": "Data Center"
     },
     {
       "metric": "revenue",
       "value": 7.2,
       "unit": "USD_billion",
       "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Second-quarter Edge Computing revenue was $7.2 billion, up 13% from the previous quarter and up 27% from a year ago.",
+      "span": {
+        "char_start": 6331,
+        "char_end": 6447
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Edge Computing revenue",
+      "segment": "Edge Computing"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 27,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Second-quarter Edge Computing revenue was $7.2 billion, up 13% from the previous quarter and up 27% from a year ago.",
+      "span": {
+        "char_start": 6331,
+        "char_end": 6447
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Edge Computing revenue growth from a year ago",
+      "segment": "Edge Computing"
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 13,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Second-quarter Edge Computing revenue was $7.2 billion, up 13% from the previous quarter and up 27% from a year ago.",
+      "span": {
+        "char_start": 6331,
+        "char_end": 6447
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Edge Computing revenue growth from the previous quarter",
+      "segment": "Edge Computing"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 75.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "For the quarter, GAAP and non-GAAP gross margins were both 75.0%.",
+      "span": {
+        "char_start": 426,
+        "char_end": 491
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP gross margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 75.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "For the quarter, GAAP and non-GAAP gross margins were both 75.0%.",
+      "span": {
+        "char_start": 426,
+        "char_end": 491
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP gross margin",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 2.46,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP and non-GAAP earnings per diluted share were $2.46 and $2.22, respectively.",
+      "span": {
+        "char_start": 492,
+        "char_end": 572
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP earnings per diluted share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 2.22,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "GAAP and non-GAAP earnings per diluted share were $2.46 and $2.22, respectively.",
+      "span": {
+        "char_start": 492,
+        "char_end": 572
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP earnings per diluted share",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 8408,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Operating expenses $8,408 $7,621 $5,413 10 % 55 %",
+      "span": {
+        "char_start": 1815,
+        "char_end": 1864
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP Operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 63734,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Operating income $63,734 $53,536 $28,440 19 % 124 %",
+      "span": {
+        "char_start": 1865,
+        "char_end": 1916
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP Operating income",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 59688,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Net income $59,688 $58,321 $26,422 2 % 126 %",
+      "span": {
+        "char_start": 1917,
+        "char_end": 1961
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP Net income",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 8232,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Operating expenses $8,232 $7,449 $5,361 11 % 54 %",
+      "span": {
+        "char_start": 2188,
+        "char_end": 2237
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 63956,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Operating income $63,956 $53,783 $28,541 19 % 124 %",
+      "span": {
+        "char_start": 2238,
+        "char_end": 2289
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Operating income",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 53954,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Net income $53,954 $45,548 $24,763 18 % 118 %",
+      "span": {
+        "char_start": 2290,
+        "char_end": 2335
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Net income",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 72142,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP gross profit $ 72,142 $ 61,157 $ 33,853 $ 133,299 $ 60,521",
+      "span": {
+        "char_start": 19096,
+        "char_end": 19159
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP gross profit",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 72188,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP gross profit $ 72,188 $ 61,232 $ 33,902 $ 133,420 $ 60,695",
+      "span": {
+        "char_start": 19357,
+        "char_end": 19424
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP gross profit",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 24077,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP net cash provided by operating activities $ 24,077 $ 50,344 $ 15,365 $ 74,421 $ 42,779",
+      "span": {
+        "char_start": 20692,
+        "char_end": 20783
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP net cash provided by operating activities",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 21341,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 21,341 $ 48,554 $ 13,450 $ 69,895 $ 39,584",
+      "span": {
+        "char_start": 20982,
+        "char_end": 21041
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 26.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": null,
+      "quote": "During the second quarter of fiscal 2027, NVIDIA returned approximately $26.0 billion to shareholders in the form of shares repurchased and cash dividends.",
+      "span": {
+        "char_start": 1189,
+        "char_end": 1344
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Returned to shareholders (share repurchases and cash dividends)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 99.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": null,
+      "quote": "As of the end of the second quarter, the company had approximately $99.0 billion remaining under its share repurchase authorization.",
+      "span": {
+        "char_start": 1345,
+        "char_end": 1477
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Remaining share repurchase authorization",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 0.25,
+      "unit": "USD_per_share",
+      "currency": "USD",
       "period": null,
       "basis": null,
-      "quote": "revenue was $7.2 billion",
+      "quote": "NVIDIA will pay its next quarterly cash dividend of $0.25 per share on October 1, 2026",
       "span": {
-        "char_start": 6361,
-        "char_end": 6385
+        "char_start": 1478,
+        "char_end": 1564
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Quarterly cash dividend",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 108.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Revenue is expected to be $108.0 billion, plus or minus 2%.",
+      "span": {
+        "char_start": 2471,
+        "char_end": 2530
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Revenue outlook",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 74.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP and non-GAAP gross margins are expected to be 74.0%, plus or minus 50 basis points.",
+      "span": {
+        "char_start": 2615,
+        "char_end": 2703
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP gross margin outlook",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 74.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "GAAP and non-GAAP gross margins are expected to be 74.0%, plus or minus 50 basis points.",
+      "span": {
+        "char_start": 2615,
+        "char_end": 2703
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP gross margin outlook",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 9.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP and non-GAAP operating expenses are expected to be approximately $9.2 billion and $9.0 billion, respectively.",
+      "span": {
+        "char_start": 2706,
+        "char_end": 2820
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP operating expenses outlook",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 9.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "GAAP and non-GAAP operating expenses are expected to be approximately $9.2 billion and $9.0 billion, respectively.",
+      "span": {
+        "char_start": 2706,
+        "char_end": 2820
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP operating expenses outlook",
       "segment": null
     }
   ],
   "dropped": [
     {
-      "metric": "revenue",
-      "quote": "Revenue of $96.2 billion",
-      "reason": "conflicting_values"
+      "metric": "operating_expenses",
+      "quote": "Operating expenses $8,408 $7,621 $5,413 10 % 55 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income $63,734 $53,536 $28,440 19 % 124 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income $59,688 $58,321 $26,422 2 % 126 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses $8,232 $7,449 $5,361 11 % 54 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income $63,956 $53,783 $28,541 19 % 124 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income $53,954 $45,548 $24,763 18 % 118 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "GAAP gross profit $ 72,142 $ 61,157 $ 33,853 $ 133,299 $ 60,521",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Non-GAAP gross profit $ 72,188 $ 61,232 $ 33,902 $ 133,420 $ 60,695",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "quote": "GAAP net cash provided by operating activities $ 24,077 $ 50,344 $ 15,365 $ 74,421 $ 42,779",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "free_cash_flow",
+      "quote": "Free cash flow $ 21,341 $ 48,554 $ 13,450 $ 69,895 $ 39,584",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "During the second quarter of fiscal 2027, NVIDIA returned approximately $26.0 billion to shareholders in the form of shares repurchased and cash dividends.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "As of the end of the second quarter, the company had approximately $99.0 billion remaining under its share repurchase authorization.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "NVIDIA will pay its next quarterly cash dividend of $0.25 per share on October 1, 2026",
+      "reason": "unknown_metric"
     }
   ],
   "validation_notes": []

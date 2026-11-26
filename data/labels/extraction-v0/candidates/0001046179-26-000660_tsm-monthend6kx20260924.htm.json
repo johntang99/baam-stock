@@ -1,8 +1,79 @@
 {
   "doc_key": "0001046179-26-000660:tsm-monthend6kx20260924.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37MF8G3ACDD7TE4AHJMF",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9WB6K0QPFZR34MYFZZH6J",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 16035,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "August 2026",
+      "basis": null,
+      "quote": "(1) Machinery equipment for advanced technology capacity: US$16,035 million.",
+      "span": {
+        "char_start": 2903,
+        "char_end": 2979
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Capital appropriations approved by board: Machinery equipment for advanced technology capacity",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 4791,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "August 2026",
+      "basis": null,
+      "quote": "(2) Machinery equipment for advanced packaging, mature and/or specialty technology capacity: US$4,791 million.",
+      "span": {
+        "char_start": 2980,
+        "char_end": 3090
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Capital appropriations approved by board: Machinery equipment for advanced packaging, mature and/or specialty technology capacity",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 8616,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "August 2026",
+      "basis": null,
+      "quote": "(3) Real estate and capitalized leased assets: US$8,616 million.",
+      "span": {
+        "char_start": 3091,
+        "char_end": 3155
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Capital appropriations approved by board: Real estate and capitalized leased assets",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "(1) Machinery equipment for advanced technology capacity: US$16,035 million.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "(2) Machinery equipment for advanced packaging, mature and/or specialty technology capacity: US$4,791 million.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "(3) Real estate and capitalized leased assets: US$8,616 million.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

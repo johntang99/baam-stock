@@ -1,8 +1,33 @@
 {
   "doc_key": "0001628280-26-019851:mrvl-20260319.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37Q7F024WEFWYBJ6HEVW",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAM68CF6D9QXBBQJGX6BJ2",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 0.06,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "its Board of Directors had declared the payment of its quarterly dividend of $0.06 per share to be paid on April 30, 2026 to all stockholders of record as of April 10, 2026",
+      "span": {
+        "char_start": 2194,
+        "char_end": 2366
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "quarterly dividend",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "its Board of Directors had declared the payment of its quarterly dividend of $0.06 per share to be paid on April 30, 2026 to all stockholders of record as of April 10, 2026",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

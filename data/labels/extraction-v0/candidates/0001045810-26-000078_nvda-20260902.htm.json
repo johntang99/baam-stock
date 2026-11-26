@@ -1,8 +1,79 @@
 {
   "doc_key": "0001045810-26-000078:nvda-20260902.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37JV2NPCTRTXZ0KMPMBB",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9G6NSBBVCZKPZMAHMY0CH",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 11.9,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The transaction includes an approximately $11.9 billion purchase price payable to Hugging Face stockholders, subject to certain adjustments",
+      "span": {
+        "char_start": 2358,
+        "char_end": 2497
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "purchase price payable to Hugging Face stockholders",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "an equity-based retention program of up to approximately $1.0 billion for Hugging Face employees joining NVIDIA",
+      "span": {
+        "char_start": 2503,
+        "char_end": 2614
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "equity-based retention program for Hugging Face employees",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": "first half of 2027",
+      "basis": null,
+      "quote": "The transaction is expected to close in the first half of 2027, subject to the satisfaction or waiver of customary closing conditions, including receipt of required regulatory approvals.",
+      "span": {
+        "char_start": 2616,
+        "char_end": 2802
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "guidance",
+      "metric_label": "expected transaction closing timing",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "The transaction includes an approximately $11.9 billion purchase price payable to Hugging Face stockholders, subject to certain adjustments",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "an equity-based retention program of up to approximately $1.0 billion for Hugging Face employees joining NVIDIA",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The transaction is expected to close in the first half of 2027, subject to the satisfaction or waiver of customary closing conditions, including receipt of required regulatory approvals.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

@@ -1,32 +1,114 @@
 {
   "doc_key": "0000002488-26-000045:pressreleasedatedfebruary2.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37FTA9D5CHK8EQCGXER0",
+  "llm_call_id": "llm_01M8C7R2R0MEH79QB1Y697YEBJ",
   "candidates": [
     {
-      "metric": "revenue",
-      "value": 1995.0,
-      "unit": "number",
+      "metric": "revenue_outlook",
+      "value": null,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "multi-year",
+      "basis": null,
+      "quote": "We expect this partnership to drive substantial multi-year revenue growth and be accretive to our non-GAAP earnings per share",
+      "span": {
+        "char_start": 4175,
+        "char_end": 4300
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "multi-year revenue growth",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": null,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "multi-year",
+      "basis": "non_gaap",
+      "quote": "We expect this partnership to drive substantial multi-year revenue growth and be accretive to our non-GAAP earnings per share",
+      "span": {
+        "char_start": 4175,
+        "char_end": 4300
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "non-GAAP earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD_billion",
+      "currency": null,
+      "period": "multi-year",
+      "basis": null,
+      "quote": "AMD and Meta agree to a definitive multi-year, multi-generation partnership to deploy up to 6 gigawatts of AMD Instinct™ GPUs",
+      "span": {
+        "char_start": 538,
+        "char_end": 663
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "guidance",
+      "metric_label": "deployment of up to 6 gigawatts of AMD Instinct GPUs",
+      "segment": "Instinct GPUs"
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
       "currency": null,
       "period": null,
       "basis": null,
-      "quote": "revenue growth and be accretive to AMD’s non-GAAP earnings per share; expectations regarding AMD’s long-term financial model; expected alignment of AMD and Meta around execution and long-term value creation; the ability of AMD and Meta to deploy large-scale AI compute foundation needed for global demand and accelerate the future of high-performance and AI computing; the availability, timing and expected benefits of AMD products and roadmaps; and the expected demand for AMD products, all of which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "quote": "AMD has issued Meta a performance-based warrant for up to 160 million shares of AMD common stock, structured to vest as specific milestones associated with Instinct GPU shipments are achieved",
       "span": {
-        "char_start": 6776,
-        "char_end": 7380
+        "char_start": 3688,
+        "char_end": 3879
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "performance-based warrant for up to 160 million shares of AMD common stock",
       "segment": null
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": "second half of 2026",
+      "basis": null,
+      "quote": "Shipments supporting the first gigawatt deployment are scheduled to begin in the second half of 2026",
+      "span": {
+        "char_start": 1669,
+        "char_end": 1769
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "guidance",
+      "metric_label": "shipments supporting first gigawatt deployment begin",
+      "segment": "Instinct GPUs"
     }
   ],
   "dropped": [
     {
-      "metric": "revenue",
-      "quote": "revenue growth and be accretive to AMD’s non-GAAP earnings per share; expectations regarding AMD’s long-term financial model; expected alignment of AMD and Meta around execution and long-term value creation; the ability of AMD and Meta to deploy large-scale AI compute foundation needed for global demand and accelerate the future of high-performance and AI computing; the availability, timing and expected benefits of AMD products and roadmaps; and the expected demand for AMD products, all of which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
-      "reason": "unit_not_allowed:number"
+      "metric": "other",
+      "quote": "AMD and Meta agree to a definitive multi-year, multi-generation partnership to deploy up to 6 gigawatts of AMD Instinct™ GPUs",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "AMD has issued Meta a performance-based warrant for up to 160 million shares of AMD common stock, structured to vest as specific milestones associated with Instinct GPU shipments are achieved",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Shipments supporting the first gigawatt deployment are scheduled to begin in the second half of 2026",
+      "reason": "unknown_metric"
     }
   ],
   "validation_notes": []

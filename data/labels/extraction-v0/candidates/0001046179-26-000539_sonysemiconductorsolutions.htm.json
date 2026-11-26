@@ -1,8 +1,79 @@
 {
   "doc_key": "0001046179-26-000539:sonysemiconductorsolutions.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37KX0YQXTS63J1K134GN",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9T8N47KWARJR5JX0E3S3R",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 465,
+      "unit": "USD_billion",
+      "currency": "JPY",
+      "period": null,
+      "basis": null,
+      "quote": "Sony plans to contribute approximately 465 billion yen to the JV through a combination of cash contributions and the transfer of its assets* through a company split.",
+      "span": {
+        "char_start": 2500,
+        "char_end": 2665
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "guidance",
+      "metric_label": "Sony planned capital contribution to JV",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 282,
+      "unit": "USD_billion",
+      "currency": "JPY",
+      "period": null,
+      "basis": null,
+      "quote": "TSMC plans to make cash contributions of approximately 282 billion yen.",
+      "span": {
+        "char_start": 2666,
+        "char_end": 2737
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "guidance",
+      "metric_label": "TSMC planned cash contribution to JV",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD_billion",
+      "currency": null,
+      "period": "2029",
+      "basis": null,
+      "quote": "The JV is expected to commence volume production in 2029.",
+      "span": {
+        "char_start": 2195,
+        "char_end": 2252
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "guidance",
+      "metric_label": "JV volume production start",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Sony plans to contribute approximately 465 billion yen to the JV through a combination of cash contributions and the transfer of its assets* through a company split.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "TSMC plans to make cash contributions of approximately 282 billion yen.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The JV is expected to commence volume production in 2029.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

@@ -1,8 +1,102 @@
 {
   "doc_key": "0001193125-26-140574:d109450d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37PKQCM5XGGHDX74MPPN",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAF9BK30MEV6TY201MSPVB",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 700000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Ms. Thuener will receive an annual base salary of $700,000",
+      "span": {
+        "char_start": 5036,
+        "char_end": 5094
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "annual base salary (CFO Amie Thuener)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 100,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "with a target bonus opportunity of 100% of her base salary",
+      "span": {
+        "char_start": 5178,
+        "char_end": 5236
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "target bonus opportunity (% of base salary)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Ms. Thuener will also receive a $1,000,000 sign-on cash bonus",
+      "span": {
+        "char_start": 5238,
+        "char_end": 5299
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "sign-on cash bonus",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 200,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "The maximum vesting for the PSUs is 200% of the total target number of shares.",
+      "span": {
+        "char_start": 6585,
+        "char_end": 6663
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "maximum PSU vesting (% of target shares)",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Ms. Thuener will receive an annual base salary of $700,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "with a target bonus opportunity of 100% of her base salary",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Ms. Thuener will also receive a $1,000,000 sign-on cash bonus",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The maximum vesting for the PSUs is 200% of the total target number of shares.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

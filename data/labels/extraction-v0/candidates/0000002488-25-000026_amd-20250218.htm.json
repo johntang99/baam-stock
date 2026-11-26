@@ -1,8 +1,102 @@
 {
   "doc_key": "0000002488-25-000026:amd-20250218.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37EVPNB1BMH1NH3H5RVY",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C7A2RPAYD8PZBPZWFDJ6XH",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 670106,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "fiscal 2024",
+      "basis": null,
+      "quote": "Jean Hu, Executive Vice President, Chief Financial Officer and Treasurer $670,106",
+      "span": {
+        "char_start": 2584,
+        "char_end": 2665
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Fiscal 2024 Annual Cash Performance Bonus - Jean Hu, EVP, CFO and Treasurer",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 665593,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "fiscal 2024",
+      "basis": null,
+      "quote": "Phil Guido, Executive Vice President, Chief Commercial Officer $665,593",
+      "span": {
+        "char_start": 2666,
+        "char_end": 2737
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Fiscal 2024 Annual Cash Performance Bonus - Phil Guido, EVP, Chief Commercial Officer",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 658825,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "fiscal 2024",
+      "basis": null,
+      "quote": "Forrest Norrod, Executive Vice President and General Manager, Data Center Solutions $658,825",
+      "span": {
+        "char_start": 2738,
+        "char_end": 2830
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Fiscal 2024 Annual Cash Performance Bonus - Forrest Norrod, EVP and GM, Data Center Solutions",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1776120,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "fiscal 2024",
+      "basis": null,
+      "quote": "Lisa T. Su, Chair, President and Chief Executive Officer $1,776,120",
+      "span": {
+        "char_start": 3022,
+        "char_end": 3089
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Fiscal 2024 Annual Cash Performance Bonus - Lisa T. Su, Chair, President and CEO",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Jean Hu, Executive Vice President, Chief Financial Officer and Treasurer $670,106",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Phil Guido, Executive Vice President, Chief Commercial Officer $665,593",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Forrest Norrod, Executive Vice President and General Manager, Data Center Solutions $658,825",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Lisa T. Su, Chair, President and Chief Executive Officer $1,776,120",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

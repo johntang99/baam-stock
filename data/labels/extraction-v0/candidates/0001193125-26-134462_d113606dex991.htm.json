@@ -1,8 +1,33 @@
 {
   "doc_key": "0001193125-26-134462:d113606dex991.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37PJGHRW6MYF00ZXD4ZJ",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAF55CK48KR79H8Y162B26",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "In addition, NVIDIA has invested $2 billion in Marvell.",
+      "span": {
+        "char_start": 674,
+        "char_end": 729
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "NVIDIA investment in Marvell",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "In addition, NVIDIA has invested $2 billion in Marvell.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

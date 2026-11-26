@@ -1,8 +1,148 @@
 {
   "doc_key": "0001193125-25-061366:d914634d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37NPZF2181780ZQGMAZY",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA84GWGRN5RXSV8X4QRHN5",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 1.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "March 24, 2025",
+      "basis": null,
+      "quote": "$1.5 billion aggregate principal amount of senior notes",
+      "span": {
+        "char_start": 2262,
+        "char_end": 2317
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of senior notes",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 875,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "March 24, 2025",
+      "basis": null,
+      "quote": "$875 million aggregate principal amount of its 4.212% Senior Notes due 2026",
+      "span": {
+        "char_start": 2333,
+        "char_end": 2408
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of 4.212% Senior Notes due 2026",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 625,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "March 24, 2025",
+      "basis": null,
+      "quote": "$625 million aggregate principal amount of its 4.319% Senior Notes due 2028",
+      "span": {
+        "char_start": 2432,
+        "char_end": 2507
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of 4.319% Senior Notes due 2028",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 4.212,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "The 2026 Notes mature on September 24, 2026 and bear interest at a rate of 4.212% per annum",
+      "span": {
+        "char_start": 3130,
+        "char_end": 3221
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "interest rate on 2026 Notes",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 4.319,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "the 2028 Notes mature on March 24, 2028 and bear interest at a rate of 4.319% per annum",
+      "span": {
+        "char_start": 3226,
+        "char_end": 3313
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "interest rate on 2028 Notes",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 950,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "March 24, 2025",
+      "basis": null,
+      "quote": "the Company issued $950 million in unsecured commercial paper",
+      "span": {
+        "char_start": 8681,
+        "char_end": 8742
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "unsecured commercial paper issued",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "$1.5 billion aggregate principal amount of senior notes",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$875 million aggregate principal amount of its 4.212% Senior Notes due 2026",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$625 million aggregate principal amount of its 4.319% Senior Notes due 2028",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The 2026 Notes mature on September 24, 2026 and bear interest at a rate of 4.212% per annum",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the 2028 Notes mature on March 24, 2028 and bear interest at a rate of 4.319% per annum",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the Company issued $950 million in unsecured commercial paper",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

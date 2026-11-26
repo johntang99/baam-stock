@@ -4,6 +4,139 @@
   "doc_kind": "earnings_release",
   "fiscal_period": null,
   "label_status": "draft",
-  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.3",
-  "facts": []
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": 13072000000.0,
+      "unit": "USD",
+      "period": "FY2024Q3",
+      "basis": "gaap",
+      "quote": "Revenue of $13,072 million for the third quarter, up 47 percent from the prior year period",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 47.0,
+      "unit": "pct",
+      "period": "FY2024Q3",
+      "basis": "gaap",
+      "quote": "Revenue of $13,072 million for the third quarter, up 47 percent from the prior year period",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 6120000000.0,
+      "unit": "USD",
+      "period": "FY2024Q3",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP net income of $6,120 million for the third quarter",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "eps_non_gaap",
+      "value": 1.24,
+      "unit": "USD_per_share",
+      "period": "FY2024Q3",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP diluted EPS of $1.24 for the third quarter",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 4963000000.0,
+      "unit": "USD",
+      "period": "FY2024Q3",
+      "basis": "gaap",
+      "quote": "Cash from operations of $4,963 million for the third quarter, less capital expenditures of $172 million, resulted in $4,791 million of free cash flow, or 37 percent of revenue",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 4791000000.0,
+      "unit": "USD",
+      "period": "FY2024Q3",
+      "basis": "non_gaap",
+      "quote": "Cash from operations of $4,963 million for the third quarter, less capital expenditures of $172 million, resulted in $4,791 million of free cash flow, or 37 percent of revenue",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 14000000000.0,
+      "unit": "USD",
+      "period": "FY2024Q4",
+      "basis": null,
+      "quote": "Fourth quarter fiscal year 2024 revenue guidance of approximately $14.0 billion including contribution from VMware, an increase of 51 percent from the prior year period",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 5300000000.0,
+      "unit": "USD",
+      "period": "FY2024Q3",
+      "basis": "company_defined",
+      "quote": "Free cash flow, excluding restructuring and integration in the quarter, was $5.3 billion, up 14% year-over-year.",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 4.0,
+      "unit": "pct",
+      "period": "FY2024Q3",
+      "basis": "company_defined",
+      "quote": "was up 4% year-over-year, excluding VMware",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 5.0,
+      "unit": "pct",
+      "period": "FY2024Q3",
+      "basis": "gaap",
+      "quote": "Semiconductor solutions $ 7,274 56 % $ 6,941 78 % +5 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Semiconductor solutions"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 200.0,
+      "unit": "pct",
+      "period": "FY2024Q3",
+      "basis": "gaap",
+      "quote": "Infrastructure software 5,798 44 1,935 22 +200 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Infrastructure software"
+    }
+  ]
 }

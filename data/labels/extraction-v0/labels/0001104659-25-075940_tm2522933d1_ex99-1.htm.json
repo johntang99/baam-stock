@@ -4,31 +4,6 @@
   "doc_kind": "earnings_release",
   "fiscal_period": null,
   "label_status": "draft",
-  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.3",
-  "facts": [
-    {
-      "metric": "revenue",
-      "value": 10700000000.0,
-      "unit": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue of $10.7 billion",
-      "direction": "none",
-      "scope": "company",
-      "certainty": "reported",
-      "segment": null
-    },
-    {
-      "metric": "gross_margin_pct",
-      "value": 42.0,
-      "unit": "pct",
-      "period": null,
-      "basis": null,
-      "quote": "gross margins of 42.0%",
-      "direction": "none",
-      "scope": "company",
-      "certainty": "reported",
-      "segment": null
-    }
-  ]
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": []
 }

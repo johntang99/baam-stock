@@ -1,8 +1,286 @@
 {
   "doc_key": "0001104659-26-038249:tm2610810d1_ex99-2.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37N9M7JBSSG1DS4CSP1F",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA4NBVWG61ZNRT94XQB22D",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 737097000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "as of March 31, 2026",
+      "basis": null,
+      "quote": "5.300% Senior Notes due 2031 595112CD3 / US595112CD31 $ 1,000,000,000 $ 737,097,000 $ 47,229,000",
+      "span": {
+        "char_start": 1139,
+        "char_end": 1235
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Aggregate Principal Amount Tendered as of the Expiration Time - 5.300% Senior Notes due 2031",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1000000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "prior to the Tender Offers",
+      "basis": null,
+      "quote": "5.300% Senior Notes due 2031 595112CD3 / US595112CD31 $ 1,000,000,000 $ 737,097,000 $ 47,229,000",
+      "span": {
+        "char_start": 1139,
+        "char_end": 1235
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Principal Amount Outstanding Prior to the Tender Offers - 5.300% Senior Notes due 2031",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 427022000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "as of March 31, 2026",
+      "basis": null,
+      "quote": "5.650% Senior Notes due 2032 595112CG6 / US595112CG61 $ 500,000,000 $ 427,022,000 $ 8,307,000",
+      "span": {
+        "char_start": 1236,
+        "char_end": 1329
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Aggregate Principal Amount Tendered as of the Expiration Time - 5.650% Senior Notes due 2032",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 500000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "prior to the Tender Offers",
+      "basis": null,
+      "quote": "5.650% Senior Notes due 2032 595112CG6 / US595112CG61 $ 500,000,000 $ 427,022,000 $ 8,307,000",
+      "span": {
+        "char_start": 1236,
+        "char_end": 1329
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Principal Amount Outstanding Prior to the Tender Offers - 5.650% Senior Notes due 2032",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 574035000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "as of March 31, 2026",
+      "basis": null,
+      "quote": "5.875% Senior Notes due 2033 595112BZ5 / US595112BZ51 $ 750,000,000 $ 574,035,000 $ 6,577,000",
+      "span": {
+        "char_start": 1330,
+        "char_end": 1423
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Aggregate Principal Amount Tendered as of the Expiration Time - 5.875% Senior Notes due 2033 (595112BZ5)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 750000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "prior to the Tender Offers",
+      "basis": null,
+      "quote": "5.875% Senior Notes due 2033 595112BZ5 / US595112BZ51 $ 750,000,000 $ 574,035,000 $ 6,577,000",
+      "span": {
+        "char_start": 1330,
+        "char_end": 1423
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Principal Amount Outstanding Prior to the Tender Offers - 5.875% Senior Notes due 2033 (595112BZ5)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 684841000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "as of March 31, 2026",
+      "basis": null,
+      "quote": "5.875% Senior Notes due 2033 595112CB7 / US595112CB74 $ 900,000,000 $ 684,841,000 $ 45,516,000",
+      "span": {
+        "char_start": 1424,
+        "char_end": 1518
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Aggregate Principal Amount Tendered as of the Expiration Time - 5.875% Senior Notes due 2033 (595112CB7)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 900000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "prior to the Tender Offers",
+      "basis": null,
+      "quote": "5.875% Senior Notes due 2033 595112CB7 / US595112CB74 $ 900,000,000 $ 684,841,000 $ 45,516,000",
+      "span": {
+        "char_start": 1424,
+        "char_end": 1518
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Principal Amount Outstanding Prior to the Tender Offers - 5.875% Senior Notes due 2033 (595112CB7)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 862833000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "as of March 31, 2026",
+      "basis": null,
+      "quote": "5.800% Senior Notes due 2035 595112CE1 / US595112CE14 $ 1,000,000,000 $ 862,833,000 $ 17,724,000",
+      "span": {
+        "char_start": 1519,
+        "char_end": 1615
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Aggregate Principal Amount Tendered as of the Expiration Time - 5.800% Senior Notes due 2035",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1000000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "prior to the Tender Offers",
+      "basis": null,
+      "quote": "5.800% Senior Notes due 2035 595112CE1 / US595112CE14 $ 1,000,000,000 $ 862,833,000 $ 17,724,000",
+      "span": {
+        "char_start": 1519,
+        "char_end": 1615
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Principal Amount Outstanding Prior to the Tender Offers - 5.800% Senior Notes due 2035",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1029483000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "as of March 31, 2026",
+      "basis": null,
+      "quote": "6.050% Senior Notes due 2035 595112CH4 / US595112CH45 $ 1,250,000,000 $ 1,029,483,000 $ 14,732,000",
+      "span": {
+        "char_start": 1616,
+        "char_end": 1714
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Aggregate Principal Amount Tendered as of the Expiration Time - 6.050% Senior Notes due 2035",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1250000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "prior to the Tender Offers",
+      "basis": null,
+      "quote": "6.050% Senior Notes due 2035 595112CH4 / US595112CH45 $ 1,250,000,000 $ 1,029,483,000 $ 14,732,000",
+      "span": {
+        "char_start": 1616,
+        "char_end": 1714
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Principal Amount Outstanding Prior to the Tender Offers - 6.050% Senior Notes due 2035",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "5.300% Senior Notes due 2031 595112CD3 / US595112CD31 $ 1,000,000,000 $ 737,097,000 $ 47,229,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5.300% Senior Notes due 2031 595112CD3 / US595112CD31 $ 1,000,000,000 $ 737,097,000 $ 47,229,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5.650% Senior Notes due 2032 595112CG6 / US595112CG61 $ 500,000,000 $ 427,022,000 $ 8,307,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5.650% Senior Notes due 2032 595112CG6 / US595112CG61 $ 500,000,000 $ 427,022,000 $ 8,307,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5.875% Senior Notes due 2033 595112BZ5 / US595112BZ51 $ 750,000,000 $ 574,035,000 $ 6,577,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5.875% Senior Notes due 2033 595112BZ5 / US595112BZ51 $ 750,000,000 $ 574,035,000 $ 6,577,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5.875% Senior Notes due 2033 595112CB7 / US595112CB74 $ 900,000,000 $ 684,841,000 $ 45,516,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5.875% Senior Notes due 2033 595112CB7 / US595112CB74 $ 900,000,000 $ 684,841,000 $ 45,516,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5.800% Senior Notes due 2035 595112CE1 / US595112CE14 $ 1,000,000,000 $ 862,833,000 $ 17,724,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5.800% Senior Notes due 2035 595112CE1 / US595112CE14 $ 1,000,000,000 $ 862,833,000 $ 17,724,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "6.050% Senior Notes due 2035 595112CH4 / US595112CH45 $ 1,250,000,000 $ 1,029,483,000 $ 14,732,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "6.050% Senior Notes due 2035 595112CH4 / US595112CH45 $ 1,250,000,000 $ 1,029,483,000 $ 14,732,000",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

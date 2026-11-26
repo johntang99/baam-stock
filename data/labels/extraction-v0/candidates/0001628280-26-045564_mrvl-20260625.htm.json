@@ -1,8 +1,33 @@
 {
   "doc_key": "0001628280-26-045564:mrvl-20260625.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37Q9AXZQ3K14ACTKKS22",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAMAVNNB7MGBAB14QB9C8V",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 0.06,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "quarterly dividend payable July 30, 2026",
+      "basis": null,
+      "quote": "the Company announced that its Board of Directors had declared the payment of its quarterly dividend of $0.06 per share to be paid on July 30, 2026",
+      "span": {
+        "char_start": 4129,
+        "char_end": 4276
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "quarterly dividend",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "the Company announced that its Board of Directors had declared the payment of its quarterly dividend of $0.06 per share to be paid on July 30, 2026",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

@@ -1,8 +1,171 @@
 {
   "doc_key": "0001193125-26-275783:d48176d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37PW2CYEBJQ23TFWWHPM",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAHRN8S0K55RBAN0SBE72C",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 3500000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "$3,500,000,000 aggregate principal amount of its 4.250% Notes due 2028",
+      "span": {
+        "char_start": 2148,
+        "char_end": 2218
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of 4.250% Notes due 2028",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 3500000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "$3,500,000,000 aggregate principal amount of its 4.350% Notes due 2029",
+      "span": {
+        "char_start": 2239,
+        "char_end": 2309
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of 4.350% Notes due 2029",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 4000000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "$4,000,000,000 aggregate principal amount of its 4.500% Notes due 2031",
+      "span": {
+        "char_start": 2330,
+        "char_end": 2400
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of 4.500% Notes due 2031",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 3500000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "$3,500,000,000 aggregate principal amount of its 4.750% Notes due 2033",
+      "span": {
+        "char_start": 2421,
+        "char_end": 2491
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of 4.750% Notes due 2033",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 4000000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "$4,000,000,000 aggregate principal amount of its 4.950% Notes due 2036",
+      "span": {
+        "char_start": 2512,
+        "char_end": 2582
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of 4.950% Notes due 2036",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 3000000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "$3,000,000,000 aggregate principal amount of its 5.550% Notes due 2046",
+      "span": {
+        "char_start": 2603,
+        "char_end": 2673
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of 5.550% Notes due 2046",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 3500000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "$3,500,000,000 aggregate principal amount of its 5.625% Notes due 2056",
+      "span": {
+        "char_start": 2697,
+        "char_end": 2767
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of 5.625% Notes due 2056",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "$3,500,000,000 aggregate principal amount of its 4.250% Notes due 2028",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$3,500,000,000 aggregate principal amount of its 4.350% Notes due 2029",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$4,000,000,000 aggregate principal amount of its 4.500% Notes due 2031",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$3,500,000,000 aggregate principal amount of its 4.750% Notes due 2033",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$4,000,000,000 aggregate principal amount of its 4.950% Notes due 2036",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$3,000,000,000 aggregate principal amount of its 5.550% Notes due 2046",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$3,500,000,000 aggregate principal amount of its 5.625% Notes due 2056",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

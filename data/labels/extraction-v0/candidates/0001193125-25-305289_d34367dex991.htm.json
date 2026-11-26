@@ -1,8 +1,184 @@
 {
   "doc_key": "0001193125-25-305289:d34367dex991.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37PDDDP1NFH2M95QSMN9",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CADYVN0YW3XZJ3H5M3TZ7W",
+  "candidates": [
+    {
+      "metric": "revenue_outlook",
+      "value": 500,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2028",
+      "basis": "company_defined",
+      "quote": "reaching a $500 million annualized run rate in the fourth quarter of fiscal 2028",
+      "span": {
+        "char_start": 6732,
+        "char_end": 6812
+      },
+      "direction": "increase",
+      "scope": "other",
+      "certainty": "guidance",
+      "metric_label": "annualized run rate",
+      "segment": "Celestial AI"
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2029",
+      "basis": "company_defined",
+      "quote": "doubling to a $1 billion dollar run rate by the fourth quarter of fiscal 2029",
+      "span": {
+        "char_start": 6814,
+        "char_end": 6891
+      },
+      "direction": "increase",
+      "scope": "other",
+      "certainty": "guidance",
+      "metric_label": "run rate",
+      "segment": "Celestial AI"
+    },
+    {
+      "metric": "other",
+      "value": 3.25,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Marvell will acquire Celestial AI for upfront consideration valued at approximately $3.25 billion",
+      "span": {
+        "char_start": 7645,
+        "char_end": 7742
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "upfront consideration",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "consisting of $1.0 billion in cash",
+      "span": {
+        "char_start": 7744,
+        "char_end": 7778
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "cash consideration",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2.25,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "approximately 27.2 million shares of Marvell common stock, having a value of $2.25 billion",
+      "span": {
+        "char_start": 7791,
+        "char_end": 7881
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "stock consideration value",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2.25,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "incremental contingent consideration of up to approximately 27.2 million shares of Marvell common stock, having a value of up to $2.25 billion",
+      "span": {
+        "char_start": 8062,
+        "char_end": 8204
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "contingent consideration (up to)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 500,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "cumulative through fiscal year 2029",
+      "basis": null,
+      "quote": "The first milestone, representing one-third of the earnout consideration, will be achieved if Celestial AI reaches cumulative revenue of at least $500 million by the end of Marvell’s fiscal year 2029.",
+      "span": {
+        "char_start": 8294,
+        "char_end": 8494
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "hypothetical",
+      "metric_label": "first earnout milestone cumulative revenue",
+      "segment": "Celestial AI"
+    },
+    {
+      "metric": "other",
+      "value": 2.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "cumulative through fiscal year 2029",
+      "basis": null,
+      "quote": "The full earnout would be paid if Celestial AI’s cumulative revenue by the end of Marvell’s fiscal year 2029 exceeds $2.0 billion.",
+      "span": {
+        "char_start": 8495,
+        "char_end": 8625
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "hypothetical",
+      "metric_label": "full earnout cumulative revenue threshold",
+      "segment": "Celestial AI"
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Marvell will acquire Celestial AI for upfront consideration valued at approximately $3.25 billion",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "consisting of $1.0 billion in cash",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "approximately 27.2 million shares of Marvell common stock, having a value of $2.25 billion",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "incremental contingent consideration of up to approximately 27.2 million shares of Marvell common stock, having a value of up to $2.25 billion",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The first milestone, representing one-third of the earnout consideration, will be achieved if Celestial AI reaches cumulative revenue of at least $500 million by the end of Marvell’s fiscal year 2029.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The full earnout would be paid if Celestial AI’s cumulative revenue by the end of Marvell’s fiscal year 2029 exceeds $2.0 billion.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

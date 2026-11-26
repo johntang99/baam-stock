@@ -1,8 +1,148 @@
 {
   "doc_key": "0001193125-26-430424:d147430d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37Q06NE90TJM4491FWZ6",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAJW28XHVFCEA20DJ40BYA",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The Revolving Credit Agreement provides for borrowings of up to $3 billion in the form of revolving loans (“Revolving Loans”).",
+      "span": {
+        "char_start": 2363,
+        "char_end": 2489
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revolving Credit Agreement borrowing capacity",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Subject to certain conditions, the Company may increase the commitments under the Revolving Credit Agreement by up to an aggregate of $2 billion.",
+      "span": {
+        "char_start": 2490,
+        "char_end": 2635
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Optional increase in commitments under Revolving Credit Agreement",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "which provided for a $1.5 billion revolving credit facility maturing June 2030",
+      "span": {
+        "char_start": 3070,
+        "char_end": 3148
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Prior Second Amended and Restated revolving credit facility size",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1.5,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "the applicable margin for term SOFR and daily SOFR loans ranges from 0.875% to 1.5%",
+      "span": {
+        "char_start": 3847,
+        "char_end": 3930
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Applicable margin for term SOFR and daily SOFR loans (upper end of range)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 0.2,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "ranges from 0.075% to 0.20% per annum",
+      "span": {
+        "char_start": 4144,
+        "char_end": 4181
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Unused commitment fee (upper end of range)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 500,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "increase to 4.50 to 1.00 for the fiscal quarter in which an acquisition with aggregate consideration of at least $500 million is consummated",
+      "span": {
+        "char_start": 5252,
+        "char_end": 5392
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Acquisition consideration threshold for leverage ratio step-up",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "The Revolving Credit Agreement provides for borrowings of up to $3 billion in the form of revolving loans (“Revolving Loans”).",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Subject to certain conditions, the Company may increase the commitments under the Revolving Credit Agreement by up to an aggregate of $2 billion.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "which provided for a $1.5 billion revolving credit facility maturing June 2030",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the applicable margin for term SOFR and daily SOFR loans ranges from 0.875% to 1.5%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "ranges from 0.075% to 0.20% per annum",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "increase to 4.50 to 1.00 for the fiscal quarter in which an acquisition with aggregate consideration of at least $500 million is consummated",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

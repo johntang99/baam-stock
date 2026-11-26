@@ -1,8 +1,271 @@
 {
   "doc_key": "0001046179-26-000278:a2026q1consolidatedreport-.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37KGFBC0VHHGJVPSX7BX",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9MFVYHFR3DW1ZKJEPQM4G",
+  "candidates": [
+    {
+      "metric": "gross_margin_pct",
+      "value": 66,
+      "unit": "pct",
+      "currency": null,
+      "period": "three months ended March 31, 2026",
+      "basis": "gaap",
+      "quote": "GROSS PROFIT 751,295,421 66 493,395,076 59",
+      "span": {
+        "char_start": 9485,
+        "char_end": 9527
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross profit (% of net revenue)",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 59,
+      "unit": "pct",
+      "currency": null,
+      "period": "three months ended March 31, 2025",
+      "basis": "gaap",
+      "quote": "GROSS PROFIT 751,295,421 66 493,395,076 59",
+      "span": {
+        "char_start": 9485,
+        "char_end": 9527
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross profit (% of net revenue)",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 58,
+      "unit": "pct",
+      "currency": null,
+      "period": "three months ended March 31, 2026",
+      "basis": "gaap",
+      "quote": "INCOME FROM OPERATIONS (Note 37) 658,966,142 58 407,080,808 49",
+      "span": {
+        "char_start": 9844,
+        "char_end": 9906
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Income from operations (% of net revenue)",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 49,
+      "unit": "pct",
+      "currency": null,
+      "period": "three months ended March 31, 2025",
+      "basis": "gaap",
+      "quote": "INCOME FROM OPERATIONS (Note 37) 658,966,142 58 407,080,808 49",
+      "span": {
+        "char_start": 9844,
+        "char_end": 9906
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Income from operations (% of net revenue)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 51,
+      "unit": "pct",
+      "currency": null,
+      "period": "three months ended March 31, 2026",
+      "basis": "gaap",
+      "quote": "NET INCOME 572,801,304 51 360,732,661 43",
+      "span": {
+        "char_start": 10448,
+        "char_end": 10488
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income (% of net revenue)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 43,
+      "unit": "pct",
+      "currency": null,
+      "period": "three months ended March 31, 2025",
+      "basis": "gaap",
+      "quote": "NET INCOME 572,801,304 51 360,732,661 43",
+      "span": {
+        "char_start": 10448,
+        "char_end": 10488
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income (% of net revenue)",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 22.08,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "three months ended March 31, 2026",
+      "basis": "gaap",
+      "quote": "Basic earnings per share $ 22.08 $ 13.95",
+      "span": {
+        "char_start": 12049,
+        "char_end": 12089
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Basic earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 13.95,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "three months ended March 31, 2025",
+      "basis": "gaap",
+      "quote": "Basic earnings per share $ 22.08 $ 13.95",
+      "span": {
+        "char_start": 12049,
+        "char_end": 12089
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Basic earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 22.08,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "three months ended March 31, 2026",
+      "basis": "gaap",
+      "quote": "Diluted earnings per share $ 22.08 $ 13.94",
+      "span": {
+        "char_start": 12090,
+        "char_end": 12132
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Diluted earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 13.94,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "three months ended March 31, 2025",
+      "basis": "gaap",
+      "quote": "Diluted earnings per share $ 22.08 $ 13.94",
+      "span": {
+        "char_start": 12090,
+        "char_end": 12132
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Diluted earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 7.0,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "first quarter of 2026",
+      "basis": null,
+      "quote": "Cash dividends per share (NT$) $ 7.00",
+      "span": {
+        "char_start": 60874,
+        "char_end": 60911
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash dividends per share (NT$)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 84,
+      "unit": "pct",
+      "currency": null,
+      "period": "March 31, 2026",
+      "basis": null,
+      "quote": "the Company’s ten largest customers accounted for 84% , 84% and 84% of accounts receivable, respectively",
+      "span": {
+        "char_start": 87963,
+        "char_end": 88067
+      },
+      "direction": "unchanged",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Ten largest customers share of accounts receivable",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "gross_margin_pct",
+      "quote": "GROSS PROFIT 751,295,421 66 493,395,076 59",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "quote": "GROSS PROFIT 751,295,421 66 493,395,076 59",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_margin_pct",
+      "quote": "INCOME FROM OPERATIONS (Note 37) 658,966,142 58 407,080,808 49",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_margin_pct",
+      "quote": "INCOME FROM OPERATIONS (Note 37) 658,966,142 58 407,080,808 49",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "NET INCOME 572,801,304 51 360,732,661 43",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "NET INCOME 572,801,304 51 360,732,661 43",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Cash dividends per share (NT$) $ 7.00",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the Company’s ten largest customers accounted for 84% , 84% and 84% of accounts receivable, respectively",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "Basic earnings per share $ 22.08 $ 13.95",
+      "reason": "conflicting_values"
+    }
+  ],
   "validation_notes": []
 }

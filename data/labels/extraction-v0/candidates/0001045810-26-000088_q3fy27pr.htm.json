@@ -1,24 +1,60 @@
 {
   "doc_key": "0001045810-26-000088:q3fy27pr.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37K1C48S4EFM4JTJBQ36",
+  "llm_call_id": "llm_01M8C9JK1WRZYWKEHN5VT37570",
   "candidates": [
     {
       "metric": "revenue",
       "value": 115.8,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "Revenue of $115.8 billion",
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "NVIDIA (NASDAQ: NVDA) today reported revenue for the third quarter ended October 25, 2026, of $115.8 billion, up 20% from the previous quarter and up 103% from a year ago.",
+      "span": {
+        "char_start": 353,
+        "char_end": 524
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 103,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Revenue of $115.8 billion, up 103% from a year ago",
       "span": {
         "char_start": 107,
-        "char_end": 132
+        "char_end": 157
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue up from a year ago",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 20,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "NVIDIA (NASDAQ: NVDA) today reported revenue for the third quarter ended October 25, 2026, of $115.8 billion, up 20% from the previous quarter and up 103% from a year ago.",
+      "span": {
+        "char_start": 353,
+        "char_end": 524
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue up from the previous quarter",
       "segment": null
     },
     {
@@ -26,120 +62,576 @@
       "value": 107.6,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
+      "period": "third quarter of fiscal 2027",
       "basis": null,
-      "quote": "Data Center revenue of $107.6 billion",
+      "quote": "Third-quarter revenue was $107.6 billion, up 21% from the previous quarter and up 110% from a year ago.",
       "span": {
-        "char_start": 160,
-        "char_end": 197
+        "char_start": 3087,
+        "char_end": 3190
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center revenue",
+      "segment": "Data Center"
     },
     {
-      "metric": "revenue",
-      "value": 115.8,
-      "unit": "USD_billion",
-      "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue for the third quarter ended October 25, 2026, of $115.8 billion",
-      "span": {
-        "char_start": 390,
-        "char_end": 461
-      },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
-    },
-    {
-      "metric": "gross_margin",
-      "value": 74.8,
+      "metric": "revenue_growth_yoy_pct",
+      "value": 110,
       "unit": "pct",
       "currency": null,
-      "period": null,
+      "period": "third quarter of fiscal 2027",
       "basis": null,
-      "quote": "gross margins were 74.8%",
+      "quote": "Data Center revenue of $107.6 billion, up 110% from a year ago",
       "span": {
-        "char_start": 560,
-        "char_end": 584
+        "char_start": 160,
+        "char_end": 222
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center revenue up from a year ago",
+      "segment": "Data Center"
     },
     {
-      "metric": "revenue",
-      "value": 107.6,
-      "unit": "USD_billion",
-      "currency": "USD",
-      "period": null,
+      "metric": "revenue_growth_qoq_pct",
+      "value": 21,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2027",
       "basis": null,
-      "quote": "revenue was $107.6 billion",
+      "quote": "Third-quarter revenue was $107.6 billion, up 21% from the previous quarter and up 110% from a year ago.",
       "span": {
-        "char_start": 3101,
-        "char_end": 3127
+        "char_start": 3087,
+        "char_end": 3190
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center revenue up from the previous quarter",
+      "segment": "Data Center"
     },
     {
       "metric": "revenue",
       "value": 8.2,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
+      "period": "third quarter of fiscal 2027",
       "basis": null,
-      "quote": "revenue was $8.2 billion",
+      "quote": "Third-quarter Edge Computing revenue was $8.2 billion, up 14% from the previous quarter and up 42% from a year ago.",
       "span": {
-        "char_start": 7759,
-        "char_end": 7783
+        "char_start": 7730,
+        "char_end": 7845
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Edge Computing revenue",
+      "segment": "Edge Computing"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 42,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Third-quarter Edge Computing revenue was $8.2 billion, up 14% from the previous quarter and up 42% from a year ago.",
+      "span": {
+        "char_start": 7730,
+        "char_end": 7845
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Edge Computing revenue up from a year ago",
+      "segment": "Edge Computing"
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 14,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Third-quarter Edge Computing revenue was $8.2 billion, up 14% from the previous quarter and up 42% from a year ago.",
+      "span": {
+        "char_start": 7730,
+        "char_end": 7845
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Edge Computing revenue up from the previous quarter",
+      "segment": "Edge Computing"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 74.8,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "For the quarter, GAAP and non-GAAP gross margins were 74.8% and 74.9%, respectively.",
+      "span": {
+        "char_start": 525,
+        "char_end": 609
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP gross margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 74.9,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "For the quarter, GAAP and non-GAAP gross margins were 74.8% and 74.9%, respectively.",
+      "span": {
+        "char_start": 525,
+        "char_end": 609
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP gross margin",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 2.7,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP and non-GAAP earnings per diluted share were $2.70 and $2.68, respectively.",
+      "span": {
+        "char_start": 610,
+        "char_end": 690
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP earnings per diluted share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 2.68,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "GAAP and non-GAAP earnings per diluted share were $2.70 and $2.68, respectively.",
+      "span": {
+        "char_start": 610,
+        "char_end": 690
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP earnings per diluted share",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 9.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Operating expenses $9.2 $8.4 $5.8 9 % 57 %",
+      "span": {
+        "char_start": 1782,
+        "char_end": 1824
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 8.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Operating expenses $8.8 $8.2 $5.8 7 % 52 %",
+      "span": {
+        "char_start": 2189,
+        "char_end": 2231
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 77.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Operating income $77.5 $63.7 $36.0 22 % 115 %",
+      "span": {
+        "char_start": 1825,
+        "char_end": 1870
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP operating income",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 77.9,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Operating income $77.9 $64.0 $36.1 22 % 116 %",
+      "span": {
+        "char_start": 2232,
+        "char_end": 2277
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP operating income",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 65.3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Net income $65.3 $59.7 $31.9 9 % 105 %",
+      "span": {
+        "char_start": 1871,
+        "char_end": 1909
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP net income",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 64.9,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Net income $64.9 $54.0 $31.0 20 % 109 %",
+      "span": {
+        "char_start": 2278,
+        "char_end": 2317
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP net income",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 86676,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Gross profit 86,676 41,849 219,976 102,370",
+      "span": {
+        "char_start": 17523,
+        "char_end": 17565
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross profit",
       "segment": null
     },
     {
       "metric": "revenue",
-      "value": 1933.0,
-      "unit": "number",
-      "currency": null,
-      "period": null,
-      "basis": null,
-      "quote": "revenue under agreements with neoclouds; expectations with respect to NVIDIA’s investments and acquisitions, including NVIDIA’s pending acquisition of Hugging Face; expectations with respect to NVIDIA’s financing arrangements; expectations with respect to technology developments, and related trends and drivers; future NVIDIA cash dividends and stock repurchases or other returns to stockholders; NVIDIA’s financial and business outlook for the fourth quarter of fiscal 2027 and beyond; projected market growth and trends; expectations with respect to AI and related industries; expectations with respect to NVIDIA’s Form 10-Q for the third quarter of fiscal 2027; expectations with respect to NVIDIA’s leadership transition and the search for a new chief executive officer and related matters; expectations with respect to the ongoing investigation by an independent committee of NVIDIA’s board of directors and related matters; expectations with respect to litigation, government and regulatory inquiries and other actions or proceedings and related matters; and other statements that are not historical facts are forward-looking statements within the meaning of Section 27A of the Securities Act of 1933",
+      "value": 293681,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first nine months of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Revenue $ 115,844 $ 57,006 $ 293,681 $ 147,811",
       "span": {
-        "char_start": 13359,
-        "char_end": 14566
+        "char_start": 17432,
+        "char_end": 17478
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue (nine months ended October 25, 2026)",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 48253,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Net cash provided by operating activities 48,253 23,750 122,675 66,530",
+      "span": {
+        "char_start": 20390,
+        "char_end": 20460
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net cash provided by operating activities",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 43777,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 43,777 $ 21,341 $ 22,089 $ 113,672 $ 61,675",
+      "span": {
+        "char_start": 24059,
+        "char_end": 24119
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 130.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Revenue is expected to be $130.0 billion, plus or minus 3%.",
+      "span": {
+        "char_start": 2537,
+        "char_end": 2596
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Revenue outlook",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": null,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP and non-GAAP gross margins are expected to be between 71.0% and 72.0%.",
+      "span": {
+        "char_start": 2681,
+        "char_end": 2756
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP and non-GAAP gross margins outlook (between 71.0% and 72.0%)",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 11.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP and non-GAAP operating expenses are expected to be approximately $11.0 billion and $10.7 billion, respectively.",
+      "span": {
+        "char_start": 2759,
+        "char_end": 2875
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP operating expenses outlook",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 10.7,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "GAAP and non-GAAP operating expenses are expected to be approximately $11.0 billion and $10.7 billion, respectively.",
+      "span": {
+        "char_start": 2759,
+        "char_end": 2875
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP operating expenses outlook",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 28.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": null,
+      "quote": "During the third quarter of fiscal 2027, NVIDIA returned $28.1 billion to shareholders in the form of shares repurchased and cash dividends.",
+      "span": {
+        "char_start": 1172,
+        "char_end": 1312
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Returned to shareholders (share repurchases and cash dividends)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 150,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "September 2026",
+      "basis": null,
+      "quote": "In September 2026, NVIDIA’s Board of Directors approved an increase of $150 billion to the company’s share repurchase authorization, without expiration.",
+      "span": {
+        "char_start": 1019,
+        "char_end": 1171
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Increase to share repurchase authorization",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 227.3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "end of third quarter of fiscal 2027",
+      "basis": null,
+      "quote": "As of the end of the third quarter, the company had approximately $227.3 billion remaining under its share repurchase authorization.",
+      "span": {
+        "char_start": 1313,
+        "char_end": 1445
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Remaining share repurchase authorization",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 0.25,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "December 23, 2026 payment",
+      "basis": null,
+      "quote": "NVIDIA will pay its next quarterly cash dividend of $0.25 per share on December 23, 2026, to all shareholders of record on December 2, 2026.",
+      "span": {
+        "char_start": 1446,
+        "char_end": 1586
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Quarterly cash dividend",
       "segment": null
     }
   ],
   "dropped": [
     {
-      "metric": "revenue",
-      "quote": "revenue under agreements with neoclouds; expectations with respect to NVIDIA’s investments and acquisitions, including NVIDIA’s pending acquisition of Hugging Face; expectations with respect to NVIDIA’s financing arrangements; expectations with respect to technology developments, and related trends and drivers; future NVIDIA cash dividends and stock repurchases or other returns to stockholders; NVIDIA’s financial and business outlook for the fourth quarter of fiscal 2027 and beyond; projected market growth and trends; expectations with respect to AI and related industries; expectations with respect to NVIDIA’s Form 10-Q for the third quarter of fiscal 2027; expectations with respect to NVIDIA’s leadership transition and the search for a new chief executive officer and related matters; expectations with respect to the ongoing investigation by an independent committee of NVIDIA’s board of directors and related matters; expectations with respect to litigation, government and regulatory inquiries and other actions or proceedings and related matters; and other statements that are not historical facts are forward-looking statements within the meaning of Section 27A of the Securities Act of 1933",
-      "reason": "unit_not_allowed:number"
+      "metric": "operating_expenses",
+      "quote": "Operating expenses $9.2 $8.4 $5.8 9 % 57 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses $8.8 $8.2 $5.8 7 % 52 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income $77.5 $63.7 $36.0 22 % 115 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income $77.9 $64.0 $36.1 22 % 116 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income $65.3 $59.7 $31.9 9 % 105 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income $64.9 $54.0 $31.0 20 % 109 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross profit 86,676 41,849 219,976 102,370",
+      "reason": "value_not_in_quote"
     },
     {
       "metric": "revenue",
-      "quote": "Revenue of $115.8 billion",
-      "reason": "conflicting_values"
+      "quote": "Revenue $ 115,844 $ 57,006 $ 293,681 $ 147,811",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "quote": "Net cash provided by operating activities 48,253 23,750 122,675 66,530",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "free_cash_flow",
+      "quote": "Free cash flow $ 43,777 $ 21,341 $ 22,089 $ 113,672 $ 61,675",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "During the third quarter of fiscal 2027, NVIDIA returned $28.1 billion to shareholders in the form of shares repurchased and cash dividends.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "In September 2026, NVIDIA’s Board of Directors approved an increase of $150 billion to the company’s share repurchase authorization, without expiration.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "As of the end of the third quarter, the company had approximately $227.3 billion remaining under its share repurchase authorization.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "NVIDIA will pay its next quarterly cash dividend of $0.25 per share on December 23, 2026, to all shareholders of record on December 2, 2026.",
+      "reason": "unknown_metric"
     }
   ],
   "validation_notes": []

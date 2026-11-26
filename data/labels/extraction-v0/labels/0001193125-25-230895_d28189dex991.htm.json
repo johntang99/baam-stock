@@ -4,6 +4,31 @@
   "doc_kind": "earnings_release",
   "fiscal_period": null,
   "label_status": "draft",
-  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.3",
-  "facts": []
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": [
+    {
+      "metric": "revenue_outlook",
+      "value": null,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Our partnership with OpenAI is expected to deliver tens of billions of dollars in revenue for AMD while accelerating OpenAI’s AI infrastructure buildout",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "segment": null
+    },
+    {
+      "metric": "eps_non_gaap",
+      "value": null,
+      "unit": "USD_per_share",
+      "period": null,
+      "basis": "non_gaap",
+      "quote": "is expected to be highly accretive to AMD’s non-GAAP earnings-per-share",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "segment": null
+    }
+  ]
 }

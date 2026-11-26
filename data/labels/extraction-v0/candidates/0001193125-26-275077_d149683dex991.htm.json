@@ -1,8 +1,309 @@
 {
   "doc_key": "0001193125-26-275077:d149683dex991.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37PV3X96559T2DCQDHAY",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CAH2A3Z1JDKJ3JH2JJKBCA",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 2.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "June 17, 2026",
+      "basis": null,
+      "quote": "up to an aggregate purchase price, excluding the Accrued Coupon Payment, of $2.5 billion",
+      "span": {
+        "char_start": 989,
+        "char_end": 1077
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Consideration Cap Amount (aggregate purchase price, excluding Accrued Coupon Payment)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2500000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "June 17, 2026",
+      "basis": null,
+      "quote": "4.926% Senior Notes due 2037 144A: 11135FBV2 / US11135FBV22 RegS: U1109MBA3 / USU1109MBA37 $2,500,000,000",
+      "span": {
+        "char_start": 2147,
+        "char_end": 2252
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Aggregate Principal Amount Outstanding - 4.926% Senior Notes due 2037",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1750000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "June 17, 2026",
+      "basis": null,
+      "quote": "4.900% Senior Notes due 2038 11135FCX7 / US11135FCX78 $1,750,000,000",
+      "span": {
+        "char_start": 2318,
+        "char_end": 2386
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Aggregate Principal Amount Outstanding - 4.900% Senior Notes due 2038",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 800000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "June 17, 2026",
+      "basis": null,
+      "quote": "5.050% Senior Notes due 2030 11135FCF6 / US11135FCF62 $800,000,000",
+      "span": {
+        "char_start": 2452,
+        "char_end": 2518
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Aggregate Principal Amount Outstanding - 5.050% Senior Notes due 2030",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1100000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "June 17, 2026",
+      "basis": null,
+      "quote": "5.200% Senior Notes due 2032 11135FCG4 / US11135FCG46 $1,100,000,000",
+      "span": {
+        "char_start": 2586,
+        "char_end": 2654
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Aggregate Principal Amount Outstanding - 5.200% Senior Notes due 2032",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1500000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "June 17, 2026",
+      "basis": null,
+      "quote": "5.150% Senior Notes due 2031 11135FBY6 / US11135FBY60 $1,500,000,000",
+      "span": {
+        "char_start": 2722,
+        "char_end": 2790
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Aggregate Principal Amount Outstanding - 5.150% Senior Notes due 2031",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1750000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "June 17, 2026",
+      "basis": null,
+      "quote": "4.900% Senior Notes due 2032 11135FCL3 / US11135FCL31 $1,750,000,000",
+      "span": {
+        "char_start": 2858,
+        "char_end": 2926
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Aggregate Principal Amount Outstanding - 4.900% Senior Notes due 2032",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 982.01,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "June 17, 2026",
+      "basis": null,
+      "quote": "4.443% FIT 1 +70 $982.01",
+      "span": {
+        "char_start": 2293,
+        "char_end": 2317
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Total Consideration per $1,000 principal - 4.926% Senior Notes due 2037",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 970.29,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "June 17, 2026",
+      "basis": null,
+      "quote": "4.443% FIT 1 +80 $970.29",
+      "span": {
+        "char_start": 2427,
+        "char_end": 2451
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Total Consideration per $1,000 principal - 4.900% Senior Notes due 2038",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1021.24,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "June 17, 2026",
+      "basis": null,
+      "quote": "4.177% FIT 1 +25 $1,021.24",
+      "span": {
+        "char_start": 2559,
+        "char_end": 2585
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Total Consideration per $1,000 principal - 5.050% Senior Notes due 2030",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1023.23,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "June 17, 2026",
+      "basis": null,
+      "quote": "4.177% FIT 1 +55 $1,023.23",
+      "span": {
+        "char_start": 2695,
+        "char_end": 2721
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Total Consideration per $1,000 principal - 5.200% Senior Notes due 2032",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1021.77,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "June 17, 2026",
+      "basis": null,
+      "quote": "4.177% FIT 1 +50 $1,021.77",
+      "span": {
+        "char_start": 2831,
+        "char_end": 2857
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Total Consideration per $1,000 principal - 5.150% Senior Notes due 2031",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1003.73,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "June 17, 2026",
+      "basis": null,
+      "quote": "4.177% FIT 1 +65 $1,003.73",
+      "span": {
+        "char_start": 2967,
+        "char_end": 2993
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Total Consideration per $1,000 principal - 4.900% Senior Notes due 2032",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "up to an aggregate purchase price, excluding the Accrued Coupon Payment, of $2.5 billion",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "4.926% Senior Notes due 2037 144A: 11135FBV2 / US11135FBV22 RegS: U1109MBA3 / USU1109MBA37 $2,500,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "4.900% Senior Notes due 2038 11135FCX7 / US11135FCX78 $1,750,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5.050% Senior Notes due 2030 11135FCF6 / US11135FCF62 $800,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5.200% Senior Notes due 2032 11135FCG4 / US11135FCG46 $1,100,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "5.150% Senior Notes due 2031 11135FBY6 / US11135FBY60 $1,500,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "4.900% Senior Notes due 2032 11135FCL3 / US11135FCL31 $1,750,000,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "4.443% FIT 1 +70 $982.01",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "4.443% FIT 1 +80 $970.29",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "4.177% FIT 1 +25 $1,021.24",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "4.177% FIT 1 +55 $1,023.23",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "4.177% FIT 1 +50 $1,021.77",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "4.177% FIT 1 +65 $1,003.73",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

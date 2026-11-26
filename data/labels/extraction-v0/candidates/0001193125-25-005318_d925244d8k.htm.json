@@ -1,8 +1,125 @@
 {
   "doc_key": "0001193125-25-005318:d925244d8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37NMFW94B2Q30SQQXF0Z",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA7NDRTP3XZJ70TECD2WXS",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 7.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The Existing Credit Agreement originally provided for a $7.5 billion unsecured revolving credit facility.",
+      "span": {
+        "char_start": 2595,
+        "char_end": 2700
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Existing Credit Agreement unsecured revolving credit facility (terminated)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 7.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The Credit Agreement provides for a $7.5 billion five-year unsecured revolving credit facility (the “Revolving Facility”).",
+      "span": {
+        "char_start": 4041,
+        "char_end": 4163
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Five-year unsecured revolving credit facility (Revolving Facility)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 500,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The aggregate commitment of all revolving lenders under the Credit Agreement is equal to $7.5 billion, of which up to $500 million may be utilized for the issuance of multicurrency letters of credit.",
+      "span": {
+        "char_start": 4441,
+        "char_end": 4640
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Multicurrency letters of credit sublimit under Revolving Facility",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 0,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "January 13, 2025",
+      "basis": null,
+      "quote": "The Company had no borrowings outstanding under the Revolving Facility on the Closing Date.",
+      "span": {
+        "char_start": 4788,
+        "char_end": 4879
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Borrowings outstanding under the Revolving Facility on the Closing Date",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 0,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "January 13, 2025",
+      "basis": null,
+      "quote": "The Company had no outstanding borrowings under the Existing Credit Agreement immediately prior to its termination.",
+      "span": {
+        "char_start": 2701,
+        "char_end": 2816
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Outstanding borrowings under Existing Credit Agreement prior to termination",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "The Existing Credit Agreement originally provided for a $7.5 billion unsecured revolving credit facility.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Credit Agreement provides for a $7.5 billion five-year unsecured revolving credit facility (the “Revolving Facility”).",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The aggregate commitment of all revolving lenders under the Credit Agreement is equal to $7.5 billion, of which up to $500 million may be utilized for the issuance of multicurrency letters of credit.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Company had no borrowings outstanding under the Revolving Facility on the Closing Date.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Company had no outstanding borrowings under the Existing Credit Agreement immediately prior to its termination.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

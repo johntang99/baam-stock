@@ -4,6 +4,31 @@
   "doc_kind": "earnings_release",
   "fiscal_period": null,
   "label_status": "draft",
-  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.3",
-  "facts": []
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": [
+    {
+      "metric": "revenue_outlook",
+      "value": 500000000.0,
+      "unit": "USD",
+      "period": "FY2028Q4",
+      "basis": "company_defined",
+      "quote": "reaching a $500 million annualized run rate in the fourth quarter of fiscal 2028",
+      "direction": "increase",
+      "scope": "other",
+      "certainty": "guidance",
+      "segment": "Celestial AI"
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 1000000000.0,
+      "unit": "USD",
+      "period": "FY2029Q4",
+      "basis": "company_defined",
+      "quote": "doubling to a $1 billion dollar run rate by the fourth quarter of fiscal 2029",
+      "direction": "increase",
+      "scope": "other",
+      "certainty": "guidance",
+      "segment": "Celestial AI"
+    }
+  ]
 }

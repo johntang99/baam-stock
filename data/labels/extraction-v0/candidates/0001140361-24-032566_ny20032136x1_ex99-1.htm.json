@@ -1,8 +1,662 @@
 {
   "doc_key": "0001140361-24-032566:ny20032136x1_ex99-1.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37NHAC40VKSV69T7TV9T",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA5JYV1P2VFCS3Q7Q70ENX",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 24448,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "two fiscal quarters ended May 5, 2024",
+      "basis": "gaap",
+      "quote": "Total net revenue 24,448 623 - (41 ) - 25,030",
+      "span": {
+        "char_start": 5735,
+        "char_end": 5780
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total net revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 25030,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "two fiscal quarters ended May 5, 2024",
+      "basis": "company_defined",
+      "quote": "Total net revenue 24,448 623 - (41 ) - 25,030",
+      "span": {
+        "char_start": 5735,
+        "char_end": 5780
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Total net revenue (pro forma combined)",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 14604,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "two fiscal quarters ended May 5, 2024",
+      "basis": "gaap",
+      "quote": "Net revenue: Products $ 14,604 $ - $ - $ - $ - $ 14,604",
+      "span": {
+        "char_start": 5492,
+        "char_end": 5547
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "Products net revenue",
+      "segment": "Products"
+    },
+    {
+      "metric": "revenue",
+      "value": 9844,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "two fiscal quarters ended May 5, 2024",
+      "basis": "gaap",
+      "quote": "Subscriptions and services 9,844 - 623 2 (a) (83 ) 3 (a) - 10,426",
+      "span": {
+        "char_start": 5548,
+        "char_end": 5613
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "Subscriptions and services net revenue",
+      "segment": "Subscriptions and services"
+    },
+    {
+      "metric": "gross_profit",
+      "value": 15151,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "two fiscal quarters ended May 5, 2024",
+      "basis": "gaap",
+      "quote": "Gross margin 15,151 471 - (281 ) - 15,341",
+      "span": {
+        "char_start": 6267,
+        "char_end": 6308
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 15341,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "two fiscal quarters ended May 5, 2024",
+      "basis": "company_defined",
+      "quote": "Gross margin 15,151 471 - (281 ) - 15,341",
+      "span": {
+        "char_start": 6267,
+        "char_end": 6308
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Gross margin (pro forma combined)",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 10103,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "two fiscal quarters ended May 5, 2024",
+      "basis": "gaap",
+      "quote": "Total operating expenses 10,103 464 - (946 ) - 9,621",
+      "span": {
+        "char_start": 7369,
+        "char_end": 7421
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 5048,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "two fiscal quarters ended May 5, 2024",
+      "basis": "gaap",
+      "quote": "Operating income 5,048 7 - 665 - 5,720",
+      "span": {
+        "char_start": 7422,
+        "char_end": 7460
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 5720,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "two fiscal quarters ended May 5, 2024",
+      "basis": "company_defined",
+      "quote": "Operating income 5,048 7 - 665 - 5,720",
+      "span": {
+        "char_start": 7422,
+        "char_end": 7460
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Operating income (pro forma combined)",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 3395,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "two fiscal quarters ended May 5, 2024",
+      "basis": "gaap",
+      "quote": "Net income from continuing operations attributable to common stock $ 3,395 $ 26 $ - $ 522 $ (84 ) $ 3,859",
+      "span": {
+        "char_start": 7767,
+        "char_end": 7872
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income from continuing operations attributable to common stock",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 3859,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "two fiscal quarters ended May 5, 2024",
+      "basis": "company_defined",
+      "quote": "Net income from continuing operations attributable to common stock $ 3,395 $ 26 $ - $ 522 $ (84 ) $ 3,859",
+      "span": {
+        "char_start": 7767,
+        "char_end": 7872
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Net income from continuing operations attributable to common stock (pro forma combined)",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 7.29,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "two fiscal quarters ended May 5, 2024",
+      "basis": "gaap",
+      "quote": "Diluted $ 7.29 $ 8.09 3(j)",
+      "span": {
+        "char_start": 7976,
+        "char_end": 8002
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income from continuing operations per share - Diluted",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 7.52,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "two fiscal quarters ended May 5, 2024",
+      "basis": "gaap",
+      "quote": "Basic $ 7.52 $ 8.43 3(j)",
+      "span": {
+        "char_start": 7951,
+        "char_end": 7975
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income from continuing operations per share - Basic",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 35819,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "year ended October 29, 2023",
+      "basis": "gaap",
+      "quote": "Total net revenue 35,819 13,852 - (1,587 ) - 48,084",
+      "span": {
+        "char_start": 8916,
+        "char_end": 8967
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total net revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 48084,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "year ended October 29, 2023",
+      "basis": "company_defined",
+      "quote": "Total net revenue 35,819 13,852 - (1,587 ) - 48,084",
+      "span": {
+        "char_start": 8916,
+        "char_end": 8967
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Total net revenue (pro forma combined)",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 13852,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "twelve months ended November 3, 2023",
+      "basis": "gaap",
+      "quote": "Total net revenue 35,819 13,852 - (1,587 ) - 48,084",
+      "span": {
+        "char_start": 8916,
+        "char_end": 8967
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "VMware total net revenue",
+      "segment": "VMware, Inc."
+    },
+    {
+      "metric": "revenue",
+      "value": 27891,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "year ended October 29, 2023",
+      "basis": "gaap",
+      "quote": "Products $ 27,891 $ - $ - $ - $ - $ 27,891",
+      "span": {
+        "char_start": 8666,
+        "char_end": 8708
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "Products net revenue",
+      "segment": "Products"
+    },
+    {
+      "metric": "revenue",
+      "value": 7928,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "year ended October 29, 2023",
+      "basis": "gaap",
+      "quote": "Subscriptions and services 7,928 - 13,852 2 (a) (1,643 ) 3 (a) - 20,193",
+      "span": {
+        "char_start": 8709,
+        "char_end": 8780
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "Subscriptions and services net revenue",
+      "segment": "Subscriptions and services"
+    },
+    {
+      "metric": "gross_profit",
+      "value": 24690,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "year ended October 29, 2023",
+      "basis": "gaap",
+      "quote": "Gross margin 24,690 11,292 - (5,732 ) - 30,250",
+      "span": {
+        "char_start": 9493,
+        "char_end": 9539
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 30250,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "year ended October 29, 2023",
+      "basis": "company_defined",
+      "quote": "Gross margin 24,690 11,292 - (5,732 ) - 30,250",
+      "span": {
+        "char_start": 9493,
+        "char_end": 9539
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Gross margin (pro forma combined)",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 8483,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "year ended October 29, 2023",
+      "basis": "gaap",
+      "quote": "Total operating expenses 8,483 9,080 - 794 - 18,357",
+      "span": {
+        "char_start": 10660,
+        "char_end": 10711
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 16207,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "year ended October 29, 2023",
+      "basis": "gaap",
+      "quote": "Operating income 16,207 2,212 - (6,526 ) - 11,893",
+      "span": {
+        "char_start": 10712,
+        "char_end": 10761
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 11893,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "year ended October 29, 2023",
+      "basis": "company_defined",
+      "quote": "Operating income 16,207 2,212 - (6,526 ) - 11,893",
+      "span": {
+        "char_start": 10712,
+        "char_end": 10761
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Operating income (pro forma combined)",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 14082,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "year ended October 29, 2023",
+      "basis": "gaap",
+      "quote": "Net income from continuing operations attributable to common stock $ 14,082 $ 1,734 $ - $ (5,917 ) $ (1,799 ) $ 8,100",
+      "span": {
+        "char_start": 11094,
+        "char_end": 11211
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income from continuing operations attributable to common stock",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 8100,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "year ended October 29, 2023",
+      "basis": "company_defined",
+      "quote": "Net income from continuing operations attributable to common stock $ 14,082 $ 1,734 $ - $ (5,917 ) $ (1,799 ) $ 8,100",
+      "span": {
+        "char_start": 11094,
+        "char_end": 11211
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Net income from continuing operations attributable to common stock (pro forma combined)",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 32.98,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "year ended October 29, 2023",
+      "basis": "gaap",
+      "quote": "Diluted $ 32.98 $ 16.77 3(j)",
+      "span": {
+        "char_start": 11317,
+        "char_end": 11345
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income from continuing operations per share - Diluted",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 33.93,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "year ended October 29, 2023",
+      "basis": "gaap",
+      "quote": "Basic $ 33.93 $ 17.27 3(j)",
+      "span": {
+        "char_start": 11290,
+        "char_end": 11316
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income from continuing operations per share - Basic",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 30.4,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Broadcom entered into an aggregate of $30.4 billion of term facilities",
+      "span": {
+        "char_start": 3857,
+        "char_end": 3927
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Aggregate term facilities (2023 Term Loans)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 398,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Broadcom incurred discounts and financing fees of approximately $398 million",
+      "span": {
+        "char_start": 4337,
+        "char_end": 4413
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Discounts and financing fees",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "Total net revenue 24,448 623 - (41 ) - 25,030",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Total net revenue 24,448 623 - (41 ) - 25,030",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Net revenue: Products $ 14,604 $ - $ - $ - $ - $ 14,604",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Subscriptions and services 9,844 - 623 2 (a) (83 ) 3 (a) - 10,426",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross margin 15,151 471 - (281 ) - 15,341",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross margin 15,151 471 - (281 ) - 15,341",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Total operating expenses 10,103 464 - (946 ) - 9,621",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income 5,048 7 - 665 - 5,720",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income 5,048 7 - 665 - 5,720",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income from continuing operations attributable to common stock $ 3,395 $ 26 $ - $ 522 $ (84 ) $ 3,859",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income from continuing operations attributable to common stock $ 3,395 $ 26 $ - $ 522 $ (84 ) $ 3,859",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Total net revenue 35,819 13,852 - (1,587 ) - 48,084",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Total net revenue 35,819 13,852 - (1,587 ) - 48,084",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Total net revenue 35,819 13,852 - (1,587 ) - 48,084",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Products $ 27,891 $ - $ - $ - $ - $ 27,891",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Subscriptions and services 7,928 - 13,852 2 (a) (1,643 ) 3 (a) - 20,193",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross margin 24,690 11,292 - (5,732 ) - 30,250",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross margin 24,690 11,292 - (5,732 ) - 30,250",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Total operating expenses 8,483 9,080 - 794 - 18,357",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income 16,207 2,212 - (6,526 ) - 11,893",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income 16,207 2,212 - (6,526 ) - 11,893",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income from continuing operations attributable to common stock $ 14,082 $ 1,734 $ - $ (5,917 ) $ (1,799 ) $ 8,100",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income from continuing operations attributable to common stock $ 14,082 $ 1,734 $ - $ (5,917 ) $ (1,799 ) $ 8,100",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Broadcom entered into an aggregate of $30.4 billion of term facilities",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Broadcom incurred discounts and financing fees of approximately $398 million",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "Diluted $ 7.29 $ 8.09 3(j)",
+      "reason": "conflicting_values"
+    }
+  ],
   "validation_notes": []
 }

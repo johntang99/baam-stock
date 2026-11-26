@@ -1,8 +1,63 @@
 {
   "doc_key": "0001046179-26-000302:tsm-agmx20260604x6k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37KKYX93Q7WNZ9EM1DG6",
-  "candidates": [],
+  "llm_call_id": "llm_01M8C9NR23MVH1R8WP3SGFPD48",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 3809.05,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "fiscal 2025",
+      "basis": "gaap",
+      "quote": "Consolidated revenue totaled NT$3,809.05 billion",
+      "span": {
+        "char_start": 1725,
+        "char_end": 1773
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Consolidated revenue",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 1717.88,
+      "unit": "USD_billion",
+      "currency": "TWD",
+      "period": "fiscal 2025",
+      "basis": "gaap",
+      "quote": "net income was NT$1,717.88 billion",
+      "span": {
+        "char_start": 1778,
+        "char_end": 1812
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "net income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 66.25,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "fiscal 2025",
+      "basis": "gaap",
+      "quote": "with diluted earnings per share of NT$66.25",
+      "span": {
+        "char_start": 1814,
+        "char_end": 1857
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "diluted earnings per share",
+      "segment": null
+    }
+  ],
   "dropped": [],
   "validation_notes": []
 }

@@ -1,8 +1,125 @@
 {
   "doc_key": "0001104659-24-127174:tm2430615d1_8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37MSMNZNJPF8QHV47ACD",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9ZR2VGVWFFTDF0CXS8DJ4",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 1.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "December 9, 2024",
+      "basis": null,
+      "quote": "the Department has awarded Micron Idaho a grant in a maximum funding amount of $1.5 billion (the “Idaho Award”) for the construction of a fab facility in Boise, Idaho",
+      "span": {
+        "char_start": 3017,
+        "char_end": 3183
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Idaho Award maximum grant funding amount",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 4.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "December 9, 2024",
+      "basis": null,
+      "quote": "the Department has awarded Micron New York grants in a maximum funding amount of $4.6 billion for the construction of two fab facilities in Clay, New York",
+      "span": {
+        "char_start": 3263,
+        "char_end": 3417
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "NY Award maximum grant funding amount",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 65,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "December 9, 2024",
+      "basis": null,
+      "quote": "The Funding Agreements also include an additional grant of up to $65 million for workforce development activities related to the Projects.",
+      "span": {
+        "char_start": 3578,
+        "char_end": 3716
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Workforce development grant",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 275,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "December 9, 2024",
+      "basis": null,
+      "quote": "signed a non-binding Preliminary Memorandum of Terms (“PMT”) with the Department for a grant of up to $275 million",
+      "span": {
+        "char_start": 10627,
+        "char_end": 10741
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Virginia Award grant under non-binding Preliminary Memorandum of Terms",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 6.44,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "December 9, 2024",
+      "basis": null,
+      "quote": "represent total CHIPS grants of up to $6.44 billion in connection with the Company’s U.S. manufacturing expansion projects",
+      "span": {
+        "char_start": 11238,
+        "char_end": 11360
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total CHIPS grants",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "the Department has awarded Micron Idaho a grant in a maximum funding amount of $1.5 billion (the “Idaho Award”) for the construction of a fab facility in Boise, Idaho",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the Department has awarded Micron New York grants in a maximum funding amount of $4.6 billion for the construction of two fab facilities in Clay, New York",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Funding Agreements also include an additional grant of up to $65 million for workforce development activities related to the Projects.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "signed a non-binding Preliminary Memorandum of Terms (“PMT”) with the Department for a grant of up to $275 million",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "represent total CHIPS grants of up to $6.44 billion in connection with the Company’s U.S. manufacturing expansion projects",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

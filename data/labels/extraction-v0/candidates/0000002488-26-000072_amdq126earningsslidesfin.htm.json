@@ -1,50 +1,573 @@
 {
   "doc_key": "0000002488-26-000072:amdq126earningsslidesfin.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37FX51YNB1VKC9WZKBJN",
+  "llm_call_id": "llm_01M8C7RE964XXSPEM6X7WR6GZM",
   "candidates": [
-    {
-      "metric": "gross_margin",
-      "value": 1995.0,
-      "unit": "number",
-      "currency": null,
-      "period": null,
-      "basis": null,
-      "quote": "gross margin, non-GAAP operating expenses, non-GAAP Interest Expense/Other Income (Expense), net, non-GAAP tax rate and diluted share count; AMD’s large and compelling TAM; AMD’s ability to expand Data Center and AI leadership; AMD's financial and operating performance; and AMD’s ability to drive long-term shareholder returns, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
-      "span": {
-        "char_start": 758,
-        "char_end": 1196
-      },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
-    },
     {
       "metric": "revenue",
       "value": 10.3,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "Revenue Revenue of $10.3 billion",
+      "period": "Q1 2026",
+      "basis": "gaap",
+      "quote": "Revenue of $10.3 billion increased 38% y/y",
       "span": {
-        "char_start": 9105,
-        "char_end": 9137
+        "char_start": 9113,
+        "char_end": 9155
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 38,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q1 2026",
+      "basis": "gaap",
+      "quote": "Revenue of $10.3 billion increased 38% y/y",
+      "span": {
+        "char_start": 9113,
+        "char_end": 9155
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue increase y/y",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 53,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q1 2026",
+      "basis": "gaap",
+      "quote": "Gross Margin 53% Non-GAAP Gross Margin 55%",
+      "span": {
+        "char_start": 17305,
+        "char_end": 17347
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross Margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 55,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q1 2026",
+      "basis": "non_gaap",
+      "quote": "Gross Margin 53% Non-GAAP Gross Margin 55%",
+      "span": {
+        "char_start": 17305,
+        "char_end": 17347
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Gross Margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 5416,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q1 2026",
+      "basis": "gaap",
+      "quote": "Down 3% $5,577 Up 45% $3,736 $5,416 Gross Profit",
+      "span": {
+        "char_start": 10467,
+        "char_end": 10515
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP gross profit",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 5685,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q1 2026",
+      "basis": "non_gaap",
+      "quote": "Down 3% $5,855 Up 42% $3,992 $5,685 Gross Profit",
+      "span": {
+        "char_start": 11054,
+        "char_end": 11102
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP gross profit",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 3940,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q1 2026",
+      "basis": "gaap",
+      "quote": "Up 3% $3,825 Up 34% $2,930 $3,940 Operating Expenses",
+      "span": {
+        "char_start": 10559,
+        "char_end": 10611
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 3145,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q1 2026",
+      "basis": "non_gaap",
+      "quote": "Up 5% $3,001 Up 42% $2,213 $3,145 Operating Expenses",
+      "span": {
+        "char_start": 11146,
+        "char_end": 11198
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Operating Expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 1476,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q1 2026",
+      "basis": "gaap",
+      "quote": "Down 16% $1,752 Up 83% $806 $1,476 Operating Income",
+      "span": {
+        "char_start": 10663,
+        "char_end": 10714
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Income",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 2540,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q1 2026",
+      "basis": "non_gaap",
+      "quote": "Down 11% $2,854 Up 43% $1,779 $2,540 Operating Income",
+      "span": {
+        "char_start": 11248,
+        "char_end": 11301
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Operating Income",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 14,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q1 2026",
+      "basis": "gaap",
+      "quote": "Down 3 ppts 17%Up 3 ppts 11%14%Operating Margin",
+      "span": {
+        "char_start": 10715,
+        "char_end": 10762
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 25,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q1 2026",
+      "basis": "non_gaap",
+      "quote": "Down 3 ppts 28%Up 1 ppt 24%25%Operating Margin",
+      "span": {
+        "char_start": 11302,
+        "char_end": 11348
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Operating Margin",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 1383,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q1 2026",
+      "basis": "gaap",
+      "quote": "Down 8% $1,511 Up 95% $709 $1,383 Net Income",
+      "span": {
+        "char_start": 10763,
+        "char_end": 10807
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net Income",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 2265,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q1 2026",
+      "basis": "non_gaap",
+      "quote": "Down 10% $2,519 Up 45% $1,566 $2,265 Net Income",
+      "span": {
+        "char_start": 11349,
+        "char_end": 11396
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Net Income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 0.84,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "Q1 2026",
+      "basis": "gaap",
+      "quote": "Diluted EPS $0.84 Non-GAAP Diluted EPS $1.37",
+      "span": {
+        "char_start": 17444,
+        "char_end": 17488
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Diluted EPS",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 1.37,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "Q1 2026",
+      "basis": "non_gaap",
+      "quote": "Diluted EPS $0.84 Non-GAAP Diluted EPS $1.37",
+      "span": {
+        "char_start": 17444,
+        "char_end": 17488
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP Diluted EPS",
+      "segment": null
+    },
+    {
+      "metric": "data_center_revenue",
+      "value": 5.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "Q1 2026",
+      "basis": "gaap",
+      "quote": "Revenue $5.8 Billion Up 57% y/y",
+      "span": {
+        "char_start": 12564,
+        "char_end": 12595
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center Segment Revenue",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 57,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q1 2026",
+      "basis": "gaap",
+      "quote": "Revenue $5.8 Billion Up 57% y/y",
+      "span": {
+        "char_start": 12564,
+        "char_end": 12595
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center Revenue Up y/y",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "operating_income",
+      "value": 1.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "Q1 2026",
+      "basis": "gaap",
+      "quote": "Operating Income $1.6 Billion vs. $0.9 Billion a year ago",
+      "span": {
+        "char_start": 12684,
+        "char_end": 12741
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center Operating Income",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue",
+      "value": 3.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "Q1 2026",
+      "basis": "gaap",
+      "quote": "Revenue $3.6 Billion Up 23% y/y",
+      "span": {
+        "char_start": 13851,
+        "char_end": 13882
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Client and Gaming Segment Revenue",
+      "segment": "Client and Gaming"
+    },
+    {
+      "metric": "operating_income",
+      "value": 575,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q1 2026",
+      "basis": "gaap",
+      "quote": "Operating Income $575 Million vs. $496 Million a year ago",
+      "span": {
+        "char_start": 13883,
+        "char_end": 13940
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Client and Gaming Operating Income",
+      "segment": "Client and Gaming"
+    },
+    {
+      "metric": "revenue",
+      "value": 873,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q1 2026",
+      "basis": "gaap",
+      "quote": "Revenue $873 Million Up 6% y/y",
+      "span": {
+        "char_start": 14892,
+        "char_end": 14922
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Embedded Segment Revenue",
+      "segment": "Embedded"
+    },
+    {
+      "metric": "operating_income",
+      "value": 338,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "Q1 2026",
+      "basis": "gaap",
+      "quote": "Operating Income $338 Million vs. $328 Million a year ago",
+      "span": {
+        "char_start": 14923,
+        "char_end": 14980
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Embedded Operating Income",
+      "segment": "Embedded"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 3.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "Q1 2026",
+      "basis": "gaap",
+      "quote": "Record cash from operating activities of continuing operations of $3.0 billion",
+      "span": {
+        "char_start": 12239,
+        "char_end": 12317
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash from operating activities of continuing operations",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 2.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "Q1 2026",
+      "basis": "non_gaap",
+      "quote": "record free cash flow of $2.6 billion1",
+      "span": {
+        "char_start": 12319,
+        "char_end": 12357
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 11.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "Q2 2026",
+      "basis": null,
+      "quote": "Q2’26 ~$11.2 Billion +/- $300 Million Revenue",
+      "span": {
+        "char_start": 16845,
+        "char_end": 16890
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Revenue outlook",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 56,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q2 2026",
+      "basis": "non_gaap",
+      "quote": "~56%Gross Margin",
+      "span": {
+        "char_start": 16891,
+        "char_end": 16907
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Gross Margin outlook",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 3.3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "Q2 2026",
+      "basis": "non_gaap",
+      "quote": "~$3.3 BillionOperating Expenses",
+      "span": {
+        "char_start": 16908,
+        "char_end": 16939
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Operating Expenses outlook",
       "segment": null
     }
   ],
   "dropped": [
     {
+      "metric": "gross_profit",
+      "quote": "Down 3% $5,577 Up 45% $3,736 $5,416 Gross Profit",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Down 3% $5,855 Up 42% $3,992 $5,685 Gross Profit",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Up 3% $3,825 Up 34% $2,930 $3,940 Operating Expenses",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Up 5% $3,001 Up 42% $2,213 $3,145 Operating Expenses",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Down 16% $1,752 Up 83% $806 $1,476 Operating Income",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Down 11% $2,854 Up 43% $1,779 $2,540 Operating Income",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_margin_pct",
+      "quote": "Down 3 ppts 17%Up 3 ppts 11%14%Operating Margin",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_margin_pct",
+      "quote": "Down 3 ppts 28%Up 1 ppt 24%25%Operating Margin",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Down 8% $1,511 Up 95% $709 $1,383 Net Income",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Down 10% $2,519 Up 45% $1,566 $2,265 Net Income",
+      "reason": "value_not_in_quote"
+    },
+    {
       "metric": "gross_margin_pct",
-      "quote": "gross margin, non-GAAP operating expenses, non-GAAP Interest Expense/Other Income (Expense), net, non-GAAP tax rate and diluted share count; AMD’s large and compelling TAM; AMD’s ability to expand Data Center and AI leadership; AMD's financial and operating performance; and AMD’s ability to drive long-term shareholder returns, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
-      "reason": "unit_not_allowed:number"
+      "quote": "~56%Gross Margin",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "~$3.3 BillionOperating Expenses",
+      "reason": "value_not_in_quote"
     }
   ],
   "validation_notes": []

@@ -1,8 +1,286 @@
 {
   "doc_key": "0001104659-25-022973:tm258936d1_8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37MY3M8KWNKDNNPXW7A2",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA0PEGB1PSNN5KJBT7YG50",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 3.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "March 12, 2025",
+      "basis": null,
+      "quote": "The Revolving Credit Agreement provides the Company with a committed $3.5 billion revolving credit facility (the “Revolving Credit Facility”).",
+      "span": {
+        "char_start": 2642,
+        "char_end": 2784
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "committed revolving credit facility",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 250,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "March 12, 2025",
+      "basis": null,
+      "quote": "The Revolving Credit Facility includes a $250 million documentary credit sublimit for letters of credit and bank guarantees.",
+      "span": {
+        "char_start": 2785,
+        "char_end": 2909
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "documentary credit sublimit for letters of credit and bank guarantees",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "March 12, 2025",
+      "basis": null,
+      "quote": "add one or more incremental revolving facilities to increase commitments under the Revolving Credit Facility in an aggregate amount not to exceed $1.5 billion",
+      "span": {
+        "char_start": 3157,
+        "char_end": 3315
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "maximum aggregate incremental revolving facilities",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The Revolving Credit Facility replaced the Company’s existing $2.5 billion revolving credit facility under the Company’s Credit Agreement dated as of May 14, 2021",
+      "span": {
+        "char_start": 3640,
+        "char_end": 3802
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "replaced existing revolving credit facility",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 0.875,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "from 0.875% to 1.50% per annum in the case of adjusted term SOFR borrowings",
+      "span": {
+        "char_start": 5261,
+        "char_end": 5336
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "minimum interest rate margin, adjusted term SOFR borrowings",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1.5,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "from 0.875% to 1.50% per annum in the case of adjusted term SOFR borrowings",
+      "span": {
+        "char_start": 5261,
+        "char_end": 5336
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "maximum interest rate margin, adjusted term SOFR borrowings",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 0.5,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "ranges from 0.00% to 0.50% per annum in the case of base rate borrowings",
+      "span": {
+        "char_start": 5184,
+        "char_end": 5256
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "maximum interest rate margin, base rate borrowings",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 0.075,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "The applicable commitment fee rate ranges from 0.075% to 0.225%.",
+      "span": {
+        "char_start": 5672,
+        "char_end": 5736
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "minimum commitment fee rate",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 0.225,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "The applicable commitment fee rate ranges from 0.075% to 0.225%.",
+      "span": {
+        "char_start": 5672,
+        "char_end": 5736
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "maximum commitment fee rate",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 5.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "in an aggregate amount equal to the greater of (x) $5.6 billion and (y) 15% of consolidated net tangible assets of the Company",
+      "span": {
+        "char_start": 7882,
+        "char_end": 8008
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "permitted indebtedness basket (fixed amount)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 15,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "in an aggregate amount equal to the greater of (x) $5.6 billion and (y) 15% of consolidated net tangible assets of the Company",
+      "span": {
+        "char_start": 7882,
+        "char_end": 8008
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "permitted indebtedness basket (% of consolidated net tangible assets)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 100,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "the principal amount of which aggregates $100 million or more",
+      "span": {
+        "char_start": 9360,
+        "char_end": 9421
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "cross-default indebtedness threshold",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "The Revolving Credit Agreement provides the Company with a committed $3.5 billion revolving credit facility (the “Revolving Credit Facility”).",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Revolving Credit Facility includes a $250 million documentary credit sublimit for letters of credit and bank guarantees.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "add one or more incremental revolving facilities to increase commitments under the Revolving Credit Facility in an aggregate amount not to exceed $1.5 billion",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Revolving Credit Facility replaced the Company’s existing $2.5 billion revolving credit facility under the Company’s Credit Agreement dated as of May 14, 2021",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "from 0.875% to 1.50% per annum in the case of adjusted term SOFR borrowings",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "from 0.875% to 1.50% per annum in the case of adjusted term SOFR borrowings",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "ranges from 0.00% to 0.50% per annum in the case of base rate borrowings",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The applicable commitment fee rate ranges from 0.075% to 0.225%.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The applicable commitment fee rate ranges from 0.075% to 0.225%.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "in an aggregate amount equal to the greater of (x) $5.6 billion and (y) 15% of consolidated net tangible assets of the Company",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "in an aggregate amount equal to the greater of (x) $5.6 billion and (y) 15% of consolidated net tangible assets of the Company",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the principal amount of which aggregates $100 million or more",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

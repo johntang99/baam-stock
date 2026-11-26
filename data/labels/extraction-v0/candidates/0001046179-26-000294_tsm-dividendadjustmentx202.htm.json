@@ -1,8 +1,79 @@
 {
   "doc_key": "0001046179-26-000294:tsm-dividendadjustmentx202.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37KJBW37RD4KM144G2T6",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9NH1KYES7HQNKNAYZMTH7",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 155595147126,
+      "unit": "USD",
+      "currency": "TWD",
+      "period": "fourth quarter of 2025",
+      "basis": null,
+      "quote": "TSMC Board of Directors on February 10, 2026 approved to distribute NT$155,595,147,126 as cash dividend (NT$6.0 per common share) for the fourth quarter of 2025",
+      "span": {
+        "char_start": 1498,
+        "char_end": 1658
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "cash dividend",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 6.0,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "fourth quarter of 2025",
+      "basis": null,
+      "quote": "NT$6.0 per common share) for the fourth quarter of 2025",
+      "span": {
+        "char_start": 1603,
+        "char_end": 1658
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "cash dividend per common share (originally approved)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 6.00003573,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "fourth quarter of 2025",
+      "basis": null,
+      "quote": "The cash dividend for the fourth quarter of 2025 is hereby adjusted to NT$6.00003573 per common share.",
+      "span": {
+        "char_start": 2110,
+        "char_end": 2212
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "adjusted cash dividend per common share",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "TSMC Board of Directors on February 10, 2026 approved to distribute NT$155,595,147,126 as cash dividend (NT$6.0 per common share) for the fourth quarter of 2025",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "NT$6.0 per common share) for the fourth quarter of 2025",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The cash dividend for the fourth quarter of 2025 is hereby adjusted to NT$6.00003573 per common share.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

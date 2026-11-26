@@ -1,8 +1,33 @@
 {
   "doc_key": "0001104659-25-075940:tm2522933d1_8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37N2YF5HC6G7YA2JMCTF",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8CA2AMT2CC3039TDVV6ZHFK",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD_billion",
+      "currency": null,
+      "period": "fourth fiscal quarter ending August 28, 2025",
+      "basis": null,
+      "quote": "On August 11, 2025, Micron Technology, Inc. issued a press release updating its guidance for the fourth fiscal quarter ending August 28, 2025.",
+      "span": {
+        "char_start": 2033,
+        "char_end": 2175
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "guidance update for the fourth fiscal quarter",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "On August 11, 2025, Micron Technology, Inc. issued a press release updating its guidance for the fourth fiscal quarter ending August 28, 2025.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

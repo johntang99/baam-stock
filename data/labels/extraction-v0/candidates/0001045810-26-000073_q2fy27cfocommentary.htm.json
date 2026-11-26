@@ -1,50 +1,826 @@
 {
   "doc_key": "0001045810-26-000073:q2fy27cfocommentary.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37JR6EFJ80HJV2B7M5P8",
+  "llm_call_id": "llm_01M8C9DM80511KA20E6TJRYE4Z",
   "candidates": [
+    {
+      "metric": "revenue",
+      "value": 96.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Revenue for the second quarter was a record $96.2 billion, up 106% from a year ago and up 18% sequentially.",
+      "span": {
+        "char_start": 1969,
+        "char_end": 2076
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 106,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Revenue for the second quarter was a record $96.2 billion, up 106% from a year ago and up 18% sequentially.",
+      "span": {
+        "char_start": 1969,
+        "char_end": 2076
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue growth from a year ago",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 18,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Revenue for the second quarter was a record $96.2 billion, up 106% from a year ago and up 18% sequentially.",
+      "span": {
+        "char_start": 1969,
+        "char_end": 2076
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue sequential growth",
+      "segment": null
+    },
+    {
+      "metric": "data_center_revenue",
+      "value": 89.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Data Center revenue for the second quarter was a record $89.0 billion, up 117% from a year ago and up 18% sequentially",
+      "span": {
+        "char_start": 2077,
+        "char_end": 2195
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center revenue",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 117,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Data Center revenue for the second quarter was a record $89.0 billion, up 117% from a year ago and up 18% sequentially",
+      "span": {
+        "char_start": 2077,
+        "char_end": 2195
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data Center revenue growth from a year ago",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue",
+      "value": 48710,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Hyperscale 48,710 43,050 24,168 13 % 102 %",
+      "span": {
+        "char_start": 1212,
+        "char_end": 1254
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Hyperscale revenue",
+      "segment": "Hyperscale"
+    },
+    {
+      "metric": "revenue",
+      "value": 40313,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "AI Clouds, Industrial, & Enterprise 40,313 32,196 16,928 25 % 138 %",
+      "span": {
+        "char_start": 1255,
+        "char_end": 1322
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "AI Clouds, Industrial, & Enterprise revenue",
+      "segment": "AI Clouds, Industrial, & Enterprise"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 138,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "ACIE revenue increased 138% from a year ago and 25% sequentially",
+      "span": {
+        "char_start": 2375,
+        "char_end": 2439
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "ACIE revenue growth from a year ago",
+      "segment": "AI Clouds, Industrial, & Enterprise"
+    },
     {
       "metric": "revenue",
       "value": 7.2,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue for the second quarter was $7.2 billion",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Edge Computing revenue for the second quarter was $7.2 billion, up 27% from a year ago and up 13% sequentially.",
       "span": {
-        "char_start": 2687,
-        "char_end": 2734
+        "char_start": 2672,
+        "char_end": 2783
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
-      "segment": null
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Edge Computing revenue",
+      "segment": "Edge Computing"
     },
     {
       "metric": "revenue",
-      "value": 1933.0,
-      "unit": "number",
-      "currency": null,
-      "period": null,
-      "basis": null,
-      "quote": "revenue under agreements with AI clouds; expectations with respect to the PORTS-Pike Technology Campus, including its buildout, related guarantees, and anticipated NVIDIA deployments, revenue and upgrade cycles; expectations with respect to our investments; expectations with respect to our financing arrangements; expectations with respect to technology developments, and related trends and drivers; our future cash dividends or other returns to stockholders, our financial and business outlook for the third quarter of fiscal 2027 and beyond; projected market growth and trends; expectations with respect to AI and related industries; and other statements that are not historical facts are forward-looking statements within the meaning of Section 27A of the Securities Act of 1933",
+      "value": 88299,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Compute & Networking $88,299 $74,550 $41,331 18 % 114 %",
       "span": {
-        "char_start": 13202,
-        "char_end": 13984
+        "char_start": 956,
+        "char_end": 1011
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Compute & Networking revenue",
+      "segment": "Compute & Networking"
+    },
+    {
+      "metric": "revenue",
+      "value": 7922,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Graphics 7,922 7,065 5,412 12 % 46 %",
+      "span": {
+        "char_start": 1012,
+        "char_end": 1048
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Graphics revenue",
+      "segment": "Graphics"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 75.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Gross margin 75.0 % 74.9 % 72.4 % 0.1 pts 2.6 pts",
+      "span": {
+        "char_start": 250,
+        "char_end": 299
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP gross margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 75.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Gross margin 75.0 % 75.0 % 72.5 % — 2.5 pts",
+      "span": {
+        "char_start": 629,
+        "char_end": 672
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP gross margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 72142,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP gross profit $ 72,142 $ 61,157 $ 33,853 $ 133,299 $ 60,521",
+      "span": {
+        "char_start": 16471,
+        "char_end": 16534
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP gross profit",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 72188,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP gross profit $ 72,188 $ 61,232 $ 33,902 $ 133,420 $ 60,695",
+      "span": {
+        "char_start": 16732,
+        "char_end": 16799
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP gross profit",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 8408,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Operating expenses $8,408 $7,621 $5,413 10 % 55 %",
+      "span": {
+        "char_start": 300,
+        "char_end": 349
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 8232,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Operating expenses $8,232 $7,449 $5,361 11 % 54 %",
+      "span": {
+        "char_start": 673,
+        "char_end": 722
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 63734,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Operating income $63,734 $53,536 $28,440 19 % 124 %",
+      "span": {
+        "char_start": 350,
+        "char_end": 401
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP operating income",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 63956,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Operating income $63,956 $53,783 $28,541 19 % 124 %",
+      "span": {
+        "char_start": 723,
+        "char_end": 774
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP operating income",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 59688,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Net income $59,688 $58,321 $26,422 2 % 126 %",
+      "span": {
+        "char_start": 402,
+        "char_end": 446
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP net income",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 53954,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Net income $53,954 $45,548 $24,763 18 % 118 %",
+      "span": {
+        "char_start": 775,
+        "char_end": 820
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP net income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 2.46,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Diluted earnings per share $2.46 $2.39 $1.08 3 % 128 %",
+      "span": {
+        "char_start": 447,
+        "char_end": 501
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP diluted earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 2.22,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Diluted earnings per share $2.22 $1.87 $1.01 19 % 120 %",
+      "span": {
+        "char_start": 821,
+        "char_end": 876
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP diluted earnings per share",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 24.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Cash flow from operating activities was $24.1 billion, up from $15.4 billion a year ago and down from $50.3 billion a quarter ago.",
+      "span": {
+        "char_start": 9299,
+        "char_end": 9429
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash flow from operating activities",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 21341,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 21,341 $ 48,554 $ 13,450 $ 69,895 $ 39,584",
+      "span": {
+        "char_start": 18357,
+        "char_end": 18416
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 7.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Net gains from equity securities for the second quarter were $7.8 billion.",
+      "span": {
+        "char_start": 3794,
+        "char_end": 3868
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net gains from equity securities",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 16.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP effective tax rate for the second quarter was 16.5%, an increase from a year ago, primarily due to higher revenue.",
+      "span": {
+        "char_start": 3869,
+        "char_end": 3988
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP effective tax rate",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 16.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP effective tax rate for the second quarter was 16.0%.",
+      "span": {
+        "char_start": 3989,
+        "char_end": 4050
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP effective tax rate",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 279,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "as of July 26, 2026",
+      "basis": null,
+      "quote": "Our commitments increased from $119 billion last quarter to $279 billion, primarily related to the procurement of memory.",
+      "span": {
+        "char_start": 4370,
+        "char_end": 4491
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Commitments (supply and capacity)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 108.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "as of August 2026",
+      "basis": null,
+      "quote": "Total $ 108.5",
+      "span": {
+        "char_start": 8568,
+        "char_end": 8581
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Maximum gross exposure related to guarantees",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 56.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Cash, cash equivalents, and marketable debt securities were $56.6 billion, up from $53.6 billion a year ago and up from $50.3 billion a quarter ago.",
+      "span": {
+        "char_start": 8610,
+        "char_end": 8758
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash, cash equivalents, and marketable debt securities",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 26.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": null,
+      "quote": "return a record of nearly $26.0 billion to shareholders in the second quarter through share repurchases and cash dividends",
+      "span": {
+        "char_start": 8827,
+        "char_end": 8949
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Returned to shareholders through share repurchases and cash dividends",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 63.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Accounts receivable was $63.1 billion with 60 days sales outstanding (DSO), up from 45 days sequentially",
+      "span": {
+        "char_start": 8951,
+        "char_end": 9055
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Accounts receivable",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 31.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Inventory was $31.6 billion, up from $25.8 billion sequentially",
+      "span": {
+        "char_start": 9163,
+        "char_end": 9226
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Inventory",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 25.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2027",
+      "basis": null,
+      "quote": "We issued $25.0 billion of senior unsecured notes in the second quarter to be used for general corporate purposes.",
+      "span": {
+        "char_start": 9579,
+        "char_end": 9693
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Senior unsecured notes issued",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 108.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": null,
+      "quote": "Revenue is expected to be $108.0 billion, plus or minus 2%.",
+      "span": {
+        "char_start": 9764,
+        "char_end": 9823
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Revenue outlook",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 74.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP and non-GAAP gross margins are expected to be 74.0%, plus or minus 50 basis points.",
+      "span": {
+        "char_start": 9905,
+        "char_end": 9993
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP and non-GAAP gross margins outlook",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 9.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "GAAP and non-GAAP operating expenses are expected to be approximately $9.2 billion and $9.0 billion, respectively.",
+      "span": {
+        "char_start": 9996,
+        "char_end": 10110
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP operating expenses outlook",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 9.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": "non_gaap",
+      "quote": "GAAP and non-GAAP operating expenses are expected to be approximately $9.2 billion and $9.0 billion, respectively.",
+      "span": {
+        "char_start": 9996,
+        "char_end": 10110
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP operating expenses outlook",
       "segment": null
     }
   ],
   "dropped": [
     {
       "metric": "revenue",
-      "quote": "revenue under agreements with AI clouds; expectations with respect to the PORTS-Pike Technology Campus, including its buildout, related guarantees, and anticipated NVIDIA deployments, revenue and upgrade cycles; expectations with respect to our investments; expectations with respect to our financing arrangements; expectations with respect to technology developments, and related trends and drivers; our future cash dividends or other returns to stockholders, our financial and business outlook for the third quarter of fiscal 2027 and beyond; projected market growth and trends; expectations with respect to AI and related industries; and other statements that are not historical facts are forward-looking statements within the meaning of Section 27A of the Securities Act of 1933",
-      "reason": "unit_not_allowed:number"
+      "quote": "Hyperscale 48,710 43,050 24,168 13 % 102 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "AI Clouds, Industrial, & Enterprise 40,313 32,196 16,928 25 % 138 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Compute & Networking $88,299 $74,550 $41,331 18 % 114 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Graphics 7,922 7,065 5,412 12 % 46 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "GAAP gross profit $ 72,142 $ 61,157 $ 33,853 $ 133,299 $ 60,521",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Non-GAAP gross profit $ 72,188 $ 61,232 $ 33,902 $ 133,420 $ 60,695",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses $8,408 $7,621 $5,413 10 % 55 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses $8,232 $7,449 $5,361 11 % 54 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income $63,734 $53,536 $28,440 19 % 124 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income $63,956 $53,783 $28,541 19 % 124 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income $59,688 $58,321 $26,422 2 % 126 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income $53,954 $45,548 $24,763 18 % 118 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "free_cash_flow",
+      "quote": "Free cash flow $ 21,341 $ 48,554 $ 13,450 $ 69,895 $ 39,584",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Net gains from equity securities for the second quarter were $7.8 billion.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "GAAP effective tax rate for the second quarter was 16.5%, an increase from a year ago, primarily due to higher revenue.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Non-GAAP effective tax rate for the second quarter was 16.0%.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Our commitments increased from $119 billion last quarter to $279 billion, primarily related to the procurement of memory.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Total $ 108.5",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Cash, cash equivalents, and marketable debt securities were $56.6 billion, up from $53.6 billion a year ago and up from $50.3 billion a quarter ago.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "return a record of nearly $26.0 billion to shareholders in the second quarter through share repurchases and cash dividends",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Accounts receivable was $63.1 billion with 60 days sales outstanding (DSO), up from 45 days sequentially",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Inventory was $31.6 billion, up from $25.8 billion sequentially",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "We issued $25.0 billion of senior unsecured notes in the second quarter to be used for general corporate purposes.",
+      "reason": "unknown_metric"
     }
   ],
   "validation_notes": []

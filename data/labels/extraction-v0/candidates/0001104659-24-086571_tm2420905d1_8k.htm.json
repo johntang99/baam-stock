@@ -1,8 +1,33 @@
 {
   "doc_key": "0001104659-24-086571:tm2420905d1_8k.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37MP9ZFEH1C0SH5PY9M4",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9ZDBBD4ZHMZXK0PTM5RBZ",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "In light of improved conditions, on August 7, 2024, the Company determined that repurchases may resume, which will help offset dilution from employee stock purchase programs.",
+      "span": {
+        "char_start": 2523,
+        "char_end": 2697
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Stock repurchase program resumption",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "In light of improved conditions, on August 7, 2024, the Company determined that repurchases may resume, which will help offset dilution from employee stock purchase programs.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

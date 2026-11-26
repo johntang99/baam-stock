@@ -1,8 +1,79 @@
 {
   "doc_key": "0001046179-26-000280:tsmctosell81ofvanguardinte.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37KHSEKZ7EPH7R3A84FH",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C9N7NNMX7V3A6ZPKFW961K",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 8.1,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "plans to execute the sale of up to 152.0 million common shares of Vanguard International Semiconductor Corporation (“VIS”), or approximately 8.1% of VIS’ fully-diluted paid-in-capital",
+      "span": {
+        "char_start": 1587,
+        "char_end": 1770
+      },
+      "direction": "decrease",
+      "scope": "other",
+      "certainty": "guidance",
+      "metric_label": "VIS shares to be sold as percentage of fully-diluted paid-in-capital",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 27.1,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "TSMC currently holds approximately 27.1% of VIS shares on a fully diluted basis.",
+      "span": {
+        "char_start": 2171,
+        "char_end": 2251
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Current TSMC shareholding in VIS (fully diluted)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 19,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "Upon the completion of this share sale, TSMC expects to reduce its shareholding in VIS to approximately 19%.",
+      "span": {
+        "char_start": 2252,
+        "char_end": 2360
+      },
+      "direction": "decrease",
+      "scope": "other",
+      "certainty": "guidance",
+      "metric_label": "Expected TSMC shareholding in VIS after share sale",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "plans to execute the sale of up to 152.0 million common shares of Vanguard International Semiconductor Corporation (“VIS”), or approximately 8.1% of VIS’ fully-diluted paid-in-capital",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "TSMC currently holds approximately 27.1% of VIS shares on a fully diluted basis.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Upon the completion of this share sale, TSMC expects to reduce its shareholding in VIS to approximately 19%.",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

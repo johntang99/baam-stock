@@ -1,24 +1,150 @@
 {
   "doc_key": "0001835632-25-000187:q226_8kx822025ex-991.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37RJ9RZ25EDR2MS86N9Y",
+  "llm_call_id": "llm_01M8CB15S7BBWDN6MT1KFMT0RJ",
   "candidates": [
     {
       "metric": "revenue",
       "value": 2.006,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue for the second quarter of fiscal 2026 was $2.006 billion",
+      "period": "second quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Net revenue for the second quarter of fiscal 2026 was $2.006 billion, $6.0 million above the mid-point of the Company’s guidance provided on May 29, 2025.",
       "span": {
-        "char_start": 771,
-        "char_end": 835
+        "char_start": 767,
+        "char_end": 921
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 58,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2026",
+      "basis": null,
+      "quote": "Q2 Net Revenue: $2.006 billion, a new record, grew by 58% year-on-year",
+      "span": {
+        "char_start": 158,
+        "char_end": 228
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Q2 Net Revenue year-on-year growth",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 6,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2026",
+      "basis": null,
+      "quote": "Total Net Revenue $ 2,006.1 $ 1,895.3 $ 1,272.9 58 % 6 %",
+      "span": {
+        "char_start": 27897,
+        "char_end": 27953
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total Net Revenue QoQ % change",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 6.0,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2026",
+      "basis": null,
+      "quote": "$6.0 million above the mid-point of the Company’s guidance provided on May 29, 2025",
+      "span": {
+        "char_start": 837,
+        "char_end": 920
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net revenue above mid-point of guidance",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 50.4,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Q2 Gross Margin: 50.4% GAAP gross margin; 59.4% non-GAAP gross margin",
+      "span": {
+        "char_start": 231,
+        "char_end": 300
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP gross margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 59.4,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Q2 Gross Margin: 50.4% GAAP gross margin; 59.4% non-GAAP gross margin",
+      "span": {
+        "char_start": 231,
+        "char_end": 300
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "non-GAAP gross margin",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 0.22,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP net income for the second quarter of fiscal 2026 was $194.8 million, or $0.22 per diluted share.",
+      "span": {
+        "char_start": 922,
+        "char_end": 1023
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP diluted income per share",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 0.67,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP net income for the second quarter of fiscal 2026 was $585.5 million, or $0.67 per diluted share.",
+      "span": {
+        "char_start": 1024,
+        "char_end": 1129
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP diluted income per share",
       "segment": null
     },
     {
@@ -26,17 +152,17 @@
       "value": 194.8,
       "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income for the second quarter of fiscal 2026 was $194.8 million",
+      "period": "second quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP net income for the second quarter of fiscal 2026 was $194.8 million, or $0.22 per diluted share.",
       "span": {
-        "char_start": 927,
-        "char_end": 994
+        "char_start": 922,
+        "char_end": 1023
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP net income",
       "segment": null
     },
     {
@@ -44,43 +170,540 @@
       "value": 585.5,
       "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income for the second quarter of fiscal 2026 was $585.5 million",
+      "period": "second quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP net income for the second quarter of fiscal 2026 was $585.5 million, or $0.67 per diluted share.",
       "span": {
-        "char_start": 1033,
-        "char_end": 1100
+        "char_start": 1024,
+        "char_end": 1129
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP net income",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 461.6,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Cash flow from operations for the second quarter was $461.6 million.",
+      "span": {
+        "char_start": 1130,
+        "char_end": 1198
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash flow from operations",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 1010.6,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Gross profit 1,010.6 952.4 587.6 1,963.0 1,115.4",
+      "span": {
+        "char_start": 16282,
+        "char_end": 16330
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross profit",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 1191.4,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP gross profit $ 1,191.4 $ 1,133.5 $ 787.5 $ 2,324.9 $ 1,511.5",
+      "span": {
+        "char_start": 21313,
+        "char_end": 21382
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP gross profit",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 720.5,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Total operating expenses 720.5 681.8 688.0 1,402.3 1,368.1",
+      "span": {
+        "char_start": 16542,
+        "char_end": 16600
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 492.6,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Total non-GAAP operating expenses $ 492.6 $ 486.2 $ 455.8 $ 978.8 $ 909.6",
+      "span": {
+        "char_start": 22094,
+        "char_end": 22167
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total non-GAAP operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 290.1,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "Operating income (loss) 290.1 270.6 (100.4) 560.7 (252.7)",
+      "span": {
+        "char_start": 16601,
+        "char_end": 16658
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income (loss)",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 14.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP operating margin 14.5 % 14.3 % (7.9) % 14.4 % (10.4) %",
+      "span": {
+        "char_start": 22168,
+        "char_end": 22227
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP operating margin",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 34.8,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP operating margin 34.8 % 34.2 % 26.1 % 34.5 % 24.7 %",
+      "span": {
+        "char_start": 22522,
+        "char_end": 22582
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP operating margin",
       "segment": null
     },
     {
       "metric": "revenue",
-      "value": 2.006,
+      "value": 3901.4,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "six months ended August 2, 2025",
+      "basis": "gaap",
+      "quote": "Net revenue $ 2,006.1 $ 1,895.3 $ 1,272.9 $ 3,901.4 $ 2,433.8",
+      "span": {
+        "char_start": 16167,
+        "char_end": 16228
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net revenue (six months ended August 2, 2025)",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 794.5,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "six months ended August 2, 2025",
+      "basis": "gaap",
+      "quote": "Net cash provided by operating activities 461.6 306.4 794.5 630.9",
+      "span": {
+        "char_start": 19561,
+        "char_end": 19626
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net cash provided by operating activities (six months)",
+      "segment": null
+    },
+    {
+      "metric": "data_center_revenue",
+      "value": 1490.5,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2026",
+      "basis": null,
+      "quote": "Data center $ 1,490.5 $ 1,440.6 $ 880.9 69 % 3 %",
+      "span": {
+        "char_start": 27668,
+        "char_end": 27716
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data center revenue",
+      "segment": "Data center"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 69,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2026",
+      "basis": null,
+      "quote": "Data center $ 1,490.5 $ 1,440.6 $ 880.9 69 % 3 %",
+      "span": {
+        "char_start": 27668,
+        "char_end": 27716
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data center revenue YoY % change",
+      "segment": "Data center"
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 3,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2026",
+      "basis": null,
+      "quote": "Data center $ 1,490.5 $ 1,440.6 $ 880.9 69 % 3 %",
+      "span": {
+        "char_start": 27668,
+        "char_end": 27716
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Data center revenue QoQ % change",
+      "segment": "Data center"
+    },
+    {
+      "metric": "revenue",
+      "value": 193.6,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2026",
+      "basis": null,
+      "quote": "Enterprise networking 193.6 177.5 151.0 28 % 9 %",
+      "span": {
+        "char_start": 27717,
+        "char_end": 27765
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Enterprise networking revenue",
+      "segment": "Enterprise networking"
+    },
+    {
+      "metric": "revenue",
+      "value": 130.1,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2026",
+      "basis": null,
+      "quote": "Carrier infrastructure 130.1 138.4 75.9 71 % (6) %",
+      "span": {
+        "char_start": 27766,
+        "char_end": 27816
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Carrier infrastructure revenue",
+      "segment": "Carrier infrastructure"
+    },
+    {
+      "metric": "revenue",
+      "value": 115.9,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2026",
+      "basis": null,
+      "quote": "Consumer 115.9 63.1 88.9 30 % 84 %",
+      "span": {
+        "char_start": 27817,
+        "char_end": 27851
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Consumer revenue",
+      "segment": "Consumer"
+    },
+    {
+      "metric": "revenue",
+      "value": 76.0,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal 2026",
+      "basis": null,
+      "quote": "Automotive/industrial 76.0 75.7 76.2 — % — %",
+      "span": {
+        "char_start": 27852,
+        "char_end": 27896
+      },
+      "direction": "unchanged",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Automotive/industrial revenue",
+      "segment": "Automotive/industrial"
+    },
+    {
+      "metric": "other",
+      "value": 10.0,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "For the second quarter of fiscal 2026, a non-GAAP tax rate of 10.0% has been applied to the non-GAAP financial results.",
+      "span": {
+        "char_start": 5744,
+        "char_end": 5863
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP tax rate",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 2.06,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
+      "period": "third quarter of fiscal 2026",
       "basis": null,
-      "quote": "revenue of $2.006 billion",
+      "quote": "Net revenue is expected to be $2.060 billion +/- 5%.",
       "span": {
-        "char_start": 1225,
-        "char_end": 1250
+        "char_start": 1906,
+        "char_end": 1958
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Net revenue outlook",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": null,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP gross margin is expected to be 51.5% to 52.0%.",
+      "span": {
+        "char_start": 1961,
+        "char_end": 2012
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP gross margin outlook (51.5% to 52.0%)",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": null,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP gross margin is expected to be 59.5% to 60.0%.",
+      "span": {
+        "char_start": 2015,
+        "char_end": 2070
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP gross margin outlook (59.5% to 60.0%)",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 719,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP operating expenses are expected to be approximately $719 million.",
+      "span": {
+        "char_start": 2073,
+        "char_end": 2143
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP operating expenses outlook",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 485,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP operating expenses are expected to be approximately $485 million.",
+      "span": {
+        "char_start": 2146,
+        "char_end": 2220
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP operating expenses outlook",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 2.03,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2026",
+      "basis": "gaap",
+      "quote": "GAAP diluted net income per share is expected to be $2.03 +/- $0.05 per share.",
+      "span": {
+        "char_start": 2377,
+        "char_end": 2455
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "GAAP diluted net income per share outlook",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 0.74,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP diluted net income per share is expected to be $0.74 +/- $0.05 per share.",
+      "span": {
+        "char_start": 2458,
+        "char_end": 2540
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP diluted net income per share outlook",
       "segment": null
     }
   ],
   "dropped": [
     {
-      "metric": "net_income",
-      "quote": "net income for the second quarter of fiscal 2026 was $194.8 million",
-      "reason": "conflicting_values"
+      "metric": "other",
+      "quote": "$6.0 million above the mid-point of the Company’s guidance provided on May 29, 2025",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross profit 1,010.6 952.4 587.6 1,963.0 1,115.4",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Non-GAAP gross profit $ 1,191.4 $ 1,133.5 $ 787.5 $ 2,324.9 $ 1,511.5",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Total operating expenses 720.5 681.8 688.0 1,402.3 1,368.1",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Total non-GAAP operating expenses $ 492.6 $ 486.2 $ 455.8 $ 978.8 $ 909.6",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income (loss) 290.1 270.6 (100.4) 560.7 (252.7)",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Net revenue $ 2,006.1 $ 1,895.3 $ 1,272.9 $ 3,901.4 $ 2,433.8",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "quote": "Net cash provided by operating activities 461.6 306.4 794.5 630.9",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "data_center_revenue",
+      "quote": "Data center $ 1,490.5 $ 1,440.6 $ 880.9 69 % 3 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Enterprise networking 193.6 177.5 151.0 28 % 9 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Carrier infrastructure 130.1 138.4 75.9 71 % (6) %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Consumer 115.9 63.1 88.9 30 % 84 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Automotive/industrial 76.0 75.7 76.2 — % — %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "For the second quarter of fiscal 2026, a non-GAAP tax rate of 10.0% has been applied to the non-GAAP financial results.",
+      "reason": "unknown_metric"
     }
   ],
   "validation_notes": []

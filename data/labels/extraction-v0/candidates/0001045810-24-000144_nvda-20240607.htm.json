@@ -1,8 +1,56 @@
 {
   "doc_key": "0001045810-24-000144:nvda-20240607.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37H4ZY7AKDC7PE52C1QM",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C8DFZTV2TQ2K6EZYPVJQ01",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "On May 22, 2024, NVIDIA Corporation, or the Company, announced a ten-for-one forward stock split, or the Stock Split, of the Company’s issued common stock",
+      "span": {
+        "char_start": 2196,
+        "char_end": 2350
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "ten-for-one forward stock split",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "proportionately increase the number of shares of the Company’s authorized common stock from 8 billion to 80 billion",
+      "span": {
+        "char_start": 2582,
+        "char_end": 2697
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "authorized common stock increased from 8 billion to 80 billion shares",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "On May 22, 2024, NVIDIA Corporation, or the Company, announced a ten-for-one forward stock split, or the Stock Split, of the Company’s issued common stock",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "proportionately increase the number of shares of the Company’s authorized common stock from 8 billion to 80 billion",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

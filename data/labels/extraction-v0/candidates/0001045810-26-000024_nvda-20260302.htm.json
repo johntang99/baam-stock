@@ -1,8 +1,240 @@
 {
   "doc_key": "0001045810-26-000024:nvda-20260302.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37JCXWAY2EDX6EJ3HZ9V",
-  "candidates": [],
-  "dropped": [],
+  "llm_call_id": "llm_01M8C990KT3CREZMAND3WYK4D6",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 4000000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "fiscal year 2027",
+      "basis": null,
+      "quote": "Jen-Hsun Huang President and Chief Executive Officer $4,000,000 200%",
+      "span": {
+        "char_start": 3734,
+        "char_end": 3802
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Target Award Opportunity for Base Compensation Plan Achievement - Jen-Hsun Huang",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 200,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal year 2027",
+      "basis": null,
+      "quote": "Jen-Hsun Huang President and Chief Executive Officer $4,000,000 200%",
+      "span": {
+        "char_start": 3734,
+        "char_end": 3802
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Target Award Opportunity as a % of Fiscal Year 2027 Base Salary - Jen-Hsun Huang",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1500000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "fiscal year 2027",
+      "basis": null,
+      "quote": "Colette M. Kress Executive Vice President and Chief Financial Officer $1,500,000 150%",
+      "span": {
+        "char_start": 3803,
+        "char_end": 3888
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Target Award Opportunity for Base Compensation Plan Achievement - Colette M. Kress",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 150,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal year 2027",
+      "basis": null,
+      "quote": "Colette M. Kress Executive Vice President and Chief Financial Officer $1,500,000 150%",
+      "span": {
+        "char_start": 3803,
+        "char_end": 3888
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Target Award Opportunity as a % of Fiscal Year 2027 Base Salary - Colette M. Kress",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1500000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "fiscal year 2027",
+      "basis": null,
+      "quote": "Ajay K. Puri Executive Vice President, Worldwide Field Operations $1,500,000 150%",
+      "span": {
+        "char_start": 3889,
+        "char_end": 3970
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Target Award Opportunity for Base Compensation Plan Achievement - Ajay K. Puri",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 150,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal year 2027",
+      "basis": null,
+      "quote": "Ajay K. Puri Executive Vice President, Worldwide Field Operations $1,500,000 150%",
+      "span": {
+        "char_start": 3889,
+        "char_end": 3970
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Target Award Opportunity as a % of Fiscal Year 2027 Base Salary - Ajay K. Puri",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1500000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "fiscal year 2027",
+      "basis": null,
+      "quote": "Debora Shoquist Executive Vice President, Operations $1,500,000 150%",
+      "span": {
+        "char_start": 3971,
+        "char_end": 4039
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Target Award Opportunity for Base Compensation Plan Achievement - Debora Shoquist",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 150,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal year 2027",
+      "basis": null,
+      "quote": "Debora Shoquist Executive Vice President, Operations $1,500,000 150%",
+      "span": {
+        "char_start": 3971,
+        "char_end": 4039
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Target Award Opportunity as a % of Fiscal Year 2027 Base Salary - Debora Shoquist",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1500000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "fiscal year 2027",
+      "basis": null,
+      "quote": "Timothy S. Teter Executive Vice President, General Counsel and Secretary $1,500,000 150%",
+      "span": {
+        "char_start": 4040,
+        "char_end": 4128
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Target Award Opportunity for Base Compensation Plan Achievement - Timothy S. Teter",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 150,
+      "unit": "pct",
+      "currency": null,
+      "period": "fiscal year 2027",
+      "basis": null,
+      "quote": "Timothy S. Teter Executive Vice President, General Counsel and Secretary $1,500,000 150%",
+      "span": {
+        "char_start": 4040,
+        "char_end": 4128
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Target Award Opportunity as a % of Fiscal Year 2027 Base Salary - Timothy S. Teter",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Jen-Hsun Huang President and Chief Executive Officer $4,000,000 200%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Jen-Hsun Huang President and Chief Executive Officer $4,000,000 200%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Colette M. Kress Executive Vice President and Chief Financial Officer $1,500,000 150%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Colette M. Kress Executive Vice President and Chief Financial Officer $1,500,000 150%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Ajay K. Puri Executive Vice President, Worldwide Field Operations $1,500,000 150%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Ajay K. Puri Executive Vice President, Worldwide Field Operations $1,500,000 150%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Debora Shoquist Executive Vice President, Operations $1,500,000 150%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Debora Shoquist Executive Vice President, Operations $1,500,000 150%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Timothy S. Teter Executive Vice President, General Counsel and Secretary $1,500,000 150%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Timothy S. Teter Executive Vice President, General Counsel and Secretary $1,500,000 150%",
+      "reason": "unknown_metric"
+    }
+  ],
   "validation_notes": []
 }

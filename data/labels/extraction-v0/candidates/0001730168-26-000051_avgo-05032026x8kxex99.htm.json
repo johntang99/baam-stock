@@ -1,96 +1,330 @@
 {
   "doc_key": "0001730168-26-000051:avgo-05032026x8kxex99.htm",
   "extraction_status": "succeeded",
-  "llm_call_id": "llm_01M8BW37RDVA96PVYJDV59EQYE",
+  "llm_call_id": "llm_01M8CAZN906XZ2V8HB50E9AP8D",
   "candidates": [
     {
       "metric": "revenue",
-      "value": 22.0,
-      "unit": "number",
+      "value": 22187,
+      "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "Revenue of $22",
+      "period": "second quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Revenue of $22,187 million for the second quarter, up 48 percent from the prior year period",
       "span": {
         "char_start": 165,
-        "char_end": 179
+        "char_end": 256
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 48,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Revenue of $22,187 million for the second quarter, up 48 percent from the prior year period",
+      "span": {
+        "char_start": 165,
+        "char_end": 256
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue growth from prior year period",
       "segment": null
     },
     {
       "metric": "net_income",
-      "value": 9.0,
-      "unit": "number",
+      "value": 9310,
+      "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income of $9",
+      "period": "second quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "GAAP net income of $9,310 million for the second quarter",
       "span": {
-        "char_start": 264,
-        "char_end": 280
+        "char_start": 259,
+        "char_end": 315
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP net income",
       "segment": null
     },
     {
       "metric": "net_income",
-      "value": 12.0,
-      "unit": "number",
+      "value": 12074,
+      "unit": "USD_million",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "net income of $12",
+      "period": "second quarter of fiscal year 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP net income of $12,074 million for the second quarter",
       "span": {
-        "char_start": 326,
-        "char_end": 343
+        "char_start": 317,
+        "char_end": 378
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP net income",
       "segment": null
     },
     {
-      "metric": "revenue",
+      "metric": "other",
+      "value": 15244,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal year 2026",
+      "basis": "non_gaap",
+      "quote": "Adjusted EBITDA of $15,244 million for the second quarter, or 69 percent of revenue",
+      "span": {
+        "char_start": 381,
+        "char_end": 464
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Adjusted EBITDA",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 69,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal year 2026",
+      "basis": "non_gaap",
+      "quote": "Adjusted EBITDA of $15,244 million for the second quarter, or 69 percent of revenue",
+      "span": {
+        "char_start": 381,
+        "char_end": 464
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Adjusted EBITDA as percent of revenue",
+      "segment": null
+    },
+    {
+      "metric": "eps",
       "value": 1.91,
-      "unit": "number",
+      "unit": "USD_per_share",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue • GAAP diluted EPS of $1.91",
+      "period": "second quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "GAAP diluted EPS of $1.91 for the second quarter",
       "span": {
-        "char_start": 457,
-        "char_end": 492
+        "char_start": 467,
+        "char_end": 515
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP diluted EPS",
       "segment": null
     },
     {
-      "metric": "revenue",
-      "value": 0.65,
-      "unit": "number",
+      "metric": "eps",
+      "value": 2.44,
+      "unit": "USD_per_share",
       "currency": "USD",
-      "period": null,
-      "basis": null,
-      "quote": "revenue • Quarterly common stock dividend of $0.65",
+      "period": "second quarter of fiscal year 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP diluted EPS of $2.44 for the second quarter",
       "span": {
-        "char_start": 743,
-        "char_end": 793
+        "char_start": 517,
+        "char_end": 569
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP diluted EPS",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 10493,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Cash from operations of $10,493 million for the second quarter, less capital expenditures of $231 million, resulted in $10,262 million of free cash flow, or 46 percent of revenue",
+      "span": {
+        "char_start": 572,
+        "char_end": 750
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash from operations",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 231,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Cash from operations of $10,493 million for the second quarter, less capital expenditures of $231 million, resulted in $10,262 million of free cash flow, or 46 percent of revenue",
+      "span": {
+        "char_start": 572,
+        "char_end": 750
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Capital expenditures",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 10262,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal year 2026",
+      "basis": "non_gaap",
+      "quote": "Cash from operations of $10,493 million for the second quarter, less capital expenditures of $231 million, resulted in $10,262 million of free cash flow, or 46 percent of revenue",
+      "span": {
+        "char_start": 572,
+        "char_end": 750
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 46,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal year 2026",
+      "basis": "non_gaap",
+      "quote": "Cash from operations of $10,493 million for the second quarter, less capital expenditures of $231 million, resulted in $10,262 million of free cash flow, or 46 percent of revenue",
+      "span": {
+        "char_start": 572,
+        "char_end": 750
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow as percent of revenue",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 0.65,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "third quarter of fiscal year 2026",
+      "basis": null,
+      "quote": "The Board of Directors of Broadcom has approved a quarterly cash dividend of $0.65 per share.",
+      "span": {
+        "char_start": 5137,
+        "char_end": 5230
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Quarterly common stock dividend",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 3092,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal year 2026",
+      "basis": null,
+      "quote": "On March 31, 2026, the Company paid a cash dividend of $0.65 per share, totaling $3,092 million.",
+      "span": {
+        "char_start": 3768,
+        "char_end": 3864
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash dividend paid",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 29.4,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal year 2026",
+      "basis": null,
+      "quote": "Third quarter fiscal year 2026 revenue guidance of approximately $29.4 billion, an increase of 84 percent from the prior year period",
+      "span": {
+        "char_start": 806,
+        "char_end": 938
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Third quarter revenue guidance",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 84,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal year 2026",
+      "basis": null,
+      "quote": "Third quarter fiscal year 2026 revenue guidance of approximately $29.4 billion, an increase of 84 percent from the prior year period",
+      "span": {
+        "char_start": 806,
+        "char_end": 938
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Third quarter revenue growth guidance",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 67,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal year 2026",
+      "basis": "non_gaap",
+      "quote": "Third quarter fiscal year 2026 Non-GAAP operating income guidance of approximately 67 percent of projected revenue",
+      "span": {
+        "char_start": 941,
+        "char_end": 1055
+      },
+      "direction": "unchanged",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP operating income guidance as percent of projected revenue",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 68,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal year 2026",
+      "basis": "non_gaap",
+      "quote": "Third quarter fiscal year 2026 Adjusted EBITDA guidance of approximately 68 percent of projected revenue",
+      "span": {
+        "char_start": 1062,
+        "char_end": 1166
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Adjusted EBITDA guidance as percent of projected revenue",
       "segment": null
     },
     {
@@ -98,45 +332,311 @@
       "value": 10.8,
       "unit": "USD_billion",
       "currency": "USD",
-      "period": null,
+      "period": "second quarter of fiscal year 2026",
       "basis": null,
-      "quote": "revenue from AI of $10.8 billion",
+      "quote": "Q2 semiconductor revenue from AI of $10.8 billion grew 143% year-over-year",
       "span": {
-        "char_start": 1729,
-        "char_end": 1761
+        "char_start": 1712,
+        "char_end": 1786
       },
-      "direction": null,
-      "scope": null,
-      "certainty": null,
-      "metric_label": null,
+      "direction": "increase",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "Semiconductor revenue from AI",
+      "segment": "AI semiconductor"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 143,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal year 2026",
+      "basis": null,
+      "quote": "Q2 semiconductor revenue from AI of $10.8 billion grew 143% year-over-year",
+      "span": {
+        "char_start": 1712,
+        "char_end": 1786
+      },
+      "direction": "increase",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "AI semiconductor revenue growth year-over-year",
+      "segment": "AI semiconductor"
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 16.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal year 2026",
+      "basis": null,
+      "quote": "in Q3 we expect semiconductor revenue from AI to grow over 200 percent year-over-year to $16.0 billion.",
+      "span": {
+        "char_start": 1961,
+        "char_end": 2064
+      },
+      "direction": "increase",
+      "scope": "product",
+      "certainty": "guidance",
+      "metric_label": "Expected semiconductor revenue from AI",
+      "segment": "AI semiconductor"
+    },
+    {
+      "metric": "revenue",
+      "value": 15009,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Semiconductor solutions $ 15,009 68 % $ 8,408 56 % +79 %",
+      "span": {
+        "char_start": 3261,
+        "char_end": 3317
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Semiconductor solutions net revenue",
+      "segment": "Semiconductor solutions"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 79,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Semiconductor solutions $ 15,009 68 % $ 8,408 56 % +79 %",
+      "span": {
+        "char_start": 3261,
+        "char_end": 3317
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Semiconductor solutions revenue change",
+      "segment": "Semiconductor solutions"
+    },
+    {
+      "metric": "revenue",
+      "value": 7178,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Infrastructure software 7,178 32 6,596 44 +9 %",
+      "span": {
+        "char_start": 3318,
+        "char_end": 3364
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Infrastructure software net revenue",
+      "segment": "Infrastructure software"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 9,
+      "unit": "pct",
+      "currency": null,
+      "period": "second quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Infrastructure software 7,178 32 6,596 44 +9 %",
+      "span": {
+        "char_start": 3318,
+        "char_end": 3364
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Infrastructure software revenue change",
+      "segment": "Infrastructure software"
+    },
+    {
+      "metric": "other",
+      "value": 19628,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "end of second quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "The Company’s cash and cash equivalents at the end of the fiscal quarter were $19,628 million",
+      "span": {
+        "char_start": 3413,
+        "char_end": 3506
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash and cash equivalents",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 15415,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Gross margin 15,415 13,157 10,197 28,572 20,342",
+      "span": {
+        "char_start": 14595,
+        "char_end": 14642
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 17109,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal year 2026",
+      "basis": "non_gaap",
+      "quote": "Gross margin on non-GAAP basis $ 17,109 $ 14,868 $ 11,911 $ 31,977 $ 23,707",
+      "span": {
+        "char_start": 16194,
+        "char_end": 16269
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin on non-GAAP basis",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 4627,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Total operating expenses 4,627 4,594 4,368 9,221 8,253",
+      "span": {
+        "char_start": 14892,
+        "char_end": 14946
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 10788,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Operating income 10,788 8,563 5,829 19,351 12,089",
+      "span": {
+        "char_start": 14947,
+        "char_end": 14996
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 14928,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "second quarter of fiscal year 2026",
+      "basis": "non_gaap",
+      "quote": "Operating income on non-GAAP basis $ 14,928 $ 12,826 $ 9,793 $ 27,754 $ 19,621",
+      "span": {
+        "char_start": 17484,
+        "char_end": 17562
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income on non-GAAP basis",
       "segment": null
     }
   ],
   "dropped": [
     {
+      "metric": "other",
+      "quote": "Adjusted EBITDA of $15,244 million for the second quarter, or 69 percent of revenue",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Adjusted EBITDA of $15,244 million for the second quarter, or 69 percent of revenue",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Cash from operations of $10,493 million for the second quarter, less capital expenditures of $231 million, resulted in $10,262 million of free cash flow, or 46 percent of revenue",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Cash from operations of $10,493 million for the second quarter, less capital expenditures of $231 million, resulted in $10,262 million of free cash flow, or 46 percent of revenue",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Board of Directors of Broadcom has approved a quarterly cash dividend of $0.65 per share.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "On March 31, 2026, the Company paid a cash dividend of $0.65 per share, totaling $3,092 million.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Third quarter fiscal year 2026 Adjusted EBITDA guidance of approximately 68 percent of projected revenue",
+      "reason": "unknown_metric"
+    },
+    {
       "metric": "revenue",
-      "quote": "Revenue of $22",
-      "reason": "unit_not_allowed:number"
-    },
-    {
-      "metric": "net_income",
-      "quote": "net income of $9",
-      "reason": "unit_not_allowed:number"
-    },
-    {
-      "metric": "net_income",
-      "quote": "net income of $12",
-      "reason": "unit_not_allowed:number"
+      "quote": "Semiconductor solutions $ 15,009 68 % $ 8,408 56 % +79 %",
+      "reason": "value_not_in_quote"
     },
     {
       "metric": "revenue",
-      "quote": "revenue • GAAP diluted EPS of $1.91",
-      "reason": "unit_not_allowed:number"
+      "quote": "Infrastructure software 7,178 32 6,596 44 +9 %",
+      "reason": "value_not_in_quote"
     },
     {
-      "metric": "revenue",
-      "quote": "revenue • Quarterly common stock dividend of $0.65",
-      "reason": "unit_not_allowed:number"
+      "metric": "other",
+      "quote": "The Company’s cash and cash equivalents at the end of the fiscal quarter were $19,628 million",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross margin 15,415 13,157 10,197 28,572 20,342",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross margin on non-GAAP basis $ 17,109 $ 14,868 $ 11,911 $ 31,977 $ 23,707",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Total operating expenses 4,627 4,594 4,368 9,221 8,253",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income 10,788 8,563 5,829 19,351 12,089",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income on non-GAAP basis $ 14,928 $ 12,826 $ 9,793 $ 27,754 $ 19,621",
+      "reason": "value_not_in_quote"
     }
   ],
   "validation_notes": []
