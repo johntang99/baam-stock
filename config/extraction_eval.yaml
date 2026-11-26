@@ -10,7 +10,8 @@ corpus_plan:
     forms: ["8-K", "6-K"]              # earnings releases arrive as 8-K EX-99.1 (TSM: 6-K exhibits)
     since: "2023-01-01"
     max_filings_per_company: 30
-    exhibit_patterns: ["ex99", "ex-99", "ex991", "exhibit99", "dex991"]
+    exhibit_types: ["EX-99"]           # document types declared in the filing index (EX-99.1, EX-99.2, …)
+    exhibit_patterns: ["ex99", "ex-99", "ex991", "exhibit99", "dex991"]   # fallback: file-name match
     include_primary_document: true     # 8-K item text (non-earnings events: management, agreements, …)
 gates:                                 # D-32 initial thresholds; groups without a threshold are reported only
   numeric_fact: {metric: precision, min: 0.98}

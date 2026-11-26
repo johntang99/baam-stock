@@ -70,6 +70,22 @@ def archive(tmp_path: Path) -> Path:
     return root
 
 
+def add_index_html(root: Path) -> None:
+    """Issuer-specific exhibit names (like NVIDIA's q3fy25pr.htm) are found by declared type, not by name."""
+    d = root / "www.sec.gov/Archives/edgar/data/9999001/000999900126000201"
+    (d / f"{ACC}-index.htm").write_text(
+        "<table><tr><th>Seq</th></tr>"
+        "<tr><td>1</td><td>8-K</td><td><a>form8k.htm</a> &nbsp;iXBRL</td><td>8-K</td><td>1</td></tr>"
+        "<tr><td>2</td><td>EX-99.1</td><td><a>q3fy27pr.htm</a></td><td>EX-99.1</td><td>2</td></tr>"
+        "<tr><td>3</td><td>EX-99.2</td><td><a>q3fy27cfo.htm</a></td><td>EX-99.2</td><td>3</td></tr>"
+        "<tr><td>4</td><td>LOGO</td><td><a>logo.jpg</a></td><td>GRAPHIC</td><td>4</td></tr></table>"
+    )
+    shutil.copy(EX991, d / "q3fy27pr.htm")
+    (d / "q3fy27cfo.htm").write_text(
+        "<html><body>CFO commentary: revenue was $35.1 billion (synthetic).</body></html>"
+    )
+
+
 def fetch(archive: Path, tmp: Path) -> tuple[int, Path, Path]:
     from tests.conftest import _load_script
 
@@ -93,6 +109,14 @@ def test_fetch_corpus_from_archive(archive: Path, tmp_path: Path) -> None:
     )
     n2, _, _ = fetch(archive, tmp_path)
     assert n2 == 0  # idempotent
+
+
+def test_exhibits_found_by_declared_type(archive: Path, tmp_path: Path) -> None:
+    add_index_html(archive)
+    n, _, labels = fetch(archive, tmp_path)
+    man = read_manifest(labels)
+    assert set(man) == {f"{ACC}:q3fy27pr.htm", f"{ACC}:q3fy27cfo.htm", f"{ACC}:form8k.htm"}  # logo skipped
+    assert {man[k]["file_kind"] for k in man} == {"ex99", "primary"} and n == 3
 
 
 def test_unknown_ticker(archive: Path, tmp_path: Path) -> None:

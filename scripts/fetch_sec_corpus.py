@@ -27,6 +27,7 @@ from sr.evidence.sources.transport import ArchiveTransport, LiveTransport, Trans
 TICKERS_URL = "https://www.sec.gov/files/company_tickers.json"
 SUBMISSIONS_URL = "https://data.sec.gov/submissions/CIK{cik}.json"
 INDEX_URL = "https://www.sec.gov/Archives/edgar/data/{cik_int}/{acc}/index.json"
+INDEX_HTML_URL = "https://www.sec.gov/Archives/edgar/data/{cik_int}/{acc}/{accession}-index.htm"
 FILE_URL = "https://www.sec.gov/Archives/edgar/data/{cik_int}/{acc}/{name}"
 
 
@@ -37,6 +38,33 @@ def resolve_ciks(tr: Transport, tickers: list[str]) -> dict[str, str]:
     if missing:
         raise KeyError(f"tickers not in SEC company_tickers.json: {missing}")
     return {t: by_ticker[t.upper()] for t in tickers}
+
+
+def parse_index_html(html: str) -> list[tuple[str, str]]:
+    """(file name, declared document type) rows of a filing's -index.htm document table."""
+    out = []
+    for row in re.findall(r"<tr[^>]*>(.*?)</tr>", html, re.S | re.I):
+        cells = [
+            re.sub(r"<[^>]+>", "", c).replace("&nbsp;", " ").strip()
+            for c in re.findall(r"<td[^>]*>(.*?)</td>", row, re.S | re.I)
+        ]
+        if len(cells) >= 4 and cells[2]:
+            out.append((cells[2].split()[0], cells[3]))
+    return out
+
+
+def pick_by_type(
+    rows: list[tuple[str, str]], primary: str, types: list[str], include_primary: bool
+) -> list[tuple[str, str]]:
+    out = [
+        (n, "ex99")
+        for n, t in rows
+        if any(t.upper().startswith(x.upper()) for x in types)
+        and n.lower().endswith((".htm", ".html", ".txt"))
+    ]
+    if include_primary and primary and all(primary != n for n, _ in out):
+        out.append((primary, "primary"))
+    return out
 
 
 def pick_files(
@@ -78,10 +106,24 @@ def fetch(tr: Transport, tickers: list[str], since: date, max_per: int, corpus: 
                 continue
             acc = rec["accessionNumber"][i]
             nodash = acc.replace("-", "")
-            index = json.loads(tr.get(INDEX_URL.format(cik_int=int(cik), acc=nodash)))
-            files = pick_files(
-                index, rec["primaryDocument"][i], plan["exhibit_patterns"], plan["include_primary_document"]
-            )
+            try:  # declared document types (EX-99.x) are authoritative; exhibit file names vary by issuer
+                html = tr.get(INDEX_HTML_URL.format(cik_int=int(cik), acc=nodash, accession=acc)).decode(
+                    errors="replace"
+                )
+                files = pick_by_type(
+                    parse_index_html(html),
+                    rec["primaryDocument"][i],
+                    plan["exhibit_types"],
+                    plan["include_primary_document"],
+                )
+            except OSError:  # no -index.htm (archive tests / older filings): fall back to file-name patterns
+                index = json.loads(tr.get(INDEX_URL.format(cik_int=int(cik), acc=nodash)))
+                files = pick_files(
+                    index,
+                    rec["primaryDocument"][i],
+                    plan["exhibit_patterns"],
+                    plan["include_primary_document"],
+                )
             if not files:
                 continue
             taken += 1
