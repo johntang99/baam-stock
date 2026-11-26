@@ -4,6 +4,8 @@ _design_package/
 # data (local parquet etc.)
 /data/*
 !/data/.gitkeep
+# extraction eval labels + manifest are committed; raw corpus documents are not
+!/data/labels/
 # python
 .venv/
 __pycache__/

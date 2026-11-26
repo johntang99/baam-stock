@@ -41,6 +41,9 @@ class CheckedFact:
     span: dict[str, int]
     raw_value: float | None
     raw_unit: str
+    direction: str | None = None
+    scope: str | None = None
+    certainty: str | None = None
 
 
 @dataclass
@@ -137,6 +140,9 @@ def check_facts(facts: tuple[ExtractedFact, ...], default_period: str | None) ->
             f.span,
             f.value,
             f.unit,
+            direction=f.direction,
+            scope=f.scope,
+            certainty=f.certainty,
         )
         key = (name, f.basis if not name.startswith("eps_") else None, period)
         if key in seen and seen[key].value != cf.value:

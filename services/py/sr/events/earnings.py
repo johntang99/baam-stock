@@ -106,6 +106,8 @@ def process_earnings_document(
             "currency": f.currency,
             "period": f.period,
             "basis": f.basis,
+            "direction": f.direction,
+            "certainty": f.certainty,
             "evidence_ids": [m.evidence_id],
         }
         if disclosure_at is not None:
@@ -155,6 +157,7 @@ def process_earnings_document(
             "llm_provider": provider.provider,
             "llm_model": provider.model,
             "llm_call_id": ext.call_id,
+            "llm_prompt_version": getattr(provider, "version", "unknown"),
         },
     }
     if status == "needs_review":

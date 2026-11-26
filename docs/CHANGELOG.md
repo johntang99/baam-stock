@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## Phase 1 · 1.18 extraction evaluation set (tooling) — 2026-11-26
+- Prompt extract-0.2: facts also carry `direction`, `scope`, `certainty` (D-32 field groups).
+- `scripts/fetch_sec_corpus.py` (CIKs from SEC company_tickers.json, 8-K/6-K press-release exhibits + primary
+  documents, manifest with raw/text hashes; live mode needs `SEC_EDGAR_USER_AGENT`), `scripts/prelabel_extraction.py`
+  (drafts only; paid provider requires `--allow-spend`), `scripts/run_extraction_eval.py`.
+- `sr.llm.labels` (gold label model), `sr.llm.eval_extraction` (matching, four field groups, extraction_eval_runs),
+  `sr.features.llm_gate` (`require_approved`, `event_feature_inputs`: facts from unapproved prompts are refused, AC-30).
+- `docs/labeling/extraction-v0.md` labelling guide; `/data/labels/` committed, raw corpus stays local.
+- OPEN_QUESTIONS OQ-36 confirmed, OQ-37 new. Tests: 320 (33 Postgres-backed).
+
 ## Phase 1 · 1.22 historical analogues — 2026-11-26
 - `sr.events.analogues` (hc-0.1, `config/analogues/hc-0.1.yaml`): past-only cases (available and settled by
   as_of), no self-match within an event chain, match keys event_type + subtype + industry_template +

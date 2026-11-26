@@ -1,0 +1,25 @@
+# LLM extraction evaluation set (DP 1.18; D-32; DC extraction_eval_runs; AC-30)
+label_set_version: extract-labels-v0
+paths:
+  corpus: data/corpus                  # raw public documents (gitignored; re-fetchable from the manifest)
+  labels: data/labels/extraction-v0    # committed: manifest + reviewed gold labels + drafts
+target_docs: 300                       # D-32: ~300 labelled documents across earnings, policy, 8-K, news
+corpus_plan:
+  sec:
+    tickers: [NVDA, AMD, AVGO, MU, TSM, MRVL]
+    forms: ["8-K", "6-K"]              # earnings releases arrive as 8-K EX-99.1 (TSM: 6-K exhibits)
+    since: "2023-01-01"
+    max_filings_per_company: 30
+    exhibit_patterns: ["ex99", "ex-99", "ex991", "exhibit99", "dex991"]
+    include_primary_document: true     # 8-K item text (non-earnings events: management, agreements, …)
+gates:                                 # D-32 initial thresholds; groups without a threshold are reported only
+  numeric_fact: {metric: precision, min: 0.98}
+  direction: {metric: f1, min: 0.85}
+  scope: null
+  certainty: null
+matching:
+  value_rel_tolerance: 1.0e-6          # predicted value must equal the gold value (normalised units)
+approval:
+  # A prompt version may feed model features only if every gated group passed on at least this many reviewed
+  # documents (D-32 asks for ~300; the minimum is a proposal, OPEN_QUESTIONS OQ-37).
+  min_reviewed_docs: 100

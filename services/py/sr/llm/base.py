@@ -42,8 +42,28 @@ FACTS_SCHEMA: dict[str, Any] = {
                         ]
                     },
                     "quote": {"type": "string"},
+                    "direction": {"type": "string", "enum": ["increase", "decrease", "unchanged", "none"]},
+                    "scope": {
+                        "type": "string",
+                        "enum": ["company", "segment", "product", "geography", "other"],
+                    },
+                    "certainty": {
+                        "type": "string",
+                        "enum": ["reported", "guidance", "expectation", "hypothetical"],
+                    },
                 },
-                "required": ["metric", "value", "unit", "currency", "period", "basis", "quote"],
+                "required": [
+                    "metric",
+                    "value",
+                    "unit",
+                    "currency",
+                    "period",
+                    "basis",
+                    "quote",
+                    "direction",
+                    "scope",
+                    "certainty",
+                ],
                 "additionalProperties": False,
             },
         }
@@ -63,6 +83,9 @@ class ExtractedFact:
     basis: str | None
     quote: str
     span: dict[str, int]  # {"char_start", "char_end"} into the document text (computed by code)
+    direction: str | None = None  # increase | decrease | unchanged | none   (D-32 field group "direction")
+    scope: str | None = None  # company | segment | product | geography | other
+    certainty: str | None = None  # reported | guidance | expectation | hypothetical
 
 
 @dataclass(frozen=True)
@@ -157,6 +180,10 @@ EXTRACT_SYSTEM = (
     "by string search. Keep quotes short (the sentence or clause that states the fact).\n"
     '- `value` is the number as stated (e.g. 35.1 for "$35.1 billion"; unit then "USD_billion"); null when '
     "the fact is not numeric. `basis` is gaap, non_gaap, company_defined, or null when not stated.\n"
+    "- `direction`: the change the document states for this fact (increase / decrease / unchanged), or none.\n"
+    "- `scope`: company-wide, a segment, a product, a geography, or other.\n"
+    "- `certainty`: reported (actual result), guidance (company outlook), expectation (someone else's estimate), "
+    "or hypothetical.\n"
     "- If the document states no facts, return an empty list. Never estimate or fill gaps."
 )
 
@@ -184,6 +211,9 @@ def locate_facts(doc_text: str, raw_facts: list[dict[str, Any]]) -> tuple[list[E
                 basis=f.get("basis"),
                 quote=q,
                 span={"char_start": i, "char_end": i + len(q)},
+                direction=f.get("direction"),
+                scope=f.get("scope"),
+                certainty=f.get("certainty"),
             )
         )
     return facts, missing

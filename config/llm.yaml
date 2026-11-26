@@ -7,7 +7,7 @@ anthropic:
   fallbacks: default               # server-side refusal fallback (beta server-side-fallback-2026-07-01)
   fallback_beta: server-side-fallback-2026-07-01
 prompts:
-  extract_facts: extract-0.1
+  extract_facts: extract-0.2         # 0.2 adds direction / scope / certainty (D-32 field groups)
   draft_explanation: explain-0.1
 rules:
   tools_allowed: []                # no web search / fetch, in live or replay (S3§6)
