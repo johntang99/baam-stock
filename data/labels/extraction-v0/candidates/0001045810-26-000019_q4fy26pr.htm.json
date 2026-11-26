@@ -1,0 +1,200 @@
+{
+  "doc_key": "0001045810-26-000019:q4fy26pr.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37JBN84T7H5NQ2ZNKWQA",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 68.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue of $68.1 billion",
+      "span": {
+        "char_start": 129,
+        "char_end": 153
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "data_center_revenue",
+      "value": 62.3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Data Center revenue of $62.3 billion",
+      "span": {
+        "char_start": 216,
+        "char_end": 252
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 215.9,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue of $215.9 billion",
+      "span": {
+        "char_start": 315,
+        "char_end": 340
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 68.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue for the fourth quarter ended January 25, 2026, of $68.1 billion",
+      "span": {
+        "char_start": 428,
+        "char_end": 499
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 215.9,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $215.9 billion",
+      "span": {
+        "char_start": 579,
+        "char_end": 605
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "gross_margin",
+      "value": 75.0,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "gross margins were 75.0%",
+      "span": {
+        "char_start": 666,
+        "char_end": 690
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "gross_margin",
+      "value": 71.1,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "gross margins were 71.1%",
+      "span": {
+        "char_start": 751,
+        "char_end": 775
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 3.7,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $3.7 billion",
+      "span": {
+        "char_start": 7616,
+        "char_end": 7640
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 1.3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $1.3 billion",
+      "span": {
+        "char_start": 8327,
+        "char_end": 8351
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 604.0,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $604 million",
+      "span": {
+        "char_start": 8792,
+        "char_end": 8816
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "revenue of $68.1 billion",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "quote": "gross margins were 75.0%",
+      "reason": "conflicting_values"
+    }
+  ],
+  "validation_notes": []
+}

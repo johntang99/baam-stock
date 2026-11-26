@@ -1,0 +1,105 @@
+{
+  "doc_key": "0001045810-25-000115:q1fy26cfocommentary.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37HRPYM6Q3YA6MDNXNQV",
+  "candidates": [
+    {
+      "metric": "gross_margin",
+      "value": 60.5,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "gross margin was 60.5%",
+      "span": {
+        "char_start": 2815,
+        "char_end": 2837
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 44.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Revenue Revenue for the first quarter was $44.1 billion",
+      "span": {
+        "char_start": 3065,
+        "char_end": 3120
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "data_center_revenue",
+      "value": 39.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Data Center revenue for the first quarter was $39.1 billion",
+      "span": {
+        "char_start": 3170,
+        "char_end": 3229
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 34.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $34.2 billion",
+      "span": {
+        "char_start": 3678,
+        "char_end": 3703
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 5.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $5.0 billion",
+      "span": {
+        "char_start": 3763,
+        "char_end": 3787
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "Revenue Revenue for the first quarter was $44.1 billion",
+      "reason": "conflicting_values"
+    }
+  ],
+  "validation_notes": []
+}

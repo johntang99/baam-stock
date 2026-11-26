@@ -1,0 +1,51 @@
+{
+  "doc_key": "0001045810-24-000315:q3fy25cfocommentary.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37HDR19K6AAPVA6YJD9A",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 27.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $27.6 billion",
+      "span": {
+        "char_start": 2877,
+        "char_end": 2902
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 3.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $3.1 billion",
+      "span": {
+        "char_start": 2964,
+        "char_end": 2988
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "revenue was $27.6 billion",
+      "reason": "conflicting_values"
+    }
+  ],
+  "validation_notes": []
+}

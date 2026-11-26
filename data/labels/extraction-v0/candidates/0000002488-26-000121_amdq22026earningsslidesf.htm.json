@@ -1,0 +1,51 @@
+{
+  "doc_key": "0000002488-26-000121:amdq22026earningsslidesf.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37G2WS24N683R4TRK5B3",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 1995.0,
+      "unit": "number",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "revenue, non-GAAP gross margin, non-GAAP operating expenses, non- GAAP Interest Expense/Other Income (Expense), net, non-GAAP tax rate and diluted share count; AMD’s large and compelling TAM; AMD’s ability to expand Data Center and AI leadership; AMD's financial and operating performance, including earnings growth and margin expansion; and AMD’s ability to drive long-term shareholder returns, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "span": {
+        "char_start": 843,
+        "char_end": 1348
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 11.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Revenue Record revenue of $11.5 billion",
+      "span": {
+        "char_start": 9488,
+        "char_end": 9527
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "revenue, non-GAAP gross margin, non-GAAP operating expenses, non- GAAP Interest Expense/Other Income (Expense), net, non-GAAP tax rate and diluted share count; AMD’s large and compelling TAM; AMD’s ability to expand Data Center and AI leadership; AMD's financial and operating performance, including earnings growth and margin expansion; and AMD’s ability to drive long-term shareholder returns, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "reason": "unit_not_allowed:number"
+    }
+  ],
+  "validation_notes": []
+}

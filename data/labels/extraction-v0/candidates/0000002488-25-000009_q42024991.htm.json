@@ -1,0 +1,228 @@
+{
+  "doc_key": "0000002488-25-000009:q42024991.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37ET5XJCD2RCP4HQVFB1",
+  "candidates": [
+    {
+      "metric": "gross_margin",
+      "value": 51.0,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "gross margin was 51%",
+      "span": {
+        "char_start": 476,
+        "char_end": 496
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "gross_margin",
+      "value": 54.0,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "gross margin was 54%",
+      "span": {
+        "char_start": 628,
+        "char_end": 648
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 25.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue of $25.8 billion",
+      "span": {
+        "char_start": 817,
+        "char_end": 841
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "gross_margin",
+      "value": 49.0,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "gross margin of 49%",
+      "span": {
+        "char_start": 843,
+        "char_end": 862
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 1.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income of $1.6 billion",
+      "span": {
+        "char_start": 898,
+        "char_end": 924
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 5.4,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income was $5.4 billion",
+      "span": {
+        "char_start": 1057,
+        "char_end": 1084
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 563.0,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue in the quarter was $563 million",
+      "span": {
+        "char_start": 4123,
+        "char_end": 4162
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 2.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $2.6 billion",
+      "span": {
+        "char_start": 4268,
+        "char_end": 4292
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 923.0,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue in the quarter was $923 million",
+      "span": {
+        "char_start": 4402,
+        "char_end": 4441
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 3.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $3.6 billion",
+      "span": {
+        "char_start": 4541,
+        "char_end": 4565
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 1995.0,
+      "unit": "number",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "revenue and non-GAAP gross margin, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "span": {
+        "char_start": 14211,
+        "char_end": 14355
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "revenue and non-GAAP gross margin, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "reason": "unit_not_allowed:number"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "quote": "gross margin was 51%",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "revenue",
+      "quote": "revenue of $25.8 billion",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "net_income",
+      "quote": "net income of $1.6 billion",
+      "reason": "conflicting_values"
+    }
+  ],
+  "validation_notes": []
+}

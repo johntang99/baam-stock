@@ -1,0 +1,87 @@
+{
+  "doc_key": "0001835632-26-000014:q127_8kx522026ex-991.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37RXRFYHSZ8CMT54K44P",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 2.418,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue for the first quarter of fiscal 2027 was $2.418 billion",
+      "span": {
+        "char_start": 623,
+        "char_end": 686
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 34.5,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income for the first quarter of fiscal 2027 was $34.5 million",
+      "span": {
+        "char_start": 780,
+        "char_end": 845
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 718.0,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income for the first quarter of fiscal 2027 was $718.0 million",
+      "span": {
+        "char_start": 884,
+        "char_end": 950
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 2.418,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue of $2.418 billion",
+      "span": {
+        "char_start": 1456,
+        "char_end": 1481
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "net_income",
+      "quote": "net income for the first quarter of fiscal 2027 was $34.5 million",
+      "reason": "conflicting_values"
+    }
+  ],
+  "validation_notes": []
+}

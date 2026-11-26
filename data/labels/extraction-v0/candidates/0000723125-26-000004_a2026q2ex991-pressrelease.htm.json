@@ -1,0 +1,69 @@
+{
+  "doc_key": "0000723125-26-000004:a2026q2ex991-pressrelease.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37GVB88SNM5E7SK9DGM0",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 23.86,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Revenue of $23.86 billion",
+      "span": {
+        "char_start": 588,
+        "char_end": 613
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 13.79,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income of $13.79 billion",
+      "span": {
+        "char_start": 713,
+        "char_end": 741
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 14.02,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income of $14.02 billion",
+      "span": {
+        "char_start": 782,
+        "char_end": 810
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "net_income",
+      "quote": "net income of $13.79 billion",
+      "reason": "conflicting_values"
+    }
+  ],
+  "validation_notes": []
+}

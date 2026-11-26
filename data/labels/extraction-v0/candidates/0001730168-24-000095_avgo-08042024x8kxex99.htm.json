@@ -1,0 +1,102 @@
+{
+  "doc_key": "0001730168-24-000095:avgo-08042024x8kxex99.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37QKRMWJFJKZBP6GG73W",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 13.0,
+      "unit": "number",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Revenue of $13",
+      "span": {
+        "char_start": 164,
+        "char_end": 178
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 6.0,
+      "unit": "number",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income of $6",
+      "span": {
+        "char_start": 326,
+        "char_end": 342
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 0.4,
+      "unit": "number",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue • GAAP diluted loss per share of $0.40",
+      "span": {
+        "char_start": 453,
+        "char_end": 499
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 0.53,
+      "unit": "number",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue • Quarterly common stock dividend of $0.53",
+      "span": {
+        "char_start": 745,
+        "char_end": 795
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "Revenue of $13",
+      "reason": "unit_not_allowed:number"
+    },
+    {
+      "metric": "net_income",
+      "quote": "net income of $6",
+      "reason": "unit_not_allowed:number"
+    },
+    {
+      "metric": "revenue",
+      "quote": "revenue • GAAP diluted loss per share of $0.40",
+      "reason": "unit_not_allowed:number"
+    },
+    {
+      "metric": "revenue",
+      "quote": "revenue • Quarterly common stock dividend of $0.53",
+      "reason": "unit_not_allowed:number"
+    }
+  ],
+  "validation_notes": []
+}

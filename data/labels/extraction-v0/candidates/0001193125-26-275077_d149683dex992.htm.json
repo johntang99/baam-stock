@@ -1,0 +1,102 @@
+{
+  "doc_key": "0001193125-26-275077:d149683dex992.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BVVRQNXCTQ90YN01V4KTV1",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 3.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "tender offers expiring June 17, 2026",
+      "basis": null,
+      "quote": "Broadcom also announced that it is increasing the aggregate purchase price, excluding the Accrued Coupon Payment, from the previously announced amount of $2.5 billion to $3.0 billion",
+      "span": {
+        "char_start": 630,
+        "char_end": 812
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate purchase price (Consideration Cap Amount) for debt tender offers",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 5.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "as of June 17, 2026",
+      "basis": null,
+      "quote": "approximately $5.5 billion combined aggregate principal amount of Notes were validly tendered prior to or at the Expiration Date",
+      "span": {
+        "char_start": 2161,
+        "char_end": 2289
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "combined aggregate principal amount of Notes validly tendered",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2.9,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "as of June 17, 2026",
+      "basis": null,
+      "quote": "of which approximately $2.9 billion aggregate principal amount of Notes have been accepted for purchase",
+      "span": {
+        "char_start": 2291,
+        "char_end": 2394
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "aggregate principal amount of Notes accepted for purchase",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 35.0,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "as of June 17, 2026",
+      "basis": null,
+      "quote": "approximately $35.0 million combined aggregate principal amount of 4.926% Senior Notes due 2037 and 4.900% Senior Notes due 2038 were tendered pursuant to the Guaranteed Delivery Procedures",
+      "span": {
+        "char_start": 2436,
+        "char_end": 2625
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "principal amount tendered pursuant to Guaranteed Delivery Procedures",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Broadcom also announced that it is increasing the aggregate purchase price, excluding the Accrued Coupon Payment, from the previously announced amount of $2.5 billion to $3.0 billion",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "approximately $5.5 billion combined aggregate principal amount of Notes were validly tendered prior to or at the Expiration Date",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "of which approximately $2.9 billion aggregate principal amount of Notes have been accepted for purchase",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "approximately $35.0 million combined aggregate principal amount of 4.926% Senior Notes due 2037 and 4.900% Senior Notes due 2038 were tendered pursuant to the Guaranteed Delivery Procedures",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

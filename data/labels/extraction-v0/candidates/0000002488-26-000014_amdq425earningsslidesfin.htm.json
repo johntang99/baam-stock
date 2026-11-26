@@ -1,0 +1,74 @@
+{
+  "doc_key": "0000002488-26-000014:amdq425earningsslidesfin.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37FMBG7D1H73T2Z9G1JY",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 1995.0,
+      "unit": "number",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "revenue, expected revenue from AMD Instinct MI308 sales to China, non-GAAP gross margin, non-GAAP operating expenses, non-GAAP Interest Expense/Other Income (Expense), net, non-GAAP tax rate and diluted share count; AMD’s large and compelling TAM; AMD’s ability to expand Data Center and AI leadership; AMD's financial and operating performance; and AMD’s ability to drive long-term shareholder returns, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "span": {
+        "char_start": 608,
+        "char_end": 1121
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 10.3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Revenue Record revenue of $10.3 billion",
+      "span": {
+        "char_start": 9258,
+        "char_end": 9297
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 34.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Revenue Record full year revenue of $34.6 billion",
+      "span": {
+        "char_start": 12754,
+        "char_end": 12803
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "revenue, expected revenue from AMD Instinct MI308 sales to China, non-GAAP gross margin, non-GAAP operating expenses, non-GAAP Interest Expense/Other Income (Expense), net, non-GAAP tax rate and diluted share count; AMD’s large and compelling TAM; AMD’s ability to expand Data Center and AI leadership; AMD's financial and operating performance; and AMD’s ability to drive long-term shareholder returns, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "reason": "unit_not_allowed:number"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Revenue Record revenue of $10.3 billion",
+      "reason": "conflicting_values"
+    }
+  ],
+  "validation_notes": []
+}

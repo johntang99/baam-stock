@@ -1,0 +1,215 @@
+{
+  "doc_key": "0000002488-25-000106:q22025991.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37F8BB2P0ZND3KAP9MV6",
+  "candidates": [
+    {
+      "metric": "gross_margin",
+      "value": 40.0,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "gross margin was 40%",
+      "span": {
+        "char_start": 437,
+        "char_end": 457
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 872.0,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income was $872 million",
+      "span": {
+        "char_start": 492,
+        "char_end": 519
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "gross_margin",
+      "value": 43.0,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "gross margin was 43%",
+      "span": {
+        "char_start": 589,
+        "char_end": 609
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 781.0,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income was $781 million",
+      "span": {
+        "char_start": 646,
+        "char_end": 673
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 3.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $3.2 billion",
+      "span": {
+        "char_start": 2864,
+        "char_end": 2888
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 3.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $3.6 billion",
+      "span": {
+        "char_start": 3079,
+        "char_end": 3103
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 1.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $1.1 billion",
+      "span": {
+        "char_start": 3312,
+        "char_end": 3336
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 824.0,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $824 million",
+      "span": {
+        "char_start": 3459,
+        "char_end": 3483
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 1995.0,
+      "unit": "number",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "revenue and non-GAAP gross margin; and the expected impact of export licensing requirements on AMD, including on its revenues and non-GAAP gross margin, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "span": {
+        "char_start": 12722,
+        "char_end": 12984
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 6.0,
+      "unit": "number",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "revenue from its semi-custom SoC products; potential security vulnerabilities; potential security incidents including IT outages, data loss, data breaches and cyberattacks; uncertainties involving the ordering and shipment of AMD’s products; AMD’s reliance on third-party intellectual property to design and introduce new products; AMD's reliance on third-party companies for design, manufacture and supply of motherboards, software, memory and other computer platform components; AMD's reliance on Microsoft and other software vendors' support to design and develop software to run on AMD’s products; AMD’s reliance on third-party distributors and add-in-board partners; impact of 6",
+      "span": {
+        "char_start": 14921,
+        "char_end": 15604
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "revenue and non-GAAP gross margin; and the expected impact of export licensing requirements on AMD, including on its revenues and non-GAAP gross margin, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "reason": "unit_not_allowed:number"
+    },
+    {
+      "metric": "revenue",
+      "quote": "revenue from its semi-custom SoC products; potential security vulnerabilities; potential security incidents including IT outages, data loss, data breaches and cyberattacks; uncertainties involving the ordering and shipment of AMD’s products; AMD’s reliance on third-party intellectual property to design and introduce new products; AMD's reliance on third-party companies for design, manufacture and supply of motherboards, software, memory and other computer platform components; AMD's reliance on Microsoft and other software vendors' support to design and develop software to run on AMD’s products; AMD’s reliance on third-party distributors and add-in-board partners; impact of 6",
+      "reason": "unit_not_allowed:number"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "quote": "gross margin was 40%",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "net_income",
+      "quote": "net income was $872 million",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "revenue",
+      "quote": "revenue was $3.2 billion",
+      "reason": "conflicting_values"
+    }
+  ],
+  "validation_notes": []
+}

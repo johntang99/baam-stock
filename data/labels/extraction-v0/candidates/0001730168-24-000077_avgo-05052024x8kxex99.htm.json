@@ -1,0 +1,125 @@
+{
+  "doc_key": "0001730168-24-000077:avgo-05052024x8kxex99.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37QF9MQNBWW3847ZZ85D",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 12.0,
+      "unit": "number",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Revenue of $12",
+      "span": {
+        "char_start": 165,
+        "char_end": 179
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 2.0,
+      "unit": "number",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income of $2",
+      "span": {
+        "char_start": 264,
+        "char_end": 280
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 5.0,
+      "unit": "number",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income of $5",
+      "span": {
+        "char_start": 326,
+        "char_end": 342
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 4.42,
+      "unit": "number",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue • GAAP diluted EPS of $4.42",
+      "span": {
+        "char_start": 455,
+        "char_end": 490
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 5.25,
+      "unit": "number",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue • Quarterly common stock dividend of $5.25",
+      "span": {
+        "char_start": 740,
+        "char_end": 790
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "Revenue of $12",
+      "reason": "unit_not_allowed:number"
+    },
+    {
+      "metric": "net_income",
+      "quote": "net income of $2",
+      "reason": "unit_not_allowed:number"
+    },
+    {
+      "metric": "net_income",
+      "quote": "net income of $5",
+      "reason": "unit_not_allowed:number"
+    },
+    {
+      "metric": "revenue",
+      "quote": "revenue • GAAP diluted EPS of $4.42",
+      "reason": "unit_not_allowed:number"
+    },
+    {
+      "metric": "revenue",
+      "quote": "revenue • Quarterly common stock dividend of $5.25",
+      "reason": "unit_not_allowed:number"
+    }
+  ],
+  "validation_notes": []
+}

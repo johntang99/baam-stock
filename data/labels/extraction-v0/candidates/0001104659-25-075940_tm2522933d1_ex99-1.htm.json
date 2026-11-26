@@ -1,0 +1,45 @@
+{
+  "doc_key": "0001104659-25-075940:tm2522933d1_ex99-1.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37N2Q1V2RQFXCW5AV9F6",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 10.7,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue of $10.7 billion",
+      "span": {
+        "char_start": 404,
+        "char_end": 428
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "gross_margin",
+      "value": 42.0,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "gross margins of 42.0%",
+      "span": {
+        "char_start": 454,
+        "char_end": 476
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [],
+  "validation_notes": []
+}

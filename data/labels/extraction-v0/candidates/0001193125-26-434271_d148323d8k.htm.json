@@ -1,0 +1,56 @@
+{
+  "doc_key": "0001193125-26-434271:d148323d8k.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BVV1CA499B02J8X07MFFSX",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 43,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The Company’s maximum potential liability under the Backstop upon the deployment of the AI racks, on an undiscounted basis, is approximately $43 billion.",
+      "span": {
+        "char_start": 3433,
+        "char_end": 3586
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "maximum potential liability under the Backstop (undiscounted)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 72.5,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "The Company’s potential liability under the Backstop will be equal to any difference between 72.5% of the outstanding amounts owed on the lease and the value of the AI racks received upon the sale of the assets at that time.",
+      "span": {
+        "char_start": 3208,
+        "char_end": 3432
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Backstop liability threshold as share of outstanding lease amounts",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "The Company’s maximum potential liability under the Backstop upon the deployment of the AI racks, on an undiscounted basis, is approximately $43 billion.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Company’s potential liability under the Backstop will be equal to any difference between 72.5% of the outstanding amounts owed on the lease and the value of the AI racks received upon the sale of the assets at that time.",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

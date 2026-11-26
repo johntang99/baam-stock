@@ -1,0 +1,279 @@
+{
+  "doc_key": "0000002488-25-000163:q32025991.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37FFN4498VF2B2VS2TS3",
+  "candidates": [
+    {
+      "metric": "gross_margin",
+      "value": 52.0,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "gross margin was 52%",
+      "span": {
+        "char_start": 436,
+        "char_end": 456
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 1.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income was $1.2 billion",
+      "span": {
+        "char_start": 493,
+        "char_end": 520
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "gross_margin",
+      "value": 54.0,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "gross margin was 54%",
+      "span": {
+        "char_start": 590,
+        "char_end": 610
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 2.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income was $2 billion",
+      "span": {
+        "char_start": 647,
+        "char_end": 672
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 9.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue of $9.2 billion",
+      "span": {
+        "char_start": 1333,
+        "char_end": 1356
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "gross_margin",
+      "value": 2025.0,
+      "unit": "number",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "gross margin for the second quarter of 2025",
+      "span": {
+        "char_start": 3083,
+        "char_end": 3126
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 4.3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $4.3 billion",
+      "span": {
+        "char_start": 3200,
+        "char_end": 3224
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 4.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $4 billion",
+      "span": {
+        "char_start": 3380,
+        "char_end": 3402
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 1.3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $1.3 billion",
+      "span": {
+        "char_start": 3578,
+        "char_end": 3602
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 857.0,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $857 million",
+      "span": {
+        "char_start": 3726,
+        "char_end": 3750
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 50.0,
+      "unit": "number",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "revenue and earnings growth from AMD’s compute franchise and AI business; AMD’s ability to drive significant growth and position itself to deliver long-term value creation based on continued investments in AI and high-performance computing ; the strategic partnership with OpenAI and the deployment of six gigawatts of AMD Instinct™ GPUs and timing thereof; the strategic partnership with Oracle and the deployment of 50",
+      "span": {
+        "char_start": 13422,
+        "char_end": 13842
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 1995.0,
+      "unit": "number",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "revenue and non-GAAP gross margin, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "span": {
+        "char_start": 13941,
+        "char_end": 14085
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "gross_margin",
+      "value": 2025.0,
+      "unit": "number",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "gross margin for the second quarter of 2025",
+      "span": {
+        "char_start": 3083,
+        "char_end": 3126
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "gross_margin_pct",
+      "quote": "gross margin for the second quarter of 2025",
+      "reason": "unit_not_allowed:number"
+    },
+    {
+      "metric": "revenue",
+      "quote": "revenue and earnings growth from AMD’s compute franchise and AI business; AMD’s ability to drive significant growth and position itself to deliver long-term value creation based on continued investments in AI and high-performance computing ; the strategic partnership with OpenAI and the deployment of six gigawatts of AMD Instinct™ GPUs and timing thereof; the strategic partnership with Oracle and the deployment of 50",
+      "reason": "unit_not_allowed:number"
+    },
+    {
+      "metric": "revenue",
+      "quote": "revenue and non-GAAP gross margin, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "reason": "unit_not_allowed:number"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "quote": "gross margin for the second quarter of 2025",
+      "reason": "unit_not_allowed:number"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "quote": "gross margin was 52%",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "net_income",
+      "quote": "net income was $1.2 billion",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "revenue",
+      "quote": "revenue of $9.2 billion",
+      "reason": "conflicting_values"
+    }
+  ],
+  "validation_notes": []
+}

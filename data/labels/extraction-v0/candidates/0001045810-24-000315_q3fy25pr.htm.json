@@ -1,0 +1,123 @@
+{
+  "doc_key": "0001045810-24-000315:q3fy25pr.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37HFKY4ESYJ1KSKNYWRM",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 35.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue of $35.1 billion",
+      "span": {
+        "char_start": 147,
+        "char_end": 171
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "data_center_revenue",
+      "value": 30.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Data Center revenue of $30.8 billion",
+      "span": {
+        "char_start": 234,
+        "char_end": 270
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 35.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue for the third quarter ended October 27, 2024, of $35.1 billion",
+      "span": {
+        "char_start": 387,
+        "char_end": 457
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 3.3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $3.3 billion",
+      "span": {
+        "char_start": 5323,
+        "char_end": 5347
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 486.0,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $486 million",
+      "span": {
+        "char_start": 6067,
+        "char_end": 6091
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 449.0,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $449 million",
+      "span": {
+        "char_start": 6842,
+        "char_end": 6866
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "revenue of $35.1 billion",
+      "reason": "conflicting_values"
+    }
+  ],
+  "validation_notes": []
+}

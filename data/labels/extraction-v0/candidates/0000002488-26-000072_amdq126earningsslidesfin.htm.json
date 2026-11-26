@@ -1,0 +1,51 @@
+{
+  "doc_key": "0000002488-26-000072:amdq126earningsslidesfin.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37FX51YNB1VKC9WZKBJN",
+  "candidates": [
+    {
+      "metric": "gross_margin",
+      "value": 1995.0,
+      "unit": "number",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "gross margin, non-GAAP operating expenses, non-GAAP Interest Expense/Other Income (Expense), net, non-GAAP tax rate and diluted share count; AMD’s large and compelling TAM; AMD’s ability to expand Data Center and AI leadership; AMD's financial and operating performance; and AMD’s ability to drive long-term shareholder returns, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "span": {
+        "char_start": 758,
+        "char_end": 1196
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 10.3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Revenue Revenue of $10.3 billion",
+      "span": {
+        "char_start": 9105,
+        "char_end": 9137
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "gross_margin_pct",
+      "quote": "gross margin, non-GAAP operating expenses, non-GAAP Interest Expense/Other Income (Expense), net, non-GAAP tax rate and diluted share count; AMD’s large and compelling TAM; AMD’s ability to expand Data Center and AI leadership; AMD's financial and operating performance; and AMD’s ability to drive long-term shareholder returns, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "reason": "unit_not_allowed:number"
+    }
+  ],
+  "validation_notes": []
+}

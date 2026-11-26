@@ -4,6 +4,19 @@
   "doc_kind": "earnings_release",
   "fiscal_period": null,
   "label_status": "draft",
-  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
-  "facts": []
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": [
+    {
+      "metric": "eps_gaap",
+      "value": 7.55,
+      "unit": "USD_per_share",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Diluted $ 2.70 $ 1.30 $ 7.55 $ 3.14",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    }
+  ]
 }

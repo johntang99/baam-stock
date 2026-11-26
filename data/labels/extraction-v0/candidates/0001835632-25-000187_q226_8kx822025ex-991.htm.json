@@ -1,0 +1,87 @@
+{
+  "doc_key": "0001835632-25-000187:q226_8kx822025ex-991.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37RJ9RZ25EDR2MS86N9Y",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 2.006,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue for the second quarter of fiscal 2026 was $2.006 billion",
+      "span": {
+        "char_start": 771,
+        "char_end": 835
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 194.8,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income for the second quarter of fiscal 2026 was $194.8 million",
+      "span": {
+        "char_start": 927,
+        "char_end": 994
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 585.5,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income for the second quarter of fiscal 2026 was $585.5 million",
+      "span": {
+        "char_start": 1033,
+        "char_end": 1100
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 2.006,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue of $2.006 billion",
+      "span": {
+        "char_start": 1225,
+        "char_end": 1250
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "net_income",
+      "quote": "net income for the second quarter of fiscal 2026 was $194.8 million",
+      "reason": "conflicting_values"
+    }
+  ],
+  "validation_notes": []
+}

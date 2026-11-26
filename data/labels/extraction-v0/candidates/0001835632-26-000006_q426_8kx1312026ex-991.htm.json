@@ -1,0 +1,146 @@
+{
+  "doc_key": "0001835632-26-000006:q426_8kx1312026ex-991.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37RT3ARX2BK7SSG8SZ5K",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 2.219,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue for the fourth quarter of fiscal 2026 was $2.219 billion",
+      "span": {
+        "char_start": 655,
+        "char_end": 719
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 396.1,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income for the fourth quarter of fiscal 2026 was $396.1 million",
+      "span": {
+        "char_start": 817,
+        "char_end": 884
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 685.1,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income for the fourth quarter of fiscal 2026 was $685.1 million",
+      "span": {
+        "char_start": 923,
+        "char_end": 990
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 8.195,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue for fiscal 2026 was $8.195 billion",
+      "span": {
+        "char_start": 1093,
+        "char_end": 1135
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 2.67,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income for fiscal 2026 was $2.670 billion",
+      "span": {
+        "char_start": 1156,
+        "char_end": 1201
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 2.466,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income for fiscal 2026 was $2.466 billion",
+      "span": {
+        "char_start": 1240,
+        "char_end": 1285
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 8.195,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue of $8.195 billion",
+      "span": {
+        "char_start": 1353,
+        "char_end": 1378
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "revenue for the fourth quarter of fiscal 2026 was $2.219 billion",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "net_income",
+      "quote": "net income for the fourth quarter of fiscal 2026 was $396.1 million",
+      "reason": "conflicting_values"
+    }
+  ],
+  "validation_notes": []
+}

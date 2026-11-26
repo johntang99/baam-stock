@@ -1,0 +1,427 @@
+{
+  "doc_key": "0001193125-26-442714:d81187dex992.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BVW32BWJF8ZHZN1C0QR03F",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 12.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "FQ3'27 guidance, annualized",
+      "basis": null,
+      "quote": "Revenue $12.6 $5.1 $17.7",
+      "span": {
+        "char_start": 22197,
+        "char_end": 22221
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Revenue (MRQ Annualized)",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 5.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "FQ1'27, annualized",
+      "basis": null,
+      "quote": "Revenue $12.6 $5.1 $17.7",
+      "span": {
+        "char_start": 22197,
+        "char_end": 22221
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue (MRQ Annualized) - Lumentum",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 17.7,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "Pro forma, MRQ annualized",
+      "basis": null,
+      "quote": "Revenue $12.6 $5.1 $17.7",
+      "span": {
+        "char_start": 22197,
+        "char_end": 22221
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Revenue (MRQ Annualized) - Pro Forma (excl. Synergies)",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 58,
+      "unit": "pct",
+      "currency": null,
+      "period": "FQ3'27 guidance",
+      "basis": "non_gaap",
+      "quote": "Gross Margin* 58% 53% 57%",
+      "span": {
+        "char_start": 22274,
+        "char_end": 22299
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Gross Margin* - Marvell",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 53,
+      "unit": "pct",
+      "currency": null,
+      "period": "FQ1'27",
+      "basis": "non_gaap",
+      "quote": "Gross Margin* 58% 53% 57%",
+      "span": {
+        "char_start": 22274,
+        "char_end": 22299
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross Margin* - Lumentum",
+      "segment": null
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 57,
+      "unit": "pct",
+      "currency": null,
+      "period": "Pro forma",
+      "basis": "non_gaap",
+      "quote": "Gross Margin* 58% 53% 57%",
+      "span": {
+        "char_start": 22274,
+        "char_end": 22299
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Gross Margin* - Pro Forma (excl. Synergies)",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 37,
+      "unit": "pct",
+      "currency": null,
+      "period": "FQ3'27 guidance",
+      "basis": "non_gaap",
+      "quote": "Operating Margin* 37% 42% 39%",
+      "span": {
+        "char_start": 22347,
+        "char_end": 22376
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Operating Margin* - Marvell",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 42,
+      "unit": "pct",
+      "currency": null,
+      "period": "FQ1'27",
+      "basis": "non_gaap",
+      "quote": "Operating Margin* 37% 42% 39%",
+      "span": {
+        "char_start": 22347,
+        "char_end": 22376
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating Margin* - Lumentum",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 39,
+      "unit": "pct",
+      "currency": null,
+      "period": "Pro forma",
+      "basis": "non_gaap",
+      "quote": "Operating Margin* 37% 42% 39%",
+      "span": {
+        "char_start": 22347,
+        "char_end": 22376
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Operating Margin* - Pro Forma (excl. Synergies)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Line of sight to $1 billion+ in run-rate synergies, primarily COGS",
+      "span": {
+        "char_start": 23224,
+        "char_end": 23290
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "run-rate synergies",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 275,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "as of October 30, 2026",
+      "basis": null,
+      "quote": "All-stock transaction with combined enterprise value* over ~$275B",
+      "span": {
+        "char_start": 22848,
+        "char_end": 22913
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "combined enterprise value",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 67,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "Pro forma ownership of ~67% Marvell shareholders and ~33% Lumentum shareholders",
+      "span": {
+        "char_start": 23051,
+        "char_end": 23130
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Pro forma ownership - Marvell shareholders",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 33,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "Pro forma ownership of ~67% Marvell shareholders and ~33% Lumentum shareholders",
+      "span": {
+        "char_start": 23051,
+        "char_end": 23130
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "hypothetical",
+      "metric_label": "Pro forma ownership - Lumentum shareholders",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 550,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "CY30",
+      "basis": null,
+      "quote": "Unlocks a larger $550B TAM opportunity with stronger ability to better serve customers",
+      "span": {
+        "char_start": 15467,
+        "char_end": 15553
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Combined TAM",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 400,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "CY30",
+      "basis": null,
+      "quote": "$400B $90B+ $550B",
+      "span": {
+        "char_start": 16814,
+        "char_end": 16831
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Marvell TAM",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 90,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "CY30",
+      "basis": null,
+      "quote": "$400B $90B+ $550B",
+      "span": {
+        "char_start": 16814,
+        "char_end": 16831
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Lumentum TAM",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 76,
+      "unit": "pct",
+      "currency": null,
+      "period": "CY26-28E",
+      "basis": null,
+      "quote": "Marvell 76%",
+      "span": {
+        "char_start": 13664,
+        "char_end": 13675
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "expectation",
+      "metric_label": "EPS CAGR, CY26-28E - Marvell (FactSet consensus)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 66,
+      "unit": "pct",
+      "currency": null,
+      "period": "CY26-28E",
+      "basis": null,
+      "quote": "Lumentum 66%",
+      "span": {
+        "char_start": 13713,
+        "char_end": 13725
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "expectation",
+      "metric_label": "EPS CAGR, CY26-28E - Lumentum (FactSet consensus)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 252,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "October 28, 2026",
+      "basis": null,
+      "quote": "***Marvell share price = Undisturbed share price on October 28, 2026",
+      "span": {
+        "char_start": 16144,
+        "char_end": 16212
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Marvell undisturbed share price",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "Revenue $12.6 $5.1 $17.7",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Revenue $12.6 $5.1 $17.7",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Revenue $12.6 $5.1 $17.7",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Line of sight to $1 billion+ in run-rate synergies, primarily COGS",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "All-stock transaction with combined enterprise value* over ~$275B",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Pro forma ownership of ~67% Marvell shareholders and ~33% Lumentum shareholders",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Pro forma ownership of ~67% Marvell shareholders and ~33% Lumentum shareholders",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Unlocks a larger $550B TAM opportunity with stronger ability to better serve customers",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$400B $90B+ $550B",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "$400B $90B+ $550B",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Marvell 76%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Lumentum 66%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "***Marvell share price = Undisturbed share price on October 28, 2026",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "quote": "Gross Margin* 58% 53% 57%",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "operating_margin_pct",
+      "quote": "Operating Margin* 37% 42% 39%",
+      "reason": "conflicting_values"
+    }
+  ],
+  "validation_notes": []
+}

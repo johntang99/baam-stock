@@ -1,0 +1,69 @@
+{
+  "doc_key": "0001045810-24-000262:q2fy25cfocommentary.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37H8B4JKQRGWD0K2C0G3",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 22.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $22.6 billion",
+      "span": {
+        "char_start": 2979,
+        "char_end": 3004
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 3.7,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $3.7 billion",
+      "span": {
+        "char_start": 3066,
+        "char_end": 3090
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 1.25,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue partially offset by higher cash taxes, stock repurchases and repayment of $1.25 billion",
+      "span": {
+        "char_start": 6021,
+        "char_end": 6116
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "revenue was $22.6 billion",
+      "reason": "conflicting_values"
+    }
+  ],
+  "validation_notes": []
+}

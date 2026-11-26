@@ -1,0 +1,87 @@
+{
+  "doc_key": "0001835632-26-000022:q227_8kx812026ex-991.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37S1SG8NXS4KAQ4FQR5S",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 2.739,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue for the second quarter of fiscal 2027 was $2.739 billion",
+      "span": {
+        "char_start": 628,
+        "char_end": 692
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 308.0,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income for the second quarter of fiscal 2027 was $308.0 million",
+      "span": {
+        "char_start": 785,
+        "char_end": 852
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 865.9,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income for the second quarter of fiscal 2027 was $865.9 million",
+      "span": {
+        "char_start": 891,
+        "char_end": 958
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 2.739,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue of $2.739 billion",
+      "span": {
+        "char_start": 1110,
+        "char_end": 1135
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "net_income",
+      "quote": "net income for the second quarter of fiscal 2027 was $308.0 million",
+      "reason": "conflicting_values"
+    }
+  ],
+  "validation_notes": []
+}

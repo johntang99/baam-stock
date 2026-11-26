@@ -1,0 +1,102 @@
+{
+  "doc_key": "0001835632-26-000026:mrvl-20261111.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BVV5HSH5S7Q6TRD324E3ZG",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 100000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "annual",
+      "basis": "company_defined",
+      "quote": "including an annual director retainer of $100,000",
+      "span": {
+        "char_start": 7859,
+        "char_end": 7908
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "annual director retainer",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 250000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "annual",
+      "basis": "company_defined",
+      "quote": "an annual equity grant of restricted stock units valued at $250,000",
+      "span": {
+        "char_start": 7913,
+        "char_end": 7980
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "annual equity grant of restricted stock units",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 10000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "annual",
+      "basis": "company_defined",
+      "quote": "each of Ms. Morris and Mr. Goodarzi will receive an annual Executive Compensation Committee member fee of $10,000",
+      "span": {
+        "char_start": 7995,
+        "char_end": 8108
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "annual Executive Compensation Committee member fee",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 15000,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "annual",
+      "basis": "company_defined",
+      "quote": "Mr. Bettinger will receive an annual Audit Committee member fee of $15,000",
+      "span": {
+        "char_start": 8113,
+        "char_end": 8187
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "annual Audit Committee member fee",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "including an annual director retainer of $100,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "an annual equity grant of restricted stock units valued at $250,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "each of Ms. Morris and Mr. Goodarzi will receive an annual Executive Compensation Committee member fee of $10,000",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Mr. Bettinger will receive an annual Audit Committee member fee of $15,000",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

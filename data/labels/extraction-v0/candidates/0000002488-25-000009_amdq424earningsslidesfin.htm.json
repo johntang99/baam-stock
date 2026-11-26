@@ -1,0 +1,151 @@
+{
+  "doc_key": "0000002488-25-000009:amdq424earningsslidesfin.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37EP5C1EKWXK9R6YG6BP",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 1995.0,
+      "unit": "number",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "revenue, non-GAAP gross margin, non-GAAP operating expenses, non-GAAP Interest Expense/Other Income (Expense), net, non-GAAP tax rate and diluted share count; AMD’s large and compelling TAM; AMD’s ability to expand Data Center and AI leadership; and AMD’s ability to drive long- term shareholder returns, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "span": {
+        "char_start": 559,
+        "char_end": 973
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 7.7,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "REVENUE Q4 2024 ▪ Record revenue of $7.7 billion",
+      "span": {
+        "char_start": 9852,
+        "char_end": 9900
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 482.0,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income of $482 million",
+      "span": {
+        "char_start": 10910,
+        "char_end": 10936
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 1.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income of $1.8 billion",
+      "span": {
+        "char_start": 11136,
+        "char_end": 11162
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 25.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "REVENUE FY 2024 ▪ Record revenue of $25.8 billion",
+      "span": {
+        "char_start": 13083,
+        "char_end": 13132
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 1.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income of $1.6 billion",
+      "span": {
+        "char_start": 14388,
+        "char_end": 14414
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 5.4,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income of $5.4 billion",
+      "span": {
+        "char_start": 14692,
+        "char_end": 14718
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "revenue, non-GAAP gross margin, non-GAAP operating expenses, non-GAAP Interest Expense/Other Income (Expense), net, non-GAAP tax rate and diluted share count; AMD’s large and compelling TAM; AMD’s ability to expand Data Center and AI leadership; and AMD’s ability to drive long- term shareholder returns, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "reason": "unit_not_allowed:number"
+    },
+    {
+      "metric": "revenue",
+      "quote": "REVENUE Q4 2024 ▪ Record revenue of $7.7 billion",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "net_income",
+      "quote": "net income of $482 million",
+      "reason": "conflicting_values"
+    }
+  ],
+  "validation_notes": []
+}

@@ -1,0 +1,27 @@
+{
+  "doc_key": "0001045810-26-000051:q1fy27cfocommentary.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37JGVRC8TGMNZ0W9WY79",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 6.4,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue for the first quarter was $6.4 billion",
+      "span": {
+        "char_start": 3411,
+        "char_end": 3457
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [],
+  "validation_notes": []
+}

@@ -1,0 +1,33 @@
+{
+  "doc_key": "0000002488-26-000045:pressreleasedatedfebruary2.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37FTA9D5CHK8EQCGXER0",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 1995.0,
+      "unit": "number",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "revenue growth and be accretive to AMD’s non-GAAP earnings per share; expectations regarding AMD’s long-term financial model; expected alignment of AMD and Meta around execution and long-term value creation; the ability of AMD and Meta to deploy large-scale AI compute foundation needed for global demand and accelerate the future of high-performance and AI computing; the availability, timing and expected benefits of AMD products and roadmaps; and the expected demand for AMD products, all of which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "span": {
+        "char_start": 6776,
+        "char_end": 7380
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "revenue growth and be accretive to AMD’s non-GAAP earnings per share; expectations regarding AMD’s long-term financial model; expected alignment of AMD and Meta around execution and long-term value creation; the ability of AMD and Meta to deploy large-scale AI compute foundation needed for global demand and accelerate the future of high-performance and AI computing; the availability, timing and expected benefits of AMD products and roadmaps; and the expected demand for AMD products, all of which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "reason": "unit_not_allowed:number"
+    }
+  ],
+  "validation_notes": []
+}

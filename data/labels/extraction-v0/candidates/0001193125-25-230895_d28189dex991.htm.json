@@ -1,0 +1,33 @@
+{
+  "doc_key": "0001193125-25-230895:d28189dex991.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37P9GBKT5PWXXEF6MNM3",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 1995.0,
+      "unit": "number",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "revenue for AMD, that the agreement creates strategic alignment and shareholder value for the parties, and is expected to be highly accretive to AMD’s non-GAAP earnings-per-share; the availability, timing and expected benefits of AMD products and roadmaps; and the expected demand for AMD products, all of which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "span": {
+        "char_start": 5975,
+        "char_end": 6390
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "revenue for AMD, that the agreement creates strategic alignment and shareholder value for the parties, and is expected to be highly accretive to AMD’s non-GAAP earnings-per-share; the availability, timing and expected benefits of AMD products and roadmaps; and the expected demand for AMD products, all of which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "reason": "unit_not_allowed:number"
+    }
+  ],
+  "validation_notes": []
+}

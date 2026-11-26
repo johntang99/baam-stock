@@ -1,0 +1,79 @@
+{
+  "doc_key": "0001046179-26-000807:tsm-dividendadjustmentx202.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BVVJ5Y4B5EPV3JR8ZB6C48",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 181526590469,
+      "unit": "USD",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": null,
+      "quote": "TSMC Board of Directors on August 11, 2026 approved to distribute NT$181,526,590,469 as cash dividend (NT$7.0 per common share) for the second quarter of 2026",
+      "span": {
+        "char_start": 1508,
+        "char_end": 1666
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "cash dividend",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 7.0,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": null,
+      "quote": "NT$7.0 per common share",
+      "span": {
+        "char_start": 1611,
+        "char_end": 1634
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "cash dividend per common share (originally approved)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 7.00000137,
+      "unit": "USD_per_share",
+      "currency": "TWD",
+      "period": "second quarter of 2026",
+      "basis": null,
+      "quote": "The cash dividend for the second quarter of 2026 is hereby adjusted to NT$7.00000137 per common share.",
+      "span": {
+        "char_start": 2106,
+        "char_end": 2208
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "adjusted cash dividend per common share",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "TSMC Board of Directors on August 11, 2026 approved to distribute NT$181,526,590,469 as cash dividend (NT$7.0 per common share) for the second quarter of 2026",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "NT$7.0 per common share",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The cash dividend for the second quarter of 2026 is hereby adjusted to NT$7.00000137 per common share.",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

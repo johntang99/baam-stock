@@ -1,0 +1,667 @@
+{
+  "doc_key": "0001045810-26-000088:supplementalfinancialinfor.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BVYQW1YR6MBCH6J4FMVEM2",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 115844,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027 (three months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "Revenue $ 115,844 $ 57,006 $ 293,681 $ 147,811",
+      "span": {
+        "char_start": 823,
+        "char_end": 869
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 57006,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2026 (three months ended October 26, 2025)",
+      "basis": "gaap",
+      "quote": "Revenue $ 115,844 $ 57,006 $ 293,681 $ 147,811",
+      "span": {
+        "char_start": 823,
+        "char_end": 869
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 293681,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first nine months of fiscal 2027 (nine months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "Revenue $ 115,844 $ 57,006 $ 293,681 $ 147,811",
+      "span": {
+        "char_start": 823,
+        "char_end": 869
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 86676,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027 (three months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "Gross profit 86,676 41,849 219,976 102,370",
+      "span": {
+        "char_start": 914,
+        "char_end": 956
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross profit",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 219976,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first nine months of fiscal 2027 (nine months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "Gross profit 86,676 41,849 219,976 102,370",
+      "span": {
+        "char_start": 914,
+        "char_end": 956
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross profit",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 9156,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027 (three months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "Total operating expenses 9,156 5,839 25,185 16,282",
+      "span": {
+        "char_start": 1085,
+        "char_end": 1135
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total operating expenses",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 7454,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027 (three months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "Research and development 7,454 4,705 20,829 12,985",
+      "span": {
+        "char_start": 976,
+        "char_end": 1026
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Research and development",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 77520,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027 (three months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "Operating income 77,520 36,010 194,791 86,088",
+      "span": {
+        "char_start": 1136,
+        "char_end": 1181
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 194791,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first nine months of fiscal 2027 (nine months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "Operating income 77,520 36,010 194,791 86,088",
+      "span": {
+        "char_start": 1136,
+        "char_end": 1181
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Operating income",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 65287,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027 (three months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "Net income $ 65,287 $ 31,910 $ 183,297 $ 77,107",
+      "span": {
+        "char_start": 1325,
+        "char_end": 1372
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 31910,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2026 (three months ended October 26, 2025)",
+      "basis": "gaap",
+      "quote": "Net income $ 65,287 $ 31,910 $ 183,297 $ 77,107",
+      "span": {
+        "char_start": 1325,
+        "char_end": 1372
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 183297,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first nine months of fiscal 2027 (nine months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "Net income $ 65,287 $ 31,910 $ 183,297 $ 77,107",
+      "span": {
+        "char_start": 1325,
+        "char_end": 1372
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 2.7,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027 (three months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "Diluted $ 2.70 $ 1.30 $ 7.55 $ 3.14",
+      "span": {
+        "char_start": 1429,
+        "char_end": 1464
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income per share: Diluted",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 7.55,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "first nine months of fiscal 2027 (nine months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "Diluted $ 2.70 $ 1.30 $ 7.55 $ 3.14",
+      "span": {
+        "char_start": 1429,
+        "char_end": 1464
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income per share: Diluted",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 2.71,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027 (three months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "Basic $ 2.71 $ 1.31 $ 7.58 $ 3.16",
+      "span": {
+        "char_start": 1395,
+        "char_end": 1428
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income per share: Basic",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 48253,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027 (three months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "Net cash provided by operating activities 48,253 23,750 122,675 66,530",
+      "span": {
+        "char_start": 3933,
+        "char_end": 4003
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net cash provided by operating activities",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 122675,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "first nine months of fiscal 2027 (nine months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "Net cash provided by operating activities 48,253 23,750 122,675 66,530",
+      "span": {
+        "char_start": 3933,
+        "char_end": 4003
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net cash provided by operating activities",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 4422,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027 (three months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "Purchases related to property and equipment and intangible assets (4,422) (1,637) (8,856) (4,758)",
+      "span": {
+        "char_start": 4309,
+        "char_end": 4406
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Purchases related to property and equipment and intangible assets",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 22122,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027 (three months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "Payments related to repurchases of common stock (22,122) (12,456) (61,166) (36,271)",
+      "span": {
+        "char_start": 4809,
+        "char_end": 4892
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Payments related to repurchases of common stock",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 6026,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027 (three months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "Dividends paid (6,026) (243) (12,316) (732)",
+      "span": {
+        "char_start": 4893,
+        "char_end": 4936
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Dividends paid",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 72899,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027 (three months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "United States $ 72,899 $ 39,177 $ 196,742 $ 97,759",
+      "span": {
+        "char_start": 10197,
+        "char_end": 10247
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "United States revenue",
+      "segment": "United States"
+    },
+    {
+      "metric": "revenue",
+      "value": 30295,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027 (three months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "Taiwan 30,295 13,751 69,286 30,301",
+      "span": {
+        "char_start": 10248,
+        "char_end": 10282
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Taiwan revenue",
+      "segment": "Taiwan"
+    },
+    {
+      "metric": "revenue",
+      "value": 11050,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027 (three months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "China (including Hong Kong) 11,050 2,973 23,480 16,617",
+      "span": {
+        "char_start": 10283,
+        "char_end": 10337
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "China (including Hong Kong) revenue",
+      "segment": "China (including Hong Kong)"
+    },
+    {
+      "metric": "revenue",
+      "value": 1600,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027 (three months ended October 25, 2026)",
+      "basis": "gaap",
+      "quote": "Other 1,600 1,105 4,173 3,134",
+      "span": {
+        "char_start": 10338,
+        "char_end": 10367
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Other revenue",
+      "segment": "Other"
+    },
+    {
+      "metric": "other",
+      "value": 37,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Revenue from sales to customers headquartered outside of the United States accounted for 37% and 33% of total revenue for the third quarter and first nine months of fiscal year 2027, respectively",
+      "span": {
+        "char_start": 10421,
+        "char_end": 10616
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Revenue from customers headquartered outside the United States as % of total revenue",
+      "segment": "Outside United States"
+    },
+    {
+      "metric": "other",
+      "value": 680,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "We recognized inventory provisions of $680 million and $378 million for the third quarter, and $2.3 billion and $3.6 billion for the first nine months, of fiscal years 2027 and 2026, respectively, in Cost of revenue.",
+      "span": {
+        "char_start": 9583,
+        "char_end": 9799
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Inventory provisions",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2.3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "Net unrealized gains on investments in publicly held equity securities held at period end were $2.3 billion and $14.6 billion for the third quarter and first nine months of fiscal year 2027, respectively.",
+      "span": {
+        "char_start": 7459,
+        "char_end": 7663
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net unrealized gains on publicly held equity securities",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 14,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2027",
+      "basis": "gaap",
+      "quote": "For the third quarter of fiscal year 2027, three direct customers represented 14%, 11%, and 11% of total revenue, all of which were primarily attributable to the Compute & Networking segment.",
+      "span": {
+        "char_start": 11679,
+        "char_end": 11870
+      },
+      "direction": "none",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Largest direct customer share of total revenue",
+      "segment": "Compute & Networking"
+    },
+    {
+      "metric": "other",
+      "value": 372188,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "as of October 25, 2026",
+      "basis": "gaap",
+      "quote": "Total assets $ 372,188 $ 206,803",
+      "span": {
+        "char_start": 2332,
+        "char_end": 2364
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total assets",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "Revenue $ 115,844 $ 57,006 $ 293,681 $ 147,811",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Revenue $ 115,844 $ 57,006 $ 293,681 $ 147,811",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Revenue $ 115,844 $ 57,006 $ 293,681 $ 147,811",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross profit 86,676 41,849 219,976 102,370",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross profit 86,676 41,849 219,976 102,370",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Total operating expenses 9,156 5,839 25,185 16,282",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Research and development 7,454 4,705 20,829 12,985",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income 77,520 36,010 194,791 86,088",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income 77,520 36,010 194,791 86,088",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income $ 65,287 $ 31,910 $ 183,297 $ 77,107",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income $ 65,287 $ 31,910 $ 183,297 $ 77,107",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income $ 65,287 $ 31,910 $ 183,297 $ 77,107",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "quote": "Net cash provided by operating activities 48,253 23,750 122,675 66,530",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "quote": "Net cash provided by operating activities 48,253 23,750 122,675 66,530",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Purchases related to property and equipment and intangible assets (4,422) (1,637) (8,856) (4,758)",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Payments related to repurchases of common stock (22,122) (12,456) (61,166) (36,271)",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Dividends paid (6,026) (243) (12,316) (732)",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "revenue",
+      "quote": "United States $ 72,899 $ 39,177 $ 196,742 $ 97,759",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Taiwan 30,295 13,751 69,286 30,301",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "China (including Hong Kong) 11,050 2,973 23,480 16,617",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Other 1,600 1,105 4,173 3,134",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "Revenue from sales to customers headquartered outside of the United States accounted for 37% and 33% of total revenue for the third quarter and first nine months of fiscal year 2027, respectively",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "We recognized inventory provisions of $680 million and $378 million for the third quarter, and $2.3 billion and $3.6 billion for the first nine months, of fiscal years 2027 and 2026, respectively, in Cost of revenue.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Net unrealized gains on investments in publicly held equity securities held at period end were $2.3 billion and $14.6 billion for the third quarter and first nine months of fiscal year 2027, respectively.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "For the third quarter of fiscal year 2027, three direct customers represented 14%, 11%, and 11% of total revenue, all of which were primarily attributable to the Compute & Networking segment.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Total assets $ 372,188 $ 206,803",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "Diluted $ 2.70 $ 1.30 $ 7.55 $ 3.14",
+      "reason": "conflicting_values"
+    }
+  ],
+  "validation_notes": []
+}

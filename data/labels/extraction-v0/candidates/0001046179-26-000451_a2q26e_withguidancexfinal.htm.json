@@ -1,0 +1,45 @@
+{
+  "doc_key": "0001046179-26-000451:a2q26e_withguidancexfinal.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37KQ253CS846KTC9QGN7",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 40.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $40.20 billion",
+      "span": {
+        "char_start": 724,
+        "char_end": 750
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "gross_margin",
+      "value": 67.7,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "Gross margin for the quarter was 67.7%",
+      "span": {
+        "char_start": 836,
+        "char_end": 874
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [],
+  "validation_notes": []
+}

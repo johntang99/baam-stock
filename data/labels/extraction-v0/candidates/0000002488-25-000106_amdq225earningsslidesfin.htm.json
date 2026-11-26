@@ -1,0 +1,92 @@
+{
+  "doc_key": "0000002488-25-000106:amdq225earningsslidesfin.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37F5V2WEY5KCKPZ3JPBJ",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 1995.0,
+      "unit": "number",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "revenue, non-GAAP gross margin, non-GAAP operating expenses, non-GAAP Interest Expense/Other Income (Expense), net, non-GAAP tax rate and diluted share count; AMD’s large and compelling TAM; AMD’s ability to expand Data Center and AI leadership; AMD's financial and operating performance; the impact of export licensing requirements on AMD; and AMD’s ability to drive long-term shareholder returns, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "span": {
+        "char_start": 731,
+        "char_end": 1239
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 7.7,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Revenue Q2 2025 Record second quarter revenue of $7.7 billion",
+      "span": {
+        "char_start": 10178,
+        "char_end": 10239
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 0.9,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income of $0.9 billion",
+      "span": {
+        "char_start": 11135,
+        "char_end": 11161
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 0.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income of $0.8 billion",
+      "span": {
+        "char_start": 11475,
+        "char_end": 11501
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "revenue, non-GAAP gross margin, non-GAAP operating expenses, non-GAAP Interest Expense/Other Income (Expense), net, non-GAAP tax rate and diluted share count; AMD’s large and compelling TAM; AMD’s ability to expand Data Center and AI leadership; AMD's financial and operating performance; the impact of export licensing requirements on AMD; and AMD’s ability to drive long-term shareholder returns, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "reason": "unit_not_allowed:number"
+    },
+    {
+      "metric": "net_income",
+      "quote": "net income of $0.9 billion",
+      "reason": "conflicting_values"
+    }
+  ],
+  "validation_notes": []
+}

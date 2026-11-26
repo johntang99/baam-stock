@@ -1,0 +1,105 @@
+{
+  "doc_key": "0001045810-25-000207:q2fy26cfocommentary.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37HYV4K6JV65JB83R73B",
+  "candidates": [
+    {
+      "metric": "gross_margin",
+      "value": 72.4,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "gross margin was 72.4%",
+      "span": {
+        "char_start": 2333,
+        "char_end": 2355
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 46.7,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Revenue Revenue for the second quarter was $46.7 billion",
+      "span": {
+        "char_start": 2603,
+        "char_end": 2659
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "data_center_revenue",
+      "value": 41.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Data Center revenue for the second quarter was $41.1 billion",
+      "span": {
+        "char_start": 2708,
+        "char_end": 2768
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 33.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $33.8 billion",
+      "span": {
+        "char_start": 3334,
+        "char_end": 3359
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 7.3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $7.3 billion",
+      "span": {
+        "char_start": 3488,
+        "char_end": 3512
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "Revenue Revenue for the second quarter was $46.7 billion",
+      "reason": "conflicting_values"
+    }
+  ],
+  "validation_notes": []
+}

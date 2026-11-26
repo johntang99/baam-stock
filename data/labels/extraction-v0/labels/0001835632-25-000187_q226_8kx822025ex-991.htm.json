@@ -4,18 +4,19 @@
   "doc_kind": "earnings_release",
   "fiscal_period": null,
   "label_status": "draft",
-  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.3",
   "facts": [
     {
       "metric": "revenue",
-      "value": 2005999999.9999998,
+      "value": 2006000000.0,
       "unit": "USD",
       "period": null,
       "basis": null,
       "quote": "revenue for the second quarter of fiscal 2026 was $2.006 billion",
       "direction": "none",
       "scope": "company",
-      "certainty": "reported"
+      "certainty": "reported",
+      "segment": null
     }
   ]
 }

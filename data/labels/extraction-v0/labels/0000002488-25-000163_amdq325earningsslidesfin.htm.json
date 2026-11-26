@@ -4,7 +4,7 @@
   "doc_kind": "earnings_release",
   "fiscal_period": null,
   "label_status": "draft",
-  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.3",
   "facts": [
     {
       "metric": "revenue",
@@ -15,7 +15,8 @@
       "quote": "Revenue Record third quarter revenue of $9.2 billion",
       "direction": "none",
       "scope": "company",
-      "certainty": "reported"
+      "certainty": "reported",
+      "segment": null
     }
   ]
 }

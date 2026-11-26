@@ -1,0 +1,51 @@
+{
+  "doc_key": "0001045810-26-000073:q2fy27cfocommentary.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37JR6EFJ80HJV2B7M5P8",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 7.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue for the second quarter was $7.2 billion",
+      "span": {
+        "char_start": 2687,
+        "char_end": 2734
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 1933.0,
+      "unit": "number",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "revenue under agreements with AI clouds; expectations with respect to the PORTS-Pike Technology Campus, including its buildout, related guarantees, and anticipated NVIDIA deployments, revenue and upgrade cycles; expectations with respect to our investments; expectations with respect to our financing arrangements; expectations with respect to technology developments, and related trends and drivers; our future cash dividends or other returns to stockholders, our financial and business outlook for the third quarter of fiscal 2027 and beyond; projected market growth and trends; expectations with respect to AI and related industries; and other statements that are not historical facts are forward-looking statements within the meaning of Section 27A of the Securities Act of 1933",
+      "span": {
+        "char_start": 13202,
+        "char_end": 13984
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "revenue under agreements with AI clouds; expectations with respect to the PORTS-Pike Technology Campus, including its buildout, related guarantees, and anticipated NVIDIA deployments, revenue and upgrade cycles; expectations with respect to our investments; expectations with respect to our financing arrangements; expectations with respect to technology developments, and related trends and drivers; our future cash dividends or other returns to stockholders, our financial and business outlook for the third quarter of fiscal 2027 and beyond; projected market growth and trends; expectations with respect to AI and related industries; and other statements that are not historical facts are forward-looking statements within the meaning of Section 27A of the Securities Act of 1933",
+      "reason": "unit_not_allowed:number"
+    }
+  ],
+  "validation_notes": []
+}

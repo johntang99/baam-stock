@@ -1,0 +1,251 @@
+{
+  "doc_key": "0000002488-26-000121:q22026991.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37G5PY4P1JEW3KGW3EH4",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 11.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $11.5 billion",
+      "span": {
+        "char_start": 372,
+        "char_end": 397
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "gross_margin",
+      "value": 54.0,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "gross margin was 54%",
+      "span": {
+        "char_start": 399,
+        "char_end": 419
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 2.3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income was $2.3 billion",
+      "span": {
+        "char_start": 456,
+        "char_end": 483
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "gross_margin",
+      "value": 56.0,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "gross margin was 56%",
+      "span": {
+        "char_start": 550,
+        "char_end": 570
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 2.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "net income was $2.8 billion",
+      "span": {
+        "char_start": 607,
+        "char_end": 634
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 6.7,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $6.7 billion",
+      "span": {
+        "char_start": 3049,
+        "char_end": 3073
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 3.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $3.8 billion",
+      "span": {
+        "char_start": 3200,
+        "char_end": 3224
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 3.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $3.1 billion",
+      "span": {
+        "char_start": 3264,
+        "char_end": 3288
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 779.0,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $779 million",
+      "span": {
+        "char_start": 3390,
+        "char_end": 3414
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 977.0,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $977 million",
+      "span": {
+        "char_start": 3494,
+        "char_end": 3518
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 2026.0,
+      "unit": "number",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "revenue and earnings growth in the years ahead; acceleration of AMD’s Data Center sales growth in second half of 2026",
+      "span": {
+        "char_start": 11455,
+        "char_end": 11572
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 1995.0,
+      "unit": "number",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "revenue growth and continued earnings expansion; the strategic partnership with Anthropic and the deployment of up to two gigawatts of AMD Instinct GPUs in AMD Helios rack-scale solutions and multiyear collaboration; expected plans, benefits and timing of AMD’s partnerships and strategic collaborations, including with Microsoft, Cerebras and Cisco; the features, functionality, performance, availability, timing and expected benefits of future AMD products; and AMD’s expected third quarter 2026 financial outlook, including revenue and non-GAAP gross margin, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "span": {
+        "char_start": 11598,
+        "char_end": 12269
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "revenue and earnings growth in the years ahead; acceleration of AMD’s Data Center sales growth in second half of 2026",
+      "reason": "unit_not_allowed:number"
+    },
+    {
+      "metric": "revenue",
+      "quote": "revenue growth and continued earnings expansion; the strategic partnership with Anthropic and the deployment of up to two gigawatts of AMD Instinct GPUs in AMD Helios rack-scale solutions and multiyear collaboration; expected plans, benefits and timing of AMD’s partnerships and strategic collaborations, including with Microsoft, Cerebras and Cisco; the features, functionality, performance, availability, timing and expected benefits of future AMD products; and AMD’s expected third quarter 2026 financial outlook, including revenue and non-GAAP gross margin, which are made pursuant to the Safe Harbor provisions of the Private Securities Litigation Reform Act of 1995",
+      "reason": "unit_not_allowed:number"
+    },
+    {
+      "metric": "revenue",
+      "quote": "revenue was $11.5 billion",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "quote": "gross margin was 54%",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "net_income",
+      "quote": "net income was $2.3 billion",
+      "reason": "conflicting_values"
+    }
+  ],
+  "validation_notes": []
+}

@@ -1,0 +1,656 @@
+{
+  "doc_key": "0001730168-26-000076:avgo-08022026x8kxex99.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BVRG34TS4RK124K4K5HRX1",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 29.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Revenue of $29.6 billion for the third quarter, up 86 percent from the prior year period",
+      "span": {
+        "char_start": 164,
+        "char_end": 252
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 86,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Revenue of $29.6 billion for the third quarter, up 86 percent from the prior year period",
+      "span": {
+        "char_start": 164,
+        "char_end": 252
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Revenue growth from prior year period",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 16.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "GAAP operating income of $16.0 billion for the third quarter",
+      "span": {
+        "char_start": 255,
+        "char_end": 315
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP operating income",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 20.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal year 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP operating income of $20.1 billion for the third quarter",
+      "span": {
+        "char_start": 317,
+        "char_end": 381
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP operating income",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 2.68,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "third quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "GAAP diluted EPS of $2.68 for the third quarter",
+      "span": {
+        "char_start": 384,
+        "char_end": 431
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "GAAP diluted EPS",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": 3.32,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "third quarter of fiscal year 2026",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP diluted EPS of $3.32 for the third quarter",
+      "span": {
+        "char_start": 433,
+        "char_end": 484
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP diluted EPS",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 14.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Cash from operations of $14.2 billion for the third quarter",
+      "span": {
+        "char_start": 487,
+        "char_end": 546
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash from operations",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 0.5,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "less capital expenditures of $0.5 billion",
+      "span": {
+        "char_start": 548,
+        "char_end": 589
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Capital expenditures",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 13.7,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal year 2026",
+      "basis": "non_gaap",
+      "quote": "resulted in $13.7 billion of free cash flow, or 46 percent of revenue",
+      "span": {
+        "char_start": 591,
+        "char_end": 660
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 46,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal year 2026",
+      "basis": "non_gaap",
+      "quote": "resulted in $13.7 billion of free cash flow, or 46 percent of revenue",
+      "span": {
+        "char_start": 591,
+        "char_end": 660
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Free cash flow as percent of revenue",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 0.65,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal year 2026",
+      "basis": null,
+      "quote": "The Board of Directors of Broadcom has approved a quarterly cash dividend of $0.65 per share.",
+      "span": {
+        "char_start": 4754,
+        "char_end": 4847
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Quarterly common stock dividend",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 34.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Fourth quarter fiscal year 2026 revenue guidance of approximately $34.8 billion, an increase of 93 percent from the prior year period",
+      "span": {
+        "char_start": 716,
+        "char_end": 849
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Fourth quarter revenue guidance",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 93,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Q4 consolidated revenue growth is forecasted to increase 93% year-over-year to $34.8 billion",
+      "span": {
+        "char_start": 1972,
+        "char_end": 2064
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Q4 consolidated revenue growth",
+      "segment": null
+    },
+    {
+      "metric": "operating_margin_pct",
+      "value": 66,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal year 2026",
+      "basis": "non_gaap",
+      "quote": "we expect to maintain our non-GAAP operating margin at 66%, flat from a year ago",
+      "span": {
+        "char_start": 2070,
+        "char_end": 2150
+      },
+      "direction": "unchanged",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Non-GAAP operating income guidance as percent of projected revenue",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 16.7,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal year 2026",
+      "basis": null,
+      "quote": "Q3 AI semiconductor revenue of $16.7 billion grew 221% year-over-year, and 54% quarter-over-quarter",
+      "span": {
+        "char_start": 1438,
+        "char_end": 1537
+      },
+      "direction": "increase",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "AI semiconductor revenue",
+      "segment": "AI semiconductor"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 221,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal year 2026",
+      "basis": null,
+      "quote": "Q3 AI semiconductor revenue of $16.7 billion grew 221% year-over-year, and 54% quarter-over-quarter",
+      "span": {
+        "char_start": 1438,
+        "char_end": 1537
+      },
+      "direction": "increase",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "AI semiconductor revenue growth year-over-year",
+      "segment": "AI semiconductor"
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": 54,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal year 2026",
+      "basis": null,
+      "quote": "Q3 AI semiconductor revenue of $16.7 billion grew 221% year-over-year, and 54% quarter-over-quarter",
+      "span": {
+        "char_start": 1438,
+        "char_end": 1537
+      },
+      "direction": "increase",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "AI semiconductor revenue growth quarter-over-quarter",
+      "segment": "AI semiconductor"
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 21.7,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "fourth quarter of fiscal year 2026",
+      "basis": null,
+      "quote": "we expect AI semiconductor revenue to accelerate to $21.7 billion, up 236% year-over-year",
+      "span": {
+        "char_start": 1625,
+        "char_end": 1714
+      },
+      "direction": "increase",
+      "scope": "product",
+      "certainty": "guidance",
+      "metric_label": "Expected AI semiconductor revenue",
+      "segment": "AI semiconductor"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 236,
+      "unit": "pct",
+      "currency": null,
+      "period": "fourth quarter of fiscal year 2026",
+      "basis": null,
+      "quote": "we expect AI semiconductor revenue to accelerate to $21.7 billion, up 236% year-over-year",
+      "span": {
+        "char_start": 1625,
+        "char_end": 1714
+      },
+      "direction": "increase",
+      "scope": "product",
+      "certainty": "guidance",
+      "metric_label": "Expected AI semiconductor revenue growth year-over-year",
+      "segment": "AI semiconductor"
+    },
+    {
+      "metric": "other",
+      "value": 92,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal year 2026",
+      "basis": "non_gaap",
+      "quote": "We delivered non-GAAP operating income growth of 92% year-over-year",
+      "span": {
+        "char_start": 1795,
+        "char_end": 1862
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Non-GAAP operating income growth year-over-year",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 13088,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Net income $ 13,088 $ 4,140 +216 % $ 16,372 $ 8,404 +95 %",
+      "span": {
+        "char_start": 2646,
+        "char_end": 2703
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income (GAAP)",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 16372,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal year 2026",
+      "basis": "non_gaap",
+      "quote": "Net income $ 13,088 $ 4,140 +216 % $ 16,372 $ 8,404 +95 %",
+      "span": {
+        "char_start": 2646,
+        "char_end": 2703
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Net income (Non-GAAP)",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 20839,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Semiconductor solutions $ 20,839 70 % $ 9,166 57 % +127 %",
+      "span": {
+        "char_start": 2973,
+        "char_end": 3030
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Semiconductor solutions net revenue",
+      "segment": "Semiconductor solutions"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 127,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Semiconductor solutions $ 20,839 70 % $ 9,166 57 % +127 %",
+      "span": {
+        "char_start": 2973,
+        "char_end": 3030
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Semiconductor solutions revenue change",
+      "segment": "Semiconductor solutions"
+    },
+    {
+      "metric": "revenue",
+      "value": 8752,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Infrastructure software 8,752 30 6,786 43 +29 %",
+      "span": {
+        "char_start": 3031,
+        "char_end": 3078
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Infrastructure software net revenue",
+      "segment": "Infrastructure software"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 29,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Infrastructure software 8,752 30 6,786 43 +29 %",
+      "span": {
+        "char_start": 3031,
+        "char_end": 3078
+      },
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "metric_label": "Infrastructure software revenue change",
+      "segment": "Infrastructure software"
+    },
+    {
+      "metric": "other",
+      "value": 24.0,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "end of third quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "The Company’s cash and cash equivalents at the end of the fiscal quarter were $24.0 billion, compared to $19.6 billion at the end of the prior fiscal quarter.",
+      "span": {
+        "char_start": 3127,
+        "char_end": 3285
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash and cash equivalents",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 3.1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "third quarter of fiscal year 2026",
+      "basis": null,
+      "quote": "On June 30, 2026, the Company paid a cash dividend of $0.65 per share, totaling $3.1 billion.",
+      "span": {
+        "char_start": 3473,
+        "char_end": 3566
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Cash dividend paid",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 20456,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Gross margin on GAAP basis $ 20,456",
+      "span": {
+        "char_start": 15609,
+        "char_end": 15644
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin on GAAP basis",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 22191,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal year 2026",
+      "basis": "non_gaap",
+      "quote": "Gross margin on non-GAAP basis $ 22,191",
+      "span": {
+        "char_start": 15855,
+        "char_end": 15894
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Gross margin on non-GAAP basis",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 4501,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal year 2026",
+      "basis": "gaap",
+      "quote": "Total operating expenses on GAAP basis $ 4,501",
+      "span": {
+        "char_start": 16443,
+        "char_end": 16489
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total operating expenses on GAAP basis",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 2096,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": "third quarter of fiscal year 2026",
+      "basis": "non_gaap",
+      "quote": "Total operating expenses on non-GAAP basis $ 2,096",
+      "span": {
+        "char_start": 16754,
+        "char_end": 16804
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Total operating expenses on non-GAAP basis",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "less capital expenditures of $0.5 billion",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "resulted in $13.7 billion of free cash flow, or 46 percent of revenue",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The Board of Directors of Broadcom has approved a quarterly cash dividend of $0.65 per share.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "We delivered non-GAAP operating income growth of 92% year-over-year",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income $ 13,088 $ 4,140 +216 % $ 16,372 $ 8,404 +95 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income $ 13,088 $ 4,140 +216 % $ 16,372 $ 8,404 +95 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Semiconductor solutions $ 20,839 70 % $ 9,166 57 % +127 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Infrastructure software 8,752 30 6,786 43 +29 %",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "other",
+      "quote": "The Company’s cash and cash equivalents at the end of the fiscal quarter were $24.0 billion, compared to $19.6 billion at the end of the prior fiscal quarter.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "On June 30, 2026, the Company paid a cash dividend of $0.65 per share, totaling $3.1 billion.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross margin on GAAP basis $ 20,456",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross margin on non-GAAP basis $ 22,191",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Total operating expenses on GAAP basis $ 4,501",
+      "reason": "value_not_in_quote"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Total operating expenses on non-GAAP basis $ 2,096",
+      "reason": "value_not_in_quote"
+    }
+  ],
+  "validation_notes": []
+}

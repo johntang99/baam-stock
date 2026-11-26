@@ -1,0 +1,146 @@
+{
+  "doc_key": "0001045810-26-000088:q3fy27pr.htm",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8BW37K1C48S4EFM4JTJBQ36",
+  "candidates": [
+    {
+      "metric": "revenue",
+      "value": 115.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Revenue of $115.8 billion",
+      "span": {
+        "char_start": 107,
+        "char_end": 132
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "data_center_revenue",
+      "value": 107.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Data Center revenue of $107.6 billion",
+      "span": {
+        "char_start": 160,
+        "char_end": 197
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 115.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue for the third quarter ended October 25, 2026, of $115.8 billion",
+      "span": {
+        "char_start": 390,
+        "char_end": 461
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "gross_margin",
+      "value": 74.8,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "gross margins were 74.8%",
+      "span": {
+        "char_start": 560,
+        "char_end": 584
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 107.6,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $107.6 billion",
+      "span": {
+        "char_start": 3101,
+        "char_end": 3127
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 8.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $8.2 billion",
+      "span": {
+        "char_start": 7759,
+        "char_end": 7783
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 1933.0,
+      "unit": "number",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "revenue under agreements with neoclouds; expectations with respect to NVIDIA’s investments and acquisitions, including NVIDIA’s pending acquisition of Hugging Face; expectations with respect to NVIDIA’s financing arrangements; expectations with respect to technology developments, and related trends and drivers; future NVIDIA cash dividends and stock repurchases or other returns to stockholders; NVIDIA’s financial and business outlook for the fourth quarter of fiscal 2027 and beyond; projected market growth and trends; expectations with respect to AI and related industries; expectations with respect to NVIDIA’s Form 10-Q for the third quarter of fiscal 2027; expectations with respect to NVIDIA’s leadership transition and the search for a new chief executive officer and related matters; expectations with respect to the ongoing investigation by an independent committee of NVIDIA’s board of directors and related matters; expectations with respect to litigation, government and regulatory inquiries and other actions or proceedings and related matters; and other statements that are not historical facts are forward-looking statements within the meaning of Section 27A of the Securities Act of 1933",
+      "span": {
+        "char_start": 13359,
+        "char_end": 14566
+      },
+      "direction": null,
+      "scope": null,
+      "certainty": null,
+      "metric_label": null,
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "revenue under agreements with neoclouds; expectations with respect to NVIDIA’s investments and acquisitions, including NVIDIA’s pending acquisition of Hugging Face; expectations with respect to NVIDIA’s financing arrangements; expectations with respect to technology developments, and related trends and drivers; future NVIDIA cash dividends and stock repurchases or other returns to stockholders; NVIDIA’s financial and business outlook for the fourth quarter of fiscal 2027 and beyond; projected market growth and trends; expectations with respect to AI and related industries; expectations with respect to NVIDIA’s Form 10-Q for the third quarter of fiscal 2027; expectations with respect to NVIDIA’s leadership transition and the search for a new chief executive officer and related matters; expectations with respect to the ongoing investigation by an independent committee of NVIDIA’s board of directors and related matters; expectations with respect to litigation, government and regulatory inquiries and other actions or proceedings and related matters; and other statements that are not historical facts are forward-looking statements within the meaning of Section 27A of the Securities Act of 1933",
+      "reason": "unit_not_allowed:number"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Revenue of $115.8 billion",
+      "reason": "conflicting_values"
+    }
+  ],
+  "validation_notes": []
+}
