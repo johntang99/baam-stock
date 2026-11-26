@@ -1,5 +1,22 @@
 # CHANGELOG
 
+## Phase 1 · group 1 (DP 1.03–1.06) — 2026-11-26
+- **contract-0.7.2** (OQ-23): evidence/event entities tabled; new `llm_calls`; DC §3.4b.
+- `supabase/migrations/0002_evidence_events.sql`: 8 tables, 12 enums, append-only guards (document versions:
+  only `visibility` may change; evidence: only `visibility`/`verification_status`; analysis versions and LLM calls
+  immutable), events optimistic-lock trigger (row_version +1 only, current pointer never backwards),
+  null-reason CHECK for missing publish times (AC-06), view `event_analysis_current`, RLS on.
+- `sr.evidence`: `EvidenceSource` protocol; SEC EDGAR (submissions → primary documents) and IR RSS/Atom
+  adapters; archive + rate-limited live transports (live needs `SEC_EDGAR_USER_AGENT`); whitespace-insensitive
+  content hashing; MNPI screen; local raw store; `ingest` (versions, corrections, duplicates, `analyze_event`
+  jobs); `PointInTimeReader` (raises on look-ahead).
+- `sr.llm`: provider protocol, fake provider, Claude provider (`claude-opus-5-5`, structured output, no tools,
+  refusal fallback); every fact must quote the source verbatim or the call is rejected; calls logged.
+- `sr.events`: identity keys, `attach_evidence` (independent-origin counting, derived evidence status),
+  milestones, `publish_analysis` with optimistic lock (AC-08).
+- Tests: 276 (19 Postgres-backed via `TEST_DATABASE_URL`, run in CI against postgres:17). Synthetic archive in
+  `services/py/tests/fixtures/evidence/`. `.gitignore` `data/` anchored to the repo root.
+
 ## 2026-11-26 — decisions confirmed
 - contract-0.7.1 approved (OQ-01).
 - D-05…D-12 confirmed with their default values; status `confirmed` added to the decision-table vocabulary (MP §9, `config/decisions.yaml`). No parameter values changed.

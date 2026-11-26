@@ -21,9 +21,9 @@
 ```bash
 pnpm install                                   # JS 依赖
 pnpm -r build                                  # contracts 生成 TS + web 构建
-pnpm --filter @baam/contracts test             # examples/*.json 通过 schema 校验
+pnpm --filter contracts test                    # examples/*.json 通过 schema 校验
 uv sync                                        # Python 依赖（根目录 uv 项目，引用 services/py）
-uv run pytest services/py/tests -q             # Python 测试
+TEST_DATABASE_URL=postgresql://… uv run pytest services/py/tests -q   # Python 测试（含数据库测试）
 uv run ruff check . && uv run mypy services/py/sr
 uv run python scripts/make_fixture.py          # 生成合成 fixture（synthetic）
 uv run python scripts/validate_sample.py --fixture data/fixtures/nvda_2026-12-01_1s.parquet
@@ -32,4 +32,5 @@ make check                                     # 以上检查一次跑完
 ```
 
 ## 当前进度
-- **Phase 0**。下一阶段开始前，由人确认决策表（`config/decisions.yaml` 中 `proposed` 项）与数据供应商（D-13/D-15/D-16）。
+- Phase 0 完成（CI 绿）。**Phase 1 进行中**：已完成 DP 1.03–1.06（证据入库、LLM 接口、事件与版本）；行情相关任务（1.01、1.02 等）等待 D-13 供应商样本。
+- 数据库测试：设置 `TEST_DATABASE_URL`（管理员连接串，测试会建临时库）后运行 pytest；CI 自带 postgres:17。
