@@ -1,0 +1,15 @@
+# Overrides on top of exchange_calendars XNYS (D-04). Any change => bump calendar_version.
+# Each override: {date, status: open|early_close|closed, close_et?: "HH:MM", ticket, note}
+calendar_version: cal-2026.11
+base: exchange_calendars:XNYS
+timezone: America/New_York
+regular_open_et: "09:30"
+regular_close_et: "16:00"
+early_close_et: "13:00"
+overrides: []
+# Verified against exchange_calendars 4.13.3 on 2026-11-26: 2026-11-26 closed; 2026-11-27 and 2026-12-24 early_close 13:00 ET.
+# Cross-check with the official Nasdaq/NYSE holiday calendar is still a manual step (D-04, status proposed).
+# exchange_calendars range loaded into memory (training history from D-20 2021-01; future schedule).
+range:
+  start: "2016-01-01"
+  end: "2028-12-31"

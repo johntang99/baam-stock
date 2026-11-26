@@ -1,0 +1,41 @@
+# Target definitions td-0.2 (DC §3.7, D-02, D-09, D-10, D-11, D-18, D-29)
+target_definition_version: td-0.2
+invalid_rules_version: inv-0.1     # = DC invalid_reason enum set of contract-0.7.1
+threshold_rule: &vol_scaled {type: vol_scaled, k: 0.25, sigma_model: sigma-0.1, on_missing_sigma: abstain}
+direction_classes: &classes [outperform, flat, underperform]
+targets:
+  - target_row_id: tgt_regular_60m_v1
+    target_id: regular_60m
+    track: stock_reaction
+    classes: *classes
+    threshold_rule: *vol_scaled
+    output_kind: class_probs
+    window_rule: {start: first_sync_qualifying_after_publish, duration_min: 60, settle_tolerance_s: 30, must_end_before_close: true}
+    min_remaining_min: null
+  - target_row_id: tgt_regular_60m_move_v1
+    target_id: regular_60m_move
+    track: stock_reaction
+    classes: []
+    threshold_rule: null
+    output_kind: quantiles
+    window_rule: {start: first_sync_qualifying_after_publish, duration_min: 60, settle_tolerance_s: 30, must_end_before_close: true, quantiles: [p50, p80, p90], shares_quotes_with: regular_60m}
+    min_remaining_min: null
+  - target_row_id: tgt_regular_to_close_v1
+    target_id: regular_to_close
+    track: stock_reaction
+    classes: *classes
+    threshold_rule: *vol_scaled
+    output_kind: class_probs
+    window_rule: {start: first_sync_qualifying_after_publish, end: official_close, settle_price: official_close}
+    min_remaining_min: 15
+  - target_row_id: tgt_next_regular_session_v1
+    target_id: next_regular_session
+    track: stock_reaction
+    classes: *classes
+    threshold_rule: *vol_scaled
+    output_kind: class_probs
+    window_rule: {start: first_sync_qualifying_not_before, start_not_before_et: "09:31:00", start_max_wait_min: 10, end: official_close, settle_price: official_close}
+    min_remaining_min: null
+availability:
+  regular_60m_settle_tolerance_s: 30   # D-18: t0 + 60m + 30s <= close
+  to_close_min_remaining_min: 15       # D-18: at least 15 min to close (15:45 inclusive)

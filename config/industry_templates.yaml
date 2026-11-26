@@ -1,0 +1,23 @@
+# D-42 / DC §3.1 industry_templates v1. bank/biotech are config + tests only (not in first-release list, D-03).
+version: 1
+templates:
+  semiconductor:
+    key_metrics_default: [revenue, gross_margin_pct, datacenter_revenue, inventory_days]
+    event_types_enabled: [earnings_guidance, customer_demand, policy_export, executive_change, accounting_audit, product_supply, macro_rates, competition, litigation_regulatory, capital_estimates, trading_structure, m_and_a, investment_contract, license_policy]
+    official_sources_default: {filings: [sec_edgar], company: [company_ir], policy: [federal_register, bis]}
+    exposure_dimensions: [export_controls, customer_concentration]
+  bank:
+    key_metrics_default: [net_interest_income, nim_pct, cet1_ratio, provision_for_credit_losses]
+    event_types_enabled: []      # OQ-09: filled in Phase 2 (P2-17)
+    official_sources_default: {filings: [sec_edgar], company: [company_ir], regulators: [fed, fdic, occ]}
+    exposure_dimensions: [interest_rates, capital_rules, credit]
+  biotech:
+    key_metrics_default: [pipeline_milestones, cash_runway_quarters, pdufa_dates]
+    event_types_enabled: []      # OQ-09
+    official_sources_default: {filings: [sec_edgar], company: [company_ir], regulators: [fda, clinicaltrials_gov]}
+    exposure_dimensions: [approvals, patents]
+  generic:
+    key_metrics_default: []      # OQ-09
+    event_types_enabled: []      # OQ-09
+    official_sources_default: {filings: [sec_edgar], company: [company_ir]}
+    exposure_dimensions: []

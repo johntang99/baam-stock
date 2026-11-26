@@ -1,0 +1,30 @@
+# Feature set fs-0.2 (D-31; MEMO I-1..I-4). Definitions only in Phase 0 — pure functions, no training.
+# Every function reads only observations with ts <= as_of and raises LookaheadError otherwise.
+feature_set_version: fs-0.2
+price_basis: nbbo_mid_1m            # 1-minute last NBBO mid in the regular session
+groups:
+  calendar:                         # sr/features/calendar_feats.py
+    - {name: minutes_since_open}
+    - {name: minutes_to_close}
+    - {name: day_of_week}           # 0 = Monday (ET)
+    - {name: is_half_day}
+    - {name: is_triple_witching}    # third Friday of Mar/Jun/Sep/Dec
+    - {name: is_index_rebalance_day}   # dates from index_rebalance_dates below
+  cross_asset:                      # sr/features/cross_asset.py
+    - {name: qqq_ret_30m, symbol: QQQ, minutes: 30}
+    - {name: qqq_ret_60m, symbol: QQQ, minutes: 60}
+    - {name: spy_ret_30m, symbol: SPY, minutes: 30}
+    - {name: spy_ret_60m, symbol: SPY, minutes: 60}
+    - {name: vix_level, symbol: ^VIX}
+    - {name: vix_change_30m, symbol: ^VIX, minutes: 30}
+  lead_lag:                         # sr/features/lead_lag.py: each basket constituent + SMH
+    horizons_min: [5, 15, 30]
+    extra_symbols: [SMH]
+  vol_regime:                       # sr/features/vol_regime.py
+    - {name: rv_5m, minutes: 5}
+    - {name: rv_30m, minutes: 30}
+    - {name: rv_390m, minutes: 390}
+    - {name: overnight_gap_pct}
+    - {name: opening_range_pct, minutes: 30}
+# Index rebalance calendar is not specified in D-31; left empty until confirmed (OPEN_QUESTIONS OQ-13).
+index_rebalance_dates: []

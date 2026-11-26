@@ -1,0 +1,27 @@
+# Securities universe seed (D-03, D-08, D-31). coverage_tier per DC §3.1.
+# CIKs / fiscal calendars / listing dates are resolved during onboarding (stage 1/2); null or {} here on purpose.
+version: universe-0.1
+identifier_valid_from_placeholder: "1970-01-01"   # unknown true listing date; see OPEN_QUESTIONS OQ-07
+securities:
+  # pilot (首批)
+  - {ticker: NVDA, legal_name: "NVIDIA Corporation",            type: common, exchange: XNAS, tier: pilot,     sector: "Information Technology", industry: Semiconductors, fiscal_calendar: {fy_end_month: 1, week_based: true}}
+  - {ticker: AMD,  legal_name: "Advanced Micro Devices, Inc.",  type: common, exchange: XNAS, tier: pilot,     sector: "Information Technology", industry: Semiconductors}
+  - {ticker: AVGO, legal_name: "Broadcom Inc.",                 type: common, exchange: XNAS, tier: pilot,     sector: "Information Technology", industry: Semiconductors}
+  - {ticker: MU,   legal_name: "Micron Technology, Inc.",       type: common, exchange: XNAS, tier: pilot,     sector: "Information Technology", industry: Semiconductors}
+  # batch2 (第二批)
+  - {ticker: TSM,  legal_name: "Taiwan Semiconductor Manufacturing Company Limited", type: adr, exchange: XNYS, tier: batch2, sector: "Information Technology", industry: Semiconductors}
+  - {ticker: MRVL, legal_name: "Marvell Technology, Inc.",      type: common, exchange: XNAS, tier: batch2,    sector: "Information Technology", industry: Semiconductors}
+  # remaining semis_peer_v1 constituents (peer_only)
+  - {ticker: QCOM, legal_name: "QUALCOMM Incorporated",         type: common, exchange: XNAS, tier: peer_only, sector: "Information Technology", industry: Semiconductors}
+  - {ticker: TXN,  legal_name: "Texas Instruments Incorporated", type: common, exchange: XNAS, tier: peer_only, sector: "Information Technology", industry: Semiconductors}
+  - {ticker: INTC, legal_name: "Intel Corporation",             type: common, exchange: XNAS, tier: peer_only, sector: "Information Technology", industry: Semiconductors}
+  - {ticker: ADI,  legal_name: "Analog Devices, Inc.",          type: common, exchange: XNAS, tier: peer_only, sector: "Information Technology", industry: Semiconductors}
+  - {ticker: AMAT, legal_name: "Applied Materials, Inc.",       type: common, exchange: XNAS, tier: peer_only, sector: "Information Technology", industry: "Semiconductor Equipment"}
+  - {ticker: LRCX, legal_name: "Lam Research Corporation",      type: common, exchange: XNAS, tier: peer_only, sector: "Information Technology", industry: "Semiconductor Equipment"}
+  - {ticker: KLAC, legal_name: "KLA Corporation",               type: common, exchange: XNAS, tier: peer_only, sector: "Information Technology", industry: "Semiconductor Equipment"}
+  # reference instruments (features only, D-31) + SOXX (reference benchmark, D-08)
+  - {ticker: QQQ,  legal_name: "Invesco QQQ Trust, Series 1",   type: etf,   exchange: XNAS, tier: reference, sector: Reference, industry: ETF}
+  - {ticker: SPY,  legal_name: "SPDR S&P 500 ETF Trust",        type: etf,   exchange: ARCX, tier: reference, sector: Reference, industry: ETF}
+  - {ticker: SMH,  legal_name: "VanEck Semiconductor ETF",      type: etf,   exchange: XNAS, tier: reference, sector: Reference, industry: ETF}
+  - {ticker: SOXX, legal_name: "iShares Semiconductor ETF",     type: etf,   exchange: XNAS, tier: reference, sector: Reference, industry: ETF}
+  - {ticker: ^VIX, id: vix, legal_name: "Cboe Volatility Index", type: index, exchange: XCBO, tier: reference, sector: Reference, industry: Index}

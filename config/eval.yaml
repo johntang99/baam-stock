@@ -1,0 +1,8 @@
+# Evaluation parameters (D-30)
+bootstrap:
+  n_resamples: 2000        # D-30: 2,000 day-block resamples
+  ci: 0.95
+  block: trading_day       # resample whole trading days (overlapping 60m windows are not independent)
+direction_classes: [outperform, flat, underperform]
+reference_models: [class_frequency, always_flat, persistence]
+min_settled_for_conclusion: 30   # D-44 / MP §7.1: n < 30 => counts only

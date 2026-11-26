@@ -1,0 +1,22 @@
+# D-08: semis_peer_v1 — equal weight, target excluded; quarterly effective; SOXX reference only.
+version: benchmarks-0.1
+semis_peer_v1:
+  constituents: [NVDA, AMD, AVGO, MU, QCOM, TXN, INTC, ADI, MRVL, AMAT, LRCX, KLAC]
+  methodology: equal_weight_ex_target
+  missing_rule: "max_missing_constituents=1; else unavailable"
+  max_missing_constituents: 1
+  sync_tolerance_ms: 2000          # D-06
+  version: 1
+  effective_from: "2026-11-26"     # date the basket was defined (MP plan-0.7); see OQ-08 for historical use
+  defined_at: "2026-11-26T00:00:00Z"
+  build_for_tiers: [pilot]         # one bm_semis_peer_ex_<ticker> per pilot security (Phase 0 seed)
+soxx_ref:
+  benchmark_id: bm_soxx_ref
+  kind: etf_reference
+  security: SOXX
+  methodology: etf_price
+  missing_rule: "unavailable if SOXX has no qualifying quote"
+  version: 1
+  effective_from: "2026-11-26"
+  defined_at: "2026-11-26T00:00:00Z"
+  reference_for_tiers: [pilot, batch2]

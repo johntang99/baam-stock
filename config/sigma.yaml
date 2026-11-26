@@ -1,0 +1,8 @@
+# sigma-0.1 (D-09): forecast std-dev of same-window relative return (pp)
+sigma_model_version: sigma-0.1
+lookback_sessions: 20          # last 20 trading days
+bucket: same_time_of_day       # same intraday time bucket as the target window start
+bucket_minutes: 30             # bucket width; OQ-10 (not specified in D-09)
+ewma_half_life_days: 10
+min_observations: 10           # fewer observations => sigma unavailable => abstain insufficient_data (OQ-10)
+threshold_k: 0.25

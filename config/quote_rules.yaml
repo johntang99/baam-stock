@@ -1,0 +1,21 @@
+# qr-0.1 — qualifying quote & sync rules (D-05, D-06, D-07, D-10, D-12)
+quote_rule_version: qr-0.1
+price_type: nbbo_mid                 # D-05: NBBO mid; never fall back to last trade
+fallback_to_last_trade: false
+qualifying:
+  require_bid_positive: true         # bid > 0
+  require_ask_gt_bid: true           # ask > bid (crossed/locked => not qualifying)
+  max_spread_bp: 20                  # spread <= 20bp ...
+  max_spread_vs_median_mult: 5       # ... and <= 5 x rolling median spread
+  median_spread_window_min: 20
+  max_quote_age_s: 5                 # quote age <= 5s
+  exclude_halted: true
+  exclude_luld_pause: true
+delayed_threshold_s: 5               # received_at - quote_ts > 5s => 'delayed' flag (DC §3.3)
+sync:
+  tolerance_ms: 2000                 # D-06: |ts(stock) - ts(constituent)| <= 2s
+  max_missing_constituents: 1        # D-06: > 1 missing => benchmark unavailable
+  start_max_wait_s: 30               # DC §4: wait up to 30s for t0, else unsettleable/no_sync_start_quote
+  settle_tolerance_s: 30             # D-07
+  next_session_not_before_et: "09:31:00"   # D-10
+  next_session_max_wait_min: 10            # D-10

@@ -1,0 +1,7 @@
+# data_sources seed (DC §3.2). Nothing contracted; all proposed (D-13/D-15/D-16).
+sources:
+  - {source_id: src_fixture_synthetic, kind: market_data, provider: synthetic_fixture, license_scope: public, verification_status: proposed, time_precision_default: ms, notes: "Synthetic fixture from scripts/make_fixture.py (虚构)"}
+  - {source_id: src_sec_edgar,         kind: filing,      provider: sec_edgar,         license_scope: public, verification_status: proposed, time_precision_default: s,  notes: "D-15; Phase 1 adapter"}
+  - {source_id: src_sec_edgar_form4,   kind: insider_filing, provider: sec_edgar,      license_scope: public, verification_status: proposed, time_precision_default: s,  notes: "D-15; Phase 2 adapter"}
+  - {source_id: src_company_ir,        kind: company_ir,  provider: company_ir_rss,    license_scope: public, verification_status: proposed, time_precision_default: minute, notes: "D-15; per-company feeds configured at onboarding"}
+  - {source_id: src_federal_register,  kind: policy,      provider: federal_register,  license_scope: public, verification_status: proposed, time_precision_default: s,  notes: "D-15"}

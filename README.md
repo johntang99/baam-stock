@@ -1,5 +1,26 @@
 # 美股短期研究与预测系统 · 设计交付包（plan-0.7 / contract-0.7 / phases-0.7）
 
+
+lsof -ti:3200 | xargs kill -9
+rm -rf .next
+pnpm run dev
+
+pnpm install
+
+
+
+pnpm run build
+
+git add .
+git commit -m "Update: describe your changes"
+git pull --rebase
+git push
+
+
+
+
+
+
 交给 VS Code 中 Claude Code 的完整资料。阅读顺序：
 
 1. `BUILDING_MASTER_PLAN.md` — 每日预测时刻表与"预测与实际对照如何改进模型"（§2.1、§7.1）、版本核对、冲突与缺项、架构、存储选型、**决策表（§9）**、**追溯表（§10）**、一致性核对（§11）

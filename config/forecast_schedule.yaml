@@ -1,0 +1,14 @@
+# D-43 / DC §3.7a: sched-0.1. Times are America/New_York wall clock; storage is UTC.
+schedule_id: sched_us_regular_v1
+schedule_version: sched-0.1
+effective_from: "2026-11-26"
+slots:
+  - {slot_id: s0830_pre_open, time_et: "08:30", kind: pre_open_outlook,   target_ids: [next_regular_session], start_rule: "first_sync_qualifying_not_before_09:31:00 (D-10)"}
+  - {slot_id: s1000,          time_et: "10:00", kind: intraday,           target_ids: [regular_60m, regular_60m_move], start_rule: first_sync_qualifying_after_publish}
+  - {slot_id: s1130,          time_et: "11:30", kind: intraday,           target_ids: [regular_60m, regular_60m_move], start_rule: first_sync_qualifying_after_publish}
+  - {slot_id: s1300,          time_et: "13:00", kind: intraday,           target_ids: [regular_60m, regular_60m_move], start_rule: first_sync_qualifying_after_publish}
+  - {slot_id: s1430,          time_et: "14:30", kind: intraday,           target_ids: [regular_60m, regular_60m_move, regular_to_close], start_rule: "first_sync_qualifying_after_publish; to_close settles on official close (D-11)"}
+  - {slot_id: s1630_next,     time_et: "16:30", kind: post_close_outlook, target_ids: [next_regular_session], start_rule: "first_sync_qualifying_not_before_09:31:00 (D-10)"}
+half_day_rule: {skip_if_window_exceeds_close: true, to_close_moves_to: last_60m_slot, post_close_outlook_offset_min: 30}
+holiday_rule: skip_all
+miss_rule: {grace_s: 180, on_miss: abstained/slot_missed}
