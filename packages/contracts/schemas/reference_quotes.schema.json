@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/reference_quotes.schema.json",
+  "title": "reference_quotes",
+  "description": "DC §3.3; UQ (security_id, quote_ts, price_type, vendor_source_id)",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "quote_id": {
+      "type": "string",
+      "pattern": "^rq_"
+    },
+    "security_id": {
+      "type": "string"
+    },
+    "quote_ts": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "received_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "session_type": {
+      "$ref": "common.schema.json#/$defs/session_type"
+    },
+    "bid": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "ask": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "mid": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "last": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "spread_bp": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "price_type": {
+      "type": "string",
+      "enum": [
+        "nbbo_mid",
+        "official_close",
+        "official_open",
+        "last_trade"
+      ]
+    },
+    "quality_flags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "stale",
+          "wide_spread",
+          "halted",
+          "luld_pause",
+          "crossed",
+          "delayed"
+        ]
+      }
+    },
+    "is_qualifying": {
+      "type": "boolean"
+    },
+    "quote_rule_version": {
+      "type": "string"
+    },
+    "vendor_source_id": {
+      "type": "string"
+    },
+    "adjustment_basis": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "quote_id",
+    "security_id",
+    "quote_ts",
+    "received_at",
+    "session_type",
+    "price_type",
+    "quality_flags",
+    "is_qualifying",
+    "quote_rule_version",
+    "vendor_source_id",
+    "adjustment_basis"
+  ],
+  "additionalProperties": false
+}

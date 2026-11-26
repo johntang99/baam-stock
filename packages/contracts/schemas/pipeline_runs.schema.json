@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/pipeline_runs.schema.json",
+  "title": "pipeline_runs",
+  "description": "DC §3.10",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "pipeline_run_id": {
+      "type": "string",
+      "pattern": "^pr_"
+    },
+    "security_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "target_ids": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/target_id"
+      }
+    },
+    "trigger_type": {
+      "type": "string",
+      "enum": [
+        "on_demand",
+        "scheduled",
+        "event",
+        "market_move",
+        "user_supplement"
+      ]
+    },
+    "requested_by": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "mode": {
+      "type": "string",
+      "enum": [
+        "live",
+        "replay",
+        "dry_run",
+        "supplement"
+      ]
+    },
+    "base_run_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "submission_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "as_of": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "queued",
+        "running",
+        "succeeded",
+        "partial",
+        "failed",
+        "cancelled"
+      ]
+    },
+    "reuse_policy": {
+      "type": "string",
+      "enum": [
+        "reuse_if_unchanged",
+        "force_recompute"
+      ]
+    },
+    "outputs": {
+      "type": "object"
+    },
+    "started_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "finished_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "sla_ms": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "idempotency_key": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "pipeline_run_id",
+    "security_ids",
+    "target_ids",
+    "trigger_type",
+    "mode",
+    "submission_ids",
+    "as_of",
+    "status",
+    "reuse_policy",
+    "outputs",
+    "sla_ms",
+    "idempotency_key"
+  ],
+  "additionalProperties": false
+}

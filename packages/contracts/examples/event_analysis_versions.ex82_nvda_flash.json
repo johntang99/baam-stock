@@ -1,0 +1,79 @@
+{
+  "schema_version": "contract-0.7.1",
+  "analysis_id": "eav_policy_demo_001_nvda_v1",
+  "event_id": "evt_policy_export_demo_001",
+  "security_id": "sec_nvda",
+  "analysis_version": 1,
+  "analysis_kind": "flash",
+  "analysis_as_of": "2026-12-02T16:00:30.000Z",
+  "published_at": "2026-12-02T16:00:41.000Z",
+  "evidence_ids": [
+    "evd_policy_demo_001_1"
+  ],
+  "market_reaction": {
+    "ref_before_quote_id": "rq_nvda_20261202_155829",
+    "ref_asof_quote_id": "rq_nvda_20261202_160029",
+    "stock_return_pct": -1.9,
+    "benchmark_return_pct": -0.8,
+    "relative_return_pp": -1.1,
+    "missing_reason": null
+  },
+  "market_explanation": {
+    "status": "partial",
+    "observed_facts": [
+      {
+        "text": "规则文本于 10:58:30 ET 公开，涉及指定先进计算产品的许可要求（虚构）",
+        "evidence_ids": [
+          "evd_policy_demo_001_1"
+        ],
+        "quote_ids": [],
+        "item_ids": [],
+        "trace_step": 2
+      }
+    ],
+    "possible_drivers": [
+      {
+        "text": "许可范围可能覆盖部分数据中心 GPU 出货（待公司披露确认）",
+        "evidence_ids": [
+          "evd_policy_demo_001_1"
+        ],
+        "quote_ids": [],
+        "item_ids": [],
+        "trace_step": 4
+      }
+    ],
+    "counter_evidence": [
+      {
+        "text": "同行篮子同时下跌 0.80%，部分跌幅属行业共同波动",
+        "evidence_ids": [],
+        "quote_ids": [
+          "rq_nvda_20261202_155829",
+          "rq_nvda_20261202_160029"
+        ],
+        "item_ids": [],
+        "trace_step": 5
+      }
+    ],
+    "unexplained": [
+      "NVDA 与 AMD 相对跌幅差异的原因"
+    ],
+    "concurrent_events": []
+  },
+  "data_gaps": [],
+  "rule_version": "explain-0.1",
+  "model_versions": {},
+  "prediction_readiness": {
+    "event_outcome": {
+      "status": "ready",
+      "reason": "license_question_defined",
+      "analysis_id": "eav_policy_demo_001_nvda_v1"
+    },
+    "stock_reaction": {
+      "status": "ready",
+      "reason": "event_enhanced_not_validated_for_policy_export",
+      "allowed_models": [
+        "market_baseline"
+      ]
+    }
+  }
+}

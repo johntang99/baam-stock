@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/onboarding_requests.schema.json",
+  "title": "onboarding_requests",
+  "description": "DC §3.10",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "onboarding_id": {
+      "type": "string",
+      "pattern": "^onb_"
+    },
+    "ticker": {
+      "type": "string"
+    },
+    "cik": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "primary_exchange": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/exchange"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "requested_by": {
+      "type": "string"
+    },
+    "approved_by": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "target_tier": {
+      "type": "string",
+      "enum": [
+        "pilot",
+        "batch2",
+        "peer_only",
+        "reference"
+      ]
+    },
+    "stage": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "profile_review",
+        "sources_configured",
+        "backfilling",
+        "data_validated",
+        "training",
+        "shadow",
+        "active",
+        "blocked",
+        "rejected",
+        "paused"
+      ]
+    },
+    "checklist": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "item": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "todo",
+              "done",
+              "failed",
+              "waived"
+            ]
+          },
+          "evidence": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "item",
+          "status"
+        ]
+      }
+    },
+    "backfill_report": {
+      "anyOf": [
+        {
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "param_policy": {
+      "type": "string",
+      "enum": [
+        "market_sector_only",
+        "company_offset_candidate"
+      ]
+    },
+    "profile_version_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "benchmark_version_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "dataset_version_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "model_version_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "blocked_reason": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "onboarding_id",
+    "ticker",
+    "requested_by",
+    "target_tier",
+    "stage",
+    "checklist",
+    "param_policy"
+  ],
+  "additionalProperties": false
+}

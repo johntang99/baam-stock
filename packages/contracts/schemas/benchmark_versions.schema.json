@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/benchmark_versions.schema.json",
+  "title": "benchmark_versions",
+  "description": "DC §3.6; UQ (benchmark_id, version)",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "benchmark_version_id": {
+      "type": "string",
+      "pattern": "^bmv_"
+    },
+    "benchmark_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "effective_from": {
+      "$ref": "common.schema.json#/$defs/date"
+    },
+    "effective_to": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/date"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "constituents": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/constituent"
+      },
+      "description": "weights sum to 1"
+    },
+    "sync_tolerance_ms": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "defined_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    }
+  },
+  "required": [
+    "benchmark_version_id",
+    "benchmark_id",
+    "version",
+    "effective_from",
+    "constituents",
+    "sync_tolerance_ms",
+    "defined_at"
+  ],
+  "additionalProperties": false
+}

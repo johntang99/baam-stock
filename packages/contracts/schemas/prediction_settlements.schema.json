@@ -1,0 +1,236 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/prediction_settlements.schema.json",
+  "title": "prediction_settlements",
+  "description": "DC §3.7; UQ (prediction_id, settlement_version)",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "settlement_id": {
+      "type": "string",
+      "pattern": "^stl_"
+    },
+    "prediction_id": {
+      "type": "string"
+    },
+    "settlement_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "start_quote_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "end_quote_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "benchmark_start_quote_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "benchmark_end_quote_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "stock_return_pct": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "benchmark_return_pct": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "relative_return_pp": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "outcome_class": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "hit": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "brier": {
+      "anyOf": [
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 2
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "abs_relative_move_pp": {
+      "anyOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "pinball_loss": {
+      "anyOf": [
+        {
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "quantile_hits": {
+      "anyOf": [
+        {
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "event_outcome": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "settlement_evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "public_confirmation_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "legal_effective_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "triggered": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "triggered_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "invalid_reason": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/invalid_reason"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "settled_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "is_reporting_version": {
+      "type": "boolean"
+    },
+    "reason_text": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "settlement_id",
+    "prediction_id",
+    "settlement_version",
+    "benchmark_start_quote_ids",
+    "benchmark_end_quote_ids",
+    "settlement_evidence_ids",
+    "settled_at",
+    "is_reporting_version",
+    "reason_text"
+  ],
+  "additionalProperties": false
+}

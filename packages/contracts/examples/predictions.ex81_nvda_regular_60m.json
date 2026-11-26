@@ -1,0 +1,61 @@
+{
+  "schema_version": "contract-0.7.1",
+  "prediction_id": "pred_nvda_20261201_1520_60m",
+  "target_row_id": "tgt_regular_60m_v1",
+  "run_id": "run_nvda_20261201_1520",
+  "security_id": "sec_nvda",
+  "event_id": null,
+  "status": "settled",
+  "is_primary": false,
+  "sampling_rule": "scheduled_5m",
+  "published_at": "2026-12-01T15:20:00.800Z",
+  "t0_quote_id": "rq_nvda_20261201_152002",
+  "t0_benchmark_quote_ids": [
+    "rq_amd_20261201_152002",
+    "rq_avgo_20261201_152002",
+    "rq_mu_20261201_152002",
+    "rq_qcom_20261201_152002",
+    "rq_txn_20261201_152002",
+    "rq_intc_20261201_152002",
+    "rq_adi_20261201_152002",
+    "rq_mrvl_20261201_152002",
+    "rq_amat_20261201_152002",
+    "rq_lrcx_20261201_152002",
+    "rq_klac_20261201_152002"
+  ],
+  "target_end_at": "2026-12-01T16:20:02.000Z",
+  "valid_until": "2026-12-01T16:20:02.000Z",
+  "probabilities": {
+    "outperform": 0.38,
+    "flat": 0.35,
+    "underperform": 0.27
+  },
+  "predicted_class": "outperform",
+  "interval": {
+    "quantiles": {
+      "p10": -0.35,
+      "p50": 0.06,
+      "p90": 0.48
+    },
+    "unit": "relative_pp",
+    "validated": false
+  },
+  "display_tier": "validated_public",
+  "sigma_hat_pp": 0.6,
+  "threshold_pp": 0.15,
+  "edge_vs_baseline": 0.006,
+  "locked": {
+    "target_definition_version": "td-0.2",
+    "quote_rule_version": "qr-0.1",
+    "benchmark_version_id": "bmv_semis_peer_ex_nvda_v1",
+    "calendar_version": "cal-2026.11",
+    "model_version_id": "mdl_regular_60m_market_logit_v3",
+    "calibration_version": "cal_iso_v3",
+    "schema_version": "contract-0.7.1",
+    "sigma_model_version": "sigma-0.1",
+    "sigma_hat_pp": 0.6,
+    "threshold_k": 0.25,
+    "threshold_pp": 0.15,
+    "feature_set_version": "fs-0.2"
+  }
+}

@@ -1,0 +1,397 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/predictions.schema.json",
+  "title": "predictions",
+  "description": "DC §3.7 + §3.7a slot fields; display_state is a derived view column (not stored)",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "prediction_id": {
+      "type": "string",
+      "pattern": "^pred_"
+    },
+    "run_id": {
+      "type": "string"
+    },
+    "target_row_id": {
+      "type": "string"
+    },
+    "security_id": {
+      "type": "string"
+    },
+    "event_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "status": {
+      "$ref": "common.schema.json#/$defs/prediction_status"
+    },
+    "probabilities": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/probabilities"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "predicted_class": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "interval": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "quantiles": {
+              "type": "object"
+            },
+            "unit": {
+              "type": "string"
+            },
+            "validated": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "quantiles",
+            "unit",
+            "validated"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "sigma_hat_pp": {
+      "anyOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "threshold_pp": {
+      "anyOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "move_quantiles": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "p50": {
+              "type": "number",
+              "minimum": 0
+            },
+            "p80": {
+              "type": "number",
+              "minimum": 0
+            },
+            "p90": {
+              "type": "number",
+              "minimum": 0
+            },
+            "unit": {
+              "type": "string",
+              "enum": [
+                "abs_relative_pp"
+              ]
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "p50",
+            "p80",
+            "p90",
+            "unit"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "scenarios": {
+      "anyOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "outcome": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "evidence_direction": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "outcome",
+              "label"
+            ]
+          },
+          "description": "event_outcome scenarios (added contract-0.7.1, DC §8.2)"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "edge_vs_baseline": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "display_tier": {
+      "$ref": "common.schema.json#/$defs/display_tier"
+    },
+    "abstain_reason": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/abstain_reason"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "is_primary": {
+      "type": "boolean"
+    },
+    "sampling_rule": {
+      "$ref": "common.schema.json#/$defs/sampling_rule"
+    },
+    "schedule_slot_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "schedule_version": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "scheduled_for": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "supersedes_prediction_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "valid_until": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "locked": {
+      "type": "object",
+      "description": "frozen at publish; immutable after published (DB trigger)",
+      "properties": {
+        "target_definition_version": {
+          "type": "string"
+        },
+        "quote_rule_version": {
+          "type": "string"
+        },
+        "benchmark_version_id": {
+          "type": "string"
+        },
+        "calendar_version": {
+          "type": "string"
+        },
+        "model_version_id": {
+          "type": "string"
+        },
+        "calibration_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "schema_version": {
+          "type": "string"
+        },
+        "sigma_model_version": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "sigma_hat_pp": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "threshold_k": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "threshold_pp": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "feature_set_version": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "target_definition_version",
+        "quote_rule_version",
+        "benchmark_version_id",
+        "calendar_version",
+        "model_version_id",
+        "calibration_version",
+        "schema_version",
+        "sigma_model_version",
+        "sigma_hat_pp",
+        "threshold_k",
+        "threshold_pp",
+        "feature_set_version"
+      ]
+    },
+    "t0_quote_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "t0_benchmark_quote_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "target_end_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "published_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "prediction_id",
+    "run_id",
+    "target_row_id",
+    "security_id",
+    "status",
+    "display_tier",
+    "is_primary",
+    "sampling_rule",
+    "valid_until",
+    "locked",
+    "t0_benchmark_quote_ids"
+  ],
+  "additionalProperties": false
+}

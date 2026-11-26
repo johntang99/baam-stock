@@ -1,0 +1,165 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/security_state_snapshots.schema.json",
+  "title": "security_state_snapshots",
+  "description": "DC §3.5",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "snapshot_id": {
+      "type": "string",
+      "pattern": "^snap_"
+    },
+    "security_id": {
+      "type": "string"
+    },
+    "trigger_type": {
+      "$ref": "common.schema.json#/$defs/trigger_type"
+    },
+    "trigger_ref": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "analysis_as_of": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "evidence_watermark": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "market_watermark": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "market_state": {
+      "$ref": "common.schema.json#/$defs/market_state"
+    },
+    "session_date": {
+      "$ref": "common.schema.json#/$defs/date"
+    },
+    "last_quote_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "benchmark_version_id": {
+      "type": "string"
+    },
+    "day_return_pct": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "day_relative_pp": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "event_analysis_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "new_catalyst_found": {
+      "type": "boolean"
+    },
+    "explanation_status": {
+      "$ref": "common.schema.json#/$defs/explanation_status"
+    },
+    "explanation_summary": {
+      "type": "string"
+    },
+    "data_quality": {
+      "type": "string",
+      "enum": [
+        "ok",
+        "stale",
+        "partial",
+        "failed"
+      ]
+    },
+    "run_state": {
+      "type": "string",
+      "enum": [
+        "running",
+        "complete",
+        "degraded",
+        "failed"
+      ]
+    },
+    "quality_issues": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "last_valid_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "valid_until": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "prediction_readiness": {
+      "$ref": "common.schema.json#/$defs/prediction_readiness"
+    },
+    "dedupe_key": {
+      "type": "string"
+    },
+    "published_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    }
+  },
+  "required": [
+    "snapshot_id",
+    "security_id",
+    "trigger_type",
+    "analysis_as_of",
+    "evidence_watermark",
+    "market_watermark",
+    "market_state",
+    "session_date",
+    "benchmark_version_id",
+    "event_analysis_ids",
+    "new_catalyst_found",
+    "explanation_status",
+    "explanation_summary",
+    "data_quality",
+    "run_state",
+    "quality_issues",
+    "valid_until",
+    "prediction_readiness",
+    "dedupe_key",
+    "published_at"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/securities.schema.json",
+  "title": "securities",
+  "description": "DC §3.1",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "security_id": {
+      "type": "string",
+      "pattern": "^sec_[a-z0-9_]+$"
+    },
+    "company_id": {
+      "type": "string"
+    },
+    "security_type": {
+      "type": "string",
+      "enum": [
+        "common",
+        "adr",
+        "etf",
+        "index"
+      ],
+      "description": "etf/index added in contract-0.7.1 (reference instruments, D-31)"
+    },
+    "primary_exchange": {
+      "$ref": "common.schema.json#/$defs/exchange"
+    },
+    "currency": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "coverage_tier": {
+      "$ref": "common.schema.json#/$defs/coverage_tier"
+    },
+    "primary_benchmark_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "reference_benchmark_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "security_id",
+    "company_id",
+    "security_type",
+    "primary_exchange",
+    "currency",
+    "coverage_tier"
+  ],
+  "additionalProperties": false
+}

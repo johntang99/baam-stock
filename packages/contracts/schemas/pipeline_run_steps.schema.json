@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/pipeline_run_steps.schema.json",
+  "title": "pipeline_run_steps",
+  "description": "DC §3.10; PK (pipeline_run_id, step_no)",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "pipeline_run_id": {
+      "type": "string"
+    },
+    "step_no": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "step": {
+      "type": "string",
+      "enum": [
+        "collect_evidence",
+        "verify_dedupe",
+        "analyze_events",
+        "build_snapshot",
+        "readiness_check",
+        "infer",
+        "publish",
+        "schedule_settlement"
+      ]
+    },
+    "security_id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "running",
+        "succeeded",
+        "skipped",
+        "failed",
+        "retry_wait"
+      ]
+    },
+    "attempt": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "started_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "finished_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "detail": {
+      "type": "object"
+    },
+    "error": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/error"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "job_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "pipeline_run_id",
+    "step_no",
+    "step",
+    "security_id",
+    "status",
+    "attempt",
+    "detail"
+  ],
+  "additionalProperties": false
+}

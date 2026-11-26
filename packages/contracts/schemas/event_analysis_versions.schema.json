@@ -1,0 +1,343 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/event_analysis_versions.schema.json",
+  "title": "event_analysis_versions",
+  "description": "DC §3.4 (schema only in P0); UQ (event_id, security_id, analysis_version)",
+  "x-tabled": false,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "analysis_id": {
+      "type": "string",
+      "pattern": "^eav_"
+    },
+    "event_id": {
+      "type": "string"
+    },
+    "security_id": {
+      "type": "string"
+    },
+    "analysis_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "analysis_kind": {
+      "type": "string",
+      "enum": [
+        "flash",
+        "full"
+      ]
+    },
+    "analysis_as_of": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "published_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "facts": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "expectation_comparison": {
+      "anyOf": [
+        {
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "missing_reason": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "impact": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "priority": {
+      "type": "object"
+    },
+    "market_reaction": {
+      "type": "object",
+      "properties": {
+        "ref_before_quote_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "ref_asof_quote_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "stock_return_pct": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "benchmark_return_pct": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "relative_return_pp": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "missing_reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "market_explanation": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "$ref": "common.schema.json#/$defs/explanation_status"
+        },
+        "observed_facts": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/statement"
+          }
+        },
+        "possible_drivers": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/statement"
+          }
+        },
+        "counter_evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "common.schema.json#/$defs/statement"
+          }
+        },
+        "unexplained": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "common.schema.json#/$defs/statement"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          }
+        },
+        "concurrent_events": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "$ref": "common.schema.json#/$defs/statement"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          }
+        },
+        "valuation_context": {
+          "anyOf": [
+            {
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "status",
+        "observed_facts",
+        "possible_drivers",
+        "counter_evidence",
+        "unexplained"
+      ]
+    },
+    "reasoning_trace": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "step": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "market_fact",
+              "timing_check",
+              "evidence_fact",
+              "attribution",
+              "counter_check",
+              "analogue",
+              "gap",
+              "conclusion"
+            ]
+          },
+          "inputs": {
+            "type": "object"
+          },
+          "rule": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "conclusion": {
+            "type": "string"
+          },
+          "confidence": {
+            "anyOf": [
+              {
+                "type": "string",
+                "enum": [
+                  "high",
+                  "medium",
+                  "low"
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "step",
+          "kind",
+          "inputs",
+          "conclusion"
+        ]
+      }
+    },
+    "historical_cases": {
+      "anyOf": [
+        {
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "scenarios": {
+      "anyOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "data_gaps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rule_version": {
+      "type": "string"
+    },
+    "model_versions": {
+      "type": "object"
+    },
+    "prediction_readiness": {
+      "$ref": "common.schema.json#/$defs/prediction_readiness"
+    },
+    "supersedes_analysis_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "analysis_id",
+    "event_id",
+    "security_id",
+    "analysis_version",
+    "analysis_kind",
+    "analysis_as_of",
+    "market_explanation",
+    "prediction_readiness"
+  ],
+  "additionalProperties": false
+}

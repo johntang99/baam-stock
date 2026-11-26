@@ -1,0 +1,50 @@
+{
+  "schema_version": "contract-0.7.1",
+  "prediction_id": "pred_nvda_20261201_1520_60m_move",
+  "target_row_id": "tgt_regular_60m_move_v1",
+  "run_id": "run_nvda_20261201_1520",
+  "security_id": "sec_nvda",
+  "event_id": null,
+  "status": "settled",
+  "is_primary": false,
+  "sampling_rule": "scheduled_5m",
+  "published_at": "2026-12-01T15:20:00.800Z",
+  "t0_quote_id": "rq_nvda_20261201_152002",
+  "t0_benchmark_quote_ids": [
+    "rq_amd_20261201_152002",
+    "rq_avgo_20261201_152002",
+    "rq_mu_20261201_152002",
+    "rq_qcom_20261201_152002",
+    "rq_txn_20261201_152002",
+    "rq_intc_20261201_152002",
+    "rq_adi_20261201_152002",
+    "rq_mrvl_20261201_152002",
+    "rq_amat_20261201_152002",
+    "rq_lrcx_20261201_152002",
+    "rq_klac_20261201_152002"
+  ],
+  "target_end_at": "2026-12-01T16:20:02.000Z",
+  "valid_until": "2026-12-01T16:20:02.000Z",
+  "probabilities": null,
+  "move_quantiles": {
+    "p50": 0.31,
+    "p80": 0.58,
+    "p90": 0.77,
+    "unit": "abs_relative_pp"
+  },
+  "display_tier": "internal_shadow",
+  "locked": {
+    "target_definition_version": "td-0.2",
+    "quote_rule_version": "qr-0.1",
+    "benchmark_version_id": "bmv_semis_peer_ex_nvda_v1",
+    "calendar_version": "cal-2026.11",
+    "model_version_id": "mdl_regular_60m_move_har_vol_v1",
+    "calibration_version": null,
+    "schema_version": "contract-0.7.1",
+    "sigma_model_version": null,
+    "sigma_hat_pp": null,
+    "threshold_k": null,
+    "threshold_pp": null,
+    "feature_set_version": "fs-0.2"
+  }
+}

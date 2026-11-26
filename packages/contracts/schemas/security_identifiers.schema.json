@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/security_identifiers.schema.json",
+  "title": "security_identifiers",
+  "description": "DC §3.1; UQ (id_type, value, valid_from)",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "security_id": {
+      "type": "string"
+    },
+    "id_type": {
+      "type": "string",
+      "pattern": "^(ticker|figi|cusip|vendor:[a-z0-9_]+)$"
+    },
+    "value": {
+      "type": "string"
+    },
+    "valid_from": {
+      "$ref": "common.schema.json#/$defs/date"
+    },
+    "valid_to": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/date"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "security_id",
+    "id_type",
+    "value",
+    "valid_from"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/company_profile_versions.schema.json",
+  "title": "company_profile_versions",
+  "description": "DC §3.1; UQ (company_id, version)",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "profile_version_id": {
+      "type": "string"
+    },
+    "company_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "effective_from": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "key_metrics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "exposures": {
+      "type": "object"
+    },
+    "official_sources": {
+      "type": "object"
+    },
+    "priority_rules_version": {
+      "type": "string"
+    },
+    "industry_template": {
+      "$ref": "common.schema.json#/$defs/industry_template"
+    },
+    "valuation_peers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "profile_version_id",
+    "company_id",
+    "version",
+    "effective_from",
+    "key_metrics",
+    "exposures",
+    "official_sources",
+    "priority_rules_version",
+    "industry_template",
+    "valuation_peers"
+  ],
+  "additionalProperties": false
+}

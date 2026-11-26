@@ -1,0 +1,15 @@
+{
+  "schema_version": "contract-0.7.1",
+  "doc_version_id": "docv_fr_demo_2026_12345_v1",
+  "doc_id": "doc_fr_demo_2026_12345",
+  "version": 1,
+  "content_hash": "6db4e725fc27e9d711b05132281707b1a9a0a92c1b245e456c123210c3d44880",
+  "storage_path": null,
+  "locator": "federalregister.gov/d/demo-2026-12345 (虚构)",
+  "source_published_at": "2026-12-02T15:58:30.000Z",
+  "source_published_precision": "s",
+  "received_at": "2026-12-02T15:58:41.200Z",
+  "available_at": "2026-12-02T15:59:05.000Z",
+  "arrival_mode": "live",
+  "visibility": "public"
+}

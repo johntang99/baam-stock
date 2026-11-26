@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/model_versions.schema.json",
+  "title": "model_versions",
+  "description": "DC §3.8 (schema only in P0)",
+  "x-tabled": false,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "model_version_id": {
+      "type": "string",
+      "pattern": "^mdl_"
+    },
+    "training_run_id": {
+      "type": "string"
+    },
+    "target_id": {
+      "$ref": "common.schema.json#/$defs/target_id"
+    },
+    "model_family": {
+      "$ref": "common.schema.json#/$defs/model_family"
+    },
+    "param_layers": {
+      "$ref": "common.schema.json#/$defs/param_layers"
+    },
+    "scope": {
+      "type": "object"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "hyperparams": {
+      "type": "object"
+    },
+    "coefficients_path": {
+      "type": "string"
+    },
+    "calibration_version": {
+      "type": "string"
+    },
+    "publish_threshold": {
+      "type": "object"
+    },
+    "artifact_sha256": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "candidate",
+        "shadow",
+        "pending_approval",
+        "live",
+        "retired",
+        "rejected",
+        "rolled_back"
+      ]
+    }
+  },
+  "required": [
+    "model_version_id",
+    "training_run_id",
+    "target_id",
+    "model_family",
+    "param_layers",
+    "status"
+  ],
+  "additionalProperties": false
+}

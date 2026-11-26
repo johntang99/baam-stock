@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/corporate_actions.schema.json",
+  "title": "corporate_actions",
+  "description": "DC §3.1 (D-40)",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "action_id": {
+      "type": "string"
+    },
+    "security_id": {
+      "type": "string"
+    },
+    "action_type": {
+      "type": "string",
+      "enum": [
+        "split",
+        "reverse_split",
+        "cash_dividend",
+        "special_dividend",
+        "spin_off",
+        "ticker_change",
+        "merger_delisting"
+      ]
+    },
+    "announced_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "ex_date": {
+      "$ref": "common.schema.json#/$defs/date"
+    },
+    "effective_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "ratio": {
+      "anyOf": [
+        {
+          "type": "number",
+          "description": "split ratio, 10 means 1->10"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "cash_amount": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "available_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    }
+  },
+  "required": [
+    "action_id",
+    "security_id",
+    "action_type",
+    "announced_at",
+    "ex_date",
+    "source_id",
+    "available_at"
+  ],
+  "additionalProperties": false
+}

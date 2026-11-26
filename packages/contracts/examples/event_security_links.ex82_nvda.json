@@ -1,0 +1,6 @@
+{
+  "schema_version": "contract-0.7.1",
+  "event_id": "evt_policy_export_demo_001",
+  "security_id": "sec_nvda",
+  "relation": "regulated_party"
+}

@@ -1,0 +1,307 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/user_submissions.schema.json",
+  "title": "user_submissions",
+  "description": "DC §3.2 (D-47)",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "submission_id": {
+      "type": "string",
+      "pattern": "^sub_"
+    },
+    "submitted_by": {
+      "type": "string"
+    },
+    "security_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "input_kind": {
+      "type": "string",
+      "enum": [
+        "link",
+        "text",
+        "file"
+      ]
+    },
+    "url": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "text": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "file_path": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "user_note": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "user_categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "system_categories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "$ref": "common.schema.json#/$defs/collection_category"
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "category",
+          "confidence"
+        ]
+      }
+    },
+    "final_categories": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "submitted_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "received",
+        "fetching",
+        "verifying",
+        "verified_primary",
+        "media_level",
+        "unverified",
+        "duplicate",
+        "rejected_restricted",
+        "fetch_failed"
+      ]
+    },
+    "verification": {
+      "type": "object",
+      "description": "see DC §3.2 user_submissions.verification",
+      "properties": {
+        "fetched_ok": {
+          "type": "boolean"
+        },
+        "http_status": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "canonical_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "origin_source_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "origin_url": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "origin_published_at": {
+          "anyOf": [
+            {
+              "$ref": "common.schema.json#/$defs/timestamp"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "independent_origin_key": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "content_hash": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "duplicate_of_item_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "check": {
+                "type": "string",
+                "enum": [
+                  "link_reachable",
+                  "domain_reputation",
+                  "origin_traced",
+                  "content_matches_origin",
+                  "timestamp_consistent",
+                  "duplicate_check",
+                  "mnpi_screen"
+                ]
+              },
+              "result": {
+                "type": "string",
+                "enum": [
+                  "pass",
+                  "fail",
+                  "n_a"
+                ]
+              },
+              "note": {
+                "anyOf": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "check",
+              "result"
+            ]
+          }
+        }
+      }
+    },
+    "item_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "missed_by_system": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "supplement_run_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "visibility": {
+      "type": "string",
+      "enum": [
+        "submitter_and_reviewers",
+        "shared"
+      ]
+    }
+  },
+  "required": [
+    "submission_id",
+    "submitted_by",
+    "security_ids",
+    "input_kind",
+    "user_categories",
+    "system_categories",
+    "final_categories",
+    "submitted_at",
+    "status",
+    "verification",
+    "visibility"
+  ],
+  "additionalProperties": false
+}

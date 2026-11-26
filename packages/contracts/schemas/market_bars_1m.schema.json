@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/market_bars_1m.schema.json",
+  "title": "market_bars_1m",
+  "description": "DC §3.3 (schema only in P0; table in Phase 1)",
+  "x-tabled": false,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "security_id": {
+      "type": "string"
+    },
+    "bar_start": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "open": {
+      "type": "number"
+    },
+    "high": {
+      "type": "number"
+    },
+    "low": {
+      "type": "number"
+    },
+    "close": {
+      "type": "number"
+    },
+    "volume": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "vwap": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "trade_count": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "session_type": {
+      "$ref": "common.schema.json#/$defs/session_type"
+    },
+    "bar_version": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "required": [
+    "security_id",
+    "bar_start",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "session_type",
+    "bar_version"
+  ],
+  "additionalProperties": false
+}

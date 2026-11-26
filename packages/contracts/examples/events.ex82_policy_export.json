@@ -1,0 +1,12 @@
+{
+  "schema_version": "contract-0.7.1",
+  "event_id": "evt_policy_export_demo_001",
+  "category": "policy_export",
+  "identity_key": "policy:BIS:demo-2026-12345",
+  "progress_status": "effective",
+  "evidence_status": "primary_confirmed",
+  "analysis_status": "partial",
+  "current_analysis_version": 1,
+  "row_version": 3,
+  "first_seen_at": "2026-12-02T15:58:41.200Z"
+}

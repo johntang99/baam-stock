@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/data_source_health.schema.json",
+  "title": "data_source_health",
+  "description": "DC §3.10; PK (source_id, checked_at)",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "checked_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "healthy",
+        "degraded",
+        "down"
+      ]
+    },
+    "latency_p50_ms": {
+      "anyOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "latency_p95_ms": {
+      "anyOf": [
+        {
+          "type": "number",
+          "minimum": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "last_success_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "error_rate_1h": {
+      "anyOf": [
+        {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "license_scope": {
+      "type": "string",
+      "enum": [
+        "public",
+        "licensed_internal",
+        "licensed_display",
+        "restricted"
+      ]
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "proposed",
+        "sample_verified",
+        "contracted",
+        "retired"
+      ]
+    },
+    "note": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "source_id",
+    "checked_at",
+    "status",
+    "license_scope",
+    "verification_status"
+  ],
+  "additionalProperties": false
+}

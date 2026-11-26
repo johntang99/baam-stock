@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/industry_templates.schema.json",
+  "title": "industry_templates",
+  "description": "DC §3.1 (D-42)",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "template_id": {
+      "$ref": "common.schema.json#/$defs/industry_template"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "key_metrics_default": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "event_types_enabled": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "official_sources_default": {
+      "type": "object"
+    },
+    "exposure_dimensions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "template_id",
+    "version",
+    "key_metrics_default",
+    "event_types_enabled",
+    "official_sources_default",
+    "exposure_dimensions"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,149 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/collection_runs.schema.json",
+  "title": "collection_runs",
+  "description": "DC §3.2 step 1 (D-45)",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "collection_run_id": {
+      "type": "string"
+    },
+    "pipeline_run_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "snapshot_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "security_id": {
+      "type": "string"
+    },
+    "window_from": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "window_to": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "sources_polled": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string"
+          },
+          "channel": {
+            "$ref": "common.schema.json#/$defs/collection_channel"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "ok",
+              "timeout",
+              "error",
+              "skipped"
+            ]
+          },
+          "items_fetched": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "latency_ms": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "source_id",
+          "channel",
+          "status",
+          "items_fetched"
+        ]
+      }
+    },
+    "counts": {
+      "type": "object",
+      "description": "aggregated from collection_items, never hand-filled",
+      "properties": {
+        "fetched": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "kept": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "duplicate": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "excluded": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pending_review": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "failed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "by_channel": {
+          "type": "object"
+        },
+        "by_category": {
+          "type": "object"
+        }
+      }
+    },
+    "started_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "finished_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "collection_run_id",
+    "security_id",
+    "window_from",
+    "window_to",
+    "sources_polled",
+    "counts",
+    "started_at"
+  ],
+  "additionalProperties": false
+}

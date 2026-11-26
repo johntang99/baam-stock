@@ -1,0 +1,57 @@
+{
+  "schema_version": "contract-0.7.1",
+  "evaluation_id": "eval_20261206_event_v1_vs_live_v3",
+  "candidate_model_version_id": "mdl_regular_60m_market_event_logit_v1",
+  "comparator_model_version_id": "mdl_regular_60m_market_logit_v3",
+  "eval_subset": "holdout+shadow",
+  "common_coverage": {
+    "n_eligible": 200,
+    "n_candidate": 100,
+    "n_comparator": 180,
+    "n_common": 100
+  },
+  "metrics": {
+    "hit_rate": {
+      "candidate": 0.58,
+      "comparator": 0.58,
+      "paired_diff": 0.0,
+      "ci95": [
+        -0.06,
+        0.06
+      ]
+    },
+    "brier": {
+      "candidate": 0.641,
+      "comparator": 0.648,
+      "paired_diff": -0.007,
+      "ci95": [
+        -0.019,
+        0.005
+      ]
+    },
+    "coverage": {
+      "candidate": 0.5,
+      "comparator": 0.9
+    },
+    "brier_skill_score": {
+      "reference_model": "class_frequency",
+      "reference_brier": 0.666,
+      "candidate": 0.038,
+      "comparator": 0.027,
+      "paired_diff": 0.011,
+      "ci95": [
+        -0.008,
+        0.029
+      ]
+    }
+  },
+  "n_independent_days": 41,
+  "n_event_clusters": 9,
+  "gate_config_version": "gate-0.1",
+  "gate_result": "fail",
+  "failed_conditions": [
+    "coverage_drop_gt_10pp",
+    "brier_ci_upper_not_below_0",
+    "holdout_days_lt_60"
+  ]
+}

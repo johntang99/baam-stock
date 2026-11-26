@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/macro_releases.schema.json",
+  "title": "macro_releases",
+  "description": "DC §3.4 (D-15; schema only, table in Phase 2)",
+  "x-tabled": false,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "release_id": {
+      "type": "string"
+    },
+    "series_id": {
+      "type": "string"
+    },
+    "reference_period": {
+      "type": "string"
+    },
+    "vintage_date": {
+      "$ref": "common.schema.json#/$defs/date"
+    },
+    "value": {
+      "type": "number"
+    },
+    "is_first_release": {
+      "type": "boolean"
+    },
+    "release_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "consensus_value": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "available_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    }
+  },
+  "required": [
+    "release_id",
+    "series_id",
+    "reference_period",
+    "vintage_date",
+    "value",
+    "is_first_release",
+    "release_at",
+    "source_id",
+    "available_at"
+  ],
+  "additionalProperties": false
+}

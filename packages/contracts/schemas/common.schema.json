@@ -1,0 +1,412 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/common.schema.json",
+  "title": "common",
+  "description": "Shared definitions for contract-0.7.1 (DATA_CONTRACT §1).",
+  "$defs": {
+    "schema_version": {
+      "type": "string",
+      "const": "contract-0.7.1"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d{1,6})?Z$",
+      "description": "UTC ISO-8601 with Z suffix (DC §1)"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+      "title": "IsoDate"
+    },
+    "time_precision": {
+      "type": "string",
+      "enum": [
+        "ms",
+        "s",
+        "minute",
+        "hour",
+        "day",
+        "unknown"
+      ]
+    },
+    "visibility": {
+      "type": "string",
+      "enum": [
+        "public",
+        "internal",
+        "restricted_review"
+      ]
+    },
+    "market_state": {
+      "type": "string",
+      "enum": [
+        "pre_market",
+        "regular",
+        "post_market",
+        "closed",
+        "halted"
+      ]
+    },
+    "session_type": {
+      "type": "string",
+      "enum": [
+        "pre_market",
+        "regular",
+        "post_market"
+      ]
+    },
+    "trigger_type": {
+      "type": "string",
+      "enum": [
+        "scheduled",
+        "event",
+        "market_move",
+        "on_demand",
+        "session_check",
+        "user_supplement"
+      ]
+    },
+    "target_id": {
+      "type": "string",
+      "enum": [
+        "regular_60m",
+        "regular_60m_move",
+        "regular_to_close",
+        "next_regular_session",
+        "overnight_gap",
+        "event_outcome"
+      ]
+    },
+    "coverage_tier": {
+      "type": "string",
+      "enum": [
+        "pilot",
+        "batch2",
+        "peer_only",
+        "reference",
+        "inactive"
+      ]
+    },
+    "exchange": {
+      "type": "string",
+      "enum": [
+        "XNAS",
+        "XNYS",
+        "ARCX",
+        "XCBO"
+      ],
+      "description": "ARCX/XCBO added in contract-0.7.1 (SPY, ^VIX)"
+    },
+    "industry_template": {
+      "type": "string",
+      "enum": [
+        "semiconductor",
+        "bank",
+        "biotech",
+        "generic"
+      ]
+    },
+    "explanation_status": {
+      "type": "string",
+      "enum": [
+        "supported",
+        "partial",
+        "insufficient"
+      ]
+    },
+    "evidence_verification_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "media_report",
+        "primary_confirmed",
+        "conflicting",
+        "retracted"
+      ]
+    },
+    "prediction_status": {
+      "type": "string",
+      "enum": [
+        "pending_evaluation",
+        "published",
+        "awaiting_trigger",
+        "awaiting_settlement",
+        "settled",
+        "abstained",
+        "not_triggered",
+        "unsettleable"
+      ]
+    },
+    "abstain_reason": {
+      "type": "string",
+      "enum": [
+        "insufficient_data",
+        "stale_quote",
+        "halted",
+        "benchmark_unavailable",
+        "conflicting_facts",
+        "window_insufficient",
+        "market_closed",
+        "model_not_validated",
+        "manual_review",
+        "low_edge",
+        "slot_missed"
+      ]
+    },
+    "invalid_reason": {
+      "type": "string",
+      "enum": [
+        "no_sync_start_quote",
+        "no_sync_end_quote",
+        "halted",
+        "benchmark_unavailable",
+        "corporate_action",
+        "source_unverifiable"
+      ]
+    },
+    "display_tier": {
+      "type": "string",
+      "enum": [
+        "validated_public",
+        "internal_shadow",
+        "scenario_only"
+      ]
+    },
+    "sampling_rule": {
+      "type": "string",
+      "enum": [
+        "user_supplement",
+        "schedule_slot",
+        "scheduled_5m",
+        "event_first",
+        "market_move_first",
+        "on_demand",
+        "revision"
+      ]
+    },
+    "collection_channel": {
+      "type": "string",
+      "enum": [
+        "filing",
+        "insider_filing",
+        "company_ir",
+        "news_wire",
+        "policy",
+        "court",
+        "macro",
+        "expectation",
+        "market_data",
+        "peer_company",
+        "user_submission"
+      ]
+    },
+    "collection_category": {
+      "type": "string",
+      "enum": [
+        "earnings_guidance",
+        "policy_export",
+        "customer_demand",
+        "supply_chain",
+        "m_and_a",
+        "litigation",
+        "management",
+        "product",
+        "capital_return",
+        "macro",
+        "analyst_rating",
+        "insider_trade",
+        "market_data",
+        "other"
+      ]
+    },
+    "event_category": {
+      "type": "string",
+      "enum": [
+        "earnings_guidance",
+        "customer_demand",
+        "policy_export",
+        "executive_change",
+        "accounting_audit",
+        "product_supply",
+        "macro_rates",
+        "competition",
+        "litigation_regulatory",
+        "capital_estimates",
+        "trading_structure",
+        "m_and_a",
+        "investment_contract",
+        "license_policy"
+      ]
+    },
+    "model_family": {
+      "type": "string",
+      "enum": [
+        "class_frequency",
+        "always_flat",
+        "persistence",
+        "har_vol",
+        "market_logit",
+        "market_event_logit",
+        "gbdt",
+        "two_stage"
+      ]
+    },
+    "param_layers": {
+      "type": "string",
+      "enum": [
+        "market",
+        "market_sector",
+        "market_sector_company"
+      ]
+    },
+    "audience": {
+      "type": "string",
+      "enum": [
+        "internal",
+        "selected_v1",
+        "selected_v2",
+        "selected_v3"
+      ]
+    },
+    "error": {
+      "type": "object",
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "details": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ]
+    },
+    "readiness_item": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "ready",
+            "missing_inputs",
+            "manual_review",
+            "not_applicable"
+          ]
+        },
+        "reason": {
+          "type": "string"
+        },
+        "analysis_id": {
+          "type": "string"
+        },
+        "allowed_models": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "reason"
+      ]
+    },
+    "prediction_readiness": {
+      "type": "object",
+      "description": "DC §3.5",
+      "properties": {
+        "event_outcome": {
+          "$ref": "#/$defs/readiness_item"
+        },
+        "stock_reaction": {
+          "$ref": "#/$defs/readiness_item"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "event_outcome",
+        "stock_reaction"
+      ]
+    },
+    "probabilities": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1
+      },
+      "minProperties": 2,
+      "description": "keys = class enum; sum = 1 ± 1e-6 (checked by validator, not expressible in JSON Schema)"
+    },
+    "constituent": {
+      "type": "object",
+      "properties": {
+        "security_id": {
+          "type": "string"
+        },
+        "weight": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "security_id",
+        "weight"
+      ]
+    },
+    "statement": {
+      "type": "object",
+      "description": "market_explanation statement (D-46): must cite >=1 evidence or quote for observed_facts/possible_drivers/counter_evidence",
+      "properties": {
+        "text": {
+          "type": "string"
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "quote_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "item_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "trace_step": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "text",
+        "evidence_ids",
+        "quote_ids",
+        "item_ids"
+      ]
+    }
+  }
+}

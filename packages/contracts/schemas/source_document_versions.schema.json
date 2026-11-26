@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/source_document_versions.schema.json",
+  "title": "source_document_versions",
+  "description": "DC §3.2 (schema only in P0)",
+  "x-tabled": false,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "doc_version_id": {
+      "type": "string"
+    },
+    "doc_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "content_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "storage_path": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "locator": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "source_published_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "source_published_precision": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/time_precision"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "missing_reason": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "received_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "available_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "arrival_mode": {
+      "type": "string",
+      "enum": [
+        "live",
+        "archived",
+        "simulated"
+      ]
+    },
+    "simulated_available_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "is_correction_of": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "visibility": {
+      "$ref": "common.schema.json#/$defs/visibility"
+    }
+  },
+  "required": [
+    "doc_version_id",
+    "doc_id",
+    "version",
+    "content_hash",
+    "received_at",
+    "available_at",
+    "arrival_mode",
+    "visibility"
+  ],
+  "additionalProperties": false
+}

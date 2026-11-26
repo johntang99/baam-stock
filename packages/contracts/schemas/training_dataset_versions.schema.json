@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/training_dataset_versions.schema.json",
+  "title": "training_dataset_versions",
+  "description": "DC §3.8",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "dataset_version_id": {
+      "type": "string",
+      "pattern": "^ds_"
+    },
+    "target_id": {
+      "$ref": "common.schema.json#/$defs/target_id"
+    },
+    "feature_set_version": {
+      "type": "string"
+    },
+    "label_version": {
+      "type": "string"
+    },
+    "source_versions": {
+      "type": "object"
+    },
+    "time_range": {
+      "type": "object",
+      "properties": {
+        "start": {
+          "$ref": "common.schema.json#/$defs/date"
+        },
+        "end": {
+          "$ref": "common.schema.json#/$defs/date"
+        }
+      },
+      "additionalProperties": false,
+      "required": [
+        "start",
+        "end"
+      ]
+    },
+    "splits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "enum": [
+              "train",
+              "calibration",
+              "validation",
+              "holdout"
+            ]
+          },
+          "start": {
+            "$ref": "common.schema.json#/$defs/date"
+          },
+          "end": {
+            "$ref": "common.schema.json#/$defs/date"
+          },
+          "embargo_days": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "name",
+          "start",
+          "end",
+          "embargo_days"
+        ]
+      }
+    },
+    "availability_check_passed": {
+      "type": "boolean"
+    },
+    "n_rows": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "n_trading_days": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "n_event_clusters": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "class_balance": {
+      "type": "object"
+    },
+    "exclusions": {
+      "type": "object"
+    },
+    "parent_dataset_version_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "manifest_path": {
+      "type": "string"
+    },
+    "created_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    }
+  },
+  "required": [
+    "dataset_version_id",
+    "target_id",
+    "feature_set_version",
+    "label_version",
+    "source_versions",
+    "time_range",
+    "splits",
+    "availability_check_passed",
+    "n_rows",
+    "n_trading_days",
+    "n_event_clusters",
+    "class_balance",
+    "exclusions",
+    "manifest_path",
+    "created_at"
+  ],
+  "additionalProperties": false
+}

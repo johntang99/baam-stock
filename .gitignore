@@ -1,0 +1,27 @@
+# design package copies
+_design_package/
+*.zip
+# data (local parquet etc.)
+data/
+!data/.gitkeep
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+# node
+node_modules/
+.next/
+*.tsbuildinfo
+dist/
+# env & secrets
+.env
+.env.*
+!.env.example
+# supabase local
+supabase/.branches
+supabase/.temp
+# os
+.DS_Store

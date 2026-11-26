@@ -1,0 +1,40 @@
+{
+  "schema_version": "contract-0.7.1",
+  "snapshot_id": "snap_nvda_20261201_1520",
+  "security_id": "sec_nvda",
+  "trigger_type": "scheduled",
+  "trigger_ref": "sched_5m",
+  "analysis_as_of": "2026-12-01T15:20:00.000Z",
+  "evidence_watermark": "2026-12-01T15:18:44.000Z",
+  "market_watermark": "2026-12-01T15:19:59.000Z",
+  "market_state": "regular",
+  "session_date": "2026-12-01",
+  "last_quote_id": null,
+  "benchmark_version_id": "bmv_semis_peer_ex_nvda_v1",
+  "day_return_pct": 0.61,
+  "day_relative_pp": 0.22,
+  "event_analysis_ids": [],
+  "new_catalyst_found": false,
+  "explanation_status": "partial",
+  "explanation_summary": "监测来源范围内暂未发现新催化剂；个股与同行篮子同向上涨，相对 +0.22pp 未找到专属原因。",
+  "data_quality": "ok",
+  "run_state": "complete",
+  "quality_issues": [],
+  "last_valid_at": "2026-12-01T15:20:00.600Z",
+  "valid_until": "2026-12-01T15:30:00.000Z",
+  "prediction_readiness": {
+    "event_outcome": {
+      "status": "not_applicable",
+      "reason": "no_open_outcome_question"
+    },
+    "stock_reaction": {
+      "status": "ready",
+      "reason": "market_inputs_valid",
+      "allowed_models": [
+        "market_baseline"
+      ]
+    }
+  },
+  "dedupe_key": "sec_nvda|2026-12-01T15:18:44Z|2026-12-01T15:19:59Z",
+  "published_at": "2026-12-01T15:20:00.600Z"
+}

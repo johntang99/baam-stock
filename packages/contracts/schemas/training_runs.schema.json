@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/training_runs.schema.json",
+  "title": "training_runs",
+  "description": "DC §3.8",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "training_run_id": {
+      "type": "string",
+      "pattern": "^tr_"
+    },
+    "dataset_version_id": {
+      "type": "string"
+    },
+    "trigger": {
+      "type": "string",
+      "enum": [
+        "scheduled_weekly",
+        "manual",
+        "drift"
+      ]
+    },
+    "parent_model_version_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "code_version": {
+      "type": "string"
+    },
+    "config_hash": {
+      "type": "string"
+    },
+    "random_seed": {
+      "type": "integer"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "queued",
+        "building_dataset",
+        "training",
+        "calibrating",
+        "evaluating",
+        "completed",
+        "failed",
+        "cancelled"
+      ]
+    },
+    "stage": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "started_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "finished_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "error": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/error"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "artifact_paths": {
+      "type": "object"
+    },
+    "idempotency_key": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "training_run_id",
+    "dataset_version_id",
+    "trigger",
+    "code_version",
+    "config_hash",
+    "random_seed",
+    "status",
+    "artifact_paths",
+    "idempotency_key"
+  ],
+  "additionalProperties": false
+}

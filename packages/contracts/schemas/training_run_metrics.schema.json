@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/training_run_metrics.schema.json",
+  "title": "training_run_metrics",
+  "description": "DC §3.8; PK (training_run_id, seq)",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "training_run_id": {
+      "type": "string"
+    },
+    "seq": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "stage": {
+      "type": "string"
+    },
+    "iteration": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "subset": {
+      "type": "string",
+      "enum": [
+        "train",
+        "calibration",
+        "validation",
+        "holdout",
+        "shadow"
+      ]
+    },
+    "target_id": {
+      "$ref": "common.schema.json#/$defs/target_id"
+    },
+    "group_key": {
+      "type": "string"
+    },
+    "metric": {
+      "type": "string",
+      "enum": [
+        "log_loss",
+        "brier",
+        "brier_skill_score",
+        "hit_rate",
+        "coverage",
+        "ece",
+        "n_effective",
+        "pinball_loss",
+        "interval_coverage",
+        "interval_width",
+        "trigger_rate"
+      ]
+    },
+    "reference_model": {
+      "anyOf": [
+        {
+          "type": "string",
+          "enum": [
+            "class_frequency",
+            "always_flat",
+            "persistence",
+            "har_vol"
+          ]
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "ci95_low": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "ci95_high": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "value": {
+      "type": "number"
+    },
+    "denominator": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 0
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "recorded_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    }
+  },
+  "required": [
+    "training_run_id",
+    "seq",
+    "stage",
+    "subset",
+    "target_id",
+    "group_key",
+    "metric",
+    "value",
+    "recorded_at"
+  ],
+  "additionalProperties": false
+}

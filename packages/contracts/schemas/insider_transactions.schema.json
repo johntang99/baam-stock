@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/insider_transactions.schema.json",
+  "title": "insider_transactions",
+  "description": "DC §3.4 Form 4 (schema only, table in Phase 2)",
+  "x-tabled": false,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "txn_id": {
+      "type": "string"
+    },
+    "security_id": {
+      "type": "string"
+    },
+    "insider_name": {
+      "type": "string"
+    },
+    "insider_role": {
+      "type": "string"
+    },
+    "transaction_code": {
+      "type": "string"
+    },
+    "is_10b5_1": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "shares": {
+      "type": "number"
+    },
+    "price": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "transaction_date": {
+      "$ref": "common.schema.json#/$defs/date"
+    },
+    "filed_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "accession_no": {
+      "type": "string"
+    },
+    "available_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    }
+  },
+  "required": [
+    "txn_id",
+    "security_id",
+    "insider_name",
+    "insider_role",
+    "transaction_code",
+    "shares",
+    "transaction_date",
+    "filed_at",
+    "accession_no",
+    "available_at"
+  ],
+  "additionalProperties": false
+}

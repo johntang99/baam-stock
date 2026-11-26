@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/benchmark_definitions.schema.json",
+  "title": "benchmark_definitions",
+  "description": "DC §3.6",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "benchmark_id": {
+      "type": "string",
+      "pattern": "^bm_"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "peer_basket",
+        "etf_reference"
+      ]
+    },
+    "target_security_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "methodology": {
+      "type": "string"
+    },
+    "missing_rule": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "benchmark_id",
+    "kind",
+    "methodology",
+    "missing_rule"
+  ],
+  "additionalProperties": false
+}

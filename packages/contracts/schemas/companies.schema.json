@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/companies.schema.json",
+  "title": "companies",
+  "description": "DC §3.1",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "company_id": {
+      "type": "string",
+      "pattern": "^co_[a-z0-9_]+$"
+    },
+    "legal_name": {
+      "type": "string"
+    },
+    "cik": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^\\d{10}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "sector": {
+      "type": "string"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "fiscal_calendar": {
+      "type": "object",
+      "description": "{ \"fy_end_month\": 1, \"week_based\": true }"
+    },
+    "row_version": {
+      "type": "integer",
+      "minimum": 1
+    }
+  },
+  "required": [
+    "company_id",
+    "legal_name",
+    "sector",
+    "industry",
+    "fiscal_calendar",
+    "row_version"
+  ],
+  "additionalProperties": false
+}

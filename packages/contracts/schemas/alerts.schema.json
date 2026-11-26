@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/alerts.schema.json",
+  "title": "alerts",
+  "description": "DC §3.10",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "alert_id": {
+      "type": "string"
+    },
+    "severity": {
+      "type": "string",
+      "enum": [
+        "info",
+        "warning",
+        "critical"
+      ]
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "source_down",
+        "source_latency",
+        "quote_stale",
+        "pipeline_failed",
+        "settlement_backlog",
+        "drift",
+        "gate_regression",
+        "onboarding_blocked"
+      ]
+    },
+    "ref": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "opened_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "acknowledged_by": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "resolved_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "alert_id",
+    "severity",
+    "kind",
+    "opened_at",
+    "message"
+  ],
+  "additionalProperties": false
+}

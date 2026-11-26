@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/expectation_snapshots.schema.json",
+  "title": "expectation_snapshots",
+  "description": "DC §3.4 (schema only in P0)",
+  "x-tabled": false,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "exp_id": {
+      "type": "string"
+    },
+    "company_id": {
+      "type": "string"
+    },
+    "metric": {
+      "type": "string"
+    },
+    "fiscal_period": {
+      "type": "string"
+    },
+    "value": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "range_low": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "range_high": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "unit": {
+      "type": "string"
+    },
+    "accounting_basis": {
+      "type": "string",
+      "enum": [
+        "gaap",
+        "non_gaap",
+        "company_defined"
+      ]
+    },
+    "expectation_type": {
+      "type": "string",
+      "enum": [
+        "company_guidance",
+        "analyst_consensus",
+        "other_public"
+      ]
+    },
+    "snapshot_as_of": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "snapshot_precision": {
+      "$ref": "common.schema.json#/$defs/time_precision"
+    },
+    "available_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "revision_of_exp_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "exp_id",
+    "company_id",
+    "metric",
+    "fiscal_period",
+    "unit",
+    "accounting_basis",
+    "expectation_type",
+    "snapshot_as_of",
+    "snapshot_precision",
+    "available_at",
+    "source_id"
+  ],
+  "additionalProperties": false
+}

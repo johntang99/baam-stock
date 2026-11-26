@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/forecast_accuracy_rollups.schema.json",
+  "title": "forecast_accuracy_rollups",
+  "description": "DC §3.7a (schema only; Phase 1)",
+  "x-tabled": false,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "security_id": {
+      "type": "string"
+    },
+    "target_id": {
+      "$ref": "common.schema.json#/$defs/target_id"
+    },
+    "group_key": {
+      "type": "string"
+    },
+    "window": {
+      "type": "string",
+      "enum": [
+        "session",
+        "rolling_20d",
+        "rolling_60d",
+        "since_live"
+      ]
+    },
+    "n_published": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "n_settled": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "n_abstained": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "n_unsettleable": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "hit_rate": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "brier": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "bss_class_frequency": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "coverage_p80": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "coverage_p90": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "mean_interval_width_pp": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "mean_residual_pp": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "mean_abs_residual_pp": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "calibration_bins": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "model_version_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "computed_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    }
+  },
+  "required": [
+    "security_id",
+    "target_id",
+    "group_key",
+    "window",
+    "n_published",
+    "n_settled",
+    "n_abstained",
+    "n_unsettleable",
+    "calibration_bins",
+    "model_version_ids",
+    "computed_at"
+  ],
+  "additionalProperties": false
+}

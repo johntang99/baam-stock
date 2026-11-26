@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/events.schema.json",
+  "title": "events",
+  "description": "DC §3.4 (schema only in P0)",
+  "x-tabled": false,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "event_id": {
+      "type": "string"
+    },
+    "category": {
+      "$ref": "common.schema.json#/$defs/event_category"
+    },
+    "subtype": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "identity_key": {
+      "type": "string"
+    },
+    "progress_status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "outcome_confirmed",
+        "effective",
+        "terminated"
+      ]
+    },
+    "evidence_status": {
+      "$ref": "common.schema.json#/$defs/evidence_verification_status"
+    },
+    "analysis_status": {
+      "type": "string",
+      "enum": [
+        "partial",
+        "complete",
+        "needs_review"
+      ]
+    },
+    "current_analysis_version": {
+      "anyOf": [
+        {
+          "type": "integer",
+          "minimum": 1
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "row_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "first_seen_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    }
+  },
+  "required": [
+    "event_id",
+    "category",
+    "identity_key",
+    "progress_status",
+    "evidence_status",
+    "analysis_status",
+    "row_version",
+    "first_seen_at"
+  ],
+  "additionalProperties": false
+}

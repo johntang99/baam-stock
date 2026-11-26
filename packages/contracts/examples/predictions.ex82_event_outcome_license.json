@@ -1,0 +1,46 @@
+{
+  "schema_version": "contract-0.7.1",
+  "prediction_id": "pred_evt_policy_demo_001_license",
+  "run_id": "run_nvda_20261202_1601",
+  "target_row_id": "tgt_event_policy_demo_001_v1",
+  "security_id": "sec_nvda",
+  "event_id": "evt_policy_export_demo_001",
+  "status": "published",
+  "probabilities": null,
+  "display_tier": "scenario_only",
+  "abstain_reason": "model_not_validated",
+  "is_primary": false,
+  "sampling_rule": "event_first",
+  "scenarios": [
+    {
+      "outcome": "license_confirmed",
+      "label": "截止 2026-12-31 23:59 ET 前公开确认获得许可",
+      "evidence_direction": "unknown"
+    },
+    {
+      "outcome": "denial_confirmed",
+      "label": "截止前公开确认被拒"
+    },
+    {
+      "outcome": "no_confirmation",
+      "label": "截止前无公开确认"
+    }
+  ],
+  "published_at": "2026-12-02T16:01:05.000Z",
+  "t0_benchmark_quote_ids": [],
+  "valid_until": "2027-01-01T04:59:00.000Z",
+  "locked": {
+    "target_definition_version": "td-0.2",
+    "quote_rule_version": "qr-0.1",
+    "benchmark_version_id": "bmv_semis_peer_ex_nvda_v1",
+    "calendar_version": "cal-2026.11",
+    "model_version_id": "scenario_only",
+    "calibration_version": null,
+    "schema_version": "contract-0.7.1",
+    "sigma_model_version": null,
+    "sigma_hat_pp": null,
+    "threshold_k": null,
+    "threshold_pp": null,
+    "feature_set_version": "fs-0.2"
+  }
+}

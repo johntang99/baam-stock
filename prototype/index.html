@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>短期研究原型</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="mock-banner" role="note">
+    <strong>模拟数据 · MOCK DATA</strong>
+    <span>本原型全部行情、事件、预测与模型成绩均为虚构，仅用于产品确认与开发参考，不代表任何实际结果或投资建议。</span>
+  </div>
+  <header class="topbar">
+    <a class="brand" href="#/monitor">股票短期研究 <small>prototype · contract-0.7</small></a>
+    <nav class="mainnav" id="mainnav">
+      <a href="#/monitor" data-nav="monitor">公司监控</a>
+      <a href="#/stock/NVDA" data-nav="stock">股票详情</a>
+      <a href="#/forecast/NVDA/regular_60m" data-nav="forecast">短期预测</a>
+      <a href="#/events/NVDA" data-nav="events">待决事件</a>
+      <a href="#/replay/pred_nvda_20261202_1001_60m" data-nav="replay">预测回放</a>
+      <a href="#/admin/runs" data-nav="admin">研发后台</a>
+      <a href="#/ops/run" data-nav="ops">运营</a>
+    </nav>
+    <div class="controls">
+      <label>演示时钟
+        <select id="clockSel">
+          <option value="intraday">盘中 12-02 11:30 ET</option>
+          <option value="closed">休市日 11-26</option>
+        </select>
+      </label>
+      <label>演示状态
+        <select id="stateSel">
+          <option value="normal">正常</option>
+          <option value="loading">加载中</option>
+          <option value="empty">空数据</option>
+          <option value="timeout">超时</option>
+          <option value="failed">失败</option>
+          <option value="unsettleable">无法结算</option>
+        </select>
+      </label>
+      <button id="themeBtn" class="btn ghost" type="button" title="切换浅色/深色">◐</button>
+    </div>
+  </header>
+  <div class="clockbar" id="clockbar"></div>
+  <main id="view" tabindex="-1"></main>
+  <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
+  <footer class="foot">原型 · 字段名对应 DATA_CONTRACT.md · 显示时间为美东（ET），存储为 UTC</footer>
+  <script src="data.js"></script>
+  <script src="ops.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

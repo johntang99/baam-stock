@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/event_milestones.schema.json",
+  "title": "event_milestones",
+  "description": "DC §3.4 (schema only in P0)",
+  "x-tabled": false,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "milestone_id": {
+      "type": "string"
+    },
+    "event_id": {
+      "type": "string"
+    },
+    "milestone_type": {
+      "type": "string",
+      "enum": [
+        "agreement_signed",
+        "shareholder_vote",
+        "regulatory_filing",
+        "regulatory_clearance",
+        "closing",
+        "termination",
+        "complaint_filed",
+        "hearing",
+        "order",
+        "verdict",
+        "appeal",
+        "settlement",
+        "official_statement",
+        "proposed_rule",
+        "comment_period_end",
+        "rule_published",
+        "rule_effective",
+        "enforcement_action",
+        "license_applied",
+        "license_granted",
+        "license_denied",
+        "shipment_confirmed",
+        "board_announcement",
+        "guidance_update"
+      ]
+    },
+    "decision_body": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "expected_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "actual_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "scheduled",
+        "occurred",
+        "delayed",
+        "cancelled"
+      ]
+    },
+    "evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "milestone_id",
+    "event_id",
+    "milestone_type",
+    "status",
+    "evidence_ids"
+  ],
+  "additionalProperties": false
+}

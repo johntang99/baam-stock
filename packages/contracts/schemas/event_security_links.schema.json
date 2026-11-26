@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/event_security_links.schema.json",
+  "title": "event_security_links",
+  "description": "DC §3.4 (schema only in P0)",
+  "x-tabled": false,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "event_id": {
+      "type": "string"
+    },
+    "security_id": {
+      "type": "string"
+    },
+    "relation": {
+      "type": "string",
+      "enum": [
+        "subject",
+        "acquirer",
+        "target",
+        "supplier",
+        "customer",
+        "competitor",
+        "regulated_party",
+        "sector_wide"
+      ]
+    },
+    "exposure_note": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "event_id",
+    "security_id",
+    "relation"
+  ],
+  "additionalProperties": false
+}

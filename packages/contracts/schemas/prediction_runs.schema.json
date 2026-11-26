@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/prediction_runs.schema.json",
+  "title": "prediction_runs",
+  "description": "DC §3.7",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "run_id": {
+      "type": "string",
+      "pattern": "^run_"
+    },
+    "trigger_type": {
+      "$ref": "common.schema.json#/$defs/trigger_type"
+    },
+    "trigger_ref": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "snapshot_id": {
+      "type": "string"
+    },
+    "event_analysis_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "feature_snapshot_id": {
+      "type": "string"
+    },
+    "model_version_id": {
+      "type": "string"
+    },
+    "calibration_version": {
+      "type": "string"
+    },
+    "baseline_model_version_id": {
+      "type": "string"
+    },
+    "evidence_gaps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "publish_deadline": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "published_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "idempotency_key": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "run_id",
+    "trigger_type",
+    "snapshot_id",
+    "event_analysis_ids",
+    "feature_snapshot_id",
+    "model_version_id",
+    "calibration_version",
+    "baseline_model_version_id",
+    "evidence_gaps",
+    "publish_deadline",
+    "idempotency_key"
+  ],
+  "additionalProperties": false
+}

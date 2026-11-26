@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/extraction_eval_runs.schema.json",
+  "title": "extraction_eval_runs",
+  "description": "DC §3.8 (D-32)",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "eval_run_id": {
+      "type": "string"
+    },
+    "label_set_version": {
+      "type": "string"
+    },
+    "llm_provider": {
+      "type": "string"
+    },
+    "llm_model": {
+      "type": "string"
+    },
+    "prompt_version": {
+      "type": "string"
+    },
+    "field_group": {
+      "type": "string",
+      "enum": [
+        "numeric_fact",
+        "direction",
+        "scope",
+        "certainty"
+      ]
+    },
+    "precision": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "recall": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "f1": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "n_docs": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "passed": {
+      "type": "boolean"
+    },
+    "created_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    }
+  },
+  "required": [
+    "eval_run_id",
+    "label_set_version",
+    "llm_provider",
+    "llm_model",
+    "prompt_version",
+    "field_group",
+    "precision",
+    "recall",
+    "f1",
+    "n_docs",
+    "passed",
+    "created_at"
+  ],
+  "additionalProperties": false
+}

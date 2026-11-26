@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/forecast_schedules.schema.json",
+  "title": "forecast_schedules",
+  "description": "DC §3.7a (D-43)",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "schedule_id": {
+      "type": "string"
+    },
+    "schedule_version": {
+      "type": "string"
+    },
+    "effective_from": {
+      "$ref": "common.schema.json#/$defs/date"
+    },
+    "effective_to": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/date"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "slots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "slot_id": {
+            "type": "string",
+            "pattern": "^s\\d{4}"
+          },
+          "time_et": {
+            "type": "string",
+            "pattern": "^\\d{2}:\\d{2}$"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "pre_open_outlook",
+              "intraday",
+              "post_close_outlook"
+            ]
+          },
+          "target_ids": {
+            "type": "array",
+            "items": {
+              "$ref": "common.schema.json#/$defs/target_id"
+            }
+          },
+          "start_rule": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "slot_id",
+          "time_et",
+          "kind",
+          "target_ids",
+          "start_rule"
+        ]
+      }
+    },
+    "half_day_rule": {
+      "type": "object"
+    },
+    "holiday_rule": {
+      "type": "string"
+    },
+    "miss_rule": {
+      "type": "object",
+      "properties": {
+        "grace_s": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "on_miss": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "grace_s",
+        "on_miss"
+      ]
+    }
+  },
+  "required": [
+    "schedule_id",
+    "schedule_version",
+    "effective_from",
+    "slots",
+    "half_day_rule",
+    "holiday_rule",
+    "miss_rule"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/docket_entries.schema.json",
+  "title": "docket_entries",
+  "description": "DC §3.4 court dockets (schema only, table in Phase 2)",
+  "x-tabled": false,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "docket_entry_id": {
+      "type": "string"
+    },
+    "event_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "court": {
+      "type": "string"
+    },
+    "case_number": {
+      "type": "string"
+    },
+    "entry_no": {
+      "type": "integer"
+    },
+    "entry_type": {
+      "type": "string",
+      "enum": [
+        "complaint",
+        "motion",
+        "order",
+        "opinion",
+        "judgment",
+        "verdict",
+        "appeal_notice",
+        "settlement",
+        "other"
+      ]
+    },
+    "filed_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "entered_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "doc_version_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "available_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    }
+  },
+  "required": [
+    "docket_entry_id",
+    "court",
+    "case_number",
+    "entry_no",
+    "entry_type",
+    "filed_at",
+    "title",
+    "source_id",
+    "available_at"
+  ],
+  "additionalProperties": false
+}

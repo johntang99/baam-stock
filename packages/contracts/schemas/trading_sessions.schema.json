@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/trading_sessions.schema.json",
+  "title": "trading_sessions",
+  "description": "DC §3.1; PK (exchange, session_date)",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "exchange": {
+      "$ref": "common.schema.json#/$defs/exchange"
+    },
+    "session_date": {
+      "$ref": "common.schema.json#/$defs/date"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "open",
+        "early_close",
+        "closed"
+      ]
+    },
+    "open_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "close_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "source": {
+      "type": "string"
+    },
+    "calendar_version": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "exchange",
+    "session_date",
+    "status",
+    "source",
+    "calendar_version"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,24 @@
+{
+  "name": "contracts",
+  "version": "0.7.1",
+  "private": true,
+  "description": "Single source of truth: JSON Schemas for DATA_CONTRACT (schema_version contract-0.7.1)",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "scripts": {
+    "gen:ts": "node scripts/gen-ts.mjs",
+    "gen:py": "bash scripts/gen-py.sh",
+    "build": "node scripts/gen-ts.mjs && tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "node scripts/validate.mjs --schemas-only",
+    "test": "node scripts/validate.mjs"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "json-schema-to-typescript": "^15.0.4",
+    "typescript": "^5.6.3"
+  }
+}

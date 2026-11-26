@@ -1,0 +1,45 @@
+[project]
+name = "baam-stock-tools"
+version = "0.0.0"
+description = "Workspace root: scripts and dev tooling for baam-stock (research only)"
+requires-python = ">=3.12,<3.13"
+dependencies = ["sr"]
+
+[dependency-groups]
+dev = [
+  "pytest>=8",
+  "ruff>=0.6",
+  "mypy>=1.11",
+  "pandas-stubs",
+  "types-PyYAML",
+  "jsonschema>=4.23",
+  "datamodel-code-generator>=0.26",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.workspace]
+members = ["services/py"]
+
+[tool.uv.sources]
+sr = { workspace = true }
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+extend-exclude = ["services/py/sr/contracts/_gen"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "DTZ"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["services/py/tests"]
+addopts = "-ra"
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+ignore_missing_imports = true
+exclude = ["services/py/sr/contracts/_gen/"]

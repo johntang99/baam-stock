@@ -1,0 +1,533 @@
+# Machine-readable mirror of docs/BUILDING_MASTER_PLAN.md §9 decision table.
+# The Markdown table is authoritative; keep both in sync when either changes.
+# params: only values explicitly stated in the decision text; {} when none.
+schema: decisions-0.1
+source: docs/BUILDING_MASTER_PLAN.md §9 (plan-0.7)
+generated: '2026-11-26'
+status_values: [proposed, from_spec, to_verify]
+decisions:
+- id: D-01
+  topic: 时间存储与显示
+  decision: 存 UTC（timestamptz），显示 America/New_York
+  source: S2§2
+  status: [from_spec]
+  status_note: null
+  lock_at: null
+  params: {storage_tz: UTC, storage_type: timestamptz, display_tz: America/New_York}
+- id: D-02
+  topic: 预测窗口
+  decision: regular_60m、regular_to_close、next_regular_session；overnight_gap 可选；S1 的 1–5 日窗口后续
+  source: S3§3.1，C1
+  status: [from_spec, proposed]
+  status_note: null
+  lock_at: Phase 0
+  params:
+    horizons: [regular_60m, regular_to_close, next_regular_session]
+    optional_horizons: [overnight_gap]
+- id: D-03
+  topic: 首批与第二批
+  decision: 首批 NVDA/AMD/AVGO/MU；第二批 TSM/MRVL；银行/生技仅配置样例
+  source: S3§1.1，C2
+  status: [from_spec]
+  status_note: null
+  lock_at: null
+  params:
+    first_batch: [NVDA, AMD, AVGO, MU]
+    second_batch: [TSM, MRVL]
+    config_example_only_sectors: [bank, biotech]
+- id: D-04
+  topic: 交易日历
+  decision: Python exchange_calendars（XNYS）为基础 + trading_calendar_overrides 覆盖表，对照 Nasdaq 官方日历
+  source: S3§3.1
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 0
+  params: {calendar_lib: exchange_calendars, calendar_code: XNYS, overrides_table: trading_calendar_overrides, reference: Nasdaq official calendar}
+- id: D-05
+  topic: 价格类型
+  decision: 起算/结算用合并 NBBO 中间价（mid）；无有效 NBBO 时不回退到最后成交
+  source: G1
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 0
+  params: {price_type: nbbo_mid, fallback_to_last_trade: false}
+- id: D-06
+  topic: 同步容差
+  decision: 个股与篮子每个成分的报价时间差 ≤ 2s；篮子成分缺失 > 1 只则基准不可计算
+  source: G1
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 0
+  params: {sync_tolerance_ms: 2000, max_missing_constituents: 1}
+- id: D-07
+  topic: 结算容差
+  decision: 目标时点后 30s 内首组同步合格报价；无则 unsettleable
+  source: G1
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 0
+  params: {settle_tolerance_s: 30, on_no_quote: unsettleable}
+- id: D-08
+  topic: 同行篮子
+  decision: semis_peer_v1：NVDA, AMD, AVGO, MU, QCOM, TXN, INTC, ADI, MRVL, AMAT, LRCX, KLAC；剔除目标后等权；按季度生效；SOXX 仅参考
+  source: S3§1.2，G2
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 0
+  params:
+    basket_id: semis_peer_v1
+    constituents: [NVDA, AMD, AVGO, MU, QCOM, TXN, INTC, ADI, MRVL, AMAT, LRCX, KLAC]
+    exclude_target: true
+    weighting: equal
+    effective: quarterly
+    reference_only: [SOXX]
+- id: D-09
+  topic: 三分类阈值（波动缩放）
+  decision: threshold_pp = k × sigma_hat_pp；sigma_hat_pp = 发布时对同窗口相对收益标准差的预测（sigma-0.1：近 20 个交易日、同一时段桶的 EWMA，半衰期 10 日）；初始 k = 0.25（所有目标）；σ̂ 不可得 → 弃预测 insufficient_data。sigma_hat_pp 与 k 写入 predictions.locked。参考：σ̂ = 0.60pp 时 60m 阈值 = 0.15pp
+  source: S3§3.1(3)、MEMO A-1
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 0
+  params:
+    k: 0.25
+    sigma_model: sigma-0.1
+    lookback_sessions: 20
+    ewma_half_life_days: 10
+    bucket: same_time_of_day
+    on_missing_sigma: abstain
+    abstain_reason: insufficient_data
+    locked_fields: [sigma_hat_pp, k]
+    example: {sigma_hat_pp: 0.6, threshold_pp_60m: 0.15}
+- id: D-10
+  topic: 下一时段起算
+  decision: 不早于 09:31:00 ET 的首组同步合格报价；10 分钟内无则 unsettleable
+  source: G4
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 0
+  params: {not_before_et: '09:31:00', max_wait_min: 10, on_timeout: unsettleable}
+- id: D-11
+  topic: 收盘价格
+  decision: 上市交易所官方收盘价（Nasdaq Official Closing Price 等）；篮子成分同样口径
+  source: G5
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 0
+  params: {close_price: listing_exchange_official_close, applies_to_basket: true}
+- id: D-12
+  topic: 合格报价
+  decision: bid>0、ask>bid、价差 ≤ 20bp 且 ≤ 近 20 分钟中位价差 ×5、报价年龄 ≤ 5s、非停牌/非 LULD 暂停
+  source: G6
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 0
+  params: {min_bid_exclusive: 0, require_ask_gt_bid: true, max_spread_bp: 20, max_spread_vs_median_20m: 5, median_window_min: 20, max_quote_age_s: 5, exclude_halted: true, exclude_luld_pause: true}
+- id: D-13
+  topic: 实时与历史行情供应商
+  decision: 候选：Massive（S1 例举）、Databento、交易所直连；需验证秒级 NBBO 历史回溯年限、官方收盘价、授权展示
+  source: S1[10]，G7
+  status: [to_verify]
+  status_note: null
+  lock_at: Phase 0
+  params:
+    candidates: [Massive, Databento, 交易所直连]
+    verify: [秒级 NBBO 历史回溯年限, 官方收盘价, 授权展示]
+- id: D-14
+  topic: 实时延迟指标
+  decision: 交易所时间→参考报价入缓冲 p95 < 1s；快报 p95 < 3 分钟（S2§6 只要求观测）
+  source: S2§6
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 2
+  params: {ref_quote_ingest_p95_lt_s: 1, flash_report_p95_lt_min: 3}
+- id: D-15
+  topic: 新闻、政策与其他来源
+  decision: SEC EDGAR（免费，API，含 8-K 与 Form 4）、公司 IR RSS、Federal Register/BIS/白宫；法院案卷：CourtListener/RECAP（免费，覆盖不全）为主，关键案件按需 PACER；宏观：BLS/BEA/Fed 官方发布 + FRED/ALFRED 历史 vintage（首发值）；期权：Phase 4 前不采购，仅留接口；授权新闻快讯候选待选
+  source: S1 来源、PPT 审查
+  status: [to_verify]
+  status_note: null
+  lock_at: Phase 0（法院/宏观/Form 4 在 Phase 2 前样本验证）
+  params:
+    filings: ['SEC EDGAR (8-K, Form 4)']
+    company: [公司 IR RSS]
+    policy: [Federal Register, BIS, 白宫]
+    court_primary: CourtListener/RECAP
+    court_on_demand: PACER
+    macro: [BLS, BEA, Fed, FRED/ALFRED]
+    options_procure_not_before_phase: 4
+    licensed_newswire: 待选
+- id: D-16
+  topic: 共识预期
+  decision: FactSet / LSEG point-in-time 候选；未采购前 expectation_comparison 允许为空
+  source: S1[7]
+  status: [to_verify]
+  status_note: null
+  lock_at: Phase 2
+  params:
+    candidates: [FactSet, LSEG]
+    point_in_time: true
+    expectation_comparison_nullable_until_procured: true
+- id: D-17
+  topic: 定时刷新频率
+  decision: 正常时段每 5 分钟；另在 09:35、15:45 ET 检查；同水位合并
+  source: S2§1，S3§2
+  status: [from_spec]
+  status_note: null
+  lock_at: null
+  params:
+    refresh_interval_min: 5
+    extra_checks_et: ['09:35', '15:45']
+    merge_same_watermark: true
+- id: D-18
+  topic: 60m 发布截止
+  decision: 要求 t0 + 60m + 30s ≤ 当场收盘；至收盘最短剩余 15 分钟
+  source: S3§3.1
+  status: [from_spec, proposed]
+  status_note: null
+  lock_at: Phase 0
+  params: {publish_constraint: t0 + 60m + 30s <= session_close, settle_buffer_s: 30, min_remaining_to_close_min: 15}
+- id: D-19
+  topic: 数据切分
+  decision: 训练/校准/验证/留出按时间；边界前后各隔 ≥ 1 个完整交易日；同事件簇、同宏观冲击同组
+  source: S3§8.1，G8
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 1
+  params:
+    split: [train, calibration, validation, holdout]
+    split_by: time
+    embargo_full_sessions_min: 1
+    group_together: [event_cluster, macro_shock]
+- id: D-20
+  topic: 初始训练窗口
+  decision: 2021-01 起至最近已结算日（以可得数据为准）；半导体同行 12 只样本池
+  source: S3§8.1
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 1
+  params: {train_start: 2021-01, train_end: latest_settled_session, peer_pool_size: 12}
+- id: D-21
+  topic: 上线门槛
+  decision: gate_config v0：留出 ≥ 60 个独立交易日、影子 ≥ 20 个交易日；Brier 相对行情基线配对改善 CI 上界 < 0；覆盖率下降 ≤ 10pp；关键分组退化 ≤ 0.005 Brier
+  source: S3§6/§8.4，G9
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 3 前
+  params: {gate_config: v0, holdout_sessions_min: 60, shadow_sessions_min: 20, brier_paired_improvement_ci_upper_lt: 0, max_coverage_drop_pp: 10, max_key_group_degradation_brier: 0.005}
+- id: D-22
+  topic: 训练检查节奏
+  decision: 每周一 06:00 ET 检查新结算样本；手动与漂移触发
+  source: S3§8.3
+  status: [from_spec]
+  status_note: null
+  lock_at: null
+  params:
+    check_weekday: Monday
+    check_time_et: 06:00
+    other_triggers: [manual, drift]
+- id: D-23
+  topic: 主评分抽样
+  decision: 0.5 修订：主评分样本 = 固定时刻表槽位预测（D-43）；事件触发取证券×事件节点×目标的首条合格发布，单独分组；5 分钟快照预测、按需与修订另计、不进主评分
+  source: S3§4(5)、用户 2026-11-26
+  status: [from_spec, proposed]
+  status_note: 槽位替代整 5 分钟时点
+  lock_at: Phase 1
+  params:
+    primary_sample: schedule_slots
+    schedule_ref: D-43
+    event_triggered: first_qualified_per_security_event_node_target
+    excluded_from_primary: [5min_snapshot, on_demand, revision]
+- id: D-24
+  topic: 行情基线模型
+  decision: L2 正则多项逻辑回归，约 20 个特征（S3§8.2）；树模型为对照
+  source: S3§8.2
+  status: [from_spec]
+  status_note: null
+  lock_at: null
+  params: {model: l2_multinomial_logistic_regression, approx_features: 20, comparator: tree_model}
+- id: D-25
+  topic: LLM 提供商
+  decision: 接口化；默认候选 Anthropic Claude；回放禁联网与禁记忆补全
+  source: Brief
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 1
+  params: {default_candidate: Anthropic Claude, replay_no_network: true, replay_no_memory_completion: true}
+- id: D-26
+  topic: 前端框架
+  decision: Next.js + Supabase Auth/RLS；角色 viewer、researcher、reviewer、admin
+  source: Brief
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 0
+  params:
+    frontend: Next.js
+    auth: Supabase Auth/RLS
+    roles: [viewer, researcher, reviewer, admin]
+- id: D-27
+  topic: 行情存储
+  decision: 1 秒层与原始文件存 Parquet（对象存储），PG 存 1m bar 与被引用报价
+  source: §5
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 0
+  params:
+    object_storage_format: parquet
+    object_storage_layers: [1s, raw]
+    postgres: [1m_bar, referenced_quotes]
+- id: D-28
+  topic: 延长时段预测
+  decision: 首版不发布盘前/盘后预测，仅展示分析与下一时段展望
+  source: S3§3.1
+  status: [from_spec]
+  status_note: null
+  lock_at: null
+  params: {publish_premarket: false, publish_afterhours: false}
+- id: D-29
+  topic: 预期波动目标
+  decision: 新增 regular_60m_move：预测同一 60 分钟窗口 abs(relative_return_pp) 的分位数（p50/p80/p90），基线为 HAR 式已实现波动模型；用 pinball loss 与区间覆盖率评分；与方向目标共享起算/结算报价
+  source: MEMO A-2
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 1
+  params:
+    target: regular_60m_move
+    quantity: abs(relative_return_pp)
+    quantiles: [p50, p80, p90]
+    baseline: HAR
+    metrics: [pinball_loss, interval_coverage]
+- id: D-30
+  topic: 评分基线与检验
+  decision: 方向目标报告 Brier Skill Score（BSS = 1 − Brier/Brier_ref），三条参照：class_frequency、always_flat、persistence（上一个 60 分钟相对收益方向延续）；候选 vs 线上用按交易日分块 bootstrap（2,000 次）求配对差 95% CI
+  source: MEMO E-1/E-2
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 1
+  params:
+    metric: BSS
+    references: [class_frequency, always_flat, persistence]
+    persistence_window_min: 60
+    bootstrap: block_by_trading_day
+    bootstrap_reps: 2000
+    ci_level: 0.95
+- id: D-31
+  topic: 免费特征（fs-0.2）
+  decision: 时段/日历（距开盘、距收盘、星期、半日市、三巫日、指数调仓日）；跨资产代理（QQQ、SPY 30/60 分钟收益，^VIX 水平与变化）；篮子内领先滞后（各成分 5/15/30 分钟收益与 SMH）；波动状态（5/30/390 分钟已实现波动、隔夜跳空、开盘区间）
+  source: MEMO I-1～I-4
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 0 定义 / Phase 1 实现
+  params:
+    feature_set: fs-0.2
+    cross_asset: [QQQ, SPY, ^VIX]
+    cross_asset_return_windows_min: [30, 60]
+    lead_lag_windows_min: [5, 15, 30]
+    lead_lag_extra: [SMH]
+    realized_vol_windows_min: [5, 30, 390]
+- id: D-32
+  topic: LLM 提取评估集
+  decision: 人工标注约 300 份文档（财报、政策、8-K、新闻各类），评估事实、方向、范围、确定性四类字段的 precision/recall；提示词版本冻结；低于门槛（初始：数值事实 precision ≥ 0.98、方向 F1 ≥ 0.85）的提示词版本不得进入特征
+  source: MEMO A-11
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 1
+  params:
+    n_docs_approx: 300
+    doc_types: [财报, 政策, 8-K, 新闻]
+    field_groups: [事实, 方向, 范围, 确定性]
+    numeric_fact_precision_min: 0.98
+    direction_f1_min: 0.85
+- id: D-33
+  topic: 对外开放门槛
+  decision: 见 §12：内部 → 精选用户 v1（证据 + 预期波动）→ v2（方向概率，仅达标切片）→ v3（其他目标）
+  source: MEMO §4
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 3 前锁定
+  params:
+    stages: [internal, selected_v1, selected_v2, selected_v3]
+    ref: §12
+- id: D-34
+  topic: 一键运行规则
+  decision: 默认 reuse_if_unchanged；force_recompute 仅 researcher+；同一用户同一证券 1 分钟内重复点击按幂等键返回同一运行；按需预测不进主评分；live 单只证券端到端 p95 ≤ 90s（不含等待起算报价）
+  source: S3§2、§4(5)
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 2
+  params: {default_mode: reuse_if_unchanged, force_recompute_min_role: researcher, idempotency_window_min: 1, on_demand_in_primary_scoring: false, live_e2e_p95_s_max: 90}
+- id: D-35
+  topic: 新公司接入门槛
+  decision: 回填 ≥ 3 年分钟行情（秒级 ≥ 1 年）；合格报价率 ≥ 95%；同步成功率 ≥ 95%；盘中新闻时间精度已知 ≥ 90%；LLM 抽检通过 D-32；影子 ≥ 20 个交易日；不满足 → 只做 peer_only（训练池）或停在 blocked
+  source: S3§1.2、§8.1
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 2
+  params:
+    backfill_minute_years_min: 3
+    backfill_second_years_min: 1
+    qualified_quote_rate_min: 0.95
+    sync_success_rate_min: 0.95
+    news_time_precision_known_min: 0.9
+    llm_check_ref: D-32
+    shadow_sessions_min: 20
+    fallback_states: [peer_only, blocked]
+- id: D-36
+  topic: 新公司参数
+  decision: 先 market_sector_only；公司偏移只有在留出与影子都改善（D-21 同口径）后才启用
+  source: S3§8.2
+  status: [from_spec]
+  status_note: null
+  lock_at: null
+  params: {initial_mode: market_sector_only, company_offset_gate_ref: D-21}
+- id: D-37
+  topic: 告警阈值
+  decision: 来源 p95 延迟 > 60s 或 5 分钟无成功 → warning；> 15 分钟 → critical；结算积压 > 50 条或 > 10 分钟 → warning；流水线失败率 1 小时 > 5% → critical
+  source: S2§6
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 2
+  params: {source_p95_latency_warning_gt_s: 60, source_no_success_warning_min: 5, source_critical_gt_min: 15, settle_backlog_warning_gt_count: 50, settle_backlog_warning_gt_min: 10, pipeline_failure_rate_1h_critical_gt: 0.05}
+- id: D-38
+  topic: 历史类比
+  decision: hc-0.1：只用过去、同事件链不自匹配；匹配键 事件类型+子类型+行业模板+市场时段（财报加超预期分档）；min_cases = 8，不足逐级放宽并披露；仍不足显示"历史样本不足"；不作方向信号（DC §3.4a）
+  source: S1、S2§3.4、PPT
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 1
+  params:
+    version: hc-0.1
+    match_keys: [event_type, subtype, industry_template, market_session]
+    earnings_extra_key: surprise_bucket
+    min_cases: 8
+    directional_signal: false
+- id: D-39
+  topic: 事件结果结算与条件预测
+  decision: 事件轨道用 outcome_resolution：解决里程碑 + 官方确认来源；公开确认时间与法律生效时间分别记录，报表按公开确认；截止无结果 → no_confirmation；监管批准 ≠ 交割完成。条件预测：condition_outcome + trigger_deadline_at，触发后首个同步合格报价起算；未触发 → not_triggered，单独计 trigger_rate，不计命中率
+  source: S1§11、S3§3.2、PPT
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 2
+  params:
+    resolution_field: outcome_resolution
+    no_result_state: no_confirmation
+    conditional_fields: [condition_outcome, trigger_deadline_at]
+    not_triggered_state: not_triggered
+    separate_metric: trigger_rate
+- id: D-40
+  topic: 公司行为
+  decision: corporate_actions 存拆股/分红/分拆/改代码；报价存原始价，研究库生成复权价；窗口跨除权日按比例调整，现金分红 < 0.5% 忽略；比例未知 → unsettleable/corporate_action
+  source: S3§5、PPT
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 1
+  params:
+    table: corporate_actions
+    action_types: [split, dividend, spinoff, ticker_change]
+    cash_dividend_ignore_below_pct: 0.5
+    unknown_ratio_state: unsettleable/corporate_action
+- id: D-41
+  topic: 有效期与过期显示
+  decision: 快照 valid_until（盘中 = 下次定时 + 5 分钟；盘后 = 次日盘前首个快照）；预测 valid_until = target_end_at（条件预测 = 触发截止）；被修订的预测灰显并链接新版；过期未结算显示"已过期，待结算"
+  source: S2§5、PPT
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 1
+  params: {intraday_snapshot_valid_until: next_scheduled + 5min, intraday_offset_min: 5, prediction_valid_until: target_end_at}
+- id: D-42
+  topic: 行业模板
+  decision: industry_template ∈ {semiconductor, bank, biotech, generic} 决定默认指标、来源与影响维度；同一政策事件按模板分别解读（例：出口管制对芯片 = 收入敞口，对银行 = 无直接敞口/客户信用）；银行与生物医药模板只做配置与测试，不进首版验收名单（与 D-03 一致）
+  source: S1「跨行业配置」、S2§1、PPT
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 2
+  params:
+    industry_templates: [semiconductor, bank, biotech, generic]
+    acceptance_excluded: [bank, biotech]
+- id: D-43
+  topic: 每日预测时刻表
+  decision: sched-0.1：08:30 盘前展望（next_regular_session，当日）；10:00、11:30、13:00、14:30 regular_60m + regular_60m_move（14:30 加 regular_to_close）；16:30 盘后展望（下一时段）。半日市：保留 10:00、11:30，11:30 加至收盘，跳过 13:00/14:30，盘后展望改 13:30；休市日不发；槽位 + 180s 未发布 → abstained/slot_missed，不补发
+  source: 用户 2026-11-26、S3§3.1
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 1
+  params:
+    schedule: sched-0.1
+    slots:
+    - time_et: 08:30
+      targets: [next_regular_session]
+      note: 盘前展望（当日）
+    - time_et: '10:00'
+      targets: [regular_60m, regular_60m_move]
+    - time_et: '11:30'
+      targets: [regular_60m, regular_60m_move]
+    - time_et: '13:00'
+      targets: [regular_60m, regular_60m_move]
+    - time_et: '14:30'
+      targets: [regular_60m, regular_60m_move, regular_to_close]
+    - time_et: '16:30'
+      targets: [next_regular_session]
+      note: 盘后展望（下一时段）
+    half_day:
+      keep: ['10:00', '11:30']
+      to_close_at: '11:30'
+      skip: ['13:00', '14:30']
+      afterhours_outlook_et: '13:30'
+    holiday: no_publish
+    slot_grace_s: 180
+    on_slot_missed: abstained/slot_missed
+    backfill: false
+- id: D-44
+  topic: 预测与实际对照
+  decision: 每条预测一行 forecast_vs_actual：展示路径 = 锁定分位数按 √时间缩放（仅展示，sqrt_time_v1），实际路径 = 起算后每分钟同步相对收益；滚动准确率 forecast_accuracy_rollups（当日 / 20 日 / 60 日 / 上线以来，n < 30 标样本不足）。对照只通过 §7.1 闭环进入模型
+  source: 用户 2026-11-26、S3§8
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 1（后端）/ Phase 2（界面）
+  params:
+    table: forecast_vs_actual
+    display_path: sqrt_time_v1
+    actual_path_resolution: 1min
+    rollup_table: forecast_accuracy_rollups
+    rollup_windows: [当日, 20d, 60d, since_launch]
+    insufficient_sample_n_lt: 30
+- id: D-45
+  topic: 信息采集可见性
+  decision: 每次运行记录 collection_runs 与全部 collection_items（含去重、排除、待核、抓取失败），按渠道 × 类别汇总；受限材料只显示占位；授权新闻只显示标题与定位；行情以汇总项记录；条目保留 ≥ 2 年供回放
+  source: 用户 2026-11-26、S1「四项时间」、S2§3.1–3.2
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 1
+  params:
+    tables: [collection_runs, collection_items]
+    retention_years_min: 2
+- id: D-46
+  topic: 推理可追溯
+  decision: market_explanation 每条陈述必须引用证据/报价/采集项，无引用 → 校验拒绝并改放"未解释"；reasoning_trace 有序记录行情事实、时间对齐、证据、归因、反向检查、历史类比、缺口、结论；确定性步骤由代码生成，LLM 只起草归因与反向证据且必须引用
+  source: 用户 2026-11-26、S2§3.5、MP §7-1
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 1
+  params:
+    trace_steps: [行情事实, 时间对齐, 证据, 归因, 反向检查, 历史类比, 缺口, 结论]
+    uncited_statement: reject_to_unexplained
+- id: D-47
+  topic: 用户补充信息
+  decision: 入口在 ① 信息采集；链接/文本/文件；类别 = 用户选择 ∪ 系统建议（置信度 ≥ 0.6，可多类别）；走与采集相同的核验（链接可达、来源信誉、原始来源追溯、内容与时间一致、查重、未公开材料筛查）；状态 verified_primary / media_level / unverified / duplicate / rejected_restricted / fetch_failed；不默认可信；available_at = 提交时间；系统漏采的原始来源记为覆盖缺口
+  source: 用户 2026-11-26、S1「四项时间」「内幕信息」、S2§3.2
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 2
+  params:
+    input_types: [link, text, file]
+    suggest_confidence_min: 0.6
+    multi_category: true
+    statuses: [verified_primary, media_level, unverified, duplicate, rejected_restricted, fetch_failed]
+    available_at: submitted_at
+- id: D-48
+  topic: '"继续分析"＝增量补充运行'
+  decision: 见 §7.2：复用已有采集与核验，只刷新行情 + 增量检索 + 用户条目，重跑分析与预测生成新版本；trigger_type = user_supplement、is_primary = false、单独计分；槽位预测不变；先对提交者可见，核验后共享；每用户每证券 2 分钟 1 次
+  source: 用户 2026-11-26、S3§2、§4(5)
+  status: [proposed]
+  status_note: null
+  lock_at: Phase 2
+  params: {trigger_type: user_supplement, is_primary: false, rate_limit_per_user_security_min: 2, ref: §7.2}

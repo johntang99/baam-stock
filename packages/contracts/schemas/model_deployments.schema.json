@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/model_deployments.schema.json",
+  "title": "model_deployments",
+  "description": "DC §3.8 (schema only in P0)",
+  "x-tabled": false,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "deployment_id": {
+      "type": "string",
+      "pattern": "^dep_"
+    },
+    "target_id": {
+      "$ref": "common.schema.json#/$defs/target_id"
+    },
+    "scope": {
+      "type": "object"
+    },
+    "from_model_version_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "to_model_version_id": {
+      "type": "string"
+    },
+    "approved_by": {
+      "type": "string"
+    },
+    "approval_note": {
+      "type": "string"
+    },
+    "effective_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "audience": {
+      "$ref": "common.schema.json#/$defs/audience"
+    },
+    "slices": {
+      "anyOf": [
+        {
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "state": {
+      "type": "string",
+      "enum": [
+        "active",
+        "rolled_back",
+        "superseded"
+      ]
+    },
+    "rollback_reason": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "deployment_id",
+    "target_id",
+    "scope",
+    "to_model_version_id",
+    "approved_by",
+    "approval_note",
+    "effective_at",
+    "audience",
+    "state"
+  ],
+  "additionalProperties": false
+}

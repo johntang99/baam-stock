@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/jobs.schema.json",
+  "title": "jobs",
+  "description": "DC §3.9 queue (FOR UPDATE SKIP LOCKED)",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "job_id": {
+      "type": "string",
+      "pattern": "^job_"
+    },
+    "job_type": {
+      "type": "string",
+      "enum": [
+        "ingest_doc",
+        "analyze_event",
+        "build_snapshot",
+        "run_forecast",
+        "settle_due",
+        "replay_day",
+        "build_dataset",
+        "train",
+        "evaluate",
+        "shadow_score",
+        "pipeline_step",
+        "onboarding_step",
+        "source_healthcheck"
+      ]
+    },
+    "pipeline_run_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "onboarding_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "payload": {
+      "type": "object"
+    },
+    "idempotency_key": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "queued",
+        "running",
+        "succeeded",
+        "failed",
+        "retry_wait",
+        "dead"
+      ]
+    },
+    "attempts": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "max_attempts": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "run_after": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "locked_by": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "locked_at": {
+      "anyOf": [
+        {
+          "$ref": "common.schema.json#/$defs/timestamp"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "last_error": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "job_id",
+    "job_type",
+    "payload",
+    "idempotency_key",
+    "status",
+    "attempts",
+    "max_attempts",
+    "run_after"
+  ],
+  "additionalProperties": false
+}

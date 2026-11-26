@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/options_snapshots.schema.json",
+  "title": "options_snapshots",
+  "description": "DC §3.4 (Phase 4 placeholder; schema only)",
+  "x-tabled": false,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "opt_snap_id": {
+      "type": "string"
+    },
+    "security_id": {
+      "type": "string"
+    },
+    "snapshot_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "expiry": {
+      "$ref": "common.schema.json#/$defs/date"
+    },
+    "atm_iv": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "iv_25d_put": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "iv_25d_call": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "implied_move_pct": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "put_call_volume_ratio": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "available_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    }
+  },
+  "required": [
+    "opt_snap_id",
+    "security_id",
+    "snapshot_at",
+    "expiry",
+    "source_id",
+    "available_at"
+  ],
+  "additionalProperties": false
+}

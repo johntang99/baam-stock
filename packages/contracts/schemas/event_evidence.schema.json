@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/event_evidence.schema.json",
+  "title": "event_evidence",
+  "description": "DC §3.2 (schema only in P0)",
+  "x-tabled": false,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "evidence_id": {
+      "type": "string"
+    },
+    "event_id": {
+      "type": "string"
+    },
+    "doc_version_id": {
+      "type": "string"
+    },
+    "claim": {
+      "type": "string"
+    },
+    "claimant": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "span": {
+      "type": "object",
+      "description": "page/paragraph/char range"
+    },
+    "verification_status": {
+      "$ref": "common.schema.json#/$defs/evidence_verification_status"
+    },
+    "available_at": {
+      "$ref": "common.schema.json#/$defs/timestamp"
+    },
+    "visibility": {
+      "$ref": "common.schema.json#/$defs/visibility"
+    },
+    "independent_origin_key": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "evidence_id",
+    "event_id",
+    "doc_version_id",
+    "claim",
+    "span",
+    "verification_status",
+    "available_at",
+    "visibility",
+    "independent_origin_key"
+  ],
+  "additionalProperties": false
+}

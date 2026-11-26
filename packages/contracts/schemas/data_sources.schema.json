@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baam-stock.local/contracts/data_sources.schema.json",
+  "title": "data_sources",
+  "description": "DC §3.2 (tabled in P0: referenced by reference_quotes/collection_items)",
+  "x-tabled": true,
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "$ref": "common.schema.json#/$defs/schema_version"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "market_data",
+        "filing",
+        "insider_filing",
+        "company_ir",
+        "news",
+        "policy",
+        "court",
+        "expectation",
+        "macro",
+        "options",
+        "llm"
+      ]
+    },
+    "provider": {
+      "type": "string"
+    },
+    "license_scope": {
+      "type": "string",
+      "enum": [
+        "public",
+        "licensed_internal",
+        "licensed_display",
+        "restricted"
+      ]
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "proposed",
+        "sample_verified",
+        "contracted",
+        "retired"
+      ]
+    },
+    "time_precision_default": {
+      "$ref": "common.schema.json#/$defs/time_precision"
+    },
+    "notes": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "source_id",
+    "kind",
+    "provider",
+    "license_scope",
+    "verification_status",
+    "time_precision_default"
+  ],
+  "additionalProperties": false
+}
