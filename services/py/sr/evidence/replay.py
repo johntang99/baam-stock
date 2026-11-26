@@ -49,3 +49,25 @@ class PointInTimeReader:
         if row is None:
             raise KeyError(doc_version_id)
         return self._check(row)
+
+
+def document_text(
+    reader: PointInTimeReader, doc_version_id: str, storage: object
+) -> tuple[dict[str, Any], str]:
+    """Point-in-time load of a version + its normalised text (raises LookaheadError if not yet available)."""
+    from sr.evidence.hashing import normalized_text
+    from sr.evidence.storage import LocalDocStorage
+
+    row = reader.version(doc_version_id)
+    if not row["storage_path"]:
+        raise ValueError(f"{doc_version_id}: no stored content (licence does not allow storage)")
+    assert isinstance(storage, LocalDocStorage)
+    raw = storage.get(row["storage_path"])
+    ctype = (
+        "text/html"
+        if row["storage_path"].endswith(".html")
+        else "application/json"
+        if row["storage_path"].endswith(".json")
+        else "text/plain"
+    )
+    return row, normalized_text(raw, ctype) if ctype != "application/json" else raw.decode()

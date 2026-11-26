@@ -1,0 +1,28 @@
+# Earnings extraction + deterministic checks + expectation comparison (DP 1.07; S2§3.3; AC-09)
+version: earnings-0.1
+event_category: earnings_guidance
+# canonical metric <- aliases (lower-case, spaces/underscores normalised). basis_in_name: metric name carries the
+# accounting basis (AC-09: GAAP and non-GAAP EPS are separate fields).
+metrics:
+  revenue:            {aliases: [revenue, total revenue, net revenue, revenues, sales], kind: money}
+  data_center_revenue: {aliases: [data center revenue, datacenter revenue, data_center_revenue], kind: money}
+  net_income:         {aliases: [net income, net_income], kind: money}
+  eps:                {aliases: [eps, earnings per share, earnings per diluted share, diluted eps, diluted earnings per share], kind: per_share, basis_in_name: true}
+  gross_margin_pct:   {aliases: [gross margin, gross_margin, gross margin pct, gross_margin_pct], kind: pct}
+  revenue_outlook:    {aliases: [revenue outlook, revenue guidance, expected revenue, revenue_outlook], kind: money}
+units:                # fact unit -> (normalised unit, multiplier, scale words allowed in the quote)
+  USD_billion: {unit: USD, mult: 1.0e9, scale: [billion, bn, b]}
+  USD_million: {unit: USD, mult: 1.0e6, scale: [million, mn, m]}
+  USD:         {unit: USD, mult: 1.0, scale: []}
+  USD_per_share: {unit: USD_per_share, mult: 1.0, scale: []}
+  pct:         {unit: pct, mult: 1.0, scale: ["%", percent]}
+checks:
+  value_tolerance: 1.0e-9          # extracted value must equal a number printed in its own quote
+  pct_range: [-100, 100]
+headline_metrics: [eps_non_gaap, revenue, eps_gaap]   # first one with a fact becomes expectation_comparison
+expectations:
+  types: [analyst_consensus]       # D-16; company_guidance is compared separately in Phase 2
+  require_same_basis: true
+  missing_reasons:
+    none: no_pre_event_consensus
+    basis: no_same_basis_consensus

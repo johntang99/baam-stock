@@ -1,0 +1,5 @@
+# Prediction hand-off rules (S2§4-5, S3§2; AC-12). Event-enhanced models are allowed only for event categories
+# that passed validation (Phase 3); until then every stock-reaction hand-off allows the market baseline only.
+version: readiness-0.1
+event_enhanced_validated_categories: []
+market_inputs_pending_reason: market_data_pending      # until D-13 vendor + DP 1.09 market reaction
