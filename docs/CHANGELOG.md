@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## Phase 1 · 1.18 reviewer guide + label self-check — 2026-11-26
+- `docs/labeling/extraction-v0.md` rewritten as the reviewer guide: workflow, field rules for extract-0.3 labels
+  (15 metrics, segment, normalised values, signed losses), what to label / skip (OQ-40), common draft problems
+  from the 291 Claude drafts.
+- `scripts/check_labels.py`: `--queue` (next documents, stratified, with SEC links), `--text` (normalised text
+  quotes come from), lint of label files (verbatim quotes, sha, metric/unit/period format, empty periods,
+  duplicates, unscaled values, segment/scope) and progress toward 100 reviewed. `stratified` and `lint_label`
+  live in `sr.llm.labels`. Tests: 337.
+
 ## Phase 1 · 1.18 checker earnings-0.2 + drafts rechecked — 2026-11-26
 - Fact checker (OQ-39): table-row scales from the nearest document header above the quote; signed losses and
   declines with a cue word; compact "$0.8B"; USD units reject non-USD currency and NT$-printed numbers.

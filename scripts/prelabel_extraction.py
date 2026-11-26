@@ -12,7 +12,6 @@ from __future__ import annotations
 import argparse
 import json
 import sys
-from collections import defaultdict
 from dataclasses import asdict
 from typing import Any
 
@@ -21,7 +20,16 @@ from sr.events.factcheck import check_facts
 from sr.evidence.hashing import sha256_text
 from sr.llm.base import CallLogger, CallRecord, ListCallLogger, LLMProvider, PgCallLogger
 from sr.llm.eval_extraction import doc_text
-from sr.llm.labels import DocLabel, GoldFact, labels_dir, read_labels, read_manifest, safe_key, write_label
+from sr.llm.labels import (
+    DocLabel,
+    GoldFact,
+    labels_dir,
+    read_labels,
+    read_manifest,
+    safe_key,
+    stratified,
+    write_label,
+)
 
 
 class TeeLogger:
@@ -41,23 +49,6 @@ def provider_for(name: str, logger: CallLogger) -> LLMProvider:
     from sr.llm.anthropic import ClaudeProvider
 
     return ClaudeProvider(logger=logger)
-
-
-def stratified(manifest: dict[str, dict[str, Any]], keys: list[str]) -> list[str]:
-    """Round-robin over (ticker, file kind) groups, newest first; press-release exhibits lead each round."""
-    groups: dict[tuple[str, str], list[str]] = defaultdict(list)
-    for k in keys:
-        r = manifest[k]
-        groups[(str(r["ticker"]), str(r["file_kind"]))].append(k)
-    for members in groups.values():
-        members.sort(key=lambda k: (str(manifest[k]["filing_date"]), k), reverse=True)
-    order = sorted(groups, key=lambda g: (g[1] != "ex99", g[0]))
-    out: list[str] = []
-    while any(groups[g] for g in order):
-        for g in order:
-            if groups[g]:
-                out.append(groups[g].pop(0))
-    return out
 
 
 def to_gold(f: Any) -> GoldFact:
