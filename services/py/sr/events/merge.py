@@ -139,3 +139,32 @@ def attach_evidence(
         return MergeResult(
             ev["event_id"], created, evd["evidence_id"], evidence_created, status, n_origins, row_version
         )
+
+
+_PROGRESS = {
+    "pending": {"outcome_confirmed", "effective", "terminated"},
+    "outcome_confirmed": {"effective", "terminated"},
+    "effective": {"terminated"},
+    "terminated": set(),
+}
+
+
+def set_progress_status(conn: Conn, event_id: str, status: str) -> int:
+    """Forward-only progress transition under the optimistic lock; returns the new row_version (no-op if equal)."""
+    ev = conn.execute(
+        "select progress_status, row_version from events where event_id = %s", (event_id,)
+    ).fetchone()
+    if ev is None:
+        raise KeyError(event_id)
+    if ev["progress_status"] == status:
+        return int(ev["row_version"])
+    if status not in _PROGRESS[ev["progress_status"]]:
+        raise ValueError(f"event {event_id}: {ev['progress_status']} -> {status} not allowed")
+    upd = conn.execute(
+        "update events set progress_status = %s, row_version = row_version + 1 where event_id = %s and row_version = %s "
+        "returning row_version",
+        (status, event_id, ev["row_version"]),
+    ).fetchone()
+    if upd is None:
+        raise ConflictStaleVersion(f"event {event_id} changed concurrently; retry")
+    return int(upd["row_version"])

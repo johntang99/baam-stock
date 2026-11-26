@@ -66,3 +66,39 @@ def set_status(
             milestone_id,
         ),
     )
+
+
+def ensure_milestone(
+    conn: Conn,
+    event_id: str,
+    milestone_type: str,
+    at: datetime | None,
+    occurred: bool,
+    decision_body: str | None = None,
+    evidence_ids: list[str] | None = None,
+) -> tuple[str, bool]:
+    """Idempotent template helper: one milestone per (event, type, time). Returns (milestone_id, created)."""
+    t = ensure_utc(at, "at").to_pydatetime() if at else None
+    row = conn.execute(
+        """select milestone_id from event_milestones where event_id = %s and milestone_type = %s
+           and coalesce(actual_at, expected_at) is not distinct from %s""",
+        (event_id, milestone_type, t),
+    ).fetchone()
+    if row is not None:
+        return row["milestone_id"], False
+    mid = new_id("ms")
+    conn.execute(
+        """insert into event_milestones (milestone_id, event_id, milestone_type, decision_body, expected_at, actual_at,
+             status, evidence_ids) values (%s,%s,%s,%s,%s,%s,%s,%s)""",
+        (
+            mid,
+            event_id,
+            milestone_type,
+            decision_body,
+            None if occurred else t,
+            t if occurred else None,
+            "occurred" if occurred else "scheduled",
+            evidence_ids or [],
+        ),
+    )
+    return mid, True

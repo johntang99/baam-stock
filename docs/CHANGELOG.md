@@ -1,7 +1,20 @@
 # CHANGELOG
 
+## Phase 1 · group 2 (DP 1.07–1.08) — 2026-11-26
+- 1.07 earnings: `sr.events.factcheck` (canonical metrics, GAAP/non-GAAP EPS as separate fields, value must be
+  printed in its own quote with the right scale, unit normalisation, conflict withholding),
+  `sr.events.expectations` (pre-disclosure consensus only; day-precision snapshots must be dated earlier;
+  basis must match; AC-09 `no_pre_event_consensus`), `sr.events.earnings` (extract -> check -> event/evidence ->
+  comparison -> flash analysis with cited observed facts; market reaction pending D-13).
+- 1.08 policy: `FederalRegisterSource` (FR API, date precision), `sr.events.policy` (BIS template: identity
+  `policy:BIS:<doc>`, official evidence, milestones by document type, topic -> exposure links, progress
+  `effective`, per-security flash analyses with market-baseline-only hand-off).
+- `sr.events.readiness` (AC-12 rule from `config/readiness.yaml`), idempotent `ensure_milestone`,
+  forward-only `set_progress_status`; configs `earnings.yaml`, `policy_templates.yaml`, `readiness.yaml`.
+- Tests: 295 (25 Postgres-backed). OPEN_QUESTIONS OQ-28..31.
+
 ## Phase 1 · group 1 (DP 1.03–1.06) — 2026-11-26
-- **contract-0.7.2** (OQ-23): evidence/event entities tabled; new `llm_calls`; DC §3.4b.
+- **contract-0.7.2** (OQ-23, approved by user 2026-11-26): evidence/event entities tabled; new `llm_calls`; DC §3.4b.
 - `supabase/migrations/0002_evidence_events.sql`: 8 tables, 12 enums, append-only guards (document versions:
   only `visibility` may change; evidence: only `visibility`/`verification_status`; analysis versions and LLM calls
   immutable), events optimistic-lock trigger (row_version +1 only, current pointer never backwards),

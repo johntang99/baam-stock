@@ -1,0 +1,41 @@
+{
+  "count": 3,
+  "description": "SYNTHETIC (虚构) Federal Register search result for tests; document numbers are fictional",
+  "results": [
+    {
+      "document_number": "2026-91234",
+      "type": "Rule",
+      "title": "Revisions to License Requirements for Advanced Computing Integrated Circuits (Synthetic)",
+      "action": "Interim final rule.",
+      "abstract": "This synthetic rule revises license requirements for exports of advanced computing integrated circuits and related items.",
+      "agencies": [{"slug": "industry-and-security-bureau", "name": "Industry and Security Bureau"}],
+      "publication_date": "2026-12-02",
+      "effective_on": "2026-12-02",
+      "comments_close_on": "2027-01-31",
+      "html_url": "https://www.federalregister.gov/d/2026-91234"
+    },
+    {
+      "document_number": "2026-91300",
+      "type": "Proposed Rule",
+      "title": "Controls on High-Bandwidth Memory Items (Synthetic)",
+      "action": "Proposed rule; request for comments.",
+      "abstract": "This synthetic proposal would add controls on high-bandwidth memory (HBM) items.",
+      "agencies": [{"slug": "industry-and-security-bureau", "name": "Industry and Security Bureau"}],
+      "publication_date": "2026-12-03",
+      "effective_on": null,
+      "comments_close_on": "2027-01-15",
+      "html_url": "https://www.federalregister.gov/d/2026-91300"
+    },
+    {
+      "document_number": "2026-91411",
+      "type": "Rule",
+      "title": "Additions to the Entity List (Synthetic)",
+      "action": "Final rule.",
+      "abstract": "This synthetic rule adds fictional entities to the Entity List.",
+      "agencies": [{"slug": "industry-and-security-bureau", "name": "Industry and Security Bureau"}],
+      "publication_date": "2026-12-04",
+      "effective_on": "2026-12-20",
+      "html_url": "https://www.federalregister.gov/d/2026-91411"
+    }
+  ]
+}

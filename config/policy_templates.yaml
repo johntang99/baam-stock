@@ -1,0 +1,44 @@
+# Policy event templates (DP 1.08; S2§1, S1 政策). Federal Register documents -> event, milestones, links.
+version: policy-0.1
+templates:
+  bis_export_control:
+    agency_slugs: [industry-and-security-bureau]
+    identity_agency: BIS
+    category: policy_export
+    topics:                       # keyword (case-insensitive, title + abstract + action) -> exposure links
+      advanced_computing:
+        keywords: ["advanced computing", "supercomputer", "artificial intelligence", "integrated circuit", "gpu"]
+        exposure_note: "先进计算/数据中心加速器出口许可：收入敞口（semiconductor 模板 export_controls）"
+        links:
+          - {security_id: sec_nvda, relation: regulated_party}
+          - {security_id: sec_amd, relation: regulated_party}
+          - {security_id: sec_avgo, relation: sector_wide}
+          - {security_id: sec_mu, relation: sector_wide}
+      high_bandwidth_memory:
+        keywords: ["high-bandwidth memory", "high bandwidth memory", "hbm"]
+        exposure_note: "HBM 出口管制：收入敞口"
+        links:
+          - {security_id: sec_mu, relation: regulated_party}
+          - {security_id: sec_nvda, relation: customer}
+      semiconductor_manufacturing:
+        keywords: ["semiconductor manufacturing", "manufacturing equipment", "lithography", "etch", "deposition"]
+        exposure_note: "半导体制造设备出口管制"
+        links:
+          - {security_id: sec_amat, relation: regulated_party}
+          - {security_id: sec_lrcx, relation: regulated_party}
+          - {security_id: sec_klac, relation: regulated_party}
+          - {security_id: sec_nvda, relation: sector_wide}
+          - {security_id: sec_amd, relation: sector_wide}
+          - {security_id: sec_avgo, relation: sector_wide}
+          - {security_id: sec_mu, relation: sector_wide}
+    milestones:                   # Federal Register document type -> milestones
+      Rule:            [{type: rule_published, at: publication_date, status: occurred}, {type: rule_effective, at: effective_on}]
+      Proposed Rule:   [{type: proposed_rule, at: publication_date, status: occurred}, {type: comment_period_end, at: comments_close_on}]
+      Notice:          [{type: official_statement, at: publication_date, status: occurred}]
+federal_register:
+  source_id: src_federal_register
+  search_url: "https://www.federalregister.gov/api/v1/documents.json?conditions[agencies][]={agency}&conditions[publication_date][gte]={since}&order=oldest&per_page=100"
+  agencies: [industry-and-security-bureau]
+  # The FR API gives publication_date as a date only: precision=day, so it must not be used to order events
+  # inside a trading session (DC §1). Stored at 00:00 America/New_York of that date (OQ-29).
+  published_precision: day
