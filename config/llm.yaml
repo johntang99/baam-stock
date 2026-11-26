@@ -1,0 +1,14 @@
+# LLM provider (D-25). Only fact extraction + explanation drafts; never numeric probabilities (MP §7-1).
+provider: fake                    # fake | anthropic  (env LLM_PROVIDER overrides)
+anthropic:
+  model: claude-opus-5-5           # env LLM_MODEL overrides
+  effort: high                     # extraction accuracy is the priority (D-32 precision >= 0.98)
+  max_tokens: 16000
+  fallbacks: default               # server-side refusal fallback (beta server-side-fallback-2026-07-01)
+  fallback_beta: server-side-fallback-2026-07-01
+prompts:
+  extract_facts: extract-0.1
+  draft_explanation: explain-0.1
+rules:
+  tools_allowed: []                # no web search / fetch, in live or replay (S3§6)
+  quote_must_match_source: true    # every fact cites a verbatim quote found in the document, else reject the call
