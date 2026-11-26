@@ -1,0 +1,43 @@
+# Step 1 collection log (DP 1.27; D-45; DC §3.2 collection_runs / collection_items). Rules-only classification in
+# Phase 1 ("规则 + LLM": the LLM classifier is a later addition, OQ-32).
+version: collection-0.1
+channel_by_source_kind:
+  filing: filing
+  insider_filing: insider_filing
+  company_ir: company_ir
+  news: news_wire
+  policy: policy
+  court: court
+  macro: macro
+  expectation: expectation
+  market_data: market_data
+relevance:
+  subject: 1.0             # the document is about the target company
+  named: 0.8               # the target's ticker or name appears in the text
+  linked_topic: 0.7        # a policy topic in config/policy_templates.yaml links the target
+  peer: 0.5                # about a basket peer
+  none: 0.0
+  keep_threshold: 0.3      # below -> excluded_irrelevant
+category_min_confidence: 0.34   # below -> pending_review (kept items only)
+snippet_chars: 280
+# Company aliases used for mention detection (word match, case-insensitive). Tickers come from config/universe.yaml.
+aliases:
+  co_nvda: [nvidia, synthetic semiconductor co]     # 'synthetic semiconductor co' = test fixtures' fictional issuer
+  co_amd: [advanced micro devices]
+  co_avgo: [broadcom]
+  co_mu: [micron]
+  co_tsm: [taiwan semiconductor, tsmc]
+  co_mrvl: [marvell]
+categories:                # keyword -> category score; highest wins; none -> other
+  earnings_guidance: [results for, revenue, earnings per, gross margin, guidance, outlook, quarterly report, fiscal]
+  policy_export: [export, license requirement, entity list, industry and security, bis, controls on]
+  customer_demand: [order, customer, hyperscaler, demand, bookings]
+  supply_chain: [supply, capacity, shortage, foundry, wafer]
+  m_and_a: [acquire, acquisition, merger, tender offer]
+  litigation: [lawsuit, complaint, court, patent, infringement, settlement]
+  management: [chief executive, ceo, cfo, appoint, resign, board of directors]
+  product: [launch, unveil, introduces, announces new]
+  capital_return: [dividend, buyback, repurchase]
+  macro: [inflation, cpi, payrolls, federal reserve, interest rate]
+  analyst_rating: [upgrade, downgrade, price target, initiates coverage]
+  insider_trade: [form 4, insider]

@@ -18,6 +18,7 @@ from sr.events.identity import earnings_key
 from sr.events.merge import EvidenceIn, Link, attach_evidence
 from sr.events.readiness import not_applicable, stock_reaction
 from sr.events.versions import PublishResult, publish_analysis
+from sr.evidence.collection_log import link_items
 from sr.evidence.replay import PointInTimeReader, document_text
 from sr.evidence.storage import LocalDocStorage
 from sr.llm.base import LLMProvider, Mode
@@ -114,6 +115,7 @@ def process_earnings_document(
                 entry["expectation_missing_reason"] = why
         facts.append(entry)
 
+    link_items(conn, doc_version_id, event_id, evidence_ids)  # step-1 items -> event (D-45)
     headline = next((x for name in cfg["headline_metrics"] for x in facts if x["metric"] == name), facts[0])
     comparison = headline.get("expectation_comparison")
     missing = None if comparison else headline.get("expectation_missing_reason", "no_pre_event_consensus")

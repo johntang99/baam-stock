@@ -19,6 +19,7 @@ from sr.events.merge import EvidenceIn, Link, attach_evidence, set_progress_stat
 from sr.events.milestones import ensure_milestone
 from sr.events.readiness import stock_reaction
 from sr.events.versions import PublishResult, publish_analysis
+from sr.evidence.collection_log import link_items
 from sr.evidence.replay import PointInTimeReader, document_text
 from sr.evidence.sources.federal_register import date_et_midnight
 from sr.evidence.storage import LocalDocStorage
@@ -94,6 +95,7 @@ def process_policy_document(
         now=published_at,
     )
 
+    link_items(conn, doc_version_id, m.event_id, [m.evidence_id])  # step-1 items -> event (D-45)
     asof = ensure_utc(analysis_as_of, "analysis_as_of").to_pydatetime()
     milestones = []
     for spec in tpl["milestones"].get(rec.get("type", ""), []):

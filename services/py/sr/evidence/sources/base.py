@@ -31,6 +31,17 @@ class RawDocument:
     origin_doc_id: str | None = None  # re-publication of an original document
 
 
+@dataclass(frozen=True)
+class FetchFailure:
+    """A listed item whose content could not be fetched (-> collection item disposition fetch_failed)."""
+
+    source_id: str
+    external_ref: str
+    title: str
+    url: str | None
+    error: str
+
+
 @runtime_checkable
 class EvidenceSource(Protocol):
     source_id: str

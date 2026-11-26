@@ -12,7 +12,7 @@ from typing import Any
 from zoneinfo import ZoneInfo
 
 from sr.config import load
-from sr.evidence.sources.base import ArrivalMode, RawDocument
+from sr.evidence.sources.base import ArrivalMode, FetchFailure, RawDocument
 from sr.evidence.sources.transport import Transport
 from sr.timeguard import ensure_utc
 
@@ -40,10 +40,12 @@ class SecEdgarSource:
         self.arrival_mode = arrival_mode
         self.clock = clock
         self.forms = set(forms or self.cfg["forms"])
+        self.failures: list[FetchFailure] = []  # per-document fetch errors of the last poll
 
     def poll(self, since_utc: datetime) -> list[RawDocument]:
         since = ensure_utc(since_utc, "since_utc")
         out: list[RawDocument] = []
+        self.failures = []
         for cik, company_id in sorted(self.ciks.items()):
             sub = json.loads(self.transport.get(self.cfg["submissions_url"].format(cik=cik)))
             recent = sub.get("filings", {}).get("recent", {})
@@ -63,9 +65,18 @@ class SecEdgarSource:
                     accession_nodash=accession.replace("-", ""),
                     primary_document=recent["primaryDocument"][i],
                 )
-                out.append(
-                    self._document(url, accession, form, sub.get("name", company_id), company_id, accepted)
-                )
+                try:
+                    out.append(
+                        self._document(
+                            url, accession, form, sub.get("name", company_id), company_id, accepted
+                        )
+                    )
+                except OSError as e:  # FileNotFoundError / URLError: listed but not fetchable
+                    self.failures.append(
+                        FetchFailure(
+                            self.source_id, accession, f"{form} {sub.get('name', '')}", url, type(e).__name__
+                        )
+                    )
         return sorted(out, key=lambda d: (d.source_published_at or d.received_at, d.external_ref))
 
     def _document(
