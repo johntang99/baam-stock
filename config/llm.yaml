@@ -7,8 +7,10 @@ anthropic:
   fallbacks: default               # server-side refusal fallback (beta server-side-fallback-2026-07-01)
   fallback_beta: server-side-fallback-2026-07-01
 prompts:
-  extract_facts: extract-0.2         # 0.2 adds direction / scope / certainty (D-32 field groups)
+  extract_facts: extract-0.3         # 0.2: direction/scope/certainty; 0.3: metric + unit enums, metric_label, segment
   draft_explanation: explain-0.1
 rules:
   tools_allowed: []                # no web search / fetch, in live or replay (S3§6)
   quote_must_match_source: true    # every fact cites a verbatim quote found in the document, else reject the call
+pricing_usd_per_mtok:              # list prices (cached 2026-11-03) for cost reporting only
+  claude-opus-5-5: {input: 4.0, output: 20.0, cache_read: 0.20}

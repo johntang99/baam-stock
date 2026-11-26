@@ -24,6 +24,7 @@ class GoldFact(BaseModel):
     direction: Literal["increase", "decrease", "unchanged", "none"] = "none"
     scope: Literal["company", "segment", "product", "geography", "other"] = "company"
     certainty: Literal["reported", "guidance", "expectation", "hypothetical"] = "reported"
+    segment: str | None = None  # None = company-wide figure
 
 
 class DocLabel(BaseModel):

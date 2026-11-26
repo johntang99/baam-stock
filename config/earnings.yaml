@@ -10,15 +10,32 @@ metrics:
   eps:                {aliases: [eps, earnings per share, earnings per diluted share, diluted eps, diluted earnings per share], kind: per_share, basis_in_name: true}
   gross_margin_pct:   {aliases: [gross margin, gross_margin, gross margin pct, gross_margin_pct], kind: pct}
   revenue_outlook:    {aliases: [revenue outlook, revenue guidance, expected revenue, revenue_outlook], kind: money}
+  # extract-0.3 additions (real releases report these; OQ-38)
+  gross_profit:       {aliases: [gross profit, gross_profit], kind: money}
+  operating_income:   {aliases: [operating income, income from operations, operating_income], kind: money}
+  operating_expenses: {aliases: [operating expenses, total operating expenses, opex, operating_expenses], kind: money}
+  operating_margin_pct: {aliases: [operating margin, operating_margin, operating_margin_pct], kind: pct}
+  operating_cash_flow: {aliases: [cash flow from operations, operating cash flow, cash from operating activities, operating_cash_flow], kind: money}
+  free_cash_flow:     {aliases: [free cash flow, free_cash_flow], kind: money}
+  revenue_growth_yoy_pct: {aliases: [revenue growth year-over-year, revenue growth yoy, revenue_growth_yoy_pct], kind: pct}
+  revenue_growth_qoq_pct: {aliases: [revenue growth quarter-over-quarter, sequential revenue growth, revenue_growth_qoq_pct], kind: pct}
 units:                # fact unit -> (normalised unit, multiplier, scale words allowed in the quote)
   USD_billion: {unit: USD, mult: 1.0e9, scale: [billion, bn, b]}
   USD_million: {unit: USD, mult: 1.0e6, scale: [million, mn, m]}
   USD:         {unit: USD, mult: 1.0, scale: []}
   USD_per_share: {unit: USD_per_share, mult: 1.0, scale: []}
   pct:         {unit: pct, mult: 1.0, scale: ["%", percent]}
+# A table row carries its scale in the header, e.g. "Net income ($M) $2,428 …": these markers inside the quote
+# count as the scale word for the value.
+quote_scale_markers:
+  USD_million: ["($m)", "(in millions)", "$ in millions", "in millions", "($ in millions)"]
+  USD_billion: ["($b)", "(in billions)", "$ in billions", "in billions"]
 checks:
   value_tolerance: 1.0e-9          # extracted value must equal a number printed in its own quote
-  pct_range: [-100, 100]
+  pct_range: [-100, 100]            # margins and shares
+  pct_range_by_metric:              # growth rates can exceed 100% (e.g. +221% y/y)
+    revenue_growth_yoy_pct: [-100, 100000]
+    revenue_growth_qoq_pct: [-100, 100000]
 headline_metrics: [eps_non_gaap, revenue, eps_gaap]   # first one with a fact becomes expectation_comparison
 expectations:
   types: [analyst_consensus]       # D-16; company_guidance is compared separately in Phase 2

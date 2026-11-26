@@ -19,13 +19,17 @@ _NUM = re.compile(
     r"(?P<scale>billion|bn|million|mn|percent|%)?(?![a-z])",
     re.IGNORECASE,
 )
-_PERIOD = [
+_PERIOD = [  # quarters, in the company's own fiscal labelling ("third quarter of 2026" -> FY2026Q3)
     re.compile(r"FY\s?(?P<y>\d{4})\s?Q(?P<q>[1-4])", re.I),
-    re.compile(r"Q(?P<q>[1-4])\s*(?:of\s*)?(?:FY|fiscal(?:\s+year)?)\s*(?P<y>\d{4})", re.I),
+    re.compile(r"Q(?P<q>[1-4])\s*(?:of\s*)?(?:FY|fiscal(?:\s+year)?)?\s*'?(?P<y>\d{4})", re.I),
     re.compile(
-        r"(?P<word>first|second|third|fourth)\s+quarter\s+of\s+fiscal\s+(?:year\s+)?(?P<y>\d{4})", re.I
+        r"(?P<word>first|second|third|fourth)\s+(?:fiscal\s+)?quarter\s+(?:of\s+)?(?:fiscal\s+)?(?:year\s+)?(?P<y>\d{4})",
+        re.I,
     ),
 ]
+_ANNUAL = re.compile(
+    r"^\s*(?:FY\s?|fiscal\s+(?:year\s+)?|full[- ]year\s+(?:fiscal\s+)?)(?P<y>\d{4})\s*$", re.I
+)
 _WORDQ = {"first": 1, "second": 2, "third": 3, "fourth": 4}
 
 
@@ -44,6 +48,8 @@ class CheckedFact:
     direction: str | None = None
     scope: str | None = None
     certainty: str | None = None
+    metric_label: str | None = None
+    segment: str | None = None
 
 
 @dataclass
@@ -87,7 +93,8 @@ def normalize_period(period: str | None) -> str | None:
                 else int(m.group("q"))
             )
             return f"FY{m.group('y')}Q{q}"
-    return None
+    m2 = _ANNUAL.match(period)
+    return f"FY{m2.group('y')}" if m2 else None
 
 
 def _numbers(quote: str) -> list[tuple[float, str]]:
@@ -103,8 +110,8 @@ def check_facts(facts: tuple[ExtractedFact, ...], default_period: str | None) ->
     units, tol = cfg["units"], float(cfg["checks"]["value_tolerance"])
     lo, hi = cfg["checks"]["pct_range"]
     rep = CheckReport()
-    seen: dict[tuple[str, str | None, str | None], CheckedFact] = {}
-    conflicts: set[tuple[str, str | None, str | None]] = set()
+    seen: dict[tuple[str, str | None, str | None, str | None], CheckedFact] = {}
+    conflicts: set[tuple[str, str | None, str | None, str | None]] = set()
     for f in facts:
         name, why = canonical_metric(f.metric, f.basis)
         if name is None:
@@ -116,18 +123,26 @@ def check_facts(facts: tuple[ExtractedFact, ...], default_period: str | None) ->
         u = units[f.unit]
         if f.value is not None:
             scales = {s.lower() for s in u["scale"]}
-            # the number must be printed in the quote with the scale word its unit implies (none for per-share/USD)
+            # the number must be printed in the quote with the scale word its unit implies (none for per-share/USD);
+            # a table row may carry the scale once in its header, e.g. "Net income ($M) $2,428 …"
+            markers = [m.lower() for m in cfg.get("quote_scale_markers", {}).get(f.unit, [])]
+            header_scaled = any(m in f.quote.lower() for m in markers)
             ok = any(
-                abs(v - f.value) <= tol and (sc in scales if scales else sc == "")
+                abs(v - f.value) <= tol
+                and ((sc in scales) if scales else sc == "")
+                or (abs(v - f.value) <= tol and header_scaled and sc == "")
                 for v, sc in _numbers(f.quote)
             )
             if not ok:
                 rep.rejected.append({"metric": name, "quote": f.quote, "reason": "value_not_in_quote"})
                 continue
-            if u["unit"] == "pct" and not lo <= f.value <= hi:
+            plo, phi = cfg["checks"].get("pct_range_by_metric", {}).get(name, (lo, hi))
+            if u["unit"] == "pct" and not plo <= f.value <= phi:
                 rep.rejected.append({"metric": name, "quote": f.quote, "reason": "pct_out_of_range"})
                 continue
-        value = None if f.value is None else f.value * float(u["mult"])
+        value = (
+            None if f.value is None else round(f.value * float(u["mult"]), 6)
+        )  # no float artefacts (33.2e9)
         period = normalize_period(f.period) or default_period
         cf = CheckedFact(
             name,
@@ -143,8 +158,11 @@ def check_facts(facts: tuple[ExtractedFact, ...], default_period: str | None) ->
             direction=f.direction,
             scope=f.scope,
             certainty=f.certainty,
+            metric_label=f.metric_label,
+            segment=f.segment,
         )
-        key = (name, f.basis if not name.startswith("eps_") else None, period)
+        segment = (f.segment or "").strip().lower() or None
+        key = (name, f.basis if not name.startswith("eps_") else None, period, segment)
         if key in seen and seen[key].value != cf.value:
             conflicts.add(key)
         seen.setdefault(key, cf)

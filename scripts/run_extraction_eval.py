@@ -9,6 +9,7 @@ from __future__ import annotations
 import argparse
 import sys
 
+from sr.llm.base import LLMProvider
 from sr.llm.eval_extraction import run_eval, save_report
 
 
@@ -24,11 +25,11 @@ def main() -> int:
     if a.provider == "fake":
         from sr.llm.fake import FakeLLMProvider
 
-        prov = FakeLLMProvider()
+        prov: LLMProvider = FakeLLMProvider()
     else:
         from sr.llm.anthropic import ClaudeProvider
 
-        prov = ClaudeProvider()  # type: ignore[assignment]
+        prov = ClaudeProvider()
     rep = run_eval(prov)
     print(
         f"{rep.provider}/{rep.model}/{rep.prompt_version} on {rep.label_set_version}: {rep.n_docs} reviewed docs"

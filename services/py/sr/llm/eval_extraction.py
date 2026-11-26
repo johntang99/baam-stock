@@ -62,11 +62,9 @@ def match(pred: list[CheckedFact], gold: list[GoldFact], rel: float) -> list[tup
     pairs = []
     for p in pred:
         for g in free:
-            if (
-                p.metric == g.metric
-                and (g.period is None or p.period == g.period)
-                and _value_eq(p.value, g.value, rel)
-            ):
+            same_segment = (p.segment or "").strip().lower() == (g.segment or "").strip().lower()
+            same_period = g.period is None or p.period == g.period
+            if p.metric == g.metric and same_segment and same_period and _value_eq(p.value, g.value, rel):
                 pairs.append((p, g))
                 free.remove(g)
                 break

@@ -304,7 +304,7 @@ def test_fake_provider_fails_direction_gate(gold_set: tuple[Path, Path]) -> None
     corpus, labels = gold_set
     assert [x.doc_key for x in read_labels(labels)] == [f"{ACC}:ex991.htm"]  # drafts never count
     rep = run_eval(FakeLLMProvider(), labels_root=labels, corpus_root=corpus)
-    assert rep.n_docs == 1 and rep.prompt_version == "extract-0.2"
+    assert rep.n_docs == 1 and rep.prompt_version == load("llm")["prompts"]["extract_facts"]
     assert rep.scores["numeric_fact"].precision == 1.0 and rep.scores["numeric_fact"].recall == pytest.approx(
         0.4
     )

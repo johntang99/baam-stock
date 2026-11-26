@@ -39,6 +39,11 @@ def test_period_normalisation() -> None:
     assert normalize_period("Q4 FY2027") == "FY2027Q4"
     assert normalize_period("FY2027 Q1") == "FY2027Q1"
     assert normalize_period("next year") is None
+    assert normalize_period("third quarter of 2026") == "FY2026Q3"  # calendar-year issuers (AMD)
+    assert normalize_period("Q3 2026") == "FY2026Q3" and normalize_period("Q4'2026") == "FY2026Q4"
+    assert normalize_period("fourth fiscal quarter of 2026") == "FY2026Q4"
+    assert normalize_period("fiscal 2026") == "FY2026" and normalize_period("full-year 2026") == "FY2026"
+    assert normalize_period("2026") is None  # bare year is ambiguous
 
 
 def test_value_scale_unit_checks() -> None:
@@ -162,3 +167,74 @@ def test_pct_metric_uses_pp() -> None:
 def test_snapshots_must_match_contract() -> None:
     with pytest.raises(pydantic.ValidationError):
         compare(EPS, "co_nvda", [snap(0.75, DISCLOSED) | {"expectation_type": "rumour"}], DISCLOSED, ASOF)
+
+
+# ---------------------------------------------------------------- extract-0.3 behaviour
+def seg_fact(metric: str, value: float, unit: str, quote: str, segment: str | None = None) -> ExtractedFact:
+    return ExtractedFact(
+        metric,
+        value,
+        unit,
+        None,
+        "FY2026Q3",
+        None,
+        quote,
+        {"char_start": 0, "char_end": len(quote)},
+        metric_label=metric,
+        segment=segment,
+    )
+
+
+def test_table_row_scale_in_header() -> None:
+    rep = check_facts(
+        (seg_fact("net_income", 2428, "USD_million", "Net income ($M) $2,428 $1,243 Up 95%"),), None
+    )
+    assert rep.accepted and rep.accepted[0].value == pytest.approx(2.428e9)
+    rep2 = check_facts(
+        (seg_fact("revenue", 35166, "USD_million", "Net revenue $ 13,377 $ 11,536 $ 35,166"),), None
+    )
+    assert rep2.rejected[0]["reason"] == "value_not_in_quote"  # no scale anywhere -> still rejected
+
+
+def test_segment_figures_do_not_conflict_with_company_total() -> None:
+    rep = check_facts(
+        (
+            seg_fact("revenue", 13.4, "USD_billion", "revenue grew 45% to a record $13.4 billion"),
+            seg_fact(
+                "revenue",
+                5.1,
+                "USD_billion",
+                "Data Center segment revenue was $5.1 billion",
+                segment="Data Center",
+            ),
+        ),
+        None,
+    )
+    assert len(rep.accepted) == 2 and {f.segment for f in rep.accepted} == {None, "Data Center"}
+
+
+def test_other_metric_is_kept_out() -> None:
+    rep = check_facts((seg_fact("other", 3.0, "USD_billion", "backlog was $3.0 billion"),), None)
+    assert rep.accepted == [] and rep.rejected[0]["reason"] == "unknown_metric"
+
+
+def test_schema_enums_follow_config() -> None:
+    from sr.config import load
+    from sr.llm.base import FACTS_SCHEMA
+
+    item = FACTS_SCHEMA["properties"]["facts"]["items"]
+    assert item["properties"]["metric"]["enum"] == [*load("earnings")["metrics"], "other"]
+    assert item["properties"]["unit"]["enum"] == list(load("earnings")["units"])
+    assert {"segment", "metric_label"} <= set(item["required"])
+
+
+def test_growth_rates_may_exceed_100pct() -> None:
+    rep = check_facts(
+        (
+            seg_fact("revenue_growth_yoy_pct", 221, "pct", "grew 221% year-over-year"),
+            seg_fact("gross_margin_pct", 174.6, "pct", "gross margin was 174.6%"),
+        ),
+        None,
+    )
+    assert [f.metric for f in rep.accepted] == ["revenue_growth_yoy_pct"]
+    assert rep.rejected[0]["reason"] == "pct_out_of_range"

@@ -23,5 +23,11 @@
 | `scope` | `company`（全公司）/ `segment` / `product` / `geography` / `other` |
 | `certainty` | `reported`（实际结果）/ `guidance`（公司展望）/ `expectation`（他人预期）/ `hypothetical` |
 
+## 审核重点（来自首轮 Claude 草稿试运行）
+- **多列表格行**（例 `Percent of revenue 86.8 % 84.6 % 44.7 % …`）：模型通常把第一列当作本季度，程序无法核对期间——请逐条确认 `period`，不确定就删掉该条。
+- **口径**：同一行常并列 GAAP 与 non-GAAP（或本季/去年同期/年初至今），确认 `basis` 与 `period` 对应正确的那一列。
+- **货币**：TSMC 等以新台币（NT$）报告的数字，当前单位表只有美元——这类事实不要标成 USD，暂不标注。
+- `data/labels/extraction-v0/candidates/` 里有模型找到的全部候选与被程序剔除的原因（如 `other`、`value_not_in_quote`），可用来补漏，但候选本身不计入评估。
+
 ## 文档构成（目标约 300 份）
 SEC 8-K 新闻稿附件（EX-99.1，财报为主）与 8-K 正文（管理层变动、协议等）先行；随后补 Federal Register 政策文件与新闻（D-32 各类均需覆盖）。所有文件均为公开资料；标注内容只用于内部评估。

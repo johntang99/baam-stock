@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## Phase 1 · 1.18 corpus + Claude draft trial — 2026-11-26
+- Corpus: 291 public SEC documents (NVDA, AMD, AVGO, MU, TSM, MRVL; 111 EX-99 exhibits, 180 filing texts).
+  Exhibits found by declared document type from the filing index.
+- extract-0.3 (OQ-38): metric/unit enums, `metric_label`, `segment`; 8 more canonical metrics; table-row
+  scale markers; company period labels ("third quarter of 2026" -> FY2026Q3, "fiscal 2026" -> FY2026);
+  growth rates may exceed 100%; normalised values rounded.
+- Claude draft trial on 20 stratified documents (22 calls incl. 3 on the first doc, ~$2 at list price, all
+  logged to `llm_calls`): 103 verified draft facts; candidates + drop reasons saved for reviewers.
+  `prelabel_extraction.py`: `--replace-drafts`, `--sample stratified`, `--keys/--exclude`, `--log-db`,
+  `--recheck` (rebuild drafts from saved candidates, no API calls), cost summary.
+- Labelling guide: review focus from the trial (multi-column table periods, GAAP/non-GAAP columns, NT$ figures).
+- OQ-37, OQ-38 confirmed by user. Tests: 326 (33 Postgres-backed).
+
 ## Phase 1 · 1.18 extraction evaluation set (tooling) — 2026-11-26
 - Prompt extract-0.2: facts also carry `direction`, `scope`, `certainty` (D-32 field groups).
 - `scripts/fetch_sec_corpus.py` (CIKs from SEC company_tickers.json, 8-K/6-K press-release exhibits + primary

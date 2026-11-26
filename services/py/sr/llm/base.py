@@ -21,56 +21,71 @@ from sr.ids import new_id
 Mode = Literal["live", "replay"]
 CallStatus = Literal["succeeded", "rejected_validation", "refused", "failed"]
 
+
 # JSON schema the model must return (structured output). Kept here so prompt_hash changes when it changes.
-FACTS_SCHEMA: dict[str, Any] = {
-    "type": "object",
-    "properties": {
-        "facts": {
-            "type": "array",
-            "items": {
-                "type": "object",
-                "properties": {
-                    "metric": {"type": "string"},
-                    "value": {"anyOf": [{"type": "number"}, {"type": "null"}]},
-                    "unit": {"type": "string"},
-                    "currency": {"anyOf": [{"type": "string"}, {"type": "null"}]},
-                    "period": {"anyOf": [{"type": "string"}, {"type": "null"}]},
-                    "basis": {
-                        "anyOf": [
-                            {"type": "string", "enum": ["gaap", "non_gaap", "company_defined"]},
-                            {"type": "null"},
-                        ]
+def _facts_schema() -> dict[str, Any]:
+    """Output schema; metric and unit vocabularies come from config/earnings.yaml (prompt_hash changes with them)."""
+    ecfg = load("earnings")
+    nullable_str = {"anyOf": [{"type": "string"}, {"type": "null"}]}
+    return {
+        "type": "object",
+        "properties": {
+            "facts": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "metric": {"type": "string", "enum": [*ecfg["metrics"], "other"]},
+                        "metric_label": {"type": "string"},
+                        "value": {"anyOf": [{"type": "number"}, {"type": "null"}]},
+                        "unit": {"type": "string", "enum": list(ecfg["units"])},
+                        "currency": nullable_str,
+                        "period": nullable_str,
+                        "segment": nullable_str,
+                        "basis": {
+                            "anyOf": [
+                                {"type": "string", "enum": ["gaap", "non_gaap", "company_defined"]},
+                                {"type": "null"},
+                            ]
+                        },
+                        "quote": {"type": "string"},
+                        "direction": {
+                            "type": "string",
+                            "enum": ["increase", "decrease", "unchanged", "none"],
+                        },
+                        "scope": {
+                            "type": "string",
+                            "enum": ["company", "segment", "product", "geography", "other"],
+                        },
+                        "certainty": {
+                            "type": "string",
+                            "enum": ["reported", "guidance", "expectation", "hypothetical"],
+                        },
                     },
-                    "quote": {"type": "string"},
-                    "direction": {"type": "string", "enum": ["increase", "decrease", "unchanged", "none"]},
-                    "scope": {
-                        "type": "string",
-                        "enum": ["company", "segment", "product", "geography", "other"],
-                    },
-                    "certainty": {
-                        "type": "string",
-                        "enum": ["reported", "guidance", "expectation", "hypothetical"],
-                    },
+                    "required": [
+                        "metric",
+                        "metric_label",
+                        "value",
+                        "unit",
+                        "currency",
+                        "period",
+                        "segment",
+                        "basis",
+                        "quote",
+                        "direction",
+                        "scope",
+                        "certainty",
+                    ],
+                    "additionalProperties": False,
                 },
-                "required": [
-                    "metric",
-                    "value",
-                    "unit",
-                    "currency",
-                    "period",
-                    "basis",
-                    "quote",
-                    "direction",
-                    "scope",
-                    "certainty",
-                ],
-                "additionalProperties": False,
-            },
-        }
-    },
-    "required": ["facts"],
-    "additionalProperties": False,
-}
+            }
+        },
+        "required": ["facts"],
+        "additionalProperties": False,
+    }
+
+
+FACTS_SCHEMA: dict[str, Any] = _facts_schema()
 
 
 @dataclass(frozen=True)
@@ -86,6 +101,8 @@ class ExtractedFact:
     direction: str | None = None  # increase | decrease | unchanged | none   (D-32 field group "direction")
     scope: str | None = None  # company | segment | product | geography | other
     certainty: str | None = None  # reported | guidance | expectation | hypothetical
+    metric_label: str | None = None  # the document's own wording ("Data Center segment revenue")
+    segment: str | None = None  # segment / product line the fact is about; None = whole company
 
 
 @dataclass(frozen=True)
@@ -176,14 +193,19 @@ EXTRACT_SYSTEM = (
     "You extract financial and business facts from one source document for a research database.\n"
     "Rules:\n"
     "- Use only the document between <document> tags. Do not use outside knowledge, memory, or assumptions.\n"
-    "- For every fact, copy `quote` verbatim from the document: the exact characters, so that it can be found "
-    "by string search. Keep quotes short (the sentence or clause that states the fact).\n"
-    '- `value` is the number as stated (e.g. 35.1 for "$35.1 billion"; unit then "USD_billion"); null when '
-    "the fact is not numeric. `basis` is gaap, non_gaap, company_defined, or null when not stated.\n"
-    "- `direction`: the change the document states for this fact (increase / decrease / unchanged), or none.\n"
-    "- `scope`: company-wide, a segment, a product, a geography, or other.\n"
-    "- `certainty`: reported (actual result), guidance (company outlook), expectation (someone else's estimate), "
-    "or hypothetical.\n"
+    "- `quote`: copy the exact characters from the document (findable by string search) - the sentence, clause or "
+    'table row that states the fact, including its scale (e.g. "$13.4 billion" or a row header like "($M)").\n'
+    "- `metric`: pick the closest name from the allowed list; use `other` if none fits. `metric_label` is the "
+    "document's own wording. EPS must state `basis` (gaap / non_gaap) or be skipped.\n"
+    '- `segment`: the segment or product line a figure belongs to (e.g. "Data Center"); null for company-wide '
+    "figures. `scope` must agree (segment / product / geography / company).\n"
+    '- `value` is the number as printed; `unit` gives its scale (USD_billion for "$13.4 billion", USD_million for '
+    "a ($M) table, USD_per_share for EPS, pct for percentages). null value when the fact is not numeric.\n"
+    '- `period` is the fiscal period the figure covers (e.g. "third quarter of fiscal 2026"); for tables with '
+    "several period columns, extract only figures whose period is unambiguous.\n"
+    "- `direction`: the change the document states for this fact (increase / decrease / unchanged), or none. "
+    "`certainty`: reported (actual result), guidance (company outlook), expectation (someone else's estimate), or "
+    "hypothetical.\n"
     "- If the document states no facts, return an empty list. Never estimate or fill gaps."
 )
 
@@ -214,6 +236,8 @@ def locate_facts(doc_text: str, raw_facts: list[dict[str, Any]]) -> tuple[list[E
                 direction=f.get("direction"),
                 scope=f.get("scope"),
                 certainty=f.get("certainty"),
+                metric_label=f.get("metric_label"),
+                segment=f.get("segment"),
             )
         )
     return facts, missing
