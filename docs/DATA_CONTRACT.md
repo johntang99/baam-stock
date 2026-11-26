@@ -1,6 +1,6 @@
 # DATA CONTRACT · 美股短期研究与预测系统
 
-**契约版本** `schema_version = "contract-0.7.1"` · 2026-11-26（0.7.1：实现 Phase 0 时的增量补丁——`securities.security_type` 增 `etf`、`index`，`primary_exchange` 增 `ARCX`（NYSE Arca，SPY）、`XCBO`（Cboe，^VIX），以容纳 D-31 参考品种与 SOXX；`predictions` 增 `scenarios`（§8.2 事件结果示例已使用）；已由用户 2026-11-26 确认（OQ-01）；0.7：用户补充信息 `user_submissions`（链接/文本/文件、类别建议、核验状态）与增量补充运行 `mode=supplement`、`trigger_type=user_supplement`；0.6：第 1 步信息采集可见——`collection_runs`、`collection_items`（每条采集项的渠道、类别、处置状态与四类时间，含被去重/排除/待核的）；第 2 步推理可追溯——`market_explanation` 每条陈述带引用、新增 `reasoning_trace`；0.5：每日固定预测时刻表 `forecast_schedules`（主评分点）、预测槽位字段、预测与实际对照视图 `forecast_vs_actual` 与滚动准确率 `forecast_accuracy_rollups`；0.4：补齐 PPT 蓝图缺口——公司行为、行业模板、宏观首发值、Form 4、法院案卷、期权快照占位、估值背景、历史类比规则、运行状态与有效期、事件结果结算规则、条件预测触发、`interval_width`/`trigger_rate` 指标；0.3：运营实体——一键流水线运行、新公司接入、数据源健康、告警；0.2：波动缩放阈值、`regular_60m_move`、BSS 参照模型、参考品种、LLM 提取评估、对外开放范围）
+**契约版本** `schema_version = "contract-0.7.2"` · 2026-11-26（0.7.2：Phase 1 第 1 组（DP 1.03–1.06）——证据与事件实体建表（`source_documents`、`source_document_versions`、`event_evidence`、`events`、`event_security_links`、`event_milestones`、`event_analysis_versions`）；新增 `llm_calls`（§3.4b，LLM 调用留痕）；`source_document_versions` 明确 `missing_reason`、`simulated_available_at` 列（§1.1 已有语义）；待人确认（OPEN_QUESTIONS OQ-23）；0.7.1：实现 Phase 0 时的增量补丁——`securities.security_type` 增 `etf`、`index`，`primary_exchange` 增 `ARCX`（NYSE Arca，SPY）、`XCBO`（Cboe，^VIX），以容纳 D-31 参考品种与 SOXX；`predictions` 增 `scenarios`（§8.2 事件结果示例已使用）；已由用户 2026-11-26 确认（OQ-01）；0.7：用户补充信息 `user_submissions`（链接/文本/文件、类别建议、核验状态）与增量补充运行 `mode=supplement`、`trigger_type=user_supplement`；0.6：第 1 步信息采集可见——`collection_runs`、`collection_items`（每条采集项的渠道、类别、处置状态与四类时间，含被去重/排除/待核的）；第 2 步推理可追溯——`market_explanation` 每条陈述带引用、新增 `reasoning_trace`；0.5：每日固定预测时刻表 `forecast_schedules`（主评分点）、预测槽位字段、预测与实际对照视图 `forecast_vs_actual` 与滚动准确率 `forecast_accuracy_rollups`；0.4：补齐 PPT 蓝图缺口——公司行为、行业模板、宏观首发值、Form 4、法院案卷、期权快照占位、估值背景、历史类比规则、运行状态与有效期、事件结果结算规则、条件预测触发、`interval_width`/`trigger_rate` 指标；0.3：运营实体——一键流水线运行、新公司接入、数据源健康、告警；0.2：波动缩放阈值、`regular_60m_move`、BSS 参照模型、参考品种、LLM 提取评估、对外开放范围）
 **适用**：Supabase Postgres（表）、Python worker（pydantic 模型）、Next.js（生成的 TS 类型）、原型 `prototype/data.js`（字段名一致）。
 **单一事实来源**：实现时把本文表格落成 `packages/contracts/schemas/*.schema.json`，再生成 SQL 迁移、pydantic、TS。
 
@@ -10,7 +10,7 @@
 
 | 项 | 规则 |
 |---|---|
-| 主键 | 文本 ID，带前缀：`co_`、`sec_`、`doc_`、`docv_`、`evd_`、`evt_`、`eav_`、`snap_`、`bm_`、`bmv_`、`tgt_`、`run_`、`pred_`、`stl_`、`rq_`、`ds_`、`tr_`、`mdl_`、`eval_`、`dep_`、`job_`。新记录用 ULID（时间有序）：`pred_01JF…`；种子数据可用可读 ID（`sec_nvda`） |
+| 主键 | 文本 ID，带前缀：`co_`、`sec_`、`doc_`、`docv_`、`evd_`、`evt_`、`eav_`、`snap_`、`bm_`、`bmv_`、`tgt_`、`run_`、`pred_`、`stl_`、`rq_`、`ds_`、`tr_`、`mdl_`、`eval_`、`dep_`、`job_`、`llm_`（0.7.2）。新记录用 ULID（时间有序）：`pred_01JF…`；种子数据可用可读 ID（`sec_nvda`） |
 | 时间 | 全部 `timestamptz`，以 UTC ISO-8601 传输（`2026-12-01T15:20:02.000Z`），毫秒精度；页面显示 `America/New_York`。仅日期用 `date` + `*_precision` 字段 |
 | 时间精度 | `time_precision ∈ {ms, s, minute, hour, day, unknown}`；`day`/`unknown` 的来源时间不得用于盘中先后判定 |
 | 金额/价格 | `numeric(20,6)`；JSON 中用数字；币种 `currency` ISO-4217 |
@@ -137,6 +137,7 @@ jobs (队列, idempotency_key)
 | arrival_mode | enum | `live`, `archived`, `simulated` |
 | is_correction_of | text? FK→doc_version_id | 来源更正 |
 | visibility | enum | `public`, `internal`, `restricted_review` |
+| missing_reason / simulated_available_at | text? / timestamptz? | 0.7.2 明确列出：`source_published_at` 为空时 `missing_reason` 必填（§1 空值规则、AC-06）；`arrival_mode=simulated` 时的模拟到达时刻（§1.1） |
 
 **`collection_runs`**（第 1 步：信息采集，D-45）
 
@@ -273,6 +274,10 @@ UQ `(security_id, quote_ts, price_type, vendor_source_id)`。迟到报价（`rec
 | rule_version / model_versions | text / jsonb | 含 LLM provider/model/prompt_version |
 | prediction_readiness | jsonb | 见 §3.5 |
 | supersedes_analysis_id | text? | |
+
+### 3.4b LLM 调用留痕（0.7.2）
+
+**`llm_calls`**（只追加；每次 LLM 调用一行，MP §3.2）：`call_id PK`（`llm_…`）、`purpose ∈ {extract_facts, draft_explanation}`、`provider`、`model`、`prompt_version`、`prompt_hash`（渲染后提示词 SHA-256）、`input_hash`（输入原文 SHA-256）、`output_hash?`、`doc_version_id?`、`mode ∈ {live, replay}`、`request_params jsonb`（effort、max_tokens、输出 schema；`tools` 必须为空——回放与提取禁止联网搜索）、`usage jsonb`（输入/输出 token）、`stop_reason?`、`status ∈ {succeeded, rejected_validation, refused, failed}`、`error?`、`latency_ms?`、`created_at`。规则：每条提取的事实必须带原文定位且引用文本能在原文中逐字找到，否则整次调用 `rejected_validation`，结果不得进入事件或特征（禁止用模型记忆补结果，S3§6）。
 
 ### 3.4a 历史类比检索规则（D-38，`query_version = hc-0.1`）
 

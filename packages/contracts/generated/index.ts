@@ -1,5 +1,5 @@
 /* AUTO-GENERATED from packages/contracts/schemas by scripts/gen-ts.mjs. Do not edit. */
-export type SchemaVersion = "contract-0.7.1"
+export type SchemaVersion = "contract-0.7.2"
 /**
  * UTC ISO-8601 with Z suffix (DC §1)
  */
@@ -230,7 +230,7 @@ available_at: Timestamp
 export type ExplanationStatus = ("supported" | "partial" | "insufficient")
 
 /**
- * DC §3.4 (schema only in P0); UQ (event_id, security_id, analysis_version)
+ * DC §3.4 (table since contract-0.7.2, migration 0002); UQ (event_id, security_id, analysis_version)
  */
 
 export interface EventAnalysisVersions {
@@ -334,7 +334,7 @@ export type EvidenceVerificationStatus = ("pending" | "media_report" | "primary_
 export type Visibility = ("public" | "internal" | "restricted_review")
 
 /**
- * DC §3.2 (schema only in P0)
+ * DC §3.2 (table since contract-0.7.2, migration 0002)
  */
 
 export interface EventEvidence {
@@ -558,6 +558,45 @@ locked_at?: (Timestamp | null)
 last_error?: (string | null)
 }
 
+export interface LlmCalls {
+schema_version?: SchemaVersion
+call_id: string
+purpose: ("extract_facts" | "draft_explanation")
+provider: string
+model: string
+prompt_version: string
+prompt_hash: string
+input_hash: string
+output_hash?: (string | null)
+doc_version_id?: (string | null)
+mode: ("live" | "replay")
+/**
+ * effort, max_tokens, output schema id; tools must be [] (no web search)
+ */
+request_params: {
+
+}
+/**
+ * input_tokens, output_tokens, cache_* as returned
+ */
+usage: {
+
+}
+stop_reason?: (string | null)
+status: ("succeeded" | "rejected_validation" | "refused" | "failed")
+error?: (Error | null)
+latency_ms?: (number | null)
+created_at: Timestamp
+}
+
+export interface Error {
+code: string
+message: string
+details?: {
+
+}
+}
+
 export interface MacroReleases {
 schema_version?: SchemaVersion
 release_id: string
@@ -734,14 +773,6 @@ detail: {
 }
 error?: (Error | null)
 job_id?: (string | null)
-}
-
-export interface Error {
-code: string
-message: string
-details?: {
-
-}
 }
 
 export interface PipelineRuns {
@@ -1181,4 +1212,4 @@ supplement_run_id?: (string | null)
 visibility: ("submitter_and_reviewers" | "shared")
 }
 
-export const SCHEMA_VERSION = "contract-0.7.1" as const;
+export const SCHEMA_VERSION = "contract-0.7.2" as const;

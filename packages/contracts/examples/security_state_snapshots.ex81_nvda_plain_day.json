@@ -1,5 +1,5 @@
 {
-  "schema_version": "contract-0.7.1",
+  "schema_version": "contract-0.7.2",
   "snapshot_id": "snap_nvda_20261201_1520",
   "security_id": "sec_nvda",
   "trigger_type": "scheduled",

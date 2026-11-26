@@ -21,7 +21,7 @@ from sr.eval.metrics import brier, pinball_by_quantile
 ROOT = repo_root()
 SCHEMAS = ROOT / "packages/contracts/schemas"
 EXAMPLES = ROOT / "packages/contracts/examples"
-MIGRATION = (ROOT / "supabase/migrations/0001_core.sql").read_text()
+MIGRATION = "\n".join(f.read_text() for f in sorted((ROOT / "supabase/migrations").glob("*.sql")))
 SV = json.loads((SCHEMAS / "common.schema.json").read_text())["$defs"]["schema_version"]["const"]
 
 
@@ -48,7 +48,7 @@ def examples() -> list[Path]:
 
 # ---------------- schemas & examples ----------------
 def test_schema_version_is_current() -> None:
-    assert SV == "contract-0.7.1"
+    assert SV == "contract-0.7.2"
     import sr
 
     assert sr.SCHEMA_VERSION == SV
@@ -57,7 +57,7 @@ def test_schema_version_is_current() -> None:
 def test_all_schemas_are_valid_draft_2020_12() -> None:
     for s in ALL.values():
         Draft202012Validator.check_schema(s)
-    assert len(ENTITIES) == 48 and len(TABLED) == 30
+    assert len(ENTITIES) == 49 and len(TABLED) == 38
 
 
 @pytest.mark.parametrize("path", examples(), ids=lambda p: p.name)

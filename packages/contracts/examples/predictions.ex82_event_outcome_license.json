@@ -1,5 +1,5 @@
 {
-  "schema_version": "contract-0.7.1",
+  "schema_version": "contract-0.7.2",
   "prediction_id": "pred_evt_policy_demo_001_license",
   "run_id": "run_nvda_20261202_1601",
   "target_row_id": "tgt_event_policy_demo_001_v1",
@@ -36,7 +36,7 @@
     "calendar_version": "cal-2026.11",
     "model_version_id": "scenario_only",
     "calibration_version": null,
-    "schema_version": "contract-0.7.1",
+    "schema_version": "contract-0.7.2",
     "sigma_model_version": null,
     "sigma_hat_pp": null,
     "threshold_k": null,

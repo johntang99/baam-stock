@@ -1,8 +1,8 @@
 {
   "name": "contracts",
-  "version": "0.7.1",
+  "version": "0.7.2",
   "private": true,
-  "description": "Single source of truth: JSON Schemas for DATA_CONTRACT (schema_version contract-0.7.1)",
+  "description": "Single source of truth: JSON Schemas for DATA_CONTRACT (schema_version contract-0.7.2)",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

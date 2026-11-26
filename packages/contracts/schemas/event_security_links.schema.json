@@ -2,8 +2,8 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://baam-stock.local/contracts/event_security_links.schema.json",
   "title": "event_security_links",
-  "description": "DC §3.4 (schema only in P0)",
-  "x-tabled": false,
+  "description": "DC §3.4 (table since contract-0.7.2, migration 0002)",
+  "x-tabled": true,
   "type": "object",
   "properties": {
     "schema_version": {
