@@ -1,0 +1,9 @@
+{
+  "doc_key": "0001140361-24-032566:ny20032136x1_ex99-1.htm",
+  "text_sha256": "c1dd66ad34f7227672ea54695fc4d876fe25c5971262231b7d561e5a0a9e8ca9",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": []
+}

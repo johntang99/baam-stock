@@ -1,0 +1,21 @@
+{
+  "doc_key": "0001045810-26-000088:q3fy27cfocommentary.htm",
+  "text_sha256": "9113d2274fe481cd8f63afb8077f9d5cbc0cd9295bcb135ab3a3ecd8f76595a7",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": 8199999999.999999,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue for the third quarter was $8.2 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    }
+  ]
+}

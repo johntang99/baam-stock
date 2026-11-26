@@ -1,0 +1,9 @@
+{
+  "doc_key": "0000002488-25-000106:q22025991.htm",
+  "text_sha256": "100e7e3acfd86623c3a1ff9ab32b555e44af486bf6aa79521d8524f63f4e378c",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": []
+}

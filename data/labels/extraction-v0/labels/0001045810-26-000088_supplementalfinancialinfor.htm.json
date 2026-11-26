@@ -1,0 +1,9 @@
+{
+  "doc_key": "0001045810-26-000088:supplementalfinancialinfor.htm",
+  "text_sha256": "a2bdbf383c1afdf51fb031d22997d4c7e84238d1fd37d7aa63342d28826ceec7",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": []
+}

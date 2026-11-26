@@ -1,0 +1,21 @@
+{
+  "doc_key": "0001045810-26-000051:q1fy27cfocommentary.htm",
+  "text_sha256": "0fd4595c0beeb3050cd743b333cc19b3617926bcfcdd9e29cb419932ffccb6fe",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": 6400000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue for the first quarter was $6.4 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    }
+  ]
+}

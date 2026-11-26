@@ -1,0 +1,32 @@
+{
+  "doc_key": "0001045810-25-000207:q2fy26cfocommentary.htm",
+  "text_sha256": "0a1ecb67e1e7dcfe0f22f7cb0436f94e4980de2c404ecfbabbfa952db6c62684",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": [
+    {
+      "metric": "gross_margin_pct",
+      "value": 72.4,
+      "unit": "pct",
+      "period": null,
+      "basis": null,
+      "quote": "gross margin was 72.4%",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    },
+    {
+      "metric": "data_center_revenue",
+      "value": 41100000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Data Center revenue for the second quarter was $41.1 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    }
+  ]
+}

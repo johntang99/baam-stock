@@ -1,0 +1,21 @@
+{
+  "doc_key": "0001835632-26-000022:q227_8kx812026ex-991.htm",
+  "text_sha256": "fcb2f20172090313a84ccbf2e730e90efa3bf8d69b4528652deca75d0ff7bafd",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": 2739000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue for the second quarter of fiscal 2027 was $2.739 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    }
+  ]
+}

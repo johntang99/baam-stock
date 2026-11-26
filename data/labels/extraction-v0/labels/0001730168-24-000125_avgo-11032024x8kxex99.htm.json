@@ -1,0 +1,21 @@
+{
+  "doc_key": "0001730168-24-000125:avgo-11032024x8kxex99.htm",
+  "text_sha256": "41e297ccaaa85fb12ef8f5959edf9f2317f4feddeb24cc73a4016da494c2ff1d",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": 12200000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue of $12.2 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    }
+  ]
+}

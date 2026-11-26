@@ -1,0 +1,9 @@
+{
+  "doc_key": "0000002488-25-000009:amdq424earningsslidesfin.htm",
+  "text_sha256": "9e5fa0cbc6157f0c38ca8a2adf55da916483df3e66279641c220d80b6b9ddb66",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": []
+}

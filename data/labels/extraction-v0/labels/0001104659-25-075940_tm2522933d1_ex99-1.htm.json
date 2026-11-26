@@ -1,0 +1,32 @@
+{
+  "doc_key": "0001104659-25-075940:tm2522933d1_ex99-1.htm",
+  "text_sha256": "899397abe9c7ea1dbba30d9dd5b6e08b379ff190d48444ab8b4c885688f9bd1c",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": 10700000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue of $10.7 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 42.0,
+      "unit": "pct",
+      "period": null,
+      "basis": null,
+      "quote": "gross margins of 42.0%",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    }
+  ]
+}

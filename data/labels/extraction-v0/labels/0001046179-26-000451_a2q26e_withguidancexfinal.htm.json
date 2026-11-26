@@ -1,0 +1,32 @@
+{
+  "doc_key": "0001046179-26-000451:a2q26e_withguidancexfinal.htm",
+  "text_sha256": "2e82177fda0e8628992c4878ae1f8bf819983146e17c3ba715a836bde55c7172",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": 40200000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue was $40.20 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 67.7,
+      "unit": "pct",
+      "period": null,
+      "basis": null,
+      "quote": "Gross margin for the quarter was 67.7%",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    }
+  ]
+}

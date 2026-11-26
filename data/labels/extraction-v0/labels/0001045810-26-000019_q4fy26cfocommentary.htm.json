@@ -1,0 +1,9 @@
+{
+  "doc_key": "0001045810-26-000019:q4fy26cfocommentary.htm",
+  "text_sha256": "8be3b266df8c199c7434f25ebb3e7d9d66326e3df094d769efff506490d5e082",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": []
+}

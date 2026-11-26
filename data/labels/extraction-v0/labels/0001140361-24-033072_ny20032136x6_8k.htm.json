@@ -1,0 +1,9 @@
+{
+  "doc_key": "0001140361-24-033072:ny20032136x6_8k.htm",
+  "text_sha256": "255c39e031d27abdb3374486d4611608bc7e01ee41b35ac9a707f6d2ae4950bb",
+  "doc_kind": "8k_other",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": []
+}

@@ -1,0 +1,21 @@
+{
+  "doc_key": "0000002488-25-000106:amdq225earningsslidesfin.htm",
+  "text_sha256": "a1f30c631d6386624a052456cc1743ce21f502d6e4dfb7172a58db9f9b9d8437",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": 7700000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Revenue Q2 2025 Record second quarter revenue of $7.7 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    }
+  ]
+}

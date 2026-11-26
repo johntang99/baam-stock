@@ -1,0 +1,32 @@
+{
+  "doc_key": "0001045810-25-000228:q3fy26pr.htm",
+  "text_sha256": "d6958704e3e025ac79f60866978880b7572ee9bdf3c3cd099a0f3967a8365010",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": [
+    {
+      "metric": "data_center_revenue",
+      "value": 51200000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Data Center revenue of $51.2 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "value": 73.4,
+      "unit": "pct",
+      "period": null,
+      "basis": null,
+      "quote": "gross margins were 73.4%",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "doc_key": "0001045810-26-000073:q2fy27cfocommentary.htm",
+  "text_sha256": "a781b273eb542b9c67e5bc5f544085f59ca35e833df17d7a6524e4db8671a210",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": 7200000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue for the second quarter was $7.2 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    }
+  ]
+}

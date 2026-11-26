@@ -1,0 +1,9 @@
+{
+  "doc_key": "0001046179-26-000680:tsm-revenue20261008.htm",
+  "text_sha256": "61483b89ca3201f22f519a81ab68fa1f1f4339236b44e757f97a7a39382d4b15",
+  "doc_kind": "8k_other",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": []
+}

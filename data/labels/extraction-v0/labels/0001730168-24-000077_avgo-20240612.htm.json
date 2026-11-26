@@ -1,0 +1,9 @@
+{
+  "doc_key": "0001730168-24-000077:avgo-20240612.htm",
+  "text_sha256": "50d6444dc2401aa7077d4cf4aba2dc56bea711dda9e4c89cdb4ebd97d918570b",
+  "doc_kind": "8k_other",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": []
+}

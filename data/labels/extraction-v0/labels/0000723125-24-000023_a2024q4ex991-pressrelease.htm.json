@@ -1,0 +1,9 @@
+{
+  "doc_key": "0000723125-24-000023:a2024q4ex991-pressrelease.htm",
+  "text_sha256": "3d7c95923cfc7dfc977c565c830107e368d3b59b4ae55453ffcd96fccc7681bd",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": []
+}

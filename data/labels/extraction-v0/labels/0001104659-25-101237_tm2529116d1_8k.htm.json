@@ -1,0 +1,9 @@
+{
+  "doc_key": "0001104659-25-101237:tm2529116d1_8k.htm",
+  "text_sha256": "47b8215f7240859f7d0589ef3bc4b023936988969c9badba70400c7018e156f6",
+  "doc_kind": "8k_other",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": []
+}

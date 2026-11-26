@@ -1,0 +1,9 @@
+{
+  "doc_key": "0001045810-26-000082:nvidiaannouncesceotransiti.htm",
+  "text_sha256": "637ce2ba97dc0d24675992c18ef58ef5909d0147ca1ba990bccf9ec044ee32d0",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": []
+}

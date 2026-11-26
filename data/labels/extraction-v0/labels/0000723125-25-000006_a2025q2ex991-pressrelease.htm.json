@@ -1,0 +1,21 @@
+{
+  "doc_key": "0000723125-25-000006:a2025q2ex991-pressrelease.htm",
+  "text_sha256": "a1ddf896f3488b60e66c5b9e978addf642a1c63df1b8e6e12745ac0529ceccc1",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": 8050000000.000001,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Revenue of $8.05 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    }
+  ]
+}

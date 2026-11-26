@@ -1,0 +1,21 @@
+{
+  "doc_key": "0001730168-26-000051:avgo-05032026x8kxex99.htm",
+  "text_sha256": "b6aadf9e65577ce533346152ca1ea0b5d4bd60149f51eb118377d8d069c938f0",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": 10800000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue from AI of $10.8 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    }
+  ]
+}

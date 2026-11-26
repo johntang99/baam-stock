@@ -1,0 +1,32 @@
+{
+  "doc_key": "0001045810-25-000115:q1fy26cfocommentary.htm",
+  "text_sha256": "0a84830afb192da5294b686563720a2d9a2a1f018f6103b1ba24d8d02d4baaa6",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": [
+    {
+      "metric": "gross_margin_pct",
+      "value": 60.5,
+      "unit": "pct",
+      "period": null,
+      "basis": null,
+      "quote": "gross margin was 60.5%",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    },
+    {
+      "metric": "data_center_revenue",
+      "value": 39100000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Data Center revenue for the first quarter was $39.1 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    }
+  ]
+}

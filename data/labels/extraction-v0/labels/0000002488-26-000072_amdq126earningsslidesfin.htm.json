@@ -1,0 +1,21 @@
+{
+  "doc_key": "0000002488-26-000072:amdq126earningsslidesfin.htm",
+  "text_sha256": "73348883775876092b7d31295de6e831e59f09fb76c6911b26314224fd4c3d87",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": 10300000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Revenue Revenue of $10.3 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    }
+  ]
+}

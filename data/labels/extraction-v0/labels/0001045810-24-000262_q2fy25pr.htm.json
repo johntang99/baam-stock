@@ -1,0 +1,21 @@
+{
+  "doc_key": "0001045810-24-000262:q2fy25pr.htm",
+  "text_sha256": "05e079be484e4b9f524f63ab7237799583f4f5b54d6ac8e22d94c3c5d10af501",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": [
+    {
+      "metric": "data_center_revenue",
+      "value": 26300000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Data Center revenue of $26.3 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    }
+  ]
+}

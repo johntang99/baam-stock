@@ -1,0 +1,9 @@
+{
+  "doc_key": "0001046179-26-000726:a3q26presentatione.htm",
+  "text_sha256": "878c63c558844fb367cf65dc3e2a30379e303e0ffe8980268fa49b5ccbe0f3bf",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": []
+}

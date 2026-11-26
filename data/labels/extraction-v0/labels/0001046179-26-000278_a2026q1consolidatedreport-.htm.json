@@ -1,0 +1,9 @@
+{
+  "doc_key": "0001046179-26-000278:a2026q1consolidatedreport-.htm",
+  "text_sha256": "131c37f53ada321e0e152a43188e9b736485734a1d7a7f3e1e8e04b3733c1c6c",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": []
+}

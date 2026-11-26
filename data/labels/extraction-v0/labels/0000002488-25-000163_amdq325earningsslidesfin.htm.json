@@ -1,0 +1,21 @@
+{
+  "doc_key": "0000002488-25-000163:amdq325earningsslidesfin.htm",
+  "text_sha256": "6efd999a5e861128864e8664fea1b468288d72b94f3815b68639749dfd1f6e69",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": 9200000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Revenue Record third quarter revenue of $9.2 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    }
+  ]
+}

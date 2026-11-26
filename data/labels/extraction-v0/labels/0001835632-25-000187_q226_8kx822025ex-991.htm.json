@@ -1,0 +1,21 @@
+{
+  "doc_key": "0001835632-25-000187:q226_8kx822025ex-991.htm",
+  "text_sha256": "63c826437846433ed43db622d6837220f76b01c0d281c7a2d224e7c13aa7f48c",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": 2005999999.9999998,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue for the second quarter of fiscal 2026 was $2.006 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    }
+  ]
+}

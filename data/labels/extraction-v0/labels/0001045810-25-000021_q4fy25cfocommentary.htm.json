@@ -1,0 +1,21 @@
+{
+  "doc_key": "0001045810-25-000021:q4fy25cfocommentary.htm",
+  "text_sha256": "0bee2c1e009213a1b8e834850766d244debe8336c8ea08319649607819e68a9d",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": [
+    {
+      "metric": "data_center_revenue",
+      "value": 115200000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Data Center revenue for fiscal 2025 was $115.2 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    }
+  ]
+}

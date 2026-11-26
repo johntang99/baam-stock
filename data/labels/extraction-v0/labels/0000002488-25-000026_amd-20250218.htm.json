@@ -1,0 +1,9 @@
+{
+  "doc_key": "0000002488-25-000026:amd-20250218.htm",
+  "text_sha256": "921f4d81350f6aff1961f1c618b20d48f7e3c782b2dd65bd8a9681afba39d368",
+  "doc_kind": "8k_other",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": []
+}

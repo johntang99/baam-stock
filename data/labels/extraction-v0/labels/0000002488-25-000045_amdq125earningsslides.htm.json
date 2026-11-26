@@ -1,0 +1,21 @@
+{
+  "doc_key": "0000002488-25-000045:amdq125earningsslides.htm",
+  "text_sha256": "1e506398cb3b24246f8a43de7cffab8c300ef328b2bdec64ad5dd7d4fe21e104",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": 7400000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Revenue Q1 2025 Record first quarter revenue of $7.4 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    }
+  ]
+}

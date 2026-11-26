@@ -1,0 +1,21 @@
+{
+  "doc_key": "0001835632-25-000193:q326_8kx1112025ex-991.htm",
+  "text_sha256": "d5b4f68665362661439660c590642cf37ddf0649d974354ad7ead90932e1570e",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": 2075000000.0000002,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue for the third quarter of fiscal 2026 was $2.075 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    }
+  ]
+}

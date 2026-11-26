@@ -1,0 +1,21 @@
+{
+  "doc_key": "0001835632-26-000014:q127_8kx522026ex-991.htm",
+  "text_sha256": "5f24d0111a5459d6c94b8223d02a3dd688fcae536d0e3425b84c8dcf625ba464",
+  "doc_kind": "earnings_release",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:fake/fake-extractor-0.1/extract-0.2",
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": 2418000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "revenue for the first quarter of fiscal 2027 was $2.418 billion",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported"
+    }
+  ]
+}
