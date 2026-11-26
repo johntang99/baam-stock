@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## Phase 1 · 1.22 historical analogues — 2026-11-26
+- `sr.events.analogues` (hc-0.1, `config/analogues/hc-0.1.yaml`): past-only cases (available and settled by
+  as_of), no self-match within an event chain, match keys event_type + subtype + industry_template +
+  market_state (+ surprise bucket for earnings), min 8 cases with relaxation drop_subtype -> peer_group ->
+  sector_wide, then `insufficient` with no statistics; median / IQR / share > 0, n, period, sorted case_ids
+  (AC-38). `load_cases` builds the point-in-time case library from published analysis versions.
+- OPEN_QUESTIONS OQ-36. Tests: 313 (32 Postgres-backed).
+
 ## Phase 1 · group 3 (DP 1.27–1.28) — 2026-11-26
 - 1.27 `sr.evidence.collection_log.run_collection`: one `collection_items` row per retrieved item (kept, duplicate
   -> original, excluded_irrelevant, excluded_after_asof, excluded_restricted with placeholder only, pending_review,
@@ -14,7 +22,7 @@
   AC-10/AC-57).
 - Migration `0003_collection_links.sql`: collection items immutable except links (OQ-34). Earnings and policy
   pipelines now link their collection items to the event.
-- Tests: 304 (31 Postgres-backed). OPEN_QUESTIONS OQ-32..35.
+- Tests: 304 (31 Postgres-backed). OPEN_QUESTIONS OQ-32..35 (defaults confirmed by user 2026-11-26).
 
 ## Phase 1 · group 2 (DP 1.07–1.08) — 2026-11-26
 - 1.07 earnings: `sr.events.factcheck` (canonical metrics, GAAP/non-GAAP EPS as separate fields, value must be

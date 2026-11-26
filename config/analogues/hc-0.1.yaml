@@ -1,0 +1,22 @@
+# Historical analogue retrieval hc-0.1 (D-38; DC §3.4a; AC-38). Reference only — never a direction signal.
+query_version: hc-0.1
+min_cases: 8
+# Relaxation ladder (DC §3.4a: drop_subtype -> peer_group(同模板公司) -> sector_wide). Each level lists which
+# match keys still apply and which companies are eligible (OQ-36 documents the interpretation).
+levels:
+  - name: none            # exact keys, same company
+    keys: [event_type, subtype, industry_template, market_state, surprise_bucket]
+    companies: same_company
+  - name: drop_subtype
+    keys: [event_type, industry_template, market_state, surprise_bucket]
+    companies: same_company
+  - name: peer_group      # companies on the same industry template
+    keys: [event_type, industry_template, market_state, surprise_bucket]
+    companies: same_template
+  - name: sector_wide     # any company in the same sector; market state and surprise bucket dropped
+    keys: [event_type]
+    companies: same_sector
+surprise_buckets:         # earnings only: from expectation_comparison of the headline metric
+  pct_tolerance: 1.0      # |difference_pct| <= 1% -> in_line
+  pp_tolerance: 0.5       # |difference_pp| <= 0.5pp -> in_line
+earnings_event_type: earnings_guidance
