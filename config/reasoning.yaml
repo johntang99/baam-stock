@@ -1,0 +1,12 @@
+# Step 2 reasoning trace + citation rules (DP 1.28; D-46; DC market_explanation / reasoning_trace)
+version: reasoning-0.1
+cited_sections: [observed_facts, possible_drivers, counter_evidence]   # must cite >= 1 evidence or quote
+uncited_note: "（无引用，校验拒绝，已移入未解释）"
+timing:
+  coarse_precisions: [day, unknown]       # cannot order against an intraday move (DC §1)
+  later_than_move_note: "消息晚于异动开始，不能作为此前走势的原因"
+  imprecise_note: "来源时间精度不足，无法判定先后"
+  earlier_note: "证据可用时间早于异动开始，可作为候选原因"
+status_rules:
+  supported_min_drivers: 1                # >= 1 timing-valid, cited driver and no unexplained residual => supported
+  residual_unexplained_pp: 0.25           # |relative move| above this with no valid driver => counted as unexplained

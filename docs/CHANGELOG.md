@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## Phase 1 · group 3 (DP 1.27–1.28) — 2026-11-26
+- 1.27 `sr.evidence.collection_log.run_collection`: one `collection_items` row per retrieved item (kept, duplicate
+  -> original, excluded_irrelevant, excluded_after_asof, excluded_restricted with placeholder only, pending_review,
+  fetch_failed); per-source poll status; market data as one summary item; counts and channel x category matrix
+  computed from the items; replaying the same window gives the same item set (AC-56).
+  `sr.evidence.classify` (rules: channel incl. peer_company, category, relevance, mentions).
+  Sources report per-document fetch failures (`FetchFailure`).
+- 1.28 `sr.events.citations` (every observed fact / driver / counter statement must cite existing evidence or
+  quotes, optionally scoped to the run; otherwise moved to unexplained) and `sr.events.reasoning.build`
+  (deterministic market_fact / evidence_fact / timing_check / gap / conclusion steps; LLM-drafted statements are
+  citation-checked first; drivers whose evidence is not provably earlier than the move become concurrent events,
+  AC-10/AC-57).
+- Migration `0003_collection_links.sql`: collection items immutable except links (OQ-34). Earnings and policy
+  pipelines now link their collection items to the event.
+- Tests: 304 (31 Postgres-backed). OPEN_QUESTIONS OQ-32..35.
+
 ## Phase 1 · group 2 (DP 1.07–1.08) — 2026-11-26
 - 1.07 earnings: `sr.events.factcheck` (canonical metrics, GAAP/non-GAAP EPS as separate fields, value must be
   printed in its own quote with the right scale, unit normalisation, conflict withholding),
@@ -11,7 +27,7 @@
   `effective`, per-security flash analyses with market-baseline-only hand-off).
 - `sr.events.readiness` (AC-12 rule from `config/readiness.yaml`), idempotent `ensure_milestone`,
   forward-only `set_progress_status`; configs `earnings.yaml`, `policy_templates.yaml`, `readiness.yaml`.
-- Tests: 295 (25 Postgres-backed). OPEN_QUESTIONS OQ-28..31.
+- Tests: 295 (25 Postgres-backed). OPEN_QUESTIONS OQ-28..31 (defaults confirmed by user 2026-11-26).
 
 ## Phase 1 · group 1 (DP 1.03–1.06) — 2026-11-26
 - **contract-0.7.2** (OQ-23, approved by user 2026-11-26): evidence/event entities tabled; new `llm_calls`; DC §3.4b.
