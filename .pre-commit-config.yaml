@@ -1,0 +1,30 @@
+# Local hooks only (no remote hook repos); run `uv run pre-commit install` once if you use pre-commit.
+repos:
+  - repo: local
+    hooks:
+      - id: ruff
+        name: ruff check
+        entry: uv run ruff check --fix
+        language: system
+        types: [python]
+      - id: ruff-format
+        name: ruff format
+        entry: uv run ruff format
+        language: system
+        types: [python]
+      - id: seed-up-to-date
+        name: seed SQL matches config
+        entry: uv run python scripts/gen_seed.py --check
+        language: system
+        pass_filenames: false
+        files: ^(config/|scripts/gen_seed\.py|supabase/seed/)
+      - id: contracts-examples
+        name: contract examples validate
+        entry: pnpm --filter contracts test
+        language: system
+        pass_filenames: false
+        files: ^packages/contracts/
+      - id: no-secrets-env
+        name: forbid committing .env files
+        entry: bash -c 'for f in "$@"; do case "$f" in *.env|.env|.env.*) [ "$f" = ".env.example" ] || { echo "refusing to commit $f"; exit 1; };; esac; done' --
+        language: system

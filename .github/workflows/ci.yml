@@ -1,0 +1,68 @@
+# CI for baam-stock (DP P0-H): ruff, mypy, pytest, tsc, eslint, contract examples, migration replay.
+# Takes effect once the GitHub repository exists; nothing here calls paid APIs or needs secrets.
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+      - run: uv sync --frozen
+      - run: uv run ruff check .
+      - run: uv run ruff format --check .
+      - run: uv run mypy services/py/sr scripts
+      - run: uv run python scripts/gen_seed.py --check
+      - run: uv run python scripts/make_fixture.py
+      - run: uv run pytest services/py/tests -q
+      - run: uv run python scripts/validate_sample.py --fixture data/fixtures/nvda_2026-12-01_1s.parquet
+
+  node:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm --filter contracts test        # examples/*.json pass their schemas
+      - run: pnpm -r build                       # contracts TS generation + Next.js build
+      - run: pnpm -r lint
+      - run: pnpm -r typecheck
+      - name: generated TS types are committed and current
+        run: git diff --exit-code packages/contracts/generated
+
+  contracts-python-gen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.12"
+      - run: uv sync --frozen
+      - run: bash packages/contracts/scripts/gen-py.sh
+      - name: generated pydantic models are committed and current
+        run: git diff --exit-code services/py/sr/contracts/_gen
+
+  migrations:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17
+        env:
+          POSTGRES_PASSWORD: postgres
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postgres" --health-interval 5s --health-timeout 5s --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: replay migrations + seeds + SQL assertions on a fresh database
+        run: scripts/db_replay.sh postgresql://postgres:postgres@127.0.0.1:5432/postgres

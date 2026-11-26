@@ -1,56 +1,28 @@
-# 美股短期研究与预测系统 · 设计交付包（plan-0.7 / contract-0.7 / phases-0.7）
+# baam-stock
 
+US-stock short-term research and forecast system: first NVDA, AMD, AVGO and MU, then TSM and MRVL.
+It is for **research and validation only**. It does not execute trades and is not investment advice.
+All sample data in this repository is **synthetic (虚构)**.
 
-lsof -ti:3200 | xargs kill -9
-rm -rf .next
-pnpm run dev
+**Status:** Phase 0 is done (contracts, database, calendar, quote rules, scoring, features). Phase 1 starts after the
+decision table and data vendors are confirmed (see `docs/OPEN_QUESTIONS.md`).
 
-pnpm install
-
-
-
-pnpm run build
-
-git add .
-git commit -m "Update: describe your changes"
-git pull --rebase
-git push
-
-
-
-
-
-
-交给 VS Code 中 Claude Code 的完整资料。阅读顺序：
-
-1. `BUILDING_MASTER_PLAN.md` — 每日预测时刻表与"预测与实际对照如何改进模型"（§2.1、§7.1）、版本核对、冲突与缺项、架构、存储选型、**决策表（§9）**、**追溯表（§10）**、一致性核对（§11）
-2. `DATA_CONTRACT.md` — 实体关系、字段表、状态转换、API/任务接口、幂等与版本、三个连贯 JSON 示例
-3. `DEVELOPMENT_PHASES.md` — Phase 0–4 的工作项、文件、验证命令、验收用例 AC-01～AC-61，**结尾为首轮 Claude Code 执行指令（仅 Phase 0）**
-4. `prototype/` — 可交互原型（模拟数据），打开方式见 `prototype/README.md`
-5. `MODEL_IMPROVEMENT_MEMO.md` — 模型改进建议（§5 六项已并入上述文档）
-6. `USER_GUIDE.md` — 用户使用指南与产品命名候选
-7. `PPT_COVERAGE_REVIEW.md` — PPT 蓝图逐项覆盖核对（0.4 起 96 项全部覆盖）
-
-## 文件清单
-| 路径 | 用途 |
+| Path | What |
 |---|---|
-| `README.md` | 本文件 |
-| `CLAUDE_CODE_START.md` | **开工说明**：可否开始的核对、你的准备步骤、粘贴给 Claude Code 的首轮指令（项目 baam-stock，根目录 clients/baam-stock） |
-| `BUILDING_MASTER_PLAN.md` | 总体方案 |
-| `DATA_CONTRACT.md` | 数据契约 |
-| `DEVELOPMENT_PHASES.md` | 开发阶段 + 首轮指令 |
-| `MODEL_IMPROVEMENT_MEMO.md` | 模型改进建议 |
-| `USER_GUIDE.md` | 用户指南与命名候选 |
-| `PPT_COVERAGE_REVIEW.md` | PPT 蓝图覆盖核对 |
-| `business/` | 商业计划与数据成本对比（另一条工作线产出） |
-| `prototype/index.html` | 原型入口 |
-| `prototype/styles.css` | 样式 |
-| `prototype/data.js` | 共享模拟数据 |
-| `prototype/app.js` | 原型逻辑（市场页面与研发后台） |
-| `prototype/ops.js` | 运营页面（一键运行、新公司接入、数据源、任务与告警） |
-| `prototype/README.md` | 原型说明 |
+| `docs/` | Design: `BUILDING_MASTER_PLAN.md` (MP), `DATA_CONTRACT.md` (DC, contract-0.7.1), `DEVELOPMENT_PHASES.md` (DP), plus CHANGELOG, OPEN_QUESTIONS, data_procurement |
+| `packages/contracts/` | JSON Schemas (single source of truth), examples, generated TS types |
+| `services/py/sr/` | Python services (uv): calendar, marketdata, benchmark, labels, eval, features |
+| `supabase/` | migrations, generated seeds, SQL assertions |
+| `config/` | Versioned parameters (decision-table defaults); `decisions.yaml` mirrors MP §9 |
+| `scripts/` | seed generator, synthetic fixture, sample validation, DB replay |
+| `apps/web/` | Next.js shell (pages start in Phase 2) |
+| `prototype/` | Clickable HTML mock (reference only) |
 
-## 交给 Claude Code 的方式
-按 `CLAUDE_CODE_START.md` 操作（推荐）。或：新建空仓库 → 把本包放到 `docs/`（原型放到仓库根 `prototype/`）→ 将 `DEVELOPMENT_PHASES.md` 末尾「首轮 Claude Code 执行指令」整段粘贴给 Claude Code。
-
-所有示例数值、模型成绩均为虚构，不代表实际行情或验证结果；本系统面向研究与验证，不接入交易执行。
+## Quick start
+```bash
+pnpm install && uv sync
+make check                                   # lint, mypy, pytest, contract examples, build
+make validate                                # synthetic fixture + availability report
+scripts/db_replay.sh "$DATABASE_URL_ADMIN"   # migrations + seeds + SQL assertions on a fresh database
+```
+Secrets live only in `.env.local` (gitignored); see `.env.example` for the variable names.
