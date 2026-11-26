@@ -1320,134 +1320,9 @@
   ],
   "dropped": [
     {
-      "metric": "data_center_revenue",
-      "quote": "Data Center $35,580 $30,771 $18,404 Up 16% Up 93%",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "Blackwell sales were led by large cloud service providers which represented approximately 50% of our Data Center revenue.",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "revenue_growth_yoy_pct",
-      "quote": "Networking revenue was $3.0 billion, down 9% from a year ago and down 3% sequentially.",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Gaming 2,544 3,279 2,865 Down 22% Down 11%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue_growth_yoy_pct",
-      "quote": "Gaming revenue for the fourth quarter was down 11% from a year ago and down 22% sequentially, due to limited supply for both Blackwell and Ada GPUs.",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue_growth_qoq_pct",
-      "quote": "Gaming revenue for the fourth quarter was down 11% from a year ago and down 22% sequentially, due to limited supply for both Blackwell and Ada GPUs.",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Professional Visualization 511 486 463 Up 5% Up 10%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Automotive 570 449 281 Up 27% Up 103%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Compute & Networking $36,036 $31,036 $17,898 Up 16% Up 101%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Graphics 3,295 4,046 4,205 Down 19% Down 22%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Compute & Networking $116,193 $47,405 Up 145%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Graphics 14,304 13,517 Up 6%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "GAAP gross profit $ 28,723 $ 26,156 $ 16,791 $ 97,858 $ 44,301",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "GAAP gross profit $ 28,723 $ 26,156 $ 16,791 $ 97,858 $ 44,301",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $4,689 $4,287 $3,176 Up 9% Up 48%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $3,378 $3,046 $2,210 Up 11% Up 53%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $16,405 $11,329 Up 45%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $11,716 $7,825 Up 50%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $24,034 $21,869 $13,615 Up 10% Up 77%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $25,516 $23,276 $14,749 Up 10% Up 73%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $81,453 $32,972 Up 147%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $86,789 $37,134 Up 134%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $22,091 $19,309 $12,285 Up 14% Up 80%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $22,066 $20,010 $12,839 Up 10% Up 72%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $72,880 $29,760 Up 145%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $74,265 $32,312 Up 130%",
-      "reason": "value_not_in_quote"
     },
     {
       "metric": "other",
@@ -1493,16 +1368,6 @@
       "metric": "other",
       "quote": "Purchase commitments and obligations for inventory and manufacturing capacity were $30.8 billion",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow $ 15,519 $ 16,787 $ 11,217 $ 60,724 $ 26,947",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow $ 15,519 $ 16,787 $ 11,217 $ 60,724 $ 26,947",
-      "reason": "value_not_in_quote"
     },
     {
       "metric": "other",

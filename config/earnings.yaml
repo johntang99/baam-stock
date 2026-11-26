@@ -1,5 +1,5 @@
 # Earnings extraction + deterministic checks + expectation comparison (DP 1.07; S2§3.3; AC-09)
-version: earnings-0.1
+version: earnings-0.2   # 0.2: header scales from the document, signed losses, compact $0.8B (OQ-39)
 event_category: earnings_guidance
 # canonical metric <- aliases (lower-case, spaces/underscores normalised). basis_in_name: metric name carries the
 # accounting basis (AC-09: GAAP and non-GAAP EPS are separate fields).
@@ -36,6 +36,27 @@ checks:
   pct_range_by_metric:              # growth rates can exceed 100% (e.g. +221% y/y)
     revenue_growth_yoy_pct: [-100, 100000]
     revenue_growth_qoq_pct: [-100, 100000]
+  # OQ-39: a table row's scale is usually printed once, in the table header above it ("(In millions, except per
+  # share data)"). When the quote has no scale word, the nearest header before the quote in the document decides.
+  document_header_scale:
+    lookback_chars: 8000            # how far above the quote to look for a header
+    # header pattern -> unit it implies; the nearest match wins, so "in thousands" above a row blocks USD_million
+    patterns:                       # listed first = wins a tie at the same position
+      - {regex: '\bin\s+(?:millions|billions|thousands)\s+of\s+new\s+taiwan', unit: TWD}
+      - {regex: '\bin\s+millions\b', unit: USD_million}
+      - {regex: '\bin\s+billions\b', unit: USD_billion}
+      - {regex: '\bin\s+thousands\b', unit: USD_thousand}
+      - {regex: '\(\s*\$\s*m\s*\)', unit: USD_million}
+      - {regex: '\(\s*\$\s*b\s*\)', unit: USD_billion}
+  # OQ-39: documents print losses and declines as positive numbers next to a word ("operating loss was $134
+  # million", "down 8%"). A negative value is accepted for these metrics when the printed number matches its
+  # magnitude and the quote carries one of the cue words. Revenue and the like can never be negative.
+  signed_metrics: [net_income, operating_income, eps_gaap, eps_non_gaap, operating_cash_flow, free_cash_flow,
+                   operating_margin_pct, revenue_growth_yoy_pct, revenue_growth_qoq_pct]
+  # USD units only: a stated non-USD currency, or a number printed with a foreign prefix ("NT$1,134.10"), is
+  # rejected. NT$ has no unit yet (TSMC onboarding, OQ-39).
+  foreign_currency_prefixes: [NT]
+  negative_cues: [loss, losses, down, decrease, decreased, decline, declined, lower, used in, outflow, deficit]
 headline_metrics: [eps_non_gaap, revenue, eps_gaap]   # first one with a fact becomes expectation_comparison
 expectations:
   types: [analyst_consensus]       # D-16; company_guidance is compared separately in Phase 2

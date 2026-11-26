@@ -32,12 +32,36 @@
     },
     {
       "metric": "net_income",
+      "value": -1875000000.0,
+      "unit": "USD",
+      "period": "FY2024Q3",
+      "basis": "gaap",
+      "quote": "GAAP net loss of $1,875 million for the third quarter (1)",
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
       "value": 6120000000.0,
       "unit": "USD",
       "period": "FY2024Q3",
       "basis": "non_gaap",
       "quote": "Non-GAAP net income of $6,120 million for the third quarter",
       "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "eps_gaap",
+      "value": -0.4,
+      "unit": "USD_per_share",
+      "period": "FY2024Q3",
+      "basis": "gaap",
+      "quote": "GAAP diluted loss per share of $0.40 for the third quarter",
+      "direction": "decrease",
       "scope": "company",
       "certainty": "reported",
       "segment": null
@@ -115,6 +139,18 @@
       "segment": null
     },
     {
+      "metric": "revenue",
+      "value": 7274000000.0,
+      "unit": "USD",
+      "period": "FY2024Q3",
+      "basis": "gaap",
+      "quote": "Semiconductor solutions $ 7,274 56 % $ 6,941 78 % +5 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Semiconductor solutions"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 5.0,
       "unit": "pct",
@@ -125,6 +161,18 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Semiconductor solutions"
+    },
+    {
+      "metric": "revenue",
+      "value": 5798000000.0,
+      "unit": "USD",
+      "period": "FY2024Q3",
+      "basis": "gaap",
+      "quote": "Infrastructure software 5,798 44 1,935 22 +200 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Infrastructure software"
     },
     {
       "metric": "revenue_growth_yoy_pct",

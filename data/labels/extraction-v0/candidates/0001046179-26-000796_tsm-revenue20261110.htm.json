@@ -150,29 +150,34 @@
   ],
   "dropped": [
     {
+      "metric": "revenue",
+      "quote": "On a consolidated basis, revenue for October 2026 was approximately NT$586.89 billion",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
       "metric": "other",
       "quote": "an increase of 14.7 percent from September 2026",
       "reason": "unknown_metric"
     },
     {
       "metric": "revenue",
-      "quote": "Net Revenue 586,890 511,857 14.7 367,473 59.7 4,485,617 3,130,437 43.3",
-      "reason": "value_not_in_quote"
+      "quote": "Revenue for January through October 2026 totaled NT$4,485.62 billion",
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "revenue",
       "quote": "Net Revenue 586,890 511,857 14.7 367,473 59.7 4,485,617 3,130,437 43.3",
-      "reason": "value_not_in_quote"
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "revenue",
       "quote": "Net Revenue 586,890 511,857 14.7 367,473 59.7 4,485,617 3,130,437 43.3",
-      "reason": "value_not_in_quote"
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "revenue",
-      "quote": "On a consolidated basis, revenue for October 2026 was approximately NT$586.89 billion",
-      "reason": "conflicting_values"
+      "quote": "Net Revenue 586,890 511,857 14.7 367,473 59.7 4,485,617 3,130,437 43.3",
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "revenue_growth_yoy_pct",

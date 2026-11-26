@@ -427,6 +427,18 @@
       "segment": "Gaming"
     },
     {
+      "metric": "revenue_growth_yoy_pct",
+      "value": -59.0,
+      "unit": "pct",
+      "period": "FY2024Q4",
+      "basis": "gaap",
+      "quote": "Gaming segment revenue in the quarter was $563 million, down 59% year-over-year",
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Gaming"
+    },
+    {
       "metric": "revenue",
       "value": 2600000000.0,
       "unit": "USD",
@@ -482,6 +494,18 @@
       "basis": null,
       "quote": "At the mid-point of the revenue range, this represents year-over-year growth of approximately 30% and a sequential decline of approximately 7%.",
       "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": -7.0,
+      "unit": "pct",
+      "period": "FY2025Q1",
+      "basis": null,
+      "quote": "At the mid-point of the revenue range, this represents year-over-year growth of approximately 30% and a sequential decline of approximately 7%.",
+      "direction": "decrease",
       "scope": "company",
       "certainty": "guidance",
       "segment": null

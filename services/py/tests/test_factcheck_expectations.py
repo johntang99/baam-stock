@@ -238,3 +238,101 @@ def test_growth_rates_may_exceed_100pct() -> None:
     )
     assert [f.metric for f in rep.accepted] == ["revenue_growth_yoy_pct"]
     assert rep.rejected[0]["reason"] == "pct_out_of_range"
+
+
+# --- earnings-0.2 (OQ-39): document header scales, signed losses, compact scales. SYNTHETIC document. ---
+DOC = (
+    "Synthetic Corp (synthetic) condensed statement\n"
+    "(In millions, except per share data)\n"
+    "Revenue $ 7,436 $ 6,819\n"
+    "Operating expenses 3,296 1,738\n" + "filler " * 200 + "\nShare data (in thousands)\n"
+    "Weighted shares 2,431 2,410\n"
+)
+
+
+def doc_fact(metric: str, value: float, unit: str, quote: str) -> ExtractedFact:
+    i = DOC.index(quote)
+    return ExtractedFact(
+        metric, value, unit, None, None, None, quote, {"char_start": i, "char_end": i + len(quote)}
+    )
+
+
+def test_table_row_scale_comes_from_the_header_above_it() -> None:
+    f = doc_fact("operating_expenses", 3296, "USD_million", "Operating expenses 3,296 1,738")
+    assert check_facts((f,), None).rejected[0]["reason"] == "value_not_in_quote"  # no document: strict
+    rep = check_facts((f,), None, DOC)
+    assert rep.accepted[0].value == 3296e6 and rep.rejected == []
+
+
+def test_header_scale_must_match_the_unit() -> None:
+    wrong = doc_fact("revenue", 7436, "USD_billion", "Revenue $ 7,436 $ 6,819")
+    assert check_facts((wrong,), None, DOC).rejected[0]["reason"] == "value_not_in_quote"
+    # the nearest header wins: "in thousands" sits between "in millions" and this row
+    shares = doc_fact("revenue", 2431, "USD_million", "Weighted shares 2,431 2,410")
+    assert check_facts((shares,), None, DOC).rejected[0]["reason"] == "value_not_in_quote"
+
+
+def test_header_beyond_lookback_does_not_count() -> None:
+    far = "(in millions)\n" + "x" * 9000 + "\nRevenue $ 7,436\n"
+    f = ExtractedFact("revenue", 7436, "USD_million", None, None, None, "Revenue $ 7,436", {})
+    assert check_facts((f,), None, far).rejected[0]["reason"] == "value_not_in_quote"
+
+
+def test_losses_and_declines_may_be_signed() -> None:
+    rep = check_facts(
+        (
+            seg_fact("operating_income", -134, "USD_million", "operating loss was $134 million"),
+            seg_fact("revenue_growth_yoy_pct", -8, "pct", "revenue was $3.7 billion, down 8% year-over-year"),
+        ),
+        None,
+    )
+    assert [f.value for f in rep.accepted] == [-134e6, -8] and rep.rejected == []
+
+
+def test_sign_flip_needs_a_cue_and_a_signed_metric() -> None:
+    rep = check_facts(
+        (
+            seg_fact("operating_income", -134, "USD_million", "operating income was $134 million"),  # no cue
+            seg_fact("revenue", -3.7, "USD_billion", "revenue was $3.7 billion, down 8%"),  # revenue >= 0
+        ),
+        None,
+    )
+    assert rep.accepted == [] and [r["reason"] for r in rep.rejected] == ["value_not_in_quote"] * 2
+
+
+def test_compact_scale_suffix() -> None:
+    rep = check_facts((seg_fact("revenue", 0.8, "USD_billion", "Gaming $0.8B"),), None)
+    assert rep.accepted[0].value == 0.8e9
+    rep2 = check_facts((seg_fact("revenue", 0.8, "USD", "Gaming $0.8B"),), None)  # $0.8B is not $0.80
+    assert rep2.accepted == []
+
+
+def test_foreign_currency_is_not_usd() -> None:
+    nt = ExtractedFact(
+        "revenue",
+        1134.10,
+        "USD_billion",
+        "TWD",
+        "Q1 2026",
+        None,
+        "First quarter consolidated revenue was NT$1,134.10 billion",
+        {},
+    )
+    assert check_facts((nt,), None).rejected[0]["reason"] == "currency_not_supported:TWD"
+    mislabelled = seg_fact("eps_gaap", 14.45, "USD_per_share", "diluted EPS of NT$14.45 per share")
+    mislabelled = ExtractedFact(**{**mislabelled.__dict__, "basis": "gaap"})
+    assert check_facts((mislabelled,), None).rejected[0]["reason"] == "value_not_in_quote"
+    adr = ExtractedFact(
+        "eps",
+        2.32,
+        "USD_per_share",
+        "USD",
+        "Q1 2026",
+        "gaap",
+        "diluted EPS of NT$14.45, or US$2.32 per ADR unit",
+        {},
+    )
+    assert check_facts((adr,), None).accepted[0].value == 2.32
+    twd_table = "(In Millions of New Taiwan Dollars)\nNet Revenue 514,806 467,580\n"
+    row = ExtractedFact("revenue", 514806, "USD_million", None, None, None, "Net Revenue 514,806 467,580", {})
+    assert check_facts((row,), None, twd_table).rejected[0]["reason"] == "value_not_in_quote"

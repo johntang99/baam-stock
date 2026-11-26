@@ -150,29 +150,34 @@
   ],
   "dropped": [
     {
+      "metric": "revenue",
+      "quote": "On a consolidated basis, revenue for May 2026 was approximately NT$416.98 billion, an increase of 1.5 percent from April 2026 and an increase of 30.1 percent from May 2025.",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
       "metric": "other",
       "quote": "an increase of 1.5 percent from April 2026",
       "reason": "unknown_metric"
     },
     {
       "metric": "revenue",
-      "quote": "Net Revenue 416,975 410,726 1.5 320,516 30.1 1,961,804 1,509,337 30.0",
-      "reason": "value_not_in_quote"
+      "quote": "Revenue for January through May 2026 totaled NT$1,961.80 billion, an increase of 30.0 percent compared to the same period in 2025.",
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "revenue",
       "quote": "Net Revenue 416,975 410,726 1.5 320,516 30.1 1,961,804 1,509,337 30.0",
-      "reason": "value_not_in_quote"
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "revenue",
       "quote": "Net Revenue 416,975 410,726 1.5 320,516 30.1 1,961,804 1,509,337 30.0",
-      "reason": "value_not_in_quote"
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "revenue",
-      "quote": "On a consolidated basis, revenue for May 2026 was approximately NT$416.98 billion, an increase of 1.5 percent from April 2026 and an increase of 30.1 percent from May 2025.",
-      "reason": "conflicting_values"
+      "quote": "Net Revenue 416,975 410,726 1.5 320,516 30.1 1,961,804 1,509,337 30.0",
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "revenue_growth_yoy_pct",

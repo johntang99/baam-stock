@@ -1,6 +1,7 @@
 """Deterministic checks on LLM-extracted facts (DP 1.07 确定性核对; D-32). The LLM proposes, code verifies:
 1. canonical metric (aliases from config; EPS must state GAAP vs non-GAAP -> separate fields, AC-09)
-2. the value equals a number printed in the fact's own quote, with a matching scale word
+2. the value equals a number printed in the fact's own quote, with a matching scale word — or, for a table row,
+   the scale of the nearest table header above the quote in the document; losses/declines may be signed (OQ-39)
 3. unit normalisation (USD billions -> USD) and range checks (percentages)
 4. conflicts: the same metric/basis/period with different values in one document -> both withheld for review
 """
@@ -15,8 +16,8 @@ from sr.config import load
 from sr.llm.base import ExtractedFact
 
 _NUM = re.compile(
-    r"(?P<neg>\()?\$?\s?(?P<num>-?\d{1,3}(?:,\d{3})+(?:\.\d+)?|-?\d+(?:\.\d+)?)\)?\s*"
-    r"(?P<scale>billion|bn|million|mn|percent|%)?(?![a-z])",
+    r"(?P<neg>\()?(?P<cur>[A-Z]{2})?\$?\s?(?P<num>-?\d{1,3}(?:,\d{3})+(?:\.\d+)?|-?\d+(?:\.\d+)?)\)?\s*"
+    r"(?P<scale>billion|bn|b|million|mn|m|percent|%)?(?![a-z])",
     re.IGNORECASE,
 )
 _PERIOD = [  # quarters, in the company's own fiscal labelling ("third quarter of 2026" -> FY2026Q3)
@@ -97,18 +98,55 @@ def normalize_period(period: str | None) -> str | None:
     return f"FY{m2.group('y')}" if m2 else None
 
 
-def _numbers(quote: str) -> list[tuple[float, str]]:
+def _numbers(quote: str, foreign: frozenset[str] = frozenset()) -> list[tuple[float, str]]:
+    """(value, scale word) for each number; numbers printed with a foreign currency prefix are left out."""
     out = []
     for m in _NUM.finditer(quote):
+        if m.group("cur") and m.group("cur").upper() in foreign:
+            continue
         v = float(m.group("num").replace(",", ""))
         out.append((-v if m.group("neg") else v, (m.group("scale") or "").lower()))
     return out
 
 
-def check_facts(facts: tuple[ExtractedFact, ...], default_period: str | None) -> CheckReport:
+def _quote_pos(text: str, quote: str, span: dict[str, int] | None) -> int:
+    """Where the quote sits in the document: its span if that is exact, else the first occurrence (-1 if absent)."""
+    if span:
+        a, b = span.get("char_start"), span.get("char_end")
+        if a is not None and b is not None and text[a:b] == quote:
+            return int(a)
+    return text.find(quote)
+
+
+def header_scale_unit(text: str | None, quote: str, span: dict[str, int] | None) -> str | None:
+    """Unit implied by the nearest table-header scale ("in millions", "($B)") above the quote, within the lookback."""
+    if not text:
+        return None
+    pos = _quote_pos(text, quote, span)
+    if pos < 0:
+        return None
+    hc = load("earnings")["checks"].get("document_header_scale")
+    if not hc:
+        return None
+    window = text[max(0, pos - int(hc["lookback_chars"])) : pos + len(quote)]
+    best: tuple[int, str] | None = None
+    for p in hc["patterns"]:
+        for m in re.finditer(p["regex"], window, re.IGNORECASE):
+            if best is None or m.start() > best[0]:
+                best = (m.start(), str(p["unit"]))
+    return best[1] if best else None
+
+
+def check_facts(
+    facts: tuple[ExtractedFact, ...], default_period: str | None, text: str | None = None
+) -> CheckReport:
+    """`text` is the full document; without it only scale words inside the quote count (stricter)."""
     cfg = load("earnings")
     units, tol = cfg["units"], float(cfg["checks"]["value_tolerance"])
     lo, hi = cfg["checks"]["pct_range"]
+    signed = set(cfg["checks"].get("signed_metrics", []))
+    cues = [c.lower() for c in cfg["checks"].get("negative_cues", [])]
+    foreign = frozenset(c.upper() for c in cfg["checks"].get("foreign_currency_prefixes", []))
     rep = CheckReport()
     seen: dict[tuple[str, str | None, str | None, str | None], CheckedFact] = {}
     conflicts: set[tuple[str, str | None, str | None, str | None]] = set()
@@ -121,17 +159,29 @@ def check_facts(facts: tuple[ExtractedFact, ...], default_period: str | None) ->
             rep.rejected.append({"metric": name, "quote": f.quote, "reason": f"unit_not_allowed:{f.unit}"})
             continue
         u = units[f.unit]
+        is_usd = str(u["unit"]).startswith("USD")
+        if is_usd and f.currency and f.currency.upper() != "USD":
+            rep.rejected.append(
+                {"metric": name, "quote": f.quote, "reason": f"currency_not_supported:{f.currency}"}
+            )
+            continue
         if f.value is not None:
             scales = {s.lower() for s in u["scale"]}
             # the number must be printed in the quote with the scale word its unit implies (none for per-share/USD);
             # a table row may carry the scale once in its header, e.g. "Net income ($M) $2,428 …"
             markers = [m.lower() for m in cfg.get("quote_scale_markers", {}).get(f.unit, [])]
             header_scaled = any(m in f.quote.lower() for m in markers)
+            if not header_scaled and scales and f.unit != "pct":
+                header_scaled = header_scale_unit(text, f.quote, f.span) == f.unit
+            # a loss or decline printed as a positive number next to a cue word ("operating loss was $134 million")
+            targets = [f.value]
+            if f.value < 0 and name in signed and any(c in f.quote.lower() for c in cues):
+                targets.append(-f.value)
             ok = any(
-                abs(v - f.value) <= tol
-                and ((sc in scales) if scales else sc == "")
-                or (abs(v - f.value) <= tol and header_scaled and sc == "")
-                for v, sc in _numbers(f.quote)
+                abs(v - t) <= tol
+                and (((sc in scales) if scales else sc == "") or (header_scaled and sc == ""))
+                for v, sc in _numbers(f.quote, foreign if is_usd else frozenset())
+                for t in targets
             )
             if not ok:
                 rep.rejected.append({"metric": name, "quote": f.quote, "reason": "value_not_in_quote"})

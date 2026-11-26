@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## Phase 1 · 1.18 checker earnings-0.2 + drafts rechecked — 2026-11-26
+- Fact checker (OQ-39): table-row scales from the nearest document header above the quote; signed losses and
+  declines with a cue word; compact "$0.8B"; USD units reject non-USD currency and NT$-printed numbers.
+  `check_facts(..., text)` now takes the document text in the earnings pipeline, the eval and the prelabel
+  script; `rule_version` earnings-0.2.
+- All 291 Claude drafts rebuilt from saved candidates (no API calls): 1,416 → 2,121 kept facts; value-not-in-
+  quote drops 880 → 62; 99 NT$ facts now dropped as `currency_not_supported`. Tests: 333.
+
 ## Phase 1 · 1.18 Claude drafts for the full corpus — 2026-11-26
 - Claude (extract-0.3) drafted the remaining 271 documents: 271 calls, all succeeded; 1,546,196 in /
   580,874 out tokens, ~$17.80 at list price; every call logged to `llm_calls`. All 291 drafts are now Claude's

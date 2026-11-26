@@ -384,19 +384,9 @@
   ],
   "dropped": [
     {
-      "metric": "net_income",
-      "quote": "GAAP net loss of $1,875 million for the third quarter (1)",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "Adjusted EBITDA of $8,223 million for the third quarter, or 63 percent of revenue",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "eps_gaap",
-      "quote": "GAAP diluted loss per share of $0.40 for the third quarter",
-      "reason": "value_not_in_quote"
     },
     {
       "metric": "other",
@@ -412,16 +402,6 @@
       "metric": "other",
       "quote": "We expect revenue from AI to be $12 billion for fiscal year 2024",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Semiconductor solutions $ 7,274 56 % $ 6,941 78 % +5 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Infrastructure software 5,798 44 1,935 22 +200 %",
-      "reason": "value_not_in_quote"
     },
     {
       "metric": "other",

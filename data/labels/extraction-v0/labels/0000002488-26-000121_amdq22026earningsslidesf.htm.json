@@ -7,18 +7,6 @@
   "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
   "facts": [
     {
-      "metric": "revenue",
-      "value": 11500000000.0,
-      "unit": "USD",
-      "period": "FY2026Q2",
-      "basis": "gaap",
-      "quote": "Record revenue of $11.5 billion, up 50% y/y",
-      "direction": "increase",
-      "scope": "company",
-      "certainty": "reported",
-      "segment": null
-    },
-    {
       "metric": "revenue_growth_yoy_pct",
       "value": 50.0,
       "unit": "pct",
@@ -43,12 +31,48 @@
       "segment": null
     },
     {
+      "metric": "gross_profit",
+      "value": 6203000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Gross Profit $6,203 $3,059 Up 103% $5,416 Up 15%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "gross_margin_pct",
       "value": 54.0,
       "unit": "pct",
       "period": "FY2026Q2",
       "basis": "gaap",
       "quote": "Gross Margin 54% 40% Up 14 ppts 53% Up 1 ppt",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 4213000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Operating Expenses $4,213 $3,193 Up 32% $3,940 Up 7%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 1990000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Operating Income (Loss) $1,990 ($134) Up 1,585% $1,476 Up 35%",
       "direction": "increase",
       "scope": "company",
       "certainty": "reported",
@@ -67,12 +91,36 @@
       "segment": null
     },
     {
+      "metric": "net_income",
+      "value": 2297000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Net Income $2,297 $872 Up 163% $1,383 Up 66%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "eps_gaap",
       "value": 1.38,
       "unit": "USD_per_share",
       "period": "FY2026Q2",
       "basis": "gaap",
       "quote": "Diluted Earnings Per Share $1.38 $0.54 Up 156% $0.84 Up 64%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 6488000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "non_gaap",
+      "quote": "Gross Profit $6,488 $3,326 Up 95% $5,685 Up 14%",
       "direction": "increase",
       "scope": "company",
       "certainty": "reported",
@@ -91,12 +139,48 @@
       "segment": null
     },
     {
+      "metric": "operating_expenses",
+      "value": 3394000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "non_gaap",
+      "quote": "Operating Expenses $3,394 $2,429 Up 40% $3,145 Up 8%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 3094000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "non_gaap",
+      "quote": "Operating Income $3,094 $897 Up 245% $2,540 Up 22%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "operating_margin_pct",
       "value": 27.0,
       "unit": "pct",
       "period": "FY2026Q2",
       "basis": "non_gaap",
       "quote": "Operating Margin 27% 12% Up 15 ppts 25% Up 2 ppts",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 2760000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "non_gaap",
+      "quote": "Net Income $2,760 $781 Up 253% $2,265 Up 22%",
       "direction": "increase",
       "scope": "company",
       "certainty": "reported",
@@ -115,6 +199,18 @@
       "segment": null
     },
     {
+      "metric": "data_center_revenue",
+      "value": 6718000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Data Center Net Revenue 6,718 3,240 Up 107% 5,775 Up 16%",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Data Center"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 107.0,
       "unit": "pct",
@@ -125,6 +221,90 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Data Center"
+    },
+    {
+      "metric": "operating_income",
+      "value": 2103000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Operating Income (Loss) 2,103 (155) Up 1,457% 1,599 Up 32%",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue",
+      "value": 3841000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Client & Gaming Net Revenue 3,841 3,621 Up 6% 3,605 Up 7%",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Client & Gaming"
+    },
+    {
+      "metric": "operating_income",
+      "value": 582000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Operating Income 582 767 Down 24% 575 Up 1%",
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Client & Gaming"
+    },
+    {
+      "metric": "revenue",
+      "value": 977000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Embedded Net Revenue 977 824 Up 19% 873 Up 12%",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Embedded"
+    },
+    {
+      "metric": "operating_income",
+      "value": 386000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Operating Income 386 275 Up 40% 338 Up 14%",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Embedded"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 2366000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "GAAP net cash provided by operating activities of continuing operations $ 2,366",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 1558000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 1,558",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
     },
     {
       "metric": "revenue_outlook",

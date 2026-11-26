@@ -168,6 +168,21 @@
   ],
   "dropped": [
     {
+      "metric": "revenue",
+      "quote": "Third quarter consolidated revenue was NT$1,494.24 billion",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
+      "metric": "net_income",
+      "quote": "net income was NT$763.06 billion",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "with diluted earnings per share of NT$29.43",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
       "metric": "other",
       "quote": "Approved the distribution of a NT$9.0 per share cash dividend for the third quarter of 2026",
       "reason": "unknown_metric"
@@ -191,6 +206,11 @@
       "metric": "other",
       "quote": "OpenAI Group PBC in an amount not to exceed US$500 million to acquire OpenAI’s preferred stock",
       "reason": "unknown_metric"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "Basic EPS (NT$) 78.75",
+      "reason": "currency_not_supported:TWD"
     }
   ],
   "validation_notes": []

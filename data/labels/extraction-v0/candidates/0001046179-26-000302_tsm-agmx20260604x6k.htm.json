@@ -58,6 +58,22 @@
       "segment": null
     }
   ],
-  "dropped": [],
+  "dropped": [
+    {
+      "metric": "revenue",
+      "quote": "Consolidated revenue totaled NT$3,809.05 billion",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
+      "metric": "net_income",
+      "quote": "net income was NT$1,717.88 billion",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "with diluted earnings per share of NT$66.25",
+      "reason": "currency_not_supported:TWD"
+    }
+  ],
   "validation_notes": []
 }

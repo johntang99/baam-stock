@@ -595,6 +595,18 @@
       "segment": "Embedded"
     },
     {
+      "metric": "revenue_growth_yoy_pct",
+      "value": -3.0,
+      "unit": "pct",
+      "period": "FY2025",
+      "basis": null,
+      "quote": "For the full year 2025, Embedded segment revenue was $3.5 billion, down 3% year-over-year",
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Embedded"
+    },
+    {
       "metric": "revenue_outlook",
       "value": 9800000000.0,
       "unit": "USD",
@@ -626,6 +638,18 @@
       "basis": null,
       "quote": "The mid-point of the revenue range represents year-over-year growth of approximately 32% and a sequential decline of approximately 5%.",
       "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "segment": null
+    },
+    {
+      "metric": "revenue_growth_qoq_pct",
+      "value": -5.0,
+      "unit": "pct",
+      "period": "FY2026Q1",
+      "basis": null,
+      "quote": "The mid-point of the revenue range represents year-over-year growth of approximately 32% and a sequential decline of approximately 5%.",
+      "direction": "decrease",
       "scope": "company",
       "certainty": "guidance",
       "segment": null

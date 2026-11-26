@@ -659,46 +659,6 @@
       "reason": "unknown_metric"
     },
     {
-      "metric": "data_center_revenue",
-      "quote": "Data center $ 2,171.5 $ 1,832.7 $ 1,490.5 46 % 18 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Communications and other 567.8 585.1 515.6 10 % (3) %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross profit 1,455.6 1,260.8 1,010.6 2,716.4 1,963.0",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Non-GAAP gross profit $ 1,614.0 $ 1,423.8 $ 1,191.4 $ 3,037.8 $ 2,324.9",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Total operating expenses 995.9 921.4 720.5 1,917.3 1,402.3",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Non-GAAP operating expenses $ 610.8 $ 576.9 $ 492.6 $ 1,187.7 $ 978.8",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 459.7 339.4 290.1 799.1 560.7",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Non-GAAP operating income $ 1,003.2 $ 846.9 $ 698.8 $ 1,850.1 $ 1,346.1",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "For the second quarter of fiscal 2027, a non-GAAP tax rate of 11.0% has been applied to the non-GAAP financial results.",
       "reason": "unknown_metric"

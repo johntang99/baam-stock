@@ -551,36 +551,6 @@
       "reason": "unknown_metric"
     },
     {
-      "metric": "gross_profit",
-      "quote": "Gross margin 3,348 2,737 (35) 3,441 2,826 37",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin 3,348 2,737 (35) 3,441 2,826 37",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses 1,174 1,215 1,093 1,047 1,081 992",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses 1,174 1,215 1,093 1,047 1,081 992",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income (loss) 2,174 1,522 (1,128) 2,394 1,745 (955)",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income (loss) 2,174 1,522 (1,128) 2,394 1,745 (955)",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "Investments in capital expenditures, net (2) were $3.13 billion for the first quarter of 2025",
       "reason": "unknown_metric"

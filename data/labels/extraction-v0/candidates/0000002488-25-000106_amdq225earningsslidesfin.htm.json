@@ -690,94 +690,9 @@
   ],
   "dropped": [
     {
-      "metric": "revenue",
-      "quote": "Revenue $7,685 $5,835 Up 32% $7,438 Up 3%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross Profit $3,059 $2,864 Up 7% $3,736 Down 18%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross Profit $3,326 $3,101 Up 7% $3,992 Down 17%",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "Decrease due to the $800 million inventory and related charges associated with US export control restrictions on Instinct MI308 products",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating Expenses $3,193 $2,595 Up 23% $2,930 Up 9%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating Expenses $2,429 $1,837 Up 32% $2,213 Up 10%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income (Loss) $(134) $269 Down 150% $806 Down 117%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income $897 $1,264 Down 29% $1,779 Down 50%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net Income $872 $265 Up 229% $709 Up 23%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net Income $781 $1,126 Down 31% $1,566 Down 50%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "data_center_revenue",
-      "quote": "Data Center Net Revenue $3,240 $2,834 Up 14% $3,674 Down 12%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income (Loss) $(155) $743 Down 121% $932 Down 117%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Client & Gaming Net Revenue $3,621 $2,140 Up 69% $2,941 Up 23%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income $767 $166 Up 362% $496 Up 55%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Embedded Net Revenue $824 $861 Down 4% $823 Flat",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income $275 $345 Down 20% $328 Down 16%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "GAAP net cash provided by operating activities of continuing operations $ 1,462",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow $ 1,180",
-      "reason": "value_not_in_quote"
     },
     {
       "metric": "other",
@@ -803,6 +718,11 @@
       "metric": "other",
       "quote": "Effective Tax Rate ~13% of pre-tax income",
       "reason": "unknown_metric"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Record second quarter revenue of $7.7 billion increased 32% y/y",
+      "reason": "conflicting_values"
     },
     {
       "metric": "gross_margin_pct",

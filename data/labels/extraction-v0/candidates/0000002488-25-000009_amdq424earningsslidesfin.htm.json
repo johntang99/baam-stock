@@ -1050,171 +1050,6 @@
   ],
   "dropped": [
     {
-      "metric": "revenue",
-      "quote": "Revenue $7,658 $6,168 Up 24% $6,819 Up 12%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross Profit $3,882 $2,911 Up 33% $3,419 Up 14%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating Expenses $3,022 $2,575 Up 17% $2,709 Up 12%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income $871 $342 Up 155% $724 Up 20%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net Income $482 $667 Down 28% $771 Down 37%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross Profit $4,140 $3,133 Up 32% $3,657 Up 13%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating Expenses $2,125 $1,727 Up 23% $1,956 Up 9%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income $2,026 $1,412 Up 43% $1,715 Up 18%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net Income $1,777 $1,249 Up 42% $1,504 Up 18%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "data_center_revenue",
-      "quote": "Data Center Net Revenue $3,859 $2,282 Up 69% $3,549 Up 9%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income $1,157 $666 Up 74% $1,041 Up 11%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Client Net Revenue $2,313 $1,461 Up 58% $1,881 Up 23%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income $446 $55 Up 711% $276 Up 62%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Gaming Net Revenue $563 $1,368 Down 59% $462 Up 22%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income $50 $224 Down 78% $12 Up 317%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Embedded Net Revenue $923 $1,057 Down 13% $927 Flat",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Revenue $25,785 $22,680 Up 14%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross Profit $12,725 $10,460 Up 22%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating Expenses $10,873 $10,093 Up 8%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income $1,900 $401 Up 374%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net Income $1,641 $854 Up 92%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross Profit $13,759 $11,436 Up 20%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating Expenses $7,669 $6,616 Up 16%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income $6,138 $4,854 Up 26%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net Income $5,420 $4,302 Up 26%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "data_center_revenue",
-      "quote": "Data Center Net Revenue $12,579 $6,496 Up 94%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income $3,482 $1,267 Up 175%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Client Net Revenue $7,054 $4,651 Up 52%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income (Loss) $897 ($46) Up 2,050%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Gaming Net Revenue $2,595 $6,212 Down 58%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income $290 $971 Down 70%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Embedded Net Revenue $3,557 $5,321 Down 33%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income $1,421 $2,628 Down 46%",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "Cash, Cash Equivalents and Short-term Investments $5,132 $4,544 Up 13%",
       "reason": "unknown_metric"
@@ -1233,6 +1068,16 @@
       "metric": "other",
       "quote": "Effective Tax Rate ~13% of pre-tax income",
       "reason": "unknown_metric"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Record revenue of $7.7 billion increased 24% y/y",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Record revenue of $25.8 billion increased 14% y/y",
+      "reason": "conflicting_values"
     }
   ],
   "validation_notes": []

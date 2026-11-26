@@ -875,16 +875,6 @@
       "reason": "unknown_metric"
     },
     {
-      "metric": "revenue_growth_yoy_pct",
-      "quote": "Gaming segment revenue in the quarter was $563 million, down 59% year-over-year",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue_growth_qoq_pct",
-      "quote": "At the mid-point of the revenue range, this represents year-over-year growth of approximately 30% and a sequential decline of approximately 7%.",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "operating_cash_flow",
       "quote": "GAAP net cash provided by operating activities $ 1,299 $ 628 $ 381 $ 3,041 $ 1,667",
       "reason": "value_not_in_quote"

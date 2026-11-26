@@ -564,56 +564,6 @@
   ],
   "dropped": [
     {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $8,408 $7,621 $5,413 10 % 55 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $63,734 $53,536 $28,440 19 % 124 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $59,688 $58,321 $26,422 2 % 126 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $8,232 $7,449 $5,361 11 % 54 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $63,956 $53,783 $28,541 19 % 124 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $53,954 $45,548 $24,763 18 % 118 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "GAAP gross profit $ 72,142 $ 61,157 $ 33,853 $ 133,299 $ 60,521",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Non-GAAP gross profit $ 72,188 $ 61,232 $ 33,902 $ 133,420 $ 60,695",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "GAAP net cash provided by operating activities $ 24,077 $ 50,344 $ 15,365 $ 74,421 $ 42,779",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow $ 21,341 $ 48,554 $ 13,450 $ 69,895 $ 39,584",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "During the second quarter of fiscal 2027, NVIDIA returned approximately $26.0 billion to shareholders in the form of shares repurchased and cash dividends.",
       "reason": "unknown_metric"

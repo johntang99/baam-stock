@@ -636,11 +636,6 @@
   ],
   "dropped": [
     {
-      "metric": "operating_income",
-      "quote": "operating loss was $134 million",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "For the quarter, these restrictions led to approximately $800 million in inventory and related charges.",
       "reason": "unknown_metric"
@@ -648,11 +643,6 @@
     {
       "metric": "operating_income",
       "quote": "Data Center Segment $ (155) $ 932 $ 743 $ 777 $ 1,284",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue_growth_yoy_pct",
-      "quote": "Embedded segment revenue was $824 million, down 4% year-over-year",
       "reason": "value_not_in_quote"
     },
     {

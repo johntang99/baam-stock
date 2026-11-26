@@ -5,54 +5,5 @@
   "fiscal_period": null,
   "label_status": "draft",
   "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
-  "facts": [
-    {
-      "metric": "revenue",
-      "value": 1494240000000.0,
-      "unit": "USD",
-      "period": "FY2026Q3",
-      "basis": null,
-      "quote": "Third quarter consolidated revenue was NT$1,494.24 billion",
-      "direction": "none",
-      "scope": "company",
-      "certainty": "reported",
-      "segment": null
-    },
-    {
-      "metric": "net_income",
-      "value": 763060000000.0,
-      "unit": "USD",
-      "period": "FY2026Q3",
-      "basis": null,
-      "quote": "net income was NT$763.06 billion",
-      "direction": "none",
-      "scope": "company",
-      "certainty": "reported",
-      "segment": null
-    },
-    {
-      "metric": "eps_gaap",
-      "value": 29.43,
-      "unit": "USD_per_share",
-      "period": "FY2026Q3",
-      "basis": "gaap",
-      "quote": "with diluted earnings per share of NT$29.43",
-      "direction": "none",
-      "scope": "company",
-      "certainty": "reported",
-      "segment": null
-    },
-    {
-      "metric": "eps_gaap",
-      "value": 78.75,
-      "unit": "USD_per_share",
-      "period": null,
-      "basis": "gaap",
-      "quote": "Basic EPS (NT$) 78.75",
-      "direction": "none",
-      "scope": "company",
-      "certainty": "reported",
-      "segment": null
-    }
-  ]
+  "facts": []
 }

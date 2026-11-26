@@ -258,14 +258,34 @@
   ],
   "dropped": [
     {
+      "metric": "revenue",
+      "quote": "First quarter consolidated revenue was NT$1,134.10 billion",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
+      "metric": "net_income",
+      "quote": "net income was NT$572.48 billion",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "with diluted earnings per share of NT$22.08",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "Basic EPS (NT$) 22.08",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
       "metric": "gross_profit",
       "quote": "Gross profit 751,295,421",
-      "reason": "value_not_in_quote"
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "operating_income",
       "quote": "Income from operations 658,966,142",
-      "reason": "value_not_in_quote"
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "other",

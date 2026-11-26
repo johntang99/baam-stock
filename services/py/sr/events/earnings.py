@@ -70,7 +70,7 @@ def process_earnings_document(
         rep = CheckReport()
         gaps.append(f"extraction_{ext.status}")
     else:
-        rep = check_facts(ext.facts, fiscal_period)
+        rep = check_facts(ext.facts, fiscal_period, text)
         gaps += rep.gaps
     if not rep.accepted:
         return EarningsOutcome(

@@ -1245,11 +1245,6 @@
       "reason": "unknown_metric"
     },
     {
-      "metric": "revenue_growth_yoy_pct",
-      "quote": "For the full year 2025, Embedded segment revenue was $3.5 billion, down 3% year-over-year",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "operating_income",
       "quote": "Data Center Segment $ 1,752 $ 1,074 $ 1,157 $ 3,603 $ 3,482",
       "reason": "value_not_in_quote"
@@ -1267,11 +1262,6 @@
     {
       "metric": "operating_income",
       "quote": "Embedded Segment 357 283 362 1,243 1,421",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue_growth_qoq_pct",
-      "quote": "The mid-point of the revenue range represents year-over-year growth of approximately 32% and a sequential decline of approximately 5%.",
       "reason": "value_not_in_quote"
     },
     {

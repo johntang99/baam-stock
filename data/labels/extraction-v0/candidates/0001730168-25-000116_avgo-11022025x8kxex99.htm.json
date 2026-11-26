@@ -725,16 +725,6 @@
       "reason": "unknown_metric"
     },
     {
-      "metric": "revenue",
-      "quote": "Semiconductor solutions $ 11,072 61 % $ 8,230 59 % +35 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Infrastructure software 6,943 39 5,824 41 +19 %",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "The Company’s cash and cash equivalents at the end of the fiscal quarter were $16,178 million, compared to $10,718 million at the end of the prior fiscal quarter.",
       "reason": "unknown_metric"
@@ -745,64 +735,9 @@
       "reason": "unknown_metric"
     },
     {
-      "metric": "revenue",
-      "quote": "Net revenue $ 63,887 $ 51,574 +24 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $ 23,126 $ 5,895 +292 % $ 33,728 $ 23,733 +42 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $ 23,126 $ 5,895 +292 % $ 33,728 $ 23,733 +42 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "Cash flow from operations $ 27,537 $ 19,962 +38 %",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "free_cash_flow",
-      "quote": "Free cash flow $ 26,914 $ 19,414 +39 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Semiconductor solutions $ 36,858 58 % $ 30,096 58 % +22 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Infrastructure software 27,029 42 21,478 42 +26 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin 12,249 10,703 9,002 43,294 32,509",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin on non-GAAP basis $ 14,039 $ 12,499 $ 10,814 $ 50,245 $ 39,459",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 7,508 5,887 4,627 25,484 13,463",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income on non-GAAP basis $ 11,921 $ 10,455 $ 8,811 $ 41,997 $ 30,736",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Total operating expenses 4,741 4,816 4,375 17,810 19,046",
-      "reason": "value_not_in_quote"
+      "quote": "free cash flow was strong at $26.9 billion",
+      "reason": "conflicting_values"
     }
   ],
   "validation_notes": []

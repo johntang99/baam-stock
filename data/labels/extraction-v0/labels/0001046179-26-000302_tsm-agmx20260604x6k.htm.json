@@ -5,42 +5,5 @@
   "fiscal_period": null,
   "label_status": "draft",
   "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
-  "facts": [
-    {
-      "metric": "revenue",
-      "value": 3809050000000.0,
-      "unit": "USD",
-      "period": "FY2025",
-      "basis": "gaap",
-      "quote": "Consolidated revenue totaled NT$3,809.05 billion",
-      "direction": "none",
-      "scope": "company",
-      "certainty": "reported",
-      "segment": null
-    },
-    {
-      "metric": "net_income",
-      "value": 1717880000000.0,
-      "unit": "USD",
-      "period": "FY2025",
-      "basis": "gaap",
-      "quote": "net income was NT$1,717.88 billion",
-      "direction": "none",
-      "scope": "company",
-      "certainty": "reported",
-      "segment": null
-    },
-    {
-      "metric": "eps_gaap",
-      "value": 66.25,
-      "unit": "USD_per_share",
-      "period": "FY2025",
-      "basis": "gaap",
-      "quote": "with diluted earnings per share of NT$66.25",
-      "direction": "none",
-      "scope": "company",
-      "certainty": "reported",
-      "segment": null
-    }
-  ]
+  "facts": []
 }

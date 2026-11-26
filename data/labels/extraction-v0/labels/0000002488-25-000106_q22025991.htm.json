@@ -79,6 +79,18 @@
       "segment": null
     },
     {
+      "metric": "operating_income",
+      "value": -134000000.0,
+      "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "gaap",
+      "quote": "operating loss was $134 million",
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "net_income",
       "value": 872000000.0,
       "unit": "USD",
@@ -262,6 +274,18 @@
       "metric": "revenue",
       "value": 824000000.0,
       "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "gaap",
+      "quote": "Embedded segment revenue was $824 million, down 4% year-over-year",
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Embedded"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": -4.0,
+      "unit": "pct",
       "period": "FY2025Q2",
       "basis": "gaap",
       "quote": "Embedded segment revenue was $824 million, down 4% year-over-year",

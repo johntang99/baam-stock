@@ -510,36 +510,6 @@
   ],
   "dropped": [
     {
-      "metric": "gross_profit",
-      "quote": "Down 3% $5,577 Up 45% $3,736 $5,416 Gross Profit",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Down 3% $5,855 Up 42% $3,992 $5,685 Gross Profit",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Up 3% $3,825 Up 34% $2,930 $3,940 Operating Expenses",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Up 5% $3,001 Up 42% $2,213 $3,145 Operating Expenses",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Down 16% $1,752 Up 83% $806 $1,476 Operating Income",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Down 11% $2,854 Up 43% $1,779 $2,540 Operating Income",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "operating_margin_pct",
       "quote": "Down 3 ppts 17%Up 3 ppts 11%14%Operating Margin",
       "reason": "value_not_in_quote"
@@ -547,16 +517,6 @@
     {
       "metric": "operating_margin_pct",
       "quote": "Down 3 ppts 28%Up 1 ppt 24%25%Operating Margin",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Down 8% $1,511 Up 95% $709 $1,383 Net Income",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Down 10% $2,519 Up 45% $1,566 $2,265 Net Income",
       "reason": "value_not_in_quote"
     },
     {

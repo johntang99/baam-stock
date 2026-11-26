@@ -80,6 +80,30 @@
     },
     {
       "metric": "revenue",
+      "value": 37869000000.0,
+      "unit": "USD",
+      "period": "FY2027Q1",
+      "basis": null,
+      "quote": "Hyperscale 37,869 33,814 17,599 12 % 115 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Hyperscale"
+    },
+    {
+      "metric": "revenue",
+      "value": 37377000000.0,
+      "unit": "USD",
+      "period": "FY2027Q1",
+      "basis": null,
+      "quote": "AI Clouds, Industrial, & Enterprise 37,377 28,500 21,513 31 % 74 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "AI Clouds, Industrial, & Enterprise"
+    },
+    {
+      "metric": "revenue",
       "value": 6400000000.0,
       "unit": "USD",
       "period": "FY2027Q1",
@@ -101,6 +125,30 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Edge Computing"
+    },
+    {
+      "metric": "revenue",
+      "value": 74550000000.0,
+      "unit": "USD",
+      "period": "FY2027Q1",
+      "basis": null,
+      "quote": "Compute & Networking $74,550 $61,651 $39,589 21 % 88 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Compute & Networking"
+    },
+    {
+      "metric": "revenue",
+      "value": 7065000000.0,
+      "unit": "USD",
+      "period": "FY2027Q1",
+      "basis": null,
+      "quote": "Graphics 7,065 6,476 4,473 9 % 58 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Graphics"
     },
     {
       "metric": "revenue",
@@ -151,6 +199,102 @@
       "segment": null
     },
     {
+      "metric": "gross_profit",
+      "value": 61157000000.0,
+      "unit": "USD",
+      "period": "FY2027Q1",
+      "basis": "gaap",
+      "quote": "GAAP gross profit $ 61,157 $ 51,093 $ 26,668",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 61232000000.0,
+      "unit": "USD",
+      "period": "FY2027Q1",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP gross profit $ 61,232 $ 51,140 $ 26,794",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 7621000000.0,
+      "unit": "USD",
+      "period": "FY2027Q1",
+      "basis": "gaap",
+      "quote": "Operating expenses $7,621 $6,794 $5,030 12 % 52 %",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 7449000000.0,
+      "unit": "USD",
+      "period": "FY2027Q1",
+      "basis": "non_gaap",
+      "quote": "Operating expenses $7,449 $6,666 $4,993 12 % 49 %",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 53536000000.0,
+      "unit": "USD",
+      "period": "FY2027Q1",
+      "basis": "gaap",
+      "quote": "Operating income $53,536 $44,299 $21,638 21 % 147 %",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 53783000000.0,
+      "unit": "USD",
+      "period": "FY2027Q1",
+      "basis": "non_gaap",
+      "quote": "Operating income $53,783 $44,474 $21,801 21 % 147 %",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 58321000000.0,
+      "unit": "USD",
+      "period": "FY2027Q1",
+      "basis": "gaap",
+      "quote": "Net income $58,321 $42,960 $18,775 36 % 211 %",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 45548000000.0,
+      "unit": "USD",
+      "period": "FY2027Q1",
+      "basis": "non_gaap",
+      "quote": "Net income $45,548 $38,969 $19,094 17 % 139 %",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "eps_gaap",
       "value": 2.39,
       "unit": "USD_per_share",
@@ -182,6 +326,18 @@
       "basis": "gaap",
       "quote": "Cash flow from operating activities was $50.3 billion, up from $27.4 billion a year ago and up from $36.2 billion a quarter ago.",
       "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 48554000000.0,
+      "unit": "USD",
+      "period": "FY2027Q1",
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 48,554 $ 34,902 $ 26,135",
+      "direction": "none",
       "scope": "company",
       "certainty": "reported",
       "segment": null

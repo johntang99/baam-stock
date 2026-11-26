@@ -528,74 +528,9 @@
   ],
   "dropped": [
     {
-      "metric": "revenue",
-      "quote": "Revenue $ 115,844 $ 57,006 $ 293,681 $ 147,811",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Revenue $ 115,844 $ 57,006 $ 293,681 $ 147,811",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Revenue $ 115,844 $ 57,006 $ 293,681 $ 147,811",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross profit 86,676 41,849 219,976 102,370",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross profit 86,676 41,849 219,976 102,370",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Total operating expenses 9,156 5,839 25,185 16,282",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "Research and development 7,454 4,705 20,829 12,985",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 77,520 36,010 194,791 86,088",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 77,520 36,010 194,791 86,088",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $ 65,287 $ 31,910 $ 183,297 $ 77,107",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $ 65,287 $ 31,910 $ 183,297 $ 77,107",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $ 65,287 $ 31,910 $ 183,297 $ 77,107",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "Net cash provided by operating activities 48,253 23,750 122,675 66,530",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "Net cash provided by operating activities 48,253 23,750 122,675 66,530",
-      "reason": "value_not_in_quote"
     },
     {
       "metric": "other",
@@ -611,26 +546,6 @@
       "metric": "other",
       "quote": "Dividends paid (6,026) (243) (12,316) (732)",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "revenue",
-      "quote": "United States $ 72,899 $ 39,177 $ 196,742 $ 97,759",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Taiwan 30,295 13,751 69,286 30,301",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "China (including Hong Kong) 11,050 2,973 23,480 16,617",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Other 1,600 1,105 4,173 3,134",
-      "reason": "value_not_in_quote"
     },
     {
       "metric": "other",

@@ -924,89 +924,9 @@
   ],
   "dropped": [
     {
-      "metric": "revenue",
-      "quote": "Revenue $30,040 $26,044 $13,507 Up 15% Up 122%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "GAAP gross profit $ 22,574 $ 20,406 $ 9,462 $ 42,979 $ 14,110",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Non-GAAP gross profit $ 22,729 $ 20,560 $ 9,614 $ 43,288 $ 14,417",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $3,932 $3,497 $2,662 Up 12% Up 48%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $2,792 $2,501 $1,838 Up 12% Up 52%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $18,642 $16,909 $6,800 Up 10% Up 174%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $19,937 $18,059 $7,776 Up 10% Up 156%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $16,599 $14,881 $6,188 Up 12% Up 168%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $16,952 $15,238 $6,740 Up 11% Up 152%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Compute & Networking $26,446 $22,675 $10,402 Up 17% Up 154%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Graphics 3,594 3,369 3,105 Up 7% Up 16%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "data_center_revenue",
-      "quote": "Data Center $26,272 $22,563 $10,323 Up 16% Up 154%",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "Cloud service providers represented roughly 45% of our Data Center revenue",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Gaming 2,880 2,647 2,486 Up 9% Up 16%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Professional Visualization 454 427 379 Up 6% Up 20%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Automotive 346 329 253 Up 5% Up 37%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "OEM and Other 88 78 66 Up 13% Up 33%",
-      "reason": "value_not_in_quote"
     },
     {
       "metric": "other",
@@ -1044,11 +964,6 @@
       "reason": "unknown_metric"
     },
     {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow $ 13,483 $ 14,936 $ 6,048 $ 28,418 $ 8,691",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "We utilized cash of $7.4 billion towards shareholder returns, including $7.2 billion in share repurchases and $246 million in cash dividends.",
       "reason": "unknown_metric"
@@ -1059,16 +974,6 @@
       "reason": "unknown_metric"
     },
     {
-      "metric": "net_income",
-      "quote": "GAAP net income $ 16,599 $ 14,881 $ 6,188 $ 31,480 $ 8,232",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow $ 13,483 $ 14,936 $ 6,048 $ 28,418 $ 8,691",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "GAAP and non-GAAP other income and expense are expected to be an income of approximately $350 million",
       "reason": "unknown_metric"
@@ -1077,6 +982,16 @@
       "metric": "other",
       "quote": "GAAP and non-GAAP tax rates are expected to be 17%, plus or minus 1%, excluding any discrete items.",
       "reason": "unknown_metric"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Revenue was a record $30.0 billion, up 122% from a year ago and up 15% sequentially.",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "free_cash_flow",
+      "quote": "Free cash flow $ 13,483 $ 14,936 $ 6,048 $ 28,418 $ 8,691",
+      "reason": "conflicting_values"
     }
   ],
   "validation_notes": []

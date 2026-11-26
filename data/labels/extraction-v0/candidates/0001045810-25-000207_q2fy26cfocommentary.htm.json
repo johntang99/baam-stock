@@ -1266,94 +1266,14 @@
   ],
   "dropped": [
     {
-      "metric": "revenue_growth_qoq_pct",
-      "quote": "Sequentially, compute revenue declined 1%, driven by a $4.0 billion reduction in H20 sales.",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "Sequentially, compute revenue declined 1%, driven by a $4.0 billion reduction in H20 sales.",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Gaming 4,287 3,763 2,880 14 % 49 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Professional Visualization 601 509 454 18 % 32 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Automotive 586 567 346 3 % 69 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "OEM and Other 173 111 88 56 % 97 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Compute & Networking $41,331 $39,589 $26,446 4 % 56 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Graphics 5,412 4,473 3,594 21 % 51 %",
-      "reason": "value_not_in_quote"
     },
     {
       "metric": "other",
       "quote": "led by large cloud service providers, which represented approximately 50% of Data Center revenue",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $26,422 $18,775 $16,599 41 % 59 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $25,783 $19,894 $16,952 30 % 52 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $5,413 $5,030 $3,932 8 % 38 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $3,795 $3,583 $2,792 6 % 36 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $28,440 $21,638 $18,642 31 % 53 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $30,165 $23,275 $19,937 30 % 51 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "GAAP gross profit $ 33,853 $ 26,668 $ 22,574 $ 60,521 $ 42,979",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Non-GAAP gross profit $ 33,960 $ 26,858 $ 22,729 $ 60,818 $ 43,288",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow $ 13,450 $ 26,135 $ 13,483 $ 39,584 $ 28,418",
-      "reason": "value_not_in_quote"
     },
     {
       "metric": "other",
@@ -1429,16 +1349,6 @@
       "metric": "other",
       "quote": "On August 26, 2025, our Board of Directors approved an additional $60.0 billion to our share repurchase authorization, without expiration.",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "net_income",
-      "quote": "GAAP net income $ 26,422 $ 18,775 $ 16,599 $ 45,197 $ 31,480",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow $ 13,450 $ 26,135 $ 13,483 $ 39,584 $ 28,418",
-      "reason": "value_not_in_quote"
     },
     {
       "metric": "other",

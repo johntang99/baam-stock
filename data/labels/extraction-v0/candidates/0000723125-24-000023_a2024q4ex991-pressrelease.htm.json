@@ -749,46 +749,6 @@
       "reason": "unknown_metric"
     },
     {
-      "metric": "gross_profit",
-      "quote": "Gross margin 2,737 1,832 (435) 2,826 1,917 (366)",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin 2,737 1,832 (435) 2,826 1,917 (366)",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses 1,215 1,113 1,037 1,081 976 842",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses 1,215 1,113 1,037 1,081 976 842",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income (loss) 1,522 719 (1,472) 1,745 941 (1,208)",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income (loss) 1,522 719 (1,472) 1,745 941 (1,208)",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income (loss) 1,304 (5,745) 1,935 (4,819)",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income (loss) 1,304 (5,745) 1,935 (4,819)",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "Investments in capital expenditures, net (2) were $3.08 billion for the fourth quarter of 2024 and $8.12 billion for the full year of 2024",
       "reason": "unknown_metric"

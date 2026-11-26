@@ -762,16 +762,6 @@
   ],
   "dropped": [
     {
-      "metric": "revenue_growth_yoy_pct",
-      "quote": "Gaming revenue was $647 million, down 30% year-over-year",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue_growth_yoy_pct",
-      "quote": "Embedded segment revenue in the quarter was $823 million, down 3% year-over-year",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "inclusive of approximately $800 million in charges for inventory and related reserves due to the new export controls",
       "reason": "unknown_metric"

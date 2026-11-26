@@ -199,6 +199,42 @@
       "segment": "AI semiconductor"
     },
     {
+      "metric": "net_income",
+      "value": 13088000000.0,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": "gaap",
+      "quote": "Net income $ 13,088 $ 4,140 +216 % $ 16,372 $ 8,404 +95 %",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 16372000000.0,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": "non_gaap",
+      "quote": "Net income $ 13,088 $ 4,140 +216 % $ 16,372 $ 8,404 +95 %",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 20839000000.0,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": "gaap",
+      "quote": "Semiconductor solutions $ 20,839 70 % $ 9,166 57 % +127 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Semiconductor solutions"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 127.0,
       "unit": "pct",
@@ -211,6 +247,18 @@
       "segment": "Semiconductor solutions"
     },
     {
+      "metric": "revenue",
+      "value": 8752000000.0,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": "gaap",
+      "quote": "Infrastructure software 8,752 30 6,786 43 +29 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Infrastructure software"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 29.0,
       "unit": "pct",
@@ -221,6 +269,54 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Infrastructure software"
+    },
+    {
+      "metric": "gross_profit",
+      "value": 20456000000.0,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": "gaap",
+      "quote": "Gross margin on GAAP basis $ 20,456",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 22191000000.0,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": "non_gaap",
+      "quote": "Gross margin on non-GAAP basis $ 22,191",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 4501000000.0,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": "gaap",
+      "quote": "Total operating expenses on GAAP basis $ 4,501",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 2096000000.0,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": "non_gaap",
+      "quote": "Total operating expenses on non-GAAP basis $ 2,096",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
     }
   ]
 }

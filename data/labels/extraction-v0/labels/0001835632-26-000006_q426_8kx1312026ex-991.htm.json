@@ -127,6 +127,42 @@
       "segment": null
     },
     {
+      "metric": "gross_profit",
+      "value": 1147900000.0,
+      "unit": "USD",
+      "period": "FY2026Q4",
+      "basis": "gaap",
+      "quote": "Gross profit 1,147.9 1,069.8 917.4 4,180.7 2,382.2",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 743500000.0,
+      "unit": "USD",
+      "period": "FY2026Q4",
+      "basis": "gaap",
+      "quote": "Total operating expenses 743.5 712.0 682.2 2,857.8 3,102.5",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 404400000.0,
+      "unit": "USD",
+      "period": "FY2026Q4",
+      "basis": "gaap",
+      "quote": "Operating income (loss) 404.4 357.8 235.2 1,322.9 (720.3)",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "operating_margin_pct",
       "value": 18.2,
       "unit": "pct",
@@ -151,6 +187,18 @@
       "segment": null
     },
     {
+      "metric": "data_center_revenue",
+      "value": 1651300000.0,
+      "unit": "USD",
+      "period": "FY2026Q4",
+      "basis": "gaap",
+      "quote": "Data center $ 1,651.3 $ 1,517.9 $ 1,365.8 21 % 9 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Data center"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 21.0,
       "unit": "pct",
@@ -173,6 +221,18 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Data center"
+    },
+    {
+      "metric": "revenue",
+      "value": 567400000.0,
+      "unit": "USD",
+      "period": "FY2026Q4",
+      "basis": "gaap",
+      "quote": "Communications and other 567.4 556.6 451.6 26 % 2 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Communications and other"
     },
     {
       "metric": "revenue_growth_yoy_pct",
@@ -277,6 +337,18 @@
       "period": "FY2026",
       "basis": "non_gaap",
       "quote": "Non-GAAP gross margin 59.0 % 59.7 % 60.1 % 59.5 % 61.0 %",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 1750500000.0,
+      "unit": "USD",
+      "period": "FY2026",
+      "basis": "gaap",
+      "quote": "Net cash provided by operating activities 373.7 514.0 1,750.5 1,681.2",
       "direction": "none",
       "scope": "company",
       "certainty": "reported",

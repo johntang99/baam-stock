@@ -252,6 +252,26 @@
       "reason": "unknown_metric"
     },
     {
+      "metric": "eps_gaap",
+      "quote": "Basic earnings per share $ 22.08 $ 13.95",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "Basic earnings per share $ 22.08 $ 13.95",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "Diluted earnings per share $ 22.08 $ 13.94",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "Diluted earnings per share $ 22.08 $ 13.94",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
       "metric": "other",
       "quote": "Cash dividends per share (NT$) $ 7.00",
       "reason": "unknown_metric"
@@ -260,11 +280,6 @@
       "metric": "other",
       "quote": "the Company’s ten largest customers accounted for 84% , 84% and 84% of accounts receivable, respectively",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "eps_gaap",
-      "quote": "Basic earnings per share $ 22.08 $ 13.95",
-      "reason": "conflicting_values"
     }
   ],
   "validation_notes": []

@@ -564,56 +564,6 @@
   ],
   "dropped": [
     {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $9.2 $8.4 $5.8 9 % 57 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $8.8 $8.2 $5.8 7 % 52 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $77.5 $63.7 $36.0 22 % 115 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $77.9 $64.0 $36.1 22 % 116 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $65.3 $59.7 $31.9 9 % 105 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $64.9 $54.0 $31.0 20 % 109 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross profit 86,676 41,849 219,976 102,370",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Revenue $ 115,844 $ 57,006 $ 293,681 $ 147,811",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "Net cash provided by operating activities 48,253 23,750 122,675 66,530",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow $ 43,777 $ 21,341 $ 22,089 $ 113,672 $ 61,675",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "During the third quarter of fiscal 2027, NVIDIA returned $28.1 billion to shareholders in the form of shares repurchased and cash dividends.",
       "reason": "unknown_metric"

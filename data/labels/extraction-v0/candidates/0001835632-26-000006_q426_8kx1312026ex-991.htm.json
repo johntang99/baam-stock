@@ -690,31 +690,6 @@
   ],
   "dropped": [
     {
-      "metric": "gross_profit",
-      "quote": "Gross profit 1,147.9 1,069.8 917.4 4,180.7 2,382.2",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Total operating expenses 743.5 712.0 682.2 2,857.8 3,102.5",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income (loss) 404.4 357.8 235.2 1,322.9 (720.3)",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "data_center_revenue",
-      "quote": "Data center $ 1,651.3 $ 1,517.9 $ 1,365.8 21 % 9 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Communications and other 567.4 556.6 451.6 26 % 2 %",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "Data center 74 % 73 % 75 %",
       "reason": "unknown_metric"
@@ -723,11 +698,6 @@
       "metric": "other",
       "quote": "non-GAAP EPS of $2.84, up 81% year-over-year",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "Net cash provided by operating activities 373.7 514.0 1,750.5 1,681.2",
-      "reason": "value_not_in_quote"
     }
   ],
   "validation_notes": []

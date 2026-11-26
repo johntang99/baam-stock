@@ -911,66 +911,6 @@
       "reason": "unknown_metric"
     },
     {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $4,689 $4,287 $3,176 Up 9% Up 48%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $3,378 $3,046 $2,210 Up 11% Up 53%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $24,034 $21,869 $13,615 Up 10% Up 77%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $25,516 $23,276 $14,749 Up 10% Up 73%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $22,091 $19,309 $12,285 Up 14% Up 80%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $22,066 $20,010 $12,839 Up 10% Up 72%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $16,405 $11,329 Up 45%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $11,716 $7,825 Up 50%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $81,453 $32,972 Up 147%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $86,789 $37,134 Up 134%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $72,880 $29,760 Up 145%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $74,265 $32,312 Up 130%",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "GAAP and non-GAAP other income and expense are expected to be an income of approximately $400 million, excluding gains and losses from non-marketable and publicly-held equity securities.",
       "reason": "unknown_metric"
@@ -979,36 +919,6 @@
       "metric": "other",
       "quote": "GAAP and non-GAAP tax rates are expected to be 17.0%, plus or minus 1%, excluding any discrete items.",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "GAAP gross profit $ 28,723 $ 26,156 $ 16,791 $ 97,858 $ 44,301",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "GAAP gross profit $ 28,723 $ 26,156 $ 16,791 $ 97,858 $ 44,301",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "Net cash provided by operating activities 16,628 11,499 64,089 28,090",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "Net cash provided by operating activities 16,628 11,499 64,089 28,090",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow $ 15,519 $ 16,787 $ 11,217 $ 60,724 $ 26,947",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow $ 15,519 $ 16,787 $ 11,217 $ 60,724 $ 26,947",
-      "reason": "value_not_in_quote"
     }
   ],
   "validation_notes": []

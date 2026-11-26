@@ -259,6 +259,18 @@
       "segment": "Embedded"
     },
     {
+      "metric": "revenue_growth_yoy_pct",
+      "value": -8.0,
+      "unit": "pct",
+      "period": "FY2025Q3",
+      "basis": "gaap",
+      "quote": "Embedded segment revenue was $857 million, down 8% year-over-year",
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Embedded"
+    },
+    {
       "metric": "revenue_outlook",
       "value": 9600000000.0,
       "unit": "USD",

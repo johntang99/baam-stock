@@ -127,6 +127,54 @@
       "segment": null
     },
     {
+      "metric": "gross_profit",
+      "value": 1260800000.0,
+      "unit": "USD",
+      "period": "FY2027Q1",
+      "basis": "gaap",
+      "quote": "Gross profit 1,260.8 1,147.9 952.4",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 921400000.0,
+      "unit": "USD",
+      "period": "FY2027Q1",
+      "basis": "gaap",
+      "quote": "Total operating expenses 921.4 743.5 681.8",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 339400000.0,
+      "unit": "USD",
+      "period": "FY2027Q1",
+      "basis": "gaap",
+      "quote": "Operating income 339.4 404.4 270.6",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 846900000.0,
+      "unit": "USD",
+      "period": "FY2027Q1",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP operating income $ 846.9 $ 791.8 $ 647.3",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "operating_margin_pct",
       "value": 14.0,
       "unit": "pct",
@@ -151,6 +199,18 @@
       "segment": null
     },
     {
+      "metric": "data_center_revenue",
+      "value": 1832700000.0,
+      "unit": "USD",
+      "period": "FY2027Q1",
+      "basis": "gaap",
+      "quote": "Data center $ 1,832.7 $ 1,651.3 $ 1,440.6 27 % 11 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Data center"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 27.0,
       "unit": "pct",
@@ -173,6 +233,18 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Data center"
+    },
+    {
+      "metric": "revenue",
+      "value": 585100000.0,
+      "unit": "USD",
+      "period": "FY2027Q1",
+      "basis": "gaap",
+      "quote": "Communications and other 585.1 567.4 454.7 29 % 3 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Communications and other"
     },
     {
       "metric": "revenue_growth_yoy_pct",

@@ -654,11 +654,6 @@
   ],
   "dropped": [
     {
-      "metric": "revenue_growth_yoy_pct",
-      "quote": "Embedded segment revenue was $857 million, down 8% year-over-year",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "revenue",
       "quote": "Third quarter revenue was a record $9.2 billion",
       "reason": "conflicting_values"

@@ -90,9 +90,13 @@ def recheck(manifest: dict[str, dict[str, Any]], existing: dict[str, DocLabel], 
         if d["extraction_status"] != "succeeded":
             continue
         facts = tuple(ExtractedFact(**c) for c in d["candidates"])
-        rep = check_facts(facts, None)
+        text = doc_text(manifest[key], corpus)
+        rep = check_facts(facts, None, text)
         prev = existing.get(key)
-        text_sha = prev.text_sha256 if prev else sha256_text(doc_text(manifest[key], corpus))
+        text_sha = sha256_text(text)
+        if prev and prev.text_sha256 != text_sha:
+            print(f"skip {key}: document text changed since drafting", file=sys.stderr)
+            continue
         write_label(
             DocLabel(
                 doc_key=key,
@@ -183,7 +187,7 @@ def main() -> int:
         row = manifest[key]
         text = doc_text(row, corpus)
         ext = prov.extract_facts(text, mode="replay")
-        rep = check_facts(ext.facts, None) if ext.status == "succeeded" else None
+        rep = check_facts(ext.facts, None, text) if ext.status == "succeeded" else None
         facts = rep.accepted if rep else []
         # every candidate + why the checker dropped it, so reviewers see what the model found (not counted in eval)
         cand_dir = labels_dir() / "candidates"

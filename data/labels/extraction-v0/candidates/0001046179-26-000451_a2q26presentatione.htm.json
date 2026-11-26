@@ -499,22 +499,27 @@
     {
       "metric": "revenue",
       "quote": "Net Revenue 1,270.38 1,134.10 933.79 +12.0% +36.0%",
-      "reason": "value_not_in_quote"
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "operating_expenses",
       "quote": "Operating Expenses (98.98) (94.01) (84.51) +5.3% +17.1%",
-      "reason": "value_not_in_quote"
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "net_income",
       "quote": "Net Income Attributable to Shareholders of the Parent Company 706.56 572.48 398.27 +23.4% +77.4%",
-      "reason": "value_not_in_quote"
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "other",
       "quote": "Net Profit Margin 55.6% 50.5% 42.7% +5.1 ppts +12.9 ppts",
       "reason": "unknown_metric"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "EPS (NT Dollar) 27.25 22.08 15.36 +23.4% +77.4%",
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "other",
@@ -529,7 +534,7 @@
     {
       "metric": "operating_cash_flow",
       "quote": "Cash from operating activities 783.36 698.97 497.07",
-      "reason": "value_not_in_quote"
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "other",
@@ -539,7 +544,7 @@
     {
       "metric": "free_cash_flow",
       "quote": "Free Cash Flow * 287.36 348.21 199.85",
-      "reason": "value_not_in_quote"
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "other",

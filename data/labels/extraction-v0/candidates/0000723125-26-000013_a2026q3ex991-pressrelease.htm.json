@@ -780,36 +780,6 @@
   ],
   "dropped": [
     {
-      "metric": "gross_profit",
-      "quote": "Gross margin 35,056 17,755 3,508 35,199 17,876 3,623",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin 35,056 17,755 3,508 35,199 17,876 3,623",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses 1,738 1,620 1,339 1,518 1,421 1,133",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses 1,738 1,620 1,339 1,518 1,421 1,133",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 33,318 16,135 2,169 33,681 16,455 2,490",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 33,318 16,135 2,169 33,681 16,455 2,490",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "investments in capital expenditures, net (2) were $7.1 billion",
       "reason": "unknown_metric"
@@ -823,41 +793,6 @@
       "metric": "other",
       "quote": "Micron’s Board of Directors declared a quarterly dividend of $0.15 per share",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Cloud Memory Business Unit Revenue $ 13,769 $ 7,749 $ 3,386",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Core Data Center Business Unit Revenue $ 11,524 $ 5,687 $ 1,530",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Mobile and Client Business Unit Revenue $ 11,521 $ 7,711 $ 3,255",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Automotive and Embedded Business Unit Revenue $ 4,634 $ 2,708 $ 1,127",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Revenue $ 41,456 $ 23,860 $ 9,301 $ 78,959 $ 26,063",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $ 28,243 $ 13,785 $ 1,885 $ 47,268 $ 5,338",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "Net cash provided by operating activities 45,702 11,795",
-      "reason": "value_not_in_quote"
     }
   ],
   "validation_notes": []

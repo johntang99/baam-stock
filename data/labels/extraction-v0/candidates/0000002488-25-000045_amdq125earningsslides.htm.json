@@ -690,86 +690,6 @@
   ],
   "dropped": [
     {
-      "metric": "revenue",
-      "quote": "Revenue $7,438 $5,473 Up 36% $7,658 Down 3%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue_growth_qoq_pct",
-      "quote": "Revenue $7,438 $5,473 Up 36% $7,658 Down 3%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross Profit $3,736 $2,560 Up 46% $3,882 Down 4%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross Profit $3,992 $2,861 Up 40% $4,140 Down 4%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating Expenses $2,930 $2,524 Up 16% $3,011 Down 3%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating Expenses $2,213 $1,728 Up 28% $2,114 Up 5%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income $806 $36 Up 2,139% $871 Down 7%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income $1,779 $1,133 Up 57% $2,026 Down 12%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net Income $709 $123 Up 476% $482 Up 47%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net Income $1,566 $1,013 Up 55% $1,777 Down 12%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "data_center_revenue",
-      "quote": "Data Center Net Revenue $3,674 $2,337 Up 57% $3,859 Down 5%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income $932 $541 Up 72% $1,157 Down 19%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Client & Gaming Net Revenue $2,941 $2,290 Up 28% $2,876 Up 2%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income $496 $237 Up 109% $496 Flat",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Embedded Net Revenue $823 $846 Down 3% $923 Down 11%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income $328 $342 Down 4% $362 Down 9%",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "Repurchased $749 million of common stock",
       "reason": "unknown_metric"
@@ -788,6 +708,11 @@
       "metric": "other",
       "quote": "approximately $800 million in charges for inventory and related reserves related to the U.S. government's implementation of new export controls",
       "reason": "unknown_metric"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Record first quarter revenue of $7.4 billion increased 36% y/y",
+      "reason": "conflicting_values"
     },
     {
       "metric": "gross_margin_pct",

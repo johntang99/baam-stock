@@ -271,9 +271,33 @@
       "segment": "Gaming"
     },
     {
+      "metric": "revenue_growth_yoy_pct",
+      "value": -30.0,
+      "unit": "pct",
+      "period": "FY2025Q1",
+      "basis": null,
+      "quote": "Gaming revenue was $647 million, down 30% year-over-year",
+      "direction": "decrease",
+      "scope": "product",
+      "certainty": "reported",
+      "segment": "Gaming"
+    },
+    {
       "metric": "revenue",
       "value": 823000000.0,
       "unit": "USD",
+      "period": "FY2025Q1",
+      "basis": null,
+      "quote": "Embedded segment revenue in the quarter was $823 million, down 3% year-over-year",
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Embedded"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": -3.0,
+      "unit": "pct",
       "period": "FY2025Q1",
       "basis": null,
       "quote": "Embedded segment revenue in the quarter was $823 million, down 3% year-over-year",

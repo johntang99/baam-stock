@@ -654,51 +654,6 @@
   ],
   "dropped": [
     {
-      "metric": "net_income",
-      "quote": "Net income $26,422 $18,775 $16,599 41 % 59 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $25,783 $19,894 $16,952 30 % 52 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $28,440 $21,638 $18,642 31 % 53 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $30,165 $23,275 $19,937 30 % 51 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $5,413 $5,030 $3,932 8 % 38 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $3,795 $3,583 $2,792 6 % 36 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross profit 33,853 22,574 60,521 42,979",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "Net cash provided by operating activities 15,365 14,489 42,779 29,833",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow $ 13,450 $ 26,135 $ 13,483 $ 39,584 $ 28,418",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "GAAP and non-GAAP other income and expense are expected to be an income of approximately $500 million",
       "reason": "unknown_metric"

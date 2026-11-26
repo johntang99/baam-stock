@@ -533,36 +533,6 @@
       "reason": "unknown_metric"
     },
     {
-      "metric": "gross_profit",
-      "quote": "GAAP gross margin $ 1,832 $ 1,079 $ (668)",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Non-GAAP gross margin $ 1,917 $ 1,163 $ (603)",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "GAAP operating expenses $ 1,113 $ 888 $ 1,093",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Non-GAAP operating expenses $ 976 $ 959 $ 866",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "GAAP operating income (loss) $ 719 $ 191 $ (1,761)",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Non-GAAP operating income (loss) $ 941 $ 204 $ (1,469)",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "Investments in capital expenditures, net (2) were $2.06 billion for the third quarter of 2024",
       "reason": "unknown_metric"
@@ -576,16 +546,6 @@
       "metric": "other",
       "quote": "Micron’s Board of Directors declared a quarterly dividend of $0.115 per share",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Revenue $ 6,811 $ 5,824 $ 3,752 $ 17,361 $ 11,530",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "Net cash provided by operating activities 5,102 1,310",
-      "reason": "value_not_in_quote"
     }
   ],
   "validation_notes": []

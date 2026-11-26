@@ -599,46 +599,6 @@
       "reason": "unknown_metric"
     },
     {
-      "metric": "revenue",
-      "quote": "Semiconductor solutions $ 8,212 55 % $ 7,390 62 % +11 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Infrastructure software 6,704 45 4,571 38 +47 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin 10,145 9,002 7,375",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin on non-GAAP basis $ 11,796 $ 10,814 $ 9,014",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Total operating expenses 3,885 4,375 5,292",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Total operating expenses on non-GAAP basis $ 1,968 $ 2,003 $ 2,183",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 6,260 4,627 2,083",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income on non-GAAP basis $ 9,828 $ 8,811 $ 6,831",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "The Company’s cash and cash equivalents at the end of the fiscal quarter were $9,307 million, compared to $9,348 million at the end of the prior fiscal quarter.",
       "reason": "unknown_metric"

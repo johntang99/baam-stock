@@ -79,6 +79,30 @@
       "segment": null
     },
     {
+      "metric": "gross_profit",
+      "value": 35056000000.0,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": "gaap",
+      "quote": "Gross margin 35,056 17,755 3,508 35,199 17,876 3,623",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 35199000000.0,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": "non_gaap",
+      "quote": "Gross margin 35,056 17,755 3,508 35,199 17,876 3,623",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "gross_margin_pct",
       "value": 84.6,
       "unit": "pct",
@@ -97,6 +121,54 @@
       "period": "FY2026Q3",
       "basis": "non_gaap",
       "quote": "Percent of revenue 84.6 % 74.4 % 37.7 % 84.9 % 74.9 % 39.0 %",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 1738000000.0,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": "gaap",
+      "quote": "Operating expenses 1,738 1,620 1,339 1,518 1,421 1,133",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 1518000000.0,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": "non_gaap",
+      "quote": "Operating expenses 1,738 1,620 1,339 1,518 1,421 1,133",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 33318000000.0,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": "gaap",
+      "quote": "Operating income 33,318 16,135 2,169 33,681 16,455 2,490",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 33681000000.0,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": "non_gaap",
+      "quote": "Operating income 33,318 16,135 2,169 33,681 16,455 2,490",
       "direction": "none",
       "scope": "company",
       "certainty": "reported",
@@ -139,6 +211,18 @@
       "segment": null
     },
     {
+      "metric": "revenue",
+      "value": 13769000000.0,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": null,
+      "quote": "Cloud Memory Business Unit Revenue $ 13,769 $ 7,749 $ 3,386",
+      "direction": "none",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Cloud Memory Business Unit"
+    },
+    {
       "metric": "gross_margin_pct",
       "value": 83.0,
       "unit": "pct",
@@ -161,6 +245,18 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Cloud Memory Business Unit"
+    },
+    {
+      "metric": "revenue",
+      "value": 11524000000.0,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": null,
+      "quote": "Core Data Center Business Unit Revenue $ 11,524 $ 5,687 $ 1,530",
+      "direction": "none",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Core Data Center Business Unit"
     },
     {
       "metric": "gross_margin_pct",
@@ -187,6 +283,18 @@
       "segment": "Core Data Center Business Unit"
     },
     {
+      "metric": "revenue",
+      "value": 11521000000.0,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": null,
+      "quote": "Mobile and Client Business Unit Revenue $ 11,521 $ 7,711 $ 3,255",
+      "direction": "none",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Mobile and Client Business Unit"
+    },
+    {
       "metric": "gross_margin_pct",
       "value": 87.0,
       "unit": "pct",
@@ -209,6 +317,18 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Mobile and Client Business Unit"
+    },
+    {
+      "metric": "revenue",
+      "value": 4634000000.0,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": null,
+      "quote": "Automotive and Embedded Business Unit Revenue $ 4,634 $ 2,708 $ 1,127",
+      "direction": "none",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Automotive and Embedded Business Unit"
     },
     {
       "metric": "gross_margin_pct",
@@ -319,12 +439,48 @@
       "segment": null
     },
     {
+      "metric": "revenue",
+      "value": 78959000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Revenue $ 41,456 $ 23,860 $ 9,301 $ 78,959 $ 26,063",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 47268000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Net income $ 28,243 $ 13,785 $ 1,885 $ 47,268 $ 5,338",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "eps_gaap",
       "value": 41.4,
       "unit": "USD_per_share",
       "period": null,
       "basis": "gaap",
       "quote": "Diluted 24.67 12.07 1.68 41.40 4.75",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 45702000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Net cash provided by operating activities 45,702 11,795",
       "direction": "none",
       "scope": "company",
       "certainty": "reported",

@@ -175,6 +175,18 @@
       "segment": "AI semiconductor"
     },
     {
+      "metric": "revenue",
+      "value": 15009000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Semiconductor solutions $ 15,009 68 % $ 8,408 56 % +79 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Semiconductor solutions"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 79.0,
       "unit": "pct",
@@ -187,6 +199,18 @@
       "segment": "Semiconductor solutions"
     },
     {
+      "metric": "revenue",
+      "value": 7178000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Infrastructure software 7,178 32 6,596 44 +9 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Infrastructure software"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 9.0,
       "unit": "pct",
@@ -197,6 +221,66 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Infrastructure software"
+    },
+    {
+      "metric": "gross_profit",
+      "value": 15415000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Gross margin 15,415 13,157 10,197 28,572 20,342",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 17109000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "non_gaap",
+      "quote": "Gross margin on non-GAAP basis $ 17,109 $ 14,868 $ 11,911 $ 31,977 $ 23,707",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 4627000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Total operating expenses 4,627 4,594 4,368 9,221 8,253",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 10788000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Operating income 10,788 8,563 5,829 19,351 12,089",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 14928000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "non_gaap",
+      "quote": "Operating income on non-GAAP basis $ 14,928 $ 12,826 $ 9,793 $ 27,754 $ 19,621",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
     }
   ]
 }

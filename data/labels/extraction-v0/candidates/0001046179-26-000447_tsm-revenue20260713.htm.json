@@ -150,29 +150,34 @@
   ],
   "dropped": [
     {
+      "metric": "revenue",
+      "quote": "On a consolidated basis, revenue for June 2026 was approximately NT$442.68 billion, an increase of 6.2 percent from May 2026 and an increase of 67.9 percent from June 2025.",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
       "metric": "other",
       "quote": "an increase of 6.2 percent from May 2026",
       "reason": "unknown_metric"
     },
     {
       "metric": "revenue",
-      "quote": "Net Revenue 442,680 416,975 6.2 263,709 67.9 2,404,484 1,773,046 35.6",
-      "reason": "value_not_in_quote"
+      "quote": "Revenue for January through June 2026 totaled NT$2,404.48 billion, an increase of 35.6 percent compared to the same period in 2025.",
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "revenue",
       "quote": "Net Revenue 442,680 416,975 6.2 263,709 67.9 2,404,484 1,773,046 35.6",
-      "reason": "value_not_in_quote"
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "revenue",
       "quote": "Net Revenue 442,680 416,975 6.2 263,709 67.9 2,404,484 1,773,046 35.6",
-      "reason": "value_not_in_quote"
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "revenue",
-      "quote": "On a consolidated basis, revenue for June 2026 was approximately NT$442.68 billion, an increase of 6.2 percent from May 2026 and an increase of 67.9 percent from June 2025.",
-      "reason": "conflicting_values"
+      "quote": "Net Revenue 442,680 416,975 6.2 263,709 67.9 2,404,484 1,773,046 35.6",
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "revenue_growth_yoy_pct",

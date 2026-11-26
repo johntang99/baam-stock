@@ -900,109 +900,19 @@
       "reason": "unknown_metric"
     },
     {
-      "metric": "revenue",
-      "quote": "Semiconductor solutions $ 8,230 59 % $ 7,326 79 % +12 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Infrastructure software 5,824 41 1,969 21 +196 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Semiconductor solutions $ 30,096 58 % $ 28,182 79 % +7 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Infrastructure software 21,478 42 7,637 21 +181 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $ 5,895 $ 14,082 -$8,187 $ 23,733 $ 18,378 +$5,355",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $ 5,895 $ 14,082 -$8,187 $ 23,733 $ 18,378 +$5,355",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "Cash flow from operations $ 19,962 $ 18,085 +$1,877",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow $ 19,414 $ 17,633 +$1,781",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin on GAAP basis $ 9,002 $ 8,356 $ 6,407 $ 32,509 $ 24,690",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin on GAAP basis $ 9,002 $ 8,356 $ 6,407 $ 32,509 $ 24,690",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin on non-GAAP basis $ 10,814 $ 10,113 $ 6,908 $ 39,459 $ 26,757",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin on non-GAAP basis $ 10,814 $ 10,113 $ 6,908 $ 39,459 $ 26,757",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income on GAAP basis $ 4,627 $ 3,788 $ 4,240 $ 13,463 $ 16,207",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income on GAAP basis $ 4,627 $ 3,788 $ 4,240 $ 13,463 $ 16,207",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income on non-GAAP basis $ 8,811 $ 7,948 $ 5,747 $ 30,736 $ 22,125",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income on non-GAAP basis $ 8,811 $ 7,948 $ 5,747 $ 30,736 $ 22,125",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Total operating expenses on GAAP basis $ 4,375 $ 4,568 $ 2,167 $ 19,046 $ 8,483",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Total operating expenses on GAAP basis $ 4,375 $ 4,568 $ 2,167 $ 19,046 $ 8,483",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Total operating expenses on non-GAAP basis $ 2,003 $ 2,165 $ 1,161 $ 8,723 $ 4,632",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Total operating expenses on non-GAAP basis $ 2,003 $ 2,165 $ 1,161 $ 8,723 $ 4,632",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "The Company’s cash and cash equivalents at the end of the fiscal quarter were $9,348 million, compared to $9,952 million at the end of the prior quarter",
       "reason": "unknown_metric"
+    },
+    {
+      "metric": "revenue",
+      "quote": "infrastructure software revenue grew to $21.5 billion",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Semiconductor revenue was a record $30.1 billion driven by AI revenue of $12.2 billion",
+      "reason": "conflicting_values"
     }
   ],
   "validation_notes": []

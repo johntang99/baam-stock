@@ -151,6 +151,18 @@
       "segment": null
     },
     {
+      "metric": "gross_profit",
+      "value": 5054000000.0,
+      "unit": "USD",
+      "period": "FY2025Q4",
+      "basis": "gaap",
+      "quote": "Gross margin 5,054 3,508 2,737 5,169 3,623 2,826",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "gross_margin_pct",
       "value": 44.7,
       "unit": "pct",
@@ -175,12 +187,60 @@
       "segment": null
     },
     {
+      "metric": "operating_income",
+      "value": 3654000000.0,
+      "unit": "USD",
+      "period": "FY2025Q4",
+      "basis": "gaap",
+      "quote": "Operating income 3,654 2,169 1,522 3,955 2,490 1,745",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 3955000000.0,
+      "unit": "USD",
+      "period": "FY2025Q4",
+      "basis": "non_gaap",
+      "quote": "Operating income 3,654 2,169 1,522 3,955 2,490 1,745",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 1400000000.0,
+      "unit": "USD",
+      "period": "FY2025Q4",
+      "basis": "gaap",
+      "quote": "Operating expenses 1,400 1,339 1,215 1,214 1,133 1,081",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "gross_margin_pct",
       "value": 39.8,
       "unit": "pct",
       "period": "FY2025",
       "basis": "gaap",
       "quote": "percent of revenue 39.8 % 22.4 % 40.9 % 23.7 %",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 9770000000.0,
+      "unit": "USD",
+      "period": "FY2025",
+      "basis": "gaap",
+      "quote": "Operating income 9,770 1,304 10,846 1,935",
       "direction": "none",
       "scope": "company",
       "certainty": "reported",
@@ -211,6 +271,18 @@
       "segment": null
     },
     {
+      "metric": "revenue",
+      "value": 4543000000.0,
+      "unit": "USD",
+      "period": "FY2025Q4",
+      "basis": "gaap",
+      "quote": "Cloud Memory Business Unit Revenue $ 4,543 $ 3,386 $ 1,449",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Cloud Memory Business Unit"
+    },
+    {
       "metric": "gross_margin_pct",
       "value": 59.0,
       "unit": "pct",
@@ -233,6 +305,42 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Cloud Memory Business Unit"
+    },
+    {
+      "metric": "data_center_revenue",
+      "value": 1577000000.0,
+      "unit": "USD",
+      "period": "FY2025Q4",
+      "basis": "gaap",
+      "quote": "Core Data Center Business Unit Revenue $ 1,577 $ 1,530 $ 2,048",
+      "direction": "none",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Core Data Center Business Unit"
+    },
+    {
+      "metric": "revenue",
+      "value": 3760000000.0,
+      "unit": "USD",
+      "period": "FY2025Q4",
+      "basis": "gaap",
+      "quote": "Mobile and Client Business Unit Revenue $ 3,760 $ 3,255 $ 3,019",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Mobile and Client Business Unit"
+    },
+    {
+      "metric": "revenue",
+      "value": 1434000000.0,
+      "unit": "USD",
+      "period": "FY2025Q4",
+      "basis": "gaap",
+      "quote": "Automotive and Embedded Business Unit Revenue $ 1,434 $ 1,127 $ 1,230",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Automotive and Embedded Business Unit"
     },
     {
       "metric": "revenue_outlook",

@@ -43,6 +43,18 @@
       "segment": null
     },
     {
+      "metric": "data_center_revenue",
+      "value": 22563000000.0,
+      "unit": "USD",
+      "period": "FY2025Q1",
+      "basis": null,
+      "quote": "Data Center $22,563 $18,404 $4,284 Up 23% Up 427%",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Data Center"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 427.0,
       "unit": "pct",
@@ -103,6 +115,30 @@
       "segment": "Data Center Networking"
     },
     {
+      "metric": "revenue_growth_qoq_pct",
+      "value": -5.0,
+      "unit": "pct",
+      "period": "FY2025Q1",
+      "basis": null,
+      "quote": "Networking revenue was $3.2 billion, up 242% from a year ago on strong growth of InfiniBand end-to-end solutions, and down 5% sequentially due to the timing of supply.",
+      "direction": "decrease",
+      "scope": "product",
+      "certainty": "reported",
+      "segment": "Data Center Networking"
+    },
+    {
+      "metric": "revenue",
+      "value": 2647000000.0,
+      "unit": "USD",
+      "period": "FY2025Q1",
+      "basis": null,
+      "quote": "Gaming 2,647 2,865 2,240 Down 8% Up 18%",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Gaming"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 18.0,
       "unit": "pct",
@@ -113,6 +149,18 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Gaming"
+    },
+    {
+      "metric": "revenue",
+      "value": 427000000.0,
+      "unit": "USD",
+      "period": "FY2025Q1",
+      "basis": null,
+      "quote": "Professional Visualization 427 463 295 Down 8% Up 45%",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Professional Visualization"
     },
     {
       "metric": "revenue_growth_yoy_pct",
@@ -127,6 +175,18 @@
       "segment": "Professional Visualization"
     },
     {
+      "metric": "revenue",
+      "value": 329000000.0,
+      "unit": "USD",
+      "period": "FY2025Q1",
+      "basis": null,
+      "quote": "Automotive 329 281 296 Up 17% Up 11%",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Automotive"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 11.0,
       "unit": "pct",
@@ -137,6 +197,42 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Automotive"
+    },
+    {
+      "metric": "revenue",
+      "value": 78000000.0,
+      "unit": "USD",
+      "period": "FY2025Q1",
+      "basis": null,
+      "quote": "OEM and Other 78 90 77 Down 13% Up 1%",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "OEM and Other"
+    },
+    {
+      "metric": "revenue",
+      "value": 22675000000.0,
+      "unit": "USD",
+      "period": "FY2025Q1",
+      "basis": null,
+      "quote": "Compute & Networking $22,675 $17,898 $4,460 Up 27% Up 408%",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Compute & Networking"
+    },
+    {
+      "metric": "revenue",
+      "value": 3369000000.0,
+      "unit": "USD",
+      "period": "FY2025Q1",
+      "basis": null,
+      "quote": "Graphics 3,369 4,205 2,732 Down 20% Up 23%",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Graphics"
     },
     {
       "metric": "gross_margin_pct",
@@ -157,6 +253,102 @@
       "period": "FY2025Q1",
       "basis": "non_gaap",
       "quote": "Gross margin 78.9 % 76.7 % 66.8 % Up 2.2 pts Up 12.1 pts",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 20406000000.0,
+      "unit": "USD",
+      "period": "FY2025Q1",
+      "basis": "gaap",
+      "quote": "GAAP gross profit $ 20,406 $ 16,791 $ 4,648",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 20560000000.0,
+      "unit": "USD",
+      "period": "FY2025Q1",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP gross profit $ 20,560 $ 16,959 $ 4,802",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 3497000000.0,
+      "unit": "USD",
+      "period": "FY2025Q1",
+      "basis": "gaap",
+      "quote": "Operating expenses $3,497 $3,176 $2,508 Up 10% Up 39%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 2501000000.0,
+      "unit": "USD",
+      "period": "FY2025Q1",
+      "basis": "non_gaap",
+      "quote": "Operating expenses $2,501 $2,210 $1,750 Up 13% Up 43%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 16909000000.0,
+      "unit": "USD",
+      "period": "FY2025Q1",
+      "basis": "gaap",
+      "quote": "Operating income $16,909 $13,615 $2,140 Up 24% Up 690%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 18059000000.0,
+      "unit": "USD",
+      "period": "FY2025Q1",
+      "basis": "non_gaap",
+      "quote": "Operating income $18,059 $14,749 $3,052 Up 22% Up 492%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 14881000000.0,
+      "unit": "USD",
+      "period": "FY2025Q1",
+      "basis": "gaap",
+      "quote": "Net income $14,881 $12,285 $2,043 Up 21% Up 628%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 15238000000.0,
+      "unit": "USD",
+      "period": "FY2025Q1",
+      "basis": "non_gaap",
+      "quote": "Net income $15,238 $12,839 $2,713 Up 19% Up 462%",
       "direction": "increase",
       "scope": "company",
       "certainty": "reported",
@@ -194,6 +386,18 @@
       "basis": "gaap",
       "quote": "Cash flow from operating activities was $15.3 billion, up from $2.9 billion a year ago and $11.5 billion a quarter ago.",
       "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 14936000000.0,
+      "unit": "USD",
+      "period": "FY2025Q1",
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 14,936 $ 11,217 $ 2,643",
+      "direction": "none",
       "scope": "company",
       "certainty": "reported",
       "segment": null

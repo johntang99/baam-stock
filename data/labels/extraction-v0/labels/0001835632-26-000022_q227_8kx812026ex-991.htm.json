@@ -127,6 +127,18 @@
       "segment": null
     },
     {
+      "metric": "data_center_revenue",
+      "value": 2171500000.0,
+      "unit": "USD",
+      "period": "FY2027Q2",
+      "basis": "gaap",
+      "quote": "Data center $ 2,171.5 $ 1,832.7 $ 1,490.5 46 % 18 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Data Center"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 46.0,
       "unit": "pct",
@@ -151,6 +163,18 @@
       "segment": "Data Center"
     },
     {
+      "metric": "revenue",
+      "value": 567800000.0,
+      "unit": "USD",
+      "period": "FY2027Q2",
+      "basis": "gaap",
+      "quote": "Communications and other 567.8 585.1 515.6 10 % (3) %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Communications and other"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 10.0,
       "unit": "pct",
@@ -173,6 +197,78 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Communications and other"
+    },
+    {
+      "metric": "gross_profit",
+      "value": 1455600000.0,
+      "unit": "USD",
+      "period": "FY2027Q2",
+      "basis": "gaap",
+      "quote": "Gross profit 1,455.6 1,260.8 1,010.6 2,716.4 1,963.0",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 1614000000.0,
+      "unit": "USD",
+      "period": "FY2027Q2",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP gross profit $ 1,614.0 $ 1,423.8 $ 1,191.4 $ 3,037.8 $ 2,324.9",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 995900000.0,
+      "unit": "USD",
+      "period": "FY2027Q2",
+      "basis": "gaap",
+      "quote": "Total operating expenses 995.9 921.4 720.5 1,917.3 1,402.3",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 610800000.0,
+      "unit": "USD",
+      "period": "FY2027Q2",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP operating expenses $ 610.8 $ 576.9 $ 492.6 $ 1,187.7 $ 978.8",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 459700000.0,
+      "unit": "USD",
+      "period": "FY2027Q2",
+      "basis": "gaap",
+      "quote": "Operating income 459.7 339.4 290.1 799.1 560.7",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 1003200000.0,
+      "unit": "USD",
+      "period": "FY2027Q2",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP operating income $ 1,003.2 $ 846.9 $ 698.8 $ 1,850.1 $ 1,346.1",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
     },
     {
       "metric": "operating_margin_pct",

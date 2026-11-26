@@ -677,16 +677,6 @@
       "reason": "unknown_metric"
     },
     {
-      "metric": "revenue_growth_yoy_pct",
-      "quote": "Client and Gaming segment revenue was $3.7 billion, down 8% year-over-year",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue_growth_yoy_pct",
-      "quote": "Gaming business revenue was $773 million, down 40% year-over-year",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "operating_income",
       "quote": "Operating Income (Loss): Data Center Segment $ 2,882",
       "reason": "value_not_in_quote"

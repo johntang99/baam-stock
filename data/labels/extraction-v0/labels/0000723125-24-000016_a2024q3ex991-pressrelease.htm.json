@@ -115,6 +115,78 @@
       "segment": null
     },
     {
+      "metric": "gross_profit",
+      "value": 1832000000.0,
+      "unit": "USD",
+      "period": "FY2024Q3",
+      "basis": "gaap",
+      "quote": "GAAP gross margin $ 1,832 $ 1,079 $ (668)",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 1917000000.0,
+      "unit": "USD",
+      "period": "FY2024Q3",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP gross margin $ 1,917 $ 1,163 $ (603)",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 1113000000.0,
+      "unit": "USD",
+      "period": "FY2024Q3",
+      "basis": "gaap",
+      "quote": "GAAP operating expenses $ 1,113 $ 888 $ 1,093",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 976000000.0,
+      "unit": "USD",
+      "period": "FY2024Q3",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP operating expenses $ 976 $ 959 $ 866",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 719000000.0,
+      "unit": "USD",
+      "period": "FY2024Q3",
+      "basis": "gaap",
+      "quote": "GAAP operating income (loss) $ 719 $ 191 $ (1,761)",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 941000000.0,
+      "unit": "USD",
+      "period": "FY2024Q3",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP operating income (loss) $ 941 $ 204 $ (1,469)",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "free_cash_flow",
       "value": 425000000.0,
       "unit": "USD",
@@ -208,6 +280,30 @@
       "direction": "none",
       "scope": "company",
       "certainty": "guidance",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 17361000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Revenue $ 6,811 $ 5,824 $ 3,752 $ 17,361 $ 11,530",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 5102000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Net cash provided by operating activities 5,102 1,310",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
       "segment": null
     }
   ]

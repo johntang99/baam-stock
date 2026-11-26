@@ -7,18 +7,6 @@
   "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
   "facts": [
     {
-      "metric": "revenue",
-      "value": 7700000000.0,
-      "unit": "USD",
-      "period": "FY2025Q2",
-      "basis": "gaap",
-      "quote": "Record second quarter revenue of $7.7 billion increased 32% y/y",
-      "direction": "increase",
-      "scope": "company",
-      "certainty": "reported",
-      "segment": null
-    },
-    {
       "metric": "revenue_growth_yoy_pct",
       "value": 32.0,
       "unit": "pct",
@@ -43,12 +31,84 @@
       "segment": null
     },
     {
+      "metric": "gross_profit",
+      "value": 3059000000.0,
+      "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "gaap",
+      "quote": "Gross Profit $3,059 $2,864 Up 7% $3,736 Down 18%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 3326000000.0,
+      "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "non_gaap",
+      "quote": "Gross Profit $3,326 $3,101 Up 7% $3,992 Down 17%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "gross_margin_pct",
       "value": 40.0,
       "unit": "pct",
       "period": "FY2025Q2",
       "basis": "gaap",
       "quote": "Gross Margin 40% 49% Down 9 ppts 50% Down 10 ppts",
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 3193000000.0,
+      "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "gaap",
+      "quote": "Operating Expenses $3,193 $2,595 Up 23% $2,930 Up 9%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 2429000000.0,
+      "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "non_gaap",
+      "quote": "Operating Expenses $2,429 $1,837 Up 32% $2,213 Up 10%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": -134000000.0,
+      "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "gaap",
+      "quote": "Operating Income (Loss) $(134) $269 Down 150% $806 Down 117%",
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 897000000.0,
+      "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "non_gaap",
+      "quote": "Operating Income $897 $1,264 Down 29% $1,779 Down 50%",
       "direction": "decrease",
       "scope": "company",
       "certainty": "reported",
@@ -79,6 +139,30 @@
       "segment": null
     },
     {
+      "metric": "net_income",
+      "value": 872000000.0,
+      "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "gaap",
+      "quote": "Net Income $872 $265 Up 229% $709 Up 23%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 781000000.0,
+      "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "non_gaap",
+      "quote": "Net Income $781 $1,126 Down 31% $1,566 Down 50%",
+      "direction": "decrease",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "eps_gaap",
       "value": 0.54,
       "unit": "USD_per_share",
@@ -103,6 +187,18 @@
       "segment": null
     },
     {
+      "metric": "data_center_revenue",
+      "value": 3240000000.0,
+      "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "gaap",
+      "quote": "Data Center Net Revenue $3,240 $2,834 Up 14% $3,674 Down 12%",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Data Center"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 14.0,
       "unit": "pct",
@@ -115,6 +211,30 @@
       "segment": "Data Center"
     },
     {
+      "metric": "operating_income",
+      "value": -155000000.0,
+      "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "gaap",
+      "quote": "Operating Income (Loss) $(155) $743 Down 121% $932 Down 117%",
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "revenue",
+      "value": 3621000000.0,
+      "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "gaap",
+      "quote": "Client & Gaming Net Revenue $3,621 $2,140 Up 69% $2,941 Up 23%",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Client & Gaming"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 69.0,
       "unit": "pct",
@@ -125,6 +245,66 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Client & Gaming"
+    },
+    {
+      "metric": "operating_income",
+      "value": 767000000.0,
+      "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "gaap",
+      "quote": "Operating Income $767 $166 Up 362% $496 Up 55%",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Client & Gaming"
+    },
+    {
+      "metric": "revenue",
+      "value": 824000000.0,
+      "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "gaap",
+      "quote": "Embedded Net Revenue $824 $861 Down 4% $823 Flat",
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Embedded"
+    },
+    {
+      "metric": "operating_income",
+      "value": 275000000.0,
+      "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "gaap",
+      "quote": "Operating Income $275 $345 Down 20% $328 Down 16%",
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Embedded"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 1462000000.0,
+      "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "gaap",
+      "quote": "GAAP net cash provided by operating activities of continuing operations $ 1,462",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 1180000000.0,
+      "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 1,180",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
     },
     {
       "metric": "revenue_outlook",

@@ -602,26 +602,6 @@
       "reason": "unknown_metric"
     },
     {
-      "metric": "net_income",
-      "quote": "Net income $ 13,088 $ 4,140 +216 % $ 16,372 $ 8,404 +95 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $ 13,088 $ 4,140 +216 % $ 16,372 $ 8,404 +95 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Semiconductor solutions $ 20,839 70 % $ 9,166 57 % +127 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Infrastructure software 8,752 30 6,786 43 +29 %",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "The Company’s cash and cash equivalents at the end of the fiscal quarter were $24.0 billion, compared to $19.6 billion at the end of the prior fiscal quarter.",
       "reason": "unknown_metric"
@@ -630,26 +610,6 @@
       "metric": "other",
       "quote": "On June 30, 2026, the Company paid a cash dividend of $0.65 per share, totaling $3.1 billion.",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin on GAAP basis $ 20,456",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin on non-GAAP basis $ 22,191",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Total operating expenses on GAAP basis $ 4,501",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Total operating expenses on non-GAAP basis $ 2,096",
-      "reason": "value_not_in_quote"
     }
   ],
   "validation_notes": []

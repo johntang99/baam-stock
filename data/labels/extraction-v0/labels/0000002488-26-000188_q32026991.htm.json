@@ -247,6 +247,18 @@
       "segment": "Client and Gaming"
     },
     {
+      "metric": "revenue_growth_yoy_pct",
+      "value": -8.0,
+      "unit": "pct",
+      "period": "FY2026Q3",
+      "basis": null,
+      "quote": "Client and Gaming segment revenue was $3.7 billion, down 8% year-over-year",
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Client and Gaming"
+    },
+    {
       "metric": "revenue",
       "value": 2900000000.0,
       "unit": "USD",
@@ -274,6 +286,18 @@
       "metric": "revenue",
       "value": 773000000.0,
       "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": null,
+      "quote": "Gaming business revenue was $773 million, down 40% year-over-year",
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Gaming"
+    },
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": -40.0,
+      "unit": "pct",
       "period": "FY2026Q3",
       "basis": null,
       "quote": "Gaming business revenue was $773 million, down 40% year-over-year",

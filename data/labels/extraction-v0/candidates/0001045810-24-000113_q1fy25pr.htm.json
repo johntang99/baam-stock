@@ -510,56 +510,6 @@
   ],
   "dropped": [
     {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $3,497 $3,176 $2,508 Up 10% Up 39%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $2,501 $2,210 $1,750 Up 13% Up 43%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $16,909 $13,615 $2,140 Up 24% Up 690%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $18,059 $14,749 $3,052 Up 22% Up 492%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $14,881 $12,285 $2,043 Up 21% Up 628%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $15,238 $12,839 $2,713 Up 19% Up 462%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "GAAP gross profit $ 20,406 $ 16,791 $ 4,648",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Non-GAAP gross profit $ 20,560 $ 16,959 $ 4,802",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "GAAP net cash provided by operating activities $ 15,345 $ 11,499 $ 2,911",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow $ 14,936 $ 11,217 $ 2,643",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "NVIDIA is increasing its quarterly cash dividend by 150% from $0.04 per share to $0.10 per share of common stock.",
       "reason": "unknown_metric"

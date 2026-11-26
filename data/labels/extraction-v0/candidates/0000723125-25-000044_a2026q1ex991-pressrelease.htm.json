@@ -744,36 +744,6 @@
   ],
   "dropped": [
     {
-      "metric": "gross_profit",
-      "quote": "Gross margin 7,646 5,054 3,348 7,753 5,169 3,441",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin 7,646 5,054 3,348 7,753 5,169 3,441",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses 1,510 1,400 1,174 1,334 1,214 1,047",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses 1,510 1,400 1,174 1,334 1,214 1,047",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 6,136 3,654 2,174 6,419 3,955 2,394",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 6,136 3,654 2,174 6,419 3,955 2,394",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "For the first quarter of 2026, investments in capital expenditures, net (2) were $4.5 billion",
       "reason": "unknown_metric"
@@ -787,26 +757,6 @@
       "metric": "other",
       "quote": "Micron’s Board of Directors declared a quarterly dividend of $0.115 per share",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Cloud Memory Business Unit Revenue $ 5,284 $ 4,543 $ 2,648",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Core Data Center Business Unit Revenue $ 2,379 $ 1,577 $ 2,292",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Mobile and Client Business Unit Revenue $ 4,255 $ 3,760 $ 2,608",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Automotive and Embedded Business Unit Revenue $ 1,720 $ 1,434 $ 1,158",
-      "reason": "value_not_in_quote"
     }
   ],
   "validation_notes": []

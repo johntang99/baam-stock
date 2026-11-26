@@ -116,7 +116,7 @@ def run_eval(
         if sha256_text(text) != lab.text_sha256:
             raise ValueError(f"{lab.doc_key}: document text changed since labelling (sha mismatch)")
         ext = provider.extract_facts(text, mode="replay")
-        pred = check_facts(ext.facts, lab.fiscal_period).accepted if ext.status == "succeeded" else []
+        pred = check_facts(ext.facts, lab.fiscal_period, text).accepted if ext.status == "succeeded" else []
         pairs = match(pred, lab.facts, rel)
         n_pred, n_gold, n_tp = n_pred + len(pred), n_gold + len(lab.facts), n_tp + len(pairs)
         for pf, gf in pairs:

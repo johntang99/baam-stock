@@ -294,56 +294,6 @@
   ],
   "dropped": [
     {
-      "metric": "revenue",
-      "quote": "Total net revenue 51,574 623 — (70 ) — 52,127",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Total net revenue 51,574 623 — (70 ) — 52,127",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin 32,509 471 — (389 ) — 32,591",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin 32,509 471 — (389 ) — 32,591",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Total operating expenses 19,046 464 — 89 — 19,599",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Total operating expenses 19,046 464 — 89 — 19,599",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 13,463 7 — (478 ) — 12,992",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 13,463 7 — (478 ) — 12,992",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income from continuing operations attributable to common stock $ 6,168 $ 26 $ — $ (436 ) $ (84 ) $ 5,674",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income from continuing operations attributable to common stock $ 6,168 $ 26 $ — $ (436 ) $ (84 ) $ 5,674",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "the VMware stockholders received approximately $30.8 billion in cash and 544 million shares of Broadcom common stock with a fair value of $53.4 billion",
       "reason": "unknown_metric"

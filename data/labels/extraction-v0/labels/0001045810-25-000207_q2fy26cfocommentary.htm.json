@@ -103,6 +103,18 @@
       "segment": "Data Center Compute"
     },
     {
+      "metric": "revenue_growth_qoq_pct",
+      "value": -1.0,
+      "unit": "pct",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Sequentially, compute revenue declined 1%, driven by a $4.0 billion reduction in H20 sales.",
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Data Center Compute"
+    },
+    {
       "metric": "revenue",
       "value": 7300000000.0,
       "unit": "USD",
@@ -139,6 +151,18 @@
       "segment": "Data Center Networking"
     },
     {
+      "metric": "revenue",
+      "value": 4287000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Gaming 4,287 3,763 2,880 14 % 49 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Gaming"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 49.0,
       "unit": "pct",
@@ -161,6 +185,18 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Gaming"
+    },
+    {
+      "metric": "revenue",
+      "value": 601000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Professional Visualization 601 509 454 18 % 32 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Professional Visualization"
     },
     {
       "metric": "revenue_growth_yoy_pct",
@@ -187,6 +223,18 @@
       "segment": "Professional Visualization"
     },
     {
+      "metric": "revenue",
+      "value": 586000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Automotive 586 567 346 3 % 69 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Automotive"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 69.0,
       "unit": "pct",
@@ -209,6 +257,42 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Automotive"
+    },
+    {
+      "metric": "revenue",
+      "value": 173000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "OEM and Other 173 111 88 56 % 97 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "OEM and Other"
+    },
+    {
+      "metric": "revenue",
+      "value": 41331000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Compute & Networking $41,331 $39,589 $26,446 4 % 56 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Compute & Networking"
+    },
+    {
+      "metric": "revenue",
+      "value": 5412000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Graphics 5,412 4,473 3,594 21 % 51 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Graphics"
     },
     {
       "metric": "revenue_growth_qoq_pct",
@@ -247,6 +331,102 @@
       "segment": null
     },
     {
+      "metric": "net_income",
+      "value": 26422000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Net income $26,422 $18,775 $16,599 41 % 59 %",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 25783000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "non_gaap",
+      "quote": "Net income $25,783 $19,894 $16,952 30 % 52 %",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 5413000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Operating expenses $5,413 $5,030 $3,932 8 % 38 %",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 3795000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "non_gaap",
+      "quote": "Operating expenses $3,795 $3,583 $2,792 6 % 36 %",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 28440000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Operating income $28,440 $21,638 $18,642 31 % 53 %",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 30165000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "non_gaap",
+      "quote": "Operating income $30,165 $23,275 $19,937 30 % 51 %",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 33853000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "GAAP gross profit $ 33,853 $ 26,668 $ 22,574 $ 60,521 $ 42,979",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 33960000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP gross profit $ 33,960 $ 26,858 $ 22,729 $ 60,818 $ 43,288",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "operating_cash_flow",
       "value": 15400000000.0,
       "unit": "USD",
@@ -254,6 +434,18 @@
       "basis": "gaap",
       "quote": "Cash flow from operating activities was $15.4 billion, up from $14.5 billion a year ago and down from $27.4 billion a quarter ago.",
       "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 13450000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 13,450 $ 26,135 $ 13,483 $ 39,584 $ 28,418",
+      "direction": "none",
       "scope": "company",
       "certainty": "reported",
       "segment": null
@@ -269,6 +461,30 @@
       "scope": "product",
       "certainty": "reported",
       "segment": "H20"
+    },
+    {
+      "metric": "net_income",
+      "value": 45197000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "gaap",
+      "quote": "GAAP net income $ 26,422 $ 18,775 $ 16,599 $ 45,197 $ 31,480",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 39584000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 13,450 $ 26,135 $ 13,483 $ 39,584 $ 28,418",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
     },
     {
       "metric": "revenue_outlook",

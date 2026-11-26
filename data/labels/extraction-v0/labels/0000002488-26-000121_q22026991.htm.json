@@ -295,6 +295,18 @@
       "segment": "Gaming"
     },
     {
+      "metric": "revenue_growth_yoy_pct",
+      "value": -31.0,
+      "unit": "pct",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Gaming business revenue was $779 million, down 31% year-over-year",
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Gaming"
+    },
+    {
       "metric": "revenue",
       "value": 977000000.0,
       "unit": "USD",

@@ -600,86 +600,6 @@
   ],
   "dropped": [
     {
-      "metric": "revenue",
-      "quote": "Revenue $9,246 $6,819 Up 36% $7,685 Up 20%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross Profit $4,780 $3,419 Up 40% $3,059 Up 56%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating Expenses $3,510 $2,695 Up 30% $3,193 Up 10%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income (Loss) $1,270 $724 Up 75% $(134) Up 1,048%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net Income $1,243 $771 Up 61% $872 Up 43%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross Profit $4,992 $3,657 Up 37% $3,326 Up 50%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating Expenses $2,754 $1,942 Up 42% $2,429 Up 13%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income $2,238 $1,715 Up 30% $897 Up 149%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net Income $1,965 $1,504 Up 31% $781 Up 152%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "data_center_revenue",
-      "quote": "Data Center Net Revenue $4,341 $3,549 Up 22% $3,240 Up 34%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income (Loss) $1,074 $1,041 Up 3% $(155) Up 793%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Client & Gaming Net Revenue $4,048 $2,343 Up 73% $3,621 Up 12%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income $867 $288 Up 201% $767 Up 13%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Embedded Net Revenue $857 $927 Down 8% $824 Up 4%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating Income $283 $372 Down 24% $275 Up 3%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow $ 1,530",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "Cash, Cash Equivalents and Short-term Investments $7,243 $5,867 Up 23%",
       "reason": "unknown_metric"
@@ -698,6 +618,11 @@
       "metric": "other",
       "quote": "Second quarter of 2025 results included $800 million in inventory and related charges as result of the U.S. Government's export control on our AMD Instinct MI308 data center GPU products.",
       "reason": "unknown_metric"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Record third quarter revenue of $9.2 billion increased 36% y/y",
+      "reason": "conflicting_values"
     }
   ],
   "validation_notes": []

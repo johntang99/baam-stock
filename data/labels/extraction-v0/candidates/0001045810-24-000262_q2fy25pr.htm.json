@@ -546,56 +546,6 @@
   ],
   "dropped": [
     {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $3,932 $3,497 $2,662 Up 12% Up 48%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $2,792 $2,501 $1,838 Up 12% Up 52%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $18,642 $16,909 $6,800 Up 10% Up 174%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $19,937 $18,059 $7,776 Up 10% Up 156%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $16,599 $14,881 $6,188 Up 12% Up 168%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $16,952 $15,238 $6,740 Up 11% Up 152%",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "GAAP gross profit $ 22,574 $ 20,406 $ 9,462 $ 42,979 $ 14,110",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Non-GAAP gross profit $ 22,729 $ 20,560 $ 9,614 $ 43,288 $ 14,417",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "GAAP net cash provided by operating activities $ 14,489 $ 15,345 $ 6,348 $ 29,833 $ 9,259",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow $ 13,483 $ 14,936 $ 6,048 $ 28,418 $ 8,691",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "During the first half of fiscal 2025, NVIDIA returned $15.4 billion to shareholders in the form of shares repurchased and cash dividends.",
       "reason": "unknown_metric"

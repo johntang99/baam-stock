@@ -672,66 +672,6 @@
   ],
   "dropped": [
     {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $5,839 $5,413 $4,287 8 % 36 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $4,215 $3,795 $3,046 11 % 38 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $36,010 $28,440 $21,869 27 % 65 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income $37,752 $30,165 $23,276 25 % 62 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $31,910 $26,422 $19,309 21 % 65 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $31,767 $25,783 $20,010 23 % 59 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross profit 41,849 26,156 102,370 69,135",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Non-GAAP gross profit $ 41,967 $ 33,960 $ 26,322 $ 102,785 $ 69,611",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "Net cash provided by operating activities 23,750 17,629 66,530 47,460",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow $ 22,089 $ 13,450 $ 16,787 $ 61,675 $ 45,204",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Revenue $ 57,006 $ 35,082 $ 147,811 $ 91,166",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $ 31,910 $ 19,309 $ 77,107 $ 50,789",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "During the first nine months of fiscal 2026, NVIDIA returned $37.0 billion to shareholders in the form of shares repurchased and cash dividends.",
       "reason": "unknown_metric"
@@ -755,11 +695,6 @@
       "metric": "other",
       "quote": "GAAP and non-GAAP tax rates are expected to be 17.0%, plus or minus 1%, excluding any discrete items.",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "revenue_growth_qoq_pct",
-      "quote": "Third-quarter Gaming revenue was $4.3 billion, down 1% from the previous quarter and up 30% from a year ago.",
-      "reason": "value_not_in_quote"
     }
   ],
   "validation_notes": []

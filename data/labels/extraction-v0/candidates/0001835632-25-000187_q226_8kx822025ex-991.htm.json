@@ -641,66 +641,6 @@
       "reason": "unknown_metric"
     },
     {
-      "metric": "gross_profit",
-      "quote": "Gross profit 1,010.6 952.4 587.6 1,963.0 1,115.4",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Non-GAAP gross profit $ 1,191.4 $ 1,133.5 $ 787.5 $ 2,324.9 $ 1,511.5",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Total operating expenses 720.5 681.8 688.0 1,402.3 1,368.1",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Total non-GAAP operating expenses $ 492.6 $ 486.2 $ 455.8 $ 978.8 $ 909.6",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income (loss) 290.1 270.6 (100.4) 560.7 (252.7)",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Net revenue $ 2,006.1 $ 1,895.3 $ 1,272.9 $ 3,901.4 $ 2,433.8",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "Net cash provided by operating activities 461.6 306.4 794.5 630.9",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "data_center_revenue",
-      "quote": "Data center $ 1,490.5 $ 1,440.6 $ 880.9 69 % 3 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Enterprise networking 193.6 177.5 151.0 28 % 9 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Carrier infrastructure 130.1 138.4 75.9 71 % (6) %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Consumer 115.9 63.1 88.9 30 % 84 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Automotive/industrial 76.0 75.7 76.2 — % — %",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "For the second quarter of fiscal 2026, a non-GAAP tax rate of 10.0% has been applied to the non-GAAP financial results.",
       "reason": "unknown_metric"

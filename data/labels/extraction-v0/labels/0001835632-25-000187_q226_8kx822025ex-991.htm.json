@@ -127,6 +127,66 @@
       "segment": null
     },
     {
+      "metric": "gross_profit",
+      "value": 1010600000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Gross profit 1,010.6 952.4 587.6 1,963.0 1,115.4",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 1191400000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "non_gaap",
+      "quote": "Non-GAAP gross profit $ 1,191.4 $ 1,133.5 $ 787.5 $ 2,324.9 $ 1,511.5",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 720500000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Total operating expenses 720.5 681.8 688.0 1,402.3 1,368.1",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 492600000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "non_gaap",
+      "quote": "Total non-GAAP operating expenses $ 492.6 $ 486.2 $ 455.8 $ 978.8 $ 909.6",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 290100000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Operating income (loss) 290.1 270.6 (100.4) 560.7 (252.7)",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "operating_margin_pct",
       "value": 14.5,
       "unit": "pct",
@@ -151,6 +211,42 @@
       "segment": null
     },
     {
+      "metric": "revenue",
+      "value": 3901400000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Net revenue $ 2,006.1 $ 1,895.3 $ 1,272.9 $ 3,901.4 $ 2,433.8",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 794500000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Net cash provided by operating activities 461.6 306.4 794.5 630.9",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "data_center_revenue",
+      "value": 1490500000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": null,
+      "quote": "Data center $ 1,490.5 $ 1,440.6 $ 880.9 69 % 3 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Data center"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 69.0,
       "unit": "pct",
@@ -173,6 +269,54 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Data center"
+    },
+    {
+      "metric": "revenue",
+      "value": 193600000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": null,
+      "quote": "Enterprise networking 193.6 177.5 151.0 28 % 9 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Enterprise networking"
+    },
+    {
+      "metric": "revenue",
+      "value": 130100000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": null,
+      "quote": "Carrier infrastructure 130.1 138.4 75.9 71 % (6) %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Carrier infrastructure"
+    },
+    {
+      "metric": "revenue",
+      "value": 115900000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": null,
+      "quote": "Consumer 115.9 63.1 88.9 30 % 84 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Consumer"
+    },
+    {
+      "metric": "revenue",
+      "value": 76000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": null,
+      "quote": "Automotive/industrial 76.0 75.7 76.2 — % — %",
+      "direction": "unchanged",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Automotive/industrial"
     },
     {
       "metric": "revenue_outlook",

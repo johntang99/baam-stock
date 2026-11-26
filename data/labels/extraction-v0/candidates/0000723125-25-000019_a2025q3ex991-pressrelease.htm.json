@@ -623,36 +623,6 @@
       "reason": "unknown_metric"
     },
     {
-      "metric": "gross_profit",
-      "quote": "Gross margin 3,508 2,963 1,832 3,623 3,053 1,917",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin 3,508 2,963 1,832 3,623 3,053 1,917",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses 1,339 1,190 1,113 1,133 1,046 976",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses 1,339 1,190 1,113 1,133 1,046 976",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 2,169 1,773 719 2,490 2,007 941",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 2,169 1,773 719 2,490 2,007 941",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "investments in capital expenditures, net (2) were $2.66 billion",
       "reason": "unknown_metric"
@@ -666,21 +636,6 @@
       "metric": "other",
       "quote": "declared a quarterly dividend of $0.115 per share",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Revenue $ 9,301 $ 8,053 $ 6,811 $ 26,063 $ 17,361",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income (loss) $ 1,885 $ 1,583 $ 332 $ 5,338 $ (109)",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "Net cash provided by operating activities 11,795 5,102",
-      "reason": "value_not_in_quote"
     }
   ],
   "validation_notes": []

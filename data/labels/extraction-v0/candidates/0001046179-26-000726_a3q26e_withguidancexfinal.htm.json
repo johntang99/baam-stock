@@ -672,6 +672,26 @@
   ],
   "dropped": [
     {
+      "metric": "revenue",
+      "quote": "today announced consolidated revenue of NT$1,494.24 billion",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
+      "metric": "net_income",
+      "quote": "net income of NT$763.06 billion",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "diluted earnings per share of NT$29.43 (US$4.60 per ADR unit)",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "diluted earnings per share of NT$29.43 (US$4.60 per ADR unit)",
+      "reason": "value_not_in_quote"
+    },
+    {
       "metric": "other",
       "quote": "while net income and diluted EPS both increased 68.7%",
       "reason": "unknown_metric"
@@ -714,22 +734,22 @@
     {
       "metric": "revenue",
       "quote": "Net sales 1,494,243 989,918 50.9 1,270,381 17.6",
-      "reason": "value_not_in_quote"
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "revenue",
       "quote": "Net sales 1,494,243 989,918 50.9 1,270,381 17.6",
-      "reason": "value_not_in_quote"
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "revenue",
       "quote": "Net sales 1,494,243 989,918 50.9 1,270,381 17.6",
-      "reason": "value_not_in_quote"
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "gross_profit",
       "quote": "Gross profit 992,379 588,543 68.6 860,311 15.4",
-      "reason": "value_not_in_quote"
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "other",
@@ -739,7 +759,7 @@
     {
       "metric": "operating_income",
       "quote": "Income from operations 876,445 500,685 75.0 766,603 14.3",
-      "reason": "value_not_in_quote"
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "other",
@@ -754,22 +774,22 @@
     {
       "metric": "net_income",
       "quote": "Net income 763,064 452,302 68.7 706,562 8.0",
-      "reason": "value_not_in_quote"
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "net_income",
       "quote": "Net income 763,064 452,302 68.7 706,562 8.0",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "today announced consolidated revenue of NT$1,494.24 billion",
-      "reason": "conflicting_values"
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "eps_gaap",
-      "quote": "diluted earnings per share of NT$29.43 (US$4.60 per ADR unit)",
-      "reason": "conflicting_values"
+      "quote": "EPS (NT$) 29.43 b 17.44 c 68.7 27.25 b 8.0",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "EPS (NT$) 29.43 b 17.44 c 68.7 27.25 b 8.0",
+      "reason": "currency_not_supported:TWD"
     },
     {
       "metric": "revenue_growth_yoy_pct",

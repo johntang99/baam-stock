@@ -528,121 +528,6 @@
   ],
   "dropped": [
     {
-      "metric": "revenue",
-      "quote": "Total net revenue 24,448 623 - (41 ) - 25,030",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Total net revenue 24,448 623 - (41 ) - 25,030",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Net revenue: Products $ 14,604 $ - $ - $ - $ - $ 14,604",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Subscriptions and services 9,844 - 623 2 (a) (83 ) 3 (a) - 10,426",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin 15,151 471 - (281 ) - 15,341",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin 15,151 471 - (281 ) - 15,341",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Total operating expenses 10,103 464 - (946 ) - 9,621",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 5,048 7 - 665 - 5,720",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 5,048 7 - 665 - 5,720",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income from continuing operations attributable to common stock $ 3,395 $ 26 $ - $ 522 $ (84 ) $ 3,859",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income from continuing operations attributable to common stock $ 3,395 $ 26 $ - $ 522 $ (84 ) $ 3,859",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Total net revenue 35,819 13,852 - (1,587 ) - 48,084",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Total net revenue 35,819 13,852 - (1,587 ) - 48,084",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Total net revenue 35,819 13,852 - (1,587 ) - 48,084",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Products $ 27,891 $ - $ - $ - $ - $ 27,891",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Subscriptions and services 7,928 - 13,852 2 (a) (1,643 ) 3 (a) - 20,193",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin 24,690 11,292 - (5,732 ) - 30,250",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin 24,690 11,292 - (5,732 ) - 30,250",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Total operating expenses 8,483 9,080 - 794 - 18,357",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 16,207 2,212 - (6,526 ) - 11,893",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 16,207 2,212 - (6,526 ) - 11,893",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income from continuing operations attributable to common stock $ 14,082 $ 1,734 $ - $ (5,917 ) $ (1,799 ) $ 8,100",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income from continuing operations attributable to common stock $ 14,082 $ 1,734 $ - $ (5,917 ) $ (1,799 ) $ 8,100",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "Broadcom entered into an aggregate of $30.4 billion of term facilities",
       "reason": "unknown_metric"
@@ -651,6 +536,61 @@
       "metric": "other",
       "quote": "Broadcom incurred discounts and financing fees of approximately $398 million",
       "reason": "unknown_metric"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Total net revenue 24,448 623 - (41 ) - 25,030",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Total net revenue 24,448 623 - (41 ) - 25,030",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Net revenue: Products $ 14,604 $ - $ - $ - $ - $ 14,604",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "revenue",
+      "quote": "Subscriptions and services 9,844 - 623 2 (a) (83 ) 3 (a) - 10,426",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross margin 15,151 471 - (281 ) - 15,341",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "gross_profit",
+      "quote": "Gross margin 15,151 471 - (281 ) - 15,341",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Total operating expenses 10,103 464 - (946 ) - 9,621",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income 5,048 7 - 665 - 5,720",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "operating_income",
+      "quote": "Operating income 5,048 7 - 665 - 5,720",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income from continuing operations attributable to common stock $ 3,395 $ 26 $ - $ 522 $ (84 ) $ 3,859",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "net_income",
+      "quote": "Net income from continuing operations attributable to common stock $ 3,395 $ 26 $ - $ 522 $ (84 ) $ 3,859",
+      "reason": "conflicting_values"
     },
     {
       "metric": "eps_gaap",

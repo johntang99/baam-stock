@@ -127,6 +127,18 @@
       "segment": "AI products"
     },
     {
+      "metric": "revenue",
+      "value": 7202000000.0,
+      "unit": "USD",
+      "period": "FY2024Q2",
+      "basis": "gaap",
+      "quote": "Semiconductor solutions $ 7,202 58 % $ 6,808 78 % +6 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Semiconductor solutions"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 6.0,
       "unit": "pct",
@@ -139,6 +151,18 @@
       "segment": "Semiconductor solutions"
     },
     {
+      "metric": "revenue",
+      "value": 5285000000.0,
+      "unit": "USD",
+      "period": "FY2024Q2",
+      "basis": "gaap",
+      "quote": "Infrastructure software 5,285 42 1,925 22 +175 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Infrastructure software"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 175.0,
       "unit": "pct",
@@ -149,6 +173,78 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Infrastructure software"
+    },
+    {
+      "metric": "gross_profit",
+      "value": 7776000000.0,
+      "unit": "USD",
+      "period": "FY2024Q2",
+      "basis": "gaap",
+      "quote": "Gross margin on GAAP basis $ 7,776 $ 7,375 $ 6,115 $ 15,151 $ 12,119",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 9518000000.0,
+      "unit": "USD",
+      "period": "FY2024Q2",
+      "basis": "non_gaap",
+      "quote": "Gross margin on non-GAAP basis $ 9,518 $ 9,014 $ 6,606 $ 18,532 $ 13,184",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 2965000000.0,
+      "unit": "USD",
+      "period": "FY2024Q2",
+      "basis": "gaap",
+      "quote": "Operating income on GAAP basis $ 2,965 $ 2,083 $ 4,008 $ 5,048 $ 8,111",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 7146000000.0,
+      "unit": "USD",
+      "period": "FY2024Q2",
+      "basis": "non_gaap",
+      "quote": "Operating income on non-GAAP basis $ 7,146 $ 6,831 $ 5,412 $ 13,977 $ 10,842",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 4811000000.0,
+      "unit": "USD",
+      "period": "FY2024Q2",
+      "basis": "gaap",
+      "quote": "Total operating expenses on GAAP basis $ 4,811 $ 5,292 $ 2,107 $ 10,103 $ 4,008",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 2372000000.0,
+      "unit": "USD",
+      "period": "FY2024Q2",
+      "basis": "non_gaap",
+      "quote": "Total operating expenses on non-GAAP basis $ 2,372 $ 2,183 $ 1,194 $ 4,555 $ 2,342",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
     }
   ]
 }

@@ -798,44 +798,9 @@
   ],
   "dropped": [
     {
-      "metric": "gross_profit",
-      "quote": "Gross margin 17,755 7,646 2,963 17,876 7,753 3,053",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Gross margin 17,755 7,646 2,963 17,876 7,753 3,053",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses 1,620 1,510 1,190 1,421 1,334 1,046",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses 1,620 1,510 1,190 1,421 1,334 1,046",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 16,135 6,136 1,773 16,455 6,419 2,007",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 16,135 6,136 1,773 16,455 6,419 2,007",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "investments in capital expenditures, net (2) were $5.0 billion and adjusted free cash flow (2) was $6.9 billion",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Adjusted free cash flow $ 6,899 $ 3,906 $ 857",
-      "reason": "value_not_in_quote"
     },
     {
       "metric": "other",
@@ -853,39 +818,9 @@
       "reason": "unknown_metric"
     },
     {
-      "metric": "revenue",
-      "quote": "Cloud Memory Business Unit Revenue $ 7,749 $ 5,284 $ 2,947",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "data_center_revenue",
-      "quote": "Core Data Center Business Unit Revenue $ 5,687 $ 2,379 $ 1,830",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Mobile and Client Business Unit Revenue $ 7,711 $ 4,255 $ 2,236",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Automotive and Embedded Business Unit Revenue $ 2,708 $ 1,720 $ 1,034",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Revenue $ 23,860 $ 13,643 $ 8,053 $ 37,503 $ 16,762",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "net_income",
-      "quote": "Net income $ 19,025 $ 3,453",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "Net cash provided by operating activities 20,314 7,186",
-      "reason": "value_not_in_quote"
+      "metric": "free_cash_flow",
+      "quote": "investments in capital expenditures, net (2) were $5.0 billion and adjusted free cash flow (2) was $6.9 billion",
+      "reason": "conflicting_values"
     }
   ],
   "validation_notes": []

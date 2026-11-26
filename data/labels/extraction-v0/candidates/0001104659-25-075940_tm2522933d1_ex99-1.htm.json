@@ -312,26 +312,6 @@
   ],
   "dropped": [
     {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $1.35B ± $20M $ 147 M B $1.20B ± $20M $1.37B ± $15M $ 147 M B $1.22B ± $15M",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $1.35B ± $20M $ 147 M B $1.20B ± $20M $1.37B ± $15M $ 147 M B $1.22B ± $15M",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $1.35B ± $20M $ 147 M B $1.20B ± $20M $1.37B ± $15M $ 147 M B $1.22B ± $15M",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses $1.35B ± $20M $ 147 M B $1.20B ± $20M $1.37B ± $15M $ 147 M B $1.22B ± $15M",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "Stock-based compensation – cost of goods sold $ 119",
       "reason": "unknown_metric"
@@ -364,6 +344,16 @@
     {
       "metric": "gross_margin_pct",
       "quote": "Gross margin 41.0% ± 1.0% 1.0 % A 42.0% ± 1.0% 43.5% ± 0.5% 1.0 % A 44.5% ± 0.5%",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses $1.35B ± $20M $ 147 M B $1.20B ± $20M $1.37B ± $15M $ 147 M B $1.22B ± $15M",
+      "reason": "conflicting_values"
+    },
+    {
+      "metric": "operating_expenses",
+      "quote": "Operating expenses $1.35B ± $20M $ 147 M B $1.20B ± $20M $1.37B ± $15M $ 147 M B $1.22B ± $15M",
       "reason": "conflicting_values"
     },
     {

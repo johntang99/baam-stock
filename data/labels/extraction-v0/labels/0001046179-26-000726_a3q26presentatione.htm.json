@@ -55,18 +55,6 @@
       "segment": null
     },
     {
-      "metric": "eps_gaap",
-      "value": 29.43,
-      "unit": "USD_per_share",
-      "period": null,
-      "basis": "gaap",
-      "quote": "EPS (NT Dollar) 29.43 27.25 17.44 +8.0% +68.7%",
-      "direction": "increase",
-      "scope": "company",
-      "certainty": "reported",
-      "segment": null
-    },
-    {
       "metric": "revenue_growth_yoy_pct",
       "value": 44.0,
       "unit": "pct",

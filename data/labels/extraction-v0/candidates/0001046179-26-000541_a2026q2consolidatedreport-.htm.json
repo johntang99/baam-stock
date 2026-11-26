@@ -488,6 +488,46 @@
       "reason": "unknown_metric"
     },
     {
+      "metric": "eps_gaap",
+      "quote": "Basic earnings per share $ 27.25 $ 15.36 $ 49.33 $ 29.31",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "Basic earnings per share $ 27.25 $ 15.36 $ 49.33 $ 29.31",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "Basic earnings per share $ 27.25 $ 15.36 $ 49.33 $ 29.31",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "Basic earnings per share $ 27.25 $ 15.36 $ 49.33 $ 29.31",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "Diluted earnings per share $ 27.25 $ 15.36 $ 49.32 $ 29.30",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "Diluted earnings per share $ 27.25 $ 15.36 $ 49.32 $ 29.30",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "Diluted earnings per share $ 27.25 $ 15.36 $ 49.32 $ 29.30",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
+      "metric": "eps_gaap",
+      "quote": "Diluted earnings per share $ 27.25 $ 15.36 $ 49.32 $ 29.30",
+      "reason": "currency_not_supported:TWD"
+    },
+    {
       "metric": "other",
       "quote": "Cash dividends per share (NT$) $ 7.00 $ 7.00",
       "reason": "unknown_metric"
@@ -516,11 +556,6 @@
       "metric": "other",
       "quote": "Effective January 1, 2026, the credit percentage has been increased to 35% of the qualified investment amount following amendments to relevant regulations.",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "eps_gaap",
-      "quote": "Basic earnings per share $ 27.25 $ 15.36 $ 49.33 $ 29.31",
-      "reason": "conflicting_values"
     }
   ],
   "validation_notes": []

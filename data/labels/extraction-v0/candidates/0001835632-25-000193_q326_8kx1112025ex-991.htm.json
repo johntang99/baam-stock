@@ -700,66 +700,6 @@
       "reason": "unknown_metric"
     },
     {
-      "metric": "gross_profit",
-      "quote": "Gross profit 1,069.8 1,010.6 349.4 3,032.8 1,464.8",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "gross_profit",
-      "quote": "Non-GAAP gross profit $ 1,238.1",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Total operating expenses 712.0 720.5 1,052.2 2,114.3 2,420.3",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Total non-GAAP operating expenses $ 485.0",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income (loss) 357.8 290.1 (702.8) 918.5 (955.5)",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Net revenue $ 2,074.5 $ 2,006.1 $ 1,516.1 $ 5,975.9 $ 3,949.9",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "data_center_revenue",
-      "quote": "Data center $ 1,517.9 $ 1,490.5 $ 1,101.1 38 % 2 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Enterprise networking 237.2 193.6 150.9 57 % 23 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Carrier infrastructure 167.8 130.1 84.7 98 % 29 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Consumer 116.6 115.9 96.5 21 % 1 %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Automotive/industrial 35.0 76.0 82.9 (58) % (54) %",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Communications and other 556.6 515.6 415.0 34 % 8 %",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "gross_margin_pct",
       "quote": "GAAP gross margin is expected to be 51.1% to 52.1%.",
       "reason": "conflicting_values"

@@ -5,5 +5,18 @@
   "fiscal_period": null,
   "label_status": "draft",
   "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
-  "facts": []
+  "facts": [
+    {
+      "metric": "revenue",
+      "value": 13852000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Total net revenue 35,819 13,852 - (1,587 ) - 48,084",
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "segment": "VMware, Inc."
+    }
+  ]
 }

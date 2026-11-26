@@ -163,6 +163,18 @@
       "segment": "AI semiconductor"
     },
     {
+      "metric": "revenue",
+      "value": 9166000000.0,
+      "unit": "USD",
+      "period": "FY2025Q3",
+      "basis": "gaap",
+      "quote": "Semiconductor solutions $ 9,166 57 % $ 7,274 56 % +26 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Semiconductor solutions"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 26.0,
       "unit": "pct",
@@ -175,6 +187,18 @@
       "segment": "Semiconductor solutions"
     },
     {
+      "metric": "revenue",
+      "value": 6786000000.0,
+      "unit": "USD",
+      "period": "FY2025Q3",
+      "basis": "gaap",
+      "quote": "Infrastructure software 6,786 43 5,798 44 +17 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Infrastructure software"
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 17.0,
       "unit": "pct",
@@ -185,6 +209,78 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Infrastructure software"
+    },
+    {
+      "metric": "gross_profit",
+      "value": 10703000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Gross margin on GAAP basis $ 10,703 $ 10,197 $ 8,356 $ 31,045 $ 23,507",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "gross_profit",
+      "value": 12499000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "non_gaap",
+      "quote": "Gross margin on non-GAAP basis $ 12,499 $ 11,911 $ 10,113 $ 36,206 $ 28,645",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 5887000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Operating income on GAAP basis $ 5,887 $ 5,829 $ 3,788 $ 17,976 $ 8,836",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 10455000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "non_gaap",
+      "quote": "Operating income on non-GAAP basis $ 10,455 $ 9,793 $ 7,948 $ 30,076 $ 21,925",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_expenses",
+      "value": 4816000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Total operating expenses on GAAP basis $ 4,816 $ 4,368 $ 4,568 $ 13,069 $ 14,671",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "revenue",
+      "value": 45872000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Net revenue $ 15,952 $ 15,004 $ 13,072 $ 45,872 $ 37,520",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
     }
   ]
 }

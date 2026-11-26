@@ -924,31 +924,6 @@
   ],
   "dropped": [
     {
-      "metric": "gross_profit",
-      "quote": "Gross margin 47,047 35,056 5,054 47,204 35,199 5,169",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_expenses",
-      "quote": "Operating expenses 3,296 1,738 1,400 2,568 1,518 1,214",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 43,751 33,318 3,654 44,636 33,681 3,955",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 43,751 33,318 3,654 44,636 33,681 3,955",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Operating income 99,340 9,770 101,191 10,846",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "Investments in capital expenditures, net (2) were $10.77 billion for the fourth quarter of 2026 and $27.37 billion for the full year of 2026.",
       "reason": "unknown_metric"
@@ -967,26 +942,6 @@
       "metric": "other",
       "quote": "declared a quarterly dividend of $0.15 per share",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Cloud Memory Business Unit Revenue $ 16,283 $ 13,769 $ 4,543",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "data_center_revenue",
-      "quote": "Core Data Center Business Unit Revenue $ 18,002 $ 11,524 $ 1,577",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Mobile and Client Business Unit Revenue $ 13,114 $ 11,521 $ 3,760",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "revenue",
-      "quote": "Automotive and Embedded Business Unit Revenue $ 6,824 $ 4,634 $ 1,434",
-      "reason": "value_not_in_quote"
     },
     {
       "metric": "other",
