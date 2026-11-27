@@ -29,8 +29,9 @@ uv run python scripts/make_fixture.py          # 生成合成 fixture（syntheti
 uv run python scripts/validate_sample.py --fixture data/fixtures/nvda_2026-12-01_1s.parquet
 supabase start && supabase db reset            # 迁移 + seed（需 Docker）
 make check                                     # 以上检查一次跑完
+uv run python scripts/check_labels.py --queue 10   # 标注审核：下一批文档；--keys 自检；--text 取原文
 ```
 
 ## 当前进度
-- Phase 0 完成（CI 绿）。**Phase 1 进行中**：已完成 DP 1.03–1.08、1.22、1.27–1.28，1.18 工具已就绪待语料与人工标注（历史类比、证据入库、LLM 接口、事件与版本、财报提取与预期对比、政策事件模板、采集记录、推理链与引用校验）；行情相关任务（1.01、1.02 等）等待 D-13 供应商样本。
+- Phase 0 完成（CI 绿）。**Phase 1 进行中**：已完成 DP 1.03–1.08、1.22、1.27–1.28（历史类比、证据入库、LLM 接口、事件与版本、财报提取与预期对比、政策事件模板、采集记录、推理链与引用校验）。1.18：291 份 SEC 语料已有 Claude（extract-0.3）草稿、核对规则 earnings-0.2（OQ-39）、审核指南 `docs/labeling/extraction-v0.md` 与 `scripts/check_labels.py` 已就绪，**等待人工审核满 100 份**后跑评估（付费，需批准）；评估集还缺政策与新闻文档。行情相关任务（1.01、1.02、1.09–1.17、1.21、1.23–1.26）等待 D-13 供应商样本。
 - 数据库测试：设置 `TEST_DATABASE_URL`（管理员连接串，测试会建临时库）后运行 pytest；CI 自带 postgres:17。
