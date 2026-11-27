@@ -24,7 +24,7 @@ pnpm -r build                                  # contracts 生成 TS + web 构�
 pnpm --filter contracts test                    # examples/*.json 通过 schema 校验
 uv sync                                        # Python 依赖（根目录 uv 项目，引用 services/py）
 TEST_DATABASE_URL=postgresql://… uv run pytest services/py/tests -q   # Python 测试（含数据库测试）
-uv run ruff check . && uv run mypy services/py/sr
+uv run ruff check . && uv run mypy services/py/sr scripts   # CI 同样检查 scripts/
 uv run python scripts/make_fixture.py          # 生成合成 fixture（synthetic）
 uv run python scripts/validate_sample.py --fixture data/fixtures/nvda_2026-12-01_1s.parquet
 supabase start && supabase db reset            # 迁移 + seed（需 Docker）

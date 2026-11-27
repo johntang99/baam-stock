@@ -8,11 +8,14 @@ import re
 from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any, Literal
+from typing import Any, Literal, get_args
 
 from pydantic import BaseModel, ConfigDict, Field
 
 from sr.config import load, repo_root
+
+DocKind = Literal["earnings_release", "8k_other", "periodic_report", "policy", "news"]
+DOC_KINDS: tuple[DocKind, ...] = get_args(DocKind)
 
 
 class GoldFact(BaseModel):
@@ -33,7 +36,7 @@ class DocLabel(BaseModel):
     model_config = ConfigDict(extra="forbid")
     doc_key: str  # manifest key, e.g. 0001045810-24-000123:ex991.htm
     text_sha256: str = Field(pattern=r"^[0-9a-f]{64}$")  # sha of the normalised text the labels refer to
-    doc_kind: Literal["earnings_release", "8k_other", "periodic_report", "policy", "news"]
+    doc_kind: DocKind
     fiscal_period: str | None = None
     label_status: Literal["draft", "reviewed"]
     labeled_by: str
@@ -171,8 +174,12 @@ def lint_label(label: DocLabel, text: str | None, file_name: str | None = None) 
     return out
 
 
-def doc_kind_for(row: dict[str, Any]) -> str:
+def doc_kind_for(row: dict[str, Any]) -> DocKind:
     """Label doc_kind for a manifest row: explicit for policy/news rows; SEC rows by file kind."""
-    if row.get("doc_kind"):
-        return str(row["doc_kind"])
+    kind = row.get("doc_kind")
+    if kind:
+        for k in DOC_KINDS:
+            if k == kind:
+                return k
+        raise ValueError(f"unknown doc_kind {kind!r} in manifest row {row.get('doc_key')}")
     return "earnings_release" if row.get("file_kind") == "ex99" else "8k_other"
