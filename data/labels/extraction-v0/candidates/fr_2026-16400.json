@@ -1,0 +1,286 @@
+{
+  "doc_key": "fr:2026-16400",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFN4YME414WRDK32X0NWY6",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 270,
+      "unit": "pct",
+      "currency": null,
+      "period": "since 2020",
+      "basis": null,
+      "quote": "since 2020 alone, global production of polysilicon has grown by more than 270 percent",
+      "span": {
+        "char_start": 3027,
+        "char_end": 3112
+      },
+      "direction": "increase",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "global production of polysilicon growth since 2020",
+      "segment": "Polysilicon"
+    },
+    {
+      "metric": "other",
+      "value": 2,
+      "unit": "pct",
+      "currency": null,
+      "period": "2024",
+      "basis": null,
+      "quote": "The United States' share of global polysilicon production capacity has fallen from 50 percent in 2005 to less than 2 percent in 2024.",
+      "span": {
+        "char_start": 3391,
+        "char_end": 3524
+      },
+      "direction": "decrease",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "United States' share of global polysilicon production capacity",
+      "segment": "Polysilicon"
+    },
+    {
+      "metric": "other",
+      "value": 50,
+      "unit": "pct",
+      "currency": null,
+      "period": "2005",
+      "basis": null,
+      "quote": "The United States' share of global polysilicon production capacity has fallen from 50 percent in 2005 to less than 2 percent in 2024.",
+      "span": {
+        "char_start": 3391,
+        "char_end": 3524
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "United States' share of global polysilicon production capacity",
+      "segment": "Polysilicon"
+    },
+    {
+      "metric": "other",
+      "value": 10,
+      "unit": "pct",
+      "currency": null,
+      "period": "2024",
+      "basis": null,
+      "quote": "the United States' share of global semiconductor wafer fabrication capacity has decreased from 37 percent in 1990 to 10 percent in 2024",
+      "span": {
+        "char_start": 3536,
+        "char_end": 3671
+      },
+      "direction": "decrease",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "United States' share of global semiconductor wafer fabrication capacity",
+      "segment": "Semiconductor wafer fabrication"
+    },
+    {
+      "metric": "other",
+      "value": 37,
+      "unit": "pct",
+      "currency": null,
+      "period": "1990",
+      "basis": null,
+      "quote": "the United States' share of global semiconductor wafer fabrication capacity has decreased from 37 percent in 1990 to 10 percent in 2024",
+      "span": {
+        "char_start": 3536,
+        "char_end": 3671
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "United States' share of global semiconductor wafer fabrication capacity",
+      "segment": "Semiconductor wafer fabrication"
+    },
+    {
+      "metric": "other",
+      "value": 2.4,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "global semiconductor-grade polysilicon now accounts for only 2.4 percent of global polysilicon production",
+      "span": {
+        "char_start": 4120,
+        "char_end": 4225
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "semiconductor-grade polysilicon share of global polysilicon production",
+      "segment": "Semiconductor-grade polysilicon"
+    },
+    {
+      "metric": "other",
+      "value": 15,
+      "unit": "pct",
+      "currency": null,
+      "period": "on or after December 4, 2026",
+      "basis": null,
+      "quote": "shall be subject to an additional 15 percent ad valorem rate of duty, except as otherwise specified in this proclamation",
+      "span": {
+        "char_start": 12654,
+        "char_end": 12774
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "additional ad valorem rate of duty on polysilicon ingots and derivatives",
+      "segment": "Polysilicon derivatives"
+    },
+    {
+      "metric": "other",
+      "value": 10,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "For products of the United Kingdom subject to tariffs under this proclamation, the applicable rate of duty under clause (4) of this proclamation shall be 10 percent.",
+      "span": {
+        "char_start": 13482,
+        "char_end": 13647
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "applicable rate of duty for products of the United Kingdom",
+      "segment": "Polysilicon derivatives"
+    },
+    {
+      "metric": "other",
+      "value": 21,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "(i) $21 per kilogram for polysilicon",
+      "span": {
+        "char_start": 9984,
+        "char_end": 10020
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "minimum import price for polysilicon (per kilogram)",
+      "segment": "Polysilicon"
+    },
+    {
+      "metric": "other",
+      "value": 100,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "(ii) $100 per kilogram for polysilicon ingots and wafers",
+      "span": {
+        "char_start": 10022,
+        "char_end": 10078
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "minimum import price for polysilicon ingots and wafers (per kilogram)",
+      "segment": "Polysilicon ingots and wafers"
+    },
+    {
+      "metric": "other",
+      "value": 0.22,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "(iii) $0.22 per watt for solar cells",
+      "span": {
+        "char_start": 10080,
+        "char_end": 10116
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "minimum import price for solar cells (per watt)",
+      "segment": "Solar cells"
+    },
+    {
+      "metric": "other",
+      "value": 0.38,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "(iv) $0.38 per watt for solar modules",
+      "span": {
+        "char_start": 10122,
+        "char_end": 10159
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "minimum import price for solar modules (per watt)",
+      "segment": "Solar modules"
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "since 2020 alone, global production of polysilicon has grown by more than 270 percent",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The United States' share of global polysilicon production capacity has fallen from 50 percent in 2005 to less than 2 percent in 2024.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The United States' share of global polysilicon production capacity has fallen from 50 percent in 2005 to less than 2 percent in 2024.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the United States' share of global semiconductor wafer fabrication capacity has decreased from 37 percent in 1990 to 10 percent in 2024",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the United States' share of global semiconductor wafer fabrication capacity has decreased from 37 percent in 1990 to 10 percent in 2024",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "global semiconductor-grade polysilicon now accounts for only 2.4 percent of global polysilicon production",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "shall be subject to an additional 15 percent ad valorem rate of duty, except as otherwise specified in this proclamation",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "For products of the United Kingdom subject to tariffs under this proclamation, the applicable rate of duty under clause (4) of this proclamation shall be 10 percent.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "(i) $21 per kilogram for polysilicon",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "(ii) $100 per kilogram for polysilicon ingots and wafers",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "(iii) $0.22 per watt for solar cells",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "(iv) $0.38 per watt for solar modules",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

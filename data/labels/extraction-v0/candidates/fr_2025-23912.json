@@ -1,0 +1,102 @@
+{
+  "doc_key": "fr:2025-23912",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFHAMW39KC85SZKEJ26Q05",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 0,
+      "unit": "pct",
+      "currency": null,
+      "period": "effective December 23, 2025",
+      "basis": null,
+      "quote": "with an initial tariff level of 0 percent, increasing in 18 months on June 23, 2027, to a rate to be announced not fewer than 30 days prior to that date",
+      "span": {
+        "char_start": 950,
+        "char_end": 1102
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "initial tariff level on semiconductors from China (new Section 301 action)",
+      "segment": "semiconductors"
+    },
+    {
+      "metric": "other",
+      "value": 50,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "These new Section 301 tariffs would be additional to the existing 50 percent Section 301 tariff on semiconductors from China imposed pursuant to the Section 301 investigation related to forced technology transfer.",
+      "span": {
+        "char_start": 14108,
+        "char_end": 14321
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "existing Section 301 tariff on semiconductors from China",
+      "segment": "semiconductors"
+    },
+    {
+      "metric": "other",
+      "value": 56,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "China aimed to capture 56 percent of sales in the international market and 80 percent in the domestic market, according to industrial plans.",
+      "span": {
+        "char_start": 5875,
+        "char_end": 6015
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "expectation",
+      "metric_label": "China target share of international semiconductor market sales",
+      "segment": "semiconductors"
+    },
+    {
+      "metric": "other",
+      "value": 80,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "China aimed to capture 56 percent of sales in the international market and 80 percent in the domestic market, according to industrial plans.",
+      "span": {
+        "char_start": 5875,
+        "char_end": 6015
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "expectation",
+      "metric_label": "China target share of domestic semiconductor market sales",
+      "segment": "semiconductors"
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "with an initial tariff level of 0 percent, increasing in 18 months on June 23, 2027, to a rate to be announced not fewer than 30 days prior to that date",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "These new Section 301 tariffs would be additional to the existing 50 percent Section 301 tariff on semiconductors from China imposed pursuant to the Section 301 investigation related to forced technology transfer.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "China aimed to capture 56 percent of sales in the international market and 80 percent in the domestic market, according to industrial plans.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "China aimed to capture 56 percent of sales in the international market and 80 percent in the domestic market, according to industrial plans.",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

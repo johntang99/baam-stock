@@ -403,18 +403,6 @@
       "segment": null
     },
     {
-      "metric": "operating_expenses",
-      "value": null,
-      "unit": "pct",
-      "period": "FY2025",
-      "basis": null,
-      "quote": "Full-year operating expenses are expected to grow in the mid to upper 40% range.",
-      "direction": "increase",
-      "scope": "company",
-      "certainty": "guidance",
-      "segment": null
-    },
-    {
       "metric": "revenue_outlook",
       "value": null,
       "unit": "USD",

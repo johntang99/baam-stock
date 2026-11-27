@@ -1,0 +1,9 @@
+{
+  "doc_key": "ir:MRVL:1044-marvell-and-penguin-solutions-collaborate-to-address-data-center-ai-memory-and-accelerate-inference-at-scale",
+  "text_sha256": "adc0693a9fc991b6c0d92a08de1f47ea2bf12d95d9eb8854b742c557f9060515",
+  "doc_kind": "news",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": []
+}

@@ -83,3 +83,10 @@ def test_value_and_scope_warnings() -> None:
     assert "warning:value 9.9e+10 not seen in the quote at any scale" in m
     assert "warning:segment is set but scope is company" in m
     assert msgs(label(gf(), status="draft", by="prelabel:x")) == []  # drafts may keep the prelabel name
+
+
+def test_unit_must_fit_the_metric() -> None:
+    lab = label(
+        gf(metric="revenue_outlook", value=2.0, unit="pct", quote="reported revenue of $13.4 billion")
+    )
+    assert "error:unit 'pct' does not fit revenue_outlook (expects USD)" in msgs(lab)

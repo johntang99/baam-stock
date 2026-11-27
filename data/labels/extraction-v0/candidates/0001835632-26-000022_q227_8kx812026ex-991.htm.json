@@ -664,6 +664,11 @@
       "reason": "unknown_metric"
     },
     {
+      "metric": "revenue_outlook",
+      "quote": "we are again raising our revenue outlook for both fiscal 2027 and fiscal 2028 compared with the guidance we provided last quarter",
+      "reason": "unit_kind_mismatch:pct"
+    },
+    {
       "metric": "gross_margin_pct",
       "quote": "GAAP gross margin is expected to be 52.9% to 53.9%.",
       "reason": "conflicting_values"

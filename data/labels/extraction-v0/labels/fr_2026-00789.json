@@ -1,0 +1,9 @@
+{
+  "doc_key": "fr:2026-00789",
+  "text_sha256": "6630e3a66865bb4486e49a88c552b1c21a0e2cb00f4bd5ba08cb72442bf2b9f1",
+  "doc_kind": "policy",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": []
+}

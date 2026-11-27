@@ -1,0 +1,9 @@
+{
+  "doc_key": "ir:NVDA:news-nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+  "text_sha256": "d900bef1a94f1ff5eaa496d46996499f5ffb62e9d97a089770c29be2537e10f8",
+  "doc_kind": "news",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": []
+}

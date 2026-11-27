@@ -1,0 +1,56 @@
+{
+  "doc_key": "fr:2026-13118",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFMAHZJ8W1MF8B0PD56FC2",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 6.16,
+      "unit": "pct",
+      "currency": null,
+      "period": "April 1, 2024, through March 31, 2025",
+      "basis": null,
+      "quote": "Simcoa Operations Pty Ltd. 6.16",
+      "span": {
+        "char_start": 4392,
+        "char_end": 4423
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Weighted-average dumping margin (percent) - Simcoa Operations Pty Ltd.",
+      "segment": "Simcoa Operations Pty Ltd."
+    },
+    {
+      "metric": "other",
+      "value": 6.16,
+      "unit": "pct",
+      "currency": null,
+      "period": "April 1, 2024, through March 31, 2025",
+      "basis": null,
+      "quote": "All Others 6.16",
+      "span": {
+        "char_start": 4424,
+        "char_end": 4439
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Weighted-average dumping margin (percent) - All Others",
+      "segment": "All Others"
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Simcoa Operations Pty Ltd. 6.16",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "All Others 6.16",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

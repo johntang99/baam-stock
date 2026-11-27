@@ -1,0 +1,9 @@
+{
+  "doc_key": "ir:NVDA:news-nvidia-announces-collaboration-with-ibm-and-fermi-national-accelerator-laboratory-to-launch-quantum-classical-codes",
+  "text_sha256": "961b635fe47a7f8b49248506073f5ec08da2e9eb2f3f66eee604b9171514d8cf",
+  "doc_kind": "news",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": []
+}

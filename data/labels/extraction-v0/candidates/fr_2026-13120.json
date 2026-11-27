@@ -1,0 +1,56 @@
+{
+  "doc_key": "fr:2026-13120",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFMM2J1SQM1G2W8VW2E06R",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 17.27,
+      "unit": "pct",
+      "currency": null,
+      "period": "January 1, 2024, through December 31, 2024",
+      "basis": null,
+      "quote": "Company Subsidy rate (percent ad valorem ) Elkem ASA 7 17.27",
+      "span": {
+        "char_start": 5602,
+        "char_end": 5662
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Estimated countervailable subsidy rate (percent ad valorem) - Elkem ASA",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 17.27,
+      "unit": "pct",
+      "currency": null,
+      "period": "January 1, 2024, through December 31, 2024",
+      "basis": null,
+      "quote": "All Others 17.27",
+      "span": {
+        "char_start": 5663,
+        "char_end": 5679
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Estimated countervailable subsidy rate (percent ad valorem) - All Others",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Company Subsidy rate (percent ad valorem ) Elkem ASA 7 17.27",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "All Others 17.27",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

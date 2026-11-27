@@ -201,6 +201,11 @@
       "metric": "other",
       "quote": "while Lumentum stockholders will own approximately 33%",
       "reason": "unknown_metric"
+    },
+    {
+      "metric": "revenue_outlook",
+      "quote": "maintaining the midpoint of its prior guidance while narrowing the expected range to plus or minus 2%, compared with the original range of plus or minus 5%",
+      "reason": "unit_kind_mismatch:pct"
     }
   ],
   "validation_notes": []

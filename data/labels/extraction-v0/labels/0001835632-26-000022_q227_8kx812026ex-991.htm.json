@@ -353,18 +353,6 @@
       "scope": "company",
       "certainty": "guidance",
       "segment": null
-    },
-    {
-      "metric": "revenue_outlook",
-      "value": null,
-      "unit": "pct",
-      "period": null,
-      "basis": null,
-      "quote": "we are again raising our revenue outlook for both fiscal 2027 and fiscal 2028 compared with the guidance we provided last quarter",
-      "direction": "increase",
-      "scope": "company",
-      "certainty": "guidance",
-      "segment": null
     }
   ]
 }

@@ -1,0 +1,56 @@
+{
+  "doc_key": "fr:2026-13121",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFMS1YT3TCJ3ZGBWKA1QF8",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 2.47,
+      "unit": "pct",
+      "currency": null,
+      "period": "April 1, 2024, through March 31, 2025",
+      "basis": null,
+      "quote": "Elkem ASA 2.47",
+      "span": {
+        "char_start": 4381,
+        "char_end": 4395
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Estimated weighted-average dumping margin (percent)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2.47,
+      "unit": "pct",
+      "currency": null,
+      "period": "April 1, 2024, through March 31, 2025",
+      "basis": null,
+      "quote": "All Others 2.47",
+      "span": {
+        "char_start": 4396,
+        "char_end": 4411
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Estimated weighted-average dumping margin (percent) - All Others",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Elkem ASA 2.47",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "All Others 2.47",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

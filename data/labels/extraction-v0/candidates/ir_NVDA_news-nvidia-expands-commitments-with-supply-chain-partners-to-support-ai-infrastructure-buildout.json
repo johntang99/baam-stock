@@ -1,0 +1,33 @@
+{
+  "doc_key": "ir:NVDA:news-nvidia-expands-commitments-with-supply-chain-partners-to-support-ai-infrastructure-buildout",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFW3ZGS9YDS68Q9SFGZWAS",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "July and October 2026",
+      "basis": null,
+      "quote": "NVIDIA is supporting Amkor’s expansion of advanced packaging capacity in Arizona and South Korea through multiyear agreements announced in July and October 2026, totaling nearly $3 billion.",
+      "span": {
+        "char_start": 10867,
+        "char_end": 11056
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "multiyear agreements supporting Amkor's advanced packaging capacity expansion (including prepayments)",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "NVIDIA is supporting Amkor’s expansion of advanced packaging capacity in Arizona and South Korea through multiyear agreements announced in July and October 2026, totaling nearly $3 billion.",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

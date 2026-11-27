@@ -1,0 +1,33 @@
+{
+  "doc_key": "fr:2026-05389",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFKMDPWFMFB4QE1KA14XRM",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 54654.6,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "annual",
+      "basis": null,
+      "quote": "Estimated Total Annual Cost to Public: $54,654.60.",
+      "span": {
+        "char_start": 5014,
+        "char_end": 5064
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "expectation",
+      "metric_label": "Estimated Total Annual Cost to Public",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Estimated Total Annual Cost to Public: $54,654.60.",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

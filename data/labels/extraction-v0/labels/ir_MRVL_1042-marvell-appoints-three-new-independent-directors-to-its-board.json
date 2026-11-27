@@ -1,0 +1,9 @@
+{
+  "doc_key": "ir:MRVL:1042-marvell-appoints-three-new-independent-directors-to-its-board",
+  "text_sha256": "c122dac2689cbbcd3d18c0f76de8ed79796363f094c90e740afefddb89ebfb89",
+  "doc_kind": "news",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": []
+}

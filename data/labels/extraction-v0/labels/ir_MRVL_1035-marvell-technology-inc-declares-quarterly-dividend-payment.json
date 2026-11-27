@@ -1,0 +1,9 @@
+{
+  "doc_key": "ir:MRVL:1035-marvell-technology-inc-declares-quarterly-dividend-payment",
+  "text_sha256": "c7262bd0443d12de3e5838ed4091245ad035fdb7cba2b74da39722283a16eff4",
+  "doc_kind": "news",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": []
+}

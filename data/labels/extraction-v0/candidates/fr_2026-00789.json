@@ -1,0 +1,33 @@
+{
+  "doc_key": "fr:2026-00789",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFHKZYN66CKHA5W6A23X1N",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 50,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "the aggregate shipments of the product to China and Macau will be no more than 50% of the total product shipped to customers for end use in the United States of that product",
+      "span": {
+        "char_start": 4312,
+        "char_end": 4485
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "aggregate shipments of the product to China and Macau cap relative to U.S. shipments",
+      "segment": "Advanced computing commodities (e.g., NVIDIA H200, AMD MI325X)"
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "the aggregate shipments of the product to China and Macau will be no more than 50% of the total product shipped to customers for end use in the United States of that product",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

@@ -1,0 +1,56 @@
+{
+  "doc_key": "fr:2026-01052",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFHSR7TP4HB36BC041Y0AE",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 25,
+      "unit": "pct",
+      "currency": null,
+      "period": "effective January 15, 2026",
+      "basis": null,
+      "quote": "Except as otherwise provided in this proclamation, imports of Covered Products will be subject to a 25 percent ad valorem duty rate.",
+      "span": {
+        "char_start": 12967,
+        "char_end": 13099
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "ad valorem duty rate on Covered Products (certain advanced computing chips and derivative products)",
+      "segment": "Covered Products (advanced computing chips)"
+    },
+    {
+      "metric": "other",
+      "value": 10,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "The United States currently fully manufactures only approximately 10 percent of the chips it requires, making it heavily reliant on foreign supply chains.",
+      "span": {
+        "char_start": 3337,
+        "char_end": 3491
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "share of required chips fully manufactured in the United States",
+      "segment": "United States"
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Except as otherwise provided in this proclamation, imports of Covered Products will be subject to a 25 percent ad valorem duty rate.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The United States currently fully manufactures only approximately 10 percent of the chips it requires, making it heavily reliant on foreign supply chains.",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

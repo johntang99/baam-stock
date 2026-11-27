@@ -974,6 +974,11 @@
       "reason": "unknown_metric"
     },
     {
+      "metric": "operating_expenses",
+      "quote": "Full-year operating expenses are expected to grow in the mid to upper 40% range.",
+      "reason": "unit_kind_mismatch:pct"
+    },
+    {
       "metric": "other",
       "quote": "GAAP and non-GAAP other income and expense are expected to be an income of approximately $350 million",
       "reason": "unknown_metric"

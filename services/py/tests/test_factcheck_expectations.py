@@ -336,3 +336,20 @@ def test_foreign_currency_is_not_usd() -> None:
     twd_table = "(In Millions of New Taiwan Dollars)\nNet Revenue 514,806 467,580\n"
     row = ExtractedFact("revenue", 514806, "USD_million", None, None, None, "Net Revenue 514,806 467,580", {})
     assert check_facts((row,), None, twd_table).rejected[0]["reason"] == "value_not_in_quote"
+
+
+def test_unit_must_fit_the_metric_kind() -> None:
+    rep = check_facts(
+        (
+            seg_fact("revenue_outlook", 2, "pct", "narrowing the expected range to plus or minus 2%"),
+            seg_fact("gross_margin_pct", 54.0, "USD", "gross margin was 54"),
+            ExtractedFact("eps", 1.46, "pct", None, "FY2026Q3", "gaap", "diluted EPS of 1.46%", {}),
+        ),
+        None,
+    )
+    assert rep.accepted == []
+    assert [r["reason"] for r in rep.rejected] == [
+        "unit_kind_mismatch:pct",
+        "unit_kind_mismatch:USD",
+        "unit_kind_mismatch:pct",
+    ]

@@ -1,0 +1,79 @@
+{
+  "doc_key": "fr:2026-11867",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFM2YYHVJ76XG6MSSF6GCX",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 9.7,
+      "unit": "pct",
+      "currency": null,
+      "period": "January 1, 2023, through December 31, 2023",
+      "basis": null,
+      "quote": "BYD (H.K.) Co., Ltd 10 9.70",
+      "span": {
+        "char_start": 7396,
+        "char_end": 7423
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Preliminary net countervailable subsidy rate (percent ad valorem) - BYD (H.K.) Co., Ltd",
+      "segment": "BYD (H.K.) Co., Ltd"
+    },
+    {
+      "metric": "other",
+      "value": 0.53,
+      "unit": "pct",
+      "currency": null,
+      "period": "January 1, 2023, through December 31, 2023",
+      "basis": null,
+      "quote": "Vietnam Sunergy Joint Stock Company 11 0.53",
+      "span": {
+        "char_start": 7424,
+        "char_end": 7467
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Preliminary net countervailable subsidy rate (percent ad valorem) - Vietnam Sunergy Joint Stock Company",
+      "segment": "Vietnam Sunergy Joint Stock Company"
+    },
+    {
+      "metric": "other",
+      "value": 8.15,
+      "unit": "pct",
+      "currency": null,
+      "period": "January 1, 2023, through December 31, 2023",
+      "basis": null,
+      "quote": "Non-Selected Companies Under Review 12 8.15",
+      "span": {
+        "char_start": 7468,
+        "char_end": 7511
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Preliminary net countervailable subsidy rate (percent ad valorem) - Non-Selected Companies Under Review",
+      "segment": "Non-Selected Companies Under Review"
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "BYD (H.K.) Co., Ltd 10 9.70",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Vietnam Sunergy Joint Stock Company 11 0.53",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Non-Selected Companies Under Review 12 8.15",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

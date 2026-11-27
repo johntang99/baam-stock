@@ -1,0 +1,56 @@
+{
+  "doc_key": "fr:2025-14212",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFGR1RX1N7AYBNHQM17V4C",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 500,
+      "unit": "USD_million",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "a Data Center Project or Covered Component Project for which the Project Sponsor has committed at least $500 million in capital expenditures as determined by the Secretary of Commerce",
+      "span": {
+        "char_start": 2649,
+        "char_end": 2832
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "hypothetical",
+      "metric_label": "capital expenditures threshold for Qualifying Project",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 50,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "Federal financial assistance representing less than 50 percent of total project costs shall be presumed not to constitute substantial Federal control and responsibility",
+      "span": {
+        "char_start": 5782,
+        "char_end": 5950
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "hypothetical",
+      "metric_label": "Federal financial assistance share of total project costs presumed not substantial Federal control",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "a Data Center Project or Covered Component Project for which the Project Sponsor has committed at least $500 million in capital expenditures as determined by the Secretary of Commerce",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Federal financial assistance representing less than 50 percent of total project costs shall be presumed not to constitute substantial Federal control and responsibility",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

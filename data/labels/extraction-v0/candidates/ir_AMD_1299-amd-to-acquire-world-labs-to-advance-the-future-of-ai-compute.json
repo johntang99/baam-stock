@@ -1,0 +1,33 @@
+{
+  "doc_key": "ir:AMD:1299-amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFPY89NVS4EX58YVY63WYB",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 8.2,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The all-stock transaction is valued at approximately $8.2 billion and is expected to close by the end of 2026, subject to regulatory approvals and other customary closing conditions.",
+      "span": {
+        "char_start": 5950,
+        "char_end": 6132
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "all-stock transaction value (World Labs acquisition)",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "The all-stock transaction is valued at approximately $8.2 billion and is expected to close by the end of 2026, subject to regulatory approvals and other customary closing conditions.",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

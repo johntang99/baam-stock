@@ -1,0 +1,9 @@
+{
+  "doc_key": "ir:AMD:1300-amd-to-report-fiscal-third-quarter-2026-financial-results",
+  "text_sha256": "8e4291dc6fd81aa03e8b4e1ba774379f15ea15bf02a0997e4c8ba0518ee581e4",
+  "doc_kind": "news",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": []
+}

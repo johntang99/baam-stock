@@ -1,0 +1,56 @@
+{
+  "doc_key": "fr:2026-14132",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFMX86W7ZSVWM57X45WGS2",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 1000,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The UAE is also a major source of foreign direct investment in the United States, valued at over $1 trillion",
+      "span": {
+        "char_start": 2732,
+        "char_end": 2840
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "UAE foreign direct investment in the United States",
+      "segment": "United Arab Emirates"
+    },
+    {
+      "metric": "other",
+      "value": 950,
+      "unit": "USD",
+      "currency": "USD",
+      "period": "per year",
+      "basis": null,
+      "quote": "BIS anticipates a decrease in approximately 50 license applications per year, resulting in a decrease in 25 burden hours and a cost savings of $950 under collection 0694-0088",
+      "span": {
+        "char_start": 17235,
+        "char_end": 17409
+      },
+      "direction": "decrease",
+      "scope": "other",
+      "certainty": "expectation",
+      "metric_label": "Anticipated cost savings under collection 0694-0088",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "The UAE is also a major source of foreign direct investment in the United States, valued at over $1 trillion",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "BIS anticipates a decrease in approximately 50 license applications per year, resulting in a decrease in 25 burden hours and a cost savings of $950 under collection 0694-0088",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

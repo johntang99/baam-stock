@@ -1,0 +1,56 @@
+{
+  "doc_key": "ir:AMD:1298-amd-cisco-and-humain-expand-saudi-arabias-ai-infrastructure-as-amd-instinct-systems-go-live",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFPP95P6S9K9V1CPR8D0NF",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": "beginning in 2027",
+      "basis": null,
+      "quote": "AMD, Cisco and HUMAIN plan to deploy up to 250 MW of AI infrastructure as part of the next phase of the buildout beginning in 2027.",
+      "span": {
+        "char_start": 4104,
+        "char_end": 4235
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "guidance",
+      "metric_label": "Planned AI infrastructure deployment, next phase (up to 250 MW)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": "by 2030",
+      "basis": null,
+      "quote": "Driven by strong customer demand, the joint venture remains on track to deploy up to 1 GW of AI infrastructure by 2030.",
+      "span": {
+        "char_start": 5839,
+        "char_end": 5958
+      },
+      "direction": "unchanged",
+      "scope": "other",
+      "certainty": "guidance",
+      "metric_label": "Joint venture AI infrastructure deployment target (up to 1 GW)",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "AMD, Cisco and HUMAIN plan to deploy up to 250 MW of AI infrastructure as part of the next phase of the buildout beginning in 2027.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Driven by strong customer demand, the joint venture remains on track to deploy up to 1 GW of AI infrastructure by 2030.",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

@@ -1,0 +1,33 @@
+{
+  "doc_key": "ir:AMD:1302-amd-and-meta-advance-strategic-partnership-to-power-metas-superintelligence-infrastructure",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFQ5MADKXXVCHH7FV9TM7W",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "In addition, AMD will invest $1 billion in Meta’s equity offering.",
+      "span": {
+        "char_start": 7538,
+        "char_end": 7604
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Investment in Meta's equity offering",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "In addition, AMD will invest $1 billion in Meta’s equity offering.",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

@@ -82,6 +82,15 @@ def canonical_metric(metric: str, basis: str | None) -> tuple[str | None, str]:
     return None, "unknown_metric"
 
 
+def metric_kind(name: str) -> str | None:
+    """money / pct / per_share for a canonical metric (eps_gaap -> eps)."""
+    metrics = load("earnings")["metrics"]
+    for base in (name, name.removesuffix("_non_gaap"), name.removesuffix("_gaap")):
+        if base in metrics:
+            return str(metrics[base].get("kind")) if metrics[base].get("kind") else None
+    return None
+
+
 def normalize_period(period: str | None) -> str | None:
     if not period:
         return None
@@ -159,6 +168,10 @@ def check_facts(
             rep.rejected.append({"metric": name, "quote": f.quote, "reason": f"unit_not_allowed:{f.unit}"})
             continue
         u = units[f.unit]
+        want = cfg["checks"].get("kind_units", {}).get(metric_kind(name) or "")
+        if want and u["unit"] != want:
+            rep.rejected.append({"metric": name, "quote": f.quote, "reason": f"unit_kind_mismatch:{f.unit}"})
+            continue
         is_usd = str(u["unit"]).startswith("USD")
         if is_usd and f.currency and f.currency.upper() != "USD":
             rep.rejected.append(

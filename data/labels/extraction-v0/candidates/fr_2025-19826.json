@@ -1,0 +1,56 @@
+{
+  "doc_key": "fr:2025-19826",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFH47NVE6GFBWS81BH7WG4",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 10,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "to instead impose on articles of the PRC an additional ad valorem rate of duty of 10 percent",
+      "span": {
+        "char_start": 2681,
+        "char_end": 2773
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "additional ad valorem rate of duty on articles of the PRC",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "pct",
+      "currency": null,
+      "period": "until November 10, 2026",
+      "basis": null,
+      "quote": "I determine that it is necessary and appropriate to continue the suspension of the heightened reciprocal tariffs on imports of the PRC until 12:01 a.m. eastern standard time on November 10, 2026.",
+      "span": {
+        "char_start": 5288,
+        "char_end": 5483
+      },
+      "direction": "unchanged",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "suspension of heightened reciprocal tariffs on imports of the PRC",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "to instead impose on articles of the PRC an additional ad valorem rate of duty of 10 percent",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "I determine that it is necessary and appropriate to continue the suspension of the heightened reciprocal tariffs on imports of the PRC until 12:01 a.m. eastern standard time on November 10, 2026.",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

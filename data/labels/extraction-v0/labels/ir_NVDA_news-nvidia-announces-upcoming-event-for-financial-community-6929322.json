@@ -1,0 +1,9 @@
+{
+  "doc_key": "ir:NVDA:news-nvidia-announces-upcoming-event-for-financial-community-6929322",
+  "text_sha256": "914c18f3d832e34279762b52ae1028a01f7cba1bd94e2c392b43466cbe30e5d2",
+  "doc_kind": "news",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": []
+}

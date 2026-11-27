@@ -142,6 +142,14 @@ def lint_label(label: DocLabel, text: str | None, file_name: str | None = None) 
             out.append(LabelIssue("error", i, f"unknown metric {f.metric!r}{hint}"))
         if f.unit not in GOLD_UNITS:
             out.append(LabelIssue("error", i, f"unit {f.unit!r}: use USD, pct or USD_per_share (normalised)"))
+        else:
+            from sr.events.factcheck import metric_kind
+
+            want = load("earnings")["checks"].get("kind_units", {}).get(metric_kind(f.metric) or "")
+            if want and f.unit != want:
+                out.append(
+                    LabelIssue("error", i, f"unit {f.unit!r} does not fit {f.metric} (expects {want})")
+                )
         if f.period is None:
             out.append(
                 LabelIssue(

@@ -1,0 +1,212 @@
+{
+  "doc_key": "ir:MRVL:1040-marvell-and-lumentum-to-combine-creating-a-category-leader-in-ai-connectivity",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFSFZWZS4NV20PTN7TK21V",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 550,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Expected to expand the combined company’s total addressable market to $550 billion",
+      "span": {
+        "char_start": 4387,
+        "char_end": 4469
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "total addressable market",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "provide line of sight to more than $1 billion in annual run-rate cost synergies",
+      "span": {
+        "char_start": 4619,
+        "char_end": 4698
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "annual run-rate cost synergies",
+      "segment": null
+    },
+    {
+      "metric": "eps",
+      "value": null,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "year one post-close",
+      "basis": "non_gaap",
+      "quote": "is expected to be accretive to Marvell non-GAAP earnings per share in year one post-close",
+      "span": {
+        "char_start": 4704,
+        "char_end": 4793
+      },
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Marvell non-GAAP earnings per share accretion",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 115,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "The transaction has an implied enterprise value of $115 billion for Lumentum",
+      "span": {
+        "char_start": 5230,
+        "char_end": 5306
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "implied enterprise value for Lumentum",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 1132,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "representing approximately $1,132 per share of Lumentum common stock",
+      "span": {
+        "char_start": 5308,
+        "char_end": 5376
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "implied value per share of Lumentum common stock",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 23.9,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "a premium of approximately 23.9% based on each company’s unaffected closing share price as of October 28, 2026",
+      "span": {
+        "char_start": 5381,
+        "char_end": 5491
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "acquisition premium",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 67,
+      "unit": "pct",
+      "currency": null,
+      "period": "post-closing",
+      "basis": null,
+      "quote": "current Marvell stockholders will own approximately 67% of the combined company on a fully diluted basis",
+      "span": {
+        "char_start": 5595,
+        "char_end": 5699
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Marvell stockholders' ownership of combined company",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 33,
+      "unit": "pct",
+      "currency": null,
+      "period": "post-closing",
+      "basis": null,
+      "quote": "while Lumentum stockholders will own approximately 33%",
+      "span": {
+        "char_start": 5701,
+        "char_end": 5755
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "Lumentum stockholders' ownership of combined company",
+      "segment": null
+    },
+    {
+      "metric": "revenue_outlook",
+      "value": 2,
+      "unit": "pct",
+      "currency": null,
+      "period": "third quarter of fiscal 2027",
+      "basis": null,
+      "quote": "maintaining the midpoint of its prior guidance while narrowing the expected range to plus or minus 2%, compared with the original range of plus or minus 5%",
+      "span": {
+        "char_start": 12340,
+        "char_end": 12495
+      },
+      "direction": "unchanged",
+      "scope": "company",
+      "certainty": "guidance",
+      "metric_label": "preliminary revenue guidance range (plus or minus)",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Expected to expand the combined company’s total addressable market to $550 billion",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "provide line of sight to more than $1 billion in annual run-rate cost synergies",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The transaction has an implied enterprise value of $115 billion for Lumentum",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "representing approximately $1,132 per share of Lumentum common stock",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "a premium of approximately 23.9% based on each company’s unaffected closing share price as of October 28, 2026",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "current Marvell stockholders will own approximately 67% of the combined company on a fully diluted basis",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "while Lumentum stockholders will own approximately 33%",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "revenue_outlook",
+      "quote": "maintaining the midpoint of its prior guidance while narrowing the expected range to plus or minus 2%, compared with the original range of plus or minus 5%",
+      "reason": "unit_kind_mismatch:pct"
+    }
+  ],
+  "validation_notes": []
+}

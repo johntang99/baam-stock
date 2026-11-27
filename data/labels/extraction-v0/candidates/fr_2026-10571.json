@@ -1,0 +1,79 @@
+{
+  "doc_key": "fr:2026-10571",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFKV9GZ8AB3QSKGRQ5NYWC",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 250,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Taiwan will provide credit guarantees to support financial institutions in offering corporate credit lines of up to $250 billion to facilitate additional investment by Taiwanese enterprises",
+      "span": {
+        "char_start": 6606,
+        "char_end": 6795
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "guidance",
+      "metric_label": "corporate credit lines supported by Taiwan credit guarantees",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 250,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "Taiwanese semiconductor and technology enterprises will make new, direct investments totaling $250 billion to build and expand advanced semiconductor, energy, and artificial",
+      "span": {
+        "char_start": 6914,
+        "char_end": 7087
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "guidance",
+      "metric_label": "new, direct investments by Taiwanese semiconductor and technology enterprises in the United States",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 15,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "limit the Section 232 duties applied to certain automobile parts, timber, lumber, and wood derivative products of Taiwan to no more than 15 percent",
+      "span": {
+        "char_start": 8372,
+        "char_end": 8519
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "guidance",
+      "metric_label": "Section 232 duty cap on certain automobile parts, timber, lumber, and wood derivative products of Taiwan",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Taiwan will provide credit guarantees to support financial institutions in offering corporate credit lines of up to $250 billion to facilitate additional investment by Taiwanese enterprises",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Taiwanese semiconductor and technology enterprises will make new, direct investments totaling $250 billion to build and expand advanced semiconductor, energy, and artificial",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "limit the Section 232 duties applied to certain automobile parts, timber, lumber, and wood derivative products of Taiwan to no more than 15 percent",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

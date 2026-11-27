@@ -1,0 +1,33 @@
+{
+  "doc_key": "ir:AMD:1306-amd-completes-acquisition-of-world-labs",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFRTQY4BHEH2VJFA3X5CST",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "AMD (NASDAQ: AMD) today announced the completion of its acquisition of World Labs, expanding its capabilities across the AI stack with a world-class model team.",
+      "span": {
+        "char_start": 3990,
+        "char_end": 4150
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "completion of its acquisition of World Labs",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "AMD (NASDAQ: AMD) today announced the completion of its acquisition of World Labs, expanding its capabilities across the AI stack with a world-class model team.",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

@@ -1,0 +1,56 @@
+{
+  "doc_key": "ir:AMD:1305-amd-showcases-6th-gen-amd-epyc-processors-to-lead-next-era-of-ai-and-enterprise-computing",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFRMV5BG2X564346ZGEDJ3",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 14904,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "2P AMD EPYC 9996, 512C, 600W, $14904 USD, 5470, 9.117, 0.367, 10.68",
+      "span": {
+        "char_start": 17508,
+        "char_end": 17575
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "1Ku price in USD (2P AMD EPYC 9996)",
+      "segment": "6th Gen AMD EPYC 9996"
+    },
+    {
+      "metric": "other",
+      "value": 11988,
+      "unit": "USD",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "2P AMD EPYC 9965, 384C, 500W, $11988 USD, 3260, 6.520, 0.272, 8.49",
+      "span": {
+        "char_start": 17652,
+        "char_end": 17718
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "reported",
+      "metric_label": "1Ku price in USD (2P AMD EPYC 9965)",
+      "segment": "AMD EPYC 9965"
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "2P AMD EPYC 9996, 512C, 600W, $14904 USD, 5470, 9.117, 0.367, 10.68",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "2P AMD EPYC 9965, 384C, 500W, $11988 USD, 3260, 6.520, 0.272, 8.49",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

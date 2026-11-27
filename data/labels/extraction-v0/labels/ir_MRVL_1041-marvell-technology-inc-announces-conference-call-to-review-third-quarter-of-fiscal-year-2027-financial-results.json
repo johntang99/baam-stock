@@ -1,0 +1,9 @@
+{
+  "doc_key": "ir:MRVL:1041-marvell-technology-inc-announces-conference-call-to-review-third-quarter-of-fiscal-year-2027-financial-results",
+  "text_sha256": "44974ebbaed4b70439c7330c9570b77382ac5ead6788b6cfa39b19894c3fd585",
+  "doc_kind": "news",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": []
+}

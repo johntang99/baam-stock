@@ -1,0 +1,102 @@
+{
+  "doc_key": "fr:2026-17049",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFNN1XBJE4WXXPFRQ2GHKN",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 32.57,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "Australia Simcoa Operations Pty, Ltd 5 32.57",
+      "span": {
+        "char_start": 4552,
+        "char_end": 4596
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Subsidy rate (percent ad valorem) - Simcoa Operations Pty, Ltd",
+      "segment": "Australia"
+    },
+    {
+      "metric": "other",
+      "value": 32.57,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "Australia Simcoa Operations Pty, Ltd 5 32.57 All Others 32.57",
+      "span": {
+        "char_start": 4552,
+        "char_end": 4613
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Subsidy rate (percent ad valorem) - All Others (Australia)",
+      "segment": "Australia"
+    },
+    {
+      "metric": "other",
+      "value": 17.27,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "Norway Elkem ASA 6 17.27",
+      "span": {
+        "char_start": 4614,
+        "char_end": 4638
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Subsidy rate (percent ad valorem) - Elkem ASA",
+      "segment": "Norway"
+    },
+    {
+      "metric": "other",
+      "value": 17.27,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "Norway Elkem ASA 6 17.27 All Others 17.27",
+      "span": {
+        "char_start": 4614,
+        "char_end": 4655
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Subsidy rate (percent ad valorem) - All Others (Norway)",
+      "segment": "Norway"
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Australia Simcoa Operations Pty, Ltd 5 32.57",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Australia Simcoa Operations Pty, Ltd 5 32.57 All Others 32.57",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Norway Elkem ASA 6 17.27",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Norway Elkem ASA 6 17.27 All Others 17.27",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

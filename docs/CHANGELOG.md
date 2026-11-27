@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## Phase 1 · 1.18 Claude drafts for policy + news; checker earnings-0.3 — 2026-11-26
+- Claude (extract-0.3) drafted the 66 policy/news documents: 66 calls, all succeeded; 447,022 in / 42,466 out
+  tokens, ~$2.64 at list price; logged to `llm_calls`. Policy: 0 facts kept (95 candidates, all non-metrics).
+  News: 54 facts from 3 releases (AMD and NVIDIA quarterly results, a Marvell merger release).
+- Checker earnings-0.3: a metric's unit must fit its kind (`checks.kind_units`; money -> USD, pct -> pct,
+  per_share -> USD_per_share), e.g. "revenue outlook ±2%" is rejected as `unit_kind_mismatch`. Same rule in
+  `check_labels.py`. All 357 drafts rechecked (no API calls): 2,171 facts kept; 4 newly rejected, all wrong.
+- OQ-41 confirmed by user (defaults kept). Tests: 344.
+
 ## Phase 1 · 1.18 policy + news documents in the eval corpus — 2026-11-26
 - `scripts/fetch_public_corpus.py`: 40 Federal Register policy documents (BIS, presidential documents, USTR,
   NIST CHIPS, ITA) and 26 company newsroom press releases (NVIDIA, AMD, Marvell IR RSS). Size caps, round-robin

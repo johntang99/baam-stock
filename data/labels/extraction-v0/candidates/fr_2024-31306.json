@@ -1,0 +1,56 @@
+{
+  "doc_key": "fr:2024-31306",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFG7QMW5EV6XP4T878ZVQ7",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "pct",
+      "currency": null,
+      "period": "past six years",
+      "basis": null,
+      "quote": "Evidence indicates that in just six years, China has nearly doubled its global share of foundational logic semiconductors production capacity.",
+      "span": {
+        "char_start": 4438,
+        "char_end": 4580
+      },
+      "direction": "increase",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "global share of foundational logic semiconductors production capacity",
+      "segment": "foundational logic semiconductors"
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "pct",
+      "currency": null,
+      "period": "2029",
+      "basis": null,
+      "quote": "Based on announced new fabrication plants (fabs), China's share is projected to reach approximately half of the world's capacity by 2029.",
+      "span": {
+        "char_start": 4581,
+        "char_end": 4718
+      },
+      "direction": "increase",
+      "scope": "geography",
+      "certainty": "expectation",
+      "metric_label": "China's share of world's capacity (projected)",
+      "segment": "foundational logic semiconductors"
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Evidence indicates that in just six years, China has nearly doubled its global share of foundational logic semiconductors production capacity.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Based on announced new fabrication plants (fabs), China's share is projected to reach approximately half of the world's capacity by 2029.",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

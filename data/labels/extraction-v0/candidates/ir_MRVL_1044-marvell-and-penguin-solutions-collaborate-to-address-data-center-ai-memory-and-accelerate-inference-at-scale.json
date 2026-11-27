@@ -1,0 +1,56 @@
+{
+  "doc_key": "ir:MRVL:1044-marvell-and-penguin-solutions-collaborate-to-address-data-center-ai-memory-and-accelerate-inference-at-scale",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFT3BYWSYWVT6KYHDRVC35",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": "end of 2026",
+      "basis": null,
+      "quote": "Penguin SMART CXL add-in cards powered by Marvell Structera X memory-expansion controllers are expected to be available for qualification and enterprise customer deployment by the end of 2026.",
+      "span": {
+        "char_start": 9478,
+        "char_end": 9670
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "guidance",
+      "metric_label": "Product availability",
+      "segment": "Structera X / Penguin SMART CXL add-in cards"
+    },
+    {
+      "metric": "other",
+      "value": null,
+      "unit": "USD",
+      "currency": null,
+      "period": "second half of 2027",
+      "basis": null,
+      "quote": "Joint development with Photonic Fabric integrated memory expansion servers are expected to sample in the second half of 2027.",
+      "span": {
+        "char_start": 9671,
+        "char_end": 9796
+      },
+      "direction": "none",
+      "scope": "product",
+      "certainty": "guidance",
+      "metric_label": "Product sampling",
+      "segment": "Photonic Fabric"
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Penguin SMART CXL add-in cards powered by Marvell Structera X memory-expansion controllers are expected to be available for qualification and enterprise customer deployment by the end of 2026.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Joint development with Photonic Fabric integrated memory expansion servers are expected to sample in the second half of 2027.",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

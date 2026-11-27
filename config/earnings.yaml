@@ -1,5 +1,5 @@
 # Earnings extraction + deterministic checks + expectation comparison (DP 1.07; S2§3.3; AC-09)
-version: earnings-0.2   # 0.2: header scales from the document, signed losses, compact $0.8B (OQ-39)
+version: earnings-0.3   # 0.2: header scales, signed losses, compact $0.8B (OQ-39); 0.3: unit must fit the metric kind
 event_category: earnings_guidance
 # canonical metric <- aliases (lower-case, spaces/underscores normalised). basis_in_name: metric name carries the
 # accounting basis (AC-09: GAAP and non-GAAP EPS are separate fields).
@@ -56,6 +56,8 @@ checks:
   # USD units only: a stated non-USD currency, or a number printed with a foreign prefix ("NT$1,134.10"), is
   # rejected. NT$ has no unit yet (TSMC onboarding, OQ-39).
   foreign_currency_prefixes: [NT]
+  # a metric's kind fixes its normalised unit: "revenue outlook ±2%" is a range width, not a revenue figure
+  kind_units: {money: USD, pct: pct, per_share: USD_per_share}
   negative_cues: [loss, losses, down, decrease, decreased, decline, declined, lower, used in, outflow, deficit]
 headline_metrics: [eps_non_gaap, revenue, eps_gaap]   # first one with a fact becomes expectation_comparison
 expectations:

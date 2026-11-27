@@ -1,0 +1,9 @@
+{
+  "doc_key": "ir:AMD:1301-introducing-amd-helion-agentic-ai-compute-at-rack-scale",
+  "text_sha256": "fb4943bcd8e03cf0934e7bb8121da09546e14897fcf77b1c17e67dc5fbf98380",
+  "doc_kind": "news",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": []
+}

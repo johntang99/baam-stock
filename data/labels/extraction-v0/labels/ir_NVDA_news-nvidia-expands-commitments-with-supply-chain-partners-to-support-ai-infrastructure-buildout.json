@@ -1,0 +1,9 @@
+{
+  "doc_key": "ir:NVDA:news-nvidia-expands-commitments-with-supply-chain-partners-to-support-ai-infrastructure-buildout",
+  "text_sha256": "1642315690c686db2c1b42bd8d0e4c14d09d28f7849005a3357721e73342e851",
+  "doc_kind": "news",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": []
+}

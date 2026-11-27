@@ -1,0 +1,9 @@
+{
+  "doc_key": "ir:NVDA:news-nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
+  "text_sha256": "9688e0cb2c8a933f2afc8164be2892f4f5e93a26a8233e2bbefb6c70a42e7803",
+  "doc_kind": "news",
+  "fiscal_period": null,
+  "label_status": "draft",
+  "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
+  "facts": []
+}

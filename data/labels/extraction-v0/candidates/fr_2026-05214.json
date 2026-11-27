@@ -1,0 +1,999 @@
+{
+  "doc_key": "fr:2026-05214",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFJ3SSD66RP01A69RWPGM5",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 75.2,
+      "unit": "pct",
+      "currency": null,
+      "period": "November 2024",
+      "basis": null,
+      "quote": "declining to a low of 75.2 percent in November 2024 near the end of President Biden's term",
+      "span": {
+        "char_start": 5953,
+        "char_end": 6043
+      },
+      "direction": "decrease",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "U.S. capacity utilization",
+      "segment": "United States"
+    },
+    {
+      "metric": "other",
+      "value": 157,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2024",
+      "basis": null,
+      "quote": "logging $157 billion and $128 billion deficits in the sector in 2024 and 2025, respectively",
+      "span": {
+        "char_start": 7716,
+        "char_end": 7807
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "U.S. automotive sector trade deficit",
+      "segment": "United States - Automotive"
+    },
+    {
+      "metric": "other",
+      "value": 128,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2025",
+      "basis": null,
+      "quote": "logging $157 billion and $128 billion deficits in the sector in 2024 and 2025, respectively",
+      "span": {
+        "char_start": 7716,
+        "char_end": 7807
+      },
+      "direction": "decrease",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "U.S. automotive sector trade deficit",
+      "segment": "United States - Automotive"
+    },
+    {
+      "metric": "other",
+      "value": 55,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "European automotive factories are operating at only 55 percent capacity utilization",
+      "span": {
+        "char_start": 8733,
+        "char_end": 8816
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "European automotive factory capacity utilization",
+      "segment": "Europe - Automotive"
+    },
+    {
+      "metric": "other",
+      "value": 10.5,
+      "unit": "pct",
+      "currency": null,
+      "period": "2023",
+      "basis": null,
+      "quote": "U.S. manufacturing value added was 10.5% of national GDP in 2023",
+      "span": {
+        "char_start": 12388,
+        "char_end": 12452
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "U.S. manufacturing value added as share of GDP",
+      "segment": "United States"
+    },
+    {
+      "metric": "other",
+      "value": 993,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2024",
+      "basis": null,
+      "quote": "In 2024, China's global goods trade surplus was $993 billion.",
+      "span": {
+        "char_start": 13874,
+        "char_end": 13935
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "China global goods trade surplus",
+      "segment": "China"
+    },
+    {
+      "metric": "other",
+      "value": 361,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2024",
+      "basis": null,
+      "quote": "China's bilateral goods trade surplus with the United States was the largest of any U.S. trading partner in 2024, at $361 billion in 2024.",
+      "span": {
+        "char_start": 14098,
+        "char_end": 14236
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "China bilateral goods trade surplus with the United States",
+      "segment": "China"
+    },
+    {
+      "metric": "other",
+      "value": 74.4,
+      "unit": "pct",
+      "currency": null,
+      "period": "2025",
+      "basis": null,
+      "quote": "China's capacity utilization rate is 74.4 percent in 2025, which is down from 75 percent in 2024",
+      "span": {
+        "char_start": 14389,
+        "char_end": 14485
+      },
+      "direction": "decrease",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "China capacity utilization rate",
+      "segment": "China"
+    },
+    {
+      "metric": "other",
+      "value": 54,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q3 2025",
+      "basis": null,
+      "quote": "to 54 percent of the world gap between capacity and demand in Q3 2025, from 47 percent in Q3 2024",
+      "span": {
+        "char_start": 15266,
+        "char_end": 15363
+      },
+      "direction": "increase",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "China share of global steel excess capacity",
+      "segment": "China - Steel"
+    },
+    {
+      "metric": "other",
+      "value": 451,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2024",
+      "basis": null,
+      "quote": "the Euro area maintained a surplus on trade in goods of $451 billion and 2.3 percent of GDP",
+      "span": {
+        "char_start": 15814,
+        "char_end": 15905
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Euro area surplus on trade in goods",
+      "segment": "Euro area"
+    },
+    {
+      "metric": "other",
+      "value": 237,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2024",
+      "basis": null,
+      "quote": "The European Union maintained a bilateral surplus of trade in goods with the United States of $237 billion in 2024.",
+      "span": {
+        "char_start": 15907,
+        "char_end": 16022
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "EU bilateral goods trade surplus with the United States",
+      "segment": "European Union"
+    },
+    {
+      "metric": "other",
+      "value": 5.6,
+      "unit": "pct",
+      "currency": null,
+      "period": "2024",
+      "basis": null,
+      "quote": "The goods trade surplus reached 5.6 percent of GDP in 2024.",
+      "span": {
+        "char_start": 16469,
+        "char_end": 16528
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Germany goods trade surplus as share of GDP",
+      "segment": "Germany"
+    },
+    {
+      "metric": "other",
+      "value": 102,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2024",
+      "basis": null,
+      "quote": "Germany's bilateral goods trade surplus with the United States reached $102 billion in 2024",
+      "span": {
+        "char_start": 16547,
+        "char_end": 16638
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Germany bilateral goods trade surplus with the United States",
+      "segment": "Germany"
+    },
+    {
+      "metric": "other",
+      "value": 72.7,
+      "unit": "pct",
+      "currency": null,
+      "period": "January 2026",
+      "basis": null,
+      "quote": "capacity utilization rates in these sectors as of January 2026, such as chemicals (72.7 percent), have reached low levels",
+      "span": {
+        "char_start": 16863,
+        "char_end": 16984
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Germany chemicals capacity utilization",
+      "segment": "Germany - Chemicals"
+    },
+    {
+      "metric": "other",
+      "value": 97,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2024",
+      "basis": null,
+      "quote": "Ireland has run a significant goods trade surplus, amounting to $97 billion, or 15.9 percent of GDP in 2024",
+      "span": {
+        "char_start": 16997,
+        "char_end": 17104
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Ireland goods trade surplus",
+      "segment": "Ireland"
+    },
+    {
+      "metric": "other",
+      "value": 55,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2024",
+      "basis": null,
+      "quote": "In 2024, its bilateral goods trade surplus with the United States was $55 billion, driven by exports of the pharmaceutical sector.",
+      "span": {
+        "char_start": 17183,
+        "char_end": 17313
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Ireland bilateral goods trade surplus with the United States",
+      "segment": "Ireland"
+    },
+    {
+      "metric": "other",
+      "value": 72.7,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q1 2026",
+      "basis": null,
+      "quote": "At only 72.7 percent in Q1 2026, Ireland's level of capacity utilization is low.",
+      "span": {
+        "char_start": 17314,
+        "char_end": 17394
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Ireland capacity utilization",
+      "segment": "Ireland"
+    },
+    {
+      "metric": "other",
+      "value": 47,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2024",
+      "basis": null,
+      "quote": "In 2024, the goods trade surplus was $47 billion, or 8.6 percent of GDP.",
+      "span": {
+        "char_start": 17668,
+        "char_end": 17740
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Singapore goods trade surplus",
+      "segment": "Singapore"
+    },
+    {
+      "metric": "other",
+      "value": 75,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2024",
+      "basis": null,
+      "quote": "Switzerland's trade surplus reached 8.0 percent of GDP or $75 billion in 2024, and similarly was $54 billion in 2023.",
+      "span": {
+        "char_start": 18150,
+        "char_end": 18267
+      },
+      "direction": "increase",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Switzerland trade surplus",
+      "segment": "Switzerland"
+    },
+    {
+      "metric": "other",
+      "value": 44,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2024",
+      "basis": null,
+      "quote": "Switzerland had a bilateral surplus of trade in goods with the United States of $44 billion in 2024.",
+      "span": {
+        "char_start": 18268,
+        "char_end": 18368
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Switzerland bilateral goods trade surplus with the United States",
+      "segment": "Switzerland"
+    },
+    {
+      "metric": "other",
+      "value": 67,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2024",
+      "basis": null,
+      "quote": "In 2024, Norway's goods trade surplus was 13.8 percent of GDP, or $67 billion, down from a goods trade surplus of $79 billion in 2023.",
+      "span": {
+        "char_start": 18989,
+        "char_end": 19123
+      },
+      "direction": "decrease",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Norway goods trade surplus",
+      "segment": "Norway"
+    },
+    {
+      "metric": "other",
+      "value": 18,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2025",
+      "basis": null,
+      "quote": "Norwegian companies exporting 2.8 million metric tons of seafood worth $18 billion, representing a 4 percent increase from 2024",
+      "span": {
+        "char_start": 19181,
+        "char_end": 19308
+      },
+      "direction": "increase",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Norway seafood exports",
+      "segment": "Norway - Seafood"
+    },
+    {
+      "metric": "other",
+      "value": 77.7,
+      "unit": "pct",
+      "currency": null,
+      "period": "Q4 2025",
+      "basis": null,
+      "quote": "At 77.7 percent in Q4 2025, Norway's rate of capacity utilization was more than a full percentage point below what it was a year ago",
+      "span": {
+        "char_start": 19310,
+        "char_end": 19442
+      },
+      "direction": "decrease",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Norway capacity utilization",
+      "segment": "Norway"
+    },
+    {
+      "metric": "other",
+      "value": 31,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2024",
+      "basis": null,
+      "quote": "In 2024, Indonesia had a $31 billion global goods trade surplus",
+      "span": {
+        "char_start": 19920,
+        "char_end": 19983
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Indonesia global goods trade surplus",
+      "segment": "Indonesia"
+    },
+    {
+      "metric": "other",
+      "value": 18,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2025",
+      "basis": null,
+      "quote": "Indonesia's bilateral goods trade surplus with the United States reached $18 billion in 2025.",
+      "span": {
+        "char_start": 20075,
+        "char_end": 20168
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Indonesia bilateral goods trade surplus with the United States",
+      "segment": "Indonesia"
+    },
+    {
+      "metric": "other",
+      "value": 31,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2024",
+      "basis": null,
+      "quote": "In 2024, Malaysia's trade surplus was 7.3 percent of its GDP, or $31 billion, down from $47 billion in 2023.",
+      "span": {
+        "char_start": 20659,
+        "char_end": 20767
+      },
+      "direction": "decrease",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Malaysia trade surplus",
+      "segment": "Malaysia"
+    },
+    {
+      "metric": "other",
+      "value": 24,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2025",
+      "basis": null,
+      "quote": "In 2025, Malaysia maintained a bilateral goods trade surplus with the United States of $24 billion.",
+      "span": {
+        "char_start": 20768,
+        "char_end": 20867
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Malaysia bilateral goods trade surplus with the United States",
+      "segment": "Malaysia"
+    },
+    {
+      "metric": "other",
+      "value": 12,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2025",
+      "basis": null,
+      "quote": "Cambodia maintains a bilateral trade surplus with the United States, which in 2025 was approximately $12 billion.",
+      "span": {
+        "char_start": 21264,
+        "char_end": 21377
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Cambodia bilateral trade surplus with the United States",
+      "segment": "Cambodia"
+    },
+    {
+      "metric": "other",
+      "value": 11.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "first nine months of 2025",
+      "basis": null,
+      "quote": "exported $11.8 billion in the first nine months of 2025, a 16 percent increase from the same period in 2024",
+      "span": {
+        "char_start": 21450,
+        "char_end": 21557
+      },
+      "direction": "increase",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Cambodia GFT sector exports",
+      "segment": "Cambodia - Garment, footwear, and travel goods"
+    },
+    {
+      "metric": "other",
+      "value": 51,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2025",
+      "basis": null,
+      "quote": "Thailand's bilateral goods trade surplus with the United States totaled $51 billion in 2025, up from $35 billion in 2024.",
+      "span": {
+        "char_start": 21995,
+        "char_end": 22116
+      },
+      "direction": "increase",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Thailand bilateral goods trade surplus with the United States",
+      "segment": "Thailand"
+    },
+    {
+      "metric": "other",
+      "value": 52,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2024",
+      "basis": null,
+      "quote": "Korea's global goods trade surplus expanded considerably in 2024, reaching $52 billion, up from a global goods trade deficit of $10 billion in 2023.",
+      "span": {
+        "char_start": 22653,
+        "char_end": 22801
+      },
+      "direction": "increase",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Korea global goods trade surplus",
+      "segment": "Korea"
+    },
+    {
+      "metric": "other",
+      "value": 56,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2024",
+      "basis": null,
+      "quote": "Korea's bilateral goods trade surplus with the United States increased to $56 billion over the course of 2024, and remained around $49 billion through 2025.",
+      "span": {
+        "char_start": 22802,
+        "char_end": 22958
+      },
+      "direction": "increase",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Korea bilateral goods trade surplus with the United States",
+      "segment": "Korea"
+    },
+    {
+      "metric": "other",
+      "value": 196,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2025",
+      "basis": null,
+      "quote": "In 2025, Vietnam's trade surplus was $196 billion and $127 billion in 2024.",
+      "span": {
+        "char_start": 23327,
+        "char_end": 23402
+      },
+      "direction": "increase",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Vietnam trade surplus",
+      "segment": "Vietnam"
+    },
+    {
+      "metric": "other",
+      "value": 178,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2025",
+      "basis": null,
+      "quote": "Vietnam's bilateral goods trade surplus with the United States stood at $178 billion in 2025.",
+      "span": {
+        "char_start": 23594,
+        "char_end": 23687
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Vietnam bilateral goods trade surplus with the United States",
+      "segment": "Vietnam"
+    },
+    {
+      "metric": "other",
+      "value": 73.3,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2024",
+      "basis": null,
+      "quote": "Taiwan's trade surplus in goods was $73.3 billion in 2024, similar to its goods trade surplus of $73.4 billion in 2023.",
+      "span": {
+        "char_start": 24458,
+        "char_end": 24577
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Taiwan trade surplus in goods",
+      "segment": "Taiwan"
+    },
+    {
+      "metric": "other",
+      "value": 65,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2024",
+      "basis": null,
+      "quote": "Taiwan's bilateral goods trade surplus with the United States grew to a record $65 billion in 2024.",
+      "span": {
+        "char_start": 24578,
+        "char_end": 24677
+      },
+      "direction": "increase",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Taiwan bilateral goods trade surplus with the United States",
+      "segment": "Taiwan"
+    },
+    {
+      "metric": "other",
+      "value": 6.15,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": null,
+      "basis": null,
+      "quote": "has a bilateral goods trade surplus of $6.15 billion with the United States",
+      "span": {
+        "char_start": 24761,
+        "char_end": 24836
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Bangladesh bilateral goods trade surplus with the United States",
+      "segment": "Bangladesh"
+    },
+    {
+      "metric": "other",
+      "value": 197,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2025",
+      "basis": null,
+      "quote": "Mexico's bilateral goods trade surplus with the United States was $197 billion in 2025",
+      "span": {
+        "char_start": 25387,
+        "char_end": 25473
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Mexico bilateral goods trade surplus with the United States",
+      "segment": "Mexico"
+    },
+    {
+      "metric": "other",
+      "value": 104.8,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2024",
+      "basis": null,
+      "quote": "with global exports amounting to $104.8 billion in 2024",
+      "span": {
+        "char_start": 25681,
+        "char_end": 25736
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Mexico automotive global exports",
+      "segment": "Mexico - Automotive"
+    },
+    {
+      "metric": "other",
+      "value": 79.7,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "The United States accounts for 79.7 percent of Mexico's exports in the automotive sector.",
+      "span": {
+        "char_start": 25738,
+        "char_end": 25827
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "U.S. share of Mexico's automotive exports",
+      "segment": "Mexico - Automotive"
+    },
+    {
+      "metric": "other",
+      "value": 36,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2024",
+      "basis": null,
+      "quote": "In 2024, Japan had a global goods trade deficit of about $36 billion",
+      "span": {
+        "char_start": 26301,
+        "char_end": 26369
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Japan global goods trade deficit",
+      "segment": "Japan"
+    },
+    {
+      "metric": "other",
+      "value": 57,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2024",
+      "basis": null,
+      "quote": "with the United States, Japan had a bilateral goods trade surplus of $57 billion in 2024",
+      "span": {
+        "char_start": 26375,
+        "char_end": 26463
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Japan bilateral goods trade surplus with the United States",
+      "segment": "Japan"
+    },
+    {
+      "metric": "other",
+      "value": 42,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2025",
+      "basis": null,
+      "quote": "In 2025, India had a bilateral trade surplus with the United States of $42 billion.",
+      "span": {
+        "char_start": 27106,
+        "char_end": 27189
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "India bilateral trade surplus with the United States",
+      "segment": "India"
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "declining to a low of 75.2 percent in November 2024 near the end of President Biden's term",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "logging $157 billion and $128 billion deficits in the sector in 2024 and 2025, respectively",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "logging $157 billion and $128 billion deficits in the sector in 2024 and 2025, respectively",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "European automotive factories are operating at only 55 percent capacity utilization",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "U.S. manufacturing value added was 10.5% of national GDP in 2023",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "In 2024, China's global goods trade surplus was $993 billion.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "China's bilateral goods trade surplus with the United States was the largest of any U.S. trading partner in 2024, at $361 billion in 2024.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "China's capacity utilization rate is 74.4 percent in 2025, which is down from 75 percent in 2024",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "to 54 percent of the world gap between capacity and demand in Q3 2025, from 47 percent in Q3 2024",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "the Euro area maintained a surplus on trade in goods of $451 billion and 2.3 percent of GDP",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The European Union maintained a bilateral surplus of trade in goods with the United States of $237 billion in 2024.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The goods trade surplus reached 5.6 percent of GDP in 2024.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Germany's bilateral goods trade surplus with the United States reached $102 billion in 2024",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "capacity utilization rates in these sectors as of January 2026, such as chemicals (72.7 percent), have reached low levels",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Ireland has run a significant goods trade surplus, amounting to $97 billion, or 15.9 percent of GDP in 2024",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "In 2024, its bilateral goods trade surplus with the United States was $55 billion, driven by exports of the pharmaceutical sector.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "At only 72.7 percent in Q1 2026, Ireland's level of capacity utilization is low.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "In 2024, the goods trade surplus was $47 billion, or 8.6 percent of GDP.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Switzerland's trade surplus reached 8.0 percent of GDP or $75 billion in 2024, and similarly was $54 billion in 2023.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Switzerland had a bilateral surplus of trade in goods with the United States of $44 billion in 2024.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "In 2024, Norway's goods trade surplus was 13.8 percent of GDP, or $67 billion, down from a goods trade surplus of $79 billion in 2023.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Norwegian companies exporting 2.8 million metric tons of seafood worth $18 billion, representing a 4 percent increase from 2024",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "At 77.7 percent in Q4 2025, Norway's rate of capacity utilization was more than a full percentage point below what it was a year ago",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "In 2024, Indonesia had a $31 billion global goods trade surplus",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Indonesia's bilateral goods trade surplus with the United States reached $18 billion in 2025.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "In 2024, Malaysia's trade surplus was 7.3 percent of its GDP, or $31 billion, down from $47 billion in 2023.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "In 2025, Malaysia maintained a bilateral goods trade surplus with the United States of $24 billion.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Cambodia maintains a bilateral trade surplus with the United States, which in 2025 was approximately $12 billion.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "exported $11.8 billion in the first nine months of 2025, a 16 percent increase from the same period in 2024",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Thailand's bilateral goods trade surplus with the United States totaled $51 billion in 2025, up from $35 billion in 2024.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Korea's global goods trade surplus expanded considerably in 2024, reaching $52 billion, up from a global goods trade deficit of $10 billion in 2023.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Korea's bilateral goods trade surplus with the United States increased to $56 billion over the course of 2024, and remained around $49 billion through 2025.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "In 2025, Vietnam's trade surplus was $196 billion and $127 billion in 2024.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Vietnam's bilateral goods trade surplus with the United States stood at $178 billion in 2025.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Taiwan's trade surplus in goods was $73.3 billion in 2024, similar to its goods trade surplus of $73.4 billion in 2023.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Taiwan's bilateral goods trade surplus with the United States grew to a record $65 billion in 2024.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "has a bilateral goods trade surplus of $6.15 billion with the United States",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Mexico's bilateral goods trade surplus with the United States was $197 billion in 2025",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "with global exports amounting to $104.8 billion in 2024",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "The United States accounts for 79.7 percent of Mexico's exports in the automotive sector.",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "In 2024, Japan had a global goods trade deficit of about $36 billion",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "with the United States, Japan had a bilateral goods trade surplus of $57 billion in 2024",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "In 2025, India had a bilateral trade surplus with the United States of $42 billion.",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

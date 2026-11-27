@@ -1,0 +1,33 @@
+{
+  "doc_key": "ir:MRVL:1039-marvell-bolsters-connectivity-portfolio-with-new-3-2t-protocol-aware-retimer-and-second-generation-1-6t-aec-dsp",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFSD2WHRJQ1TGZNNK8AAKP",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 50,
+      "unit": "USD_billion",
+      "currency": "USD",
+      "period": "2030",
+      "basis": null,
+      "quote": "The AI scale-up networking market will exceed $50 billion by 2030",
+      "span": {
+        "char_start": 7182,
+        "char_end": 7247
+      },
+      "direction": "increase",
+      "scope": "other",
+      "certainty": "expectation",
+      "metric_label": "AI scale-up networking market",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "The AI scale-up networking market will exceed $50 billion by 2030",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

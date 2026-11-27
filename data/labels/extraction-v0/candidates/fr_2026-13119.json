@@ -1,0 +1,56 @@
+{
+  "doc_key": "fr:2026-13119",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFMFHTTS7VEBRET1YPG9QA",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 32.57,
+      "unit": "pct",
+      "currency": null,
+      "period": "January 1, 2024, through December 31, 2024",
+      "basis": null,
+      "quote": "Simcoa Operations Pty, Ltd 8 32.57",
+      "span": {
+        "char_start": 5668,
+        "char_end": 5702
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Estimated net countervailable subsidy rate (percent ad valorem) - Simcoa Operations Pty, Ltd",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 32.57,
+      "unit": "pct",
+      "currency": null,
+      "period": "January 1, 2024, through December 31, 2024",
+      "basis": null,
+      "quote": "All Others 32.57",
+      "span": {
+        "char_start": 5703,
+        "char_end": 5719
+      },
+      "direction": "none",
+      "scope": "other",
+      "certainty": "reported",
+      "metric_label": "Estimated net countervailable subsidy rate (percent ad valorem) - All Others",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Simcoa Operations Pty, Ltd 8 32.57",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "All Others 32.57",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

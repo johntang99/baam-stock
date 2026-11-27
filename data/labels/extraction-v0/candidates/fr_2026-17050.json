@@ -1,0 +1,102 @@
+{
+  "doc_key": "fr:2026-17050",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFNWEQ9E0TJ1TD183XBJN6",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 6.16,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "Australia Simcoa Operations Pty Ltd 6.16",
+      "span": {
+        "char_start": 4611,
+        "char_end": 4651
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Weighted-average dumping margin (percent) - Simcoa Operations Pty Ltd (Australia)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 6.16,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "All Others 6.16",
+      "span": {
+        "char_start": 4652,
+        "char_end": 4667
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Weighted-average dumping margin (percent) - All Others (Australia)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2.47,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "Norway Elkem ASA 2.47",
+      "span": {
+        "char_start": 4668,
+        "char_end": 4689
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "Weighted-average dumping margin (percent) - Elkem ASA (Norway)",
+      "segment": null
+    },
+    {
+      "metric": "other",
+      "value": 2.47,
+      "unit": "pct",
+      "currency": null,
+      "period": null,
+      "basis": null,
+      "quote": "All Others 2.47",
+      "span": {
+        "char_start": 4690,
+        "char_end": 4705
+      },
+      "direction": "none",
+      "scope": "geography",
+      "certainty": "reported",
+      "metric_label": "Weighted-average dumping margin (percent) - All Others (Norway)",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "Australia Simcoa Operations Pty Ltd 6.16",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "All Others 6.16",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "Norway Elkem ASA 2.47",
+      "reason": "unknown_metric"
+    },
+    {
+      "metric": "other",
+      "quote": "All Others 2.47",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}

@@ -1,0 +1,33 @@
+{
+  "doc_key": "ir:MRVL:1035-marvell-technology-inc-declares-quarterly-dividend-payment",
+  "extraction_status": "succeeded",
+  "llm_call_id": "llm_01M8DFS0VEB4YBH05XW7M158JT",
+  "candidates": [
+    {
+      "metric": "other",
+      "value": 0.06,
+      "unit": "USD_per_share",
+      "currency": "USD",
+      "period": "quarterly dividend payable October 29, 2026",
+      "basis": null,
+      "quote": "today announced a quarterly dividend of $0.06 per share of common stock, including preferred stock on an as converted to common stock basis, payable on October 29, 2026 to stockholders of record as of October 9, 2026.",
+      "span": {
+        "char_start": 3980,
+        "char_end": 4197
+      },
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "metric_label": "quarterly dividend per share of common stock",
+      "segment": null
+    }
+  ],
+  "dropped": [
+    {
+      "metric": "other",
+      "quote": "today announced a quarterly dividend of $0.06 per share of common stock, including preferred stock on an as converted to common stock basis, payable on October 29, 2026 to stockholders of record as of October 9, 2026.",
+      "reason": "unknown_metric"
+    }
+  ],
+  "validation_notes": []
+}
