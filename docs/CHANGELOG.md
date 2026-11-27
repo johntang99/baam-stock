@@ -8,6 +8,7 @@
   quotes come from), lint of label files (verbatim quotes, sha, metric/unit/period format, empty periods,
   duplicates, unscaled values, segment/scope) and progress toward 100 reviewed. `stratified` and `lint_label`
   live in `sr.llm.labels`. Tests: 337.
+- OQ-40 labelling scope confirmed by user (defaults kept).
 
 ## Phase 1 · 1.18 checker earnings-0.2 + drafts rechecked — 2026-11-26
 - Fact checker (OQ-39): table-row scales from the nearest document header above the quote; signed losses and
