@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## Phase 1 · 1.18 policy + news documents in the eval corpus — 2026-11-26
+- `scripts/fetch_public_corpus.py`: 40 Federal Register policy documents (BIS, presidential documents, USTR,
+  NIST CHIPS, ITA) and 26 company newsroom press releases (NVIDIA, AMD, Marvell IR RSS). Size caps, round-robin
+  across queries, untrusted feed links limited to the configured press-release prefix, defusedxml, generic
+  User-Agent (`LiveTransport(user_agent=…)`), <= 1 request/s. Manifest: 357 documents. OQ-41.
+- Manifest rows carry `doc_kind` (policy / news); `doc_kind_for` in `sr.llm.labels`. Reviewer guide §6a.
+  No drafts yet for the 66 new documents (Claude prelabel pending approval). Tests: 342.
+
 ## Phase 1 · 1.18 reviewer guide + label self-check — 2026-11-26
 - `docs/labeling/extraction-v0.md` rewritten as the reviewer guide: workflow, field rules for extract-0.3 labels
   (15 metrics, segment, normalised values, signed losses), what to label / skip (OQ-40), common draft problems

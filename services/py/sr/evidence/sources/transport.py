@@ -44,11 +44,18 @@ class ArchiveTransport:
 
 
 class LiveTransport:
-    """Live HTTP GET with a minimum interval between requests. The User-Agent must identify the operator
-    (SEC fair-access policy); it is read from the environment and never hard-coded."""
+    """Live HTTP GET with a minimum interval between requests. For SEC the User-Agent must identify the operator
+    (fair-access policy); it is read from the environment and never hard-coded. Other public sources get a
+    generic client name (`user_agent`), so the operator's contact details are not sent where none is required."""
 
-    def __init__(self, user_agent_env: str, max_requests_per_s: float, timeout_s: float = 30.0) -> None:
-        ua = os.environ.get(user_agent_env, "").strip()
+    def __init__(
+        self,
+        user_agent_env: str | None,
+        max_requests_per_s: float,
+        timeout_s: float = 30.0,
+        user_agent: str | None = None,
+    ) -> None:
+        ua = (user_agent or (os.environ.get(user_agent_env, "") if user_agent_env else "")).strip()
         if not ua or "example.com" in ua:
             raise RuntimeError(f"set {user_agent_env} to an identifying User-Agent before live polling")
         self._ua = ua

@@ -23,6 +23,7 @@ from sr.llm.eval_extraction import doc_text
 from sr.llm.labels import (
     DocLabel,
     GoldFact,
+    doc_kind_for,
     labels_dir,
     read_labels,
     read_manifest,
@@ -92,7 +93,7 @@ def recheck(manifest: dict[str, dict[str, Any]], existing: dict[str, DocLabel], 
             DocLabel(
                 doc_key=key,
                 text_sha256=text_sha,
-                doc_kind="earnings_release" if manifest[key]["file_kind"] == "ex99" else "8k_other",
+                doc_kind=doc_kind_for(manifest[key]),
                 label_status="draft",
                 labeled_by=prev.labeled_by if prev else "prelabel:recheck",
                 facts=[to_gold(f) for f in rep.accepted],
@@ -202,7 +203,7 @@ def main() -> int:
             DocLabel(
                 doc_key=key,
                 text_sha256=sha256_text(text),
-                doc_kind="earnings_release" if row["file_kind"] == "ex99" else "8k_other",
+                doc_kind=doc_kind_for(row),
                 label_status="draft",
                 labeled_by=f"prelabel:{prov.provider}/{prov.model}/{getattr(prov, 'version', '?')}",
                 facts=[

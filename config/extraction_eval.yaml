@@ -13,6 +13,31 @@ corpus_plan:
     exhibit_types: ["EX-99"]           # document types declared in the filing index (EX-99.1, EX-99.2, …)
     exhibit_patterns: ["ex99", "ex-99", "ex991", "exhibit99", "dex991"]   # fallback: file-name match
     include_primary_document: true     # 8-K item text (non-earnings events: management, agreements, …)
+  # Policy and news (D-32 asks for all kinds; OQ-41). Public, free, no key; requests carry a generic client
+  # name (no operator contact details) and stay <= 1 request/s.
+  user_agent: "baam-stock-research/0.1"
+  max_requests_per_s: 1
+  policy:                              # Federal Register (US government works, public domain)
+    api_url: "https://www.federalregister.gov/api/v1/documents.json"
+    since: "2023-01-01"
+    max_docs: 40
+    max_pages: 15                      # FR printed pages; long rules are skipped (prompt cost, context)
+    max_chars: 100000                  # normalised text cap, checked after download
+    types: [Rule, Proposed Rule, Notice, Presidential Document]
+    queries:                           # round-robin across queries, newest first, deduplicated
+      - {name: bis_semiconductor, agency: industry-and-security-bureau, term: semiconductor}
+      - {name: bis_advanced_computing, agency: industry-and-security-bureau, term: '"advanced computing"'}
+      - {name: presidential, doc_type: PRESDOCU, term: semiconductor}
+      - {name: ustr, agency: trade-representative-office-of-united-states, term: semiconductor}
+      - {name: nist_chips, agency: national-institute-of-standards-and-technology, term: CHIPS}
+      - {name: ita, agency: international-trade-administration, term: semiconductor}
+  news:                                # company newsroom press releases (IR RSS, D-15); third-party news waits
+    max_per_feed: 15                   # for the D-15 licence (OQ-41). Feeds list only recent items: re-run to grow.
+    min_chars: 500                     # a page with less text failed to load properly; skipped
+    feeds:                             # Broadcom, Micron and TSMC newsrooms refuse automated clients (403): skipped
+      - {ticker: NVDA, url: "https://nvidianews.nvidia.com/releases.xml", link_prefix: "https://nvidianews.nvidia.com/news/"}
+      - {ticker: AMD, url: "https://ir.amd.com/news-events/press-releases/rss", link_prefix: "https://ir.amd.com/news-events/press-releases/detail/"}
+      - {ticker: MRVL, url: "https://investor.marvell.com/news-events/press-releases/rss", link_prefix: "https://investor.marvell.com/news-events/press-releases/detail/"}
 gates:                                 # D-32 initial thresholds; groups without a threshold are reported only
   numeric_fact: {metric: precision, min: 0.98}
   direction: {metric: f1, min: 0.85}

@@ -169,3 +169,10 @@ def lint_label(label: DocLabel, text: str | None, file_name: str | None = None) 
             )
         seen.setdefault(key, i)
     return out
+
+
+def doc_kind_for(row: dict[str, Any]) -> str:
+    """Label doc_kind for a manifest row: explicit for policy/news rows; SEC rows by file kind."""
+    if row.get("doc_kind"):
+        return str(row["doc_kind"])
+    return "earnings_release" if row.get("file_kind") == "ex99" else "8k_other"
