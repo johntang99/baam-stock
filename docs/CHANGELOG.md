@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## Phase 1 · 1.23 run state, source issues, display_state view (AC-49 Phase 1 part) — 2026-11-28
+- `sr/snapshot/quality.py` (quality-0.2): the snapshot quality / run-state rules moved out of the builder;
+  per-source problems from the collection run (`timeout` / `error`, or latency > 60 s) become `quality_issues`
+  in the DC shape and make the snapshot `partial` / `degraded`.
+- Migration `0005_validity_views.sql`: `prediction_display_state_at(t)` (settled > superseded with the newer id >
+  expired > current, only predictions published by t) and view `prediction_display_state`;
+  `security_snapshot_current_at(t)` (latest snapshot per security by t, `expired`) and view
+  `security_snapshot_current`. Views are `security_invoker`, so table RLS applies through them.
+- OQ-53 adopted (routine). Tests: 8 new (source issues, assess order, degraded snapshot, last_valid_at,
+  snapshot expiry and point-in-time, the four display states, abstained expiry, security_invoker).
+
 ## Phase 1 · 1.19 minimal read-only replay page — 2026-11-28
 - `apps/web/app/(market)/replay/page.tsx` (list) and `apps/web/app/(market)/replay/[prediction_id]/page.tsx`
   (one prediction: forecast, snapshot, 12 locked fields, model, t0 / end quotes, settlement and reason, checks),

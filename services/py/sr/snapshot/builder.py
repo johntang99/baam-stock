@@ -29,6 +29,7 @@ from sr.db import Conn, jsonb
 from sr.events.reaction import persist_quotes, quote_id, quote_row, sync_points
 from sr.events.readiness import allowed_models, not_applicable
 from sr.ids import new_id
+from sr.snapshot.quality import assess, source_issues
 from sr.timeguard import assert_not_after, ensure_utc
 
 STATUS_RANK = {"insufficient": 0, "partial": 1, "supported": 2}
@@ -122,13 +123,14 @@ def evidence_watermark(
         (security_id, a),
     ).fetchone()
     run = conn.execute(
-        """select collection_run_id, window_to, counts from collection_runs
+        """select collection_run_id, window_to, counts, sources_polled from collection_runs
             where security_id = %s and window_to <= %s order by window_to desc limit 1""",
         (security_id, a),
     ).fetchone()
     issues: list[dict[str, Any]] = []
     if run is not None and int((run["counts"] or {}).get("failed", 0)) > 0:
         issues.append({"issue": "source_fetch_failed", "count": int(run["counts"]["failed"])})
+    issues += source_issues(dict(run) if run else None)
     if item and item["wm"] is not None:
         return item["wm"], issues, run["collection_run_id"] if run else None
     if run is not None:
@@ -251,23 +253,16 @@ def build_snapshot(
     day, rel, used, used_ts = _day_returns(quotes, security_id, weights, as_of, prev_close, stale)
     regular = state == "regular"
 
-    # data quality (OQ-44; DP 1.23 refines run_state / quality_issues)
-    lag = as_of - ensure_utc(market_wm, "market_wm")
-    if regular and (session.open_at is None or market_wm < session.open_at):
-        quality = "failed"  # no qualifying quote at all in this session
-        issues.append({"issue": "no_qualifying_quote"})
-    elif regular and lag > stale:
-        quality = "stale"
-        issues.append({"issue": "stale_quotes", "lag_s": int(lag.total_seconds())})
-    elif (regular and rel is None) or any(i["issue"] == "source_fetch_failed" for i in issues):
-        quality = "partial"
-        if regular and rel is None:
-            issues.append({"issue": "previous_close_missing" if day is None else "benchmark_unavailable"})
-    else:
-        quality = "ok"
-    if any(i["issue"] == "no_collection_run" for i in issues) and quality == "ok":
-        quality = "partial"
-    run_state = {"ok": "complete", "stale": "degraded", "partial": "degraded", "failed": "failed"}[quality]
+    # data quality / run state (OQ-44, OQ-53; sr.snapshot.quality)
+    quality, run_state, issues = assess(
+        regular=regular,
+        session_open_at=session.open_at,
+        market_watermark=market_wm,
+        as_of=as_of.to_pydatetime(),
+        day_return_pct=day,
+        relative_pp=rel,
+        issues=issues,
+    )
     last_valid = as_of.to_pydatetime() if quality == "ok" else (prev["last_valid_at"] if prev else None)
 
     # events in force since the previous regular close

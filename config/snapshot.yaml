@@ -7,7 +7,9 @@ schedule:
 valid_until:
   after_next_scheduled_min: 5        # D-41: in regular hours = next scheduled snapshot + 5 min
 quality:
+  version: quality-0.2
   stale_after_s: 60                  # regular hours: market watermark older than this -> stale
+  source_latency_max_ms: 60000       # a source slower than this in the collection run -> issue "latency" (OQ-53)
 benchmark_prefix: bm_semis_peer_ex_  # + ticker -> benchmark_definitions.benchmark_id
 summary:
   no_catalyst: "监测来源范围内暂未发现新催化剂"
