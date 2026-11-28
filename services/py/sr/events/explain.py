@@ -157,6 +157,7 @@ def publish_explanation(
     resolver: Resolver | None = None,
     weights: dict[str, float] | None = None,
     vendor_source_id: str | None = None,
+    valuation: dict[str, Any] | None = None,
 ) -> ExplainOutcome:
     """`quotes`: evaluated 1-second quotes visible at analysis_as_of (see quotes_for)."""
     evidence = evidence_for(conn, event_id, analysis_as_of)
@@ -190,7 +191,9 @@ def publish_explanation(
         _merge_prior_facts(new_expl, payload.get("market_explanation"), trace)
         if new_expl["status"] == "insufficient" and new_expl["observed_facts"]:
             new_expl["status"] = "partial"  # same rule as reasoning.build, after carried-over facts
-        if "valuation_context" in (payload.get("market_explanation") or {}):
+        if valuation is not None:  # background only (DP 1.24, AC-42); absent without a licensed source
+            new_expl["valuation_context"] = valuation
+        elif "valuation_context" in (payload.get("market_explanation") or {}):
             new_expl["valuation_context"] = payload["market_explanation"]["valuation_context"]
         data_gaps = [g for g in payload.get("data_gaps", []) if g != PENDING_GAP]
         data_gaps += [g for g in gaps if g not in data_gaps]

@@ -28,6 +28,7 @@ from sklearn.linear_model import LogisticRegression
 from sr.config import load, repo_root
 from sr.db import Conn, jsonb
 from sr.eval.metrics import CLASSES
+from sr.events.valuation import check_feature_inputs
 from sr.ids import new_id
 from sr.labels.thresholds import classify
 from sr.train.calibrate import Calibrator
@@ -110,6 +111,7 @@ def add_derived(frame: pd.DataFrame) -> pd.DataFrame:
 
 
 def design(frame: pd.DataFrame, features: list[str]) -> np.ndarray:
+    check_feature_inputs(features)  # valuation and other explanation-only fields never reach a model (AC-42)
     cols = [f"f_{n}" for n in features]
     missing = [c for c in cols if c not in frame.columns]
     X = frame.reindex(columns=cols).astype(float).to_numpy()

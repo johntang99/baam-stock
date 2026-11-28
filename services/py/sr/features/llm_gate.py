@@ -38,8 +38,16 @@ def require_approved(conn: Conn, provider: str, model: str, prompt_version: str)
         )
 
 
-def event_feature_inputs(conn: Conn, analysis_id: str) -> dict[str, Any]:
-    """Facts of an analysis version as feature inputs — only from approved extraction prompts (AC-30)."""
+def event_feature_inputs(
+    conn: Conn, analysis_id: str, fields: tuple[str, ...] = ("facts",)
+) -> dict[str, Any]:
+    """Facts of an analysis version as feature inputs — only from approved extraction prompts (AC-30). Asking for an
+    explanation-only field (e.g. market_explanation.valuation_context) raises ExplanationOnlyField (AC-42)."""
+    from sr.events.valuation import check_feature_inputs
+
+    check_feature_inputs(fields)
+    if set(fields) - {"facts"}:
+        raise ValueError(f"only analysis facts can be feature inputs, not {sorted(set(fields) - {'facts'})}")
     row = conn.execute(
         "select facts, model_versions from event_analysis_versions where analysis_id = %s", (analysis_id,)
     ).fetchone()

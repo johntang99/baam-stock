@@ -11,6 +11,7 @@ from typing import Any
 import pandas as pd
 
 from sr.config import load
+from sr.events.valuation import check_feature_inputs
 from sr.marketdata.quote_rules import evaluate_quotes
 from sr.timeguard import LookaheadError, ensure_utc
 from sr.train.dataset import features_at, minute_mids, security_of, symbol_of
@@ -68,6 +69,7 @@ def feature_row(
         ]
     )
     row = add_derived(row)
+    check_feature_inputs(row.columns)  # AC-42: explanation-only fields never enter the feature row
     return har_terms(row, realised_before(history, t.to_pydatetime()))
 
 

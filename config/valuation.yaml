@@ -1,0 +1,7 @@
+# Valuation background for explanations only (DP 1.24; AC-42; D-16; OQ-54). Never a model feature.
+version: val-0.1
+lookback_years: 3
+min_history_points: 60          # fewer own values in the window -> fwd_pe_pctile_3y = null
+peer_min: 3                     # fewer peers with a fresh value -> peer_median_fwd_pe = null
+peer_max_age_days: 7
+explanation_only_fields: [valuation_context, fwd_pe, fwd_pe_pctile_3y, peer_median_fwd_pe, ev_sales_ntm]

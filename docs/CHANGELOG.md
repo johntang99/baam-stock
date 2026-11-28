@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## Phase 1 · 1.24 valuation background, explanation only (AC-42) — 2026-11-28
+- `sr/events/valuation.py` (val-0.1, `config/valuation.yaml`): `valuation_context` gives `{as_of, fwd_pe,
+  fwd_pe_pctile_3y, peer_median_fwd_pe, ev_sales_ntm?, source_id, note}` from values available by the analysis
+  time (3-year percentile needs >= 60 values; peer median needs >= 3 peers no older than 7 days); peers from
+  `company_profile_versions.valuation_peers`, else the benchmark basket. `NoValuationSource` (the default until
+  D-16) gives no context, so the key is absent and the row is hidden. `publish_explanation(valuation=…)` puts it
+  into `market_explanation`.
+- AC-42 guard: `check_feature_inputs` raises `ExplanationOnlyField` for valuation fields in the model design
+  matrix, the publish-time feature row and `event_feature_inputs`.
+- OQ-54 adopted (routine). Tests: 10 new.
+
 ## Phase 1 · 1.23 run state, source issues, display_state view (AC-49 Phase 1 part) — 2026-11-28
 - `sr/snapshot/quality.py` (quality-0.2): the snapshot quality / run-state rules moved out of the builder;
   per-source problems from the collection run (`timeout` / `error`, or latency > 60 s) become `quality_issues`
