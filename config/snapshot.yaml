@@ -1,0 +1,17 @@
+# Security state snapshots (DP 1.10; DC security_state_snapshots; D-17, D-41, D-28; OQ-44)
+version: snapshot-0.1
+schedule:
+  every_min: 5                       # D-17: regular session every 5 minutes, from the open to close - 5 min
+  session_checks_et: ["09:35", "15:45"]   # D-17 extra checks (trigger_type session_check)
+  scheduled_ref: sched_5m
+valid_until:
+  after_next_scheduled_min: 5        # D-41: in regular hours = next scheduled snapshot + 5 min
+quality:
+  stale_after_s: 60                  # regular hours: market watermark older than this -> stale
+benchmark_prefix: bm_semis_peer_ex_  # + ticker -> benchmark_definitions.benchmark_id
+summary:
+  no_catalyst: "监测来源范围内暂未发现新催化剂"
+  relative_unexplained: "相对 {rel:+.2f}pp 未找到专属原因"
+  relative_unavailable: "基准不可计算，仅显示绝对涨跌"
+  no_quotes: "暂无合格行情"
+  events: "{n} 个事件分析纳入；最新：{status}"

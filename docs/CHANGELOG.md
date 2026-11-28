@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## Phase 1 · 1.10 security snapshots + same-watermark merge — 2026-11-28
+- `sr/snapshot/builder.py` (snapshot-0.1, `config/snapshot.yaml`): `build_snapshot` writes
+  `security_state_snapshots` with evidence / market watermarks, market state (pre / regular / post / closed /
+  halted), day return vs the previous official close and relative to the peer basket (weights from
+  `benchmark_versions`; basket missing -> relative null, AC-40), the event analyses in force since the previous
+  regular close (`new_catalyst_found`), explanation status and summary (DC §8.1 wording on no-news days), data
+  quality and run state, `last_valid_at`, `valid_until` (D-41) and prediction readiness (policy day ->
+  `market_baseline` only, AC-12; outside regular hours `not_applicable`, D-28). The last stock quote is stored in
+  `reference_quotes`. Same-watermark merge: an existing `dedupe_key` returns that snapshot, nothing is written
+  (also under a concurrent insert). `schedule()` = D-17 5-minute grid + 09:35 / 15:45 ET session checks;
+  `replay_session()` builds a whole session from a point-in-time provider. Quotes received after as_of raise.
+- 1.09 helpers `quote_row` / `session_type` in `sr/events/reaction.py` are now public.
+- OQ-43 confirmed (defaults). OQ-44 (snapshot rules) proposed, awaiting user. Tests: 379 (AC-11 on the synthetic
+  fixture: 80 triggers -> 78 snapshots, 5 minutes apart, no event analyses; AC-12; AC-40; merge; quality; D-41;
+  look-ahead).
+
 ## Phase 1 · 1.09 market reaction + current explanation + time-order check — 2026-11-28
 - `sr/events/reaction.py` (reaction-0.1, `config/reaction.yaml`): sync points (D-06, same rule as `sync.py`);
   `ref_before` = last sync point before the evidence's earliest public time, `ref_asof` = last at/before

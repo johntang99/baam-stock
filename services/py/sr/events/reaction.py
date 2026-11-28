@@ -143,7 +143,7 @@ def move_start(
     return ts, move
 
 
-def _session_type(ts: pd.Timestamp) -> str:
+def session_type(ts: pd.Timestamp) -> str:
     s = get_calendar().session_for_instant(ts.to_pydatetime())
     if not s.is_open or s.open_at is None or s.close_at is None:
         return "post_market"
@@ -153,14 +153,14 @@ def _session_type(ts: pd.Timestamp) -> str:
     return "regular" if t < s.close_at else "post_market"
 
 
-def _quote_row(r: dict[str, Any], ts: pd.Timestamp, vendor: str, rule_version: str) -> dict[str, Any]:
+def quote_row(r: dict[str, Any], ts: pd.Timestamp, vendor: str, rule_version: str) -> dict[str, Any]:
     sid = str(r["security_id"])
     return {
         "quote_id": quote_id(sid, ts),
         "security_id": sid,
         "quote_ts": ensure_utc(r["quote_ts"], "quote_ts").to_pydatetime(),
         "received_at": ensure_utc(r["received_at"], "received_at").to_pydatetime(),
-        "session_type": _session_type(ts),
+        "session_type": session_type(ts),
         "bid": float(r["bid"]),
         "ask": float(r["ask"]),
         "mid": float(r["mid"]),
@@ -240,9 +240,9 @@ def compute_reaction(
     start, move_pp = move_start(sampled, w if synced else None, float(mc["min_move_pp"]))
     move_start_at = start if start is not None else a.ts
 
-    rows = [_quote_row(a.stock, a.ts, vendor, rule_version), _quote_row(b.stock, b.ts, vendor, rule_version)]
+    rows = [quote_row(a.stock, a.ts, vendor, rule_version), quote_row(b.stock, b.ts, vendor, rule_version)]
     for p in (a, b):
-        rows += [_quote_row(r, p.ts, vendor, rule_version) for r in p.constituents.values()]
+        rows += [quote_row(r, p.ts, vendor, rule_version) for r in p.constituents.values()]
     ids = (quote_id(security, a.ts), quote_id(security, b.ts))
     reaction = {
         "ref_before_quote_id": ids[0],
