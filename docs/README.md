@@ -19,7 +19,9 @@
 | `DATA_CONTRACT.md` | 数据契约 |
 | `DEVELOPMENT_PHASES.md` | 开发阶段 + 首轮指令 |
 | `MODEL_IMPROVEMENT_MEMO.md` | 模型改进建议 |
-| `USER_GUIDE.md` | 用户指南与命名候选 |
+| `TRAINING_AND_USAGE_GUIDE_CN.md` | **训练与使用指南（中文）**：数据快照、周检训练、基线与事件模型、校准、影子测试步骤、审批与回滚、预测对照改进；每日使用、读数、何时可信、补充信息、复盘 |
+| `roadmap/ROADMAP_EXTENSIONS_CN.md` | **路线图扩展（中文）**：Phase 5 中长期预测、Phase 6 买卖信号、Phase 7 自有资金系统执行交易；进入门槛、新数据、新表、模块边界；如何不打断当前编码合并 |
+| `USER_GUIDE.md` | 用户指南（英文，早期版）与命名候选 |
 | `PPT_COVERAGE_REVIEW.md` | PPT 蓝图覆盖核对 |
 | `business/` | 商业计划与数据成本对比（另一条工作线产出） |
 | `prototype/index.html` | 原型入口 |

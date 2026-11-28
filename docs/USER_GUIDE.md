@@ -3,6 +3,8 @@
 **Version** `guide-0.1` · 2026-11-26 · Matches plan-0.2 / contract-0.2 and the prototype pages.
 This is a research tool. It is not a trading signal or investment advice.
 
+> **Chinese, more complete version:** `TRAINING_AND_USAGE_GUIDE_CN.md` (guide-cn-0.1, matches plan/contract/phases 0.7) covers model training, shadow testing, approval and rollback, plus daily use, adding information and review. Where the two differ, follow the Chinese guide. This file is kept for the product name ideas.
+
 ---
 
 ## 1. Name ideas
@@ -96,6 +98,8 @@ These comparisons are how the model gets better. Each week the settled results f
 ---
 
 ## 6. Access stages
+
+> Update 2026-11-26: the system is for the internal team only; there is no plan to open it to outside users. The "Selected users" rows below are now internal visibility tiers for the day-to-day view.
 
 | Stage | You'll see |
 |---|---|

@@ -4,6 +4,7 @@
 **依据**：项目交接说明（Brief）+ 三份规格（见 §0）。配套文件：`DATA_CONTRACT.md`（契约 `contract-0.7`）、`DEVELOPMENT_PHASES.md`、`prototype/`。
 
 > 本系统面向研究与验证，不接入交易执行，不构成投资建议。所有示例数值、模型成绩均为虚构。
+> **路线图扩展**：Phase 5（中长期预测）、Phase 6（买卖信号）、Phase 7（自有资金系统执行交易）见独立文档 `roadmap/ROADMAP_EXTENSIONS_CN.md`（roadmap-0.1，仅规划，不改变本文件与 `DATA_CONTRACT.md` 当前范围）。
 
 ---
 
@@ -371,7 +372,7 @@ stock-research/
 | D-30 | 评分基线与检验 | 方向目标报告 Brier Skill Score（BSS = 1 − Brier/Brier_ref），三条参照：`class_frequency`、`always_flat`、`persistence`（上一个 60 分钟相对收益方向延续）；候选 vs 线上用按交易日分块 bootstrap（2,000 次）求配对差 95% CI | MEMO E-1/E-2 | proposed | Phase 1 |
 | D-31 | 免费特征（fs-0.2） | 时段/日历（距开盘、距收盘、星期、半日市、三巫日、指数调仓日）；跨资产代理（QQQ、SPY 30/60 分钟收益，^VIX 水平与变化）；篮子内领先滞后（各成分 5/15/30 分钟收益与 SMH）；波动状态（5/30/390 分钟已实现波动、隔夜跳空、开盘区间） | MEMO I-1～I-4 | proposed | Phase 0 定义 / Phase 1 实现 |
 | D-32 | LLM 提取评估集 | 人工标注约 300 份文档（财报、政策、8-K、新闻各类），评估事实、方向、范围、确定性四类字段的 precision/recall；提示词版本冻结；低于门槛（初始：数值事实 precision ≥ 0.98、方向 F1 ≥ 0.85）的提示词版本不得进入特征 | MEMO A-11 | proposed | Phase 1 |
-| D-33 | 对外开放门槛 | 见 §12：内部 → 精选用户 v1（证据 + 预期波动）→ v2（方向概率，仅达标切片）→ v3（其他目标） | MEMO §4 | proposed | Phase 3 前锁定 |
+| D-33 | 内部可见层级门槛 | 见 §12：仅限内部团队，不对外开放；内部日常使用层级 v1（证据 + 预期波动）→ v2（方向概率，仅达标切片）→ v3（其他目标） | MEMO §4 | proposed | Phase 3 前锁定 |
 | D-34 | 一键运行规则 | 默认 `reuse_if_unchanged`；`force_recompute` 仅 `researcher+`；同一用户同一证券 1 分钟内重复点击按幂等键返回同一运行；按需预测不进主评分；live 单只证券端到端 p95 ≤ 90s（不含等待起算报价） | S3§2、§4(5) | proposed | Phase 2 |
 | D-35 | 新公司接入门槛 | 回填 ≥ 3 年分钟行情（秒级 ≥ 1 年）；合格报价率 ≥ 95%；同步成功率 ≥ 95%；盘中新闻时间精度已知 ≥ 90%；LLM 抽检通过 D-32；影子 ≥ 20 个交易日；不满足 → 只做 `peer_only`（训练池）或停在 `blocked` | S3§1.2、§8.1 | proposed | Phase 2 |
 | D-36 | 新公司参数 | 先 `market_sector_only`；公司偏移只有在留出与影子都改善（D-21 同口径）后才启用 | S3§8.2 | from_spec | — |
@@ -465,15 +466,17 @@ stock-research/
 | 预测状态 | `pending_evaluation → published → awaiting_trigger|awaiting_settlement → settled`；终态另有 `abstained`、`not_triggered`、`unsettleable` | DC §5，原型状态徽标 |
 | 版本字段 | `schema_version`、`analysis_version`、`target_definition_version`、`quote_rule_version`、`benchmark_version_id`、`model_version_id`、`calibration_version`、`settlement_version`、`dataset_version_id`、`feature_set_version`、`code_version` | DC §3，原型回放页"锁定输入" |
 
-## 12. 上线边界与分步开放（D-33）
+## 12. 上线边界与内部可见层级（D-33）
 
-首版"上线"= 内部研究环境，邀请制账户；对外仅展示证据、解释、情景和**已通过门槛**的目标概率；未通过门槛的目标在用户端显示"模型验证中，仅展示行情与证据"。无交易执行、无外部推送。
+**使用范围（2026-11-26 确认）：仅限内部团队使用，不计划对外开放。** 下表的 v1～v3 是内部日常使用界面的可见层级（研发人员始终可看全部，包括影子模型），不是对外用户阶段。
+
+首版"上线"= 内部研究环境，邀请制内部账户；日常使用界面仅展示证据、解释、情景和**已通过门槛**的目标概率；未通过门槛的目标在用户端显示"模型验证中，仅展示行情与证据"。无交易执行、无外部推送。
 
 | 阶段 | 谁能看到什么 | 门槛（锁定于 `gate_config`） |
 |---|---|---|
 | 内部（现在 → Phase 3） | 全部，含影子模型 | — |
-| 精选用户 v1 | 证据、当前解释、事件情景、**预期波动** `regular_60m_move` | 区间名义 80% 的实测覆盖率在 [77%, 83%] 内，留出 ≥ 60 个独立交易日 + 实时影子 ≥ 20 个交易日；pinball loss 优于 HAR 基线 |
-| 精选用户 v2 | `regular_60m` 方向概率，仅限通过的切片（证券 × 时段 × 有无新闻），且只在模型相对基线的优势高于发布阈值时显示 | BSS（对 `class_frequency`）> 0 且分块 bootstrap 95% CI 下界 > 0，留出与实时影子均满足 |
-| 精选用户 v3 | `regular_to_close`、`next_regular_session`、价格区间 | 每个目标同样门槛 |
+| 内部层级 v1 | 证据、当前解释、事件情景、**预期波动** `regular_60m_move` | 区间名义 80% 的实测覆盖率在 [77%, 83%] 内，留出 ≥ 60 个独立交易日 + 实时影子 ≥ 20 个交易日；pinball loss 优于 HAR 基线 |
+| 内部层级 v2 | `regular_60m` 方向概率，仅限通过的切片（证券 × 时段 × 有无新闻），且只在模型相对基线的优势高于发布阈值时显示 | BSS（对 `class_frequency`）> 0 且分块 bootstrap 95% CI 下界 > 0，留出与实时影子均满足 |
+| 内部层级 v3 | `regular_to_close`、`next_regular_session`、价格区间 | 每个目标同样门槛 |
 
-`model_deployments.audience ∈ {internal, selected_v1, selected_v2, selected_v3}` 控制展示范围；精选用户账号为邀请制 `viewer` 角色。
+`model_deployments.audience ∈ {internal, selected_v1, selected_v2, selected_v3}` 控制展示范围（枚举名保持不变以免影响已写代码，`selected_v*` 解释为内部可见层级）；日常使用账号为内部 `viewer` 角色。

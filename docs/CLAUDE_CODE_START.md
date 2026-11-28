@@ -44,8 +44,8 @@ Phase 0 的设计就是"不依赖外部数据也能做完"：仓库骨架、契�
 
 == 第 0 步：放置设计文档 ==
 1. 把 _design_package/stock-forecast-design/ 下的 BUILDING_MASTER_PLAN.md、DATA_CONTRACT.md、DEVELOPMENT_PHASES.md、
-   MODEL_IMPROVEMENT_MEMO.md、USER_GUIDE.md、PPT_COVERAGE_REVIEW.md、README.md、CLAUDE_CODE_START.md 复制到 docs/；
-   business/ 复制到 docs/business/；prototype/ 复制到项目根目录 prototype/（只作 UI 与字段参考，不修改）。
+   MODEL_IMPROVEMENT_MEMO.md、USER_GUIDE.md、TRAINING_AND_USAGE_GUIDE_CN.md、PPT_COVERAGE_REVIEW.md、README.md、CLAUDE_CODE_START.md 复制到 docs/；
+   ROADMAP_EXTENSIONS_CN.md 复制到 docs/roadmap/（仅规划，不实施）；business/ 复制到 docs/business/；prototype/ 复制到项目根目录 prototype/（只作 UI 与字段参考，不修改）。
 2. 把 _design_package/ 加入 .gitignore（不提交压缩包和重复副本）。
 3. 完整阅读 docs/BUILDING_MASTER_PLAN.md、docs/DATA_CONTRACT.md、docs/DEVELOPMENT_PHASES.md（以下简称 MP / DC / DP），
    重点：MP §6 目录、§9 决策表；DC §1–§5、§3.7a；DP「总览」「Phase 0」「附录 A Phase 0」「首轮 Claude Code 执行指令」。

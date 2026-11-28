@@ -2,6 +2,8 @@
 
 **版本** `phases-0.7` · 2026-11-26（0.7：用户补充信息与"继续分析"增量补充运行，AC-59～AC-61，WBS 约 242 人日；0.6：第 1 步采集与第 2 步推理可见，AC-56～AC-58；0.5：每日预测时刻表与预测—实际对照，AC-52～AC-55；0.4：补齐 PPT 蓝图审查的 19 项缺口，AC-37～AC-51） · 引用：`BUILDING_MASTER_PLAN.md`（plan-0.7，决策 D-xx）、`DATA_CONTRACT.md`（契约 `contract-0.7`）、`MODEL_IMPROVEMENT_MEMO.md`（§5 已并入）
 
+> **路线图扩展**：Phase 5～7（中长期预测、买卖信号、自有资金系统执行交易）见 `roadmap/ROADMAP_EXTENSIONS_CN.md`，仅规划，不改变 Phase 0～4 的任务、验收与当前契约。
+
 **0.3 更新**：补充总览（周期、工作线、环境、完成定义）、基础设施与 CI、新公司接入工作流、一键端到端运行、数据源健康与告警、运维手册，以及附录 A 工作分解（约 80 项任务、估算与依赖）和附录 C 各阶段 Claude Code 指令模板。
 
 **工具链约定**：Node 20 + pnpm、Next.js（App Router, TS）、Supabase CLI（本地 `supabase start`）、Python 3.12 + uv、pytest、DuckDB + PyArrow、scikit-learn。所有时间以 UTC 存储。
@@ -25,10 +27,10 @@ P0 ──► P1 ──► P2 ──► P3 ──► P4(后续)
 | Phase 0 | 2–3 周 | 契约、日历、报价规则、阈值与评分函数全部有测试；CI 绿；数据样本验证报告 | — |
 | Phase 1 | 6–7 周 | NVDA 三类历史日完整回放 + 自动结算 + 基础训练与指标 + `sr run --mode replay` 一键回放；公司行为、历史类比、运行状态与有效期、估值背景；盘后异动与传闻→确认场景；每日时刻表回放与预测—实际对照视图 | — |
 | Phase 2 | 7–8 周 | 四家实时运行；网页上线（内部）；点击"运行"端到端；新公司接入 1–5 阶段；数据源健康与告警；staging 环境；事件结果结算与条件预测；宏观首发值、法院案卷、Form 4 来源；行业模板（芯片 + 银行测试）；时刻表实时运行与股票详情"预测与实际"两条曲线 | 内部团队 |
-| Phase 3 | 4–5 周 | 研发后台完整；影子测试；审批/回滚；接入 6–8 阶段（训练→影子→上线）；TSM/MRVL 走完接入 | 精选用户 v1（若门槛通过） |
-| Phase 4+ | 持续 | 至收盘/下一时段、区间、更多事件子类与行业；期权隐含波动（来源验证后） | 精选用户 v2/v3 |
+| Phase 3 | 4–5 周 | 研发后台完整；影子测试；审批/回滚；接入 6–8 阶段（训练→影子→上线）；TSM/MRVL 走完接入 | 内部层级 v1（若门槛通过） |
+| Phase 4+ | 持续 | 至收盘/下一时段、区间、更多事件子类与行业；期权隐含波动（来源验证后） | 内部层级 v2/v3 |
 
-合计到"内部完整可用"约 4–5 个月（附录 A 合计约 242 人日，2 名工程师）；到精选用户 v1 取决于影子测试时长（≥ 20 个交易日）与门槛结果。
+合计到"内部完整可用"约 4–5 个月（附录 A 合计约 242 人日，2 名工程师）；到内部层级 v1 取决于影子测试时长（≥ 20 个交易日）与门槛结果。
 
 ### 工作线（贯穿各阶段）
 
@@ -40,7 +42,7 @@ P0 ──► P1 ──► P2 ──► P3 ──► P4(后续)
 | T4 训练与评估 | 数据集、训练、校准、评估、影子、审批 | P1–P3 |
 | T5 网页 | 市场页面、研发后台、运营页面 | P2–P3 |
 | T6 运营与基础设施 | 环境、CI/CD、队列、调度、监控、告警、备份、运维手册 | P0–P3 |
-| T7 合规与权限 | RLS、授权范围、受限复核、审计日志、精选用户开放 | P1–P3 |
+| T7 合规与权限 | RLS、授权范围、受限复核、审计日志、内部可见层级 | P1–P3 |
 
 ### 环境
 
@@ -48,7 +50,7 @@ P0 ──► P1 ──► P2 ──► P3 ──► P4(后续)
 |---|---|---|
 | `local` | 开发；`supabase start` + 本地 Parquet | 合成 fixture + 小样本 |
 | `staging` | 集成测试、回放、影子运行 | 授权历史数据 + 实时行情（延迟可接受） |
-| `prod` | 内部研究使用，后续精选用户 | 授权实时数据 |
+| `prod` | 仅限内部团队研究使用（不对外开放） | 授权实时数据 |
 
 Python worker 部署为容器（单机起步，可横向扩展），Next.js 部署到 Vercel 或同类平台，Supabase 各环境独立项目；密钥只放平台 Secret，不入库。
 
@@ -247,7 +249,7 @@ uv run pytest services/py/tests -q -k "replay or settle or train"
 | P3-3 评估：共同覆盖集合、配对差异、按交易日/事件簇 bootstrap CI、校准图、混淆矩阵、分组拆解；`regular_60m_move` 的 `interval_width`（p80/p90 平均宽度）与覆盖率同表报告 | `sr/eval/{compare.py,bootstrap.py,calibration.py}` |
 | P3-4 影子运行：候选与线上同点同窗并行、锁定后评分 | `sr/forecast/shadow.py` |
 | P3-5 门槛 `gate_config`（D-21）与审批、部署、回滚 API 与页面 | `config/gates/gate-0.1.yaml`、`apps/web/app/admin/{runs,models,evaluations,approvals}/**` |
-| P3-6 分步开放：`model_deployments.audience` 与切片、精选用户门槛（MP §12，D-33）、邀请制账号 | `config/gates/audience-0.1.yaml`、`supabase/migrations/000x_audience.sql` |
+| P3-6 内部可见层级：`model_deployments.audience` 与切片、各层级门槛（MP §12，D-33）、内部邀请制账号 | `config/gates/audience-0.1.yaml`、`supabase/migrations/000x_audience.sql` |
 | P3-8 研发后台"预测对照"页：按槽位/证券/行情状态的命中率、Brier、BSS、区间覆盖与宽度、残差均值；按槽位校准曲线；大误差复盘队列（区间外预测）；漂移检查（近 20 日 vs 参照，分块 bootstrap）→ `drift` 告警与训练复盘入口（MP §7.1） | `sr/eval/{residuals.py,drift.py}`、`apps/web/app/admin/fva/**` |
 | P3-7 新公司接入 6–8 阶段：自动加入训练池（`market_sector_only`）、影子运行、按公司出成绩、审批上线；用 TSM、MRVL 走完全流程 | `sr/onboarding/{train_stage.py,shadow_stage.py}`、`apps/web/app/ops/onboarding/[id]/**` |
 
@@ -270,7 +272,7 @@ uv run pytest services/py/tests -q -k "replay or settle or train"
 - AC-24 `regular_to_close`、`next_regular_session` 独立标签、训练与评估，达标后逐项开放；`overnight_gap` 可选目标并标注"跳空非可执行收益"。
 - 经验证的预测区间（分位数覆盖率与宽度）、15/30/45/60 分钟多点曲线。
 - AC-23 待决事件子类数值概率（同类、同阶段历史发生率基线）；条件情景独立计分。
-- 第二批 TSM、MRVL；银行、生技行业配置；延长时段预测；1–5 日窗口（S1）。
+- 第二批 TSM、MRVL；银行、生技行业配置；延长时段预测；1–5 日窗口（S1，并入 `roadmap/ROADMAP_EXTENSIONS_CN.md` Phase 5）。
 - AC-25 合规：`restricted_review` 证据不进入公开 API 与特征（P1 起即测试）。
 - AC-51 期权（来源验证后）：`OptionsProvider` 样本验证通过（`verification_status=sample_verified`）前，任何模型特征读取 `options_snapshots` 时报错；通过后只作为 `regular_60m_move` 与财报事件的候选特征，按 D-21 同口径对照后决定是否启用。
 

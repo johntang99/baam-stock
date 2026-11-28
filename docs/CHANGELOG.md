@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## Docs · design package 0.7 sync — 2026-11-28
+- Synced design package 0.7 (plan/contract/phases 0.7, roadmap 0.1); added training guide, user guide, PPT coverage
+  review, business docs. DATA_CONTRACT kept at the repo's contract-0.7.2 (the package copy predates 0.7.1/0.7.2);
+  BUILDING_MASTER_PLAN takes the package text (roadmap pointer, internal-team-only §12 / D-33) but keeps
+  D-05–D-12 `confirmed`. New `docs/TRAINING_AND_USAGE_GUIDE_CN.md` (the older `docs/business/` copy is kept);
+  `docs/roadmap/ROADMAP_EXTENSIONS_CN.md` added; roadmap references point to `roadmap/`.
+- Not yet updated: `config/decisions.yaml` D-33 still has the old "对外开放 / 精选用户" wording.
+
 ## Phase 1 · 1.18 checker earnings-0.4; recheck keeps reviewer edits — 2026-11-28
 - Checker earnings-0.4: bare parenthesised table headers set the scale (`(Millions)`, `(Millions except
   percentages)`, `(Billions)`, `(Thousands)`; parentheses required, so prose "millions of units" does not).
