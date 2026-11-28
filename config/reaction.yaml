@@ -1,0 +1,11 @@
+# Market reaction + move start for event analyses (DP 1.09; DC market_reaction; AC-10, AC-40, AC-57; OQ-43)
+version: reaction-0.1
+ref_before:
+  max_lookback_s: 300          # last sync point strictly before the evidence's earliest public time, within this
+ref_asof:
+  max_staleness_s: 30          # last sync point at or before analysis_as_of, no older than this (D-07)
+move_start:
+  lookback_min: 60             # path window before analysis_as_of
+  path_step_s: 10              # sample the sync path every N seconds
+  min_move_pp: 0.25            # smaller moves from the extreme -> no material move (= reasoning residual_unexplained_pp)
+vendor_source_id: src_fixture_synthetic   # reference_quotes.vendor_source_id until the D-13 provider exists

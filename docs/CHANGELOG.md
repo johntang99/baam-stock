@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## Phase 1 · 1.09 market reaction + current explanation + time-order check — 2026-11-28
+- `sr/events/reaction.py` (reaction-0.1, `config/reaction.yaml`): sync points (D-06, same rule as `sync.py`);
+  `ref_before` = last sync point before the evidence's earliest public time, `ref_asof` = last at/before
+  `analysis_as_of` (≤ 30 s old); stock / basket / relative return in the DC `market_reaction` fields; basket
+  unavailable -> absolute return only, relative null, `missing_reason=benchmark_unavailable` (AC-40); move start =
+  opposite extreme of the relative path over the previous 60 min (OQ-43). Cited quotes are written to
+  `reference_quotes` (`rq_<ticker>_<yyyymmdd>_<hhmmss>`) so citations resolve. Quotes received after
+  `analysis_as_of` raise `LookaheadError`.
+- `sr/events/explain.py`: publishes the current explanation as a new analysis version on top of the latest one
+  (append-only, supersedes it): `market_reaction`, `market_explanation` + `reasoning_trace` via
+  `sr.events.reasoning`, prior cited observed facts carried over, `market_reaction_pending` gap removed,
+  `stock_reaction` readiness ready only when the relative return exists. Evidence is read point-in-time.
+- Built and tested on synthetic quotes (roadmap-0.2 sequence; no D-13 data). OQ-43 (reaction window and move
+  start) proposed, awaiting user. Tests: 366 (AC-10 returns and time order, AC-40, AC-57 timing, negative
+  look-ahead tests, synthetic-fixture run, end-to-end DB publish).
+
 ## Plan · roadmap-0.2 adopted; trade-execution rules; checker earnings-0.5 (OQ-42) — 2026-11-28
 - `docs/roadmap/ROADMAP_EXTENSIONS_CN.md` roadmap-0.2 (user): the 6-month fast route is the current plan. CLAUDE.md
   scope is now research and validation plus, once gates pass, own-funds system trade execution (internal team only);
