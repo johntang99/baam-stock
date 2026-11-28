@@ -42,11 +42,13 @@ FEATS = [
 ]
 
 
-def synthetic_frame(seed: int = 3, per_day: int = 24, signal: float = 0.6) -> pd.DataFrame:
+def synthetic_frame(
+    seed: int = 3, per_day: int = 24, signal: float = 0.6, start: date = START, end: date = END
+) -> pd.DataFrame:
     """Dataset-shaped rows; relative return depends on qqq_ret_30m (synthetic, NOT market data)."""
     rng = np.random.default_rng(seed)
     rows = []
-    for s in CAL.open_sessions(START, END):
+    for s in CAL.open_sessions(start, end):
         assert s.open_at is not None
         for i in range(per_day):
             t = s.open_at + timedelta(minutes=5 * i)

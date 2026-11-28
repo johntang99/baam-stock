@@ -1,0 +1,14 @@
+# Expected-move models for regular_60m_move (DP 1.13; D-29; AC-27; OQ-47)
+version: move-0.1
+quantiles: {p50: 0.5, p80: 0.8, p90: 0.9}
+har:
+  lags_sessions: {d: 1, w: 5, m: 22}   # RV_d / RV_w / RV_m = mean |rel| over the previous 1 / 5 / 22 sessions
+  log_offset_pp: 0.01                  # log(|rel| + offset)
+gbdt:
+  max_iter: 200
+  learning_rate: 0.05
+  max_leaf_nodes: 15
+  min_samples_leaf: 20
+conformal: true                        # shift each quantile on the calibration split to its nominal coverage
+metrics:
+  subsets: [train, calibration, validation]

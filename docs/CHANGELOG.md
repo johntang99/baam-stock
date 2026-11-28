@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## Phase 1 · 1.13 expected-move models: HAR baseline + GBDT quantiles (AC-27 training part) — 2026-11-28
+- `sr/train/models/har_vol.py` (move-0.1, `config/move.yaml`): RV_d / RV_w / RV_m = mean |relative return| over
+  the previous 1 / 5 / 22 sessions (earlier sessions only); OLS on logs; quantiles = scale × calibration-split
+  ratios; JSON round-trip.
+- `sr/train/models/move_quantile.py`: HistGradientBoosting quantile regressors for p50 / p80 / p90 on the HAR
+  terms + the 20 market features, seeded, split-conformal shift on the calibration split, no crossing, >= 0.
+- `sr/train/move.py`: metrics per subset / group — `pinball_loss`, `interval_coverage` and `interval_width` per
+  quantile (`group_key` "all|p80"), `n_effective`; the HAR comparison is `pinball_loss` with
+  `reference_model = har_vol` = model − HAR with a trading-day block-bootstrap CI; HAR's own metrics under
+  `har_vol:<group>`. `run_training` now dispatches on the dataset target (`regular_60m_move` writes
+  `har_vol.json` + `move_quantile.pkl` with SHA-256s).
+- OQ-46 confirmed (defaults). OQ-47 (move models) adopted under the user's standing approval for routine defaults.
+  Synthetic check: calibration coverage hits nominal within 2 pp; on a 20-day validation split the quantile model's
+  pinball is 0.011 below HAR (CI -0.028 to 0.003) and HAR p80 coverage is 77.5 %. Tests: 413.
+
 ## Phase 1 · 1.12 first training run: baselines, market_logit, calibration (AC-16) — 2026-11-28
 - `sr/train/train.py` (train-0.1, `config/train.yaml`): `market_logit` = L2 multinomial logistic regression
   (scikit-learn, lbfgs, C = 1) on 20 market features (train split; missing -> train median, standardised),

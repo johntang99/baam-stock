@@ -428,30 +428,73 @@ def run_training(
         ds_row, frame = load_dataset(conn, dataset_version_id)
         check_availability(ds_row, frame)
         target_id = str(ds_row["target_id"])
-        if target_id != "regular_60m":
-            raise ValueError(f"1.12 trains the direction target only, not {target_id}")
-        _set(conn, run_id, status="training", stage="market_logit")
-        out = train_and_evaluate(
-            frame, seed, target_id, on_stage=lambda st: _set(conn, run_id, status=st, stage=st)
-        )
         d = (out_dir or repo_root() / cfg["output_dir"]) / run_id
         d.mkdir(parents=True, exist_ok=True)
-        mdl_id = new_id("mdl")
-        art = {
-            "model_version_id": mdl_id,
-            "target_id": target_id,
-            "dataset_version_id": dataset_version_id,
-            "training_run_id": run_id,
-            "train_version": cfg["version"],
-            **out.model.to_dict(),
-            "references": {"class_frequency": out.class_frequency},
-        }
-        p = d / "market_logit.json"
-        p.write_text(json.dumps(art, indent=2, sort_keys=True) + "\n")
-        sha = hashlib.sha256(p.read_bytes()).hexdigest()
-        paths = {"market_logit": str(p), "sha256": sha, "model_version_id": mdl_id}
+        _set(conn, run_id, status="training", stage=target_id)
+        if target_id == "regular_60m":
+            out = train_and_evaluate(
+                frame, seed, target_id, on_stage=lambda st: _set(conn, run_id, status=st, stage=st)
+            )
+            metrics = out.metrics
+            mdl_id = new_id("mdl")
+            art = {
+                "model_version_id": mdl_id,
+                "target_id": target_id,
+                "dataset_version_id": dataset_version_id,
+                "training_run_id": run_id,
+                "train_version": cfg["version"],
+                **out.model.to_dict(),
+                "references": {"class_frequency": out.class_frequency},
+            }
+            p = d / "market_logit.json"
+            p.write_text(json.dumps(art, indent=2, sort_keys=True) + "\n")
+            paths: dict[str, Any] = {
+                "market_logit": str(p),
+                "sha256": hashlib.sha256(p.read_bytes()).hexdigest(),
+                "model_version_id": mdl_id,
+            }
+        elif target_id == "regular_60m_move":
+            import pickle
+
+            from sr.train.move import train_and_evaluate_move
+
+            _set(conn, run_id, status="calibrating", stage="har_vol+gbdt")
+            mv = train_and_evaluate_move(frame, seed)
+            _set(conn, run_id, status="evaluating", stage="metrics")
+            metrics = mv.metrics
+            har_id, q_id = new_id("mdl"), new_id("mdl")
+            ph = d / "har_vol.json"
+            ph.write_text(
+                json.dumps(
+                    {
+                        "model_version_id": har_id,
+                        "target_id": target_id,
+                        "dataset_version_id": dataset_version_id,
+                        "training_run_id": run_id,
+                        "move_version": load("move")["version"],
+                        **mv.har.to_dict(),
+                    },
+                    indent=2,
+                    sort_keys=True,
+                )
+                + "\n"
+            )
+            pq_ = d / "move_quantile.pkl"
+            pq_.write_bytes(
+                pickle.dumps({"model_version_id": q_id, "model_family": "gbdt", "model": mv.model})
+            )
+            paths = {
+                "har_vol": str(ph),
+                "har_vol_sha256": hashlib.sha256(ph.read_bytes()).hexdigest(),
+                "har_vol_model_version_id": har_id,
+                "move_quantile": str(pq_),
+                "move_quantile_sha256": hashlib.sha256(pq_.read_bytes()).hexdigest(),
+                "move_quantile_model_version_id": q_id,
+            }
+        else:
+            raise ValueError(f"no training recipe for target {target_id}")
         recorded = now or datetime.now(UTC)
-        for seq, m in enumerate(out.metrics):
+        for seq, m in enumerate(metrics):
             conn.execute(
                 """insert into training_run_metrics (training_run_id, seq, stage, iteration, subset, target_id, group_key,
                        metric, reference_model, ci95_low, ci95_high, value, denominator, recorded_at)
@@ -480,7 +523,7 @@ def run_training(
             finished_at=now or datetime.now(UTC),
             artifact_paths=paths,
         )
-        return TrainingResult(run_id, "completed", out.metrics, paths)
+        return TrainingResult(run_id, "completed", metrics, paths)
     except AvailabilityError as e:
         _set(
             conn,
