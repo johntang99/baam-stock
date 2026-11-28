@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## Docs · Sync risk-0.2 / roadmap-0.3 design docs — 2026-11-28
+- New `docs/roadmap/DOWNSIDE_RISK_WARNING_CN.md` (risk-0.2): downside-risk warning and drawdown monitoring (design
+  only; not implemented — the module gets its own build prompt).
+- `docs/roadmap/ROADMAP_EXTENSIONS_CN.md` roadmap-0.2 → roadmap-0.3: companion risk doc, risk gate row
+  (G-R1–G-R8), §2.5, fourth live clock; other gate values unchanged.
+- `docs/BUILDING_MASTER_PLAN.md`, `docs/DEVELOPMENT_PHASES.md`: still 0.7; only the roadmap pointer line updated
+  (now also points to the risk doc, with `roadmap/` paths). The master plan keeps D-05–D-12 `confirmed`.
+- New `docs/research/AI_INDUSTRY_OUTLOOK_2027_2028_CN.md` (internal industry research; not investment advice).
+- `docs/README.md`: rows for the two new files.
+
 ## Phase 2 · 2.01–2.06 live data and scheduling (AC-17, AC-18) on a synthetic feed — 2026-11-28
 - **2.01 md-ingest** (`sr/marketdata/live.py`): vendor ticks → the 1-second layer (newest quote received by each
   second; late older quotes counted, never applied), a store that refuses reads past its clock, immutable Parquet

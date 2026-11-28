@@ -4,7 +4,7 @@
 **依据**：项目交接说明（Brief）+ 三份规格（见 §0）。配套文件：`DATA_CONTRACT.md`（契约 `contract-0.7`）、`DEVELOPMENT_PHASES.md`、`prototype/`。
 
 > 本系统面向研究与验证，不接入交易执行，不构成投资建议。所有示例数值、模型成绩均为虚构。
-> **路线图扩展**：Phase 5（中长期预测）、Phase 6（买卖信号）、Phase 7（自有资金系统执行交易）见独立文档 `roadmap/ROADMAP_EXTENSIONS_CN.md`（roadmap-0.1，仅规划，不改变本文件与 `DATA_CONTRACT.md` 当前范围）。
+> **路线图扩展**：Phase 5（中长期预测）、Phase 6（买卖信号）、Phase 7（自有资金系统执行交易）见独立文档 `roadmap/ROADMAP_EXTENSIONS_CN.md`（roadmap-0.3，含"6 个月快速路线"；不改变本文件与 `DATA_CONTRACT.md` 当前范围）。下行风险预警与下跌监测（市场与个股下跌概率、下跌类型、熔断 / LULD 暂停等监测与报告、减仓 / 卖出建议）见 `roadmap/DOWNSIDE_RISK_WARNING_CN.md`（risk-0.2）。
 
 ---
 
