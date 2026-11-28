@@ -25,6 +25,7 @@ from sr.events.reaction import persist_quotes, quote_id, quote_row
 from sr.forecast.publish import attach_t0
 from sr.ids import new_id
 from sr.labels.thresholds import classify
+from sr.marketdata.corporate_actions import actions_crossing, adjust_start
 from sr.marketdata.sync import find_first_sync_qualifying
 from sr.timeguard import assert_not_after, ensure_utc
 
@@ -150,8 +151,30 @@ def compute(
         [quote_row(e.quote, e.sample_ts, vendor, rule)]
         + [quote_row(c, e.sample_ts, vendor, rule) for c in e.constituent_quotes.values()],
     )
-    start = _mids(conn, [p["t0_quote_id"], *base["benchmark_start_quote_ids"]])
-    stock = (float(e.quote["mid"]) / start[p["security_id"]] - 1.0) * 100.0
+    start: dict[str, float | None] = dict(_mids(conn, [p["t0_quote_id"], *base["benchmark_start_quote_ids"]]))
+    # D-40: a window that crosses a corporate action is settled on an adjusted start price (raw quotes untouched)
+    crossing = actions_crossing(
+        conn,
+        [p["security_id"], *w],
+        pd.Timestamp(t0["quote_ts"]).to_pydatetime(),
+        e.sample_ts.to_pydatetime(),
+        as_of,
+    )
+    applied: list[str] = []
+    for sid in [p["security_id"], *w]:
+        acts = [a for a in crossing if a["security_id"] == sid]
+        if not acts or start.get(sid) is None:
+            continue
+        adj = adjust_start(float(start[sid]), acts, None)  # type: ignore[arg-type]
+        if adj.invalid_reason:
+            if sid == p["security_id"]:
+                return base | {"invalid_reason": adj.invalid_reason}
+            start[sid] = None  # a constituent with an unknown ratio counts as missing (D-06)
+        else:
+            start[sid] = adj.price
+            applied += list(adj.applied)
+    base["_corporate_actions"] = applied
+    stock = (float(e.quote["mid"]) / float(start[p["security_id"]]) - 1.0) * 100.0  # type: ignore[arg-type]
     br = basket_return(
         {c: start.get(c) for c in w}, {c: e.constituent_quotes.get(c, {}).get("mid") for c in w}, w
     )
@@ -227,7 +250,7 @@ def settle(
         "select * from prediction_settlements where prediction_id = %s and is_reporting_version",
         (prediction_id,),
     ).fetchone()
-    if cur is not None and _same(dict(cur), fields):
+    if cur is not None and _same(dict(cur), {k: v for k, v in fields.items() if not k.startswith("_")}):
         return SettleResult("unchanged", cur["settlement_id"], cur["settlement_version"], dict(cur))
     last = conn.execute(
         "select coalesce(max(settlement_version), 0) as v from prediction_settlements where prediction_id = %s",
@@ -242,7 +265,10 @@ def settle(
         "settled_at": ensure_utc(settled_at or as_of, "settled_at").to_pydatetime(),
         "is_reporting_version": True,
     }
-    row["reason_text"] = _reason_text(row, dict(p))
+    applied = row.pop("_corporate_actions", None) or []
+    row["reason_text"] = _reason_text(row, dict(p)) + (
+        f" 起算价已按公司行为调整（{', '.join(applied)}）。" if applied else ""
+    )
     status = "unsettleable" if row["invalid_reason"] else "settled"
     jcols = {"pinball_loss", "quantile_hits"}
     with conn.transaction():

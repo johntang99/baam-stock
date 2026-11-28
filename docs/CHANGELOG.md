@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## Phase 1 · 1.21 corporate actions: raw quotes, adjusted settlement, ticker changes (AC-37) — 2026-11-28
+- `sr/marketdata/corporate_actions.py` (ca-0.1, `config/corporate_actions.yaml`): `record_action` (ticker change
+  -> closes the open ticker row at ex_date and adds the new one), `resolve_ticker` (point in time),
+  `actions_crossing` (ex_date in the window's sessions or effective_at inside it, known by the run), `adjust_start`
+  (split / reverse split ÷ ratio, cash dividend ≥ 0.5 % of the previous close subtracted, unknown ratio or
+  spin-off / delisting -> `corporate_action`), `back_adjust` for research-library prices.
+- Settlement restates the start price across actions (stock: unknown -> `unsettleable/corporate_action`;
+  basket member: unknown -> counted missing) and says so in `reason_text`; `reference_quotes` stay raw. An action
+  learnt later appends a corrected settlement version.
+- OQ-56 adopted (routine). Tests: 7 new (hand-calculated 10:1 split across a two-day window, raw quotes kept,
+  unknown ratio, constituent missing, late action -> v2, dividend threshold, back-adjust, ticker change).
+
 ## Phase 1 · 1.25 scenario tests: after-hours +8 %, after-hours basket missing, rumour -> confirmation (AC-39..41) — 2026-11-28
 - `sr/snapshot/triggers.py`: `detect_market_move` (rule `move_abs_v1`: |move| >= 3 % vs the regular close outside
   regular hours, vs 15 minutes earlier inside them) -> a `market_move` snapshot trigger.

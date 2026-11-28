@@ -1,0 +1,6 @@
+# Corporate actions (DP 1.21; D-40; DC corporate_actions; OQ-56)
+version: ca-0.1
+dividend_ignore_below_pct: 0.5       # D-40: cash dividends below 0.5% of the previous close are ignored
+ratio_types: [split, reverse_split]
+cash_types: [cash_dividend, special_dividend]
+unsettleable_types: [spin_off, merger_delisting]   # no usable ratio in Phase 1 -> corporate_action
