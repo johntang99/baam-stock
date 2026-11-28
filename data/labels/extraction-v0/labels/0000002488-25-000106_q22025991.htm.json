@@ -199,6 +199,18 @@
       "segment": "Data Center"
     },
     {
+      "metric": "operating_income",
+      "value": -155000000.0,
+      "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "gaap",
+      "quote": "Data Center Segment $ (155) $ 932 $ 743 $ 777 $ 1,284",
+      "direction": "decrease",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Data Center"
+    },
+    {
       "metric": "revenue",
       "value": 3600000000.0,
       "unit": "USD",
@@ -293,6 +305,30 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Embedded"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 1462000000.0,
+      "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "gaap",
+      "quote": "GAAP net cash provided by operating activities of continuing operations $ 1,462 $ 939 $ 593 $ 2,401 $ 1,114",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 1180000000.0,
+      "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 1,180 $ 727 $ 439 $ 1,907 $ 818",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
     },
     {
       "metric": "revenue_outlook",

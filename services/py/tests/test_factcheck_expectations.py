@@ -353,3 +353,26 @@ def test_unit_must_fit_the_metric_kind() -> None:
         "unit_kind_mismatch:USD",
         "unit_kind_mismatch:pct",
     ]
+
+
+def test_bare_parenthesised_header_sets_the_scale() -> None:
+    # earnings-0.4: AMD prints "SELECTED CORPORATE DATA (Millions)" and "(Millions except percentages)" (synthetic rows)
+    for header in ("SELECTED CORPORATE DATA (Millions) (Unaudited)", "(Millions except percentages)"):
+        doc = f"{header} Three Months Ended Free cash flow (3) $ 554 $ 1,558\n"
+        f = ExtractedFact(
+            "free_cash_flow", 554, "USD_million", None, None, None, "Free cash flow (3) $ 554", {}
+        )
+        rep = check_facts((f,), None, doc)
+        assert rep.accepted[0].value == 554e6 and rep.rejected == [], header
+
+
+def test_prose_millions_without_parentheses_sets_no_scale() -> None:
+    doc = "We shipped millions of units. Free cash flow (3) $ 554\n"
+    f = ExtractedFact("free_cash_flow", 554, "USD_million", None, None, None, "Free cash flow (3) $ 554", {})
+    assert check_facts((f,), None, doc).rejected[0]["reason"] == "value_not_in_quote"
+
+
+def test_parenthesised_new_taiwan_header_is_not_usd() -> None:
+    doc = "(Millions of New Taiwan dollars) Net revenue 759,690\n"
+    f = ExtractedFact("revenue", 759690, "USD_million", None, None, None, "Net revenue 759,690", {})
+    assert check_facts((f,), None, doc).rejected != []

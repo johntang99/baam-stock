@@ -676,5 +676,6 @@
       "reason": "conflicting_values"
     }
   ],
-  "validation_notes": []
+  "validation_notes": [],
+  "draft_facts_sha256": "f247f99f30b2b1183583528d98d2217f63f8ae32290b8dcb0c4ad557a39b2a14"
 }

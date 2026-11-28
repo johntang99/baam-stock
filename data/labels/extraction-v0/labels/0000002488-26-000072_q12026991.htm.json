@@ -259,6 +259,18 @@
       "segment": "Embedded"
     },
     {
+      "metric": "operating_income",
+      "value": 1599000000.0,
+      "unit": "USD",
+      "period": "FY2026Q1",
+      "basis": "gaap",
+      "quote": "Data Center Segment $ 1,599 $ 1,752 $ 932",
+      "direction": "none",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Data Center"
+    },
+    {
       "metric": "revenue_outlook",
       "value": 11200000000.0,
       "unit": "USD",
@@ -304,6 +316,30 @@
       "direction": "none",
       "scope": "company",
       "certainty": "guidance",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 2955000000.0,
+      "unit": "USD",
+      "period": "FY2026Q1",
+      "basis": "gaap",
+      "quote": "Net cash provided by operating activities of continuing operations 2,955 939",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 2566000000.0,
+      "unit": "USD",
+      "period": "FY2026Q1",
+      "basis": "non_gaap",
+      "quote": "Free cash flow (3) $ 2,566 $ 2,082 $ 727",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
       "segment": null
     }
   ]

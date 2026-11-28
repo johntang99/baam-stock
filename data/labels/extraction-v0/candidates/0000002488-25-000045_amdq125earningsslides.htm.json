@@ -720,5 +720,6 @@
       "reason": "conflicting_values"
     }
   ],
-  "validation_notes": []
+  "validation_notes": [],
+  "draft_facts_sha256": "90c54fd28dd985e77a3d28d713ddc4a210f8e552ad8b64af8d2943d78c554f00"
 }

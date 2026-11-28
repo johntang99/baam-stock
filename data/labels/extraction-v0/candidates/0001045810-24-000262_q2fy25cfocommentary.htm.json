@@ -999,5 +999,6 @@
       "reason": "conflicting_values"
     }
   ],
-  "validation_notes": []
+  "validation_notes": [],
+  "draft_facts_sha256": "c25f2f65f705acfd71725e1266a913a06e922bd071ad4a08c9e7c17e819b5a75"
 }

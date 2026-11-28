@@ -521,6 +521,54 @@
       "scope": "company",
       "certainty": "guidance",
       "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 1299000000.0,
+      "unit": "USD",
+      "period": "FY2024Q4",
+      "basis": "gaap",
+      "quote": "GAAP net cash provided by operating activities $ 1,299 $ 628 $ 381 $ 3,041 $ 1,667",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 3041000000.0,
+      "unit": "USD",
+      "period": "FY2024",
+      "basis": "gaap",
+      "quote": "GAAP net cash provided by operating activities $ 1,299 $ 628 $ 381 $ 3,041 $ 1,667",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 1091000000.0,
+      "unit": "USD",
+      "period": "FY2024Q4",
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 1,091 $ 496 $ 242 $ 2,405 $ 1,121",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 2405000000.0,
+      "unit": "USD",
+      "period": "FY2024",
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 1,091 $ 496 $ 242 $ 2,405 $ 1,121",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
     }
   ]
 }

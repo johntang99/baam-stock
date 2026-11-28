@@ -24,6 +24,7 @@ from sr.llm.labels import (
     DocLabel,
     GoldFact,
     doc_kind_for,
+    facts_digest,
     labels_dir,
     read_labels,
     read_manifest,
@@ -69,6 +70,16 @@ def to_gold(f: Any) -> GoldFact:
     )
 
 
+def edited_by_hand(prev: DocLabel | None, cand_path: Any) -> bool:
+    """True when a draft's facts differ from what this script last wrote (a reviewer started editing it).
+
+    Drafts written before the digest existed have none recorded and count as unedited."""
+    if prev is None or not cand_path.exists():
+        return False
+    stored = json.loads(cand_path.read_text()).get("draft_facts_sha256")
+    return bool(stored) and stored != facts_digest(prev.facts)
+
+
 def recheck(manifest: dict[str, dict[str, Any]], existing: dict[str, DocLabel], corpus: Any) -> int:
     """Re-apply the deterministic checker to saved candidates; only drafts are rewritten."""
     from sr.llm.base import ExtractedFact
@@ -89,6 +100,10 @@ def recheck(manifest: dict[str, dict[str, Any]], existing: dict[str, DocLabel], 
         if prev and prev.text_sha256 != text_sha:
             print(f"skip {key}: document text changed since drafting", file=sys.stderr)
             continue
+        if edited_by_hand(prev, path):
+            print(f"skip {key}: draft was edited by a reviewer; not overwritten", file=sys.stderr)
+            continue
+        gold = [to_gold(f) for f in rep.accepted]
         write_label(
             DocLabel(
                 doc_key=key,
@@ -96,10 +111,11 @@ def recheck(manifest: dict[str, dict[str, Any]], existing: dict[str, DocLabel], 
                 doc_kind=doc_kind_for(manifest[key]),
                 label_status="draft",
                 labeled_by=prev.labeled_by if prev else "prelabel:recheck",
-                facts=[to_gold(f) for f in rep.accepted],
+                facts=gold,
             )
         )
         d["dropped"] = rep.rejected
+        d["draft_facts_sha256"] = facts_digest(gold)
         path.write_text(json.dumps(d, ensure_ascii=False, indent=2) + "\n")
         n += 1
     print(f"rechecked {n} drafts from saved candidates (no API calls)")
@@ -150,6 +166,8 @@ def main() -> int:
     manifest = read_manifest()
     existing = {x.doc_key: x for x in read_labels(reviewed_only=False)}
     skip = {k for k, lab in existing.items() if lab.label_status == "reviewed" or not a.replace_drafts}
+    cands = labels_dir() / "candidates"
+    skip |= {k for k, lab in existing.items() if edited_by_hand(lab, cands / f"{safe_key(k)}.json")}
     skip |= {k.strip() for k in a.exclude.split(",") if k.strip()}
     if a.keys:
         todo = [k.strip() for k in a.keys.split(",") if k.strip()]
@@ -180,7 +198,7 @@ def main() -> int:
         text = doc_text(row, corpus)
         ext = prov.extract_facts(text, mode="replay")
         rep = check_facts(ext.facts, None, text) if ext.status == "succeeded" else None
-        facts = rep.accepted if rep else []
+        gold = [to_gold(f) for f in rep.accepted] if rep else []
         # every candidate + why the checker dropped it, so reviewers see what the model found (not counted in eval)
         cand_dir = labels_dir() / "candidates"
         cand_dir.mkdir(parents=True, exist_ok=True)
@@ -193,6 +211,7 @@ def main() -> int:
                     "candidates": [asdict(f) for f in ext.facts],
                     "dropped": rep.rejected if rep else [],
                     "validation_notes": list(ext.rejected),
+                    "draft_facts_sha256": facts_digest(gold),
                 },
                 ensure_ascii=False,
                 indent=2,
@@ -206,30 +225,14 @@ def main() -> int:
                 doc_kind=doc_kind_for(row),
                 label_status="draft",
                 labeled_by=f"prelabel:{prov.provider}/{prov.model}/{getattr(prov, 'version', '?')}",
-                facts=[
-                    GoldFact.model_validate(
-                        {
-                            "metric": f.metric,
-                            "value": f.value,
-                            "unit": f.unit,
-                            "period": f.period,
-                            "basis": f.basis if f.basis in ("gaap", "non_gaap", "company_defined") else None,
-                            "quote": f.quote,
-                            "direction": f.direction or "none",
-                            "scope": f.scope or "company",
-                            "certainty": f.certainty or "reported",
-                            "segment": f.segment,
-                        }
-                    )
-                    for f in facts
-                ],
+                facts=gold,
             )
         )
         rec = memory.records[-1]
         rejected = len(rep.rejected) if rep else 0
         print(
             f"[{i}/{len(todo)}] {row['ticker']:<4} {row['file_kind']:<7} {key:<48} {ext.status:<19} "
-            f"facts={len(facts):<3} dropped_by_check={rejected:<2} in={rec.usage.get('input_tokens', 0):>6} "
+            f"facts={len(gold):<3} dropped_by_check={rejected:<2} in={rec.usage.get('input_tokens', 0):>6} "
             f"out={rec.usage.get('output_tokens', 0):>5} {rec.latency_ms or 0:>6}ms model={rec.model}"
             + (f" note={ext.rejected[0][:70]!r}" if ext.rejected else ""),
             flush=True,

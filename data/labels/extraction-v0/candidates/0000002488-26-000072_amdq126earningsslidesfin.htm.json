@@ -530,5 +530,6 @@
       "reason": "value_not_in_quote"
     }
   ],
-  "validation_notes": []
+  "validation_notes": [],
+  "draft_facts_sha256": "5f9a9d5771b9f817f1bbb990481da95449a27407fc674b237d036bd4e69876ad"
 }

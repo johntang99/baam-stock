@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 from collections import defaultdict
@@ -57,6 +58,12 @@ def write_label(label: DocLabel, root: Path | None = None) -> Path:
     p = d / f"{safe_key(label.doc_key)}.json"
     p.write_text(json.dumps(label.model_dump(), ensure_ascii=False, indent=2) + "\n")
     return p
+
+
+def facts_digest(facts: list[GoldFact]) -> str:
+    """Fingerprint of a draft's facts as the prelabel script wrote them; a mismatch later means a person edited it."""
+    blob = json.dumps([f.model_dump() for f in facts], ensure_ascii=False, sort_keys=True)
+    return hashlib.sha256(blob.encode()).hexdigest()
 
 
 def read_labels(root: Path | None = None, reviewed_only: bool = True) -> list[DocLabel]:

@@ -36,6 +36,7 @@ uv run python scripts/fetch_public_corpus.py   # 政策（Federal Register）与
 3. **取可搜索文本**：`uv run python scripts/check_labels.py --text "<doc key>" > /tmp/doc.txt`。这是程序实际使用的文本（表格被压成一行）。`quote` 必须从这里**逐字**复制。
 4. **打开标注文件**：`data/labels/extraction-v0/labels/<文档>.json`（文件名是 doc key 中的 `:` 换成 `_`）。逐条核对、改正、删除、补充（规则见第 4–6 节）。
 5. **查漏**：打开 `data/labels/extraction-v0/candidates/<文档>.json`。`candidates` 是模型找到的全部候选，`dropped` 是程序剔除的及原因。被剔除但其实正确的事实（见第 6 节）请手工补进标注文件——注意候选里的数值和期间是**原文写法**，要按第 4 节换算后再填。
+   - 改到一半的草稿也安全：程序重跑核对（`--recheck`）时，凡是被人改过的草稿都会跳过，不会被覆盖。
 6. **标记完成**：`"label_status": "reviewed"`，`"labeled_by": "<你的名字>"`。
 7. **自检**：`uv run python scripts/check_labels.py --keys "<doc key>"`，必须 **0 error**；warning 逐条看一眼，确认无误即可保留。
 8. **提交**：提交改动的 JSON（建议一批 10–20 份一个 PR），PR 说明里写下拿不准的地方。

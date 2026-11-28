@@ -638,5 +638,6 @@
       "reason": "unknown_metric"
     }
   ],
-  "validation_notes": []
+  "validation_notes": [],
+  "draft_facts_sha256": "ca9f2f5bc6b21fddea1cd9c114d121bea268e3ddb7bb975ff5b6758c4ea504db"
 }

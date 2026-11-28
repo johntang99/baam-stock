@@ -1,5 +1,8 @@
 """Reviewer self-check for extraction labels (DP 1.18). SYNTHETIC document and labels."""
 
+import json
+from pathlib import Path
+
 from sr.evidence.hashing import sha256_text
 from sr.llm.labels import DocLabel, GoldFact, lint_label, safe_key
 
@@ -90,3 +93,41 @@ def test_unit_must_fit_the_metric() -> None:
         gf(metric="revenue_outlook", value=2.0, unit="pct", quote="reported revenue of $13.4 billion")
     )
     assert "error:unit 'pct' does not fit revenue_outlook (expects USD)" in msgs(lab)
+
+
+def test_recheck_leaves_reviewer_edits_alone(tmp_path: Path) -> None:
+    """A draft whose facts no longer match the digest the prelabel script recorded was edited by a person."""
+    from sr.llm.labels import facts_digest
+    from tests.conftest import _load_script
+
+    pre = _load_script("prelabel_extraction")
+    fact = GoldFact.model_validate(
+        {
+            "metric": "revenue",
+            "value": 1e9,
+            "unit": "USD",
+            "period": "FY2026Q3",
+            "basis": "gaap",
+            "quote": "Revenue was $1 billion (synthetic)",
+            "direction": "none",
+            "scope": "company",
+            "certainty": "reported",
+            "segment": None,
+        }
+    )
+    lab = DocLabel(
+        doc_key="k",
+        text_sha256="0" * 64,
+        doc_kind="earnings_release",
+        label_status="draft",
+        labeled_by="prelabel:fake",
+        facts=[fact],
+    )
+    cand = tmp_path / "k.json"
+    assert not pre.edited_by_hand(lab, cand)  # no candidates file
+    cand.write_text(json.dumps({"doc_key": "k"}))
+    assert not pre.edited_by_hand(lab, cand)  # drafted before digests existed
+    cand.write_text(json.dumps({"doc_key": "k", "draft_facts_sha256": facts_digest([fact])}))
+    assert not pre.edited_by_hand(lab, cand)
+    edited = lab.model_copy(update={"facts": [fact, fact.model_copy(update={"value": 2e9})]})
+    assert pre.edited_by_hand(edited, cand)

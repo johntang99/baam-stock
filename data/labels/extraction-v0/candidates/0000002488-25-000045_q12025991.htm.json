@@ -768,27 +768,7 @@
     },
     {
       "metric": "operating_income",
-      "quote": "Operating Income (Loss): Data Center Segment $ 932 $ 1,157 $ 541",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Client and Gaming Segment 496 496 237",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
       "quote": "Embedded Segment 328 362 342",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "GAAP net cash provided by operating activities $ 939 $ 1,299 $ 521",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow $ 727 $ 1,091 $ 379",
       "reason": "value_not_in_quote"
     },
     {
@@ -827,5 +807,6 @@
       "reason": "conflicting_values"
     }
   ],
-  "validation_notes": []
+  "validation_notes": [],
+  "draft_facts_sha256": "e9fed8aefadbf938147bb7cdcc4e4d21acbba8fe177c9408122f8d48a9e71051"
 }

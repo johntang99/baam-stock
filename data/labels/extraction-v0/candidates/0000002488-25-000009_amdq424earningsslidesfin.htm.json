@@ -1080,5 +1080,6 @@
       "reason": "conflicting_values"
     }
   ],
-  "validation_notes": []
+  "validation_notes": [],
+  "draft_facts_sha256": "5f6487a7749bb4aaa662f5e20c5321611fe018f42ba9121d86695028d81eb95e"
 }

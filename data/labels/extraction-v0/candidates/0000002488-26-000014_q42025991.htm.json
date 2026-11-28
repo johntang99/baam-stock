@@ -1246,42 +1246,12 @@
     },
     {
       "metric": "operating_income",
-      "quote": "Data Center Segment $ 1,752 $ 1,074 $ 1,157 $ 3,603 $ 3,482",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
-      "quote": "Data Center Segment $ 1,752 $ 1,074 $ 1,157 $ 3,603 $ 3,482",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_income",
       "quote": "Client and Gaming Segment 725 867 496 2,855 1,187",
       "reason": "value_not_in_quote"
     },
     {
       "metric": "operating_income",
       "quote": "Embedded Segment 357 283 362 1,243 1,421",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "GAAP net cash provided by operating activities of continuing operations $ 2,304 $ 1,788 $ 1,299 $ 6,493 $ 3,041",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "GAAP net cash provided by operating activities of continuing operations $ 2,304 $ 1,788 $ 1,299 $ 6,493 $ 3,041",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow (3) $ 2,082 $ 1,530 $ 1,091 $ 5,519 $ 2,405",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow (3) $ 2,082 $ 1,530 $ 1,091 $ 5,519 $ 2,405",
       "reason": "value_not_in_quote"
     },
     {
@@ -1295,5 +1265,6 @@
       "reason": "unknown_metric"
     }
   ],
-  "validation_notes": []
+  "validation_notes": [],
+  "draft_facts_sha256": "b4bb6f27bd028d0da23057e64b49344beea11fd10b74eb208cf6039782f98abd"
 }

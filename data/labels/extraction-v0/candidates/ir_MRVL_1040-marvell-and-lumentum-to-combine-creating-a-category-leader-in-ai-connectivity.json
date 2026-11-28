@@ -208,5 +208,6 @@
       "reason": "unit_kind_mismatch:pct"
     }
   ],
-  "validation_notes": []
+  "validation_notes": [],
+  "draft_facts_sha256": "3892588f475ae2e5a0c67d457016b60b8f9cb57831b991dcabfd4ae415f43727"
 }

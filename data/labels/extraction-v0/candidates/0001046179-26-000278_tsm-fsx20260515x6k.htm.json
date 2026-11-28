@@ -4,5 +4,6 @@
   "llm_call_id": "llm_01M8C9N57R9PB6FFB7YRRQ83NC",
   "candidates": [],
   "dropped": [],
-  "validation_notes": []
+  "validation_notes": [],
+  "draft_facts_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
 }

@@ -873,27 +873,8 @@
       "metric": "other",
       "quote": "we delivered more than $5 billion of AMD Instinct accelerator revenue",
       "reason": "unknown_metric"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "GAAP net cash provided by operating activities $ 1,299 $ 628 $ 381 $ 3,041 $ 1,667",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "GAAP net cash provided by operating activities $ 1,299 $ 628 $ 381 $ 3,041 $ 1,667",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow $ 1,091 $ 496 $ 242 $ 2,405 $ 1,121",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow $ 1,091 $ 496 $ 242 $ 2,405 $ 1,121",
-      "reason": "value_not_in_quote"
     }
   ],
-  "validation_notes": []
+  "validation_notes": [],
+  "draft_facts_sha256": "4c97e4f872d4694ff21628cc74971dda5c22c0a79c95a83e0d709ecef9e1683a"
 }

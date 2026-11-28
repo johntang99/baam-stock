@@ -597,5 +597,6 @@
       "reason": "unknown_metric"
     }
   ],
-  "validation_notes": []
+  "validation_notes": [],
+  "draft_facts_sha256": "76344dd84741fa85d109f4ab3e7793522e3c524ee136fed2d98ef43d4504e5f8"
 }

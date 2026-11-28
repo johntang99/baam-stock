@@ -708,21 +708,6 @@
   ],
   "dropped": [
     {
-      "metric": "operating_income",
-      "quote": "Data Center Segment $ 1,599 $ 1,752 $ 932",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "operating_cash_flow",
-      "quote": "Net cash provided by operating activities of continuing operations 2,955 939",
-      "reason": "value_not_in_quote"
-    },
-    {
-      "metric": "free_cash_flow",
-      "quote": "Free cash flow (3) $ 2,566 $ 2,082 $ 727",
-      "reason": "value_not_in_quote"
-    },
-    {
       "metric": "other",
       "quote": "Adjusted EBITDA (2) $ 2,746 $ 3,048 $ 1,954",
       "reason": "unknown_metric"
@@ -753,5 +738,6 @@
       "reason": "conflicting_values"
     }
   ],
-  "validation_notes": []
+  "validation_notes": [],
+  "draft_facts_sha256": "24a93ed65fae347944a7f0aa666ac78114f761bb84509660e2dda373be95b4bc"
 }

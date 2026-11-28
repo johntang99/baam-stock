@@ -317,6 +317,54 @@
       "scope": "company",
       "certainty": "guidance",
       "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 932000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Operating Income (Loss): Data Center Segment $ 932 $ 1,157 $ 541",
+      "direction": "none",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "operating_income",
+      "value": 496000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Client and Gaming Segment 496 496 237",
+      "direction": "none",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Client and Gaming"
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 939000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "gaap",
+      "quote": "GAAP net cash provided by operating activities $ 939 $ 1,299 $ 521",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 727000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 727 $ 1,091 $ 379",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
     }
   ]
 }

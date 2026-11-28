@@ -607,6 +607,30 @@
       "segment": "Embedded"
     },
     {
+      "metric": "operating_income",
+      "value": 1752000000.0,
+      "unit": "USD",
+      "period": "FY2025Q4",
+      "basis": null,
+      "quote": "Data Center Segment $ 1,752 $ 1,074 $ 1,157 $ 3,603 $ 3,482",
+      "direction": "none",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Data Center"
+    },
+    {
+      "metric": "operating_income",
+      "value": 3603000000.0,
+      "unit": "USD",
+      "period": "FY2025",
+      "basis": null,
+      "quote": "Data Center Segment $ 1,752 $ 1,074 $ 1,157 $ 3,603 $ 3,482",
+      "direction": "none",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Data Center"
+    },
+    {
       "metric": "revenue_outlook",
       "value": 9800000000.0,
       "unit": "USD",
@@ -664,6 +688,54 @@
       "direction": "none",
       "scope": "company",
       "certainty": "guidance",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 2304000000.0,
+      "unit": "USD",
+      "period": "FY2025Q4",
+      "basis": "gaap",
+      "quote": "GAAP net cash provided by operating activities of continuing operations $ 2,304 $ 1,788 $ 1,299 $ 6,493 $ 3,041",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 6493000000.0,
+      "unit": "USD",
+      "period": "FY2025",
+      "basis": "gaap",
+      "quote": "GAAP net cash provided by operating activities of continuing operations $ 2,304 $ 1,788 $ 1,299 $ 6,493 $ 3,041",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 2082000000.0,
+      "unit": "USD",
+      "period": "FY2025Q4",
+      "basis": "non_gaap",
+      "quote": "Free cash flow (3) $ 2,082 $ 1,530 $ 1,091 $ 5,519 $ 2,405",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 5519000000.0,
+      "unit": "USD",
+      "period": "FY2025",
+      "basis": "non_gaap",
+      "quote": "Free cash flow (3) $ 2,082 $ 1,530 $ 1,091 $ 5,519 $ 2,405",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
       "segment": null
     }
   ]

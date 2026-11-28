@@ -235,6 +235,18 @@
       "segment": "Data Center"
     },
     {
+      "metric": "operating_income",
+      "value": 2103000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Data Center Segment $ 2,103 $ 1,599 $ (155) $ 3,702 $ 777",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Data Center"
+    },
+    {
       "metric": "revenue",
       "value": 3800000000.0,
       "unit": "USD",
@@ -329,6 +341,42 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Embedded"
+    },
+    {
+      "metric": "revenue",
+      "value": 21789000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Net revenue $ 11,536 $ 10,253 $ 7,685 $ 21,789 $ 15,123",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 2366000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Net cash provided by operating activities 2,366 2,011 5,321 2,950",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 1558000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "non_gaap",
+      "quote": "Free cash flow (3) $ 1,558 $ 2,566 $ 1,180 $ 4,124 $ 1,907",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
     },
     {
       "metric": "revenue_outlook",

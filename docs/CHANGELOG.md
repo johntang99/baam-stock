@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## Phase 1 · 1.18 checker earnings-0.4; recheck keeps reviewer edits — 2026-11-28
+- Checker earnings-0.4: bare parenthesised table headers set the scale (`(Millions)`, `(Millions except
+  percentages)`, `(Billions)`, `(Thousands)`; parentheses required, so prose "millions of units" does not).
+  AMD prints its corporate-data and cash-flow tables this way. All 357 drafts rechecked (no API calls): 31 facts
+  restored, all AMD (Data Center operating income, operating cash flow, free cash flow, two year-to-date revenue
+  totals); kept facts 2,202; `value_not_in_quote` drops 66 -> 35. 9 restored facts have no period and are
+  flagged by `check_labels.py` (110 errors in total) for reviewers.
+- `prelabel_extraction.py`: the candidates file records `draft_facts_sha256`, a digest of the draft it wrote
+  (`facts_digest` in `sr.llm.labels`). `--recheck` and `--replace-drafts` skip drafts whose facts no longer match,
+  i.e. a reviewer has started editing them. Reviewer guide §3 notes this. Tests: 348.
+
 ## Phase 1 · 1.18 Claude drafts for policy + news; checker earnings-0.3 — 2026-11-26
 - Claude (extract-0.3) drafted the 66 policy/news documents: 66 calls, all succeeded; 447,022 in / 42,466 out
   tokens, ~$2.64 at list price; logged to `llm_calls`. Policy: 0 facts kept (95 candidates, all non-metrics).

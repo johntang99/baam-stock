@@ -700,5 +700,6 @@
       "reason": "unknown_metric"
     }
   ],
-  "validation_notes": []
+  "validation_notes": [],
+  "draft_facts_sha256": "0ae65a46bd51423119954a10d74e0c2a21189de9c7a7c855f529d32a505b5a95"
 }

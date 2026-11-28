@@ -604,5 +604,6 @@
       "reason": "unknown_metric"
     }
   ],
-  "validation_notes": []
+  "validation_notes": [],
+  "draft_facts_sha256": "e13a0ded5165010028f62640bd78d61ffb4b10037d612030557d50d5e2faf541"
 }

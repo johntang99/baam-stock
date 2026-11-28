@@ -33,5 +33,5 @@ uv run python scripts/check_labels.py --queue 10   # 标注审核：下一批文
 ```
 
 ## 当前进度
-- Phase 0 完成（CI 绿）。**Phase 1 进行中**：已完成 DP 1.03–1.08、1.22、1.27–1.28（历史类比、证据入库、LLM 接口、事件与版本、财报提取与预期对比、政策事件模板、采集记录、推理链与引用校验）。1.18：语料 357 份（SEC 291、Federal Register 政策 40、公司新闻稿 26，OQ-41）；全部已有 Claude（extract-0.3）草稿、核对规则 earnings-0.3（OQ-39）、审核指南 `docs/labeling/extraction-v0.md` 与 `scripts/check_labels.py` 已就绪，**等待人工审核满 100 份**后跑评估（付费，需批准）；第三方新闻待 D-15 授权。行情相关任务（1.01、1.02、1.09–1.17、1.21、1.23–1.26）等待 D-13 供应商样本。
+- Phase 0 完成（CI 绿）。**Phase 1 进行中**：已完成 DP 1.03–1.08、1.22、1.27–1.28（历史类比、证据入库、LLM 接口、事件与版本、财报提取与预期对比、政策事件模板、采集记录、推理链与引用校验）。1.18：语料 357 份（SEC 291、Federal Register 政策 40、公司新闻稿 26，OQ-41）；全部已有 Claude（extract-0.3）草稿、核对规则 earnings-0.4（OQ-39）、审核指南 `docs/labeling/extraction-v0.md` 与 `scripts/check_labels.py` 已就绪，**等待人工审核满 100 份**后跑评估（付费，需批准）；第三方新闻待 D-15 授权。行情相关任务（1.01、1.02、1.09–1.17、1.21、1.23–1.26）等待 D-13 供应商样本。
 - 数据库测试：设置 `TEST_DATABASE_URL`（管理员连接串，测试会建临时库）后运行 pytest；CI 自带 postgres:17。

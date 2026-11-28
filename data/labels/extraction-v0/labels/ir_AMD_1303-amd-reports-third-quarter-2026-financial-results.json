@@ -235,6 +235,18 @@
       "segment": "Data Center"
     },
     {
+      "metric": "operating_income",
+      "value": 2882000000.0,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": "gaap",
+      "quote": "Operating Income (Loss): Data Center Segment $ 2,882",
+      "direction": "none",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Data Center"
+    },
+    {
       "metric": "revenue",
       "value": 3700000000.0,
       "unit": "USD",
@@ -281,6 +293,42 @@
       "scope": "segment",
       "certainty": "reported",
       "segment": "Embedded"
+    },
+    {
+      "metric": "revenue",
+      "value": 35166000000.0,
+      "unit": "USD",
+      "period": null,
+      "basis": "gaap",
+      "quote": "Net revenue $ 13,377 $ 11,536 $ 9,246 $ 35,166 $ 24,369",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_cash_flow",
+      "value": 1202000000.0,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": "gaap",
+      "quote": "Net cash provided by operating activities 1,202 2,159 6,523 5,109",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "free_cash_flow",
+      "value": 554000000.0,
+      "unit": "USD",
+      "period": "FY2026Q3",
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 554 $ 1,558 $ 1,530 $ 4,678 $ 3,437",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
     },
     {
       "metric": "revenue_outlook",
