@@ -722,7 +722,7 @@
     {
       "metric": "revenue",
       "quote": "Record second quarter revenue of $7.7 billion increased 32% y/y",
-      "reason": "conflicting_values"
+      "reason": "rounded_duplicate"
     },
     {
       "metric": "gross_margin_pct",
@@ -731,5 +731,5 @@
     }
   ],
   "validation_notes": [],
-  "draft_facts_sha256": "1fff8e7ec963ee627562f7ab0416e686798ab84875421d65eeec9485a9c6f1e4"
+  "draft_facts_sha256": "ddbde85c7e51edef5a6b9df0840b5c1b271e446ad949dfb0832441c48ae994b3"
 }

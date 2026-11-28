@@ -7,6 +7,18 @@
   "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
   "facts": [
     {
+      "metric": "revenue",
+      "value": 30040000000.0,
+      "unit": "USD",
+      "period": "FY2025Q2",
+      "basis": "gaap",
+      "quote": "Revenue $30,040 $26,044 $13,507 Up 15% Up 122%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 122.0,
       "unit": "pct",

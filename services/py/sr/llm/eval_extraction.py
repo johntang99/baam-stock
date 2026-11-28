@@ -18,7 +18,7 @@ from typing import Any
 
 from sr.config import load, repo_root
 from sr.db import Conn
-from sr.events.factcheck import CheckedFact, check_facts
+from sr.events.factcheck import CheckedFact, check_facts, rounds_to, sig_figs
 from sr.evidence.hashing import normalized_text, sha256_text
 from sr.ids import new_id
 from sr.llm.base import LLMProvider
@@ -56,15 +56,32 @@ def _value_eq(a: float | None, b: float | None, rel: float) -> bool:
     return abs(a - b) <= rel * max(1.0, abs(b))
 
 
-def match(pred: list[CheckedFact], gold: list[GoldFact], rel: float) -> list[tuple[CheckedFact, GoldFact]]:
-    """Greedy one-to-one matching on (metric, period, value)."""
+def _value_match(p: float | None, g: float | None, rel: float, min_sig: int | None) -> bool:
+    """Equal within `rel`, or (OQ-42) the prediction is the gold value rounded to the prediction's own significant
+    figures, with at least `min_sig` of them: "$16.0 billion" matches 15,955M, "$10 billion" does not match 13.4B."""
+    if _value_eq(p, g, rel):
+        return True
+    if min_sig is None or p is None or g is None:
+        return False
+    return sig_figs(p) >= min_sig and rounds_to(g, p)
+
+
+def match(
+    pred: list[CheckedFact], gold: list[GoldFact], rel: float, min_sig: int | None = None
+) -> list[tuple[CheckedFact, GoldFact]]:
+    """Greedy one-to-one matching on (metric, segment, period, value)."""
     free = list(gold)
     pairs = []
     for p in pred:
         for g in free:
             same_segment = (p.segment or "").strip().lower() == (g.segment or "").strip().lower()
             same_period = g.period is None or p.period == g.period
-            if p.metric == g.metric and same_segment and same_period and _value_eq(p.value, g.value, rel):
+            if (
+                p.metric == g.metric
+                and same_segment
+                and same_period
+                and _value_match(p.value, g.value, rel, min_sig)
+            ):
                 pairs.append((p, g))
                 free.remove(g)
                 break
@@ -100,6 +117,7 @@ def run_eval(
 ) -> EvalReport:
     cfg = load("extraction_eval")
     rel = float(cfg["matching"]["value_rel_tolerance"])
+    min_sig = cfg["matching"].get("rounded_match_min_sig")
     labels = (
         read_labels(labels_root) if labels is None else [x for x in labels if x.label_status == "reviewed"]
     )
@@ -117,7 +135,7 @@ def run_eval(
             raise ValueError(f"{lab.doc_key}: document text changed since labelling (sha mismatch)")
         ext = provider.extract_facts(text, mode="replay")
         pred = check_facts(ext.facts, lab.fiscal_period, text).accepted if ext.status == "succeeded" else []
-        pairs = match(pred, lab.facts, rel)
+        pairs = match(pred, lab.facts, rel, None if min_sig is None else int(min_sig))
         n_pred, n_gold, n_tp = n_pred + len(pred), n_gold + len(lab.facts), n_tp + len(pairs)
         for pf, gf in pairs:
             lab_pairs["direction"].append((pf.direction, gf.direction))

@@ -199,6 +199,18 @@
       "segment": null
     },
     {
+      "metric": "free_cash_flow",
+      "value": 6899000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "non_gaap",
+      "quote": "Adjusted free cash flow $ 6,899 $ 3,906 $ 857",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "revenue",
       "value": 7749000000.0,
       "unit": "USD",

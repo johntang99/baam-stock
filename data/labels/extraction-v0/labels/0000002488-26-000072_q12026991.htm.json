@@ -7,6 +7,18 @@
   "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
   "facts": [
     {
+      "metric": "revenue",
+      "value": 10253000000.0,
+      "unit": "USD",
+      "period": "FY2026Q1",
+      "basis": "gaap",
+      "quote": "Revenue ($M) $10,253 $7,438 Up 38% $10,270 Flat",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "gross_margin_pct",
       "value": 53.0,
       "unit": "pct",
@@ -14,6 +26,30 @@
       "basis": "gaap",
       "quote": "gross margin was 53%",
       "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 1476000000.0,
+      "unit": "USD",
+      "period": "FY2026Q1",
+      "basis": "gaap",
+      "quote": "Operating income ($M) $1,476 $806 Up 83% $1,752 Down 16%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 1383000000.0,
+      "unit": "USD",
+      "period": "FY2026Q1",
+      "basis": "gaap",
+      "quote": "Net income ($M) $1,383 $709 Up 95% $1,511 Down 8%",
+      "direction": "increase",
       "scope": "company",
       "certainty": "reported",
       "segment": null
@@ -38,6 +74,30 @@
       "basis": "non_gaap",
       "quote": "On a non-GAAP(*) basis, gross margin was 55%",
       "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "operating_income",
+      "value": 2540000000.0,
+      "unit": "USD",
+      "period": "FY2026Q1",
+      "basis": "non_gaap",
+      "quote": "Operating income ($M) $2,540 $1,779 Up 43% $2,854 Down 11%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 2265000000.0,
+      "unit": "USD",
+      "period": "FY2026Q1",
+      "basis": "non_gaap",
+      "quote": "Net income ($M) $2,265 $1,566 Up 45% $2,519 Down 10%",
+      "direction": "increase",
       "scope": "company",
       "certainty": "reported",
       "segment": null

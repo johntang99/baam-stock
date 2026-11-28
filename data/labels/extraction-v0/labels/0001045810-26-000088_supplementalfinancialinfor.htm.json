@@ -140,6 +140,18 @@
     },
     {
       "metric": "eps_gaap",
+      "value": 2.71,
+      "unit": "USD_per_share",
+      "period": "FY2027Q3",
+      "basis": "gaap",
+      "quote": "Basic $ 2.71 $ 1.31 $ 7.58 $ 3.16",
+      "direction": "none",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "eps_gaap",
       "value": 7.55,
       "unit": "USD_per_share",
       "period": null,

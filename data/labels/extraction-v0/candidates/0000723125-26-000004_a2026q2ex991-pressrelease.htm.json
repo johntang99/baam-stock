@@ -820,9 +820,9 @@
     {
       "metric": "free_cash_flow",
       "quote": "investments in capital expenditures, net (2) were $5.0 billion and adjusted free cash flow (2) was $6.9 billion",
-      "reason": "conflicting_values"
+      "reason": "rounded_duplicate"
     }
   ],
   "validation_notes": [],
-  "draft_facts_sha256": "72d641ef984d2373d1c3c01d7570691a3aeebdd9755f4aeb3643a6b74ec61916"
+  "draft_facts_sha256": "4aeed526084b3700f399f49003034f4a187d512cfd36ec270d0745855216c6cd"
 }

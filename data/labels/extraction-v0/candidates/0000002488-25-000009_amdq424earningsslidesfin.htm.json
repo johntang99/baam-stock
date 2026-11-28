@@ -1072,14 +1072,14 @@
     {
       "metric": "revenue",
       "quote": "Record revenue of $7.7 billion increased 24% y/y",
-      "reason": "conflicting_values"
+      "reason": "rounded_duplicate"
     },
     {
       "metric": "revenue",
       "quote": "Record revenue of $25.8 billion increased 14% y/y",
-      "reason": "conflicting_values"
+      "reason": "rounded_duplicate"
     }
   ],
   "validation_notes": [],
-  "draft_facts_sha256": "5f6487a7749bb4aaa662f5e20c5321611fe018f42ba9121d86695028d81eb95e"
+  "draft_facts_sha256": "2a2748a06c4890a8d077a4ece959dc96c4f610c06614b822cca169e8afe4b810"
 }

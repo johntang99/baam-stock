@@ -1,5 +1,5 @@
 # Earnings extraction + deterministic checks + expectation comparison (DP 1.07; S2§3.3; AC-09)
-version: earnings-0.4   # 0.2: header scales, signed losses, compact $0.8B (OQ-39); 0.3: unit must fit the metric kind; 0.4: bare "(Millions)" headers
+version: earnings-0.5   # 0.2: header scales, signed losses, compact $0.8B (OQ-39); 0.3: unit must fit the metric kind; 0.4: bare "(Millions)" headers; 0.5: rounded copies are not conflicts (OQ-42)
 event_category: earnings_guidance
 # canonical metric <- aliases (lower-case, spaces/underscores normalised). basis_in_name: metric name carries the
 # accounting basis (AC-09: GAAP and non-GAAP EPS are separate fields).

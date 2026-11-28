@@ -656,29 +656,29 @@
     {
       "metric": "revenue",
       "quote": "Third quarter revenue was a record $9.2 billion",
-      "reason": "conflicting_values"
+      "reason": "rounded_duplicate"
     },
     {
       "metric": "operating_income",
       "quote": "operating income was $1.3 billion",
-      "reason": "conflicting_values"
+      "reason": "rounded_duplicate"
     },
     {
       "metric": "net_income",
       "quote": "net income was $1.2 billion and diluted earnings per share was $ 0.75",
-      "reason": "conflicting_values"
+      "reason": "rounded_duplicate"
     },
     {
       "metric": "operating_income",
       "quote": "operating income was $2.2 billion, net income was $2 billion and diluted earnings per share was $1.20",
-      "reason": "conflicting_values"
+      "reason": "rounded_duplicate"
     },
     {
       "metric": "net_income",
       "quote": "operating income was $2.2 billion, net income was $2 billion and diluted earnings per share was $1.20",
-      "reason": "conflicting_values"
+      "reason": "rounded_duplicate"
     }
   ],
   "validation_notes": [],
-  "draft_facts_sha256": "bf33743b54c1e876fa45f8b656ee1352fd28afff16b9cb725afb9ac62bb35f7e"
+  "draft_facts_sha256": "4134c07afae9d31eca15fd10364af3ad6c7cba0e511f60fcd87bf8d21f55a6d0"
 }

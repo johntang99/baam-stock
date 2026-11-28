@@ -715,29 +715,29 @@
     {
       "metric": "revenue",
       "quote": "First quarter revenue was $10.3 billion",
-      "reason": "conflicting_values"
+      "reason": "rounded_duplicate"
     },
     {
       "metric": "operating_income",
       "quote": "operating income was $1.5 billion",
-      "reason": "conflicting_values"
+      "reason": "rounded_duplicate"
     },
     {
       "metric": "net_income",
       "quote": "net income was $1.4 billion",
-      "reason": "conflicting_values"
+      "reason": "rounded_duplicate"
     },
     {
       "metric": "operating_income",
       "quote": "operating income was $2.5 billion",
-      "reason": "conflicting_values"
+      "reason": "rounded_duplicate"
     },
     {
       "metric": "net_income",
       "quote": "net income was $2.3 billion",
-      "reason": "conflicting_values"
+      "reason": "rounded_duplicate"
     }
   ],
   "validation_notes": [],
-  "draft_facts_sha256": "24a93ed65fae347944a7f0aa666ac78114f761bb84509660e2dda373be95b4bc"
+  "draft_facts_sha256": "fb0e8440c911fbed9bc541179f092b48354516a78e23989f7eae3d1ae3dd989c"
 }

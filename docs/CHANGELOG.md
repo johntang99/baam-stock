@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## Plan · roadmap-0.2 adopted; trade-execution rules; checker earnings-0.5 (OQ-42) — 2026-11-28
+- `docs/roadmap/ROADMAP_EXTENSIONS_CN.md` roadmap-0.2 (user): the 6-month fast route is the current plan. CLAUDE.md
+  scope is now research and validation plus, once gates pass, own-funds system trade execution (internal team only);
+  new "交易执行" rules: features behind default-off switches, real orders off with no auto-enable, human sign-off,
+  Claude never enables real orders, separate `services/trader/` + `trading` schema, paper `BrokerAdapter` first,
+  no broker production keys in the repo. Coding sequence: market-data tasks built on synthetic fixtures instead of
+  waiting for D-13, then DP Phase 2-3, then contract-1.0 (append-only) and Phase 5-7. MP §12 / DP still say "no
+  trade execution"; roadmap-0.2 takes precedence until they are turned into formal phase docs (roadmap §4.5).
+- OQ-42 confirmed (defaults). Checker earnings-0.5: values for one metric/basis/period/segment that differ only by
+  rounding ("$1.8 billion" vs "$1,779") are one fact; the most precise is kept, rounded copies dropped as
+  `rounded_duplicate`; real disagreements stay `conflicting_values`. Eval matching: a prediction with >= 2
+  significant figures also matches when it is the gold value rounded (`matching.rounded_match_min_sig: 2`).
+  Known limit: trailing zeros are lost in floats, so "$16.0 billion" counts as 2 significant figures. Reviewer
+  guide: label the most precise printed figure. Recheck (no API calls): 27 facts restored, 2,229 kept;
+  conflicting_values 92 -> 65. Tests: 353.
+
 ## Docs · design package 0.7 sync — 2026-11-28
 - Synced design package 0.7 (plan/contract/phases 0.7, roadmap 0.1); added training guide, user guide, PPT coverage
   review, business docs. DATA_CONTRACT kept at the repo's contract-0.7.2 (the package copy predates 0.7.1/0.7.2);

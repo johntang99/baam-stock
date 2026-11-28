@@ -152,6 +152,30 @@
     },
     {
       "metric": "revenue",
+      "value": 21478000000.0,
+      "unit": "USD",
+      "period": "FY2024",
+      "basis": "gaap",
+      "quote": "Infrastructure software 21,478 42 7,637 21 +181 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Infrastructure software"
+    },
+    {
+      "metric": "revenue",
+      "value": 30096000000.0,
+      "unit": "USD",
+      "period": "FY2024",
+      "basis": "gaap",
+      "quote": "Semiconductor solutions $ 30,096 58 % $ 28,182 79 % +7 %",
+      "direction": "increase",
+      "scope": "segment",
+      "certainty": "reported",
+      "segment": "Semiconductor solutions"
+    },
+    {
+      "metric": "revenue",
       "value": 12200000000.0,
       "unit": "USD",
       "period": "FY2024",

@@ -712,7 +712,7 @@
     {
       "metric": "revenue",
       "quote": "Record first quarter revenue of $7.4 billion increased 36% y/y",
-      "reason": "conflicting_values"
+      "reason": "rounded_duplicate"
     },
     {
       "metric": "gross_margin_pct",
@@ -721,5 +721,5 @@
     }
   ],
   "validation_notes": [],
-  "draft_facts_sha256": "90c54fd28dd985e77a3d28d713ddc4a210f8e552ad8b64af8d2943d78c554f00"
+  "draft_facts_sha256": "76980c59a42253529f1354274ced85fa7d1342b913ec927a16ad5d88b83fba83"
 }

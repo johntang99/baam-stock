@@ -540,9 +540,9 @@
     {
       "metric": "revenue",
       "quote": "Record revenue of $13.4 billion, up 45% y/y",
-      "reason": "conflicting_values"
+      "reason": "rounded_duplicate"
     }
   ],
   "validation_notes": [],
-  "draft_facts_sha256": "671cd9577f5b805ce331d371a463e9959a0d8d36c318c28b4c35a2dcf52207c4"
+  "draft_facts_sha256": "deff09dfbae6913eb2faef22dc3d716a46a969c24308a8389851743ff6567cac"
 }

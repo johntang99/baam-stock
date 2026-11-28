@@ -181,10 +181,10 @@
     },
     {
       "metric": "revenue_growth_yoy_pct",
-      "quote": "an increase of 30.1 percent from May 2025",
-      "reason": "conflicting_values"
+      "quote": "an increase of 30.0 percent compared to the same period in 2025",
+      "reason": "rounded_duplicate"
     }
   ],
   "validation_notes": [],
-  "draft_facts_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  "draft_facts_sha256": "cb88fa85e5fe096065b24e66cb4ff03561c3a3ea940d24f164db0e20f809bf00"
 }

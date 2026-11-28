@@ -3,13 +3,16 @@
 2. the value equals a number printed in the fact's own quote, with a matching scale word — or, for a table row,
    the scale of the nearest table header above the quote in the document; losses/declines may be signed (OQ-39)
 3. unit normalisation (USD billions -> USD) and range checks (percentages)
-4. conflicts: the same metric/basis/period with different values in one document -> both withheld for review
+4. conflicts: the same metric/basis/period with different values in one document -> both withheld for review,
+   unless they differ only by rounding ("$1.8 billion" and "$1,779 million"): then the most precise is kept and the
+   rounded copies are dropped as `rounded_duplicate` (OQ-42)
 """
 
 from __future__ import annotations
 
 import re
 from dataclasses import dataclass, field
+from decimal import Decimal
 from typing import Any
 
 from sr.config import load
@@ -20,6 +23,24 @@ _NUM = re.compile(
     r"(?P<scale>billion|bn|b|million|mn|m|percent|%)?(?![a-z])",
     re.IGNORECASE,
 )
+
+
+def sig_figs(v: float) -> int:
+    """Significant figures of a normalised value as printed: 1.8e9 -> 2, 1.779e9 -> 4, 54.0 -> 2 (OQ-42)."""
+    if v == 0:
+        return 1
+    return len(Decimal(f"{abs(v):.12g}").normalize().as_tuple().digits)
+
+
+def rounds_to(exact: float, rounded: float) -> bool:
+    """True when `exact`, rounded to the significant figures `rounded` is printed with, equals `rounded`."""
+    n = sig_figs(rounded)
+    if sig_figs(exact) <= n:
+        return False
+    r = float(f"{exact:.{n}g}")
+    return abs(r - rounded) <= 1e-9 * max(1.0, abs(rounded))
+
+
 _PERIOD = [  # quarters, in the company's own fiscal labelling ("third quarter of 2026" -> FY2026Q3)
     re.compile(r"FY\s?(?P<y>\d{4})\s?Q(?P<q>[1-4])", re.I),
     re.compile(r"Q(?P<q>[1-4])\s*(?:of\s*)?(?:FY|fiscal(?:\s+year)?)?\s*'?(?P<y>\d{4})", re.I),
@@ -157,8 +178,7 @@ def check_facts(
     cues = [c.lower() for c in cfg["checks"].get("negative_cues", [])]
     foreign = frozenset(c.upper() for c in cfg["checks"].get("foreign_currency_prefixes", []))
     rep = CheckReport()
-    seen: dict[tuple[str, str | None, str | None, str | None], CheckedFact] = {}
-    conflicts: set[tuple[str, str | None, str | None, str | None]] = set()
+    seen: dict[tuple[str, str | None, str | None, str | None], list[CheckedFact]] = {}
     for f in facts:
         name, why = canonical_metric(f.metric, f.basis)
         if name is None:
@@ -226,12 +246,26 @@ def check_facts(
         )
         segment = (f.segment or "").strip().lower() or None
         key = (name, f.basis if not name.startswith("eps_") else None, period, segment)
-        if key in seen and seen[key].value != cf.value:
-            conflicts.add(key)
-        seen.setdefault(key, cf)
-    for key, cf in seen.items():
-        if key in conflicts:
-            rep.rejected.append({"metric": cf.metric, "quote": cf.quote, "reason": "conflicting_values"})
+        seen.setdefault(key, []).append(cf)
+    for group in seen.values():
+        values = {x.value for x in group}
+        if len(values) == 1:
+            rep.accepted.append(group[0])
+            continue
+        # OQ-42: values that differ only by rounding are one fact; keep the most precise printing
+        nums = [v for v in values if v is not None]
+        best = max(nums, key=sig_figs) if len(nums) == len(values) else None
+        if best is not None and all(v == best or rounds_to(best, v) for v in nums):
+            kept = next(x for x in group if x.value == best)
+            rep.accepted.append(kept)
+            rep.rejected.extend(
+                {"metric": x.metric, "quote": x.quote, "reason": "rounded_duplicate"}
+                for x in group
+                if x.value != best
+            )
         else:
-            rep.accepted.append(cf)
+            first = group[0]  # one entry per conflicting key, as before
+            rep.rejected.append(
+                {"metric": first.metric, "quote": first.quote, "reason": "conflicting_values"}
+            )
     return rep

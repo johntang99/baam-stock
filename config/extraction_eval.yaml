@@ -45,6 +45,9 @@ gates:                                 # D-32 initial thresholds; groups without
   certainty: null
 matching:
   value_rel_tolerance: 1.0e-6          # predicted value must equal the gold value (normalised units)
+  # OQ-42: a prediction also matches when it is the gold value rounded to its own significant figures, with at
+  # least this many of them ("$16.0 billion" matches 15,955M; "$10 billion" does not match 13.4B)
+  rounded_match_min_sig: 2
 approval:
   # A prompt version may feed model features only if every gated group passed on at least this many reviewed
   # documents (D-32 asks for ~300; the minimum is a proposal, OPEN_QUESTIONS OQ-37).

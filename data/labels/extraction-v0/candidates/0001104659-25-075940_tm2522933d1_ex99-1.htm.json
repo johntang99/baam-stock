@@ -354,7 +354,7 @@
     {
       "metric": "operating_expenses",
       "quote": "Operating expenses $1.35B ± $20M $ 147 M B $1.20B ± $20M $1.37B ± $15M $ 147 M B $1.22B ± $15M",
-      "reason": "conflicting_values"
+      "reason": "rounded_duplicate"
     },
     {
       "metric": "eps_gaap",
@@ -363,5 +363,5 @@
     }
   ],
   "validation_notes": [],
-  "draft_facts_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  "draft_facts_sha256": "00e5ad321cf197d563d3805413c9d16f316a0741da7ac0aef3fd24aa631b4dfd"
 }

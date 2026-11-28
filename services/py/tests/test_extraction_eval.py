@@ -156,6 +156,35 @@ def test_match_and_label_scores() -> None:
     assert (s.precision, s.recall) == (0.25, 0.5) and s.f1 == pytest.approx(1 / 3)
 
 
+def test_rounded_prediction_matches_exact_gold() -> None:
+    """OQ-42: "$16.0 billion" is the exact 15,955M rounded; it matches only when rounded matching is on."""
+    gold = [GoldFact(metric="operating_income", value=15_955e6, unit="USD", period="FY2026Q3", quote="q")]
+    rounded = ExtractedFact(
+        "operating_income",
+        16.0,
+        "USD_billion",
+        None,
+        "FY2026Q3",
+        None,
+        "operating income of $16.0 billion (synthetic)",
+        {},
+    )
+    pred = check_facts((rounded,), None).accepted
+    assert match(pred, gold, 1e-6) == []  # exact matching only
+    assert len(match(pred, gold, 1e-6, min_sig=2)) == 1
+    assert match(pred, gold, 1e-6, min_sig=4) == []  # 16.0 is stored as 16: 2 sig. figures
+
+
+def test_too_coarse_or_wrong_rounding_does_not_match() -> None:
+    gold = [GoldFact(metric="revenue", value=13.4e9, unit="USD", period="FY2026Q3", quote="q")]
+    for value, quote in [
+        (10.0, "revenue of $10 billion (synthetic)"),
+        (13.5, "revenue of $13.5 billion (synthetic)"),
+    ]:
+        f = ExtractedFact("revenue", value, "USD_billion", None, "FY2026Q3", None, quote, {})
+        assert match(check_facts((f,), None).accepted, gold, 1e-6, min_sig=2) == [], value
+
+
 # ---------------------------------------------------------------- evaluation end to end
 GOLD = [
     GoldFact(

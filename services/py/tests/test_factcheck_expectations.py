@@ -376,3 +376,65 @@ def test_parenthesised_new_taiwan_header_is_not_usd() -> None:
     doc = "(Millions of New Taiwan dollars) Net revenue 759,690\n"
     f = ExtractedFact("revenue", 759690, "USD_million", None, None, None, "Net revenue 759,690", {})
     assert check_facts((f,), None, doc).rejected != []
+
+
+def test_rounded_and_exact_copies_are_one_fact() -> None:
+    """OQ-42: prose "$1.8 billion" and table "$1,779" are the same number; keep the precise one (synthetic)."""
+    rounded = ExtractedFact(
+        "operating_income",
+        1.8,
+        "USD_billion",
+        None,
+        "FY2025Q1",
+        None,
+        "operating income was $1.8 billion",
+        {},
+    )
+    exact = ExtractedFact(
+        "operating_income",
+        1779,
+        "USD_million",
+        None,
+        "FY2025Q1",
+        None,
+        "Operating income ($M) $1,779 $1,500",
+        {},
+    )
+    rep = check_facts((rounded, exact), None)
+    assert [f.value for f in rep.accepted] == [1779e6]
+    assert [r["reason"] for r in rep.rejected] == ["rounded_duplicate"]
+
+
+def test_real_disagreement_is_still_a_conflict() -> None:
+    # 61% vs 71.3%: two different measures under one label, not a rounding of each other
+    a = ExtractedFact(
+        "gross margin", 61, "pct", None, "FY2026Q1", "non_gaap", "non-GAAP gross margin was 61%", {}
+    )
+    b = ExtractedFact(
+        "gross margin", 71.3, "pct", None, "FY2026Q1", "non_gaap", "non-GAAP gross margin of 71.3%", {}
+    )
+    rep = check_facts((a, b), None)
+    assert rep.accepted == [] and [r["reason"] for r in rep.rejected] == ["conflicting_values"]
+    # 1.8B vs 1,750M: 1,750 rounds to 1.7 or 1.8 depending on rounding mode -> not accepted as the same figure
+    c = ExtractedFact(
+        "operating_income", 1.8, "USD_billion", None, "FY2025Q1", None, "op income was $1.8 billion", {}
+    )
+    d = ExtractedFact(
+        "operating_income", 1700, "USD_million", None, "FY2025Q1", None, "Operating income ($M) $1,700", {}
+    )
+    assert [r["reason"] for r in check_facts((c, d), None).rejected] == ["conflicting_values"]
+
+
+def test_sig_figs_and_rounds_to() -> None:
+    from sr.events.factcheck import rounds_to, sig_figs
+
+    assert [sig_figs(v) for v in (1.8e9, 1.779e9, 54.0, 71.3, 0.85, 13_400_000_000.000002)] == [
+        2,
+        4,
+        2,
+        3,
+        2,
+        3,
+    ]
+    assert rounds_to(1.779e9, 1.8e9) and rounds_to(15_955e6, 16.0e9) and not rounds_to(1.8e9, 1.779e9)
+    assert not rounds_to(1.8e9, 1.8e9)  # equal precision is not "a rounding of"

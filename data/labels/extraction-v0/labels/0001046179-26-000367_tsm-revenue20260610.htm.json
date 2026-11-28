@@ -5,5 +5,18 @@
   "fiscal_period": null,
   "label_status": "draft",
   "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
-  "facts": []
+  "facts": [
+    {
+      "metric": "revenue_growth_yoy_pct",
+      "value": 30.1,
+      "unit": "pct",
+      "period": null,
+      "basis": null,
+      "quote": "an increase of 30.1 percent from May 2025",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    }
+  ]
 }

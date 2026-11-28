@@ -79,6 +79,30 @@
       "segment": null
     },
     {
+      "metric": "operating_income",
+      "value": 1779000000.0,
+      "unit": "USD",
+      "period": "FY2025Q1",
+      "basis": "non_gaap",
+      "quote": "Operating income ($M) $1,779 $1,133 Up 57% $2,026 Down 12%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
+      "metric": "net_income",
+      "value": 1566000000.0,
+      "unit": "USD",
+      "period": "FY2025Q1",
+      "basis": "non_gaap",
+      "quote": "Net income ($M) $1,566 $1,013 Up 55% $1,777 Down 12%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "eps_non_gaap",
       "value": 0.96,
       "unit": "USD_per_share",

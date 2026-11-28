@@ -794,12 +794,12 @@
     {
       "metric": "operating_income",
       "quote": "operating income was $1.8 billion",
-      "reason": "conflicting_values"
+      "reason": "rounded_duplicate"
     },
     {
       "metric": "net_income",
       "quote": "net income was $1.6 billion",
-      "reason": "conflicting_values"
+      "reason": "rounded_duplicate"
     },
     {
       "metric": "gross_margin_pct",
@@ -808,5 +808,5 @@
     }
   ],
   "validation_notes": [],
-  "draft_facts_sha256": "e9fed8aefadbf938147bb7cdcc4e4d21acbba8fe177c9408122f8d48a9e71051"
+  "draft_facts_sha256": "84e91ae952d27489f82b4854ea0bcad745b2adb154db68c90db04ae29f620ff2"
 }

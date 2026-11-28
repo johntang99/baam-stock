@@ -139,6 +139,18 @@
       "segment": "AI semiconductor"
     },
     {
+      "metric": "free_cash_flow",
+      "value": 26914000000.0,
+      "unit": "USD",
+      "period": "FY2025",
+      "basis": "non_gaap",
+      "quote": "Free cash flow $ 26,914 $ 19,414 +39 %",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "revenue",
       "value": 11072000000.0,
       "unit": "USD",

@@ -7,6 +7,18 @@
   "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
   "facts": [
     {
+      "metric": "revenue",
+      "value": 11536000000.0,
+      "unit": "USD",
+      "period": "FY2026Q2",
+      "basis": "gaap",
+      "quote": "Revenue $11,536 $7,685 Up 50% $10,253 Up 13%",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "reported",
+      "segment": null
+    },
+    {
       "metric": "revenue_growth_yoy_pct",
       "value": 50.0,
       "unit": "pct",

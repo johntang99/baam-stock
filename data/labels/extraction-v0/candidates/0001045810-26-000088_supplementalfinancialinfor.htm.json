@@ -575,9 +575,9 @@
     {
       "metric": "eps_gaap",
       "quote": "Diluted $ 2.70 $ 1.30 $ 7.55 $ 3.14",
-      "reason": "conflicting_values"
+      "reason": "rounded_duplicate"
     }
   ],
   "validation_notes": [],
-  "draft_facts_sha256": "84ad4abcc1c05d6938fc6c6359c0079f9bd521cbab5ce4403fabd927415ebefb"
+  "draft_facts_sha256": "ed2a55018edf7d4848f9b0e1a5431af6e1f66ae751ceb62d56b0b23ed32d7bc7"
 }

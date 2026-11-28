@@ -622,9 +622,9 @@
     {
       "metric": "revenue",
       "quote": "Record third quarter revenue of $9.2 billion increased 36% y/y",
-      "reason": "conflicting_values"
+      "reason": "rounded_duplicate"
     }
   ],
   "validation_notes": [],
-  "draft_facts_sha256": "9f47b31ea58a6c39b2a92c15a6f49f064999bd891de3b48eabd62f18ce212cef"
+  "draft_facts_sha256": "4a29420e78f85deb09d8cb108bcfc2dd37efa8c7fe365f4ecaa676632f16132b"
 }

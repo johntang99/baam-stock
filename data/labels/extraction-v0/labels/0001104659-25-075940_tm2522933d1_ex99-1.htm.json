@@ -5,5 +5,18 @@
   "fiscal_period": null,
   "label_status": "draft",
   "labeled_by": "prelabel:anthropic/claude-opus-5-5/extract-0.3",
-  "facts": []
+  "facts": [
+    {
+      "metric": "operating_expenses",
+      "value": 1220000000.0,
+      "unit": "USD",
+      "period": "FY2025Q4",
+      "basis": "non_gaap",
+      "quote": "Operating expenses $1.35B ± $20M $ 147 M B $1.20B ± $20M $1.37B ± $15M $ 147 M B $1.22B ± $15M",
+      "direction": "increase",
+      "scope": "company",
+      "certainty": "guidance",
+      "segment": null
+    }
+  ]
 }
