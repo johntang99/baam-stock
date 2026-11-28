@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## Phase 1 · 1.15 settlement: direction + move, idempotent, append-only versions (AC-14, AC-15, AC-27) — 2026-11-28
+- `sr/settle/settle.py`: `settle()` starts from the attached t0 quotes (attaching them if missing), finds the end as
+  the first sync qualifying quote at or after `target_end_at` within 30 s (D-07), and uses only quotes received by
+  the run time (DC §4). Direction: outcome by the locked threshold, hit, Brier; move: `abs_relative_move_pp`,
+  `pinball_loss` per quantile, `quantile_hits`. Halt / no start or end quote / basket -> `unsettleable` with the DC
+  `invalid_reason`; `reason_text` in Chinese. An identical result returns the reporting version unchanged; a
+  changed one (a delayed quote arrived) appends version n+1 and moves the reporting flag. Windows not over ->
+  `not_due` (nothing written); abstained predictions are never settled. `quality_summary` keeps unsettleable
+  predictions out of the hit-rate denominator (AC-15).
+- Tests: five hand-calculated settlements (four direction incl. the ±threshold boundary, one move with pinball and
+  hits), three runs = one row, correction -> v2, halt, missing start / end quotes, timing guards. OQ-49 adopted
+  (routine). The 1.14 entry's test count was 419 Python tests; `make check` reported 422 with the contract suite.
+  Tests: 435 Python.
+
 ## Phase 1 · 1.14 inference, atomic publish, immutability (AC-13, AC-27 forecast part) + contract-0.7.3 — 2026-11-28
 - **contract-0.7.3**: `model_versions` table (migration `0004_model_versions.sql`; fields unchanged since
   contract-0.7, schema `x-tabled` now true); `prediction_runs.model_version_id` / `baseline_model_version_id`
