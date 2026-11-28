@@ -40,10 +40,11 @@ jobs:
       - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22   # 22: node --test --experimental-strip-types for apps/web tests
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm --filter contracts test        # examples/*.json pass their schemas
+      - run: pnpm --filter web test              # replay report loader (DP 1.19)
       - run: pnpm -r build                       # contracts TS generation + Next.js build
       - run: pnpm -r lint
       - run: pnpm -r typecheck

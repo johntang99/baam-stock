@@ -239,6 +239,21 @@ def to_html(md_sections: list[str], title: str) -> str:
     )
 
 
+def write_json_reports(reports: list[dict[str, Any]], out_dir: Path, synthetic: bool = True) -> list[Path]:
+    """One JSON file per prediction for the read-only web page (DP 1.19): <out_dir>/<prediction_id>.json."""
+    import json
+
+    out_dir.mkdir(parents=True, exist_ok=True)
+    paths = []
+    for r in reports:
+        p = out_dir / f"{r['prediction']['prediction_id']}.json"
+        p.write_text(
+            json.dumps({"synthetic": synthetic, **r}, ensure_ascii=False, indent=2, default=str) + "\n"
+        )
+        paths.append(p)
+    return paths
+
+
 def day_report(conn: Conn, security_id: str, session_date: date) -> tuple[str, list[dict[str, Any]]]:
     rows = conn.execute(
         """select p.prediction_id from predictions p join prediction_runs r using (run_id)

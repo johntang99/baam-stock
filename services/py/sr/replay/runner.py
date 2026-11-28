@@ -18,7 +18,7 @@ from sr.config import load, repo_root
 from sr.db import Conn
 from sr.marketdata.quote_rules import evaluate_quotes
 from sr.pipeline.orchestrator import RunContext, run_pipeline
-from sr.replay.report import day_report, to_html
+from sr.replay.report import day_report, to_html, write_json_reports
 from sr.settle.settle import SettleResult, settle, weights_for
 
 PHASE1_TARGETS = ("regular_60m", "regular_60m_move")
@@ -86,5 +86,6 @@ def replay_day(
     mdp = d / f"{security_id}_{session_date.isoformat()}.md"
     hp = d / f"{security_id}_{session_date.isoformat()}.html"
     mdp.write_text(md)
+    write_json_reports(reps, d / "reports", synthetic=bool(getattr(provider, "synthetic", True)))
     hp.write_text(to_html(md.split("\n## "), f"replay {security_id} {session_date}"))
     return DayReplay(runs, out, mdp, hp, reps)

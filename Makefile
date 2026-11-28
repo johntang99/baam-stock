@@ -33,6 +33,7 @@ test:
 	uv run python scripts/gen_seed.py --check
 	uv run pytest services/py/tests -q   # set TEST_DATABASE_URL to include Postgres-backed tests
 	pnpm --filter contracts test
+	pnpm --filter web test
 
 db-replay:                ## fresh DB: migrations + seeds + SQL assertions (needs psql and a running Postgres)
 	scripts/db_replay.sh $(DB_URL)

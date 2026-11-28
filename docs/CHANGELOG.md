@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## Phase 1 · 1.19 minimal read-only replay page — 2026-11-28
+- `apps/web/app/(market)/replay/page.tsx` (list) and `apps/web/app/(market)/replay/[prediction_id]/page.tsx`
+  (one prediction: forecast, snapshot, 12 locked fields, model, t0 / end quotes, settlement and reason, checks),
+  server-rendered at request time from the JSON reports `sr replay` now writes to `data/replay/reports/`
+  (`write_json_reports`, `synthetic` flag from the provider). `apps/web/lib/replay.ts` validates prediction ids and
+  keeps reads inside the report directory. Home page links to it; its scope note now follows CLAUDE.md
+  (internal team only, not investment advice).
+- Web tests: `pnpm --filter web test` (Node's test runner, `--experimental-strip-types`); added to `make check`
+  and CI, whose node job moves to Node 22. Verified by building the app and fetching the pages for 8 synthetic
+  reports (all fields shown; unknown / traversal ids return 404). OQ-52 adopted (routine).
+
 ## Phase 1 · 1.17 day replay + line-by-line verification report — 2026-11-28
 - `sr/replay/runner.py`: `replay_day` runs the pipeline at each scheduled sched-0.1 intraday slot (replay mode,
   provider limited to the slot time, primary slot samples), settles every published prediction after the close
