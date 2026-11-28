@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## Phase 1 · 1.20 acceptance on synthetic data — 2026-11-28
+- `docs/acceptance/phase1.md`: every Phase 1 acceptance criterion (AC-06 to AC-16, AC-27, AC-30, AC-34 P1,
+  AC-37 to AC-42, AC-49 P1, AC-52, AC-53, AC-56, AC-57, the line-by-line report) mapped to the tests that prove it.
+  All pass on synthetic data; AC-30's real evaluation waits for 1.18 (reviewed labels + a paid, approved run),
+  AC-40 / AC-42 screens belong to Phase 2 pages, and the real-data re-run waits for the D-13 vendor sample.
+- New test: AC-34 through the CLI itself (`sr run … --mode replay`, then `--mode dry_run` writes no predictions).
+- Tests: 493 Python + 4 web; `make check` and the fresh-database replay pass.
+
 ## Phase 1 · 1.26 schedule replay + forecast vs actual + accuracy rollups (AC-52, AC-53) + contract-0.7.4 — 2026-11-28
 - **contract-0.7.4**: `forecast_vs_actual` and `forecast_accuracy_rollups` get tables (migration
   `0006_forecast_vs_actual.sql`, fields unchanged, RLS on, enum `rollup_window`); derived data rebuilt after

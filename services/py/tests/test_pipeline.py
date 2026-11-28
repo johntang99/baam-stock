@@ -218,3 +218,40 @@ def test_cli_requires_mode_and_rejects_unknown_targets(conn, provider, tmp_path)
         main(["run", "--security", "sec_nvda", "--as-of", "2026-12-10T15:00:00Z", "--fixture", "x.parquet"])
     with pytest.raises(ValueError, match="not built yet"):
         run_pipeline(conn, [NVDA], ["overnight_gap"], "replay", SLOT, ctx(conn, provider, tmp_path))
+
+
+def test_ac34_the_cli_command_itself(conn, db_url, fixture_path, tmp_path, monkeypatch, capsys) -> None:  # type: ignore[no-untyped-def]
+    """`uv run sr run --security sec_nvda --targets regular_60m,regular_60m_move --mode replay --as-of <ts>` runs the
+    8 steps; `--mode dry_run` writes no predictions (AC-34, Phase 1 part). Synthetic fixture."""
+    import json
+
+    models(conn, tmp_path)  # registers a market_logit + gbdt and a regular_60m dataset (window history)
+    monkeypatch.setenv("DIRECT_URL", db_url)
+    monkeypatch.chdir(tmp_path)  # feature rows land under the temp dir
+    args = [
+        "run",
+        "--security",
+        "sec_nvda",
+        "--targets",
+        "regular_60m,regular_60m_move",
+        "--fixture",
+        str(fixture_path),
+    ]
+    assert main([*args, "--mode", "replay", "--as-of", "2026-12-01T15:00:00Z"]) == 0
+    out = json.loads(capsys.readouterr().out)
+    assert [s[1] for s in out["steps"]] == list(orch.STEPS)
+    run = conn.execute(
+        "select * from pipeline_runs where pipeline_run_id = %s", (out["pipeline_run_id"],)
+    ).fetchone()
+    assert run["mode"] == "replay" and count(conn, "pipeline_run_steps") == 8
+    n_pred = count(conn, "predictions")
+    assert n_pred == 2  # one per target (abstained here: the fixture has no previous close)
+    assert main([*args, "--mode", "dry_run", "--as-of", "2026-12-01T15:05:00Z"]) == 0
+    dry = json.loads(capsys.readouterr().out)
+    assert count(conn, "predictions") == n_pred  # dry_run writes no predictions
+    assert (
+        conn.execute(
+            "select mode from pipeline_runs where pipeline_run_id = %s", (dry["pipeline_run_id"],)
+        ).fetchone()["mode"]
+        == "dry_run"
+    )
