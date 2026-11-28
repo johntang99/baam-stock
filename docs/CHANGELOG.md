@@ -1,5 +1,20 @@
 # CHANGELOG
 
+## Phase 1 · 1.11 dataset build: splits, embargo, event clusters, exclusions — 2026-11-28
+- `sr/labels/window.py`: the 60-minute window label shared with settlement (1.15): t0 = first sync qualifying
+  quote after publish (<= 30 s), end = first at/after t0 + 60 min (<= 30 s, D-07), relative return; halt / LULD
+  in the window -> `halted`; an unfinished window raises `LookaheadError`.
+- `sr/train/dataset.py` (ds-0.1, `config/dataset.yaml`, label lbl-0.1): rows on the 5-minute grid per security,
+  D-18 availability, direction class by k × sigma-0.1 from earlier sessions only (`regular_60m_move`: |relative|),
+  fs-0.2 features from 1-minute mids labelled by minute end; event clusters (event + 2 sessions, overlaps merged),
+  `news_time_unknown`; time-ordered splits 0.70 / 0.10 / 0.10 / 0.10 of trading days with a 1-day embargo and
+  cluster integrity (`crosses_split_boundary`); exclusion counts, class balance (quantiles for the move target),
+  availability audit; rows + manifest written under `data/datasets/<id>/` (gitignored) and one
+  `training_dataset_versions` row. A rebuild is a new version (`parent_dataset_version_id`).
+- `FixtureProvider.security_ids`. OQ-44 confirmed (defaults). OQ-45 (dataset rules) proposed, awaiting user.
+- Known limit: about 1.5 s per security-day on synthetic 5-second data (the sync search and ~40 pandas feature
+  calls per row); a vectorised build is needed before multi-year real data (D-13). Tests: 393.
+
 ## Phase 1 · 1.10 security snapshots + same-watermark merge — 2026-11-28
 - `sr/snapshot/builder.py` (snapshot-0.1, `config/snapshot.yaml`): `build_snapshot` writes
   `security_state_snapshots` with evidence / market watermarks, market state (pre / regular / post / closed /

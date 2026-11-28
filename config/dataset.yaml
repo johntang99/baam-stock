@@ -1,0 +1,14 @@
+# Training dataset build (DP 1.11; DC training_dataset_versions; D-19, D-20, D-23; OQ-45)
+version: ds-0.1
+label_version: lbl-0.1
+sample:
+  every_min: 5                      # 5-minute grid of the regular session (as the snapshots, D-17)
+  t0_max_wait_s: 30                 # first sync qualifying quote after the grid time (DC §4)
+splits:
+  order: [train, calibration, validation, holdout]
+  shares: [0.70, 0.10, 0.10, 0.10]  # of trading days, rounded to whole days, each >= 1
+  embargo_days: 1                   # D-19: >= 1 full trading day between groups (after train, calibration, validation)
+event_cluster:
+  extend_sessions: 2                # an event covers its first public session .. + 2 sessions
+reference_symbols: [QQQ, SPY, SMH, ^VIX]   # fs-0.2 cross-asset / lead-lag inputs (missing -> feature None)
+output_dir: data/datasets           # gitignored; manifest_path is relative to the repo root

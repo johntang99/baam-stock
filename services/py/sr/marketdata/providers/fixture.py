@@ -48,6 +48,10 @@ class FixtureProvider:
     def symbols(self) -> list[str]:
         return sorted(self._df["symbol"].unique().tolist())
 
+    @property
+    def security_ids(self) -> set[str]:
+        return set(self._df["security_id"].unique().tolist())
+
     def quotes_1s(self, symbols: list[str], start_utc: datetime, end_utc: datetime) -> pd.DataFrame:
         """1-second layer rows with ts in [start, end] (the frame quote_rules.evaluate_quotes expects)."""
         self._check(end_utc)
