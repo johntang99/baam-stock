@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## Phase 1 · 1.17 day replay + line-by-line verification report — 2026-11-28
+- `sr/replay/runner.py`: `replay_day` runs the pipeline at each scheduled sched-0.1 intraday slot (replay mode,
+  provider limited to the slot time, primary slot samples), settles every published prediction after the close
+  with the quotes received by then, and writes `data/replay/<security>_<date>.md` + `.html`.
+- `sr/replay/report.py`: `prediction_report` lists the snapshot, locked versions, model + feature row, t0 / end
+  quotes, returns, class or move, Brier / pinball and settlement reason, and runs automatic checks (locked keys,
+  published before t0, inputs not after publication, end quote at/after the target time, one reporting
+  settlement, hit consistent); Markdown + escaped HTML; a day summary table.
+- CLI: `sr replay --security --date --fixture` and `sr report --prediction`; shared model / history defaults.
+- OQ-51 adopted (routine). Tests: 6 new (8 slot predictions settled, all checks pass, acceptance fields present,
+  move / abstained reports, inert HTML, a t0 before publication is flagged).
+
 ## Phase 1 · 1.16 one-click pipeline + `sr run` CLI (AC-34 Phase 1 part) — 2026-11-28
 - `sr/pipeline/orchestrator.py`: `run_pipeline` writes `pipeline_runs` + 8 `pipeline_run_steps` per security
   (collect -> verify -> analyse -> snapshot -> readiness -> infer -> publish -> schedule settlement) with statuses,
