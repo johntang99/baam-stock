@@ -281,7 +281,9 @@ def build_snapshot(
         if rel is not None:
             parts.append(sm["relative_unexplained"].format(rel=rel))
         elif day is not None:
-            parts.append(sm["relative_unavailable"])
+            parts.append(
+                sm["relative_unavailable"] if regular else sm["extended_relative_unavailable"]
+            )  # AC-40
         else:
             parts.append(sm["no_quotes"])
         summary = "；".join(parts) + "。"

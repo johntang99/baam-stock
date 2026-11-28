@@ -1,5 +1,19 @@
 # CHANGELOG
 
+## Phase 1 · 1.25 scenario tests: after-hours +8 %, after-hours basket missing, rumour -> confirmation (AC-39..41) — 2026-11-28
+- `sr/snapshot/triggers.py`: `detect_market_move` (rule `move_abs_v1`: |move| >= 3 % vs the regular close outside
+  regular hours, vs 15 minutes earlier inside them) -> a `market_move` snapshot trigger.
+- `sr/calendar/windows.next_session_start_bound`: next-session windows start no earlier than 09:31 ET (D-10).
+- Snapshot summary outside regular hours without a basket: "盘后基准不可计算，仅显示绝对涨跌" (AC-40).
+- `publish_explanation`: media-report evidence on an event not yet primary-confirmed adds "未经证实：…" to
+  `unexplained` and the `unconfirmed_evidence` data gap; dropped once confirmed (AC-41). Fixes: the first analysis
+  of an event published here now gets `analysis_kind = flash` and a default event-outcome readiness.
+- `services/py/tests/scenarios/test_after_hours_move.py`, `test_rumor_to_confirm.py` (DP names prefixed `test_`
+  for pytest): 16:20 ET earnings + post-market +8 % -> market_move post-market snapshot with the analysis, no
+  regular_60m published, next-session start 09:31; basket missing after hours -> relative null, wording shown;
+  rumour -> v1 未经证实, 8-K -> v2 supersedes v1, evidence primary_confirmed, v1 unchanged.
+- OQ-55 adopted (routine). Tests: 5 new.
+
 ## Phase 1 · 1.24 valuation background, explanation only (AC-42) — 2026-11-28
 - `sr/events/valuation.py` (val-0.1, `config/valuation.yaml`): `valuation_context` gives `{as_of, fwd_pe,
   fwd_pe_pctile_3y, peer_median_fwd_pe, ev_sales_ntm?, source_id, note}` from values available by the analysis

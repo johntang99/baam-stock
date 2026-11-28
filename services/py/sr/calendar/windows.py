@@ -3,9 +3,9 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from datetime import datetime, timedelta
+from datetime import datetime, time, timedelta
 
-from sr.calendar.calendar import Session, TradingCalendar, get_calendar
+from sr.calendar.calendar import Session, TradingCalendar, et_to_utc, get_calendar
 from sr.config import load
 from sr.timeguard import ensure_utc
 
@@ -78,3 +78,10 @@ def next_regular_session(published_at: datetime, cal: TradingCalendar | None = N
     """The next regular session whose open is strictly after published_at (Saturday -> Monday; 08:30 -> same day)."""
     cal = cal or get_calendar()
     return cal.next_open_session_after(published_at)
+
+
+def next_session_start_bound(published_at: datetime, cal: TradingCalendar | None = None) -> datetime:
+    """D-10: a next_regular_session window starts no earlier than 09:31:00 ET of the next regular session."""
+    s = next_regular_session(published_at, cal)
+    hh, mm, ss = (int(x) for x in str(load("quote_rules")["sync"]["next_session_not_before_et"]).split(":"))
+    return et_to_utc(s.session_date, time(hh, mm, ss))

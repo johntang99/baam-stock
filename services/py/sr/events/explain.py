@@ -23,7 +23,7 @@ from sr.config import load
 from sr.db import Conn
 from sr.events.citations import PgResolver, Resolver
 from sr.events.reaction import Reaction, compute_reaction, persist_quotes, window
-from sr.events.readiness import stock_reaction
+from sr.events.readiness import not_applicable, stock_reaction
 from sr.events.reasoning import EvidenceInfo, build
 from sr.events.versions import (
     ARRAY_FIELDS,
@@ -166,10 +166,13 @@ def publish_explanation(
         quotes, security_id, basket, anchor_at(evidence), analysis_as_of, weights, vendor_source_id
     )
     persist_quotes(conn, reaction.quote_rows)
-    category_row = conn.execute("select category from events where event_id = %s", (event_id,)).fetchone()
+    category_row = conn.execute(
+        "select category, evidence_status from events where event_id = %s", (event_id,)
+    ).fetchone()
     if category_row is None:
         raise KeyError(event_id)
     category = str(category_row["category"])
+    confirmed = category_row["evidence_status"] == "primary_confirmed"
     gaps = (
         ["benchmark_unavailable"]
         if reaction.market_reaction["missing_reason"] == "benchmark_unavailable"
@@ -184,6 +187,21 @@ def publish_explanation(
         gaps=gaps or None,
     )
     ready = reaction.market_reaction["relative_return_pp"] is not None
+    unconfirmed = [] if confirmed else [e for e in evidence if e.verification_status == "media_report"]
+    for (
+        e
+    ) in unconfirmed:  # AC-41: a media report is labelled until primary evidence confirms the event (OQ-55)
+        expl["unexplained"].append(
+            {
+                "text": f"未经证实：{e.claim}（媒体报道，待公司公告或官方来源确认）",
+                "evidence_ids": [e.evidence_id],
+                "quote_ids": [],
+                "item_ids": list(e.item_ids),
+                "trace_step": None,
+            }
+        )
+    if unconfirmed:
+        gaps.append("unconfirmed_evidence")
 
     def compute(snap: Snapshot) -> dict[str, Any]:
         payload = _latest_payload(conn, snap)
@@ -195,13 +213,16 @@ def publish_explanation(
             new_expl["valuation_context"] = valuation
         elif "valuation_context" in (payload.get("market_explanation") or {}):
             new_expl["valuation_context"] = payload["market_explanation"]["valuation_context"]
-        data_gaps = [g for g in payload.get("data_gaps", []) if g != PENDING_GAP]
+        stale = {PENDING_GAP} | ({"unconfirmed_evidence"} if not unconfirmed else set())
+        data_gaps = [g for g in payload.get("data_gaps", []) if g not in stale]
         data_gaps += [g for g in gaps if g not in data_gaps]
         readiness = dict(payload.get("prediction_readiness") or {})
+        readiness.setdefault("event_outcome", not_applicable("no_open_outcome_question"))
         readiness["stock_reaction"] = stock_reaction(category, market_inputs_ready=ready)
         mv = dict(payload.get("model_versions") or {})
         mv |= {"reaction": reaction.detail["version"], "reasoning": load("reasoning")["version"]}
         return {
+            "analysis_kind": "flash",  # the first analysis of an event built here is a flash (DC analysis_kind)
             **payload,
             "evidence_ids": sorted({*payload.get("evidence_ids", []), *(e.evidence_id for e in evidence)}),
             "market_reaction": reaction.market_reaction,
