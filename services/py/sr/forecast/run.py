@@ -212,8 +212,13 @@ def forecast_snapshot(
     history: pd.DataFrame,
     published_at: datetime,
     feature_dir: Path | None = None,
+    publish_now: bool = True,
+    force_recompute_tag: str | None = None,
 ) -> ForecastResult:
-    """`history`: realised windows (dataset-shaped rows) — only those ended by published_at are used."""
+    """`history`: realised windows (dataset-shaped rows) — only those ended by published_at are used.
+    publish_now=False computes everything and writes nothing to the DB (dry run). `force_recompute_tag` (the
+    pipeline run id) gives a separate idempotency key and marks the forecasts `on_demand` (not primary, DC
+    pipeline_runs.reuse_policy)."""
     snap = conn.execute(
         "select * from security_state_snapshots where snapshot_id = %s", (snapshot_id,)
     ).fetchone()
@@ -226,14 +231,15 @@ def forecast_snapshot(
     sec = snap["security_id"]
     _, weights = benchmark_version(conn, sec, snap["session_date"])
     constituents = list(weights)
-    hist = realised_before(history[history["security_id"] == sec], pub)
+    inputs_at = snap["analysis_as_of"]  # features / sigma / HAR read the snapshot's inputs, never later data
+    hist = realised_before(history[history["security_id"] == sec], inputs_at)
 
     sig = estimate_sigma(
         hist.rename(columns={"t0_ts": "window_start", "end_ts": "window_end"})[
             ["window_start", "window_end", "relative_return_pp"]
         ],
-        pub,
-        pub,
+        pub,  # the window the threshold is for starts after publish
+        inputs_at,
     )
     lock = lock_threshold(sig.sigma_hat_pp)
     sigma: dict[str, Any] = (
@@ -251,8 +257,8 @@ def forecast_snapshot(
             "threshold_pp": None,
         }
     )
-    series = series_for(provider, [sec, *constituents, *reference_ids()], pub)
-    row = feature_row(series, sec, constituents, pub, snap["session_date"], sigma["sigma_hat_pp"], hist)
+    series = series_for(provider, [sec, *constituents, *reference_ids()], inputs_at)
+    row = feature_row(series, sec, constituents, inputs_at, snap["session_date"], sigma["sigma_hat_pp"], hist)
 
     run_tag = new_id("run")
     fdir = feature_dir or repo_root() / load("forecast")["feature_snapshot_dir"]
@@ -272,7 +278,11 @@ def forecast_snapshot(
     runs, preds = [], []
     for target_id in load("forecast")["targets"]:
         trow = _target_row(target_id)
-        sm = sampling_for(conn, snap, target_id, trow)
+        sm = (
+            sampling_for(conn, snap, target_id, trow)
+            if force_recompute_tag is None
+            else Sampling("on_demand", False)
+        )
         reason = abstain_reason(snap, target_id, pub, sm)
         direction = target_id == "regular_60m"
         model_id = models.direction_id if direction else models.move_id
@@ -295,7 +305,8 @@ def forecast_snapshot(
                 ],
                 "publish_deadline": deadline,
                 "published_at": pub,
-                "idempotency_key": f"{sec}|{snapshot_id}|{target_id}|{model_id}",
+                "idempotency_key": f"{sec}|{snapshot_id}|{target_id}|{model_id}"
+                + (f"|force:{force_recompute_tag}" if force_recompute_tag else ""),
             }
         )
         p: dict[str, Any] = {
@@ -345,4 +356,6 @@ def forecast_snapshot(
                 "unit": "abs_relative_pp"
             }
         preds.append(p)
+    if not publish_now:
+        return ForecastResult(Published([], [], False), runs, preds, row)
     return ForecastResult(publish(conn, runs, preds), runs, preds, row)

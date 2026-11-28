@@ -1,5 +1,18 @@
 # CHANGELOG
 
+## Phase 1 · 1.16 one-click pipeline + `sr run` CLI (AC-34 Phase 1 part) — 2026-11-28
+- `sr/pipeline/orchestrator.py`: `run_pipeline` writes `pipeline_runs` + 8 `pipeline_run_steps` per security
+  (collect -> verify -> analyse -> snapshot -> readiness -> infer -> publish -> schedule settlement) with statuses,
+  attempts, details and errors; modes `replay` (point-in-time provider) and `dry_run` (savepoint rolled back, only
+  the report rows kept); reuse when inputs are unchanged (`outputs.reused`), `force_recompute` -> separate
+  `on_demand` forecasts; resume of a failed run from its first unfinished step; settlement scheduled as
+  `settle_due` jobs. `sr run --mode replay|dry_run` in `sr/cli.py`.
+- Fix found by the replay guard: inference read market data at the publish time (600 ms after the snapshot);
+  features, sigma and HAR history now read at the snapshot's `analysis_as_of` (OQ-48 updated).
+- `forecast_snapshot` gains `publish_now` (dry run) and `force_recompute_tag`. OQ-50 adopted (routine).
+  Tests: 8 new (8 steps, equal to step-by-step, reuse, force recompute, dry run writes nothing, failure + resume,
+  collection with sources, provider refusing later data).
+
 ## Phase 1 · 1.15 settlement: direction + move, idempotent, append-only versions (AC-14, AC-15, AC-27) — 2026-11-28
 - `sr/settle/settle.py`: `settle()` starts from the attached t0 quotes (attaching them if missing), finds the end as
   the first sync qualifying quote at or after `target_end_at` within 30 s (D-07), and uses only quotes received by
