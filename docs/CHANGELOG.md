@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## Phase 1 · 1.12 first training run: baselines, market_logit, calibration (AC-16) — 2026-11-28
+- `sr/train/train.py` (train-0.1, `config/train.yaml`): `market_logit` = L2 multinomial logistic regression
+  (scikit-learn, lbfgs, C = 1) on 20 market features (train split; missing -> train median, standardised),
+  calibrated on the calibration split by `sr/train/calibrate.py` (isotonic one-vs-rest when >= 300 rows, else
+  Platt; JSON-serialisable, applies with numpy). References (D-30): class_frequency, always_flat, persistence
+  (latest window ended by the sample time). Metrics per subset (train / calibration / validation) and group (all,
+  security): brier, log_loss, hit_rate, ece, coverage, n_effective (trading days), BSS vs each reference with a
+  2,000-draw trading-day block-bootstrap CI. `run_training` writes `training_runs` (queued -> training ->
+  calibrating -> evaluating -> completed, or failed with an error code) and append-only `training_run_metrics`;
+  the model artifact goes to `data/models/<run>/market_logit.json` with its SHA-256. Same dataset + config + seed +
+  code returns the existing run (idempotency key). A dataset that failed its availability check, or a row whose t0
+  is not after its sample time, fails the run (`availability_check_failed`).
+- New dependency: scikit-learn (services/py). OQ-45 confirmed (defaults). OQ-46 (training rules; `model_versions`
+  table + contract-0.7.3 proposed for 1.14) proposed, awaiting user. Synthetic check: with a planted signal the
+  validation BSS vs class_frequency is +0.31 (CI 0.23-0.39); without one it is -0.005 (CI spans 0). Tests: 404.
+
 ## Phase 1 · 1.11 dataset build: splits, embargo, event clusters, exclusions — 2026-11-28
 - `sr/labels/window.py`: the 60-minute window label shared with settlement (1.15): t0 = first sync qualifying
   quote after publish (<= 30 s), end = first at/after t0 + 60 min (<= 30 s, D-07), relative return; halt / LULD

@@ -1,0 +1,35 @@
+# First training run (DP 1.12; D-24, D-30; AC-16; OQ-46)
+version: train-0.1
+target_id: regular_60m
+market_logit:
+  features:                         # 20 inputs (D-24 "about 20"); names are dataset columns without the f_ prefix
+    - minutes_since_open
+    - minutes_to_close
+    - qqq_ret_30m
+    - qqq_ret_60m
+    - spy_ret_30m
+    - spy_ret_60m
+    - vix_level
+    - vix_change_30m
+    - smh_ret_5m
+    - smh_ret_15m
+    - smh_ret_30m
+    - peer_mean_ret_5m              # derived: mean of the fs-0.2 constituent returns at that horizon
+    - peer_mean_ret_15m
+    - peer_mean_ret_30m
+    - rv_5m
+    - rv_30m
+    - rv_390m
+    - overnight_gap_pct
+    - opening_range_pct
+    - sigma_hat_pp                  # the row's own sigma (dataset column, known at publish)
+  C: 1.0                            # L2 strength (sklearn inverse regularisation)
+  max_iter: 2000
+calibration:
+  isotonic_min_rows: 300            # fewer calibration rows -> Platt (sigmoid)
+metrics:
+  subsets: [train, calibration, validation]
+  ece_bins: 10
+references: [class_frequency, always_flat, persistence]
+random_seed: 20261128
+output_dir: data/models             # gitignored
