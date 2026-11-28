@@ -1,0 +1,63 @@
+:root {
+  --fg: #1d2330;
+  --muted: #6b7385;
+  --line: #e3e6ec;
+  --bg: #f7f8fa;
+  --card: #fff;
+  --ok: #1f7a45;
+  --warn: #9a6400;
+  --bad: #b3261e;
+  --accent: #2f5bd3;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, "PingFang SC", "Noto Sans SC", sans-serif; color: var(--fg); background: var(--bg); line-height: 1.55; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { max-width: 1120px; margin: 0 auto; padding: 1rem; }
+.nav { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; padding: 0.6rem 1rem; background: var(--card); border-bottom: 1px solid var(--line); }
+.nav .brand { font-weight: 700; color: var(--fg); }
+.nav nav { display: flex; gap: 0.9rem; flex-wrap: wrap; }
+.nav .who { margin-left: auto; display: flex; gap: 0.5rem; align-items: center; }
+.foot { text-align: center; color: var(--muted); padding: 2rem 1rem; }
+h1 { font-size: 1.4rem; margin: 0.4rem 0 0.8rem; }
+h2 { font-size: 1.1rem; margin: 1.4rem 0 0.6rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 0.8rem; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 0.8rem 0.9rem; }
+.card h3 { margin: 0 0 0.3rem; font-size: 1.05rem; display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; }
+.num { font-variant-numeric: tabular-nums; font-size: 1.15rem; }
+.up { color: var(--ok); }
+.down { color: var(--bad); }
+.muted { color: var(--muted); }
+.badge { display: inline-block; font-size: 0.78rem; padding: 0.05rem 0.45rem; border-radius: 999px; border: 1px solid var(--line); background: #f1f3f7; color: var(--fg); white-space: nowrap; }
+.badge.ok { color: var(--ok); border-color: #b9dfc8; background: #eef8f2; }
+.badge.warn { color: var(--warn); border-color: #ecd6a6; background: #fdf6e7; }
+.badge.bad { color: var(--bad); border-color: #efc0bc; background: #fdeeed; }
+table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+th, td { text-align: left; padding: 0.45rem 0.6rem; border-bottom: 1px solid var(--line); font-size: 0.9rem; vertical-align: top; }
+th { background: #f1f3f7; font-weight: 600; }
+.table-wrap { overflow-x: auto; }
+dl.kv { display: grid; grid-template-columns: max-content 1fr; gap: 0.25rem 1rem; margin: 0; }
+dl.kv dt { color: var(--muted); }
+dl.kv dd { margin: 0; }
+button, .button { font: inherit; padding: 0.35rem 0.9rem; border-radius: 6px; border: 1px solid var(--accent); background: var(--accent); color: #fff; cursor: pointer; display: inline-block; }
+button:disabled { opacity: 0.55; cursor: not-allowed; }
+button.small { padding: 0.15rem 0.6rem; font-size: 0.85rem; margin-left: 0.5rem; background: #fff; color: var(--accent); }
+button.danger { border-color: var(--bad); color: var(--bad); }
+.state { background: var(--card); border: 1px dashed var(--line); border-radius: 8px; padding: 1.5rem; text-align: center; color: var(--muted); }
+.state.failed { border-style: solid; border-color: #efc0bc; color: var(--fg); }
+.spinner { display: inline-block; width: 0.9rem; height: 0.9rem; border: 2px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.8s linear infinite; vertical-align: -2px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .spinner { animation: none; } }
+.error { color: var(--bad); }
+.panel { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 0.8rem 1rem; display: grid; gap: 0.6rem; }
+.panel fieldset { border: 1px solid var(--line); border-radius: 6px; display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; }
+.panel button[type="submit"] { justify-self: start; }
+.steps { list-style: none; padding: 0; display: grid; gap: 0.3rem; }
+.step { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 0.35rem 0.6rem; }
+.step.succeeded { border-left: 4px solid var(--ok); }
+.step.running { border-left: 4px solid var(--accent); }
+.step.failed { border-left: 4px solid var(--bad); }
+.step.skipped { border-left: 4px solid var(--line); color: var(--muted); }
+progress { width: 100%; height: 0.6rem; }
+.row { display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; }
+@media (max-width: 480px) { .container { padding: 0.6rem; } th, td { padding: 0.35rem; font-size: 0.82rem; } }

@@ -1,5 +1,26 @@
 # CHANGELOG
 
+## Phase 2 · 2.07–2.08 + 2.15 market pages, one-click run, e2e (AC-34, AC-35 page side) — 2026-11-28
+- **Migration `0007_app_roles.sql`** (DC §10, D-26): roles from JWT `app_metadata.app_role`; read policies for
+  every table (viewers: displayable prediction tiers, public evidence, their own runs); no write grants. The page's
+  writes are three checked functions: `request_pipeline_run` (viewer live + reuse only; 60 s same-request dedupe;
+  queues a `pipeline_step` job), `cancel_pipeline_run`, `request_refresh`. Realtime publication for runs, steps
+  and snapshots (Supabase only). Contract fields unchanged.
+- **Python**: `pipeline_step` worker job adopts the queued run (same idempotency key); pipeline jobs commit their
+  own steps so an injected failure is retried and resumes at the failed step (AC-35); the orchestrator stops
+  between steps when a run is cancelled and keeps what was published.
+- **Web (2.07)**: data-source layer (Supabase with the user's session / RLS, or `DATA_SOURCE=fixture` with
+  SYNTHETIC data from the contract examples), 8 s timeout. Pages: monitor (cards, quality badge, refresh), stock
+  detail (snapshot, predictions, events, 运行), predictions list + detail (locked inputs, settlement versions),
+  events list + detail (`?version=n`), sign-in, run panel + history + progress (DP 2.08: polling + Realtime,
+  cancel). Five states (normal, loading, empty, timeout, failure) and a not-found view. Route Handlers per DC §6:
+  securities, snapshot, refresh, predictions, events, pipeline-runs (create / list / get / cancel).
+- **e2e (2.15)**: Playwright on the fixture build — five states with screenshots (desktop and 390 px), detail
+  pages, one-click run to completion, repeat request → same run, cancel, viewer limited to live. CI runs them and
+  keeps the screenshots as an artifact. Onboarding e2e waits for 2.09–2.10.
+- OQ-63 adopted (routine). Tests: 528 Python (7 new) + 15 web unit + 10 e2e; `make check` and the fresh-database
+  replay pass.
+
 ## Phase 2 · 2.01–2.06 live data and scheduling (AC-17, AC-18) on a synthetic feed — 2026-11-28
 - **2.01 md-ingest** (`sr/marketdata/live.py`): vendor ticks → the 1-second layer (newest quote received by each
   second; late older quotes counted, never applied), a store that refuses reads past its clock, immutable Parquet

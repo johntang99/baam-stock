@@ -95,6 +95,7 @@ def run_live_day(
     handlers = make_handlers(ctx)
     if run_context is None:
         handlers.pop("run_forecast")
+        handlers.pop("pipeline_step")
     worker = Worker(conn, handlers, clock=clock, worker_id="sim-live")
     poller = (
         LivePoller(conn, poller_sources, clock, storage=storage, collect_for=security_ids)

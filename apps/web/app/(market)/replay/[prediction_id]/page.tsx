@@ -3,6 +3,10 @@ import { notFound } from "next/navigation";
 
 import { fmt, loadReport } from "@/lib/replay";
 
+import { redirect } from "next/navigation";
+
+import { getViewer } from "@/lib/data";
+
 export const dynamic = "force-dynamic";
 
 const LOCKED = [
@@ -21,6 +25,7 @@ const LOCKED = [
 ] as const;
 
 export default async function ReplayPrediction({ params }: { params: Promise<{ prediction_id: string }> }) {
+  if (!(await getViewer())) redirect("/login");
   const { prediction_id } = await params;
   const r = await loadReport(prediction_id);
   if (!r) notFound();

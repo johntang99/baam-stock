@@ -4,6 +4,10 @@ A handler is `fn(conn, job, now) -> None`. It runs inside one transaction togeth
 `succeeded`, so a crash between the two is impossible: either the work and the completion commit, or neither does
 and the job is retried. An exception rolls the handler's writes back and records the failed try (backoff, then the
 dead letter after `max_attempts`). Handlers must be idempotent: a reclaimed job can run a second time.
+
+Pipeline jobs (`pipeline_step`, `run_forecast`) are the exception: the orchestrator commits each step row as it
+goes, so a failed step stays recorded and the retry resumes from it (AC-35). They run outside the worker
+transaction and are marked succeeded afterwards.
 """
 
 from __future__ import annotations
@@ -45,6 +49,7 @@ class Worker:
     clock: Clock = system_clock
     worker_id: str = field(default_factory=lambda: f"{socket.gethostname()}:{os.getpid()}")
     log: list[RunRecord] = field(default_factory=list)
+    own_transaction: frozenset[str] = frozenset({"pipeline_step", "run_forecast"})
 
     def run_once(self, limit: int | None = None) -> list[RunRecord]:
         """Claim and run the jobs that are due now. Returns what happened to each."""
@@ -71,9 +76,13 @@ class Worker:
             st = fail(self.conn, job, self.worker_id, f"no handler for {job.job_type}", started)
             return RunRecord(job.job_id, job.job_type, st, started, self.clock(), "no_handler")
         try:
-            with self.conn.transaction():
+            if job.job_type in self.own_transaction:
                 fn(self.conn, job, started)
                 complete(self.conn, job.job_id, self.worker_id)
+            else:
+                with self.conn.transaction():
+                    fn(self.conn, job, started)
+                    complete(self.conn, job.job_id, self.worker_id)
             return RunRecord(job.job_id, job.job_type, "succeeded", started, self.clock())
         except Exception as e:  # recorded on the job; the worker keeps going
             err = f"{type(e).__name__}: {e}"

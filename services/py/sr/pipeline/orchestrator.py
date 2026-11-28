@@ -107,13 +107,51 @@ def _snapshot_quotes(provider: Any, ids: list[str], as_of: datetime) -> pd.DataF
 
 
 class _Run:
-    def __init__(self, conn: Conn, pid: str, persist: bool, prior: dict[int, dict[str, Any]]) -> None:
+    def __init__(
+        self,
+        conn: Conn,
+        pid: str,
+        persist: bool,
+        prior: dict[int, dict[str, Any]],
+        check_cancel: bool = False,
+    ) -> None:
         self.conn, self.pid, self.persist, self.prior = conn, pid, persist, prior
+        self.check_cancel = check_cancel
+        self.cancelled = False
         self.rows: list[dict[str, Any]] = []
+
+    def _is_cancelled(self) -> bool:
+        if not self.check_cancel or self.cancelled:
+            return self.cancelled
+        r = self.conn.execute(
+            "select status from pipeline_runs where pipeline_run_id = %s", (self.pid,)
+        ).fetchone()
+        self.cancelled = r is not None and r["status"] == "cancelled"
+        return self.cancelled
 
     def step(
         self, no: int, name: str, sec: str, fn: Callable[[], tuple[str, dict[str, Any]]], now: datetime
     ) -> dict[str, Any]:
+        if self._is_cancelled():  # cancelled from the page between steps: the rest is skipped, nothing undone
+            rec = {
+                "step_no": no,
+                "step": name,
+                "security_id": sec,
+                "status": "skipped",
+                "attempt": 0,
+                "started_at": None,
+                "finished_at": None,
+                "detail": {"reason": "cancelled"},
+                "error": None,
+            }
+            self.rows.append(rec)
+            if self.persist:
+                self.conn.execute(
+                    """insert into pipeline_run_steps (pipeline_run_id, step_no, step, security_id, status, attempt, detail)
+                       values (%s, %s, %s::pipeline_step, %s, 'skipped', 0, %s) on conflict (pipeline_run_id, step_no) do nothing""",
+                    (self.pid, no, name, sec, jsonb(rec["detail"])),
+                )
+            return rec
         done = self.prior.get(no)
         if done and done["status"] in ("succeeded", "skipped") and name not in ("infer",):
             self.rows.append(done)
@@ -189,7 +227,24 @@ def run_pipeline(
     key = idempotency_key(security_ids, target_ids, t, mode, requested_by)
     old = conn.execute("select * from pipeline_runs where idempotency_key = %s", (key,)).fetchone()
     prior: dict[int, dict[str, Any]] = {}
-    if old is not None:
+    queued = old is not None and old["status"] == "queued"  # requested from the page (request_pipeline_run)
+    if old is not None and old["status"] == "cancelled":
+        steps = [
+            dict(r)
+            for r in conn.execute(
+                "select * from pipeline_run_steps where pipeline_run_id = %s order by step_no",
+                (old["pipeline_run_id"],),
+            ).fetchall()
+        ]
+        return PipelineResult(old["pipeline_run_id"], "cancelled", old["outputs"], steps, reused_run=True)
+    if queued:
+        assert old is not None
+        pid = old["pipeline_run_id"]
+        conn.execute(
+            "update pipeline_runs set status = 'running', started_at = %s where pipeline_run_id = %s and status = 'queued'",
+            (t, pid),
+        )
+    elif old is not None:
         steps = [
             dict(r)
             for r in conn.execute(
@@ -214,7 +269,7 @@ def run_pipeline(
                            %s::reuse_policy, %s, %s)""",
                 (pid, security_ids, target_ids, trigger_type, requested_by, mode, t, reuse_policy, t, key),
             )
-    run = _Run(conn, pid, persist=mode != "dry_run", prior=prior)
+    run = _Run(conn, pid, persist=mode != "dry_run", prior=prior, check_cancel=mode != "dry_run")
     outputs: dict[str, Any] = {"snapshot_ids": [], "prediction_ids": [], "abstained": [], "reused": False}
     failed = False
 
@@ -236,7 +291,32 @@ def run_pipeline(
     else:
         body()
     status = "failed" if failed else ("partial" if outputs["abstained"] else "succeeded")
-    if mode == "dry_run":  # the report: the run and its steps only
+    if run.cancelled:
+        status = "cancelled"
+    if mode == "dry_run" and queued:  # the queued row exists: keep it, write the report steps under it
+        conn.execute(
+            "update pipeline_runs set status = %s::pipeline_status, outputs = %s, finished_at = %s where pipeline_run_id = %s",
+            (status, jsonb(outputs), t, pid),
+        )
+        for r in run.rows:
+            conn.execute(
+                """insert into pipeline_run_steps (pipeline_run_id, step_no, step, security_id, status, attempt, started_at,
+                       finished_at, detail, error) values (%s, %s, %s::pipeline_step, %s, %s::pipeline_step_status, %s, %s, %s, %s, %s)
+                   on conflict (pipeline_run_id, step_no) do nothing""",
+                (
+                    pid,
+                    r["step_no"],
+                    r["step"],
+                    r["security_id"],
+                    r["status"],
+                    r["attempt"],
+                    r["started_at"],
+                    r["finished_at"],
+                    jsonb(r["detail"]),
+                    jsonb(r["error"]) if r["error"] else None,
+                ),
+            )
+    elif mode == "dry_run":  # the report: the run and its steps only
         conn.execute(
             """insert into pipeline_runs (pipeline_run_id, security_ids, target_ids, trigger_type, requested_by, mode, as_of, status,
                    reuse_policy, outputs, started_at, finished_at, idempotency_key)
@@ -274,9 +354,10 @@ def run_pipeline(
                     jsonb(r["error"]) if r["error"] else None,
                 ),
             )
-    else:
+    else:  # a run cancelled from the page keeps `cancelled`; published parts stay
         conn.execute(
-            "update pipeline_runs set status = %s::pipeline_status, outputs = %s, finished_at = %s where pipeline_run_id = %s",
+            """update pipeline_runs set status = %s::pipeline_status, outputs = %s, finished_at = coalesce(finished_at, %s)
+                where pipeline_run_id = %s and status <> 'cancelled'""",
             (status, jsonb(outputs), t, pid),
         )
     return PipelineResult(pid, status, outputs, run.rows)

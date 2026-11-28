@@ -181,7 +181,39 @@ def make_handlers(ctx: LiveContext) -> dict[str, Callable[[Conn, Job, datetime],
                 }
             )
 
+    def pipeline(conn: Conn, job: Job, now: datetime) -> None:
+        """A run requested from the page (request_pipeline_run): the queued row is adopted by its key."""
+        if ctx.run_context is None:
+            raise RuntimeError("pipeline_step needs a run context (models, history)")
+        r = conn.execute(
+            """select pipeline_run_id, security_ids, target_ids::text[] as target_ids, mode::text as mode, as_of,
+                      status::text as status, trigger_type::text as trigger_type, requested_by,
+                      reuse_policy::text as reuse_policy
+                 from pipeline_runs where pipeline_run_id = %s""",
+            (job.payload["pipeline_run_id"],),
+        ).fetchone()
+        if r is None:
+            raise KeyError(job.payload["pipeline_run_id"])
+        if r["status"] in ("cancelled", "succeeded", "partial"):
+            return  # nothing to do (cancelled before it started, or already finished)
+        res = run_pipeline(
+            conn,
+            list(r["security_ids"]),
+            list(r["target_ids"]),
+            r["mode"],
+            r["as_of"],
+            ctx.run_context(r["as_of"], timedelta(milliseconds=600)),
+            trigger_type=r["trigger_type"],
+            requested_by=r["requested_by"],
+            reuse_policy=r["reuse_policy"],
+        )
+        ctx.log.append({"job": "pipeline_step", "pipeline_run_id": res.pipeline_run_id, "status": res.status})
+        if res.status == "failed":  # the worker retries with backoff; the next try resumes at the failed step
+            failed = [s for s in res.steps if s["status"] == "failed"]
+            raise RuntimeError(f"pipeline run failed at {[s['step'] for s in failed]}")
+
     return {
+        "pipeline_step": pipeline,
         "build_snapshot": snapshot,
         "run_forecast": forecast,
         "settle_due": settle_due,

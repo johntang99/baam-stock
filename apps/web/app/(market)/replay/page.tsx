@@ -2,9 +2,14 @@ import Link from "next/link";
 
 import { fmt, listReports } from "@/lib/replay";
 
+import { redirect } from "next/navigation";
+
+import { getViewer } from "@/lib/data";
+
 export const dynamic = "force-dynamic"; // reports are read at request time
 
 export default async function ReplayIndex() {
+  if (!(await getViewer())) redirect("/login");
   const reports = await listReports();
   return (
     <main>

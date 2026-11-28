@@ -43,3 +43,4 @@ db-reset:                 ## local Supabase (needs Docker)
 
 check: lint typecheck test
 	pnpm -r build
+	cd apps/web && pnpm exec playwright test   # e2e on the build, fixture data (DP 2.15)
