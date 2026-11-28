@@ -1,0 +1,6 @@
+# Forecast vs actual + accuracy rollups (DP 1.26; DC §3.7a; D-44; AC-53; OQ-57)
+version: fva-0.1
+path_step_min: 5                     # forecast_path points every 5 minutes (sqrt_time_v1)
+windows: {rolling_20d: 20, rolling_60d: 60}
+min_settled_for_metrics: 30          # = eval.yaml min_settled_for_conclusion: fewer -> metrics null (counts only)
+calibration_bin_width: 0.1

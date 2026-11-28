@@ -26,7 +26,7 @@ from sr.evidence.collection_log import run_collection
 from sr.forecast.publish import publish
 from sr.forecast.run import LoadedModels, forecast_snapshot
 from sr.ids import new_id
-from sr.marketdata.quote_rules import evaluate_quotes
+from sr.marketdata.quote_rules import REQUIRED_COLUMNS, evaluate_quotes
 from sr.snapshot.builder import Trigger, benchmark_version, build_snapshot, previous_closes
 from sr.timeguard import ensure_utc
 
@@ -40,7 +40,12 @@ STEPS = (
     "publish",
     "schedule_settlement",
 )
-TARGET_ROWS = {"regular_60m": "tgt_regular_60m_v1", "regular_60m_move": "tgt_regular_60m_move_v1"}
+TARGET_ROWS = {
+    "regular_60m": "tgt_regular_60m_v1",
+    "regular_60m_move": "tgt_regular_60m_move_v1",
+    "regular_to_close": "tgt_regular_to_close_v1",  # no model yet: abstains model_not_validated (OQ-57)
+    "next_regular_session": "tgt_next_regular_session_v1",  # likewise
+}
 
 
 class _Rollback(Exception):
@@ -76,20 +81,29 @@ def idempotency_key(
 
 
 def _snapshot_quotes(provider: Any, ids: list[str], as_of: datetime) -> pd.DataFrame:
+    from sr.calendar import get_calendar
     from sr.config import load
 
     warm = timedelta(minutes=int(load("quote_rules")["qualifying"]["median_spread_window_min"]))
     have = getattr(provider, "security_ids", None)
-    raw = provider.quotes_1s(
-        [i for i in ids if have is None or i in have], as_of - warm - timedelta(seconds=60), as_of
-    )
-    q = evaluate_quotes(raw) if len(raw) else raw
+    session = get_calendar().session_for_instant(as_of)
+    start = as_of - warm - timedelta(seconds=60)
+    if (
+        session.open_at is not None and session.open_at < as_of
+    ):  # the market watermark is the day's latest quote
+        start = min(start, session.open_at - warm)
+    raw = provider.quotes_1s([i for i in ids if have is None or i in have], start, as_of)
+    if not set(REQUIRED_COLUMNS) <= set(raw.columns):  # nothing at all in the window (e.g. 08:30 pre-market)
+        utc = "datetime64[ns, UTC]"
+        raw = pd.DataFrame(
+            {
+                c: pd.Series(dtype=utc if c in ("ts", "quote_ts", "received_at") else "object")
+                for c in (*REQUIRED_COLUMNS, "last")
+            }
+        )
+    q = evaluate_quotes(raw)  # an empty frame still gets the evaluated columns
     a = pd.Timestamp(as_of)
-    return (
-        q[(q["received_at"] <= a) & (q["ts"] >= a - pd.Timedelta(seconds=60))].reset_index(drop=True)
-        if len(q)
-        else q
-    )
+    return q[(q["received_at"] <= a)].reset_index(drop=True)  # build_snapshot looks back as far as it needs
 
 
 class _Run:
@@ -170,7 +184,7 @@ def run_pipeline(
         raise ValueError(f"mode {mode!r} is not supported in Phase 1")
     unknown = [t for t in target_ids if t not in TARGET_ROWS]
     if unknown:
-        raise ValueError(f"targets {unknown} are not built yet (Phase 1: {list(TARGET_ROWS)})")
+        raise ValueError(f"targets {unknown} are not built yet (supported: {list(TARGET_ROWS)})")
     t = ensure_utc(as_of, "as_of").to_pydatetime()
     key = idempotency_key(security_ids, target_ids, t, mode, requested_by)
     old = conn.execute("select * from pipeline_runs where idempotency_key = %s", (key,)).fetchone()
@@ -353,12 +367,17 @@ def _one_security(
         }
 
     def existing() -> list[dict[str, Any]]:
+        """Predictions already made from this snapshot for these targets. A scheduled slot reuses only a prediction
+        made for that same slot, so an unchanged snapshot never swallows a later slot (AC-52)."""
         rows = conn.execute(
-            """select p.prediction_id, p.target_row_id, p.status, p.abstain_reason from predictions p
+            """select p.prediction_id, p.target_row_id, p.status, p.abstain_reason, p.scheduled_for from predictions p
                  join prediction_runs r using (run_id) where r.snapshot_id = %s and p.target_row_id = any(%s)""",
             (state["snapshot_id"], [TARGET_ROWS[x] for x in target_ids]),
         ).fetchall()
-        return [dict(r) for r in rows]
+        out = [dict(r) for r in rows]
+        if trigger_type == "scheduled":
+            out = [r for r in out if r["scheduled_for"] == t]
+        return out
 
     def infer() -> tuple[str, dict[str, Any]]:
         if reuse_policy == "reuse_if_unchanged" and state.get("merged") and existing():
@@ -377,6 +396,9 @@ def _one_security(
             feature_dir=ctx.feature_dir,
             publish_now=False,
             force_recompute_tag=pid if reuse_policy == "force_recompute" else None,
+            targets=target_ids,
+            trigger_type=trigger_type,
+            trigger_at=t,
         )
         rows = {TARGET_ROWS[x] for x in target_ids}
         keep = [p for p in res.predictions if p["target_row_id"] in rows]

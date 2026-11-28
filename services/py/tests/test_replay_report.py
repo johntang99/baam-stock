@@ -6,6 +6,7 @@ from datetime import datetime, timedelta
 
 import pytest
 
+import sr
 from sr.pipeline.orchestrator import RunContext
 from sr.replay.report import prediction_report, to_markdown
 from sr.replay.runner import replay_day
@@ -39,21 +40,29 @@ def replayed(conn, provider, tmp_path):  # type: ignore[no-untyped-def]
 
 
 def test_day_replay_runs_each_slot_and_settles(conn, replayed) -> None:  # type: ignore[no-untyped-def]
-    assert len(replayed.pipeline_run_ids) == 4  # s1000, s1130, s1300, s1430 (to_close not built yet)
+    assert len(replayed.pipeline_run_ids) == 6  # every sched-0.1 slot (AC-52)
     preds = conn.execute("select * from predictions order by published_at, target_row_id").fetchall()
     assert (
-        len(preds) == 8
+        len(preds) == 11
         and {p["sampling_rule"] for p in preds} == {"schedule_slot"}
         and all(p["is_primary"] for p in preds)
     )
-    assert {p["schedule_slot_id"] for p in preds} == {"s1000", "s1130", "s1300", "s1430"}
-    published = [p for p in preds if p["status"] != "abstained"]
+    assert {p["schedule_slot_id"] for p in preds} == {
+        "s0830_pre_open",
+        "s1000",
+        "s1130",
+        "s1300",
+        "s1430",
+        "s1630_next",
+    }
+    modelled = [p for p in preds if p["target_row_id"] in ("tgt_regular_60m_v1", "tgt_regular_60m_move_v1")]
+    published = [p for p in modelled if p["status"] != "abstained"]
     assert published and {p["status"] for p in published} <= {"settled", "unsettleable"}
     assert all(r.status in ("settled", "unsettleable") for r in replayed.settlements.values())
 
 
 def test_every_report_passes_its_checks(replayed) -> None:  # type: ignore[no-untyped-def]
-    assert len(replayed.reports) == 8
+    assert len(replayed.reports) == 11
     for r in replayed.reports:
         fails = [c for c in r["checks"] if c["result"] == "FAIL"]
         assert not fails, (r["prediction"]["prediction_id"], fails)
@@ -70,7 +79,7 @@ def test_a_report_lists_what_acceptance_asks_for(conn, replayed) -> None:  # typ
     r = prediction_report(conn, pid)
     md = to_markdown(r)
     assert (
-        "锁定输入 locked" in md and "target_definition_version" in md and "contract-0.7.3" in md
+        "锁定输入 locked" in md and "target_definition_version" in md and sr.SCHEMA_VERSION in md
     )  # locked inputs
     assert r["t0_quote"]["quote_id"] in md and r["end_quote"]["quote_id"] in md  # t0 / end quotes
     assert "相对" in md and "类别 outcome" in md and r["settlement"]["outcome_class"] in md  # returns + class
@@ -95,7 +104,7 @@ def test_move_and_abstained_reports(conn, replayed) -> None:  # type: ignore[no-
 def test_files_written_and_html_is_inert(replayed) -> None:  # type: ignore[no-untyped-def]
     md = replayed.markdown_path.read_text()
     h = replayed.html_path.read_text()
-    assert md.startswith("# 回放报告 replay report · sec_nvda · 2026-12-10") and md.count("\n## ") == 8
+    assert md.startswith("# 回放报告 replay report · sec_nvda · 2026-12-10") and md.count("\n## ") == 11
     assert "<script" not in h and "SYNTHETIC" in h and h.startswith("<!doctype html>")
 
 

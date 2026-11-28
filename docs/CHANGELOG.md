@@ -1,5 +1,24 @@
 # CHANGELOG
 
+## Phase 1 · 1.26 schedule replay + forecast vs actual + accuracy rollups (AC-52, AC-53) + contract-0.7.4 — 2026-11-28
+- **contract-0.7.4**: `forecast_vs_actual` and `forecast_accuracy_rollups` get tables (migration
+  `0006_forecast_vs_actual.sql`, fields unchanged, RLS on, enum `rollup_window`); derived data rebuilt after
+  settlement, never written back to predictions. Version constant, examples, generated code updated; the contract
+  test's SQL parser now reads quoted identifiers.
+- `sr/eval/fva.py`: forecast path (locked quantiles × sqrt(t/T)), actual minute path from quotes received by the
+  refresh time (end point = the reporting settlement), outcome / hit / Brier, inside_p80 / p90, residual,
+  abs-move error. `sr/eval/rollups.py`: primary forecasts by security × target × group (`all`, `slot:<id>`) ×
+  window; counts always, metrics only from 30 settled; calibration bins. `replay_day` refreshes both.
+- Forecasts: direction predictions publish a display `interval` (sigma normal quantiles); `targets` parameter;
+  `regular_to_close` / `next_regular_session` slot forecasts abstain `model_not_validated` (no model yet). The day
+  replay and pipeline run all six sched-0.1 slots.
+- Fixes found by the AC-52 replay: an empty quote window (08:30 pre-market) crashed the snapshot step; a 16:30 slot
+  merged into the 14:30 snapshot because snapshots only read the last 60 s of quotes (now since the open) and lost
+  its slot because sampling used the snapshot time (now the trigger time; reuse is slot-aware). A calibration-bin
+  floating-point edge (0.6 / 0.1 = 5.999…) is handled.
+- OQ-57 adopted (routine). Tests: 7 new (six slots, late 11:30 -> slot_missed, half day, path end points to 1e-9,
+  no later data, rollup counts and the 30 threshold, predictions untouched).
+
 ## Phase 1 · 1.21 corporate actions: raw quotes, adjusted settlement, ticker changes (AC-37) — 2026-11-28
 - `sr/marketdata/corporate_actions.py` (ca-0.1, `config/corporate_actions.yaml`): `record_action` (ticker change
   -> closes the open ticker row at ex_date and adds the new one), `resolve_ticker` (point in time),

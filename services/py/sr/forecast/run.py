@@ -119,11 +119,17 @@ class Sampling:
     supersedes: str | None = None
 
 
-def sampling_for(conn: Conn, snap: dict[str, Any], target_id: str, target_row_id: str) -> Sampling:
+def sampling_for(
+    conn: Conn, snap: dict[str, Any], target_id: str, target_row_id: str, trigger_at: datetime | None = None
+) -> Sampling:
+    """`trigger_at`: when the request fired (a slot time). A snapshot can be an older one with unchanged watermarks,
+    so the slot is decided by the trigger time, not by the snapshot's analysis_as_of."""
     primary = set(load("forecast")["primary_rules"])
-    tt, as_of = snap["trigger_type"], snap["analysis_as_of"]
+    tt = snap["trigger_type"] if trigger_at is None else (snap.get("_trigger_type") or snap["trigger_type"])
+    as_of = trigger_at or snap["analysis_as_of"]
     if tt in ("scheduled", "session_check"):
-        for s in schedule_slots(snap["session_date"]):
+        day = get_calendar().session_for_instant(as_of).session_date
+        for s in schedule_slots(day):
             if s.status == "scheduled" and s.scheduled_for == as_of and target_id in s.target_ids:
                 return Sampling("schedule_slot", True, s.slot_id, s.schedule_version, s.scheduled_for)
         return Sampling("scheduled_5m", False)
@@ -176,6 +182,35 @@ class ForecastResult:
     features: pd.DataFrame = field(default_factory=pd.DataFrame)
 
 
+Z = {"p05": -1.6448536, "p10": -1.2815516, "p50": 0.0, "p90": 1.2815516, "p95": 1.6448536}
+
+
+def display_interval(sigma_hat_pp: float) -> dict[str, Any]:
+    """Relative-return quantiles for the forecast-vs-actual display (OQ-57): normal around 0 with the locked
+    sigma_hat. Display only (`validated: false`); the direction forecast itself is the class probabilities."""
+    return {
+        "quantiles": {k: round(z * sigma_hat_pp, 6) for k, z in Z.items()},
+        "unit": "relative_pp",
+        "validated": False,
+        "method": "sigma_normal_v1",
+    }
+
+
+def no_model_reason(snap: dict[str, Any], target_id: str, published_at: datetime, sampling: Sampling) -> str:
+    """Targets without a trained model: a late slot is slot_missed, a to-close window that no longer fits is
+    window_insufficient, otherwise model_not_validated."""
+    if sampling.rule == "schedule_slot" and sampling.scheduled_for is not None:
+        if published_at > sampling.scheduled_for + timedelta(
+            seconds=int(load("forecast")["publish_deadline_s"])
+        ):
+            return "slot_missed"
+    if target_id == "regular_to_close":
+        av = is_target_available(target_id, published_at)
+        if not av.available:
+            return av.abstain_reason or "window_insufficient"
+    return "model_not_validated"
+
+
 def tier(model_status: str) -> str:
     """Only a live (approved) model is shown as validated; everything else stays internal (D-33)."""
     return "validated_public" if model_status == "live" else "internal_shadow"
@@ -214,6 +249,9 @@ def forecast_snapshot(
     feature_dir: Path | None = None,
     publish_now: bool = True,
     force_recompute_tag: str | None = None,
+    targets: list[str] | None = None,
+    trigger_type: str | None = None,
+    trigger_at: datetime | None = None,
 ) -> ForecastResult:
     """`history`: realised windows (dataset-shaped rows) — only those ended by published_at are used.
     publish_now=False computes everything and writes nothing to the DB (dry run). `force_recompute_tag` (the
@@ -276,18 +314,24 @@ def forecast_snapshot(
     )
     event_id = snap["trigger_ref"] if snap["trigger_type"] == "event" else None
     runs, preds = [], []
-    for target_id in load("forecast")["targets"]:
+    for target_id in targets or load("forecast")["targets"]:
         trow = _target_row(target_id)
         sm = (
-            sampling_for(conn, snap, target_id, trow)
+            sampling_for(conn, {**snap, "_trigger_type": trigger_type}, target_id, trow, trigger_at)
             if force_recompute_tag is None
             else Sampling("on_demand", False)
         )
-        reason = abstain_reason(snap, target_id, pub, sm)
         direction = target_id == "regular_60m"
-        model_id = models.direction_id if direction else models.move_id
-        baseline_id = models.baseline_id if direction else models.har_id
-        cal_version = models.calibration_version if direction else "conformal"
+        modelled = target_id in ("regular_60m", "regular_60m_move")
+        if modelled:
+            reason = abstain_reason(snap, target_id, pub, sm)
+            model_id = models.direction_id if direction else models.move_id
+            baseline_id = models.baseline_id if direction else models.har_id
+            cal_version = models.calibration_version if direction else "conformal"
+        else:  # no model trained for this target yet (OQ-57): a slot forecast that abstains honestly
+            reason = no_model_reason(snap, target_id, pub, sm)
+            model_id = baseline_id = models.baseline_id
+            cal_version = "none"
         run_id = new_id("run")
         runs.append(
             {
@@ -315,7 +359,9 @@ def forecast_snapshot(
             "target_row_id": trow,
             "security_id": sec,
             "event_id": event_id,
-            "display_tier": tier(models.direction_status if direction else models.move_status),
+            "display_tier": tier(
+                (models.direction_status if direction else models.move_status) if modelled else "candidate"
+            ),
             "is_primary": sm.is_primary,
             "sampling_rule": sm.rule,
             "schedule_slot_id": sm.slot_id,
@@ -345,6 +391,7 @@ def forecast_snapshot(
                 "probabilities": {c: round(float(v), 6) for c, v in zip(CLASSES, probs, strict=True)},
                 "predicted_class": CLASSES[int(np.argmax(probs))],
                 "edge_vs_baseline": round(float(((probs - base) ** 2).sum()), 6),
+                "interval": display_interval(float(sigma["sigma_hat_pp"])),
             }
             s = sum(p["probabilities"].values())  # rounding must not break the DB sum check
             p["probabilities"][p["predicted_class"]] = round(

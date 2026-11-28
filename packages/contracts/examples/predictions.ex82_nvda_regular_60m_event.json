@@ -1,5 +1,5 @@
 {
-  "schema_version": "contract-0.7.3",
+  "schema_version": "contract-0.7.4",
   "prediction_id": "pred_nvda_20261202_1601_60m",
   "run_id": "run_nvda_20261202_1601",
   "target_row_id": "tgt_regular_60m_v1",
@@ -41,7 +41,7 @@
     "calendar_version": "cal-2026.11",
     "model_version_id": "mdl_regular_60m_market_logit_v3",
     "calibration_version": "cal_iso_v3",
-    "schema_version": "contract-0.7.3",
+    "schema_version": "contract-0.7.4",
     "sigma_model_version": "sigma-0.1",
     "sigma_hat_pp": 0.6,
     "threshold_k": 0.25,

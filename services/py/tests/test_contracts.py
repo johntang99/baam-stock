@@ -48,7 +48,7 @@ def examples() -> list[Path]:
 
 # ---------------- schemas & examples ----------------
 def test_schema_version_is_current() -> None:
-    assert SV == "contract-0.7.3"
+    assert SV == "contract-0.7.4"
     import sr
 
     assert sr.SCHEMA_VERSION == SV
@@ -57,7 +57,9 @@ def test_schema_version_is_current() -> None:
 def test_all_schemas_are_valid_draft_2020_12() -> None:
     for s in ALL.values():
         Draft202012Validator.check_schema(s)
-    assert len(ENTITIES) == 49 and len(TABLED) == 39  # 0.7.3: + model_versions
+    assert (
+        len(ENTITIES) == 49 and len(TABLED) == 41
+    )  # 0.7.3: + model_versions; 0.7.4: + forecast_vs_actual, forecast_accuracy_rollups
 
 
 @pytest.mark.parametrize("path", examples(), ids=lambda p: p.name)
@@ -135,7 +137,7 @@ def _tables(sql: str) -> dict[str, dict[str, tuple[str, bool]]]:
     for m in re.finditer(r"create table (\w+) \((.*?)\n\);", sql, re.S):
         cols = {}
         for line in m.group(2).splitlines():
-            line = line.strip()
+            line = line.strip().replace('"', "")  # quoted identifiers, e.g. "window"
             if (
                 not line
                 or line.startswith("--")
@@ -147,7 +149,7 @@ def _tables(sql: str) -> dict[str, dict[str, tuple[str, bool]]]:
             cols[name] = (typ, " not null" in line or "primary key" in line)
         pk = re.search(r"primary key \(([^)]*)\)", m.group(2))
         if pk:
-            for c in pk.group(1).split(","):
+            for c in pk.group(1).replace('"', "").split(","):
                 cols[c.strip()] = (cols[c.strip()][0], True)
         out[m.group(1)] = cols
     return out

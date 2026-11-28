@@ -217,4 +217,4 @@ def test_cli_requires_mode_and_rejects_unknown_targets(conn, provider, tmp_path)
     with pytest.raises(SystemExit):
         main(["run", "--security", "sec_nvda", "--as-of", "2026-12-10T15:00:00Z", "--fixture", "x.parquet"])
     with pytest.raises(ValueError, match="not built yet"):
-        run_pipeline(conn, [NVDA], ["regular_to_close"], "replay", SLOT, ctx(conn, provider, tmp_path))
+        run_pipeline(conn, [NVDA], ["overnight_gap"], "replay", SLOT, ctx(conn, provider, tmp_path))

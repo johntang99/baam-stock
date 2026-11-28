@@ -1,5 +1,5 @@
 {
-  "schema_version": "contract-0.7.3",
+  "schema_version": "contract-0.7.4",
   "analysis_id": "eav_policy_demo_001_nvda_v1",
   "event_id": "evt_policy_export_demo_001",
   "security_id": "sec_nvda",

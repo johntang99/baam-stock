@@ -2,8 +2,8 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://baam-stock.local/contracts/forecast_accuracy_rollups.schema.json",
   "title": "forecast_accuracy_rollups",
-  "description": "DC §3.7a (schema only; Phase 1)",
-  "x-tabled": false,
+  "description": "DC §3.7a (table since contract-0.7.4, migration 0006; derived, rebuilt after settlement)",
+  "x-tabled": true,
   "type": "object",
   "properties": {
     "schema_version": {

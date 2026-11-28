@@ -1,5 +1,5 @@
 /* AUTO-GENERATED from packages/contracts/schemas by scripts/gen-ts.mjs. Do not edit. */
-export type SchemaVersion = "contract-0.7.3"
+export type SchemaVersion = "contract-0.7.4"
 /**
  * UTC ISO-8601 with Z suffix (DC §1)
  */
@@ -483,7 +483,7 @@ on_miss: string
 export type PredictionStatus = ("pending_evaluation" | "published" | "awaiting_trigger" | "awaiting_settlement" | "settled" | "abstained" | "not_triggered" | "unsettleable")
 
 /**
- * DC §3.7a materialized view (schema only; Phase 1 migration 0005)
+ * DC §3.7a (table since contract-0.7.4, migration 0006; derived, rebuilt after settlement)
  */
 
 export interface ForecastVsActual {
@@ -1212,4 +1212,4 @@ supplement_run_id?: (string | null)
 visibility: ("submitter_and_reviewers" | "shared")
 }
 
-export const SCHEMA_VERSION = "contract-0.7.3" as const;
+export const SCHEMA_VERSION = "contract-0.7.4" as const;

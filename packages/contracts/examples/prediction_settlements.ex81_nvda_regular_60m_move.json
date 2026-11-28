@@ -1,5 +1,5 @@
 {
-  "schema_version": "contract-0.7.3",
+  "schema_version": "contract-0.7.4",
   "settlement_id": "stl_nvda_20261201_1520_60m_move_v1",
   "prediction_id": "pred_nvda_20261201_1520_60m_move",
   "settlement_version": 1,

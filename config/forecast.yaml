@@ -1,7 +1,7 @@
 # Inference + atomic publish (DP 1.14; AC-13, AC-27; D-23, D-41, D-43; OQ-48)
 version: forecast-0.1
 publish_deadline_s: 180              # = sched-0.1 miss_rule.grace_s; late slots -> abstained/slot_missed
-targets: [regular_60m, regular_60m_move]
+targets: [regular_60m, regular_60m_move]   # default; slots may also ask for regular_to_close / next_regular_session (no model yet -> model_not_validated)
 primary_rules: [schedule_slot, event_first, market_move_first]
 feature_snapshot_dir: data/feature_snapshots   # gitignored
 series_lookback_days: 3              # minute mids fetched before publish (rv_390m needs the previous session)

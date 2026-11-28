@@ -21,8 +21,6 @@ from sr.pipeline.orchestrator import RunContext, run_pipeline
 from sr.replay.report import day_report, to_html, write_json_reports
 from sr.settle.settle import SettleResult, settle, weights_for
 
-PHASE1_TARGETS = ("regular_60m", "regular_60m_move")
-
 
 @dataclass(frozen=True)
 class DayReplay:
@@ -47,8 +45,8 @@ def replay_day(
     if not session.is_open or session.close_at is None:
         raise ValueError(f"{session_date} is not a trading day")
     runs = []
-    for s in schedule_slots(session_date):
-        targets = [t for t in s.target_ids if t in PHASE1_TARGETS]
+    for s in schedule_slots(session_date):  # every scheduled sched-0.1 slot (D-43, AC-52)
+        targets = list(s.target_ids)
         if s.status != "scheduled" or not targets:
             continue
         res = run_pipeline(
@@ -79,6 +77,13 @@ def replay_day(
         q = evaluate_quotes(provider.quotes_1s([security_id, *w], start, end))
         q = q[q["received_at"] <= t_settle].reset_index(drop=True)
         out[p["prediction_id"]] = settle(conn, p["prediction_id"], q, t_settle)
+
+    # comparison data is refreshed after the settlement batch (DC §3.7a; read-only towards predictions)
+    from sr.eval.fva import refresh_fva
+    from sr.eval.rollups import refresh_rollups
+
+    refresh_fva(conn, provider, t_settle)
+    refresh_rollups(conn, t_settle)
 
     md, reps = day_report(conn, security_id, session_date)
     d = out_dir or repo_root() / "data" / "replay"

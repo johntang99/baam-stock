@@ -141,7 +141,9 @@ def test_slot_forecast_publishes_both_targets(conn, provider, tmp_path) -> None:
         "schema_version",
     ):  # AC-13: the version fields are set
         assert d["locked"][k], k
-    assert d["locked"]["schema_version"] == "contract-0.7.3"
+    import sr
+
+    assert d["locked"]["schema_version"] == sr.SCHEMA_VERSION
     base = np.asarray([m.class_frequency[c] for c in ("outperform", "flat", "underperform")])
     p = np.asarray([d["probabilities"][c] for c in ("outperform", "flat", "underperform")])
     assert float(d["edge_vs_baseline"]) == pytest.approx(float(((p - base) ** 2).sum()), abs=1e-5)
