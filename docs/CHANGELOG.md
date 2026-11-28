@@ -1,5 +1,25 @@
 # CHANGELOG
 
+## Phase 1 · 1.14 inference, atomic publish, immutability (AC-13, AC-27 forecast part) + contract-0.7.3 — 2026-11-28
+- **contract-0.7.3**: `model_versions` table (migration `0004_model_versions.sql`; fields unchanged since
+  contract-0.7, schema `x-tabled` now true); `prediction_runs.model_version_id` / `baseline_model_version_id`
+  reference it; a registered model's content is immutable (trigger), only `status` moves; RLS on. Version constant,
+  examples, generated TS / pydantic and the SQL assertions updated. Routine bump under the user's standing approval
+  (OQ-48). Training runs now register their models (market_logit + class_frequency baseline; har_vol + gbdt).
+- `sr/forecast/run.py` (forecast-0.1, `config/forecast.yaml`): one run + prediction per target
+  (regular_60m -> market_logit, regular_60m_move -> gbdt) per snapshot; abstain reasons from market state,
+  readiness, data quality, D-18, the sched-0.1 180 s miss rule (`slot_missed`) and sigma (`insufficient_data`);
+  sampling rule / primary per D-23 and D-43 (schedule slot, event_first then revision with `supersedes`, …);
+  `edge_vs_baseline` = Σ(p − b)² vs class_frequency; locked versions; tier `internal_shadow` unless the model is
+  live; artifacts checked against their registered SHA-256 (`ArtifactMismatch`).
+- `sr/forecast/features.py`: the feature row at publish time with the dataset's own functions (minute-end mids,
+  quotes received by publish, sigma / HAR only from ended windows); `LookaheadError` on later data.
+- `sr/forecast/publish.py`: runs + predictions in one transaction, idempotent; `attach_t0` sets t0 (first sync
+  qualifying quote after publish, `published_at < t0 quote_ts`), benchmark quote ids, `target_end_at` and moves
+  the status to `awaiting_settlement`. The DB trigger rejects changes to published probabilities / quantiles and
+  deletes (tested).
+- OQ-48 (inference rules) adopted (routine). Tests: 419.
+
 ## Phase 1 · 1.13 expected-move models: HAR baseline + GBDT quantiles (AC-27 training part) — 2026-11-28
 - `sr/train/models/har_vol.py` (move-0.1, `config/move.yaml`): RV_d / RV_w / RV_m = mean |relative return| over
   the previous 1 / 5 / 22 sessions (earlier sessions only); OLS on logs; quantiles = scale × calibration-split

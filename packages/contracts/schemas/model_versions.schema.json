@@ -2,8 +2,8 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://baam-stock.local/contracts/model_versions.schema.json",
   "title": "model_versions",
-  "description": "DC §3.8 (schema only in P0)",
-  "x-tabled": false,
+  "description": "DC §3.8 (table since contract-0.7.3, migration 0004)",
+  "x-tabled": true,
   "type": "object",
   "properties": {
     "schema_version": {

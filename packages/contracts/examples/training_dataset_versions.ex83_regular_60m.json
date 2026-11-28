@@ -1,5 +1,5 @@
 {
-  "schema_version": "contract-0.7.2",
+  "schema_version": "contract-0.7.3",
   "dataset_version_id": "ds_regular_60m_20261206_v1",
   "target_id": "regular_60m",
   "feature_set_version": "fs-0.2",

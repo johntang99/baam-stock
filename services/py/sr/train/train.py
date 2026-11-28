@@ -345,6 +345,77 @@ def train_and_evaluate(
 
 
 # ---------------------------------------------------------------- run (DB + artifacts)
+def metrics_models(target_id: str, scope: dict[str, Any]) -> list[dict[str, Any]]:
+    """The model_versions rows a run registers (status candidate; contract-0.7.3)."""
+    if target_id == "regular_60m":
+        out, paths = scope["out"], scope["paths"]
+        cal = out.model.calibrator.method if out.model.calibrator else "identity"
+        cal_version = f"cal_{cal}_{scope['run_id']}"
+        common = {"coefficients_path": paths["market_logit"], "artifact_sha256": paths["sha256"]}
+        return [
+            {
+                "model_version_id": paths["model_version_id"],
+                "model_family": "market_logit",
+                "features": out.model.features,
+                "hyperparams": out.model.hyperparams,
+                "calibration_version": cal_version,
+                **common,
+            },
+            {
+                "model_version_id": paths["baseline_model_version_id"],
+                "model_family": "class_frequency",
+                "features": [],
+                "hyperparams": {"class_frequency": out.class_frequency},
+                "calibration_version": "none",
+                **common,
+            },
+        ]
+    mv, paths = scope["mv"], scope["paths"]
+    return [
+        {
+            "model_version_id": paths["har_vol_model_version_id"],
+            "model_family": "har_vol",
+            "features": ["har_rv_d", "har_rv_w", "har_rv_m"],
+            "hyperparams": {"lags": load("move")["har"]["lags_sessions"]},
+            "calibration_version": "ratio_calibration",
+            "coefficients_path": paths["har_vol"],
+            "artifact_sha256": paths["har_vol_sha256"],
+        },
+        {
+            "model_version_id": paths["move_quantile_model_version_id"],
+            "model_family": "gbdt",
+            "features": mv.model.features,
+            "hyperparams": dict(load("move")["gbdt"]),
+            "calibration_version": "conformal" if mv.model.shifts else "none",
+            "coefficients_path": paths["move_quantile"],
+            "artifact_sha256": paths["move_quantile_sha256"],
+        },
+    ]
+
+
+def register_models(
+    conn: Conn, run_id: str, target_id: str, paths: dict[str, Any], rows: list[dict[str, Any]]
+) -> None:
+    for r in rows:
+        conn.execute(
+            """insert into model_versions (model_version_id, training_run_id, target_id, model_family, param_layers, scope,
+                   features, hyperparams, coefficients_path, calibration_version, artifact_sha256, status)
+               values (%s, %s, %s::target_id, %s::model_family, 'market', %s, %s, %s, %s, %s, %s, 'candidate')""",
+            (
+                r["model_version_id"],
+                run_id,
+                target_id,
+                r["model_family"],
+                jsonb({"securities": [], "sectors": ["semis"]}),
+                r["features"],
+                jsonb(r["hyperparams"]),
+                r["coefficients_path"],
+                r["calibration_version"],
+                r["artifact_sha256"],
+            ),
+        )
+
+
 @dataclass(frozen=True)
 class TrainingResult:
     training_run_id: str
@@ -452,6 +523,9 @@ def run_training(
                 "market_logit": str(p),
                 "sha256": hashlib.sha256(p.read_bytes()).hexdigest(),
                 "model_version_id": mdl_id,
+                "baseline_model_version_id": new_id(
+                    "mdl"
+                ),  # class_frequency, registered alongside (DC prediction_runs)
             }
         elif target_id == "regular_60m_move":
             import pickle
@@ -493,6 +567,7 @@ def run_training(
             }
         else:
             raise ValueError(f"no training recipe for target {target_id}")
+        register_models(conn, run_id, target_id, paths, metrics_models(target_id, locals()))
         recorded = now or datetime.now(UTC)
         for seq, m in enumerate(metrics):
             conn.execute(

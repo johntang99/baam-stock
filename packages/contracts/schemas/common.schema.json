@@ -2,11 +2,11 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://baam-stock.local/contracts/common.schema.json",
   "title": "common",
-  "description": "Shared definitions for contract-0.7.2 (DATA_CONTRACT §1).",
+  "description": "Shared definitions for contract-0.7.3 (DATA_CONTRACT §1).",
   "$defs": {
     "schema_version": {
       "type": "string",
-      "const": "contract-0.7.2"
+      "const": "contract-0.7.3"
     },
     "timestamp": {
       "type": "string",

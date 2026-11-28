@@ -1,5 +1,5 @@
 /* AUTO-GENERATED from packages/contracts/schemas by scripts/gen-ts.mjs. Do not edit. */
-export type SchemaVersion = "contract-0.7.2"
+export type SchemaVersion = "contract-0.7.3"
 /**
  * UTC ISO-8601 with Z suffix (DC §1)
  */
@@ -685,7 +685,7 @@ export type ModelFamily = ("class_frequency" | "always_flat" | "persistence" | "
 export type ParamLayers = ("market" | "market_sector" | "market_sector_company")
 
 /**
- * DC §3.8 (schema only in P0)
+ * DC §3.8 (table since contract-0.7.3, migration 0004)
  */
 
 export interface ModelVersions {
@@ -1212,4 +1212,4 @@ supplement_run_id?: (string | null)
 visibility: ("submitter_and_reviewers" | "shared")
 }
 
-export const SCHEMA_VERSION = "contract-0.7.2" as const;
+export const SCHEMA_VERSION = "contract-0.7.3" as const;

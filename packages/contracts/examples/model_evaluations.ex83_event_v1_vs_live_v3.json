@@ -1,5 +1,5 @@
 {
-  "schema_version": "contract-0.7.2",
+  "schema_version": "contract-0.7.3",
   "evaluation_id": "eval_20261206_event_v1_vs_live_v3",
   "candidate_model_version_id": "mdl_regular_60m_market_event_logit_v1",
   "comparator_model_version_id": "mdl_regular_60m_market_logit_v3",

@@ -71,6 +71,18 @@ values ('snap_test_1', 'sec_nvda', 'scheduled', '2026-12-01T15:20:00Z', '2026-12
   '2026-12-01T15:30:00Z', '{"event_outcome":{"status":"not_applicable","reason":"x"},"stock_reaction":{"status":"ready","reason":"y"}}',
   'test|1', '2026-12-01T15:20:00.6Z');
 
+-- contract-0.7.3: prediction runs reference registered model versions (migration 0004)
+insert into training_dataset_versions (dataset_version_id, target_id, feature_set_version, label_version, source_versions,
+  time_range, splits, availability_check_passed, n_rows, n_trading_days, n_event_clusters, class_balance, exclusions,
+  manifest_path)
+values ('ds_test', 'regular_60m', 'fs-0.2', 'lbl-0.1', '{}', '{}', '[]', true, 0, 0, 0, '{}', '{}', 'synthetic');
+insert into training_runs (training_run_id, dataset_version_id, trigger, code_version, config_hash, random_seed, status,
+  idempotency_key)
+values ('tr_test', 'ds_test', 'manual', 'test', 'test', 1, 'completed', 'tr_test');
+insert into model_versions (model_version_id, training_run_id, target_id, model_family, param_layers, status)
+values ('mdl_test', 'tr_test', 'regular_60m', 'market_logit', 'market', 'candidate'),
+       ('mdl_base', 'tr_test', 'regular_60m', 'class_frequency', 'market', 'candidate');
+
 insert into prediction_runs (run_id, trigger_type, snapshot_id, feature_snapshot_id, model_version_id, calibration_version,
   baseline_model_version_id, publish_deadline, idempotency_key)
 values ('run_test_1', 'scheduled', 'snap_test_1', 'fs_test', 'mdl_test', 'cal_test', 'mdl_base', '2026-12-01T15:21:00Z', 'k1');

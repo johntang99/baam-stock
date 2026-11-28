@@ -48,7 +48,7 @@ def examples() -> list[Path]:
 
 # ---------------- schemas & examples ----------------
 def test_schema_version_is_current() -> None:
-    assert SV == "contract-0.7.2"
+    assert SV == "contract-0.7.3"
     import sr
 
     assert sr.SCHEMA_VERSION == SV
@@ -57,7 +57,7 @@ def test_schema_version_is_current() -> None:
 def test_all_schemas_are_valid_draft_2020_12() -> None:
     for s in ALL.values():
         Draft202012Validator.check_schema(s)
-    assert len(ENTITIES) == 49 and len(TABLED) == 38
+    assert len(ENTITIES) == 49 and len(TABLED) == 39  # 0.7.3: + model_versions
 
 
 @pytest.mark.parametrize("path", examples(), ids=lambda p: p.name)

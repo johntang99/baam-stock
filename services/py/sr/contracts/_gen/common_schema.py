@@ -12,13 +12,13 @@ from pydantic import AwareDatetime, BaseModel, ConfigDict, Field, RootModel
 class Common(RootModel[Any]):
     root: Any = Field(
         ...,
-        description="Shared definitions for contract-0.7.2 (DATA_CONTRACT §1).",
+        description="Shared definitions for contract-0.7.3 (DATA_CONTRACT §1).",
         title="common",
     )
 
 
-class SchemaVersion(RootModel[Literal["contract-0.7.2"]]):
-    root: Literal["contract-0.7.2"]
+class SchemaVersion(RootModel[Literal["contract-0.7.3"]]):
+    root: Literal["contract-0.7.3"]
 
 
 class Timestamp(RootModel[AwareDatetime]):
