@@ -1,5 +1,5 @@
-"""`uv run sr …` — calendar / schedule utilities, `sr run` (DP 1.16, AC-34), `sr replay` and `sr report` (DP 1.17).
-settle / train CLIs follow."""
+"""`uv run sr …` — calendar / schedule utilities, `sr run` (DP 1.16, AC-34), `sr replay` and `sr report` (DP 1.17),
+`sr live --dry-run` / `sr worker` / `sr quality` (DP 2.01-2.06). settle / train CLIs follow."""
 
 from __future__ import annotations
 
@@ -49,6 +49,23 @@ def main(argv: list[str] | None = None) -> int:
     _model_args(rp)
     rr = sub.add_parser("report", help="line-by-line verification report of one prediction (Markdown)")
     rr.add_argument("--prediction", required=True)
+    lv = sub.add_parser("live", help="md-ingest + move scanner over the synthetic feed (DP 2.01-2.03)")
+    lv.add_argument("--symbols", default="NVDA,AMD,AVGO,MU")
+    lv.add_argument(
+        "--dry-run", action="store_true", help="no database: ingest, latency, move hits, planned jobs"
+    )
+    lv.add_argument("--fixture", default="data/fixtures/nvda_2026-12-01_1s.parquet")
+    lv.add_argument("--until", default=None, help="ET wall clock HH:MM to stop at (default: the close)")
+    lv.add_argument("--flush-dir", default=None, help="write 1-second parts here (default: none in dry run)")
+    wk = sub.add_parser("worker", help="run queued jobs (DP 2.02)")
+    wk.add_argument("--once", action="store_true", help="drain the due jobs and exit")
+    wk.add_argument("--types", default=None, help="comma-separated job types (default: all with a handler)")
+    ql = sub.add_parser(
+        "quality", help="data-quality report: abstentions and unsettleable by reason (DP 2.06)"
+    )
+    ql.add_argument("--from", dest="start", required=True, type=date.fromisoformat)
+    ql.add_argument("--to", dest="end", required=True, type=date.fromisoformat)
+    ql.add_argument("--json", action="store_true")
     for name in PHASE1:
         sub.add_parser(name, help="Phase 1 (not implemented yet)")
     a = ap.parse_args(argv)
@@ -58,6 +75,12 @@ def main(argv: list[str] | None = None) -> int:
         return cmd_replay(a)
     if a.cmd == "report":
         return cmd_report(a)
+    if a.cmd == "live":
+        return cmd_live(a)
+    if a.cmd == "worker":
+        return cmd_worker(a)
+    if a.cmd == "quality":
+        return cmd_quality(a)
     if a.cmd == "calendar":
         x = get_calendar().session(a.date)
         print(
@@ -194,6 +217,130 @@ def cmd_report(a: argparse.Namespace) -> int:
         print(to_markdown(prediction_report(conn, a.prediction)))
     finally:
         conn.close()
+    return 0
+
+
+def cmd_live(a: argparse.Namespace) -> int:
+    from datetime import datetime, time, timedelta
+    from pathlib import Path
+
+    import pandas as pd
+
+    from sr.calendar.calendar import et_to_utc
+    from sr.config import load
+    from sr.jobs.handlers import live_snapshot_quotes
+    from sr.marketdata.live import LiveIngest, LiveQuoteStore, SimulatedFeed, advance
+    from sr.snapshot.builder import schedule
+    from sr.snapshot.triggers import MoveScanner
+
+    if not a.dry_run:
+        print(
+            "live ingest needs the D-13 vendor adapter; only --dry-run on the synthetic feed exists",
+            file=sys.stderr,
+        )
+        return 2
+    raw = pd.read_parquet(a.fixture)
+    day = raw["ts"].min().tz_convert("America/New_York").date()
+    syms = [x.strip() for x in a.symbols.split(",") if x.strip()]
+    peers = list(load("benchmarks")["semis_peer_v1"]["constituents"])
+    mapping = dict(raw[["symbol", "security_id"]].drop_duplicates().itertuples(index=False, name=None))
+    want = {k: v for k, v in mapping.items() if k in set(syms) | set(peers)}
+    missing = [x for x in syms if x not in mapping]
+    if missing:
+        print(f"symbols not in the fixture: {missing}", file=sys.stderr)
+        return 2
+    s = get_calendar().session(day)
+    assert s.open_at is not None and s.close_at is not None
+    if a.until:
+        hh, mm = (int(x) for x in a.until.split(":"))
+        end = et_to_utc(day, time(hh, mm))
+    else:
+        end = s.close_at
+    now = {"t": s.open_at - timedelta(minutes=21)}
+    store = LiveQuoteStore(lambda: now["t"], "src_fixture_synthetic", synthetic=True)
+    ing = LiveIngest(store, want, flush_dir=Path(a.flush_dir) if a.flush_dir else None)
+    feed = SimulatedFeed(raw, want)
+    scan = MoveScanner()
+    every = timedelta(seconds=float(load("market_move_rules")["scan_every_s"]))
+    hits: list[dict[str, Any]] = []
+    t: datetime = now["t"]
+    nxt = s.open_at
+    while t <= end:
+        now["t"] = t
+        advance(feed, ing, t)
+        if s.open_at <= t < s.close_at and t >= nxt:
+            ids = sorted(want.values())
+            q = live_snapshot_quotes(store, ids, t)
+            for sym in syms:
+                sec = mapping[sym]
+                w = {mapping[p]: 1.0 for p in peers if p != sym}
+                w = {k: 1.0 / len(w) for k in w}
+                for c in scan.scan(q, sec, t, weights=w):
+                    hits.append(
+                        {"symbol": sym, "rule_id": c.rule_id, "at": t.isoformat(), "move": c.move_pct}
+                    )
+            nxt = t + every
+        if ing.flush_dir is not None and int(t.timestamp()) % int(load("live")["flush_every_s"]) == 0:
+            ing.flush()
+        t += timedelta(seconds=5)
+    ing.flush()
+    trig = [x for x in schedule(s) if x.analysis_as_of <= end]
+    out = {
+        "synthetic": True,
+        "session_date": day.isoformat(),
+        "symbols": syms,
+        "rows_1s": len(store.frame()),
+        "metrics": ing.metrics(now["t"]),
+        "move_hits": hits,
+        "planned_snapshot_jobs": len(trig) * len(syms),
+        "parts": [str(p) for p in ing.parts],
+    }
+    print(json.dumps(out, indent=2, default=str))
+    return 0
+
+
+def cmd_worker(a: argparse.Namespace) -> int:
+    from pathlib import Path
+
+    from sr.config import load, repo_root
+    from sr.db import connect
+    from sr.jobs.handlers import LiveContext, make_handlers
+    from sr.jobs.worker import Worker, system_clock
+    from sr.marketdata.live import ParquetQuoteStore
+
+    conn = connect(autocommit=True)
+    try:
+        store = ParquetQuoteStore(repo_root() / Path(str(load("live")["flush_dir"])), system_clock)
+        handlers = make_handlers(LiveContext(store, {}, system_clock))
+        handlers.pop(
+            "run_forecast"
+        )  # slot forecasts need models + history: started by the live scheduler (2.24)
+        if a.types:
+            keep = set(a.types.split(","))
+            handlers = {k: v for k, v in handlers.items() if k in keep}
+        w = Worker(conn, handlers)
+        if a.once:
+            recs = w.drain()
+            print(json.dumps([r.__dict__ for r in recs], indent=2, default=str))
+            return 0 if all(r.status == "succeeded" for r in recs) else 1
+        w.run_forever()
+    finally:
+        conn.close()
+    return 0
+
+
+def cmd_quality(a: argparse.Namespace) -> int:
+    from datetime import UTC, datetime
+
+    from sr.db import connect
+    from sr.eval.quality_report import quality_report, to_markdown
+
+    conn = connect()
+    try:
+        rep = quality_report(conn, a.start, a.end, datetime.now(UTC))
+    finally:
+        conn.close()
+    print(json.dumps(rep, indent=2, default=str) if a.json else to_markdown(rep))
     return 0
 
 

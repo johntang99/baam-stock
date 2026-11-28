@@ -1,0 +1,24 @@
+# Market-move trigger rules (DP 2.03; MP §3 "异动阈值检测"; OQ-55, OQ-59). Versioned: a rule change = new rule_id.
+# A hit enqueues a snapshot with trigger_type = market_move, trigger_ref = rule_id. Thresholds are defaults for
+# the synthetic phase; they are re-set from the D-13 history (false-trigger rate) before live use.
+version: move_rules-0.1
+scan_every_s: 15            # live scanner cadence
+cooldown_min: 15            # the same rule does not fire again for the same security within this many minutes
+rules:
+  - rule_id: move_abs_v1     # Phase 1 rule, unchanged (OQ-55)
+    kind: price_abs
+    abs_move_pct: 3.0
+    regular_window_min: 15   # regular hours: vs the mid this many minutes earlier; outside: vs the regular close
+    sessions: [regular, pre_market, post_market]
+  - rule_id: move_rel_basket_v1
+    kind: relative_to_basket # stock 15-min return minus the semis_peer basket 15-min return (D-06 sync)
+    abs_relative_pp: 2.0
+    regular_window_min: 15
+    sessions: [regular]
+  - rule_id: volume_spike_v1
+    kind: volume             # 5-min volume vs the trailing 20-session median of the same 5 minutes
+    volume_mult: 5.0
+    window_min: 5
+    lookback_sessions: 20
+    sessions: [regular]
+    requires: [volume]       # the 1-second NBBO layer carries no volume yet: skipped (input_unavailable) until D-13

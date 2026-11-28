@@ -41,13 +41,15 @@ uv run python scripts/validate_sample.py --fixture data/fixtures/nvda_2026-12-01
 supabase start && supabase db reset            # 迁移 + seed（需 Docker）
 make check                                     # 以上检查一次跑完
 uv run python scripts/check_labels.py --queue 10   # 标注审核：下一批文档；--keys 自检；--text 取原文
+uv run sr live --symbols NVDA,AMD,AVGO,MU --dry-run   # 合成行情当作实时流：1 秒层、延迟、异动、计划任务
+uv run sr worker --once                        # 执行到期 jobs；uv run sr quality --from … --to … 质量报表
 ```
 
 ## 当前进度
 - Phase 0 完成（CI 绿）。**Phase 1 在合成数据上验收通过**（`docs/acceptance/phase1.md`，2026-11-28）；真实数据复验待 D-13 样本（1.01 / 1.02）与 1.18 人工审核 + 付费评估（需批准）。已完成 DP 1.03–1.17、1.19、1.21–1.28（历史类比、证据入库、LLM 接口、事件与版本、财报提取与预期对比、政策事件模板、市场反应与当前解释、证券快照与同水位合并、数据集构建、首次训练与校准、HAR 波动基线与分位数模型、推断与原子发布（契约 contract-0.7.3：`model_versions` 建表）、结算与版本追加、一键运行编排与 `sr run` CLI、日回放与逐条核验报告（`sr replay` / `sr report`）、只读回放网页 `/replay`、运行状态与 display_state 视图、估值背景（只进解释）、场景测试 AC-39～41、公司行为与复权结算、时刻表回放与预测—实际对照（contract-0.7.4）（均为合成数据）、采集记录、推理链与引用校验）。常规默认值由 Claude 自行决定并记入 OPEN_QUESTIONS（用户 2026-11-28 授权），付费调用与真实资金仍需用户批准。1.18：语料 357 份（SEC 291、Federal Register 政策 40、公司新闻稿 26，OQ-41）；全部已有 Claude（extract-0.3）草稿、核对规则 earnings-0.5（OQ-39、OQ-42）、审核指南 `docs/labeling/extraction-v0.md` 与 `scripts/check_labels.py` 已就绪，**等待人工审核满 100 份**后跑评估（付费，需批准）；第三方新闻待 D-15 授权。
 - **编码顺序（roadmap-0.2 快速路线，2026-11-28 起）**：不再等 D-13，行情相关任务先用合成 fixture（synthetic）实现与测试，供应商样本到后只换 `MarketDataProvider` 实现并重跑验收。
   1. Phase 1：开发项全部完成（合成数据）；1.01 / 1.02 待 D-13 样本，1.18 待审核；真实数据到位后重跑 `docs/acceptance/phase1.md`。
-  2. DP Phase 2、Phase 3（合成数据）。
+  2. DP Phase 2、Phase 3（合成数据）。Phase 2 已完成 2.01–2.06（实时行情 1 秒层、jobs 队列与 worker、异动规则、实时证据轮询、四家档案与多公司独立影响、质量报表；AC-17、AC-18 在合成实时日上通过；OQ-58～62）；下一步按 DP 会话顺序 2.07–2.08 + 2.15（网页与一键运行）。
   3. 契约升 `contract-1.0`（只追加）→ Phase 5 中期目标（`sr/horizon/`）→ Phase 6 信号定义、含成本回测、模拟盘（`sr/signals/`、`sr/backtest/`）→ Phase 7 `services/trader/` + `trading` schema：模拟版 `BrokerAdapter`、风控、对账、审计、kill switch（真实下单默认关闭）。
   - 需要用户并行推进：D-13 行情样本（含历史 NBBO 与 ≥ 10 年日线）、D-15 新闻授权、D-16 共识数据、券商候选与模拟账户、法律 / 税务 / 内部授权确认。
 - 数据库测试：设置 `TEST_DATABASE_URL`（管理员连接串，测试会建临时库）后运行 pytest；CI 自带 postgres:17。

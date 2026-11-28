@@ -41,8 +41,10 @@ begin
   select count(*) into n from securities where coverage_tier in ('pilot', 'batch2') and reference_benchmark_id = 'bm_soxx_ref';
   if n <> 6 then raise exception 'pilot+batch2 should reference bm_soxx_ref, got %', n; end if;
 
-  select count(*) into n from company_profile_versions where industry_template = 'semiconductor';
+  select count(distinct company_id) into n from company_profile_versions where industry_template = 'semiconductor';
   if n <> 4 then raise exception 'pilot companies need industry_template=semiconductor profiles, got %', n; end if;
+  select count(*) into n from company_profile_versions where version = 2 and exposures ? 'relations';
+  if n <> 4 then raise exception 'pilot companies need profile v2 with relations (DP 2.05), got %', n; end if;
   select count(*) into n from industry_templates;
   if n <> 4 then raise exception 'expected 4 industry templates, got %', n; end if;
 

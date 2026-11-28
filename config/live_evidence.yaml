@@ -1,0 +1,15 @@
+# Live evidence polling (DP 2.04; D-15; OQ-60). Public free sources only; licensed news stays off until D-15.
+version: live_evidence-0.1
+first_lookback_min: 60       # first poll after start: look back this far (dedupe makes re-delivery harmless)
+overlap_s: 120               # later polls ask for items since (last successful poll − overlap)
+cadence_s:                   # seconds between polls per source
+  src_sec_edgar: 30          # 4 pilot CIKs x 1 request = 0.13 req/s, far under the SEC 10 req/s limit
+  src_company_ir: 60
+  src_federal_register: 300  # daily publication; intraday corrections are rare
+  default: 60
+failure_backoff_s:           # after a failed poll: base x 2^(consecutive failures − 1), capped
+  base: 30
+  max: 900
+licensed_news:
+  source_id: src_news_licensed
+  enabled: false             # D-15: no news licence yet. Never enable without the licence (CLAUDE.md)

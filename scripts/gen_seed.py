@@ -257,7 +257,38 @@ def build() -> dict[str, str]:
         + "-- trading_sessions XNYS 2026-2027 from sr.calendar (D-04; weekdays incl. holidays as closed)\n\n"
     )
     sessions += insert("trading_sessions", sess)
+    prof = load("profiles")
+    v2 = []
+    for k, c in prof["companies"].items():
+        v2.append(
+            {
+                "profile_version_id": f"cpv_{k}_v2",
+                "company_id": f"co_{k}",
+                "version": 2,
+                "effective_from": prof["effective_from"],
+                "key_metrics": semi["key_metrics_default"],
+                "exposures": {
+                    "dimensions": {
+                        d: {"level": "unknown", "basis": "pending_disclosure_review"}
+                        for d in semi["exposure_dimensions"]
+                    },
+                    "relations": {r: [f"co_{x}" for x in xs] for r, xs in c["relations"].items()},
+                    "review_status": prof["review_status"],
+                    "config_version": prof["version"],
+                },
+                "official_sources": semi["official_sources_default"],
+                "priority_rules_version": "prio-0.1",
+                "industry_template": "semiconductor",
+                "valuation_peers": [],
+            }
+        )
+    profiles_sql = (
+        HEADER
+        + "-- company_profile_versions v2 for the pilot four (DP 2.05, OQ-61). Draft relations; levels unknown.\n\n"
+        + insert("company_profile_versions", v2)
+    )
     return {
+        "0004_profiles.sql": profiles_sql,
         "0001_pilot.sql": pilot,
         "0001_templates.sql": templates,
         "0002_targets_schedule.sql": targets,

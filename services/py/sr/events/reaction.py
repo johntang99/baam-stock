@@ -71,17 +71,20 @@ def sync_points(
     if tgt.empty:
         return []
     cons = win[win["security_id"].isin(basket)]
-    by_c = {c: g.set_index("ts") for c, g in cons.groupby("security_id")}
+    # one row per (constituent, second) in the 1-second layer; plain dict lookups (pandas .loc per row was the
+    # bottleneck of event reactions and the move scanner, DP 2.03)
+    by_c = {
+        c: g.drop_duplicates("ts", keep="last").set_index("ts").to_dict("index")
+        for c, g in cons.groupby("security_id")
+    }
     out = []
     for row in tgt.to_dict("records"):
         ts, qts = row["ts"], row["quote_ts"]
         got: dict[str, dict[str, Any]] = {}
         for c in basket:
-            g = by_c.get(c)
-            if g is not None and ts in g.index:
-                cr = g.loc[ts]
-                if abs(cr["quote_ts"] - qts) <= tol:
-                    got[c] = {str(k): v for k, v in cr.to_dict().items()} | {"ts": ts, "security_id": c}
+            cr = by_c.get(c, {}).get(ts)
+            if cr is not None and abs(cr["quote_ts"] - qts) <= tol:
+                got[c] = {str(k): v for k, v in cr.items()} | {"ts": ts, "security_id": c}
         if len(basket) - len(got) <= mm:
             out.append(RefPoint(ts, {str(k): v for k, v in row.items()}, got))
     return out

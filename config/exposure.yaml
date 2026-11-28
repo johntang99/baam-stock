@@ -1,0 +1,18 @@
+# Per-security impact records (DP 2.05; DC event_analysis_versions.impact; OQ-61).
+# One event gives each linked security its own record: the channel follows that security's relation to the event.
+# Direction stays `unknown` (S2: direction needs company disclosure and analysis, never a keyword guess).
+version: exposure-0.1
+read_through:                 # profile relation of the OTHER company towards the event subject -> link relation
+  competitor: competitor
+  supplier_to: supplier       # the other company supplies the subject
+  customer_of: customer       # the other company buys from the subject
+channels:
+  subject:         {channel: direct,                    exposure: "事件直接涉及本公司"}
+  acquirer:        {channel: direct,                    exposure: "本公司为收购方"}
+  target:          {channel: direct,                    exposure: "本公司为被收购方"}
+  competitor:      {channel: competitive_read_through,  exposure: "竞争对手事件：份额与定价的间接影响"}
+  supplier:        {channel: supply_chain_read_through, exposure: "本公司为事件主体的供应商：需求传导"}
+  customer:        {channel: customer_read_through,     exposure: "本公司为事件主体的客户：供给与成本传导"}
+  regulated_party: {channel: regulatory,                exposure: null}   # uses the link's exposure_note
+  sector_wide:     {channel: sector,                    exposure: "行业整体影响"}
+horizon_default: pending_analysis

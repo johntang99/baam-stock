@@ -1,0 +1,13 @@
+# Job queue (DP 2.02; DC jobs; OQ-58). Consumption: SELECT … FOR UPDATE SKIP LOCKED.
+version: jobs-0.1
+backoff:
+  base_s: 15                 # DC: retry run_after = now + 2^attempts x 15 s (attempts counted after the failed try)
+  max_s: 3600                # cap, so a job never waits more than an hour between tries
+lock_timeout_s: 300          # DC: a running job whose lock is older than 5 minutes is reclaimed (worker crashed)
+default_max_attempts: 5      # DC default
+worker:
+  poll_interval_s: 1         # idle sleep between empty claims
+  batch: 1                   # jobs claimed per round trip
+dead_letter:
+  alert_severity: warning    # a job that used up its attempts opens a pipeline_failed alert
+  alert_kind: pipeline_failed

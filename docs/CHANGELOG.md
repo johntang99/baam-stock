@@ -1,5 +1,36 @@
 # CHANGELOG
 
+## Phase 2 · 2.01–2.06 live data and scheduling (AC-17, AC-18) on a synthetic feed — 2026-11-28
+- **2.01 md-ingest** (`sr/marketdata/live.py`): vendor ticks → the 1-second layer (newest quote received by each
+  second; late older quotes counted, never applied), a store that refuses reads past its clock, immutable Parquet
+  parts every 5 s, vendor latency p50 / p95 and stale symbols. `SimulatedFeed` replays the synthetic fixture as live
+  ticks with outage windows; `ParquetQuoteStore` lets `sr worker` read the flushed parts. No vendor adapter (D-13).
+- **2.02 queue / worker / scheduler** (`sr/jobs/`): idempotent enqueue, `FOR UPDATE SKIP LOCKED` claim, backoff
+  2^n × 15 s, dead letter + `pipeline_failed` alert, 5-minute lock reclaim; handler writes and completion commit
+  together. The scheduler queues a session's 5-minute snapshots and sched-0.1 slot runs once (deterministic keys).
+  Handlers: `build_snapshot`, `run_forecast` (pipeline per slot), `settle_due`, `analyze_event`.
+- **2.03 move rules** (`config/market_move_rules.yaml`, `sr/snapshot/triggers.py`): `move_abs_v1` unchanged,
+  `move_rel_basket_v1` (2 pp vs the basket over 15 min), `volume_spike_v1` skipped until volume exists; 15-minute
+  cooldown. The old `snapshot.yaml` block moved here.
+- **2.04 live evidence** (`sr/evidence/live.py`): per-source cadence, overlap, failure backoff (a failure is never
+  "no news"), one collection run per live security per poll round; licensed news interface present and disabled.
+- **2.05 profiles and impact**: profile v2 for the pilot four (`config/profiles.yaml` → seed `0004_profiles.sql`;
+  draft relations, exposure levels `unknown` until reviewed); `sr/events/exposure.py` adds read-through links
+  from the profiles in force and one impact record per linked security (direction `unknown`). An AMD-only order
+  gives AMD `direct`, NVDA `competitive_read_through`, MU `supply_chain_read_through`, AVGO nothing.
+- **2.06 quality report** (`sr/eval/quality_report.py`, `uv run sr quality`): abstentions, unsettleable outcomes
+  and snapshot quality by reason.
+- CLI: `uv run sr live --symbols NVDA,AMD,AVGO,MU --dry-run` (no database), `uv run sr worker [--once]`,
+  `uv run sr quality --from … --to …`.
+- Acceptance (`tests/test_live_day.py`, simulated live session on the synthetic feed): **AC-17** four securities ×
+  78 scheduled snapshots 09:30–15:55 each, event snapshots for subjects and read-through links, event
+  available_at → snapshot p95 well under 60 s; **AC-18** a 2-minute feed outage → the 10:00 snapshot `stale`, the
+  10:00 slot forecasts `abstained/stale_quote`, the quality report counts them, the 10:05 snapshot `ok` again.
+- Performance: `sync_points` uses dict lookups instead of per-row pandas `.loc` (event reactions and the relative
+  move rule several times faster; same results).
+- SQL assertion counts profile companies, not rows, and checks the v2 relations. OQ-58 to OQ-62 adopted (routine).
+- Tests: 521 Python (28 new) + 4 web; `make check` and the fresh-database replay pass.
+
 ## Phase 1 · 1.20 acceptance on synthetic data — 2026-11-28
 - `docs/acceptance/phase1.md`: every Phase 1 acceptance criterion (AC-06 to AC-16, AC-27, AC-30, AC-34 P1,
   AC-37 to AC-42, AC-49 P1, AC-52, AC-53, AC-56, AC-57, the line-by-line report) mapped to the tests that prove it.

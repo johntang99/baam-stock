@@ -22,6 +22,7 @@ import pandas as pd
 from sr.config import load
 from sr.db import Conn
 from sr.events.citations import PgResolver, Resolver
+from sr.events.exposure import impact_for
 from sr.events.reaction import Reaction, compute_reaction, persist_quotes, window
 from sr.events.readiness import not_applicable, stock_reaction
 from sr.events.reasoning import EvidenceInfo, build
@@ -225,6 +226,10 @@ def publish_explanation(
             "analysis_kind": "flash",  # the first analysis of an event built here is a flash (DC analysis_kind)
             **payload,
             "evidence_ids": sorted({*payload.get("evidence_ids", []), *(e.evidence_id for e in evidence)}),
+            "impact": payload.get("impact")
+            or impact_for(
+                conn, event_id, security_id, [e.claim for e in evidence], [e.evidence_id for e in evidence]
+            ),  # per-security record from its own link relation (DP 2.05)
             "market_reaction": reaction.market_reaction,
             "market_explanation": new_expl,
             "reasoning_trace": trace,

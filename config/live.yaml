@@ -1,0 +1,8 @@
+# Live run (DP 2.01-2.06; OQ-58). The feed is the synthetic fixture until the D-13 vendor adapter exists.
+version: live-0.1
+flush_dir: data/live          # 1-second layer parts (gitignored), read by `sr worker`
+flush_every_s: 5
+sim_step_s: 5                 # simulated live day: clock step between worker rounds
+targets:
+  event_snapshot_p95_s: 60    # AC-17: event-triggered snapshot within 60 s of available_at (p95)
+  min_scheduled_snapshots: 70 # AC-17: per security per full session

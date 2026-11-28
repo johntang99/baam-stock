@@ -1,0 +1,17 @@
+# Company profiles v2 for the pilot four (DP 2.05; DC company_profile_versions; D-42; OQ-61).
+# Configuration, not facts: every dimension level is `unknown` until a reviewer fills it from the company's own
+# filings in onboarding (DP 2.09). Relations route an event about one company to the others as separate
+# read-through links; they are marked draft_unreviewed and are confirmed in the same review.
+# valuation_peers stay empty (the basket fallback, DP 1.24) until a reviewer chooses them.
+version: profiles-0.1
+effective_from: "2026-11-28T00:00:00Z"
+review_status: draft_unreviewed
+companies:
+  nvda:
+    relations: {competitor: [amd]}
+  amd:
+    relations: {competitor: [nvda]}
+  avgo:
+    relations: {}
+  mu:
+    relations: {supplier_to: [nvda, amd]}   # memory supplier relation (draft)
