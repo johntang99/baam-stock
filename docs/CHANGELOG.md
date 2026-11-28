@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## Docs · Sync risk-0.2 / roadmap-0.3 design docs — 2026-11-28
+- New `docs/roadmap/DOWNSIDE_RISK_WARNING_CN.md` (risk-0.2): downside-risk warning and drawdown monitoring (design
+  only; not implemented — the module gets its own build prompt).
+- `docs/roadmap/ROADMAP_EXTENSIONS_CN.md` roadmap-0.2 → roadmap-0.3: companion risk doc, risk gate row
+  (G-R1–G-R8), §2.5, fourth live clock; other gate values unchanged.
+- `docs/BUILDING_MASTER_PLAN.md`, `docs/DEVELOPMENT_PHASES.md`: still 0.7; only the roadmap pointer line updated
+  (now also points to the risk doc, with `roadmap/` paths). The master plan keeps D-05–D-12 `confirmed`.
+- New `docs/research/AI_INDUSTRY_OUTLOOK_2027_2028_CN.md` (internal industry research; not investment advice).
+- `docs/README.md`: rows for the two new files.
 ## Phase 2 · 2.07–2.08 + 2.15 market pages, one-click run, e2e (AC-34, AC-35 page side) — 2026-11-28
 - **Migration `0007_app_roles.sql`** (DC §10, D-26): roles from JWT `app_metadata.app_role`; read policies for
   every table (viewers: displayable prediction tiers, public evidence, their own runs); no write grants. The page's

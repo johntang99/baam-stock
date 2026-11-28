@@ -2,7 +2,7 @@
 
 **版本** `phases-0.7` · 2026-11-26（0.7：用户补充信息与"继续分析"增量补充运行，AC-59～AC-61，WBS 约 242 人日；0.6：第 1 步采集与第 2 步推理可见，AC-56～AC-58；0.5：每日预测时刻表与预测—实际对照，AC-52～AC-55；0.4：补齐 PPT 蓝图审查的 19 项缺口，AC-37～AC-51） · 引用：`BUILDING_MASTER_PLAN.md`（plan-0.7，决策 D-xx）、`DATA_CONTRACT.md`（契约 `contract-0.7`）、`MODEL_IMPROVEMENT_MEMO.md`（§5 已并入）
 
-> **路线图扩展**：Phase 5～7（中长期预测、买卖信号、自有资金系统执行交易）见 `roadmap/ROADMAP_EXTENSIONS_CN.md`，仅规划，不改变 Phase 0～4 的任务、验收与当前契约。
+> **路线图扩展**：Phase 5～7（中长期预测、买卖信号、自有资金系统执行交易）见 `roadmap/ROADMAP_EXTENSIONS_CN.md`（roadmap-0.3），下行风险预警与下跌监测见 `roadmap/DOWNSIDE_RISK_WARNING_CN.md`（risk-0.2）；仅规划，不改变 Phase 0～4 的任务、验收与当前契约。
 
 **0.3 更新**：补充总览（周期、工作线、环境、完成定义）、基础设施与 CI、新公司接入工作流、一键端到端运行、数据源健康与告警、运维手册，以及附录 A 工作分解（约 80 项任务、估算与依赖）和附录 C 各阶段 Claude Code 指令模板。
 
